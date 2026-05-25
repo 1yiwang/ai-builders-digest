@@ -184,38 +184,22 @@ function renderCard(card, authorIdentities, avatarManifest, labels, outputPath) 
         <div class="avatar${author.avatarUrl ? '' : ' is-fallback'}"><img src="${escapeHtml(author.avatarUrl)}" alt="${escapeHtml(author.name ? `${author.name} avatar` : 'Author avatar')}"><span class="avatar-fallback">${escapeHtml(author.initials)}</span></div>
         <div class="author-info">
           <div class="author-name-row">
-            <div class="author-name">${escapeHtml(author.name)}</div>
-            <div class="author-tag is-inline">${escapeHtml(author.tag)}</div>
+            <span class="author-name">${escapeHtml(author.name)}</span>
+            <span class="author-tag">${escapeHtml(author.tag)}</span>
           </div>
           <div class="author-handle">${escapeHtml(author.handle)}</div>
         </div>
-        <div class="card-controls">
-          <button class="view-toggle is-active" type="button" data-view-target="rewrite">${escapeHtml(labels.rewrite)}</button>
-          <button class="view-toggle" type="button" data-view-target="original">${escapeHtml(labels.original)}</button>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
         </div>
       </div>
       <div class="card-body">
-        <div class="lang-col de">
-          <div class="lang-label">${escapeHtml(card.germanLabel || 'Deutsch')}</div>
-          <div class="content-shell">
-            <div class="content-variant is-active" data-view="rewrite">
-${indent(renderBlocks(card.de?.rewrite || []), 14)}
-            </div>
-            <div class="content-variant" data-view="original">
-${indent(renderBlocks(card.de?.original || []), 14)}
-            </div>
-          </div>
+        <div class="lang-panel de is-active" data-lang="de">
+${indent(renderBlocks(card.de?.rewrite || []), 10)}
         </div>
-        <div class="lang-col en">
-          <div class="lang-label">${escapeHtml(card.englishLabel || 'English')}</div>
-          <div class="content-shell">
-            <div class="content-variant is-active" data-view="rewrite">
-${indent(renderBlocks(card.en?.rewrite || []), 14)}
-            </div>
-            <div class="content-variant" data-view="original">
-${indent(renderBlocks(card.en?.original || []), 14)}
-            </div>
-          </div>
+        <div class="lang-panel en" data-lang="en">
+${indent(renderBlocks(card.en?.rewrite || []), 10)}
         </div>
       </div>
       <div class="card-footer"><a href="${escapeHtml(card.sourceUrl || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceLabel)}</a></div>
@@ -231,7 +215,8 @@ function indent(value, spaces) {
 }
 
 function renderSection(section, index, authorIdentities, avatarManifest, labels, outputPath) {
-  const cards = (section.cards || [])
+  const sortedCards = (section.cards || []).slice().sort((a, b) => (a.priority || 99) - (b.priority || 99));
+  const cards = sortedCards
     .map((card) => renderCard(card, authorIdentities, avatarManifest, labels, outputPath))
     .join('\n\n');
 
@@ -284,126 +269,384 @@ function renderPage(data, authorIdentities, avatarManifest, outputPath) {
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #1a1a1a;
-    --paper: #f6f3ed;
-    --accent: #c0392b;
-    --accent-light: #e8d5c4;
-    --border: #d4cdc0;
-    --muted: #7a7265;
-    --tag-bg: #e8e2d6;
-    --en-bg: #ffffff;
-    --de-bg: #faf7f2;
-    --shadow: 0 2px 8px rgba(0,0,0,0.06);
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #1a1f2c;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --tag-bg: rgba(99, 102, 241, 0.08);
+    --tag-text: #6366f1;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    --edition-bg: rgba(255,255,255,0.6);
+    --footer-bg: #f8fafc;
+    --tabs-bg: rgba(0,0,0,0.04);
+    --card-hover-border: #cbd5e1;
+    --accent-start: #6366f1;
+    --accent-end: #a855f7;
+    --card-radius: 12px;
+    --max-width: 720px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d111a;
+      --card-bg: #161b26;
+      --border: #232a3b;
+      --text-primary: #ffffff;
+      --text-body: #e2e8f0;
+      --text-muted: #8b949e;
+      --tag-bg: rgba(99, 102, 241, 0.12);
+      --tag-text: #a5b4fc;
+      --shadow: none;
+      --edition-bg: rgba(22, 27, 38, 0.5);
+      --footer-bg: rgba(0,0,0,0.15);
+      --tabs-bg: rgba(255,255,255,0.04);
+      --card-hover-border: #363f58;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0d111a;
+    --card-bg: #161b26;
+    --border: #232a3b;
+    --text-primary: #ffffff;
+    --text-body: #e2e8f0;
+    --text-muted: #8b949e;
+    --tag-bg: rgba(99, 102, 241, 0.12);
+    --tag-text: #a5b4fc;
+    --shadow: none;
+    --edition-bg: rgba(22, 27, 38, 0.5);
+    --footer-bg: rgba(0,0,0,0.15);
+    --tabs-bg: rgba(255,255,255,0.04);
+    --card-hover-border: #363f58;
+  }
+
+  :root[data-theme="light"] {
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #1a1f2c;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --tag-bg: rgba(99, 102, 241, 0.08);
+    --tag-text: #6366f1;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    --edition-bg: rgba(255,255,255,0.6);
+    --footer-bg: #f8fafc;
+    --tabs-bg: rgba(0,0,0,0.04);
+    --card-hover-border: #cbd5e1;
   }
 
   * { box-sizing: border-box; }
 
   body {
     margin: 0;
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--bg);
+    color: var(--text-body);
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.7;
   }
 
   .masthead, .intro, .section-header, .feed, footer {
-    max-width: 980px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  .masthead { padding-top: 48px; }
-  .masthead-rule { border: none; border-top: 3px solid var(--ink); margin: 0 0 12px; }
-  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
-  .masthead-title { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; letter-spacing: -0.4px; }
-  .masthead-subtitle { margin-top: 8px; padding-bottom: 10px; color: var(--muted); font-size: 13px; text-align: center; }
+  .masthead { padding-top: 56px; }
+  .masthead-rule { border: none; border-top: 2px solid var(--border); margin: 0 0 16px; }
+  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; }
+  .masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .masthead-subtitle { margin-top: 10px; padding-bottom: 12px; color: var(--text-muted); font-size: 13px; text-align: center; }
+
+  .theme-toggle {
+    position: relative;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--card-bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+    overflow: hidden;
+  }
+  .theme-toggle:hover { transform: scale(1.08); border-color: var(--accent-start); }
+  .theme-icon-light, .theme-icon-dark {
+    position: absolute;
+    transition: opacity 200ms ease, transform 200ms ease;
+  }
+  .theme-icon-light { opacity: 1; transform: rotate(0deg); }
+  .theme-icon-dark { opacity: 0; transform: rotate(90deg); }
+  [data-theme="dark"] .theme-icon-light { opacity: 0; transform: rotate(-90deg); }
+  [data-theme="dark"] .theme-icon-dark { opacity: 1; transform: rotate(0deg); }
+
 
   .edition-strip {
     position: relative;
-    margin-top: 8px;
+    margin-top: 10px;
     min-height: 46px;
-    padding: 10px 132px 12px;
+    padding: 10px 120px 12px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.34);
-    color: var(--muted);
+    background: var(--edition-bg);
+    color: var(--text-muted);
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
     letter-spacing: 0.2px;
     text-align: center;
   }
 
-  .edition-strip .edition-sep { margin: 0 8px; color: #b8ae9f; }
+  .edition-strip .edition-sep { margin: 0 8px; color: var(--text-muted); opacity: 0.5; }
   .edition-strip-text { display: block; }
-  .edition-return-link { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); display: inline-flex; align-items: center; justify-content: center; padding: 6px 10px; border: 1px dashed rgba(192, 57, 43, 0.55); border-radius: 999px; color: var(--accent); text-decoration: none; font-size: 12px; line-height: 1; letter-spacing: 0.06em; background: rgba(255, 255, 255, 0.45); transition: background 160ms ease, border-color 160ms ease, transform 160ms ease; }
-  .edition-return-link:hover, .edition-return-link:focus-visible { background: rgba(255, 255, 255, 0.82); border-color: var(--accent); transform: translateY(-50%) translateX(-1px); }
+  .edition-return-link {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 999px;
+    color: var(--accent-start);
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    background: rgba(99, 102, 241, 0.08);
+    transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+  .edition-return-link:hover, .edition-return-link:focus-visible {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--accent-start);
+    transform: translateY(-50%) translateX(-2px);
+  }
   .edition-return-link:focus-visible { outline: none; }
-  .intro { padding-top: 22px; }
-  .intro-inner { max-width: 920px; margin: 0 auto; padding: 0 0 0 18px; border-left: 3px solid #d9cdbc; }
-  .intro-kicker { margin: 0 0 8px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; }
-  .intro p { margin: 0; max-width: none; color: var(--muted); font-size: clamp(15px, 1.6vw, 16px); line-height: 1.9; text-wrap: pretty; font-family: 'Crimson Text', 'Georgia', serif; overflow-wrap: anywhere; }
 
-  .section-header { margin-top: 40px; }
-  .section-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 4px; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: 24px; margin: 0 0 6px; }
-  .section-desc { margin: 0 0 18px; color: var(--muted); font-size: 14px; }
+  .intro { padding-top: 28px; }
+  .intro-inner { max-width: 680px; margin: 0 auto; padding: 0 0 0 20px; border-left: 3px solid var(--accent-start); }
+  .intro-kicker {
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  .intro p {
+    margin: 0;
+    max-width: none;
+    color: var(--text-muted);
+    font-size: clamp(15px, 1.6vw, 16px);
+    line-height: 1.9;
+    text-wrap: pretty;
+    font-family: 'Crimson Text', 'Georgia', serif;
+    overflow-wrap: anywhere;
+  }
 
-  .feed { display: flex; flex-direction: column; gap: 20px; }
-  .card { background: var(--en-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); }
-  .card-header { display: flex; align-items: center; gap: 12px; padding: 16px 20px 12px; border-bottom: 1px solid #eee7dd; flex-wrap: wrap; }
-  .avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 700; flex-shrink: 0; overflow: hidden; }
+  .section-header { margin-top: 48px; }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin: 0 0 8px;
+    color: var(--text-primary);
+    line-height: 1.25;
+  }
+  .section-desc { margin: 0 0 22px; color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+
+  .feed { display: flex; flex-direction: column; gap: 24px; }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: border-color 200ms ease;
+  }
+  .card:hover { border-color: var(--card-hover-border); }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--accent-start);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid rgba(99, 102, 241, 0.25);
+  }
   .avatar img { width: 100%; height: 100%; display: block; object-fit: cover; }
-  .avatar-fallback { display: none; align-items: center; justify-content: center; width: 100%; height: 100%; }
+  .avatar-fallback { display: none; align-items: center; justify-content: center; width: 100%; height: 100%; color: #a5b4fc; }
   .avatar.is-fallback img { display: none; }
   .avatar.is-fallback .avatar-fallback { display: flex; }
 
-  .author-info { flex: 1; min-width: 160px; }
-  .author-name { font-weight: 600; font-size: 15px; }
+  .author-info { flex: 1; min-width: 140px; }
+  .author-name { font-weight: 600; font-size: 15px; color: var(--text-primary); }
   .author-name-row { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-  .author-handle { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--muted); }
-  .author-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; background: var(--tag-bg); color: var(--muted); padding: 4px 8px; border-radius: 999px; }
-  .author-tag.is-inline { padding: 3px 8px; }
+  .author-handle { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .author-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
 
-  .card-controls { margin-left: auto; display: inline-flex; gap: 8px; }
-  .view-toggle { border: 1px solid var(--border); background: transparent; color: var(--muted); padding: 6px 10px; border-radius: 999px; font-size: 12px; line-height: 1; cursor: pointer; font-family: 'IBM Plex Mono', monospace; transition: all 160ms ease; }
-  .view-toggle.is-active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .card-tabs {
+    display: inline-flex;
+    gap: 4px;
+    background: var(--tabs-bg);
+    border-radius: 999px;
+    padding: 3px;
+    border: 1px solid var(--border);
+  }
+  .lang-tab {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.06em;
+    transition: all 200ms ease;
+  }
+  .lang-tab.is-active {
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    color: #fff;
+  }
+  .lang-tab:not(.is-active):hover { color: var(--text-body); }
 
-  .card-body { display: grid; grid-template-columns: 1fr 1fr; }
-  .lang-col { padding: 18px 20px 22px; }
-  .lang-col.de { background: var(--de-bg); border-right: 1px solid #f0ece4; font-family: 'Crimson Text', 'Georgia', serif; }
-  .lang-col.en { background: var(--en-bg); }
-  .lang-label { margin-bottom: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); }
-  .content-shell { position: relative; transition: height 220ms cubic-bezier(0.22, 1, 0.36, 1); }
-  .content-variant { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(4px); transition: opacity 180ms ease, transform 180ms ease, visibility 0s linear 180ms; will-change: opacity, transform; }
-  .content-variant.is-active { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); transition: opacity 200ms cubic-bezier(0.22, 1, 0.36, 1), transform 200ms cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0s; }
-  .content-variant p, .content-variant li { margin: 0 0 12px; font-size: 14px; }
-  .content-variant ol { margin: 0 0 12px 20px; padding: 0; }
-  .inline-code { display: inline-block; font-family: 'IBM Plex Mono', monospace; background: #f4efe7; padding: 3px 6px; border-radius: 6px; margin-bottom: 8px; }
+  .card-body { padding: 0; }
+  .lang-panel {
+    display: none;
+    padding: 22px 24px 24px;
+    animation: fadeSlideIn 220ms ease;
+  }
+  .lang-panel.is-active { display: block; }
+  .lang-panel p { margin: 0 0 1.2rem; font-size: 15px; line-height: 1.75; color: var(--text-body); }
+  .lang-panel p:last-child { margin-bottom: 0; }
+  .lang-panel ol { margin: 0 0 1.2rem 22px; padding: 0; }
+  .lang-panel li { margin: 0 0 8px; font-size: 15px; line-height: 1.7; }
+  .inline-code {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
 
-  .card-footer { padding: 12px 20px 16px; border-top: 1px solid #eee7dd; background: #fcfaf6; }
-  .card-footer a { color: var(--accent); text-decoration: none; font-size: 14px; }
-  footer { padding-top: 24px; padding-bottom: 48px; color: var(--muted); font-size: 13px; }
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card-footer {
+    padding: 14px 24px 18px;
+    border-top: 1px solid var(--border);
+    background: var(--footer-bg);
+  }
+  .card-footer a {
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 200ms ease;
+  }
+  .card-footer a:hover {
+    transform: translateX(4px);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-start);
+  }
+
+  footer { padding-top: 32px; padding-bottom: 56px; color: var(--text-muted); font-size: 13px; text-align: center; }
 
   @media (max-width: 680px) {
     .masthead-inner { align-items: center; }
     .edition-strip { padding-right: 12px; padding-left: 12px; }
     .edition-strip-text { padding-right: 0; }
     .edition-return-link { position: static; transform: none; margin-top: 8px; font-size: 11px; }
-    .card-controls { margin-left: 0; }
-    .card-body { grid-template-columns: 1fr; }
-    .lang-col.de { border-right: none; border-bottom: 1px solid #f0ece4; }
+    .edition-return-link:hover { transform: translateX(-2px); }
+    .card-header { padding: 16px 18px 14px; }
+    .card-tabs { margin-left: 0; margin-top: 4px; }
+    .lang-panel { padding: 18px 18px 20px; }
+    .card-footer { padding: 12px 18px 16px; }
     .edition-strip .edition-sep { margin: 0 5px; }
     .intro-inner { padding-left: 14px; }
     .intro p { line-height: 1.84; }
   }
 </style>
 </head>
-<body data-publish-date="${escapeHtml(publishDate)}" data-issue-number="${escapeHtml(issueNumber)}" data-edition-name="${escapeHtml(editionName)}" data-view-label-rewrite="${escapeHtml(labels.rewrite)}" data-view-label-original="${escapeHtml(labels.original)}" data-author-identities-path="${escapeHtml(AUTHOR_IDENTITIES_PATH)}" data-avatar-manifest-path="${escapeHtml(AVATAR_MANIFEST_PATH)}">
+<body data-publish-date="${escapeHtml(publishDate)}" data-issue-number="${escapeHtml(issueNumber)}" data-edition-name="${escapeHtml(editionName)}">
   <header class="masthead">
     <hr class="masthead-rule">
     <div class="masthead-inner">
       <div class="masthead-title">${escapeHtml(title)}</div>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <span class="theme-icon-light">☀</span>
+        <span class="theme-icon-dark">☽</span>
+      </button>
     </div>
     <div class="masthead-subtitle">${escapeHtml(subtitle)}</div>
     <div class="edition-strip">
@@ -424,8 +667,13 @@ ${sectionsHtml}
   <footer data-source-note="${escapeHtml(sourceNote)}">${escapeHtml(sourceNote)}</footer>
 
   <script>
+    window.AI_BUILDERS_TEMPLATE_SOURCES = {
+      identities: ${JSON.stringify(authorIdentities)},
+      avatars: ${JSON.stringify(avatarManifest)}
+    };
+
     function getTemplateAuthorSources() {
-      const sources = window.AI_BUILDERS_TEMPLATE_SOURCES || {};
+      var sources = window.AI_BUILDERS_TEMPLATE_SOURCES || {};
       return { identities: sources.identities || {}, avatars: sources.avatars || {} };
     }
 
@@ -434,44 +682,36 @@ ${sectionsHtml}
     }
 
     function hydrateTemplateCopy() {
-      const intro = document.querySelector('.intro');
+      var intro = document.querySelector('.intro');
       if (intro) {
-        const kicker = intro.querySelector('.intro-kicker');
-        const copy = intro.querySelector('.intro-copy');
+        var kicker = intro.querySelector('.intro-kicker');
+        var copy = intro.querySelector('.intro-copy');
         if (kicker) kicker.textContent = intro.dataset.kicker || '';
         if (copy) copy.textContent = intro.dataset.text || '';
       }
-
-      const footer = document.querySelector('footer');
+      var footer = document.querySelector('footer');
       if (footer) footer.textContent = footer.dataset.sourceNote || '';
-
-      const rewriteLabel = document.body.dataset.viewLabelRewrite || 'Kurz';
-      const originalLabel = document.body.dataset.viewLabelOriginal || 'Original';
-      document.querySelectorAll('.view-toggle').forEach(function(button) {
-        if (button.dataset.viewTarget === 'rewrite') button.textContent = rewriteLabel;
-        if (button.dataset.viewTarget === 'original') button.textContent = originalLabel;
-      });
     }
 
     function hydrateAuthorMeta() {
-      const sources = getTemplateAuthorSources();
+      var sources = getTemplateAuthorSources();
       document.querySelectorAll('.card').forEach(function(card) {
-        const authorKey = card.dataset.authorKey || '';
-        const identity = sources.identities[authorKey] || {};
-        const avatarEntry = sources.avatars[authorKey] || {};
+        var authorKey = card.dataset.authorKey || '';
+        var identity = sources.identities[authorKey] || {};
+        var avatarEntry = sources.avatars[authorKey] || {};
 
-        const name = identity.name || card.dataset.authorName || '';
-        const rawHandle = identity.handle || card.dataset.authorHandle || '';
-        const handle = rawHandle && rawHandle.startsWith('@') ? rawHandle : (rawHandle ? '@' + rawHandle : '');
-        const tag = identity.label || card.dataset.authorTag || '';
-        const avatar = avatarEntry.fileUrl || avatarEntry.localPath || card.dataset.authorAvatar || '';
+        var name = identity.name || card.dataset.authorName || '';
+        var rawHandle = identity.handle || card.dataset.authorHandle || '';
+        var handle = rawHandle && rawHandle.indexOf('@') === 0 ? rawHandle : (rawHandle ? '@' + rawHandle : '');
+        var tag = identity.label || card.dataset.authorTag || '';
+        var avatar = avatarEntry.fileUrl || avatarEntry.localPath || card.dataset.authorAvatar || '';
 
-        const nameNode = card.querySelector('.author-name');
-        const tagNode = card.querySelector('.author-tag');
-        const handleNode = card.querySelector('.author-handle');
-        const avatarNode = card.querySelector('.avatar');
-        const avatarImg = card.querySelector('.avatar img');
-        const avatarFallback = card.querySelector('.avatar-fallback');
+        var nameNode = card.querySelector('.author-name');
+        var tagNode = card.querySelector('.author-tag');
+        var handleNode = card.querySelector('.author-handle');
+        var avatarNode = card.querySelector('.avatar');
+        var avatarImg = card.querySelector('.avatar img');
+        var avatarFallback = card.querySelector('.avatar-fallback');
 
         if (nameNode) nameNode.textContent = name;
         if (tagNode) tagNode.textContent = tag;
@@ -486,109 +726,63 @@ ${sectionsHtml}
     }
 
     function updateEditionStrip() {
-      const publishDate = document.body.dataset.publishDate;
-      const editionName = document.body.dataset.editionName || 'DE+EN Ausgabe';
-      const editionStrip = document.getElementById('edition-strip-text');
+      var publishDate = document.body.dataset.publishDate;
+      var editionName = document.body.dataset.editionName || 'DE+EN Ausgabe';
+      var editionStrip = document.getElementById('edition-strip-text');
       if (!publishDate || !editionStrip) return;
 
-      const issueNumber = document.body.dataset.issueNumber || '';
+      var issueNumber = document.body.dataset.issueNumber || '';
       if (!issueNumber) return;
 
-      const selectedCount = document.querySelectorAll('.card').length;
-      const authorCount = new Set([].slice.call(document.querySelectorAll('.author-handle')).map(function(node) { return node.textContent.trim(); }).filter(Boolean)).size;
-      const themeCount = document.querySelectorAll('.section-header').length;
-      const parts = ['Nr. ' + issueNumber, publishDate, editionName, selectedCount + ' Beiträge', authorCount + ' Autoren', themeCount + ' Themen'];
+      var selectedCount = document.querySelectorAll('.card').length;
+      var authorCount = new Set([].slice.call(document.querySelectorAll('.author-handle')).map(function(node) { return node.textContent.trim(); }).filter(Boolean)).size;
+      var themeCount = document.querySelectorAll('.section-header').length;
+      var parts = ['Nr. ' + issueNumber, publishDate, editionName, selectedCount + ' Beitr\\u00e4ge', authorCount + ' Autoren', themeCount + ' Themen'];
       editionStrip.innerHTML = parts.map(function(part) { return '<span class="edition-item">' + part + '</span>'; }).join('<span class="edition-sep">|</span>');
     }
 
-    function measureVariantHeight(variant) {
-      const prevPosition = variant.style.position;
-      const prevInset = variant.style.inset;
-      const prevVisibility = variant.style.visibility;
-      const prevPointerEvents = variant.style.pointerEvents;
-      const prevOpacity = variant.style.opacity;
-      const prevTransform = variant.style.transform;
-      const prevTransition = variant.style.transition;
-      const prevOverflowY = variant.style.overflowY;
-      const prevDisplay = variant.style.display;
-
-      variant.style.position = 'relative';
-      variant.style.inset = 'auto';
-      variant.style.visibility = 'hidden';
-      variant.style.pointerEvents = 'none';
-      variant.style.opacity = '1';
-      variant.style.transform = 'none';
-      variant.style.transition = 'none';
-      variant.style.overflowY = 'visible';
-      variant.style.display = 'block';
-
-      const height = variant.scrollHeight;
-
-      variant.style.position = prevPosition;
-      variant.style.inset = prevInset;
-      variant.style.visibility = prevVisibility;
-      variant.style.pointerEvents = prevPointerEvents;
-      variant.style.opacity = prevOpacity;
-      variant.style.transform = prevTransform;
-      variant.style.transition = prevTransition;
-      variant.style.overflowY = prevOverflowY;
-      variant.style.display = prevDisplay;
-
-      return Math.ceil(height);
-    }
-
-    function getTargetHeight(shell, target) {
-      const variant = shell.querySelector('.content-variant[data-view="' + target + '"]');
-      return measureVariantHeight(variant);
-    }
-
-    function syncShellHeights() {
-      document.querySelectorAll('.content-shell').forEach(function(shell) {
-        const active = shell.querySelector('.content-variant.is-active');
-        const target = active ? active.dataset.view : 'rewrite';
-        shell.style.height = getTargetHeight(shell, target) + 'px';
-      });
-    }
-
-    let resizeTimer = null;
-    window.addEventListener('resize', function() {
-      window.clearTimeout(resizeTimer);
-      resizeTimer = window.setTimeout(syncShellHeights, 120);
-    });
-
     document.querySelectorAll('.card').forEach(function(card) {
-      const buttons = card.querySelectorAll('.view-toggle');
-      const shells = card.querySelectorAll('.content-shell');
+      var tabs = card.querySelectorAll('.lang-tab');
+      var panels = card.querySelectorAll('.lang-panel');
 
-      buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          const target = button.dataset.viewTarget;
-          if (button.classList.contains('is-active')) return;
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var lang = tab.dataset.lang;
+          if (tab.classList.contains('is-active')) return;
 
-          buttons.forEach(function(btn) {
-            btn.classList.toggle('is-active', btn === button);
-          });
-
-          shells.forEach(function(shell) {
-            const current = shell.querySelector('.content-variant.is-active');
-            const next = shell.querySelector('.content-variant[data-view="' + target + '"]');
-            if (!current || !next || current === next) return;
-
-            shell.style.height = shell.offsetHeight + 'px';
-            requestAnimationFrame(function() {
-              current.classList.remove('is-active');
-              next.classList.add('is-active');
-              shell.style.height = getTargetHeight(shell, target) + 'px';
-            });
-          });
+          tabs.forEach(function(t) { t.classList.toggle('is-active', t === tab); });
+          panels.forEach(function(p) { p.classList.toggle('is-active', p.dataset.lang === lang); });
         });
       });
     });
 
+    (function initTheme() {
+      var html = document.documentElement;
+      var toggle = document.querySelector('.theme-toggle');
+      var saved = localStorage.getItem('ai-builders-digest-theme');
+
+      function detectSystem() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function applyTheme(theme) {
+        html.setAttribute('data-theme', theme);
+        localStorage.setItem('ai-builders-digest-theme', theme);
+      }
+
+      html.setAttribute('data-theme', saved || detectSystem());
+
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var current = html.getAttribute('data-theme');
+          applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+    })();
+
     hydrateTemplateCopy();
     hydrateAuthorMeta();
     updateEditionStrip();
-    syncShellHeights();
   </script>
 </body>
 </html>`;

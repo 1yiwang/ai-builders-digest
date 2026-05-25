@@ -23,6 +23,7 @@
       "cards": [
         {
           "authorKey": "x:petergyang",
+          "priority": 1,
           "sourceUrl": "https://x.com/petergyang/status/2058609058714968194",
           "en": {
             "rewrite": [
@@ -47,6 +48,7 @@
         },
         {
           "authorKey": "x:nikunj",
+          "priority": 2,
           "sourceUrl": "https://x.com/nikunj/status/2058783316753686558",
           "en": {
             "rewrite": [
@@ -77,6 +79,7 @@
       "cards": [
         {
           "authorKey": "x:levie",
+          "priority": 1,
           "sourceUrl": "https://x.com/levie/status/2058582370253701432",
           "en": {
             "rewrite": [
@@ -99,6 +102,7 @@
         },
         {
           "authorKey": "x:realmadhuguru",
+          "priority": 2,
           "sourceUrl": "https://x.com/realmadhuguru/status/2058591611245011157",
           "en": {
             "rewrite": [
@@ -127,6 +131,7 @@
       "cards": [
         {
           "authorKey": "x:trq212",
+          "priority": 1,
           "sourceUrl": "https://x.com/trq212/status/2058576195000660319",
           "en": {
             "rewrite": [
@@ -153,6 +158,7 @@
         },
         {
           "authorKey": "x:zarazhangrui",
+          "priority": 2,
           "sourceUrl": "https://x.com/zarazhangrui/status/2058604604422815832",
           "en": {
             "rewrite": [
@@ -183,6 +189,7 @@
       "cards": [
         {
           "authorKey": "x:mattturck",
+          "priority": 1,
           "sourceUrl": "https://x.com/mattturck/status/2058659995311358332",
           "en": {
             "rewrite": [
@@ -205,6 +212,7 @@
         },
         {
           "authorKey": "x:rauchg",
+          "priority": 3,
           "sourceUrl": "https://x.com/rauchg/status/2058750970998505505",
           "en": {
             "rewrite": [
