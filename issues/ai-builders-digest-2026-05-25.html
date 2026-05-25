@@ -352,6 +352,32 @@
     display: inline-block;
     transition: transform 200ms ease;
   }
+  .card.is-low-priority { display: none; }
+  .card.is-low-priority.is-visible { display: block; }
+
+  .section-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px dashed var(--border);
+    border-radius: var(--card-radius);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+  }
+  .section-toggle:hover {
+    border-color: var(--accent-start);
+    color: var(--accent-start);
+    background: var(--tag-bg);
+  }
+  .section-toggle .section-toggle-hide { display: none; }
+  .section-toggle.is-expanded .section-toggle-show { display: none; }
+  .section-toggle.is-expanded .section-toggle-hide { display: inline; }
+
   .card-footer a:hover {
     transform: translateX(4px);
     text-decoration: underline;
@@ -406,7 +432,7 @@
     <p class="section-desc">KI-Werkzeuge verschieben die Grenze dessen, was eine einzelne Person bauen kann.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:petergyang" data-author-name="Peter Yang" data-author-tag="Founder &amp; Investor" data-author-handle="@petergyang" data-author-avatar="">
+    <article class="card" data-author-key="x:petergyang" data-author-name="Peter Yang" data-author-tag="Founder &amp; Investor" data-author-handle="@petergyang" data-author-avatar="" data-priority="1">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Peter Yang avatar"><span class="avatar-fallback">PY</span></div>
         <div class="author-info">
@@ -434,7 +460,7 @@
       <div class="card-footer"><a href="https://x.com/petergyang/status/2058609058714968194" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:nikunj" data-author-name="Nikunj Kothari" data-author-tag="FPV Ventures" data-author-handle="@nikunj" data-author-avatar="">
+    <article class="card" data-author-key="x:nikunj" data-author-name="Nikunj Kothari" data-author-tag="FPV Ventures" data-author-handle="@nikunj" data-author-avatar="" data-priority="2">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Nikunj Kothari avatar"><span class="avatar-fallback">NK</span></div>
         <div class="author-info">
@@ -469,7 +495,7 @@
     <p class="section-desc">Führungskräfte spüren den KI-Druck, aber viele haben den praktischen Zugang verloren.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:levie" data-author-name="Aaron Levie" data-author-tag="Box CEO" data-author-handle="@levie" data-author-avatar="">
+    <article class="card" data-author-key="x:levie" data-author-name="Aaron Levie" data-author-tag="Box CEO" data-author-handle="@levie" data-author-avatar="" data-priority="1">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Aaron Levie avatar"><span class="avatar-fallback">AL</span></div>
         <div class="author-info">
@@ -497,7 +523,7 @@
       <div class="card-footer"><a href="https://x.com/levie/status/2058582370253701432" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:realmadhuguru" data-author-name="Madhu Guru" data-author-tag="Google" data-author-handle="@realmadhuguru" data-author-avatar="">
+    <article class="card" data-author-key="x:realmadhuguru" data-author-name="Madhu Guru" data-author-tag="Google" data-author-handle="@realmadhuguru" data-author-avatar="" data-priority="2">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Madhu Guru avatar"><span class="avatar-fallback">MG</span></div>
         <div class="author-info">
@@ -532,7 +558,7 @@
     <p class="section-desc">Alte Codebasen werden zur wertvollen Ressource — nicht trotz, sondern wegen ihres Alters.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:trq212" data-author-name="Thariq" data-author-tag="Claude Code" data-author-handle="@trq212" data-author-avatar="">
+    <article class="card" data-author-key="x:trq212" data-author-name="Thariq" data-author-tag="Claude Code" data-author-handle="@trq212" data-author-avatar="" data-priority="1">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Thariq avatar"><span class="avatar-fallback">T</span></div>
         <div class="author-info">
@@ -562,7 +588,7 @@
       <div class="card-footer"><a href="https://x.com/trq212/status/2058576195000660319" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:zarazhangrui" data-author-name="Zara Zhang" data-author-tag="Follow Builders" data-author-handle="@zarazhangrui" data-author-avatar="">
+    <article class="card" data-author-key="x:zarazhangrui" data-author-name="Zara Zhang" data-author-tag="Follow Builders" data-author-handle="@zarazhangrui" data-author-avatar="" data-priority="2">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Zara Zhang avatar"><span class="avatar-fallback">ZZ</span></div>
         <div class="author-info">
@@ -597,7 +623,7 @@
     <p class="section-desc">Die Expertenmeinungen gehen auseinander — aber die Frage selbst ist bemerkenswert.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:mattturck" data-author-name="Matt Turck" data-author-tag="FirstMark" data-author-handle="@mattturck" data-author-avatar="">
+    <article class="card" data-author-key="x:mattturck" data-author-name="Matt Turck" data-author-tag="FirstMark" data-author-handle="@mattturck" data-author-avatar="" data-priority="1">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Matt Turck avatar"><span class="avatar-fallback">MT</span></div>
         <div class="author-info">
@@ -623,9 +649,7 @@
         </div>
       </div>
       <div class="card-footer"><a href="https://x.com/mattturck/status/2058659995311358332" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
-    </article>
-
-    <article class="card" data-author-key="x:rauchg" data-author-name="Guillermo Rauch" data-author-tag="Vercel CEO" data-author-handle="@rauchg" data-author-avatar="">
+    </article>    <article class="card is-low-priority" data-author-key="x:rauchg" data-author-name="Guillermo Rauch" data-author-tag="Vercel CEO" data-author-handle="@rauchg" data-author-avatar="" data-priority="3">
       <div class="card-header">
         <div class="avatar is-fallback"><img src="" alt="Guillermo Rauch avatar"><span class="avatar-fallback">GR</span></div>
         <div class="author-info">
@@ -652,6 +676,7 @@
       </div>
       <div class="card-footer"><a href="https://x.com/rauchg/status/2058750970998505505" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
+    <button class="section-toggle" type="button" data-section="Theme 04"><span class="section-toggle-show">+ 1 weitere Beiträge anzeigen</span><span class="section-toggle-hide">– Weniger anzeigen</span></button>
   </section>
 
   <footer data-source-note="Source: Follow Builders curated daily digest. Generated on 2026-05-25.">Source: Follow Builders curated daily digest. Generated on 2026-05-25.</footer>
@@ -769,6 +794,15 @@
         });
       }
     })();
+
+    document.querySelectorAll('.section-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var feed = toggle.parentElement;
+        var cards = feed.querySelectorAll('.card.is-low-priority');
+        var expanded = toggle.classList.toggle('is-expanded');
+        cards.forEach(function(card) { card.classList.toggle('is-visible', expanded); });
+      });
+    });
 
     hydrateTemplateCopy();
     hydrateAuthorMeta();

@@ -175,11 +175,12 @@ function copyUsedAvatars(outputPath, data, authorIdentities, avatarManifest) {
   });
 }
 
-function renderCard(card, authorIdentities, avatarManifest, labels, outputPath) {
+function renderCard(card, authorIdentities, avatarManifest, labels, outputPath, isHidden) {
   const author = resolveAuthorMeta(card, authorIdentities, avatarManifest, outputPath);
   const sourceLabel = card.sourceLabel || 'Quelle / Source →';
+  const hiddenClass = isHidden ? ' is-low-priority' : '';
 
-  return `    <article class="card" data-author-key="${escapeHtml(author.key)}" data-author-name="${escapeHtml(author.name)}" data-author-tag="${escapeHtml(author.tag)}" data-author-handle="${escapeHtml(author.handle)}" data-author-avatar="${escapeHtml(author.avatarUrl)}">
+  return `    <article class="card${hiddenClass}" data-author-key="${escapeHtml(author.key)}" data-author-name="${escapeHtml(author.name)}" data-author-tag="${escapeHtml(author.tag)}" data-author-handle="${escapeHtml(author.handle)}" data-author-avatar="${escapeHtml(author.avatarUrl)}" data-priority="${card.priority || ''}">
       <div class="card-header">
         <div class="avatar${author.avatarUrl ? '' : ' is-fallback'}"><img src="${escapeHtml(author.avatarUrl)}" alt="${escapeHtml(author.name ? `${author.name} avatar` : 'Author avatar')}"><span class="avatar-fallback">${escapeHtml(author.initials)}</span></div>
         <div class="author-info">
@@ -216,9 +217,19 @@ function indent(value, spaces) {
 
 function renderSection(section, index, authorIdentities, avatarManifest, labels, outputPath) {
   const sortedCards = (section.cards || []).slice().sort((a, b) => (a.priority || 99) - (b.priority || 99));
-  const cards = sortedCards
+  const visibleCards = sortedCards.filter((c) => (c.priority || 99) <= 2);
+  const hiddenCards = sortedCards.filter((c) => (c.priority || 99) > 2);
+
+  const visibleHtml = visibleCards
     .map((card) => renderCard(card, authorIdentities, avatarManifest, labels, outputPath))
     .join('\n\n');
+  const hiddenHtml = hiddenCards
+    .map((card) => renderCard(card, authorIdentities, avatarManifest, labels, outputPath, true))
+    .join('\n\n');
+
+  const toggleHtml = hiddenCards.length > 0
+    ? `\n    <button class="section-toggle" type="button" data-section="${escapeHtml(formatThemeLabel(index))}"><span class="section-toggle-show">+ ${hiddenCards.length} weitere Beiträge anzeigen</span><span class="section-toggle-hide">– Weniger anzeigen</span></button>`
+    : '';
 
   return `  <section class="section-header">
     <div class="section-label">${escapeHtml(section.label || formatThemeLabel(index))}</div>
@@ -226,7 +237,7 @@ function renderSection(section, index, authorIdentities, avatarManifest, labels,
     <p class="section-desc">${escapeHtml(section.desc || '')}</p>
   </section>
   <section class="feed">
-${cards}
+${visibleHtml}${hiddenHtml}${toggleHtml}
   </section>`;
 }
 
@@ -614,6 +625,32 @@ function renderPage(data, authorIdentities, avatarManifest, outputPath) {
     display: inline-block;
     transition: transform 200ms ease;
   }
+  .card.is-low-priority { display: none; }
+  .card.is-low-priority.is-visible { display: block; }
+
+  .section-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px dashed var(--border);
+    border-radius: var(--card-radius);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+  }
+  .section-toggle:hover {
+    border-color: var(--accent-start);
+    color: var(--accent-start);
+    background: var(--tag-bg);
+  }
+  .section-toggle .section-toggle-hide { display: none; }
+  .section-toggle.is-expanded .section-toggle-show { display: none; }
+  .section-toggle.is-expanded .section-toggle-hide { display: inline; }
+
   .card-footer a:hover {
     transform: translateX(4px);
     text-decoration: underline;
@@ -779,6 +816,15 @@ ${sectionsHtml}
         });
       }
     })();
+
+    document.querySelectorAll('.section-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var feed = toggle.parentElement;
+        var cards = feed.querySelectorAll('.card.is-low-priority');
+        var expanded = toggle.classList.toggle('is-expanded');
+        cards.forEach(function(card) { card.classList.toggle('is-visible', expanded); });
+      });
+    });
 
     hydrateTemplateCopy();
     hydrateAuthorMeta();
