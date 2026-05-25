@@ -1,0 +1,231 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition · Zweisprachige Ausgabe",
+  "publishDate": "2026-05-25",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Heute kristallisiert sich ein klares Muster heraus: Die Werkzeuge werden so mächtig, dass Einzelpersonen Dinge bauen können, für die früher ganze Teams nötig waren. Gleichzeitig kämpfen viele Führungskräfte damit, den Anschluss nicht zu verlieren. Die Kluft zwischen denen, die KI wirklich verstehen und nutzen, und denen, die nur darüber reden, wird jeden Tag größer."
+  },
+  "archive": {
+    "title": "Solo-Builder Revolution",
+    "desc": "KI macht Solo-Gründer und kleine Teams so schlagkräftig wie ganze Abteilungen — während viele CEOs den Anschluss verlieren."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-05-25.",
+  "sections": [
+    {
+      "title": "Solo Builders & The New Startup Playbook / Solo-Gründer & das neue Startup-Playbook",
+      "desc": "KI-Werkzeuge verschieben die Grenze dessen, was eine einzelne Person bauen kann.",
+      "cards": [
+        {
+          "authorKey": "x:petergyang",
+          "sourceUrl": "https://x.com/petergyang/status/2058609058714968194",
+          "en": {
+            "rewrite": [
+              "Peter Yang raised a $2M seed round but plans to stay solo for now, arguing founders should deeply understand every job before hiring.",
+              "His podcast guest Ryan Carson flips the old advice: 'We used to say build the MVP. Now you should build the system that builds the MVP first.'"
+            ],
+            "original": [
+              "I've raised a $2M seed round, but I'm not going to hire anybody for a while. As a startup founder, you want to understand every job and do it and feel the pain before you hire for it.",
+              "We used to say build the MVP. Now you should build the system that builds the MVP first."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Peter Yang hat $2M Seed eingesammelt, bleibt aber vorerst allein — Gründer sollten jeden Job selbst verstehen, bevor sie dafür einstellen.",
+              "Sein Podcast-Gast Ryan Carson dreht die alte Weisheit um: 'Früher hieß es: Bau das MVP. Jetzt heißt es: Bau das System, das das MVP baut.'"
+            ],
+            "original": [
+              "Ich habe eine $2M Seed-Runde aufgenommen, werde aber vorerst niemanden einstellen. Als Gründer willst du jeden Job selbst verstehen, ihn machen und den Schmerz spüren, bevor du jemanden dafür einstellst.",
+              "Früher hieß es: Bau das MVP. Jetzt solltest du das System bauen, das das MVP zuerst baut."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:nikunj",
+          "sourceUrl": "https://x.com/nikunj/status/2058783316753686558",
+          "en": {
+            "rewrite": [
+              "FPV Ventures partner Nikunj Kothari built a travel CLI product in a weekend using Claude Code to reverse-engineer APIs from network requests.",
+              "He notes that 'SO many websites are just API calls' — reverse-engineering them via Claude Code is one of the most fun and productive automation tactics right now."
+            ],
+            "original": [
+              "Reverse engineering APIs through network requests is one of the most fun things you can do with Claude Code to automate tasks. SO many websites are just API calls.",
+              "Spent this weekend building a pretty rad travel CLI product that I'd love to test in public."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "FPV Ventures Partner Nikunj Kothari baute an einem Wochenende ein Reise-CLI-Tool, indem er Claude Code APIs aus Network-Requests reverse-engineeren ließ.",
+              "Seine Beobachtung: 'SO viele Websites sind einfach nur API-Calls' — Reverse Engineering via Claude Code ist eine der produktivsten Automatisierungstaktiken."
+            ],
+            "original": [
+              "APIs durch Network-Requests reverse-engineeren ist eines der unterhaltsamsten Dinge, die man mit Claude Code machen kann, um Aufgaben zu automatisieren. SO viele Websites sind einfach nur API-Aufrufe.",
+              "Habe dieses Wochenende ein ziemlich cooles Reise-CLI-Produkt gebaut, das ich gerne öffentlich testen würde."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The CEO AI Gap / Die KI-Kluft im C-Level",
+      "desc": "Führungskräfte spüren den KI-Druck, aber viele haben den praktischen Zugang verloren.",
+      "cards": [
+        {
+          "authorKey": "x:levie",
+          "sourceUrl": "https://x.com/levie/status/2058582370253701432",
+          "en": {
+            "rewrite": [
+              "Box CEO Aaron Levie warns that CEOs are 'uniquely prone to AI psychosis' because they're distant from the last mile of work that actually generates value.",
+              "The danger: executives see AI demos and make sweeping strategic decisions without understanding the messy reality of implementation."
+            ],
+            "original": [
+              "CEOs are uniquely prone to AI psychosis because they're sufficiently distant from the last mile of work that still has to happen to generate most value."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Box CEO Aaron Levie warnt: CEOs sind 'besonders anfällig für KI-Psychose', weil sie weit entfernt sind von der letzten Meile der Arbeit, die tatsächlich Wert schafft.",
+              "Die Gefahr: Führungskräfte sehen KI-Demos und treffen strategische Entscheidungen, ohne die komplexe Realität der Umsetzung zu verstehen."
+            ],
+            "original": [
+              "CEOs sind besonders anfällig für KI-Psychose, weil sie ausreichend weit entfernt sind von der letzten Meile der Arbeit, die noch geleistet werden muss, um den meisten Wert zu generieren."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:realmadhuguru",
+          "sourceUrl": "https://x.com/realmadhuguru/status/2058591611245011157",
+          "en": {
+            "rewrite": [
+              "Google product leader Madhu Guru observes that many CEOs and their lieutenants have 'gotten used to arms-length leadership and lack the muscle to get hands-on with AI.'",
+              "This creates a vacuum that consultants and vendors are happy to fill — often with disappointing results."
+            ],
+            "original": [
+              "CEOs feel AI FOMO, but many of them and their lieutenants have gotten used to arms-length leadership and lack the muscle to get hands-on with AI. So they're creating a vacuum for consultants and vendors."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google-Produktleiter Madhu Guru stellt fest: Viele CEOs und ihre Stellvertreter haben sich an 'Führung auf Distanz gewöhnt und haben nicht mehr die Muskulatur, um selbst mit KI zu arbeiten.'",
+              "Das erzeugt ein Vakuum, das Berater und Anbieter nur allzu gerne füllen — oft mit enttäuschenden Ergebnissen."
+            ],
+            "original": [
+              "CEOs haben KI-FOMO, aber viele von ihnen und ihre Stellvertreter haben sich an Führung auf Distanz gewöhnt und haben nicht mehr die praktische Fähigkeit, selbst mit KI zu arbeiten. Also schaffen sie ein Vakuum für Berater und Anbieter."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Code as Raw Material / Code als Rohmaterial",
+      "desc": "Alte Codebasen werden zur wertvollen Ressource — nicht trotz, sondern wegen ihres Alters.",
+      "cards": [
+        {
+          "authorKey": "x:trq212",
+          "sourceUrl": "https://x.com/trq212/status/2058576195000660319",
+          "en": {
+            "rewrite": [
+              "Claude Code PM Thariq's main takeaway from the Bun-to-Zig rewrite: legacy codebases are incredibly valuable as source material for distilling code into new forms.",
+              "Every game company with an aging C++ engine now essentially has the perfect training data for a modern rewrite.",
+              "He cautions that models aren't quite there yet for fully automated rewrites — Bun is 'extremely verifiable and has incredible test coverage' which is key."
+            ],
+            "original": [
+              "My main takeaway from the Bun rewrite is that legacy codebases will be incredibly valuable as a source for 'distilling' code into new forms. Every game company with an aging C++ engine — that is training data for a modern rewrite.",
+              "To be clear I don't think the models are quite there yet, Bun is extremely verifiable and has incredible test coverage. But I think they will get there."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Code PM Thariqs Fazit aus dem Bun-zu-Zig-Rewrite: Legacy-Codebasen sind unglaublich wertvoll als Rohmaterial, um Code in neue Formen zu 'destillieren'.",
+              "Jede Spielefirma mit einer alten C++-Engine hat jetzt quasi perfekte Trainingsdaten für einen modernen Rewrite.",
+              "Er warnt: Die Modelle sind noch nicht ganz so weit — Bun ist 'extrem verifizierbar und hat unglaubliche Testabdeckung', was entscheidend ist."
+            ],
+            "original": [
+              "Meine Haupterkenntnis aus dem Bun-Rewrite ist, dass Legacy-Codebasen unglaublich wertvoll als Quelle sein werden, um Code in neue Formen zu 'destillieren'. Jede Spielefirma mit einer alten C++-Engine — das ist Trainingsmaterial für einen modernen Rewrite.",
+              "Um klar zu sein: Ich glaube nicht, dass die Modelle schon so weit sind. Bun ist extrem verifizierbar und hat unglaubliche Testabdeckung. Aber ich denke, sie werden dort hinkommen."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:zarazhangrui",
+          "sourceUrl": "https://x.com/zarazhangrui/status/2058604604422815832",
+          "en": {
+            "rewrite": [
+              "Zara Zhang notes two shifts: OpenAI is becoming more open (Codex is now open source), and experienced engineering managers are voluntarily moving back to IC roles to work directly with AI tools.",
+              "The EM-to-IC pipeline reversal: an engineering manager friend 'just voluntarily transitioned to be an IC and has never been happier because she can finally get real work done with AI.'"
+            ],
+            "original": [
+              "OpenAI being more open. Also I just realized recently that Codex is open source.",
+              "Ran into a friend who was an engineering manager; she just voluntarily transitioned to be an IC and has never been happier because she can finally get real work done with AI."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Zara Zhang beobachtet zwei Verschiebungen: OpenAI wird offener (Codex ist jetzt Open Source), und erfahrene Engineering Manager wechseln freiwillig zurück in IC-Rollen, um direkt mit KI-Tools zu arbeiten.",
+              "Die EM-zu-IC-Pipeline kehrt sich um: Eine befreundete Managerin 'ist freiwillig zurück zu IC gewechselt und war noch nie glücklicher, weil sie endlich echte Arbeit mit KI erledigen kann.'"
+            ],
+            "original": [
+              "OpenAI wird offener. Und ich habe gerade festgestellt, dass Codex Open Source ist.",
+              "Habe eine Freundin getroffen, die Engineering Manager war; sie ist gerade freiwillig zurück zu IC gewechselt und war noch nie glücklicher, weil sie endlich mit KI echte Arbeit erledigen kann."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Are We at AGI? / Sind wir schon bei AGI?",
+      "desc": "Die Expertenmeinungen gehen auseinander — aber die Frage selbst ist bemerkenswert.",
+      "cards": [
+        {
+          "authorKey": "x:mattturck",
+          "sourceUrl": "https://x.com/mattturck/status/2058659995311358332",
+          "en": {
+            "rewrite": [
+              "FirstMark VC Matt Turck shares a striking expert quote: 'If we froze the models we have right now and really worked on the harness, we'd have something that looks a lot like AGI.'",
+              "The implication: raw model capability might already be sufficient — the bottleneck is now in tooling, infrastructure, and integration."
+            ],
+            "original": [
+              "Is AGI already here? 'I think if we froze the models that we have right now and you really worked on the harness and maybe we also spent more time thinking about the evaluation, we would have something that looks a lot like AGI.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "FirstMark VC Matt Turck zitiert einen Experten: 'Wenn wir die heutigen Modelle einfrieren würden und wirklich am Harness arbeiten würden, hätten wir etwas, das stark nach AGI aussieht.'",
+              "Die Implikation: Die reine Modellfähigkeit könnte bereits ausreichen — der Flaschenhals liegt jetzt bei Tooling, Infrastruktur und Integration."
+            ],
+            "original": [
+              "Ist AGI schon da? 'Ich denke, wenn wir die Modelle, die wir jetzt haben, einfrieren würden und wirklich am Harness arbeiten würden, und vielleicht auch mehr Zeit damit verbringen würden, über die Evaluierung nachzudenken, hätten wir etwas, das stark nach AGI aussieht.'"
+            ]
+          }
+        },
+        {
+          "authorKey": "x:rauchg",
+          "sourceUrl": "https://x.com/rauchg/status/2058750970998505505",
+          "en": {
+            "rewrite": [
+              "Vercel CEO Guillermo Rauch distills brand strategy in the AI era to one line: 'How do you build a great brand? Build a great product.'",
+              "In a market flooded with AI wrappers and slop, genuine product quality is becoming the only sustainable differentiator."
+            ],
+            "original": [
+              "How do you build a great brand? Build a great product."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Vercel CEO Guillermo Rauch destilliert Markenstrategie im KI-Zeitalter auf einen Satz: 'Wie baut man eine großartige Marke? Indem man ein großartiges Produkt baut.'",
+              "In einem Markt voller KI-Wrapper und Slop wird echte Produktqualität zum einzigen nachhaltigen Unterscheidungsmerkmal."
+            ],
+            "original": [
+              "Wie baut man eine großartige Marke? Indem man ein großartiges Produkt baut."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
