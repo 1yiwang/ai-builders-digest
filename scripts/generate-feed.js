@@ -14,6 +14,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // -- Constants ---------------------------------------------------------------
 const REPO_ROOT = path.resolve(__dirname, '..');
@@ -474,89 +475,195 @@ async function fetchBlogContent(sources, state, errors) {
   return results;
 }
 
-// -- X/Twitter: API v2 Fetch --------------------------------------------------
+// -- X/Twitter Fetch (free Nitter RSS → paid API v2 fallback) ---------------
 
-async function fetchXContent(sources, state, errors) {
-  const token = process.env.X_BEARER_TOKEN;
-  if (!token) {
-    console.error('  X: No X_BEARER_TOKEN set — skipping X/Twitter fetch');
-    return [];
+// Try Nitter instances in order. RSS format: https://<instance>/<handle>/rss
+// All instances are free, no API keys required.
+// IMPORTANT: Must use browser-like User-Agent — most instances block curl/axios.
+// nitter.net is the main official instance; others are community-run fallbacks.
+const NITTER_INSTANCES = [
+  'nitter.net',
+  'nitter.1d4.us',
+  'nitter.catsarch.com',
+];
+
+// Simple RSS XML parser for Nitter tweet feeds
+function parseNitterRSS(xml, handle) {
+  const tweets = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/gi;
+  let m;
+  while ((m = itemRegex.exec(xml)) !== null) {
+    const block = m[1];
+
+    // Title = tweet text. May contain newlines, &apos;, Unicode.
+    const titleMatch = block.match(/<title>([\s\S]*?)<\/title>/);
+    // Date in RFC 2822: Thu, 28 May 2026 21:06:33 GMT
+    const dateMatch = block.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
+    // Tweet link: https://nitter.net/user/status/12345#m
+    const linkMatch = block.match(/<link>[^<]*\/status\/(\d+)[^<]*<\/link>/);
+
+    if (titleMatch && titleMatch[1].trim()) {
+      const text = titleMatch[1]
+        .replace(/<[^>]+>/g, '')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'")
+        .replace(/&#39;/g, "'")
+        .replace(/&nbsp;/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      if (!text) continue;
+
+      const tweetId = linkMatch ? linkMatch[1] : '';
+      const pubDate = dateMatch ? new Date(dateMatch[1].trim()).toISOString() : null;
+
+      tweets.push({
+        id: tweetId,
+        text,
+        createdAt: pubDate,
+        metrics: { likes: 0, retweets: 0, replies: 0, views: 0 },
+      });
+    }
+  }
+  return tweets;
+}
+
+// Fetch tweets for one builder via Nitter RSS, trying instances in order.
+// Uses curl via child_process because Node's fetch is TLS-fingerprinted and
+// blocked by most Nitter instances (returns empty body).
+function fetchNitterTweets(handle, instanceIndex, cutoff) {
+  const instance = NITTER_INSTANCES[instanceIndex % NITTER_INSTANCES.length];
+  const rssUrl = `https://${instance}/${handle}/rss`;
+
+  const stdout = execSync(
+    `curl -s -m 15 -H "User-Agent: ${RSS_USER_AGENT}" "${rssUrl}"`,
+    { encoding: 'utf8', maxBuffer: 2 * 1024 * 1024, timeout: 16000 }
+  );
+
+  if (!stdout || stdout.length < 100) {
+    throw new Error(`Empty/invalid response from ${instance}`);
   }
 
+  const allTweets = parseNitterRSS(stdout, handle);
+  // Filter out retweets and replies (Nitter RSS includes them)
+  const rtPrefix = new RegExp(`^RT (by )?@`, 'i');
+  const replyPrefix = new RegExp(`^R to @`, 'i');
+  return allTweets.filter(t => {
+    if (!t.createdAt || new Date(t.createdAt) < cutoff) return false;
+    if (rtPrefix.test(t.text)) return false;
+    if (replyPrefix.test(t.text)) return false;
+    return true;
+  });
+}
+
+// Fetch tweets for one builder via X API v2
+async function fetchAPITweets(token, userId, cutoff) {
+  const tweetsParams = new URLSearchParams({
+    max_results: '10',
+    'tweet.fields': 'created_at,public_metrics',
+    exclude: 'retweets,replies',
+  });
+  const tweetsRes = await fetch(
+    `${X_API_BASE}/users/${userId}/tweets?${tweetsParams}`,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(15000),
+    }
+  );
+
+  if (!tweetsRes.ok) {
+    const errText = await tweetsRes.text().catch(() => '');
+    throw new Error(`HTTP ${tweetsRes.status}${errText ? ' — ' + errText.slice(0, 200) : ''}`);
+  }
+
+  const tweetsData = await tweetsRes.json();
+  return (tweetsData.data || [])
+    .filter(t => new Date(t.created_at) >= cutoff)
+    .map(t => ({
+      id: t.id,
+      text: t.text,
+      createdAt: t.created_at,
+      metrics: {
+        likes: t.public_metrics?.like_count || 0,
+        retweets: t.public_metrics?.retweet_count || 0,
+        replies: t.public_metrics?.reply_count || 0,
+        views: t.public_metrics?.impression_count || 0,
+      },
+    }));
+}
+
+async function fetchXContent(sources, state, errors) {
   if (!sources.x || sources.x.length === 0) {
     console.error('  X: No builders in sources.json — skipping');
     return [];
   }
 
+  const token = process.env.X_BEARER_TOKEN;
   const cutoff = new Date(Date.now() - X_LOOKBACK_HOURS * 60 * 60 * 1000);
   const results = [];
 
-  // Cache user IDs in state to avoid repeated lookups
   if (!state.xUserIds) state.xUserIds = {};
 
-  for (const builder of sources.x) {
+  const mode = token ? 'X API v2' : 'Nitter RSS (free)';
+  console.error(`  Mode: ${mode}`);
+
+  for (let i = 0; i < sources.x.length; i++) {
+    const builder = sources.x[i];
     console.error(`  X: @${builder.handle}...`);
 
     try {
-      // 1. Resolve user ID (cached or API lookup)
-      let userId = state.xUserIds[builder.handle];
-      if (!userId) {
-        const userRes = await fetch(
-          `${X_API_BASE}/users/by/username/${builder.handle}`,
-          {
-            headers: { Authorization: `Bearer ${token}` },
-            signal: AbortSignal.timeout(15000),
-          }
-        );
-        if (!userRes.ok) {
-          const errText = await userRes.text().catch(() => '');
-          errors.push(`X user lookup @${builder.handle}: HTTP ${userRes.status}${errText ? ' — ' + errText.slice(0, 200) : ''}`);
-          continue;
-        }
-        const userData = await userRes.json();
-        userId = userData.data?.id;
+      let tweets;
+
+      if (token) {
+        // ── Paid path: X API v2 ──────────────────────────────────
+        let userId = state.xUserIds[builder.handle];
         if (!userId) {
-          errors.push(`X user lookup @${builder.handle}: no user ID in response`);
+          const userRes = await fetch(
+            `${X_API_BASE}/users/by/username/${builder.handle}`,
+            {
+              headers: { Authorization: `Bearer ${token}` },
+              signal: AbortSignal.timeout(15000),
+            }
+          );
+          if (!userRes.ok) {
+            const errText = await userRes.text().catch(() => '');
+            errors.push(`X user lookup @${builder.handle}: HTTP ${userRes.status}${errText ? ' — ' + errText.slice(0, 150) : ''}`);
+            continue;
+          }
+          const userData = await userRes.json();
+          userId = userData.data?.id;
+          if (!userId) {
+            errors.push(`X user lookup @${builder.handle}: no user ID in response`);
+            continue;
+          }
+          state.xUserIds[builder.handle] = userId;
+          console.error(`    user ID cached: ${userId}`);
+        }
+        tweets = await fetchAPITweets(token, userId, cutoff);
+
+      } else {
+        // ── Free path: Nitter RSS ────────────────────────────────
+        tweets = null;
+        let lastErr = '';
+        // Try each instance until one works
+        for (let inst = 0; inst < NITTER_INSTANCES.length; inst++) {
+          try {
+            tweets = fetchNitterTweets(builder.handle, i + inst, cutoff);
+            if (tweets !== null) break;
+          } catch (err) {
+            lastErr = err.message;
+            // Fast fail on 404 (user not found on that instance)
+            // Continue trying other instances on 5xx/timeout
+          }
+        }
+        if (tweets === null) {
+          errors.push(`X @${builder.handle}: all Nitter instances failed (last: ${lastErr})`);
           continue;
         }
-        state.xUserIds[builder.handle] = userId;
-        console.error(`    user ID cached: ${userId}`);
       }
-
-      // 2. Fetch recent tweets (exclude retweets & replies)
-      const tweetsParams = new URLSearchParams({
-        max_results: '10',
-        'tweet.fields': 'created_at,public_metrics',
-        exclude: 'retweets,replies',
-      });
-      const tweetsRes = await fetch(
-        `${X_API_BASE}/users/${userId}/tweets?${tweetsParams}`,
-        {
-          headers: { Authorization: `Bearer ${token}` },
-          signal: AbortSignal.timeout(15000),
-        }
-      );
-
-      if (!tweetsRes.ok) {
-        const errText = await tweetsRes.text().catch(() => '');
-        errors.push(`X tweets @${builder.handle}: HTTP ${tweetsRes.status}${errText ? ' — ' + errText.slice(0, 200) : ''}`);
-        continue;
-      }
-
-      const tweetsData = await tweetsRes.json();
-      const tweets = (tweetsData.data || [])
-        .filter(t => new Date(t.created_at) >= cutoff)
-        .map(t => ({
-          id: t.id,
-          text: t.text,
-          createdAt: t.created_at,
-          metrics: {
-            likes: t.public_metrics?.like_count || 0,
-            retweets: t.public_metrics?.retweet_count || 0,
-            replies: t.public_metrics?.reply_count || 0,
-            views: t.public_metrics?.impression_count || 0,
-          },
-        }));
 
       if (tweets.length > 0) {
         console.error(`    ${tweets.length} recent tweets`);
@@ -572,9 +679,9 @@ async function fetchXContent(sources, state, errors) {
       errors.push(`X @${builder.handle}: ${err.message}`);
     }
 
-    // Respect rate limits: small delay between users
-    if (sources.x.indexOf(builder) < sources.x.length - 1) {
-      await new Promise(r => setTimeout(r, 300));
+    // Polite delay between builders
+    if (i < sources.x.length - 1) {
+      await new Promise(r => setTimeout(r, token ? 300 : 500));
     }
   }
 
@@ -653,9 +760,10 @@ async function main() {
       xBuilders: xResults.length,
       totalTweets: xResults.reduce((sum, a) => sum + (a.tweets?.length || 0), 0),
     },
+    _mode: process.env.X_BEARER_TOKEN ? 'X API v2' : 'Nitter RSS (free)',
   };
-  if (!process.env.X_BEARER_TOKEN) {
-    xFeed.note = 'X/Twitter feed not available (requires paid API). Set X_BEARER_TOKEN to enable.';
+  if (!process.env.X_BEARER_TOKEN && xResults.length === 0) {
+    xFeed.note = 'X feed unavailable — all Nitter RSS instances failed or returned no content. Check instance status at https://github.com/zedeus/nitter/wiki/Instances';
   }
   fs.writeFileSync(path.join(FEEDS_DIR, 'feed-x.json'), JSON.stringify(xFeed, null, 2));
 

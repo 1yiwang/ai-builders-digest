@@ -57,13 +57,14 @@
 - ✅ WCAG AA 44px 触摸目标（语言标签、主题切换、折叠按钮）
 
 ### X/Twitter API v2 接入（2026-05-29）
-- ✅ `config/sources.json` 新增 `x` 数组：8 位 AI builder 的 X handle + 名称 + 标签
-- ✅ `scripts/generate-feed.js` 新增 `fetchXContent()`：X API v2 Bearer Token 认证
-- ✅ 用户 ID 缓存机制（`state.xUserIds`），避免重复 `/users/by/username` 查询
-- ✅ API 端点：`/2/users/by/username/:handle` → `/2/users/:id/tweets`
-- ✅ 排除 retweets/replies，按 24h 时间窗口过滤，包含 public_metrics
-- ✅ 优雅降级：无 token 时跳过并保留提示 note，不影响 podcasts/blogs 管线
-- ✅ `.github/workflows/daily-digest.yml` 新增 `X_BEARER_TOKEN` secret 传递
+- ✅ 双模式架构：免费 Nitter RSS（默认）+ 付费 X API v2（可选升级）
+- ✅ 免费方案：`nitter.net` RSS → curl 抓取（绕过 TLS 指纹检测）→ 原创推文过滤
+- ✅ RSS 解析器：提取推文文本、ID、日期，支持 `&apos;` 等 XML 实体
+- ✅ 自动过滤 retweets（`RT by @`）和 replies（`R to @`），保持与 API 路径一致
+- ✅ 多实例 fallback：`nitter.net` → `nitter.1d4.us` → `nitter.catsarch.com`
+- ✅ 付费升级路径：设置 `X_BEARER_TOKEN` 自动切换 X API v2，含 metrics 数据
+- ✅ `config/sources.json` 新增 `x` 数组：8 位 AI builder
+- ✅ `.github/workflows/daily-digest.yml` 传递 `X_BEARER_TOKEN` secret
 - ✅ `--x-only` CLI flag 支持单独抓取 X 内容
 
 ## 已完成的优化
