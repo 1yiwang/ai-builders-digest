@@ -20,7 +20,7 @@
 
 ### 数据
 - `data/issues/ai-builders-digest-2026-05-25.json`（8 张卡片，含 priority）
-- `data/issues/ai-builders-digest-2026-05-29.json`（9 张卡片，5 章节 — 已恢复高质量版本）
+- `data/issues/ai-builders-digest-2026-05-29.json`（6 张卡片，3 章节 — v2 新版 prompt 生成）
 - `issues/ai-builders-digest-2026-05-25.html`（已渲染）
 - `issues/ai-builders-digest-2026-05-29.html`（已渲染）
 
@@ -73,7 +73,7 @@
 - `scripts/send-telegram.js`：将最新杂志格式化为 Telegram HTML 消息并推送
 - 凭证优先级：env vars → `~/.claude/settings.json` → `.follow-builders/.env`
 - 消息格式：标题 + 摘要 + 统计 + 5 条亮点 + 阅读链接
-- `.github/workflows/daily-digest.yml`：每天 08:00 Zurich 自动运行 + `workflow_dispatch` 手动触发
+- `.github/workflows/daily-digest.yml`：周一/三/五 08:00 Zurich 自动运行 + `workflow_dispatch` 手动触发
 - `npm run telegram` 手动推送；`npm run full` 管线已包含 Telegram
 
 ### ✅ 6+8. Archive 自动渲染 + 封面动态摘要 — 已完成
@@ -100,6 +100,25 @@
 - ✅ 新播客 RSS：MLST, Cognitive Revolution, Last Week in AI, Practical AI（4 个）
 - ✅ X/Twitter：新增 @elonmusk（现共 9 位 builder）
 - ❌ 花叔v（X handle 未确认）、秋芝2046（飞书不可访问）、Lilian Weng / Eugene Yan（RSS 404）、Dwarkesh（空 feed）
+
+### 排期与 Lookback 优化（2026-05-29）
+- ✅ CI 排期：每日 → 周一/三/五 `0 6 * * 1,3,5`
+- ✅ 播客 lookback：14 天（336h）→ 3 天（72h），减少重复
+- ✅ Workflow 更名为 "AI Builders Digest (MWF)"
+
+### API 双模式（2026-05-29）
+- ✅ DeepSeek 原生 OpenAI 格式支持（`/v1/chat/completions`）
+- ✅ Anthropic 格式保留作为 fallback，自动检测 `DEEPSEEK_API_KEY`
+- ✅ 实际运行在 DeepSeek 兼容网关 `api.deepseek.com/anthropic`，零成本切换
+- ✅ CI workflow 新增 `DEEPSEEK_API_KEY/BASE_URL/MODEL` secrets
+
+### Prompt 质量打磨（2026-05-29）
+- ✅ 播客卡片强制要求：第一颗 bullet 点名嘉宾 + 公司
+- ✅ Section 主题：一个 section = 一个思想，禁止硬拼
+- ✅ X/Twitter 质量门槛：必须有数据/发布/判断，显式跳过段子/meme
+- ✅ Editor's Note：每句 ≤25 词，禁止 cram
+- ✅ 卡片数：7-10 → 6-8，宁缺毋滥
+- ✅ 测试验证：新版 6 卡片 3 章节 (vs 旧版 10 卡片 5 章节)，质量明显提升
 
 ## 待开发
 
