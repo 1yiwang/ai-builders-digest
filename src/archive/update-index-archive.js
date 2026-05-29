@@ -36,9 +36,10 @@ function parseExistingArchive(indexHtml) {
 
 function deriveArchiveTitle(data, publishDate) {
   if (data.archive?.title) return data.archive.title;
+  // Fallback: first section title (bilingual "EN / DE")
   const firstSectionTitle = data.sections?.[0]?.title || '';
-  const zhTitle = firstSectionTitle.split(' / ')[0]?.trim();
-  return zhTitle ? `${zhTitle}日报` : `${publishDate} 日报`;
+  const mainTitle = firstSectionTitle.split(' / ')[1]?.trim() || firstSectionTitle.split(' / ')[0]?.trim();
+  return mainTitle || `AI Builders Digest — ${publishDate}`;
 }
 
 function deriveArchiveDesc(data) {
@@ -46,7 +47,7 @@ function deriveArchiveDesc(data) {
   return String(data.intro?.text || '')
     .replace(/\s+/g, ' ')
     .trim()
-    .slice(0, 80);
+    .slice(0, 100);
 }
 
 function loadJsonEntries() {
@@ -92,15 +93,63 @@ function renderArchiveItem(entry) {
 }
 
 function replaceArchiveList(indexHtml, renderedItems) {
+  // Handle both LF and CRLF line endings
   return indexHtml.replace(
-    /(<ul class="archive-list">\n)[\s\S]*?(\n\s*<\/ul>)/,
+    /(<ul class="archive-list">\r?\n)[\s\S]*?(\r?\n\s*<\/ul>)/,
     `$1${renderedItems.join('\n')}$2`
   );
 }
 
+// -- Cover date formatting ---------------------------------------------------
+
+const MONTH_NAMES = [
+  'Jan.', 'Feb.', 'Mär.', 'Apr.', 'Mai', 'Jun.',
+  'Jul.', 'Aug.', 'Sep.', 'Okt.', 'Nov.', 'Dez.'
+];
+
+function formatCoverDate(dateStr) {
+  if (!dateStr) return '';
+  const [year, month, day] = dateStr.split('-');
+  const monthIndex = parseInt(month, 10) - 1;
+  const dayNum = parseInt(day, 10);
+  return `${MONTH_NAMES[monthIndex] || month} ${dayNum}, ${year}`;
+}
+
+// -- Latest issue data -------------------------------------------------------
+
+function getLatestIssue(jsonEntries) {
+  if (jsonEntries.length === 0) return null;
+  return jsonEntries
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date))[0];
+}
+
+// -- Cover placeholder replacement --------------------------------------------
+
+function replaceCoverPlaceholders(html, latestIssue) {
+  let result = html;
+
+  if (latestIssue) {
+    result = result.replace('{{COVER_DATE}}', formatCoverDate(latestIssue.date));
+    result = result.replace('{{LATEST_HREF}}', latestIssue.href);
+    result = result.replace('{{LATEST_TITLE}}', escapeHtml(latestIssue.title));
+  } else {
+    // Fallback: use today's date, hide latest link
+    const today = new Date();
+    const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    result = result.replace('{{COVER_DATE}}', formatCoverDate(todayStr));
+    result = result.replace('{{LATEST_HREF}}', '#archive');
+    result = result.replace('{{LATEST_TITLE}}', 'Noch keine Ausgaben — bald verfügbar');
+  }
+
+  return result;
+}
+
+// -- Main --------------------------------------------------------------------
+
 function main() {
   const indexPath = process.argv[2] ? path.resolve(process.argv[2]) : DEFAULT_INDEX_PATH;
-  const indexHtml = fs.readFileSync(indexPath, 'utf8');
+  let indexHtml = fs.readFileSync(indexPath, 'utf8');
   const existingArchive = parseExistingArchive(indexHtml);
   const jsonEntries = loadJsonEntries();
 
@@ -110,7 +159,7 @@ function main() {
 
   const chronologicalEntries = Array.from(existingArchive.values()).sort((a, b) => a.date.localeCompare(b.date));
   chronologicalEntries.forEach((entry, index) => {
-    entry.issue = `Issue ${pad2(index + 1)}`;
+    entry.issue = `Nr. ${pad2(index + 1)}`;
   });
 
   const renderedItems = chronologicalEntries
@@ -118,8 +167,15 @@ function main() {
     .sort((a, b) => b.date.localeCompare(a.date))
     .map(renderArchiveItem);
 
-  fs.writeFileSync(indexPath, replaceArchiveList(indexHtml, renderedItems), 'utf8');
-  console.log(`Updated archive list in ${indexPath}`);
+  // Replace archive list
+  indexHtml = replaceArchiveList(indexHtml, renderedItems);
+
+  // Replace cover placeholders
+  const latestIssue = getLatestIssue(jsonEntries);
+  indexHtml = replaceCoverPlaceholders(indexHtml, latestIssue);
+
+  fs.writeFileSync(indexPath, indexHtml, 'utf8');
+  console.log(`Updated index: ${jsonEntries.length} issue(s) in archive, cover date from ${latestIssue ? latestIssue.date : 'today'}`);
 }
 
 module.exports = { main };

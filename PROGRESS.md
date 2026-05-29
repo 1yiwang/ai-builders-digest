@@ -37,6 +37,24 @@
 
 ## 待开发
 
+### 下一步优化方向
+- 移动端响应式优化
+- X/Twitter API 接入
+- Blog RSS 替代方案（更稳定的抓取）
+- 扩展信息源（更多播客/博客/中文媒体）
+- 定时自动化（GitHub Actions / Task Scheduler）
+- 多领域分版（金融/政策/生物科技）
+
+## 已完成的优化
+
+### ✅ 6+8. Archive 自动渲染 + 封面动态摘要 — 已完成
+- `index.html` cover 区域移除所有硬编码
+- `update-index-archive.js` 增强：自动从 `data/issues/*.json` 提取最新期号
+- 封面日期 (`.cover-date`) 动态更新为最新 Issue 日期
+- 新增封面 `Latest Issue` teaser — 显示 `archive.title` + 直达链接
+- Archive 列表完全由脚本生成，无需手动维护
+- 修复 Windows CRLF 正则匹配 + 字体（Noto Serif SC → IBM Plex Sans）
+
 ### ✅ 4. Author 头像文件 — 已完成
 - 16 个作者 avatar 已下载（8 X/Twitter + 6 Podcast + 2 Blog）
 - `avatar-manifest.json` 已填充所有条目

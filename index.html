@@ -410,6 +410,67 @@
     opacity: 0.5;
   }
 
+  .cover-latest {
+    position: absolute;
+    left: 50%;
+    bottom: 94px;
+    z-index: 3;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(168, 85, 247, 0.18);
+    background: rgba(99, 102, 241, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    transition: border-color 220ms ease, background 220ms ease, transform 220ms ease;
+  }
+
+  .cover-latest:hover {
+    border-color: rgba(168, 85, 247, 0.45);
+    background: rgba(99, 102, 241, 0.12);
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  .cover-latest-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(168, 85, 247, 0.25));
+    color: #c4b5fd;
+    white-space: nowrap;
+  }
+
+  .cover-latest-title {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    max-width: 380px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cover-latest-arrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    white-space: nowrap;
+    transition: color 220ms ease;
+  }
+
+  .cover-latest:hover .cover-latest-arrow {
+    color: rgba(255,255,255,0.75);
+  }
+
   .cover-scroll {
     margin: 18px auto 0;
     width: fit-content;
@@ -469,9 +530,9 @@
   .archive-intro {
     margin: 0;
     color: var(--text-muted);
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
     font-size: 14px;
-    line-height: 1.9;
+    line-height: 1.6;
   }
 
   .archive-list {
@@ -520,8 +581,8 @@
     margin: 0;
     color: var(--text-muted);
     font-size: 14px;
-    line-height: 1.8;
-    font-family: 'Noto Serif SC', serif;
+    line-height: 1.6;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   }
 
   .archive-meta {
@@ -636,7 +697,7 @@
   <div class="site-shell">
     <section class="cover">
       <div class="cover-poster">
-        <div class="cover-date">May. 22, 2026</div>
+        <div class="cover-date">Mai 29, 2026</div>
         <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle light/dark mode">
           <span class="theme-icon-light">☀</span>
           <span class="theme-icon-dark">☽</span>
@@ -674,6 +735,12 @@
                 <span>Kuratiert von Yis AI Digest</span>
               </div>
             </div>
+
+            <a class="cover-latest" href="./issues/ai-builders-digest-2026-05-29.html">
+              <span class="cover-latest-badge">Neueste Ausgabe</span>
+              <span class="cover-latest-title">Der 63-Milliarden-Dollar-Chip und der Agenten-Stack</span>
+              <span class="cover-latest-arrow">Lesen →</span>
+            </a>
           </div>
         </div>
       </div>
@@ -692,6 +759,19 @@
         </div>
 
         <ul class="archive-list">
+          <li class="archive-item">
+            <a class="archive-link" href="./issues/ai-builders-digest-2026-05-29.html">
+              <div class="archive-date">2026-05-29</div>
+              <div>
+                <h3 class="archive-entry-title">Der 63-Milliarden-Dollar-Chip und der Agenten-Stack</h3>
+                <p class="archive-entry-desc">Heute drehte sich alles um die Infrastruktur der neuen KI-Welt: von wafer-scale Chips über die Agent-native Cloud bis zum MCP-Server-Design.</p>
+              </div>
+              <div class="archive-meta">
+                <span class="archive-issue">Nr. 02</span>
+                <span class="archive-arrow">Ausgabe öffnen →</span>
+              </div>
+            </a>
+          </li>
           <li class="archive-item">
             <a class="archive-link" href="./issues/ai-builders-digest-2026-05-25.html">
               <div class="archive-date">2026-05-25</div>
