@@ -127,22 +127,13 @@ function getLatestIssue(jsonEntries) {
 // -- Cover placeholder replacement --------------------------------------------
 
 function replaceCoverPlaceholders(html, latestIssue) {
-  let result = html;
-
   if (latestIssue) {
-    result = result.replace('{{COVER_DATE}}', formatCoverDate(latestIssue.date));
-    result = result.replace('{{LATEST_HREF}}', latestIssue.href);
-    result = result.replace('{{LATEST_TITLE}}', escapeHtml(latestIssue.title));
-  } else {
-    // Fallback: use today's date, hide latest link
-    const today = new Date();
-    const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
-    result = result.replace('{{COVER_DATE}}', formatCoverDate(todayStr));
-    result = result.replace('{{LATEST_HREF}}', '#archive');
-    result = result.replace('{{LATEST_TITLE}}', 'Noch keine Ausgaben — bald verfügbar');
+    return html.replace('{{COVER_DATE}}', formatCoverDate(latestIssue.date));
   }
-
-  return result;
+  // Fallback: use today's date
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  return html.replace('{{COVER_DATE}}', formatCoverDate(todayStr));
 }
 
 // -- Main --------------------------------------------------------------------
