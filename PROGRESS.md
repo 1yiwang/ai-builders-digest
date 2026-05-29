@@ -49,6 +49,13 @@
 - ✅ `toLocalPath()` 支持 repo-relative 路径解析
 - ✅ `download-avatars.js` 同步写入 repo `config/` 和 `assets/avatars/`
 
+### 移动端响应式（2026-05-29）
+- ✅ `index.html`：~80 条 480px 断点规则（星座节点、封面间距、tooltip、archive、触摸目标）
+- ✅ `render-ai-builders-digest.js`：~45 条 480px 断点规则（字体、触摸目标、布局、间距）
+- ✅ 两页面均添加 `overflow-x: hidden` + `img { max-width: 100% }` 防护
+- ✅ `data-col` 属性替代脆弱 `:nth-child()` 选择器
+- ✅ WCAG AA 44px 触摸目标（语言标签、主题切换、折叠按钮）
+
 ## 已完成的优化
 
 ### ✅ 12. Telegram 推送 + GitHub Actions 定时自动化 — 已完成
@@ -77,7 +84,6 @@
 
 ## 待开发
 
-- 移动端响应式优化
 - X/Twitter API 接入
 - Blog RSS 替代方案
 - 扩展信息源（更多播客/博客/中文媒体）
