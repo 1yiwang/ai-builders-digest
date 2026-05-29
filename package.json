@@ -1,0 +1,28 @@
+{
+  "name": "ai-builders-digest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Builders Digest — Bilingual (DE/EN) daily AI industry magazine tracking top builders on X",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1yiwang/ai-builders-digest.git"
+  },
+  "scripts": {
+    "feed": "node scripts/generate-feed.js",
+    "generate": "node scripts/generate-magazine-json.js",
+    "render": "node scripts/render-ai-builders-digest.js",
+    "update-archive": "node scripts/update-index-archive.js",
+    "sync-avatars": "node sync-site-avatars.js",
+    "publish": "powershell -File scripts/publish.ps1",
+    "full": "node scripts/generate-feed.js && node scripts/generate-magazine-json.js && node scripts/render-ai-builders-digest.js && node scripts/update-index-archive.js"
+  },
+  "keywords": [
+    "ai",
+    "builders",
+    "digest",
+    "bilingual",
+    "german",
+    "english"
+  ],
+  "license": "MIT"
+}

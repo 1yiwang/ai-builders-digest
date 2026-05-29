@@ -1,0 +1,47 @@
+我们要将目前的封面彻底重构为极简、高阶科技感的“灵感重力场”视觉体系。请根据以下详细的 UI 组件设计规范，直接修改 HTML 结构和 CSS 样式：
+
+1. 整体画布与背景（The Canvas）
+- 背景色（Background）：使用深邃、纯净的赛博夜空色 `#090d16`。
+- 移除之前所有杂乱的网格线、多余的轨道环和过大的文字水印，让页面保持极简主义的深度留白（Minimalist Negative Space）。
+
+2. 中央核心：SVG 灵感灯泡（The Core Icon）
+- HTML 结构：在中央容器内放置一个纯 SVG 格式的电灯泡图标。
+- 描边工艺：将 SVG 的描边变细（stroke-width: 1.2px），颜色使用淡雅的白紫色（stroke: #c084fc）。
+- 光晕重力场（Glow Backdrop）：在灯泡正后方，放置一个绝对定位的伪元素或 div 层：
+  * 尺寸：240px * 240px 的正圆形。
+  * 样式：background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+  * 滤镜：filter: blur(25px);
+  * 动效：绑定一个极其平滑的呼吸动画（Opacity 从 0.6 到 1.0 循环，周期 4 秒），模拟灵感在夜空中微微闪烁的视觉效果。
+
+3. 环绕节点：玻璃拟态圆形头像（The Star Nodes）
+- 数量克隆：从数据源中仅精选【6 个】最具代表性的 X 账号头像（例如 ML, LS, AA 等）。
+- 几何形状：彻底丢弃带尖角的聊天气泡样式！必须是【纯正圆形】（border-radius: 50%），直径统一为高级的 48px。
+- 玻璃拟态材质（Glassmorphism）：
+  * 背景：background: rgba(255, 255, 255, 0.03);
+  * 模糊：backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  * 边框：border: 1px solid rgba(168, 85, 247, 0.25);
+  * 阴影：box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 12px rgba(168, 85, 247, 0.2);
+- 内部文字（Initials）：
+  * 字体：现代无衬线体（font-family: system-ui, -apple-system, sans-serif;）。
+  * 颜色：高亮白（#ffffff），字号 14px，字重改为 Medium (500)，字母居中对齐（display: flex; align-items: center; justify-content: center;）。
+
+4. 动态星阵布局与失重动画（Orbit & Float Animation）
+- 环绕布局：这 6 个圆形节点使用 `position: absolute` 绝对定位，优雅地发散环绕在中央灯泡的【左上、正上、右上、左下、正下、右下】六个象限，半径距离灯泡中心点约 130px - 160px，拉开呼吸感。
+- 失重浮动：给这 6 个圆形节点分别绑定微弱的、带有【时间错开（Animation-delay）】的上下浮动动画：
+  * animation: floatNode 6s ease-in-out infinite;
+  * @keyframes floatNode {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  * 通过分别设置 animation-delay (如 0s, -1s, -2.5s...) 制造出它们在宇宙中各自独立浮动的真实失重感。
+
+5. 交互行为（Hover Interaction）
+- 当鼠标悬停（Hover）在任意一个圆形节点上时，触发 `transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1)`：
+  * 节点平滑放大至 1.15 倍，边框高亮变为标准的亮紫色（#a855f7），内部发光增强（box-shadow 范围扩大）。
+  * 在节点上方 10px 处，平滑淡入（fade-in & slide-up）一个极其精致、字号很小的半透明 Tooltip 提示框，展示该 Builder 的完整 X 账号名称，点击即可丝滑跳转。
+
+6. 页面版式降噪（Typography）
+- 顶部主标题 “AI Builders Digest”：字重设为 Thin/Light (300)，字号调整为 2.2rem，带有一点点白到浅蓝紫的微弱渐变（background: linear-gradient(to right, #fff, #cbd5e1); background-clip: text;）。
+- 底部德文/英文段落简介：彻底废除衬线宋体，统一使用现代无衬线体（system-ui），字号缩小到 13px 或 14px，颜色使用柔和、内敛的蓝灰色（color: #64748b;），行高设为 1.6。确保底部和主体之间有至少 80px 的优雅留白。
+
+请直接基于这套现代、精细、极简的前端视觉规范，重构现有的 HTML/CSS 代码！

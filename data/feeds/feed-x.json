@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-05-29T16:13:07.809Z",
+  "lookbackHours": 24,
+  "x": [],
+  "stats": {
+    "xBuilders": 0,
+    "totalTweets": 0
+  },
+  "note": "X/Twitter feed not available (requires paid API). Set X_BEARER_TOKEN to enable."
+}

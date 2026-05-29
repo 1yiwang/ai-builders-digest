@@ -64,7 +64,7 @@ function loadJsonEntries() {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     entries.push({
-      href: `./${ISSUE_HTML_DIR}/ai-builders-digest-${publishDate}-rerun.html`,
+      href: `./${ISSUE_HTML_DIR}/ai-builders-digest-${publishDate}.html`,
       date: publishDate,
       title: deriveArchiveTitle(data, publishDate),
       desc: deriveArchiveDesc(data),
