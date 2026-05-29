@@ -68,7 +68,9 @@
     background: var(--bg);
     color: var(--text-body);
     font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
   }
+  img { max-width: 100%; height: auto; }
 
   a {
     color: inherit;
@@ -632,6 +634,165 @@
       padding: 26px 14px 62px;
     }
   }
+
+  @media (max-width: 480px) {
+    /* Cover — tighter spacing */
+    .cover {
+      padding: 0 0 24px;
+    }
+    .cover-poster {
+      min-height: 100svh;
+    }
+    .cover-poster::before {
+      inset: 10px;
+    }
+    .cover-inner {
+      margin: 10px;
+      min-height: calc(100svh - 20px);
+    }
+    .cover-date {
+      font-size: 10px;
+      top: 12px;
+      left: 16px;
+    }
+    .cover-topline {
+      padding: 12px 12px 0;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .cover-title {
+      max-width: 100%;
+      width: 100%;
+    }
+    .cover-title-main {
+      max-width: 100%;
+      font-weight: 300;
+      font-size: 1.35rem;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      white-space: normal;
+      text-wrap: balance;
+    }
+    .cover-deck {
+      max-width: 100%;
+      padding: 0;
+      border-left: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 8px;
+      text-align: left;
+      font-size: 0.75rem;
+      line-height: 1.2;
+      color: #64748b;
+    }
+    .cover-stage {
+      padding: 24px 12px 100px;
+    }
+    .bulb-stage {
+      width: 100%;
+      height: 240px;
+      margin-top: 32px;
+    }
+    .bulb-glow-backdrop {
+      width: 140px;
+      height: 140px;
+    }
+    .bulb-svg-wrap {
+      width: clamp(120px, 24vw, 180px);
+    }
+
+    /* Star nodes — scale down for small screens */
+    .star-node {
+      width: 36px;
+      height: 36px;
+      margin-left: -18px;
+      margin-top: -18px;
+    }
+    .star-node[data-col="left"]  { left: 18%; }
+    .star-node[data-col="right"] { left: 82%; }
+    .star-node-inner {
+      font-size: 13px;
+    }
+    .star-node-tooltip {
+      top: -28px;
+      padding: 3px 10px 4px;
+      font-size: 10px;
+      max-width: 140px;
+      white-space: normal;
+      text-align: center;
+    }
+
+    /* Cover philosophy */
+    .cover-philosophy {
+      width: calc(100% - 20px);
+      bottom: 12px;
+    }
+    .cover-philosophy p {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .cover-philosophy p + p {
+      font-size: 11px;
+    }
+    .cover-credit {
+      font-size: 9px;
+      gap: 4px;
+    }
+    .cover-scroll {
+      font-size: 10px;
+      margin-top: 12px;
+    }
+
+    /* Theme toggle — WCAG touch target */
+    .theme-toggle {
+      width: 44px;
+      height: 44px;
+      top: 10px;
+      right: 14px;
+      font-size: 18px;
+    }
+
+    /* Archive */
+    .archive {
+      padding: 20px 12px 48px;
+    }
+    .archive-head {
+      gap: 12px;
+      padding-bottom: 14px;
+    }
+    .archive-title {
+      font-size: clamp(1.6rem, 5vw, 2rem);
+    }
+    .archive-intro {
+      font-size: 13px;
+    }
+    .archive-link {
+      padding: 16px 0;
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+    .archive-entry-title {
+      font-size: 1.25rem;
+    }
+    .archive-entry-desc {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .archive-meta {
+      text-align: left;
+    }
+    .archive-date {
+      font-size: 11px;
+    }
+    .archive-issue {
+      font-size: 10px;
+    }
+    .archive-arrow {
+      font-size: 0.9rem;
+    }
+    .catalog-label {
+      font-size: 11px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -763,6 +924,12 @@
         node.style.setProperty('--nx', entry.nx);
         node.style.setProperty('--ny', entry.ny);
         node.style.setProperty('--nd', entry.nd);
+
+        // Tag column position for responsive CSS
+        var nxVal = parseFloat(entry.nx);
+        if (nxVal <= 30) node.setAttribute('data-col', 'left');
+        else if (nxVal >= 70) node.setAttribute('data-col', 'right');
+        else node.setAttribute('data-col', 'center');
 
         var inner = document.createElement('div');
         inner.className = 'star-node-inner';

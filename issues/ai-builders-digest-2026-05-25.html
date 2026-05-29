@@ -84,7 +84,9 @@
     color: var(--text-body);
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.7;
+    overflow-x: hidden;
   }
+  img { max-width: 100%; height: auto; }
 
   .masthead, .intro, .section-header, .feed, footer {
     max-width: var(--max-width);
@@ -95,7 +97,7 @@
 
   .masthead { padding-top: 56px; }
   .masthead-rule { border: none; border-top: 2px solid var(--border); margin: 0 0 16px; }
-  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; }
+  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; flex-wrap: wrap; }
   .masthead-title {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
@@ -400,6 +402,46 @@
     .intro-inner { padding-left: 14px; }
     .intro p { line-height: 1.84; }
   }
+
+  @media (max-width: 480px) {
+    :root { --max-width: 100%; }
+    .masthead { padding-top: 32px; }
+    .masthead-title { font-size: 24px; }
+    .masthead-subtitle { font-size: 11px; }
+    .edition-strip { padding: 8px 12px 10px; font-size: 11px; }
+    .edition-return-link { position: static; transform: none; margin-top: 6px; font-size: 11px; }
+    .edition-return-link:hover { transform: translateX(-2px); }
+    .edition-strip .edition-sep { margin: 0 4px; }
+    .intro { padding-top: 20px; }
+    .intro-inner { padding-left: 12px; border-left-width: 2px; }
+    .intro-kicker { font-size: 10px; }
+    .intro-copy { font-size: 14px; line-height: 1.78; }
+    .section-header { margin-top: 32px; }
+    .section-label { font-size: 10px; }
+    .section-title { font-size: 20px; }
+    .section-desc { font-size: 13px; margin-bottom: 16px; }
+    .feed { gap: 18px; }
+    .card-header { padding: 12px 14px 12px; gap: 10px; }
+    .avatar { width: 36px; height: 36px; }
+    .author-name { font-size: 14px; }
+    .author-handle { font-size: 11px; }
+    .author-tag { font-size: 11px; padding: 2px 6px; }
+    .author-info { min-width: 0; }
+    .card-tabs { margin-left: 0; margin-top: 4px; }
+    .lang-tab { padding: 10px 16px; font-size: 12px; }
+    .lang-panel { padding: 14px 14px 16px; }
+    .lang-panel p { font-size: 14px; }
+    .lang-panel li { font-size: 14px; }
+    .lang-panel ol { margin-left: 16px; }
+    .inline-code { font-size: 12px; padding: 2px 6px; }
+    .card-footer { padding: 10px 14px 14px; }
+    .card-footer a { font-size: 13px; }
+    .section-toggle { padding: 14px 0; font-size: 12px; }
+    .theme-toggle { width: 44px; height: 44px; }
+    .theme-icon-light, .theme-icon-dark { font-size: 18px; }
+    .masthead, .intro, .section-header, .feed, footer { padding-left: 14px; padding-right: 14px; }
+    footer { padding-top: 24px; padding-bottom: 40px; font-size: 12px; }
+  }
 </style>
 </head>
 <body data-publish-date="2026-05-25" data-issue-number="01" data-edition-name="DE+EN Ausgabe">
@@ -432,9 +474,9 @@
     <p class="section-desc">KI-Werkzeuge verschieben die Grenze dessen, was eine einzelne Person bauen kann.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:petergyang" data-author-name="Peter Yang" data-author-tag="Founder &amp; Investor" data-author-handle="@petergyang" data-author-avatar="" data-priority="1">
+    <article class="card" data-author-key="x:petergyang" data-author-name="Peter Yang" data-author-tag="Founder &amp; Investor" data-author-handle="@petergyang" data-author-avatar="../assets/avatars/x-petergyang.jpg" data-priority="1">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Peter Yang avatar"><span class="avatar-fallback">PY</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-petergyang.jpg" alt="Peter Yang avatar"><span class="avatar-fallback">PY</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Peter Yang</span>
@@ -460,9 +502,9 @@
       <div class="card-footer"><a href="https://x.com/petergyang/status/2058609058714968194" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:nikunj" data-author-name="Nikunj Kothari" data-author-tag="FPV Ventures" data-author-handle="@nikunj" data-author-avatar="" data-priority="2">
+    <article class="card" data-author-key="x:nikunj" data-author-name="Nikunj Kothari" data-author-tag="FPV Ventures" data-author-handle="@nikunj" data-author-avatar="../assets/avatars/x-nikunj.jpg" data-priority="2">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Nikunj Kothari avatar"><span class="avatar-fallback">NK</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-nikunj.jpg" alt="Nikunj Kothari avatar"><span class="avatar-fallback">NK</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Nikunj Kothari</span>
@@ -495,9 +537,9 @@
     <p class="section-desc">Führungskräfte spüren den KI-Druck, aber viele haben den praktischen Zugang verloren.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:levie" data-author-name="Aaron Levie" data-author-tag="Box CEO" data-author-handle="@levie" data-author-avatar="" data-priority="1">
+    <article class="card" data-author-key="x:levie" data-author-name="Aaron Levie" data-author-tag="Box CEO" data-author-handle="@levie" data-author-avatar="../assets/avatars/x-levie.jpg" data-priority="1">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Aaron Levie avatar"><span class="avatar-fallback">AL</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-levie.jpg" alt="Aaron Levie avatar"><span class="avatar-fallback">AL</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Aaron Levie</span>
@@ -523,9 +565,9 @@
       <div class="card-footer"><a href="https://x.com/levie/status/2058582370253701432" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:realmadhuguru" data-author-name="Madhu Guru" data-author-tag="Google" data-author-handle="@realmadhuguru" data-author-avatar="" data-priority="2">
+    <article class="card" data-author-key="x:realmadhuguru" data-author-name="Madhu Guru" data-author-tag="Google" data-author-handle="@realmadhuguru" data-author-avatar="../assets/avatars/x-realmadhuguru.jpg" data-priority="2">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Madhu Guru avatar"><span class="avatar-fallback">MG</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-realmadhuguru.jpg" alt="Madhu Guru avatar"><span class="avatar-fallback">MG</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Madhu Guru</span>
@@ -558,9 +600,9 @@
     <p class="section-desc">Alte Codebasen werden zur wertvollen Ressource — nicht trotz, sondern wegen ihres Alters.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:trq212" data-author-name="Thariq" data-author-tag="Claude Code" data-author-handle="@trq212" data-author-avatar="" data-priority="1">
+    <article class="card" data-author-key="x:trq212" data-author-name="Thariq" data-author-tag="Claude Code" data-author-handle="@trq212" data-author-avatar="../assets/avatars/x-trq212.jpg" data-priority="1">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Thariq avatar"><span class="avatar-fallback">T</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-trq212.jpg" alt="Thariq avatar"><span class="avatar-fallback">T</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Thariq</span>
@@ -588,9 +630,9 @@
       <div class="card-footer"><a href="https://x.com/trq212/status/2058576195000660319" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
     </article>
 
-    <article class="card" data-author-key="x:zarazhangrui" data-author-name="Zara Zhang" data-author-tag="Follow Builders" data-author-handle="@zarazhangrui" data-author-avatar="" data-priority="2">
+    <article class="card" data-author-key="x:zarazhangrui" data-author-name="Zara Zhang" data-author-tag="Follow Builders" data-author-handle="@zarazhangrui" data-author-avatar="../assets/avatars/x-zarazhangrui.jpg" data-priority="2">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Zara Zhang avatar"><span class="avatar-fallback">ZZ</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-zarazhangrui.jpg" alt="Zara Zhang avatar"><span class="avatar-fallback">ZZ</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Zara Zhang</span>
@@ -623,9 +665,9 @@
     <p class="section-desc">Die Expertenmeinungen gehen auseinander — aber die Frage selbst ist bemerkenswert.</p>
   </section>
   <section class="feed">
-    <article class="card" data-author-key="x:mattturck" data-author-name="Matt Turck" data-author-tag="FirstMark" data-author-handle="@mattturck" data-author-avatar="" data-priority="1">
+    <article class="card" data-author-key="x:mattturck" data-author-name="Matt Turck" data-author-tag="FirstMark" data-author-handle="@mattturck" data-author-avatar="../assets/avatars/x-mattturck.jpg" data-priority="1">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Matt Turck avatar"><span class="avatar-fallback">MT</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-mattturck.jpg" alt="Matt Turck avatar"><span class="avatar-fallback">MT</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Matt Turck</span>
@@ -649,9 +691,9 @@
         </div>
       </div>
       <div class="card-footer"><a href="https://x.com/mattturck/status/2058659995311358332" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
-    </article>    <article class="card is-low-priority" data-author-key="x:rauchg" data-author-name="Guillermo Rauch" data-author-tag="Vercel CEO" data-author-handle="@rauchg" data-author-avatar="" data-priority="3">
+    </article>    <article class="card is-low-priority" data-author-key="x:rauchg" data-author-name="Guillermo Rauch" data-author-tag="Vercel CEO" data-author-handle="@rauchg" data-author-avatar="../assets/avatars/x-rauchg.jpg" data-priority="3">
       <div class="card-header">
-        <div class="avatar is-fallback"><img src="" alt="Guillermo Rauch avatar"><span class="avatar-fallback">GR</span></div>
+        <div class="avatar"><img src="../assets/avatars/x-rauchg.jpg" alt="Guillermo Rauch avatar"><span class="avatar-fallback">GR</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">Guillermo Rauch</span>
@@ -683,8 +725,8 @@
 
   <script>
     window.AI_BUILDERS_TEMPLATE_SOURCES = {
-      identities: {"x:petergyang":{"name":"Peter Yang","handle":"@petergyang","label":"Founder & Investor"},"x:nikunj":{"name":"Nikunj Kothari","handle":"@nikunj","label":"FPV Ventures"},"x:levie":{"name":"Aaron Levie","handle":"@levie","label":"Box CEO"},"x:realmadhuguru":{"name":"Madhu Guru","handle":"@realmadhuguru","label":"Google"},"x:trq212":{"name":"Thariq","handle":"@trq212","label":"Claude Code"},"x:zarazhangrui":{"name":"Zara Zhang","handle":"@zarazhangrui","label":"Follow Builders"},"x:mattturck":{"name":"Matt Turck","handle":"@mattturck","label":"FirstMark"},"x:rauchg":{"name":"Guillermo Rauch","handle":"@rauchg","label":"Vercel CEO"}},
-      avatars: {}
+      identities: {"x:petergyang":{"name":"Peter Yang","handle":"@petergyang","label":"Founder & Investor"},"x:nikunj":{"name":"Nikunj Kothari","handle":"@nikunj","label":"FPV Ventures"},"x:levie":{"name":"Aaron Levie","handle":"@levie","label":"Box CEO"},"x:realmadhuguru":{"name":"Madhu Guru","handle":"@realmadhuguru","label":"Google"},"x:trq212":{"name":"Thariq","handle":"@trq212","label":"Claude Code"},"x:zarazhangrui":{"name":"Zara Zhang","handle":"@zarazhangrui","label":"Follow Builders"},"x:mattturck":{"name":"Matt Turck","handle":"@mattturck","label":"FirstMark"},"x:rauchg":{"name":"Guillermo Rauch","handle":"@rauchg","label":"Vercel CEO"},"podcast:Latent Space":{"name":"Latent Space","handle":"@LatentSpacePod","label":"Podcast"},"podcast:Training Data":{"name":"Training Data","handle":"@SequoiaCap","label":"Sequoia Podcast"},"podcast:No Priors":{"name":"No Priors","handle":"@NoPriorsPod","label":"Podcast"},"podcast:Unsupervised Learning":{"name":"Unsupervised Learning","handle":"@RedpointAI","label":"Redpoint Podcast"},"podcast:The MAD Podcast with Matt Turck":{"name":"The MAD Podcast","handle":"@mattturck","label":"FirstMark Podcast"},"podcast:AI & I by Every":{"name":"AI & I","handle":"@every","label":"Every Podcast"},"blog:Anthropic Engineering":{"name":"Anthropic Engineering","handle":"@AnthropicAI","label":"Engineering Blog"},"blog:Claude Blog":{"name":"Claude Blog","handle":"@AnthropicAI","label":"Product Blog"}},
+      avatars: {"x:petergyang":{"localPath":"assets/avatars/x-petergyang.jpg","fileUrl":"https://unavatar.io/twitter/petergyang?size=96","source":"unavatar.io"},"x:nikunj":{"localPath":"assets/avatars/x-nikunj.jpg","fileUrl":"https://unavatar.io/twitter/nikunj?size=96","source":"unavatar.io"},"x:levie":{"localPath":"assets/avatars/x-levie.jpg","fileUrl":"https://unavatar.io/twitter/levie?size=96","source":"unavatar.io"},"x:realmadhuguru":{"localPath":"assets/avatars/x-realmadhuguru.jpg","fileUrl":"https://unavatar.io/twitter/realmadhuguru?size=96","source":"unavatar.io"},"x:trq212":{"localPath":"assets/avatars/x-trq212.jpg","fileUrl":"https://unavatar.io/twitter/trq212?size=96","source":"unavatar.io"},"x:zarazhangrui":{"localPath":"assets/avatars/x-zarazhangrui.jpg","fileUrl":"https://unavatar.io/twitter/zarazhangrui?size=96","source":"unavatar.io"},"x:mattturck":{"localPath":"assets/avatars/x-mattturck.jpg","fileUrl":"https://unavatar.io/twitter/mattturck?size=96","source":"unavatar.io"},"x:rauchg":{"localPath":"assets/avatars/x-rauchg.jpg","fileUrl":"https://unavatar.io/twitter/rauchg?size=96","source":"unavatar.io"},"podcast:Latent Space":{"localPath":"assets/avatars/podcast-latent-space.jpg","fileUrl":"https://substackcdn.com/feed/podcast/1084089/ca7468da5614a246d2906ee8926f6de7.jpg","source":"rss-feed"},"podcast:Training Data":{"localPath":"assets/avatars/podcast-training-data.jpg","fileUrl":"https://megaphone.imgix.net/podcasts/8ca8a61c-08b4-11ef-97ab-9fe273d59030/image/4a16fd33b06708003827556209cd42b7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress","source":"rss-feed"},"podcast:No Priors":{"localPath":"assets/avatars/podcast-no-priors.jpg","fileUrl":"https://megaphone.imgix.net/podcasts/803e0244-9d0f-11ed-923a-4bb54bf77468/image/NO_PRIORS_ALBUM_and_PROFILE_PIC-01.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress","source":"rss-feed"},"podcast:Unsupervised Learning":{"localPath":"assets/avatars/podcast-unsupervised-learning.jpg","fileUrl":"https://image.simplecastcdn.com/images/ff0dbf2f-5711-4964-9172-807c39ca4824/be7895b2-4fcc-4f70-9864-584710596b1d/3000x3000/redpoint-unsupervised-learning-logo.jpg?aid=rss_feed","source":"rss-feed"},"podcast:The MAD Podcast with Matt Turck":{"localPath":"assets/avatars/podcast-the-mad-podcast-with-matt-turck.jpg","fileUrl":"https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40657026/40657026-1768486187830-f8f544fbc7c46.jpg","source":"rss-feed"},"podcast:AI & I by Every":{"localPath":"assets/avatars/podcast-ai-i-by-every.jpg","fileUrl":"https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/39682537/39682537-1775054001844-43161ae9155e9.jpg","source":"rss-feed"},"blog:Claude Blog":{"localPath":"assets/avatars/blog-claude-blog.jpg","fileUrl":"https://claude.com/favicon.ico","source":"favicon"},"blog:Anthropic Engineering":{"localPath":"assets/avatars/blog-anthropic-engineering.jpg","fileUrl":"https://www.anthropic.com/favicon.ico","source":"favicon"}}
     };
 
     function getTemplateAuthorSources() {

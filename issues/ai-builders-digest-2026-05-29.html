@@ -84,7 +84,9 @@
     color: var(--text-body);
     font-family: 'IBM Plex Sans', sans-serif;
     line-height: 1.7;
+    overflow-x: hidden;
   }
+  img { max-width: 100%; height: auto; }
 
   .masthead, .intro, .section-header, .feed, footer {
     max-width: var(--max-width);
@@ -95,7 +97,7 @@
 
   .masthead { padding-top: 56px; }
   .masthead-rule { border: none; border-top: 2px solid var(--border); margin: 0 0 16px; }
-  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; }
+  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; flex-wrap: wrap; }
   .masthead-title {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
@@ -399,6 +401,46 @@
     .edition-strip .edition-sep { margin: 0 5px; }
     .intro-inner { padding-left: 14px; }
     .intro p { line-height: 1.84; }
+  }
+
+  @media (max-width: 480px) {
+    :root { --max-width: 100%; }
+    .masthead { padding-top: 32px; }
+    .masthead-title { font-size: 24px; }
+    .masthead-subtitle { font-size: 11px; }
+    .edition-strip { padding: 8px 12px 10px; font-size: 11px; }
+    .edition-return-link { position: static; transform: none; margin-top: 6px; font-size: 11px; }
+    .edition-return-link:hover { transform: translateX(-2px); }
+    .edition-strip .edition-sep { margin: 0 4px; }
+    .intro { padding-top: 20px; }
+    .intro-inner { padding-left: 12px; border-left-width: 2px; }
+    .intro-kicker { font-size: 10px; }
+    .intro-copy { font-size: 14px; line-height: 1.78; }
+    .section-header { margin-top: 32px; }
+    .section-label { font-size: 10px; }
+    .section-title { font-size: 20px; }
+    .section-desc { font-size: 13px; margin-bottom: 16px; }
+    .feed { gap: 18px; }
+    .card-header { padding: 12px 14px 12px; gap: 10px; }
+    .avatar { width: 36px; height: 36px; }
+    .author-name { font-size: 14px; }
+    .author-handle { font-size: 11px; }
+    .author-tag { font-size: 11px; padding: 2px 6px; }
+    .author-info { min-width: 0; }
+    .card-tabs { margin-left: 0; margin-top: 4px; }
+    .lang-tab { padding: 10px 16px; font-size: 12px; }
+    .lang-panel { padding: 14px 14px 16px; }
+    .lang-panel p { font-size: 14px; }
+    .lang-panel li { font-size: 14px; }
+    .lang-panel ol { margin-left: 16px; }
+    .inline-code { font-size: 12px; padding: 2px 6px; }
+    .card-footer { padding: 10px 14px 14px; }
+    .card-footer a { font-size: 13px; }
+    .section-toggle { padding: 14px 0; font-size: 12px; }
+    .theme-toggle { width: 44px; height: 44px; }
+    .theme-icon-light, .theme-icon-dark { font-size: 18px; }
+    .masthead, .intro, .section-header, .feed, footer { padding-left: 14px; padding-right: 14px; }
+    footer { padding-top: 24px; padding-bottom: 40px; font-size: 12px; }
   }
 </style>
 </head>
