@@ -57,30 +57,52 @@ function todayISO() {
 // -- Credentials -------------------------------------------------------------
 
 function loadCredentials() {
-  let apiKey, baseUrl, model;
+  let provider, apiKey, baseUrl, model;
 
-  // 1. Check environment variables first (for CI/GitHub Actions)
-  if (process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY) {
+  // 1. DeepSeek API (takes priority if key is set)
+  if (process.env.DEEPSEEK_API_KEY) {
+    provider = 'deepseek';
+    apiKey = process.env.DEEPSEEK_API_KEY;
+    baseUrl = process.env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com';
+    model = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+    console.error('  Using DeepSeek API');
+  }
+
+  // 2. Anthropic API — environment variables (CI/GitHub Actions)
+  if (!apiKey && (process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY)) {
+    provider = 'anthropic';
     apiKey = process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY || '';
     baseUrl = process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
     model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
-    console.error('  Using environment variables for credentials');
+    console.error('  Using Anthropic API (env vars)');
   }
 
-  // 2. Fallback: ~/.claude/settings.json
+  // 3. Fallback: ~/.claude/settings.json
   if (!apiKey && fs.existsSync(SETTINGS_PATH)) {
     const settings = JSON.parse(fs.readFileSync(SETTINGS_PATH, 'utf8'));
     const env = settings.env || {};
-    apiKey = env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY || '';
-    baseUrl = env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
-    model = env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+
+    // Check for DeepSeek in settings first
+    if (env.DEEPSEEK_API_KEY) {
+      provider = 'deepseek';
+      apiKey = env.DEEPSEEK_API_KEY;
+      baseUrl = env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com';
+      model = env.DEEPSEEK_MODEL || 'deepseek-chat';
+      console.error('  Using DeepSeek API (settings.json)');
+    } else {
+      provider = 'anthropic';
+      apiKey = env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY || '';
+      baseUrl = env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
+      model = env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+      console.error('  Using Anthropic API (settings.json)');
+    }
   }
 
   if (!apiKey) {
-    console.error('ERROR: No API key found. Set ANTHROPIC_AUTH_TOKEN in ~/.claude/settings.json env block or as environment variable.');
+    console.error('ERROR: No API key found. Set DEEPSEEK_API_KEY or ANTHROPIC_AUTH_TOKEN in ~/.claude/settings.json env block or as environment variable.');
     process.exit(1);
   }
-  return { apiKey, baseUrl, model };
+  return { provider, apiKey, baseUrl, model };
 }
 
 // -- Fetch helpers -----------------------------------------------------------
@@ -157,43 +179,65 @@ function validateMagazineJSON(data) {
 // -- API call ----------------------------------------------------------------
 
 async function callAPI(credentials, systemPrompt, feedData, publishDate) {
-  const { apiKey, baseUrl, model } = credentials;
-  const endpoint = baseUrl.replace(/\/$/, '') + '/v1/messages';
+  const { provider, apiKey, baseUrl, model } = credentials;
   const dateStr = publishDate || todayISO();
+  const userMessage = 'Here is the raw feed data from today. Generate the magazine JSON following the instructions above.\n\n' +
+        'IMPORTANT: Write the output JSON to the file path specified in the instructions. ' +
+        'The file path should use TODAY\'s date: ' + dateStr + '\n\n' +
+        '=== RAW FEED DATA ===\n\n' +
+        JSON.stringify(feedData, null, 2);
 
-  const body = {
-    model,
-    max_tokens: 16000,
-    temperature: 0.3,
-    system: systemPrompt,
-    messages: [
-      {
-        role: 'user',
-        content: [
-          {
-            type: 'text',
-            text: 'Here is the raw feed data from today. Generate the magazine JSON following the instructions above.\n\n' +
-                  'IMPORTANT: Write the output JSON to the file path specified in the instructions. ' +
-                  'The file path should use TODAY\'s date: ' + dateStr + '\n\n' +
-                  '=== RAW FEED DATA ===\n\n' +
-                  JSON.stringify(feedData, null, 2)
-          }
-        ]
-      }
-    ]
-  };
-
-  console.error(`Calling API: ${endpoint}`);
+  console.error(`Provider: ${provider}`);
   console.error(`Model: ${model}`);
   console.error(`Feed stats: ${feedData.stats ? JSON.stringify(feedData.stats) : 'N/A'}`);
 
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    headers: {
+  let endpoint, headers, body;
+
+  if (provider === 'deepseek') {
+    // DeepSeek: OpenAI-compatible API
+    endpoint = baseUrl.replace(/\/$/, '') + '/v1/chat/completions';
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    };
+    body = {
+      model,
+      max_tokens: 16000,
+      temperature: 0.3,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: userMessage }
+      ]
+    };
+  } else {
+    // Anthropic: Messages API
+    endpoint = baseUrl.replace(/\/$/, '') + '/v1/messages';
+    headers = {
       'Content-Type': 'application/json',
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01'
-    },
+    };
+    body = {
+      model,
+      max_tokens: 16000,
+      temperature: 0.3,
+      system: systemPrompt,
+      messages: [
+        {
+          role: 'user',
+          content: [
+            { type: 'text', text: userMessage }
+          ]
+        }
+      ]
+    };
+  }
+
+  console.error(`Calling API: ${endpoint}`);
+
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers,
     body: JSON.stringify(body)
   });
 
@@ -203,9 +247,18 @@ async function callAPI(credentials, systemPrompt, feedData, publishDate) {
   }
 
   const json = await res.json();
-  const content = json.content || [];
 
-  // Collect all text blocks
+  // DeepSeek response format: { choices: [{ message: { content: "..." } }] }
+  if (provider === 'deepseek') {
+    const text = json.choices?.[0]?.message?.content || '';
+    if (!text) {
+      throw new Error('DeepSeek returned no text content. Response: ' + JSON.stringify(json).slice(0, 500));
+    }
+    return text;
+  }
+
+  // Anthropic response format: { content: [{ type: "text", text: "..." }] }
+  const content = json.content || [];
   const text = content
     .filter(block => block.type === 'text')
     .map(block => block.text)
