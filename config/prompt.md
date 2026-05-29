@@ -132,7 +132,8 @@ Sort cards within each section by priority (1 first).
 
 ### Podcast episodes (podcast:Name)
 - The `description` field contains detailed show notes — this is your primary source
-- Extract the guest's name, company, and core thesis
+- **MANDATORY: Name the guest and their company in the FIRST rewrite bullet.** Format: "Guest Name (Company)..." e.g. "Andrew Feldman (Cerebras) took the company public at $63B..."
+- Extract the guest's name, company, and core thesis — without these the card is incomplete
 - The best podcast cards explain ONE key idea from the conversation, not a summary of everything discussed
 - Use chapter timestamps (if present in description) to identify the most important segment
 - Podcast titles are often descriptive — cross-reference with the description for the real story
@@ -146,24 +147,29 @@ Sort cards within each section by priority (1 first).
 ### X/Twitter posts (x:handle)
 - Each tweet is short — capture the core takeaway in 1–2 bullets
 - Include the URL so readers can verify
+- **Quality bar**: Only include tweets with specific data, a product/company announcement, or a strategic insight backed by concrete reasoning
+- **Skip**: jokes, satire, hot takes, "AI will change everything" tweets — even if viral. A funny VC meme is not a digest card.
 - Prioritize tweets with screenshots, data, or links to longer content
 
 ## Section Organization
 
 ### Theme grouping
-- Find a genuine conceptual thread — don't force connections
+- Each section must have ONE clear thesis. Don't force connections between unrelated stories (e.g. don't put a semiconductor IPO and a model reasoning breakthrough in the same section just because both are "big news")
 - A section with 1 card is acceptable if that card is strong enough to stand alone (priority 1)
-- Sections should have 1–4 cards
+- If two cards genuinely share a theme, group them — but the theme must be specific and the connection must be real
+- Sections should have 1–3 cards
 - Theme titles should be specific: "Agent Infrastructure: Sandboxes, Proxies, and Cattle" not "AI Infrastructure"
+- Before finalizing, ask: "Would I put these two stories in the same paragraph if I were writing an essay?" If no, they belong in different sections.
 
 ### Total content
-- Aim for 7–10 cards across 3–5 sections
+- Aim for 6–8 cards across 3–5 sections
+- 10 cards is too many — readers scan, they don't read every word. Cut the weakest 2-3 candidates even if they're "good enough"
 - If the feed has fewer than 5 quality items, it's OK to have fewer cards — quality over quantity
 - If the feed is empty or has only low-quality content, output `{"empty": true, "reason": "..."}`
 
 ## Editor's Note (intro.text)
 
-Write in German, 3–4 sentences. The editor's note should:
+Write in German, 3–4 sentences. Each sentence max 25 words. The editor's note should:
 1. Open with the biggest story of the day (name the company/person)
 2. Connect it to 1–2 other stories that share a thematic thread
 3. End with a forward-looking observation — what this means for the industry
@@ -171,7 +177,7 @@ Write in German, 3–4 sentences. The editor's note should:
 **Good intro pattern:**
 "Anthropic hat heute... Währenddessen zeigte Aaron Levie... Beide Stories verbindet eine Frage: ..."
 
-**Don't:** list what's in the issue, use marketing-speak, or write in English.
+**Don't:** list what's in the issue, use marketing-speak, write in English, or cram more than 2 stories into one sentence.
 
 ## Archive Metadata
 
@@ -190,7 +196,8 @@ Write in German, 3–4 sentences. The editor's note should:
 ## Final Checklist
 
 Before outputting the JSON, verify:
-- [ ] 7–10 cards total
+- [ ] 6–8 cards total (not 10 — cut the weakest)
+- [ ] Every podcast card names the guest + company in bullet 1
 - [ ] No source repeated more than 2 times
 - [ ] At least 3 different sources used
 - [ ] Every card has a valid sourceUrl
@@ -198,6 +205,7 @@ Before outputting the JSON, verify:
 - [ ] Every EN rewrite bullet is under 35 words
 - [ ] At least one specific number/data point per card
 - [ ] No fabricated quotes or opinions
-- [ ] intro.text is in German and 3–4 sentences
+- [ ] intro.text is in German, 3–4 sentences, each ≤25 words
 - [ ] archive.title is under 8 words in German
+- [ ] Each section has ONE clear thesis (no theme-mashing)
 - [ ] Valid JSON syntax (double quotes, no trailing commas)
