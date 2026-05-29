@@ -1,9 +1,9 @@
-name: Daily AI Builders Digest
+name: AI Builders Digest (MWF)
 
 on:
   schedule:
-    # 06:00 UTC = 08:00 Zurich (CEST) / 07:00 Zurich (CET)
-    - cron: '0 6 * * *'
+    # 06:00 UTC = 08:00 Zurich (CEST) / 07:00 Zurich (CET) — Mon/Wed/Fri
+    - cron: '0 6 * * 1,3,5'
   workflow_dispatch:  # Manual trigger from GitHub UI
 
 permissions:
@@ -72,6 +72,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Daily digest $(date +%Y-%m-%d)"
+            git commit -m "Digest $(date +%Y-%m-%d)"
             git push
           fi

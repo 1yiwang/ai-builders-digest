@@ -22,7 +22,7 @@ const FEEDS_DIR = path.join(REPO_ROOT, 'data', 'feeds');
 const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
 const STATE_PATH = path.join(REPO_ROOT, 'data', 'state-feed.json');
 
-const PODCAST_LOOKBACK_HOURS = 336; // 14 days
+const PODCAST_LOOKBACK_HOURS = 72; // 3 days
 const BLOG_LOOKBACK_HOURS = 72;
 const X_LOOKBACK_HOURS = 24;
 
