@@ -56,6 +56,16 @@
 - ✅ `data-col` 属性替代脆弱 `:nth-child()` 选择器
 - ✅ WCAG AA 44px 触摸目标（语言标签、主题切换、折叠按钮）
 
+### X/Twitter API v2 接入（2026-05-29）
+- ✅ `config/sources.json` 新增 `x` 数组：8 位 AI builder 的 X handle + 名称 + 标签
+- ✅ `scripts/generate-feed.js` 新增 `fetchXContent()`：X API v2 Bearer Token 认证
+- ✅ 用户 ID 缓存机制（`state.xUserIds`），避免重复 `/users/by/username` 查询
+- ✅ API 端点：`/2/users/by/username/:handle` → `/2/users/:id/tweets`
+- ✅ 排除 retweets/replies，按 24h 时间窗口过滤，包含 public_metrics
+- ✅ 优雅降级：无 token 时跳过并保留提示 note，不影响 podcasts/blogs 管线
+- ✅ `.github/workflows/daily-digest.yml` 新增 `X_BEARER_TOKEN` secret 传递
+- ✅ `--x-only` CLI flag 支持单独抓取 X 内容
+
 ## 已完成的优化
 
 ### ✅ 12. Telegram 推送 + GitHub Actions 定时自动化 — 已完成
@@ -84,7 +94,6 @@
 
 ## 待开发
 
-- X/Twitter API 接入
 - Blog RSS 替代方案
 - 扩展信息源（更多播客/博客/中文媒体）
 - 多领域分版（金融/政策/生物科技）
@@ -99,9 +108,10 @@
 | `config/prompt.md` | AI 生成 JSON 的 prompt（CI 可用） |
 | `config/author-identities.json` | 作者信息（CI 可用） |
 | `config/avatar-manifest.json` | 头像清单（CI 可用） |
-| `config/sources.json` | Podcast/Blog 数据源 |
+| `config/sources.json` | 数据源（X/Podcast/Blog） |
 | `data/issues/*.json` | 杂志原始数据 |
 | `data/feeds/*.json` | 本地 feed 缓存 |
+| `data/state-feed.json` | Feed 状态（已见内容 + X 用户 ID 缓存） |
 | `issues/*.html` | 渲染后的杂志页面 |
 | `assets/avatars/*.jpg` | 作者头像文件 |
 | `scripts/generate-feed.js` | Feed 生成 |

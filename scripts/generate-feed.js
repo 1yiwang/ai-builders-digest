@@ -7,6 +7,7 @@
 //
 // Usage:
 //   node scripts/generate-feed.js
+//   node scripts/generate-feed.js --x-only
 //   node scripts/generate-feed.js --podcasts-only
 //   node scripts/generate-feed.js --blogs-only
 // ============================================================================
@@ -22,19 +23,23 @@ const STATE_PATH = path.join(REPO_ROOT, 'data', 'state-feed.json');
 
 const PODCAST_LOOKBACK_HOURS = 336; // 14 days
 const BLOG_LOOKBACK_HOURS = 72;
+const X_LOOKBACK_HOURS = 24;
+
+const X_API_BASE = 'https://api.x.com/2';
 
 const RSS_USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
 // -- State Management --------------------------------------------------------
 function loadState() {
-  if (!fs.existsSync(STATE_PATH)) return { seenVideos: {}, seenArticles: {} };
+  if (!fs.existsSync(STATE_PATH)) return { seenVideos: {}, seenArticles: {}, xUserIds: {} };
   try {
     const state = JSON.parse(fs.readFileSync(STATE_PATH, 'utf-8'));
     if (!state.seenArticles) state.seenArticles = {};
+    if (!state.xUserIds) state.xUserIds = {};
     return state;
   } catch {
-    return { seenVideos: {}, seenArticles: {} };
+    return { seenVideos: {}, seenArticles: {}, xUserIds: {} };
   }
 }
 
@@ -469,13 +474,123 @@ async function fetchBlogContent(sources, state, errors) {
   return results;
 }
 
+// -- X/Twitter: API v2 Fetch --------------------------------------------------
+
+async function fetchXContent(sources, state, errors) {
+  const token = process.env.X_BEARER_TOKEN;
+  if (!token) {
+    console.error('  X: No X_BEARER_TOKEN set — skipping X/Twitter fetch');
+    return [];
+  }
+
+  if (!sources.x || sources.x.length === 0) {
+    console.error('  X: No builders in sources.json — skipping');
+    return [];
+  }
+
+  const cutoff = new Date(Date.now() - X_LOOKBACK_HOURS * 60 * 60 * 1000);
+  const results = [];
+
+  // Cache user IDs in state to avoid repeated lookups
+  if (!state.xUserIds) state.xUserIds = {};
+
+  for (const builder of sources.x) {
+    console.error(`  X: @${builder.handle}...`);
+
+    try {
+      // 1. Resolve user ID (cached or API lookup)
+      let userId = state.xUserIds[builder.handle];
+      if (!userId) {
+        const userRes = await fetch(
+          `${X_API_BASE}/users/by/username/${builder.handle}`,
+          {
+            headers: { Authorization: `Bearer ${token}` },
+            signal: AbortSignal.timeout(15000),
+          }
+        );
+        if (!userRes.ok) {
+          const errText = await userRes.text().catch(() => '');
+          errors.push(`X user lookup @${builder.handle}: HTTP ${userRes.status}${errText ? ' — ' + errText.slice(0, 200) : ''}`);
+          continue;
+        }
+        const userData = await userRes.json();
+        userId = userData.data?.id;
+        if (!userId) {
+          errors.push(`X user lookup @${builder.handle}: no user ID in response`);
+          continue;
+        }
+        state.xUserIds[builder.handle] = userId;
+        console.error(`    user ID cached: ${userId}`);
+      }
+
+      // 2. Fetch recent tweets (exclude retweets & replies)
+      const tweetsParams = new URLSearchParams({
+        max_results: '10',
+        'tweet.fields': 'created_at,public_metrics',
+        exclude: 'retweets,replies',
+      });
+      const tweetsRes = await fetch(
+        `${X_API_BASE}/users/${userId}/tweets?${tweetsParams}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+          signal: AbortSignal.timeout(15000),
+        }
+      );
+
+      if (!tweetsRes.ok) {
+        const errText = await tweetsRes.text().catch(() => '');
+        errors.push(`X tweets @${builder.handle}: HTTP ${tweetsRes.status}${errText ? ' — ' + errText.slice(0, 200) : ''}`);
+        continue;
+      }
+
+      const tweetsData = await tweetsRes.json();
+      const tweets = (tweetsData.data || [])
+        .filter(t => new Date(t.created_at) >= cutoff)
+        .map(t => ({
+          id: t.id,
+          text: t.text,
+          createdAt: t.created_at,
+          metrics: {
+            likes: t.public_metrics?.like_count || 0,
+            retweets: t.public_metrics?.retweet_count || 0,
+            replies: t.public_metrics?.reply_count || 0,
+            views: t.public_metrics?.impression_count || 0,
+          },
+        }));
+
+      if (tweets.length > 0) {
+        console.error(`    ${tweets.length} recent tweets`);
+        results.push({
+          handle: `@${builder.handle}`,
+          name: builder.name,
+          tweets,
+        });
+      } else {
+        console.error('    no recent tweets');
+      }
+    } catch (err) {
+      errors.push(`X @${builder.handle}: ${err.message}`);
+    }
+
+    // Respect rate limits: small delay between users
+    if (sources.x.indexOf(builder) < sources.x.length - 1) {
+      await new Promise(r => setTimeout(r, 300));
+    }
+  }
+
+  return results;
+}
+
 // -- Main --------------------------------------------------------------------
 async function main() {
   const args = process.argv.slice(2);
+  const xOnly = args.includes('--x-only');
   const podcastsOnly = args.includes('--podcasts-only');
   const blogsOnly = args.includes('--blogs-only');
-  const runPodcasts = podcastsOnly || (!podcastsOnly && !blogsOnly);
-  const runBlogs = blogsOnly || (!podcastsOnly && !blogsOnly);
+  const runAll = !xOnly && !podcastsOnly && !blogsOnly;
+  const runX = xOnly || runAll;
+  const runPodcasts = podcastsOnly || runAll;
+  const runBlogs = blogsOnly || runAll;
 
   // Load sources
   if (!fs.existsSync(SOURCES_PATH)) {
@@ -522,14 +637,26 @@ async function main() {
     fs.writeFileSync(path.join(FEEDS_DIR, 'feed-blogs.json'), JSON.stringify(blogFeed, null, 2));
   }
 
-  // Always write an empty X feed so generate-magazine-json.js has a complete set
+  // X/Twitter
+  let xResults = [];
+  if (runX && sources.x?.length > 0) {
+    console.error('[X/Twitter] Fetching tweets via API v2...');
+    xResults = await fetchXContent(sources, state, errors);
+    console.error(`  → ${xResults.length} builder(s) with recent tweets\n`);
+  }
+
   const xFeed = {
     generatedAt: new Date().toISOString(),
-    lookbackHours: 24,
-    x: [],
-    stats: { xBuilders: 0, totalTweets: 0 },
-    note: 'X/Twitter feed not available (requires paid API). Set X_BEARER_TOKEN to enable.',
+    lookbackHours: X_LOOKBACK_HOURS,
+    x: xResults,
+    stats: {
+      xBuilders: xResults.length,
+      totalTweets: xResults.reduce((sum, a) => sum + (a.tweets?.length || 0), 0),
+    },
   };
+  if (!process.env.X_BEARER_TOKEN) {
+    xFeed.note = 'X/Twitter feed not available (requires paid API). Set X_BEARER_TOKEN to enable.';
+  }
   fs.writeFileSync(path.join(FEEDS_DIR, 'feed-x.json'), JSON.stringify(xFeed, null, 2));
 
   // Save state
@@ -541,9 +668,9 @@ async function main() {
   }
 
   console.error('\nDone! Feeds saved to data/feeds/');
+  console.error('  feed-x.json');
   console.error('  feed-podcasts.json');
   console.error('  feed-blogs.json');
-  console.error('  feed-x.json (empty — X API not configured)');
 }
 
 main().catch(err => {
