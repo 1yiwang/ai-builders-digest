@@ -39,7 +39,12 @@
       "name": "AI & I by Every",
       "rssUrl": "https://anchor.fm/s/ed1f5584/podcast/rss",
       "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
-    }
+    },
+    { "name": "Machine Learning Street Talk", "rssUrl": "https://rss.art19.com/machine-learning-street-talk" },
+    { "name": "The Cognitive Revolution",     "rssUrl": "https://feeds.megaphone.fm/RINTP3108857801" },
+    { "name": "Last Week in AI",             "rssUrl": "https://www.lastweekinai.com/feed/podcast" },
+    { "name": "Practical AI",                "rssUrl": "https://changelog.com/practicalai/feed" },
+    { "name": "Dwarkesh Podcast",            "rssUrl": "https://dwarkeshpatel.substack.com/feed" }
   ],
   "blogs": [
     {
