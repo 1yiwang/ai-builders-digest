@@ -93,10 +93,16 @@
 - 来源多样性规则：同一来源最多 2 卡、至少 3 个不同来源
 - Priority 评分标准 + 编辑导语写作模式 + 最终检查清单
 
+### 信息源扩展（2026-05-29）
+- ✅ 公司博客 RSS：Hugging Face, OpenAI, Together AI（3 个）
+- ✅ 个人博客 RSS：Karpathy, Simon Willison, Chip Huyen（3 个）
+- ✅ 中文博客 RSS：程序员鱼皮, 超级小华（2 个）
+- ✅ 新播客 RSS：MLST, Cognitive Revolution, Last Week in AI, Practical AI（4 个）
+- ✅ X/Twitter：新增 @elonmusk（现共 9 位 builder）
+- ❌ 花叔v（X handle 未确认）、秋芝2046（飞书不可访问）、Lilian Weng / Eugene Yan（RSS 404）、Dwarkesh（空 feed）
+
 ## 待开发
 
-- Blog RSS 替代方案
-- 扩展信息源（更多播客/博客/中文媒体）
 - 多领域分版（金融/政策/生物科技）
 
 ## 关键文件
