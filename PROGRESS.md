@@ -44,8 +44,13 @@
 - `scripts/download-avatars.js`：自动从 unavatar.io / RSS / favicon 下载
 - `assets/avatars/` 包含所有 .jpg 文件，渲染已确认正常工作
 
-### 5. 摘要质量迭代
-- 下次生成时调整 prompt，提高摘要精准度
+### ✅ 5. 摘要质量迭代 — 已完成
+- Prompt 全面重写（~4KB → ~6KB）
+- 新增内容类型指南（podcast/blog/X 各自不同的处理方式）
+- 新增 Rewrite bullet 质量规则：≤30 词、至少一个具体数字、好/坏示例
+- 新增来源多样性规则：同一来源最多 2 卡、至少 3 个不同来源
+- 新增 priority 评分标准 + 编辑导语写作模式 + 最终检查清单
+- 验证结果：2026-05-29 期 — 5 个不同来源、每卡含具体数据、bullet 长度显著缩短
 
 ## 常用命令
 

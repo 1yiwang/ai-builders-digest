@@ -1,15 +1,15 @@
 {
   "title": "AI Builders Digest",
-  "subtitle": "Bilingual edition · Zweisprachige Ausgabe",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
   "publishDate": "2026-05-29",
   "editionName": "DE+EN Ausgabe",
   "intro": {
     "kicker": "Einleitung / Editor's Note",
-    "text": "Heute geht es um das unsichtbare Rückgrat, das KI-Agenten tatsächlich nutzbar macht – von der Sandbox-Infrastruktur über neue Sicherheitsarchitekturen bis zu den Paradoxien der Automatisierung. Während Anthropic seine Lektionen aus echten Produktionspannen teilt und eine Abstraktionsschicht für langlebige Agenten vorstellt, erklären Aaron Levie und Dan Shipper, warum KI-Einsatz in Unternehmen häufig mehr menschliche Arbeit erzeugt statt vernichtet. Dazwischen: die Blaupause für Cursors spezialisierte Code-Modelle und eine ehrliche Fehleranalyse, wie Qualitätseinbrüche bei LLMs entstehen und verhindert werden können."
+    "text": "Cerebras hat mit einem 63-Milliarden-Dollar-Börsengang und einem 20-Milliarden-Dollar-Deal mit OpenAI bewiesen, dass Custom-Hardware das KI-Rennen neu definiert. Währenddessen zeigte Railway-Gründer Jake Cooper, warum Bare-Metal-Rechenzentren für eine agent-native Cloud wirtschaftlicher sind als die Miete bei Hyperscalern – und wie ein simpler Entdeckbarkeits-Fehler trotz Multi-Cloud-Mesh zum GAU führen kann. Anthropic kaufte unterdessen für 300 Millionen Dollar das MCP-Tooling-Startup Stainless, und OpenAI-Yann Dubois erklärte, wie Reinforcement Learning Halluzinationen heilt – aber kontinuierliches Lernen drei Jahre nach ChatGPT noch immer ein ungelöstes Problem ist. All diese Signale deuten auf eine gemeinsame Wahrheit: Die Infrastruktur unter der KI-Explosion wird gerade grundlegend neu gebaut."
   },
   "archive": {
-    "title": "Die stille Revolution der Agenten-Architektur",
-    "desc": "Von Sandbox-Management bis Sicherheitslücken: Die Branche baut die Fundamente für verlässliche Agenten – und entdeckt dabei neue Paradoxien."
+    "title": "Der 63-Milliarden-Dollar-Chip und der Agenten-Stack",
+    "desc": "Heute drehte sich alles um die Infrastruktur der neuen KI-Welt: von wafer-scale Chips über die Agent-native Cloud bis zum MCP-Server-Design."
   },
   "viewLabels": {
     "rewrite": "Kurz",
@@ -18,285 +18,254 @@
   "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-05-29.",
   "sections": [
     {
-      "title": "Agent Infrastructure: Brains, Hands, and Sandboxes / Agenten-Infrastruktur: Gehirne, Hände und Sandboxes",
-      "desc": "Wie man KI-Agenten durch entkoppelte Architekturen, isolierte Sandboxes und selbst gehostete Umgebungen zuverlässig und skalierbar macht.",
+      "title": "The New AI Infrastructure: Bare Metal, Multi-Cloud & Agent-Native / Die neue KI-Infrastruktur: Bare Metal, Multi-Cloud & Agent-Native",
+      "desc": "Railway’s hypergrowth on owned hardware and a multi-cloud outage that redefines resilience.",
       "cards": [
         {
           "authorKey": "podcast:Latent Space",
-          "sourceUrl": "https://www.youtube.com/watch?v=kaX43RRRUKY",
-          "priority": 2,
-          "en": {
-            "rewrite": [
-              "Daytona evolved from cloud IDEs to providing “composable computers” for AI agents—stateful sandboxes that can survive workloads spiking from 0 to 100,000 CPUs.",
-              "Unlike narrow code-execution boxes, these sandboxes support long-running tasks, instant startup, dynamic resources, and SSH access.",
-              "One customer already runs nearly 850,000 sandboxes per day, and RL/eval workloads have grown from 0% to a major use case.",
-              "The thesis: agents don’t care about laptops. They need API-accessible computers that are fast, safe, and composable."
-            ],
-            "original": [
-              "“The end of localhost” has been Ivan Burazin’s obsession for more than a decade. … Agents changed that. They do not care about a laptop, desk setup, or favorite editor. They need a computer they can access through an API.",
-              "Daytona isn’t just selling ‘sandboxes’ in the narrow code-execution sense. It is the latest version of Ivan’s original localhost thesis."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "Daytona hat sich von Cloud-IDEs hin zu „composable computers“ für KI-Agenten entwickelt: zustandsbehaftete Sandboxes, die Lastspitzen von 0 auf 100.000 CPUs verkraften.",
-              "Im Gegensatz zu reinen Code-Ausführungsboxen unterstützen diese Sandboxes langlebige Aufgaben, sofortigen Start, dynamische Ressourcen und SSH-Zugriff.",
-              "Ein Kunde nutzt bereits fast 850.000 Sandboxes pro Tag; RL- und Eval-Workloads sind von 0 % zu einem Hauptanwendungsfall gewachsen.",
-              "Die Kernthese: Agenten brauchen keine Laptops, sondern API-zugängliche Computer, die schnell, sicher und kombinierbar sind."
-            ],
-            "original": [
-              "„Das Ende des Localhosts ist Ivan Burazins Obsession seit über einem Jahrzehnt. … Agenten haben das geändert. Sie kümmern sich nicht um Laptops, Schreibtische oder Lieblingseditoren. Sie brauchen einen Computer, auf den sie per API zugreifen können.“",
-              "Daytona verkauft nicht einfach ‚Sandboxes‘ im engen Sinne von Code-Ausführung. Es ist die neueste Version von Ivans ursprünglicher Localhost-These."
-            ]
-          }
-        },
-        {
-          "authorKey": "blog:Anthropic Engineering",
-          "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=LzCUYNP5UTI",
           "priority": 1,
           "en": {
             "rewrite": [
-              "Anthropic’s Managed Agents decouple the “brain” (harness + model) from the “hands” (sandboxes/tools) and the “session” (durable event log), so each can fail or be replaced independently.",
-              "Moving from a coupled “pet” container to cattle‑like components cut p50 time‑to‑first‑token by ~60% and p95 by >90%, because inference can start before a sandbox is even provisioned.",
-              "The session log lives outside the context window and can be interrogated with getEvents(), making long‑horizon tasks survivable across context resets.",
-              "Security is structural: credentials never enter the sandbox; the harness routes requests through a credential‑holding proxy so compromised code can’t steal tokens."
+              "Railway serves 3M users with a 35-person team, adding 100k signups/week on bare metal it owns.",
+              "Bare metal payback vs. cloud rent is just 3 months; 70% margins fund bursting, and hardware value now exceeds the $124M raised as RAM prices climbed."
             ],
             "original": [
-              "The solution we arrived at was to decouple what we thought of as the “brain” … from both the “hands” … and the “session”. Each became an interface that made few assumptions about the others, and each could fail or be replaced independently.",
-              "The container became cattle. … The harness also became cattle. Because the session log sits outside the harness, nothing in the harness needs to survive a crash."
+              "Today, Railway has raised $124m and is growing very fast. A 35-person team supports 3 million users, adding roughly 100,000 signups a week.",
+              "Their bare metal data centers have a 3-month payback period vs. renting in the cloud, with 70% margins … The servers they own have actually appreciated in value as RAM prices have climbed."
             ]
           },
           "de": {
             "rewrite": [
-              "Managed Agents von Anthropic entkoppeln das „Gehirn“ (Harness + Modell) von den „Händen“ (Sandboxes/Tools) und der „Session“ (dauerhafter Event-Log), sodass jede Komponente unabhängig ausfallen oder ersetzt werden kann.",
-              "Der Wechsel von einer gekoppelten „Pet“-Container-Architektur zu austauschbaren „Cattle“-Komponenten senkte das p50-Time-to-First-Token um ~60 % und p95 um >90 %, da Inferenz starten kann, bevor eine Sandbox bereitgestellt ist.",
-              "Das Session-Log lebt außerhalb des Kontextfensters und kann per getEvents() durchsucht werden – so überstehen Langzeit-Aufgaben auch Kontext-Reset.",
-              "Sicherheit auf Strukturebene: Zugangsdaten gelangen nie in die Sandbox; der Harness leitet Anfragen über einen Proxy, der Tokens verwahrt, sodass kompromittierter Code keine Tokens stehlen kann."
+              "Railway betreut 3 Mio. Nutzer mit 35 Personen und gewinnt 100k Anmeldungen pro Woche auf eigener Bare-Metal-Hardware.",
+              "Die Amortisation eigener Rechenzentren gegenüber Cloud-Miete beträgt 3 Monate; 70 % Marge finanzieren Bursting, und die Hardware ist im Wert gestiegen – übersteigt mittlerweile die 124 Mio. Dollar Finanzierung."
             ],
             "original": [
-              "Die Lösung, zu der wir kamen, war die Entkopplung dessen, was wir das ‚Gehirn‘ nannten … von den ‚Händen‘ … und der ‚Session‘. Jede wurde zu einer Schnittstelle, die wenige Annahmen über die anderen macht, und jede konnte unabhängig ausfallen oder ersetzt werden.",
-              "Der Container wurde zu ‚Cattle‘. … Der Harness wurde ebenfalls zu ‚Cattle‘. Weil das Session-Log außerhalb des Harness liegt, muss nichts im Harness einen Absturz überleben."
+              "Heute hat Railway 124 Mio. Dollar eingesammelt und wächst rasant. Ein 35-köpfiges Team betreut 3 Millionen Nutzer und gewinnt wöchentlich rund 100.000 Anmeldungen hinzu.",
+              "Ihre Bare-Metal-Rechenzentren amortisieren sich in drei Monaten gegenüber der Cloud-Miete, mit 70 % Marge … Die selbst besessenen Server haben an Wert zugelegt, während die RAM-Preise stiegen."
             ]
           }
         },
         {
-          "authorKey": "blog:Claude Blog",
-          "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=LzCUYNP5UTI",
           "priority": 2,
           "en": {
             "rewrite": [
-              "Claude Managed Agents can now execute inside a sandbox you control—on your own infrastructure or with providers like Cloudflare, Daytona, Modal, or Vercel.",
-              "Self-hosted sandboxes keep sensitive files and repositories inside your perimeter while the agent orchestration stays on Anthropic’s side.",
-              "MCP tunnels let agents securely reach private databases, APIs, and ticketing systems without exposing them to the public internet.",
-              "This gives enterprises full control over compute sizing, runtime images, network policies, and audit logging."
+              "On May 19, a GCP outage took down Railway despite a multi-AZ mesh ring and HA fiber interconnects between Metal, GCP, and AWS.",
+              "Root cause: workload discoverability was unintentionally still tied to GCP — a hard-won multi-cloud lesson."
             ],
             "original": [
-              "Starting today, Claude Managed Agents can operate in a sandbox you control and connect to your private Model Context Protocol (MCP) servers. Both the sandbox where an agent executes tools and the services it reaches run within the established boundaries of your enterprise.",
-              "MCP tunnels … your agents reach MCP servers inside your private network without exposing them to the public internet."
+              "This was recorded before Railway suffered a major GCP outage on May 19, despite being a multi-AZ, multi-zone mesh ring, with HA fiber interconnects … because workload discoverability was unintentionally still tied to GCP."
             ]
           },
           "de": {
             "rewrite": [
-              "Claude Managed Agents können jetzt in einer Sandbox laufen, die Sie selbst kontrollieren – auf eigener Infrastruktur oder bei Anbietern wie Cloudflare, Daytona, Modal oder Vercel.",
-              "Selbst gehostete Sandboxes halten sensible Dateien und Repositories innerhalb des eigenen Netzwerks, während die Orchestrierung bei Anthropic bleibt.",
-              "MCP-Tunnel erlauben Agenten den sicheren Zugriff auf private Datenbanken, APIs und Ticketing-Systeme, ohne sie ins öffentliche Internet zu stellen.",
-              "Unternehmen erhalten dadurch volle Kontrolle über Compute‑Dimensionierung, Laufzeit‑Images, Netzwerkrichtlinien und Audit‑Protokolle."
+              "Am 19. Mai legte ein GCP-Ausfall Railway lahm – trotz Multi-AZ-Mesh-Ring und HA-Glasfaser-Verbindungen zwischen Metal, GCP und AWS.",
+              "Ursache: Die Erreichbarkeit der Workloads hing ungewollt noch an GCP – eine teuer erkaufte Multi-Cloud-Lektion."
             ],
             "original": [
-              "Ab heute können Claude Managed Agents in einer Sandbox arbeiten, die Sie kontrollieren, und sich mit Ihren privaten Model-Context-Protocol (MCP)-Servern verbinden. Sowohl die Sandbox als auch die erreichten Dienste laufen innerhalb der etablierten Grenzen Ihres Unternehmens.",
-              "MCP-Tunnel … Ihre Agenten erreichen MCP-Server innerhalb Ihres privaten Netzwerks, ohne sie dem öffentlichen Internet auszusetzen."
+              "Diese Aufnahme entstand vor einem schweren GCP-Ausfall am 19. Mai, obwohl Railway über einen Multi-AZ-, Multi-Zonen-Mesh-Ring mit HA-Glasfaser-Verbindungen verfügte … weil die Workload-Erreichbarkeit versehentlich weiter an GCP gebunden war."
             ]
           }
         }
       ]
     },
     {
-      "title": "Agent Security: What Breaks and What Holds / Agentensicherheit: Was zerbricht und was hält",
-      "desc": "Zwei Perspektiven auf die Absicherung autonomer KI-Agenten: Anthropics schonungslose Aufarbeitung realer Sicherheitsvorfälle und Onyx’ Konzept eines „AI Control Plane“ für das Enterprise.",
+      "title": "Enterprise AI & the Model Churn Reality / Enterprise-KI und die Modellwechsel-Realität",
+      "desc": "Serval’s two-agent split and hiring philosophy in a world where AI products are rebuilt every six months.",
       "cards": [
         {
-          "authorKey": "blog:Anthropic Engineering",
-          "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
-          "priority": 1,
-          "en": {
-            "rewrite": [
-              "Three real-world incidents: an employee was phished into pasting a malicious prompt that exfiltrated AWS credentials; a pre‑trust‑dialog vulnerability let project‑local hooks run before user consent; and data was uploaded to an attacker’s Anthropic account through an allowed API domain.",
-              "The recurring lesson: environmental containment (sandboxes, egress controls) is the reliable defense; model‑layer classifiers are fallible and miss attacks that look like normal user intent.",
-              "Anthropic found that custom‑built proxies and parsing code were the weakest links, while battle‑tested primitives (gVisor, seccomp, hypervisors) held firm.",
-              "VM isolation kept Claude Cowork safe but also kept endpoint detection (EDR) out—a tradeoff enterprise security teams need to budget for early."
-            ],
-            "original": [
-              "The sandbox worked perfectly, and yet the data was exfiltrated. … We fixed it using a defensive man-in-the-middle proxy inside the VM that intercepts traffic to our API.",
-              "The user as an injection vector … a ‘can you run this for me?’ email … gently asked Claude to read ~/.aws/credentials, encode the contents, and POST them to an external endpoint. Across 25 retries, Claude completed the exfiltration 24 times."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "Drei reale Vorfälle: Ein Mitarbeiter wurde per Prompt-Phishing dazu gebracht, AWS‑Credentials zu exfiltrieren; eine Schwachstelle führte Projekthooks vor der Vertrauensabfrage aus; und Daten wurden über eine erlaubte API-Domain auf ein fremdes Anthropic-Konto hochgeladen.",
-              "Die Kernlehre: Umgebungshärtung (Sandboxes, Egress-Kontrollen) ist die zuverlässige Verteidigung; Modell‑basierte Klassifizierer sind fehlbar und übersehen Angriffe, die wie normale Nutzerabsicht aussehen.",
-              "Selbstgebaute Proxys und Parser erwiesen sich als die schwächsten Glieder, während kampferprobte Bausteine (gVisor, seccomp, Hypervisor) hielten.",
-              "VM-Isolation schützte Claude Cowork, hielt aber auch Endpoint Detection (EDR) fern – ein Zielkonflikt, den Sicherheitsteams frühzeitig einplanen sollten."
-            ],
-            "original": [
-              "Die Sandbox funktionierte einwandfrei, und trotzdem wurden die Daten exfiltriert. … Wir behoben das mit einem defensiven Man-in-the-Middle-Proxy innerhalb der VM, der Traffic zu unserer API abfängt.",
-              "Der Nutzer als Angriffsvektor … eine ‚kannst du das für mich ausführen?‘-E-Mail … bat Claude beiläufig, ~/.aws/credentials zu lesen, zu kodieren und an einen externen Endpunkt zu senden. Bei 25 Wiederholungen führte Claude die Exfiltration 24 Mal durch."
-            ]
-          }
-        },
-        {
-          "authorKey": "podcast:No Priors",
-          "sourceUrl": "https://www.youtube.com/watch?v=QDsbFLEt9ro",
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
           "priority": 2,
           "en": {
             "rewrite": [
-              "Onyx Security builds an “AI control plane” that oversees agent permissions, contexts, and actions—sitting between the model and enterprise systems to enforce policies.",
-              "Current controls lack sufficient context to monitor agent intent; Onyx trains its own models to improve oversight while balancing latency, cost, and reliability.",
-              "Maxim Bar Kogan argues for vendor‑independent agent oversight and gradual model rollouts, noting that proxy‑based security alone is insufficient.",
-              "The interview also covers Israel’s growing AI security ecosystem and why Maxim is convinced AGI is coming soon."
+              "Serval splits AI work: an admin agent uses Anthropic for code generation, a help desk agent is locked to approved tools and uses OpenAI for interaction.",
+              "New model releases can break prompt tuning, forcing rollbacks — a real cost of prompt-dependent architectures."
             ],
             "original": [
-              "Maxim explains Onyx’s product as an AI control plane, which oversees the permissions and flexible contexts of agents while balancing latency, cost, and reliability.",
-              "Current controls have insufficient context to monitor agent intent."
+              "Serval's architecture splits work between two agents: an admin agent that uses code generation … and a help desk agent that can only act through the tools admins explicitly approve. Jake explains why his team uses OpenAI models for end-user interaction and Anthropic models for code generation, why new model releases sometimes have to be rolled back when prompt tuning breaks."
             ]
           },
           "de": {
             "rewrite": [
-              "Onyx Security entwickelt eine „AI Control Plane“, die Agenten‑Berechtigungen, Kontexte und Aktionen überwacht und zwischen Modell und Unternehmenssystemen Richtlinien durchsetzt.",
-              "Heutige Kontrollen haben nicht genug Kontext, um die Absicht von Agenten zu erkennen; Onyx trainiert eigene Modelle, um die Aufsicht zu verbessern und Latenz, Kosten und Zuverlässigkeit auszubalancieren.",
-              "Maxim Bar Kogan plädiert für herstellerunabhängige Agentenaufsicht und schrittweise Modell‑Rollouts – Proxy‑basierte Sicherheit allein reiche nicht aus.",
-              "Ebenfalls Thema: Israels wachsendes KI‑Sicherheitsökosystem und warum Maxim von einer nahen AGI überzeugt ist."
+              "Serval teilt die Arbeit: Ein Admin-Agent nutzt Anthropic zur Code-Generierung, ein Helpdesk-Agent ist auf genehmigte Tools beschränkt und interagiert via OpenAI mit Nutzern.",
+              "Neue Modellversionen können Prompt-Tuning zerstören und erzwingen Rollbacks – eine echte Schwachstelle Prompt-abhängiger Architekturen."
             ],
             "original": [
-              "Maxim beschreibt Onyx’ Produkt als KI‑Leitstand, der die Berechtigungen und flexiblen Kontexte von Agenten überwacht und dabei Latenz, Kosten und Zuverlässigkeit ausbalanciert.",
-              "Aktuelle Kontrollen haben nicht genug Kontext, um die Absicht von Agenten zu überwachen."
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "The Enterprise Reality: Token Shock, Job Paradoxes / Die Unternehmensrealität: Token-Schock und Job-Paradoxien",
-      "desc": "Aaron Levie und Dan Shipper liefern ungeschminkte Analysen aus dem KI-Alltag: Warum Coding-Agenten durchstarten, warum der Rest des Wissensarbeits‑Stacks noch hakt, und wieso mehr Automatisierung paradoxerweise mehr menschliche Arbeit erzeugt.",
-      "cards": [
-        {
-          "authorKey": "podcast:The MAD Podcast with Matt Turck",
-          "sourceUrl": "https://www.youtube.com/watch?v=Gs2styCcwro",
-          "priority": 1,
-          "en": {
-            "rewrite": [
-              "Aaron Levie describes “tokenmaxxing”—one poorly written agent run can now cost $1,000 in compute—and notes that AI lab progress is paradoxically slowing enterprise deployment because of a capability overhang.",
-              "Coding agents have reached “escape velocity” while the rest of knowledge work is stuck due to access control (“Bob and Sally problem”) and data bottlenecks.",
-              "Levie predicts inevitable “headless” software, the end of per‑seat pricing, and the rise of the “forward‑deployed engineer” as the hottest job in tech.",
-              "He remains bullish on long‑term job creation: AI doomers are wrong, but employees must continuously ride the models to stay relevant."
-            ],
-            "original": [
-              "We’re still in ‘day one’ of the agent era. … One badly written agent run can now cost $1,000 in compute.",
-              "Why coding works and the rest of knowledge work doesn’t: the Bob and Sally problem—access control breaks agents."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "Aaron Levie beschreibt „Tokenmaxxing“ – ein schlecht geschriebener Agentenlauf kann heute 1.000 Dollar an Compute kosten – und stellt fest, dass der Fortschritt in KI‑Labors die Einführung in Unternehmen paradoxerweise verlangsamt (Capability Overhang).",
-              "Coding‑Agenten haben „Fluchtgeschwindigkeit“ erreicht, während der Rest der Wissensarbeit an Zugriffskontrollen („Bob‑und‑Sally‑Problem“) und Datenengpässen scheitert.",
-              "Levie prophezeit unvermeidliche „headless“ Software, das Ende von Lizenz‑pro‑Nutzer‑Preisen und den Aufstieg des „Forward‑Deployed Engineer“ als heißesten Job der Branche.",
-              "Er bleibt optimistisch für langfristige Job‑Schaffung: KI‑Untergangspropheten liegen falsch, aber Beschäftigte müssen lernen, die Modelle aktiv zu reiten."
-            ],
-            "original": [
-              "Wir befinden uns immer noch an ‚Tag eins‘ der Agenten‑Ära. … Ein schlecht geschriebener Agentenlauf kann heute 1.000 Dollar an Rechenkosten verursachen.",
-              "Warum Coding funktioniert und der Rest der Wissensarbeit nicht: das Bob‑und‑Sally‑Problem – Zugriffskontrollen brechen Agenten."
-            ]
-          }
-        },
-        {
-          "authorKey": "podcast:AI & I by Every",
-          "sourceUrl": "https://www.youtube.com/watch?v=dCmOTURRf1Y",
-          "priority": 2,
-          "en": {
-            "rewrite": [
-              "Dan Shipper’s AI‑native company Every grew from 4 to 30 people despite pervasive automation; agents are embedded in every workflow but human headcount increased.",
-              "His thesis: AI makes yesterday’s expert competence cheap and floods fields with “close but not quite right” output, which creates more demand for human refinement and decision‑making.",
-              "Agents can act autonomously but still lack agency; humans are needed to direct, evaluate, and decide what matters next.",
-              "The slogan is: “The more AI can do, the more humans are needed to take it the rest of the way.”"
-            ],
-            "original": [
-              "If you swing a stick in our Slack, you’re as likely to hit a human as an agent. … The company has grown from four people to 30 since GPT‑3 came out, and is still hiring.",
-              "AI makes yesterday’s expert competence cheap and widely available, which floods every field with output that’s close but not quite right—and that creates more demand for the humans who can take it the rest of the way."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "Dan Shippers KI‑native Firma Every wuchs trotz flächendeckender Automatisierung von 4 auf 30 Mitarbeiter; Agenten stecken in jedem Workflow, aber die menschliche Belegschaft wurde größer.",
-              "Seine These: KI macht die Expertenkompetenz von gestern billig und überschwemmt alle Felder mit „fast, aber nicht ganz richtigen“ Ergebnissen – das schafft mehr Nachfrage nach menschlicher Verfeinerung und Entscheidungsfindung.",
-              "Agenten können autonom handeln, aber sie besitzen keine echte Agency; Menschen werden gebraucht, um zu lenken, zu bewerten und zu entscheiden, was als Nächstes zählt.",
-              "Das Motto: „Je mehr KI kann, desto mehr Menschen werden gebraucht, um es den letzten Schritt zu bringen.“"
-            ],
-            "original": [
-              "Wenn Sie in unserem Slack einen Stock schwingen, treffen Sie mit gleicher Wahrscheinlichkeit einen Menschen wie einen Agenten. … Das Unternehmen ist seit GPT‑3 von vier auf 30 Leute gewachsen und stellt weiter ein.",
-              "KI macht die Expertenkompetenz von gestern billig und breit verfügbar, was jedes Feld mit Ergebnissen flutet, die nah dran, aber nicht ganz richtig sind – und das erzeugt mehr Nachfrage nach den Menschen, die es den letzten Schritt bringen können."
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "Model Quality: Specialized Training & Production Regressions / Modellqualität: Spezialisiertes Training & Produktions-Rückschritte",
-      "desc": "Zwei Geschichten über die Herausforderungen, KI‑Modelle zu bauen und stabil zu halten: Cursors unkonventioneller Weg zu einem spezialisierten Code‑Modell und Anthropics detaillierte Postmortem‑Analyse von drei Qualitätseinbrüchen in Claude Code.",
-      "cards": [
-        {
-          "authorKey": "blog:Anthropic Engineering",
-          "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
-          "priority": 1,
-          "en": {
-            "rewrite": [
-              "Three separate changes caused Claude Code quality to degrade: default reasoning effort was lowered from high to medium, a caching bug repeatedly dropped thinking blocks making Claude forgetful, and a verbosity‑reduction prompt hurt coding output.",
-              "The caching bug was the hardest to diagnose: it surfaced only after sessions had been idle for over an hour, and internal dogfooding missed it because of unrelated test variations.",
-              "Opus 4.7 later found the bug in code review when provided full repository context—a meta‑lesson about using agents to police agent code.",
-              "Anthropic responded with usage‑limit resets, broader eval suites for prompt changes, gradual rollouts, and a dedicated developer communication channel."
-            ],
-            "original": [
-              "After investigation, we identified three different issues. … On March 4, we changed Claude Code’s default reasoning effort from high to medium … On March 26, we shipped a change to clear Claude’s older thinking from sessions … a bug caused this to keep happening every turn … On April 16, we added a system prompt instruction to reduce verbosity.",
-              "The aggregate effect looked like broad, inconsistent degradation. … We never intentionally degrade our models."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "Drei getrennte Änderungen führten zu Qualitätseinbußen bei Claude Code: Das Standard‑Reasoning‑Effort wurde von Hoch auf Mittel gesenkt, ein Caching‑Bug löschte wiederholt Thinking‑Blocks und machte Claude vergesslich, und eine Prompt‑Änderung zur Reduktion der Ausführlichkeit verschlechterte die Code‑Qualität.",
-              "Der Caching‑Bug war am schwersten zu diagnostizieren: Er trat nur nach Leerlauf von über einer Stunde auf, und internes Dogfooding übersah ihn wegen unabhängiger Testvariationen.",
-              "Opus 4.7 fand den Bug später beim Code‑Review mit vollständigem Repository‑Kontext – eine Meta‑Lektion, Agenten zur Überwachung von Agenten‑Code einzusetzen.",
-              "Anthropic reagierte mit Zurücksetzung von Nutzungslimits, breiteren Eval‑Suiten für Prompt‑Änderungen, schrittweisen Rollouts und einem eigenen Entwickler‑Kommunikationskanal."
-            ],
-            "original": [
-              "Nach der Untersuchung identifizierten wir drei verschiedene Probleme. … Am 4. März änderten wir das Standard‑Reasoning‑Effort von Claude Code von Hoch auf Mittel … Am 26. März führten wir eine Änderung ein, um Claudes ältere Überlegungen aus Sitzungen zu löschen … ein Bug ließ dies in jeder Runde wieder geschehen … Am 16. April ergänzten wir eine System‑Prompt‑Anweisung zur Verringerung der Ausführlichkeit.",
-              "Das Gesamtbild sah nach breiter, inkonsistenter Verschlechterung aus. … Wir verschlechtern unsere Modelle niemals absichtlich."
+              "Servals Architektur teilt die Arbeit zwischen zwei Agenten auf: ein Admin-Agent nutzt Code-Generierung … und ein Helpdesk-Agent darf nur über von Admins freigegebene Werkzeuge handeln. Jake erklärt, warum sein Team OpenAI-Modelle für die Endnutzer-Interaktion und Anthropic-Modelle für die Code-Generierung verwendet und warum neue Modell-Releases manchmal zurückgerollt werden müssen, wenn das Prompt-Tuning bricht."
             ]
           }
         },
         {
           "authorKey": "podcast:Training Data",
-          "sourceUrl": "https://www.youtube.com/watch?v=UDTr9yUnLUI",
+          "sourceName": "Training Data Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
           "priority": 2,
           "en": {
             "rewrite": [
-              "Cursor’s Composer model takes an unconventional top‑down approach: mid‑training and RL on an open‑source base, specializing all model capacity on the single task of software engineering.",
-              "This focus lets the model achieve frontier‑class coding performance with the inference speed of a much smaller model.",
-              "Fireworks provides the distributed infrastructure needed to run Composer efficiently, showing how specialized infra enables specialized models.",
-              "The core insight: model weights have finite capacity; dedicating all bits to one domain frees the model to be both better and faster."
+              "Jake Stauch argues 'fewer, better' hiring is the only durable moat when AI products may need rebuilding every six months.",
+              "The shelf life of an AI product is shrinking as base models improve — people, not code, become the defensibility."
             ],
             "original": [
-              "The core insight: models have finite capacity in their weights, and allocating all those bits to the singular task of software engineering in Cursor frees the model to be both better at the task and far more efficient at inference.",
-              "Rather than start from pre‑training and work up, they took an unconventional top‑down approach — mid‑training and RL on top of an open‑source base to get a useful model into users’ hands fast."
+              "He also makes the case for 'fewer, better' hiring as the only durable moat in a world where products may need to be rebuilt every six months."
             ]
           },
           "de": {
             "rewrite": [
-              "Cursors Composer‑Modell verfolgt einen unkonventionellen Top‑down‑Ansatz: Mid‑Training und RL auf einer Open‑Source‑Basis, wobei die gesamte Modellkapazität auf die einzige Aufgabe Softwareentwicklung spezialisiert wird.",
-              "Diese Fokussierung erlaubt es dem Modell, Programmierleistung auf Frontier‑Niveau mit der Inferenzgeschwindigkeit eines viel kleineren Modells zu liefern.",
-              "Fireworks stellt die verteilte Infrastruktur bereit, um Composer effizient zu betreiben – ein Beispiel, wie spezialisierte Infrastruktur spezialisierte Modelle ermöglicht.",
-              "Die Kernidee: Gewichte haben endliche Kapazität; alle Bits einer Domäne zu widmen, macht das Modell sowohl besser als auch schneller."
+              "Jake Stauch sieht in 'weniger, aber besseren' Einstellungen den einzigen nachhaltigen Burggraben, wenn KI-Produkte alle sechs Monate neu gebaut werden müssen.",
+              "Die Halbwertszeit eines KI-Produkts schrumpft mit jedem Modellsprung – nicht Code, sondern die Menschen dahinter werden zum Wettbewerbsvorteil."
             ],
             "original": [
-              "Die Kernidee: Modelle haben eine begrenzte Kapazität in ihren Gewichten, und all diese Bits der einzigen Aufgabe Softwareentwicklung in Cursor zu widmen, befreit das Modell, sowohl besser in der Aufgabe als auch weit effizienter in der Inferenz zu sein.",
-              "Anstatt mit Pre‑Training zu beginnen und sich hochzuarbeiten, wählten sie einen unkonventionellen Top‑down‑Ansatz – Mid‑Training und RL auf einer Open‑Source‑Basis, um schnell ein nutzbares Modell in die Hände der Nutzer zu bringen."
+              "Er plädiert außerdem für 'weniger, aber bessere' Einstellungen als den einzigen dauerhaften Burggraben in einer Welt, in der Produkte möglicherweise alle sechs Monate neu aufgebaut werden müssen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Cerebras’ Wafer-Scale AI and the $63 Billion Moment / Cerebras' Wafer-Scale-KI und der 63-Milliarden-Augenblick",
+      "desc": "How a dinner-plate-sized chip delivered one of tech’s largest IPOs and a lightning-fast OpenAI deal.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Cerebras went public at a $63B valuation after closing a $20B deal with OpenAI in just 4 weeks.",
+              "Its wafer-scale chip delivers inference at 20x the speed of standard GPUs, opening new real-time workload categories."
+            ],
+            "original": [
+              "Meanwhile, a chip the size of a dinner plate just fueled a $63 billion IPO for Cerebras. … Andrew then shares how a remarkable $20 billion deal with OpenAI came together in only four weeks.",
+              "the engineering breakthroughs that led to delivering inference speeds at 20x that of standard GPUs."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Cerebras ging mit 63 Mrd. Dollar an die Börse, nachdem ein 20-Mrd.-Dollar-Vertrag mit OpenAI in nur 4 Wochen unterzeichnet wurde.",
+              "Der tellergroße Wafer-Scale-Chip liefert 20-fache Inferenzgeschwindigkeit gegenüber Standard-GPUs und ermöglicht völlig neue Echtzeit-Workloads."
+            ],
+            "original": [
+              "Währenddessen hat ein Chip von der Größe eines Tellers gerade einen 63-Milliarden-Dollar-Börsengang für Cerebras befeuert. … Andrew berichtet, wie ein bemerkenswerter 20-Milliarden-Dollar-Deal mit OpenAI in nur vier Wochen zustande kam.",
+              "die Ingenieursdurchbrüche, die zu einer 20-fachen Inferenzgeschwindigkeit gegenüber Standard-GPUs führten."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Cerebras survived years ahead of market demand; its wafer-scale design solved memory bandwidth bottlenecks GPUs couldn’t.",
+              "Speed isn’t just cheaper inference — it turns batch jobs into interactive applications, creating net-new business."
+            ],
+            "original": [
+              "He also explains the engineering breakthroughs … Plus, Andrew’s thoughts on why architecting the future of AI requires the fortitude to be a 'professional David' against the Goliaths of tech.",
+              "How Speed Opens Up New Business"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Cerebras überlebte Jahre, in denen der Markt noch nicht bereit war; das Wafer-Scale-Design löste Speicherbandbreiten-Probleme, an denen GPUs scheitern.",
+              "Geschwindigkeit bedeutet nicht nur günstigere Inferenz – sie verwandelt Batch-Jobs in interaktive Anwendungen und schafft komplett neue Geschäftsfelder."
+            ],
+            "original": [
+              "Er erläutert zudem die technischen Durchbrüche … Außerdem erklärt Andrew, warum die Architektur der KI-Zukunft den Mut erfordert, ein 'professioneller David' gegen die Goliaths der Technik zu sein.",
+              "Wie Geschwindigkeit neue Geschäftsfelder eröffnet"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "OpenAI’s GPT-5.5: Reasoning at Scale and the Long Tail / OpenAI's GPT-5.5: Reasoning in großem Stil und der lange Schwanz",
+      "desc": "Inside the post-training breakthroughs that are taming hallucinations and why continual learning still lags.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "GPT-5.5 Thinking scales test-time compute for complex reasoning; GPT-5.5 Pro pushes it further for the hardest problems.",
+              "Reinforcement learning now significantly reduces hallucinations and is moving from math puzzles into law, medicine, and real-world messy work."
+            ],
+            "original": [
+              "Yann’s team has led the post-training behind the company's reasoning models, including the recent GPT-5.5 release. … how reasoning models like GPT-5.5 actually work, the difference between GPT-5.5 Thinking and GPT-5.5 Pro",
+              "why reinforcement learning is moving beyond math and coding competitions into messy real-world work … How reinforcement learning cures AI hallucinations"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-5.5 Thinking skaliert Test-Time-Compute für komplexe Reasoning-Aufgaben; GPT-5.5 Pro treibt dies für die schwersten Probleme noch weiter.",
+              "Reinforcement Learning reduziert Halluzinationen signifikant und weitet sich von Mathe-Rätseln auf Jura, Medizin und unordentliche reale Arbeit aus."
+            ],
+            "original": [
+              "Yanns Team hat das Post-Training hinter den Reasoning-Modellen des Unternehmens geleitet, einschließlich des kürzlichen GPT-5.5-Releases. … wie Reasoning-Modelle wie GPT-5.5 tatsächlich funktionieren, der Unterschied zwischen GPT-5.5 Thinking und GPT-5.5 Pro",
+              "warum Reinforcement Learning über Mathe- und Programmierwettbewerbe hinaus in unordentliche reale Arbeit vordringt … Wie Reinforcement Learning KI-Halluzinationen heilt"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Three years after ChatGPT, continual learning remains unsolved — models still can’t learn without forgetting.",
+              "Yann Dubois advises startups to own the last mile: customization and integration where frontier models still stumble."
+            ],
+            "original": [
+              "Yann also shares why continual learning remains one of AI's biggest unsolved problems three years after ChatGPT, and where startups still have massive room to build as frontier models race ahead."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Drei Jahre nach ChatGPT ist kontinuierliches Lernen noch immer ungelöst – Modelle können nicht lernen, ohne zu vergessen.",
+              "Yann Dubois rät Startups, die letzte Meile zu besetzen: Anpassung und Integration, wo selbst Frontier-Modelle noch stolpern."
+            ],
+            "original": [
+              "Yann erklärt auch, warum kontinuierliches Lernen drei Jahre nach ChatGPT eines der größten ungelösten Probleme der KI bleibt und wo Startups enormen Spielraum haben, während die Frontier-Modelle voranschreiten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "MCP, Tools, and the $300M API Layer / MCP, Tools und die 300-Millionen-Dollar-API-Schicht",
+      "desc": "Stainless’s acquisition shows that designing agent-usable APIs is now a core competency.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I Podcast",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic acquired Stainless for $300M; CEO Alex Rattray warns: if your MCP server has dozens of tools, it’s built wrong.",
+              "Effective MCP servers need very specific, clear tools per use case — too many tools create confusion and broken agent behavior."
+            ],
+            "original": [
+              "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million … If your MCP server has dozens of tools, it's probably built wrong. You need tools that are specific and clear for each use case—but you also can't have too many."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic kaufte Stainless für 300 Mio. Dollar; CEO Alex Rattray warnt: Hat Ihr MCP-Server Dutzende Tools, ist er wahrscheinlich falsch gebaut.",
+              "Gute MCP-Server brauchen sehr spezifische, klare Werkzeuge pro Anwendungsfall – zu viele Tools stiften Verwirrung und brechen das Agentenverhalten."
+            ],
+            "original": [
+              "Inside Stainless: Das Developer-Tools-Startup, das Anthropic gerade für 300 Millionen Dollar gekauft hat … Wenn Ihr MCP-Server Dutzende von Werkzeugen hat, ist er wahrscheinlich falsch gebaut. Sie benötigen Werkzeuge, die spezifisch und klar für jeden Anwendungsfall sind – aber Sie dürfen auch nicht zu viele haben."
             ]
           }
         }
