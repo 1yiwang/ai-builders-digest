@@ -25,8 +25,8 @@
 - `issues/ai-builders-digest-2026-05-29.html`（已渲染）
 
 ### 自动化管线
-- `scripts/generate-feed.js`：RSS + YouTube + 博客抓取，生成本地 feed JSON
-- `scripts/generate-magazine-json.js`：Feed → DeepSeek API → Magazine JSON 全自动
+- `scripts/generate-feed.js`：Nitter RSS (X) + RSS + YouTube + 博客抓取，生成本地 feed JSON
+- `scripts/generate-magazine-json.js`：Feed → AI API → Magazine JSON 全自动
 - `scripts/render-ai-builders-digest.js`：渲染包装器
 - `scripts/update-index-archive.js`：Archive 更新包装器
 - `scripts/send-telegram.js`：Telegram HTML 推送
