@@ -1,0 +1,57 @@
+name: Daily AI Builders Digest
+
+on:
+  schedule:
+    # 06:00 UTC = 08:00 Zurich (CEST) / 07:00 Zurich (CET)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Manual trigger from GitHub UI
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run full pipeline
+        env:
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+          ANTHROPIC_MODEL: ${{ secrets.ANTHROPIC_MODEL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "=== Generate local feeds ==="
+          node scripts/generate-feed.js
+
+          echo "=== Generate magazine JSON ==="
+          node scripts/generate-magazine-json.js
+
+          echo "=== Render HTML ==="
+          ISSUE_DATE=$(date +%Y-%m-%d)
+          node scripts/render-ai-builders-digest.js "data/issues/ai-builders-digest-${ISSUE_DATE}.json"
+
+          echo "=== Update archive ==="
+          node scripts/update-index-archive.js
+
+          echo "=== Send to Telegram ==="
+          node scripts/send-telegram.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "AI Builders Digest Bot"
+          git config user.email "digest-bot@ai-builders.dev"
+          git add data/ issues/ index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily digest $(date +%Y-%m-%d)"
+            git push
+          fi

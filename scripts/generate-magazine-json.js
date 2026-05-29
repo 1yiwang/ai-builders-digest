@@ -54,17 +54,27 @@ function todayISO() {
 // -- Credentials -------------------------------------------------------------
 
 function loadCredentials() {
-  if (!fs.existsSync(SETTINGS_PATH)) {
-    console.error('ERROR: ~/.claude/settings.json not found. Cannot read API credentials.');
-    process.exit(1);
+  let apiKey, baseUrl, model;
+
+  // 1. Check environment variables first (for CI/GitHub Actions)
+  if (process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY) {
+    apiKey = process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY || '';
+    baseUrl = process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
+    model = process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+    console.error('  Using environment variables for credentials');
   }
-  const settings = JSON.parse(fs.readFileSync(SETTINGS_PATH, 'utf8'));
-  const env = settings.env || {};
-  const apiKey = env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY || '';
-  const baseUrl = env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
-  const model = env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+
+  // 2. Fallback: ~/.claude/settings.json
+  if (!apiKey && fs.existsSync(SETTINGS_PATH)) {
+    const settings = JSON.parse(fs.readFileSync(SETTINGS_PATH, 'utf8'));
+    const env = settings.env || {};
+    apiKey = env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY || '';
+    baseUrl = env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com';
+    model = env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514';
+  }
+
   if (!apiKey) {
-    console.error('ERROR: No API key found in ~/.claude/settings.json (env.ANTHROPIC_AUTH_TOKEN or env.ANTHROPIC_API_KEY)');
+    console.error('ERROR: No API key found. Set ANTHROPIC_AUTH_TOKEN in ~/.claude/settings.json env block or as environment variable.');
     process.exit(1);
   }
   return { apiKey, baseUrl, model };
