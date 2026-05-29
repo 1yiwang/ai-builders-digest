@@ -25,6 +25,12 @@ const MANIFEST_PATH = path.join(FOLLOW_BUILDERS_ASSETS, 'avatar-manifest.json');
 const IDENTITIES_PATH = path.join(FOLLOW_BUILDERS_ASSETS, 'author-identities.json');
 const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
 
+// Repo paths for CI compatibility (kept in sync with ~/.follow-builders)
+const REPO_CONFIG_DIR = path.join(REPO_ROOT, 'config');
+const REPO_AVATARS_DIR = path.join(REPO_ROOT, 'assets', 'avatars');
+const REPO_MANIFEST_PATH = path.join(REPO_CONFIG_DIR, 'avatar-manifest.json');
+const REPO_IDENTITIES_PATH = path.join(REPO_CONFIG_DIR, 'author-identities.json');
+
 // Avatar size to request (unavatar supports size param)
 const AVATAR_SIZE = 96;
 
@@ -321,16 +327,45 @@ async function main() {
     console.error(`Would create/update ${Object.keys(allResults).length} avatar entries`);
     console.error(JSON.stringify(allResults, null, 2));
   } else {
-    // Save manifest
+    // Save manifest to ~/.follow-builders (primary, with absolute paths)
     writeJson(MANIFEST_PATH, manifest);
     console.error('');
     console.error(`✓ Manifest saved: ${MANIFEST_PATH}`);
     console.error(`  Total entries: ${manifest.avatarCount}`);
 
-    // List files in avatars dir
-    const files = fs.readdirSync(AVATARS_DIR).filter(f => /\.(jpg|png|gif|webp|svg)$/i.test(f));
-    console.error(`  Avatar files: ${files.length}`);
-    files.forEach(f => console.error(`    - ${f}`));
+    // Also save to repo config/ with repo-relative paths for CI
+    const repoManifest = JSON.parse(JSON.stringify(manifest));
+    for (const key of Object.keys(repoManifest.entries)) {
+      const entry = repoManifest.entries[key];
+      if (entry.localPath) {
+        // Convert absolute Windows path to repo-relative
+        const basename = path.basename(entry.localPath);
+        entry.localPath = 'assets/avatars/' + basename;
+      }
+    }
+    writeJson(REPO_MANIFEST_PATH, repoManifest);
+    console.error(`✓ Repo manifest saved: ${REPO_MANIFEST_PATH}`);
+
+    // Copy avatars to repo assets/ for CI
+    ensureDir(REPO_AVATARS_DIR);
+    const avatarFiles = fs.readdirSync(AVATARS_DIR).filter(f => /\.(jpg|png|gif|webp|svg)$/i.test(f));
+    let copiedCount = 0;
+    avatarFiles.forEach(f => {
+      const src = path.join(AVATARS_DIR, f);
+      const dest = path.join(REPO_AVATARS_DIR, f);
+      if (!fs.existsSync(dest) || fs.statSync(src).mtime > fs.statSync(dest).mtime) {
+        fs.copyFileSync(src, dest);
+        copiedCount++;
+      }
+    });
+    console.error(`  Avatar files: ${avatarFiles.length} (${copiedCount} copied to repo)`);
+    avatarFiles.forEach(f => console.error(`    - ${f}`));
+
+    // Also sync author-identities to repo
+    if (fs.existsSync(IDENTITIES_PATH)) {
+      fs.copyFileSync(IDENTITIES_PATH, REPO_IDENTITIES_PATH);
+      console.error(`✓ Identities synced to: ${REPO_IDENTITIES_PATH}`);
+    }
   }
 
   console.error('');

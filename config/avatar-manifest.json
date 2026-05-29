@@ -1,0 +1,86 @@
+{
+  "entries": {
+    "x:petergyang": {
+      "localPath": "assets/avatars/x-petergyang.jpg",
+      "fileUrl": "https://unavatar.io/twitter/petergyang?size=96",
+      "source": "unavatar.io"
+    },
+    "x:nikunj": {
+      "localPath": "assets/avatars/x-nikunj.jpg",
+      "fileUrl": "https://unavatar.io/twitter/nikunj?size=96",
+      "source": "unavatar.io"
+    },
+    "x:levie": {
+      "localPath": "assets/avatars/x-levie.jpg",
+      "fileUrl": "https://unavatar.io/twitter/levie?size=96",
+      "source": "unavatar.io"
+    },
+    "x:realmadhuguru": {
+      "localPath": "assets/avatars/x-realmadhuguru.jpg",
+      "fileUrl": "https://unavatar.io/twitter/realmadhuguru?size=96",
+      "source": "unavatar.io"
+    },
+    "x:trq212": {
+      "localPath": "assets/avatars/x-trq212.jpg",
+      "fileUrl": "https://unavatar.io/twitter/trq212?size=96",
+      "source": "unavatar.io"
+    },
+    "x:zarazhangrui": {
+      "localPath": "assets/avatars/x-zarazhangrui.jpg",
+      "fileUrl": "https://unavatar.io/twitter/zarazhangrui?size=96",
+      "source": "unavatar.io"
+    },
+    "x:mattturck": {
+      "localPath": "assets/avatars/x-mattturck.jpg",
+      "fileUrl": "https://unavatar.io/twitter/mattturck?size=96",
+      "source": "unavatar.io"
+    },
+    "x:rauchg": {
+      "localPath": "assets/avatars/x-rauchg.jpg",
+      "fileUrl": "https://unavatar.io/twitter/rauchg?size=96",
+      "source": "unavatar.io"
+    },
+    "podcast:Latent Space": {
+      "localPath": "assets/avatars/podcast-latent-space.jpg",
+      "fileUrl": "https://substackcdn.com/feed/podcast/1084089/ca7468da5614a246d2906ee8926f6de7.jpg",
+      "source": "rss-feed"
+    },
+    "podcast:Training Data": {
+      "localPath": "assets/avatars/podcast-training-data.jpg",
+      "fileUrl": "https://megaphone.imgix.net/podcasts/8ca8a61c-08b4-11ef-97ab-9fe273d59030/image/4a16fd33b06708003827556209cd42b7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "source": "rss-feed"
+    },
+    "podcast:No Priors": {
+      "localPath": "assets/avatars/podcast-no-priors.jpg",
+      "fileUrl": "https://megaphone.imgix.net/podcasts/803e0244-9d0f-11ed-923a-4bb54bf77468/image/NO_PRIORS_ALBUM_and_PROFILE_PIC-01.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "source": "rss-feed"
+    },
+    "podcast:Unsupervised Learning": {
+      "localPath": "assets/avatars/podcast-unsupervised-learning.jpg",
+      "fileUrl": "https://image.simplecastcdn.com/images/ff0dbf2f-5711-4964-9172-807c39ca4824/be7895b2-4fcc-4f70-9864-584710596b1d/3000x3000/redpoint-unsupervised-learning-logo.jpg?aid=rss_feed",
+      "source": "rss-feed"
+    },
+    "podcast:The MAD Podcast with Matt Turck": {
+      "localPath": "assets/avatars/podcast-the-mad-podcast-with-matt-turck.jpg",
+      "fileUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40657026/40657026-1768486187830-f8f544fbc7c46.jpg",
+      "source": "rss-feed"
+    },
+    "podcast:AI & I by Every": {
+      "localPath": "assets/avatars/podcast-ai-i-by-every.jpg",
+      "fileUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/39682537/39682537-1775054001844-43161ae9155e9.jpg",
+      "source": "rss-feed"
+    },
+    "blog:Claude Blog": {
+      "localPath": "assets/avatars/blog-claude-blog.jpg",
+      "fileUrl": "https://claude.com/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:Anthropic Engineering": {
+      "localPath": "assets/avatars/blog-anthropic-engineering.jpg",
+      "fileUrl": "https://www.anthropic.com/favicon.ico",
+      "source": "favicon"
+    }
+  },
+  "updatedAt": "2026-05-29T16:43:46.179Z",
+  "avatarCount": 16
+}

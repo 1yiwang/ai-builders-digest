@@ -5,8 +5,14 @@ const path = require('path');
 const os = require('os');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
-const AUTHOR_IDENTITIES_PATH = path.join(os.homedir(), '.follow-builders/assets/author-identities.json');
-const AVATAR_MANIFEST_PATH = path.join(os.homedir(), '.follow-builders/assets/avatar-manifest.json');
+// Check repo config first (CI-compatible), then local ~/.follow-builders
+const AUTHOR_IDENTITIES_PATH_REPO = path.join(REPO_ROOT, 'config', 'author-identities.json');
+const AUTHOR_IDENTITIES_PATH_LOCAL = path.join(os.homedir(), '.follow-builders', 'assets', 'author-identities.json');
+const AUTHOR_IDENTITIES_PATH = fs.existsSync(AUTHOR_IDENTITIES_PATH_REPO) ? AUTHOR_IDENTITIES_PATH_REPO : AUTHOR_IDENTITIES_PATH_LOCAL;
+
+const AVATAR_MANIFEST_PATH_REPO = path.join(REPO_ROOT, 'config', 'avatar-manifest.json');
+const AVATAR_MANIFEST_PATH_LOCAL = path.join(os.homedir(), '.follow-builders', 'assets', 'avatar-manifest.json');
+const AVATAR_MANIFEST_PATH = fs.existsSync(AVATAR_MANIFEST_PATH_REPO) ? AVATAR_MANIFEST_PATH_REPO : AVATAR_MANIFEST_PATH_LOCAL;
 const SITE_AVATAR_DIR = path.join('assets', 'avatars');
 const ISSUE_HTML_DIR = 'issues';
 const DATA_ISSUES_DIR = path.join('data', 'issues');
@@ -86,6 +92,10 @@ function toLocalPath(value) {
   if (!value) return '';
   if (value.startsWith('file://')) {
     return decodeURIComponent(value.replace('file://', ''));
+  }
+  // Resolve repo-relative paths (used in config/avatar-manifest.json for CI compatibility)
+  if (!path.isAbsolute(value) && !value.startsWith('http')) {
+    return path.resolve(REPO_ROOT, value);
   }
   return value;
 }

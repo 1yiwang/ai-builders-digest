@@ -1,0 +1,84 @@
+{
+  "entries": {
+    "x:petergyang": {
+      "name": "Peter Yang",
+      "handle": "@petergyang",
+      "label": "Founder & Investor"
+    },
+    "x:nikunj": {
+      "name": "Nikunj Kothari",
+      "handle": "@nikunj",
+      "label": "FPV Ventures"
+    },
+    "x:levie": {
+      "name": "Aaron Levie",
+      "handle": "@levie",
+      "label": "Box CEO"
+    },
+    "x:realmadhuguru": {
+      "name": "Madhu Guru",
+      "handle": "@realmadhuguru",
+      "label": "Google"
+    },
+    "x:trq212": {
+      "name": "Thariq",
+      "handle": "@trq212",
+      "label": "Claude Code"
+    },
+    "x:zarazhangrui": {
+      "name": "Zara Zhang",
+      "handle": "@zarazhangrui",
+      "label": "Follow Builders"
+    },
+    "x:mattturck": {
+      "name": "Matt Turck",
+      "handle": "@mattturck",
+      "label": "FirstMark"
+    },
+    "x:rauchg": {
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "label": "Vercel CEO"
+    },
+    "podcast:Latent Space": {
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "label": "Podcast"
+    },
+    "podcast:Training Data": {
+      "name": "Training Data",
+      "handle": "@SequoiaCap",
+      "label": "Sequoia Podcast"
+    },
+    "podcast:No Priors": {
+      "name": "No Priors",
+      "handle": "@NoPriorsPod",
+      "label": "Podcast"
+    },
+    "podcast:Unsupervised Learning": {
+      "name": "Unsupervised Learning",
+      "handle": "@RedpointAI",
+      "label": "Redpoint Podcast"
+    },
+    "podcast:The MAD Podcast with Matt Turck": {
+      "name": "The MAD Podcast",
+      "handle": "@mattturck",
+      "label": "FirstMark Podcast"
+    },
+    "podcast:AI & I by Every": {
+      "name": "AI & I",
+      "handle": "@every",
+      "label": "Every Podcast"
+    },
+    "blog:Anthropic Engineering": {
+      "name": "Anthropic Engineering",
+      "handle": "@AnthropicAI",
+      "label": "Engineering Blog"
+    },
+    "blog:Claude Blog": {
+      "name": "Claude Blog",
+      "handle": "@AnthropicAI",
+      "label": "Product Blog"
+    }
+  }
+}

@@ -19,7 +19,10 @@ const os = require('os');
 const REPO_ROOT = path.resolve(__dirname, '..');
 const DATA_ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const SETTINGS_PATH = path.join(os.homedir(), '.claude', 'settings.json');
-const PROMPT_PATH = path.join(os.homedir(), '.follow-builders', 'prompts', 'build-magazine-json.md');
+// Check repo config first (CI-compatible), then local ~/.follow-builders
+const PROMPT_PATH_REPO = path.join(REPO_ROOT, 'config', 'prompt.md');
+const PROMPT_PATH_LOCAL = path.join(os.homedir(), '.follow-builders', 'prompts', 'build-magazine-json.md');
+const PROMPT_PATH = fs.existsSync(PROMPT_PATH_REPO) ? PROMPT_PATH_REPO : PROMPT_PATH_LOCAL;
 
 const FEED_X_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json';
 const FEED_PODCASTS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json';
