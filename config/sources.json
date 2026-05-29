@@ -7,7 +7,8 @@
     { "handle": "trq212",         "name": "Thariq",            "label": "Claude Code" },
     { "handle": "zarazhangrui",   "name": "Zara Zhang",        "label": "Follow Builders" },
     { "handle": "mattturck",      "name": "Matt Turck",        "label": "FirstMark" },
-    { "handle": "rauchg",         "name": "Guillermo Rauch",   "label": "Vercel CEO" }
+    { "handle": "rauchg",         "name": "Guillermo Rauch",   "label": "Vercel CEO" },
+    { "handle": "elonmusk",       "name": "Elon Musk",          "label": "xAI/Tesla/SpaceX" }
   ],
   "podcasts": [
     {
