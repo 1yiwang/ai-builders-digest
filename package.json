@@ -13,6 +13,8 @@
     "render": "node scripts/render-ai-builders-digest.js",
     "update-archive": "node scripts/update-index-archive.js",
     "sync-avatars": "node sync-site-avatars.js",
+    "download-avatars": "node scripts/download-avatars.js",
+    "avatars": "node scripts/download-avatars.js && node sync-site-avatars.js",
     "publish": "powershell -File scripts/publish.ps1",
     "full": "node scripts/generate-feed.js && node scripts/generate-magazine-json.js && node scripts/render-ai-builders-digest.js && node scripts/update-index-archive.js"
   },

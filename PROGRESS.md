@@ -37,8 +37,12 @@
 
 ## 待开发
 
-### 4. Author 头像文件
-- `assets/avatars/` 目录可能缺少实际 .jpg 头像文件
+### ✅ 4. Author 头像文件 — 已完成
+- 16 个作者 avatar 已下载（8 X/Twitter + 6 Podcast + 2 Blog）
+- `avatar-manifest.json` 已填充所有条目
+- `author-identities.json` 已添加 podcast/blog 作者条目
+- `scripts/download-avatars.js`：自动从 unavatar.io / RSS / favicon 下载
+- `assets/avatars/` 包含所有 .jpg 文件，渲染已确认正常工作
 
 ### 5. 摘要质量迭代
 - 下次生成时调整 prompt，提高摘要精准度
