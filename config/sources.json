@@ -56,5 +56,10 @@
       "articleBaseUrl": "https://claude.com/blog/",
       "fetchMethod": "http"
     }
+  ],
+  "blogRSS": [
+    { "name": "Hugging Face",   "feedUrl": "https://huggingface.co/blog/feed.xml" },
+    { "name": "OpenAI",         "feedUrl": "https://openai.com/news/rss.xml" },
+    { "name": "Together AI",    "feedUrl": "https://www.together.ai/blog/rss.xml" }
   ]
 }

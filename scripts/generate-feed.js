@@ -475,6 +475,106 @@ async function fetchBlogContent(sources, state, errors) {
   return results;
 }
 
+// -- Blog RSS Fetcher (standard RSS 2.0 feeds) -----------------------------
+
+function parseBlogRSSFeed(xml) {
+  const articles = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/gi;
+  let m;
+  while ((m = itemRegex.exec(xml)) !== null) {
+    const block = m[1];
+    const titleMatch = block.match(/<title>([\s\S]*?)<\/title>/);
+    const linkMatch = block.match(/<link>([\s\S]*?)<\/link>/);
+    const dateMatch = block.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
+    // Try content:encoded first (WordPress standard), fallback to description
+    const contentMatch =
+      block.match(/<content:encoded>([\s\S]*?)<\/content:encoded>/) ||
+      block.match(/<description>([\s\S]*?)<\/description>/);
+
+    if (titleMatch && linkMatch) {
+      const rawContent = contentMatch ? contentMatch[1] : '';
+      const content = rawContent
+        .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'")
+        .replace(/&#39;/g, "'")
+        .replace(/&nbsp;/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      articles.push({
+        title: titleMatch[1]
+          .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+          .replace(/<[^>]+>/g, '')
+          .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+          .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#39;/g, "'")
+          .trim(),
+        url: linkMatch[1].trim(),
+        publishedAt: dateMatch ? new Date(dateMatch[1].trim()).toISOString() : null,
+        content,
+      });
+    }
+  }
+  return articles;
+}
+
+async function fetchBlogRSSContent(sources, state, errors) {
+  if (!sources.blogRSS || sources.blogRSS.length === 0) return [];
+
+  const cutoff = new Date(Date.now() - BLOG_LOOKBACK_HOURS * 60 * 60 * 1000);
+  const results = [];
+
+  for (const blog of sources.blogRSS) {
+    console.error(`  RSS: ${blog.name}...`);
+    try {
+      const res = await fetch(blog.feedUrl, {
+        headers: { 'User-Agent': RSS_USER_AGENT },
+        signal: AbortSignal.timeout(15000),
+      });
+      if (!res.ok) {
+        errors.push(`Blog RSS ${blog.name}: HTTP ${res.status}`);
+        continue;
+      }
+      const xml = await res.text();
+      const articles = parseBlogRSSFeed(xml);
+
+      const newArticles = [];
+      for (const article of articles) {
+        if (state.seenArticles[article.url]) continue;
+        if (article.publishedAt && new Date(article.publishedAt) < cutoff) continue;
+        newArticles.push(article);
+        if (newArticles.length >= 3) break;
+      }
+
+      if (newArticles.length > 0) {
+        console.error(`    ${newArticles.length} new article(s)`);
+        for (const article of newArticles) {
+          results.push({
+            source: 'blog-rss',
+            name: blog.name,
+            title: article.title,
+            url: article.url,
+            publishedAt: article.publishedAt,
+            author: '',
+            description: '',
+            content: article.content,
+          });
+          state.seenArticles[article.url] = Date.now();
+        }
+      } else {
+        console.error('    No new articles');
+      }
+    } catch (err) {
+      errors.push(`Blog RSS ${blog.name}: ${err.message}`);
+    }
+  }
+  return results;
+}
+
 // -- X/Twitter Fetch (free Nitter RSS → paid API v2 fallback) ---------------
 
 // Try Nitter instances in order. RSS format: https://<instance>/<handle>/rss
@@ -730,17 +830,34 @@ async function main() {
   }
 
   // Blogs
-  if (runBlogs && sources.blogs?.length > 0) {
+  let blogs = [];
+  if (runBlogs) {
     console.error('[Blogs] Fetching articles...');
-    const blogs = await fetchBlogContent(sources, state, errors);
-    console.error(`  → ${blogs.length} new article(s)\n`);
 
-    const blogFeed = {
-      generatedAt: new Date().toISOString(),
-      lookbackHours: BLOG_LOOKBACK_HOURS,
-      blogs,
-      stats: { blogPosts: blogs.length },
-    };
+    // RSS-based blogs (Hugging Face, OpenAI, Together AI, etc.)
+    if (sources.blogRSS?.length > 0) {
+      const rssBlogs = await fetchBlogRSSContent(sources, state, errors);
+      console.error(`  RSS: ${rssBlogs.length} new article(s)`);
+      blogs = blogs.concat(rssBlogs);
+    }
+
+    // Scraped blogs (Anthropic Engineering, Claude Blog)
+    if (sources.blogs?.length > 0) {
+      const scrapedBlogs = await fetchBlogContent(sources, state, errors);
+      console.error(`  Scrape: ${scrapedBlogs.length} new article(s)`);
+      blogs = blogs.concat(scrapedBlogs);
+    }
+
+    console.error(`  → ${blogs.length} total new article(s)\n`);
+  }
+
+  const blogFeed = {
+    generatedAt: new Date().toISOString(),
+    lookbackHours: BLOG_LOOKBACK_HOURS,
+    blogs,
+    stats: { blogPosts: blogs.length },
+  };
+  if (blogs.length > 0 || sources.blogs?.length > 0 || sources.blogRSS?.length > 0) {
     fs.writeFileSync(path.join(FEEDS_DIR, 'feed-blogs.json'), JSON.stringify(blogFeed, null, 2));
   }
 
