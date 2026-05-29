@@ -63,6 +63,8 @@
     { "name": "Together AI",      "feedUrl": "https://www.together.ai/blog/rss.xml" },
     { "name": "Andrej Karpathy",  "feedUrl": "https://karpathy.github.io/feed.xml" },
     { "name": "Simon Willison",   "feedUrl": "https://simonwillison.net/atom/everything/" },
-    { "name": "Chip Huyen",       "feedUrl": "https://huyenchip.com/feed.xml" }
+    { "name": "Chip Huyen",       "feedUrl": "https://huyenchip.com/feed.xml" },
+    { "name": "程序员鱼皮",        "feedUrl": "https://www.cnblogs.com/yupi/rss" },
+    { "name": "超级小华",          "feedUrl": "https://www.cnblogs.com/xiaohuatongxueai/rss" }
   ]
 }
