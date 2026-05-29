@@ -58,8 +58,11 @@
     }
   ],
   "blogRSS": [
-    { "name": "Hugging Face",   "feedUrl": "https://huggingface.co/blog/feed.xml" },
-    { "name": "OpenAI",         "feedUrl": "https://openai.com/news/rss.xml" },
-    { "name": "Together AI",    "feedUrl": "https://www.together.ai/blog/rss.xml" }
+    { "name": "Hugging Face",     "feedUrl": "https://huggingface.co/blog/feed.xml" },
+    { "name": "OpenAI",           "feedUrl": "https://openai.com/news/rss.xml" },
+    { "name": "Together AI",      "feedUrl": "https://www.together.ai/blog/rss.xml" },
+    { "name": "Andrej Karpathy",  "feedUrl": "https://karpathy.github.io/feed.xml" },
+    { "name": "Simon Willison",   "feedUrl": "https://simonwillison.net/atom/everything/" },
+    { "name": "Chip Huyen",       "feedUrl": "https://huyenchip.com/feed.xml" }
   ]
 }
