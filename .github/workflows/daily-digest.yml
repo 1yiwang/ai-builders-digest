@@ -13,6 +13,8 @@ jobs:
   digest:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Suppress Node 20 deprecation warning
 
     steps:
       - name: Checkout repo
@@ -35,10 +37,21 @@ jobs:
           node scripts/generate-feed.js
 
           echo "=== Generate magazine JSON ==="
-          node scripts/generate-magazine-json.js
+          ISSUE_DATE=$(date +%Y-%m-%d)
+          JSON_PATH="data/issues/ai-builders-digest-${ISSUE_DATE}.json"
+          if [ -f "$JSON_PATH" ]; then
+            CARD_COUNT=$(node -e "const j=JSON.parse(require('fs').readFileSync('${JSON_PATH}','utf8'));console.log(j.sections.reduce((s,sec)=>s+(sec.cards?.length||0),0))")
+            if [ "$CARD_COUNT" -gt 3 ]; then
+              echo "SKIP: ${JSON_PATH} already has ${CARD_COUNT} cards (preserving existing)"
+            else
+              echo "Existing JSON is thin (${CARD_COUNT} cards), regenerating..."
+              node scripts/generate-magazine-json.js --date "$ISSUE_DATE"
+            fi
+          else
+            node scripts/generate-magazine-json.js --date "$ISSUE_DATE"
+          fi
 
           echo "=== Render HTML ==="
-          ISSUE_DATE=$(date +%Y-%m-%d)
           node scripts/render-ai-builders-digest.js "data/issues/ai-builders-digest-${ISSUE_DATE}.json"
 
           echo "=== Update archive ==="

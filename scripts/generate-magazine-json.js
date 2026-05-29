@@ -156,9 +156,10 @@ function validateMagazineJSON(data) {
 
 // -- API call ----------------------------------------------------------------
 
-async function callAPI(credentials, systemPrompt, feedData) {
+async function callAPI(credentials, systemPrompt, feedData, publishDate) {
   const { apiKey, baseUrl, model } = credentials;
   const endpoint = baseUrl.replace(/\/$/, '') + '/v1/messages';
+  const dateStr = publishDate || todayISO();
 
   const body = {
     model,
@@ -173,7 +174,7 @@ async function callAPI(credentials, systemPrompt, feedData) {
             type: 'text',
             text: 'Here is the raw feed data from today. Generate the magazine JSON following the instructions above.\n\n' +
                   'IMPORTANT: Write the output JSON to the file path specified in the instructions. ' +
-                  'The file path should use TODAY\'s date: ' + todayISO() + '\n\n' +
+                  'The file path should use TODAY\'s date: ' + dateStr + '\n\n' +
                   '=== RAW FEED DATA ===\n\n' +
                   JSON.stringify(feedData, null, 2)
           }
@@ -306,7 +307,7 @@ async function main() {
   console.error('  (this may take 30-90 seconds)');
   let responseText;
   try {
-    responseText = await callAPI(credentials, systemPrompt, feedData);
+    responseText = await callAPI(credentials, systemPrompt, feedData, publishDate);
   } catch (err) {
     console.error(`  API call failed: ${err.message}`);
     process.exit(1);
