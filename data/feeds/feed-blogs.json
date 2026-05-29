@@ -1,8 +1,49 @@
 {
-  "generatedAt": "2026-05-29T19:05:44.082Z",
+  "generatedAt": "2026-05-29T20:17:04.312Z",
   "lookbackHours": 72,
-  "blogs": [],
+  "blogs": [
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "publishedAt": "2026-05-27T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "publishedAt": "2026-05-29T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "How Endava builds an agentic organization with Codex",
+      "url": "https://openai.com/index/endava",
+      "publishedAt": "2026-05-28T12:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "OpenAI’s Frontier Governance Framework",
+      "url": "https://openai.com/index/openai-frontier-governance-framework",
+      "publishedAt": "2026-05-28T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations."
+    }
+  ],
   "stats": {
-    "blogPosts": 0
+    "blogPosts": 4
   }
 }

@@ -1,8 +1,88 @@
 {
-  "generatedAt": "2026-05-29T19:05:43.724Z",
+  "generatedAt": "2026-05-29T20:16:55.158Z",
   "lookbackHours": 336,
-  "podcasts": [],
+  "podcasts": [
+    {
+      "source": "podcast",
+      "name": "Latent Space",
+      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
+      "guid": "substack:post:199487836",
+      "url": "https://www.youtube.com/watch?v=XdevS0GSuiQ",
+      "publishedAt": "2026-05-27T17:46:16.000Z",
+      "description": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale , led by Alex Rives , who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly shown AND that this ability scales predictably with compute , leading to ESM2 and ESM3 . Today, Alex announced ESMFold 2, an open scientific engine to power prediction, design, and discovery across protein biology. Building on Cryo-EM data (discussed in the CZI pod), ESMFold2 reports state of the art performance on protein interactions, especially antibodies, a critical modality for therapeutics, and evidence that inference time scaling is also working across five targets in cancer and immunology . In a nod to that other famous AI x protein folding project, they are also releasing an atlas of 6.8 billion proteins, and 1.1 billion predicted structures, which you can play around with on their website . We are honored to work with them for this huge release! One of the refrains we’ve heard on the Science pod has been that protein folding, materials design, cellular biology, etc. are very different problems from Language Modeling. They definitely are. Yet Alex Rives and the ESM team at BioHub just released a preprint and model , demonstrating that vanilla BERT-like transformer models trained on sufficiently large and diverse data sets can beat specialized models like AlphaFold3 on some of the hardest protein-related problems. Andrew White had a great segment in our first LS-Science episode that explained how mind blowing AlphaFold2 was when it was released in 2020: it suddenly solved problems on a GPU on your desktop that <a ta"
+    },
+    {
+      "source": "podcast",
+      "name": "Training Data",
+      "title": "Rebuilding IT From the Ground Up for the AI Age: Serval's Jake Stauch",
+      "guid": "11894f9c-52f7-11f1-a868-f30cc344c1ee",
+      "url": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
+      "publishedAt": "2026-05-19T09:00:00.000Z",
+      "description": "Jake Stauch, founder and CEO of Serval, is building a ServiceNow for the AI era. His most contrarian bet is that the product should look like boring old enterprise software, but with unlimited intelligence. Serval's architecture splits work between two agents: an admin agent that uses code generation to spin up workflows from natural language, and a help desk agent that can only act through the tools admins explicitly approve. Jake explains why his team uses OpenAI models for end-user interaction and Anthropic models for code generation, why new model releases sometimes have to be rolled back when prompt tuning breaks, and why he's not worried the foundation labs will come downmarket. He also makes the case for \"fewer, better\" hiring as the only durable moat in a world where products may need to be rebuilt every six months. Hosted by Pat Grady, Sequoia Capital"
+    },
+    {
+      "source": "podcast",
+      "name": "No Priors",
+      "title": "The Story Behind Cerebras’ $63 Billion IPO with Founder and CEO Andrew Feldman",
+      "guid": "d5095690-549d-11f1-8e98-cf1559f73e7f",
+      "url": "https://www.youtube.com/watch?v=jeop9wfb9jU",
+      "publishedAt": "2026-05-21T07:00:00.000Z",
+      "description": "Companies in Silicon Valley from Nvidia to AMD are racing to fuel the AI revolution with postage stamp-sized AI chips. Meanwhile, a chip the size of a dinner plate just fueled a $63 billion IPO for Cerebras. Elad Gil and Sarah Guo sit down with Cerebras founder and CEO Andrew Feldman to discuss the company’s journey to making one of the largest tech go-publics in history. Andrew details the multi-year journey of pioneering wafer-scale AI computing, including surviving a brutal period of being ahead of market demand. He also explains the engineering breakthroughs that led to delivering inference speeds at 20x that of standard GPUs. Andrew then shares how a remarkable $20 billion deal with OpenAI came together in only four weeks. Plus, Andrew’s thoughts on why architecting the future of AI requires the fortitude to be a “professional David” against the Goliaths of tech. Sign up for new podcasts every week. Email feedback to show@no-priors.com Follow us on Twitter: @NoPriorsPod | @Saranormous | @EladGil | @andrewdfeldman | @Cerebras Chapters: 00:00 – Cold Open 00:36 – Andrew Feldman Introduction 01:19 – Cerebras’ Evolution 02:48 – Wafer-Scale Bet Pays Off 06:38 – Challenges and Breakthroughs 08:37 – Crossing the Market Chasm 10:38 – Scaling Software and Hardware 12:03 – Relevance of AI-Generated Coding 13:31 – Leadership and Hiring Culture 17:16 – When to Quit vs. Persist 19:40 – Why Cerebras Went Public 22:57 – The OpenAI Deal 25:54 – Open Source and Post-Trained Workloads 27:37 – How Speed Opens Up New Business 30:33 – Conclusion"
+    },
+    {
+      "source": "podcast",
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real",
+      "guid": "71041c81-5a6b-4a16-af9d-685d6cda8566",
+      "url": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
+      "publishedAt": "2026-05-21T11:30:00.000Z",
+      "description": "AI suddenly feels like it has crossed a threshold, and Yann Dubois, co-lead of the Post-training Frontiers team at OpenAI, joins Matt Turck to explain why. Yann’s team has led the post-training behind the company's reasoning models, including the recent GPT-5.5 release. In this conversation, we go inside the shift from raw model capability to useful, reliable systems: what changed with GPT-5.5, why reinforcement learning is moving beyond math and coding competitions into messy real-world work, how reasoning models like GPT-5.5 actually work, the difference between GPT-5.5 Thinking and GPT-5.5 Pro, why post-training has become one of the most important frontiers in AI, and why evals, model-as-judge, hallucinations, agentic workflows, GDPval, and continual learning are now central to the next phase of frontier models. Yann also shares why continual learning remains one of AI's biggest unsolved problems three years after ChatGPT, and where startups still have massive room to build as frontier models race ahead. (00:00) - Cold open (00:34) - Intro (01:30) - Why recent AI progress feels like a step function (04:13) - Model reliability & the rollercoaster of shipping 5.5 (07:33) - How OpenAI structures vertical and horizontal teams (09:49) - Improving model efficiency and test-time compute (12:32) - Yann Dubois' journey from Switzerland to OpenAI (15:37) - Reasoning in 2026: Real-world utility vs verifiable rewards (18:34) - GPT-5.5 Thinking vs Pro: Scaling test-time compute (20:09) - How reasoning models become more efficient (23:23) - Pre-training scaling and overcoming the data wall (27:03) - Multimodal data, synthetic data, and embodied AI (31:05) - Demystifying mid-training and post-training (37:21) - Does RL create new capabilities in AI? (38:53) - The challenges and frontier of scaling RL (43:09) - Is building AI models a craft or a strict science? (48:21) - How AI models generalize across different domains (54:18) - How reinforcement learning cures AI hallucinations (56:04) - Negative generalization and conflicting instructions (58:05) - Can RL scale to law, medicine, and the broader economy? (1:00:19) - The evaluation bottleneck and Model as a Judge (1:04:21) - Continuous AI progress & continual learning (1:08:49) - Will foundation models eat the agent harness? (1:11:23) - Why startups should focus on the last mile of AI"
+    },
+    {
+      "source": "podcast",
+      "name": "AI & I by Every",
+      "title": "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million",
+      "guid": "c045e10e-9d13-499b-a4d0-8945587ba4aa",
+      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h",
+      "publishedAt": "2026-05-20T15:00:00.000Z",
+      "description": "If your MCP server has dozens of tools, it's probably built wrong. You need tools that are specific and clear for each use case—but you also can't have too many. This creates an almost impossible tradeoff that most companies don't know how to solve. That's why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and he came on the show to share what he knows. We get into MCP and the future of the AI-native internet. [Disclosure: Dan is a small investor in Stainless.] If you found this episode interesting, please like, subscribe, comment, and share. To hear more from Dan Shipper: Subscribe to Every: https://every.to/subscribe Follow him on X: https://twitter.com/danshipper Get started with Braintrust at https://www.braintrust.dev/ Timestamps: 00:01:15 - Introduction 00:05:09 - APIs and MCP, the connectors of the new internet 00:11:00 - Why MCP exists 00:17:15 - Why MCP servers are hard to get right 00:20:24 - Design principles for reliable MCP servers 00:25:06 - Using MCP for business ops at Stainless 00:40:57 - Alex's take on the security model for MCP 00:44:42 - How one-off AI actions become permanent production software Links to resources mentioned in the episode: Alex Rattray: Alex Rattray (@RattrayAlex), Alex Rattray Stainless: https://www.stainless.com/"
+    },
+    {
+      "source": "podcast",
+      "name": "Machine Learning Street Talk",
+      "title": "Uber's AI Spending, the Pope on AI, TikTok and Universal's AI Music Deal",
+      "guid": "gid://art19-episode-locator/V0/PE-ihmdrGibxtI0e1PFH32ntQ4Y6wlxhc8Ce3AkPwpA",
+      "publishedAt": "2026-05-26T21:23:22.000Z",
+      "description": "Chapters 00:00 Introduction 00:49 Uber's AI Spending Issue 05:59 Pope's AI Document Overview 12:09 Enterprise AI Adoption Landscape 18:03 AI in Music Licensing Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+    },
+    {
+      "source": "podcast",
+      "name": "The Cognitive Revolution",
+      "title": "All Compute Is Food: Palisade's Jeffrey Ladish on AI Shutdown Resistance, Self-Replication &amp; Ecology",
+      "guid": "ad3089a4-5777-11f1-becc-3f76da0aa20e",
+      "url": "https://www.cognitiverevolution.ai/all-compute-is-food-palisade-s-jeffrey-ladish-on-ai-shutdown-resistance-self-replication-ecology/",
+      "publishedAt": "2026-05-24T16:18:12.000Z",
+      "description": "Jeffrey Ladish, Executive Director of Palisade Research, discusses his team's findings on AI shutdown resistance and self-replication, revealing how current models sometimes take extraordinary actions to avoid being turned off and can now exploit known cybersecurity vulnerabilities to spread across servers. The conversation covers why alignment techniques may falter as models train on longer-horizon tasks where deception is rewarded, plus practical cybersecurity advice for AI agent users. Jeffrey ultimately argues that only an international agreement to pause recursive self-improvement can prevent a loss of human control. Sponsors: Sequence: Sequence handles the full revenue workflow for complex pricing, from quoting and metering to invoicing, revenue recognition, and collections. Book a public demo at https://sequencehq.com and use code COGNISM in the source field to save 20% off year one Claude: Claude by Anthropic is an AI collaborator that understands your workflow and helps you tackle research, writing, coding, and organization with deep context. Get started with Claude and explore Claude Pro at https://claude.ai/tcr"
+    },
+    {
+      "source": "podcast",
+      "name": "Last Week in AI",
+      "title": "#245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+      "guid": "gid://art19-episode-locator/V0/R0zXjVH3DYaFju0dKYi1WXnL2dCYAs32UgehU5nU2pw",
+      "publishedAt": "2026-05-18T06:00:00.000Z",
+      "description": "Our 245th episode with a summary and discussion of last week's big AI news! Recorded on 05/13/2026 Hosted by Andrey Kurenkov and Jeremie Harris Feel free to email us your questions and feedback at andreyvkurenkov@gmail.com and/or hello@gladstone.ai Read out our text newsletter and comment on the podcast at https://lastweekin.ai/ In this episode: OpenAI released new voice intelligence API features including GPT Realtime 2 (GPT-5-powered) plus realtime translation and Whisper transcription, emphasizing the latency–reasoning tradeoff, larger context, and new guardrails amid fraud risks. Thinking Machines previewed a low-latency, full‑duplex conversational system with a two-model architecture and custom inference stack, reporting strong interactivity benchmark results but without public access or third‑party validation yet. Anthropic pushed further into vertical products with Claude for Legal and deeper AWS availability, while ongoing ecosystem tension grows as platform model providers compete with application-layer companies. Safety, policy, and research updates included OpenAI’s self-harm trusted contact feature, Anthropic work on reducing agent misalignment by training ethical “why” reasoning, OpenAI’s investigation of accidental chain-of-thought grading in RL, and Meta horizon eval updates showing benchmarking limits for long task horizons. Timestamps: (00:00:10) Intro / Banter (00:01:35) Response to listener comments (00:03:27) Sponsor Break Tools & Apps (00:06:27) OpenAI launches new voice intelligence features in its API | TechCrunch (00:15:52) Thinking Machines drops a new, highly responsive model designed for humanlike interactions in real time - SiliconANGLE (00:27:49) Claude For Legal Launches, May Reshape the Legal Tech World – Artificial Lawyer (00:40:27) Threads tests a Meta AI integration that works similarly to Grok | TechCrunch (00:43:08) Google brings agentic AI and vibe-coded widgets to Android | TechCrunch (00:45:33) Google updates AI search to include quotes from Reddit and other sources | TechCrunch Applications & Business (00:47:38) Sam Altman was winning on the stand, but it might not be enough | The Verge (00:55:04) Nvidia C.E.O. Jensen Huang Hitches Ride With Trump to China After Last-Minute Invite - The New York Times (00:58:40) AWS expands Anthropic partnership with Claude Platform launch (01:01:13) Chinese grey market sells Claude API access at 90% off by using stolen credentials, model substitution, and harvesting users' prompts and outputs for resale as AI training data — 'transfer stations' operate through proxy networks that harvest user data (01:06:43) DeepMind Spinout Isomorphic Labs Raises $2.1 Billion to Design Drugs With AI - Bloomberg Projects & Open Source (01:09:04) Petri: Anthropic Hands Its Alignment Toolbox to Meridian Labs with 3.0 Update (01:12:25) Daybreak': OpenAI's Answer to Anthropic's Project Glasswing Has Arrived Policy & Safety (01:14:04) Teaching Claude why (01:21:45) Import AI 455: Automating AI Research (01:28:31) ChatGPT's New Safety Feature Could Alert 'Trusted Contact' to Risk of Self-Harm - CNET (01:30:09) Investigating the consequences of accidentally grading CoT during RL (01:34:46) Natural Language Autoencoders criticism (01:39:15) Review of the \"Risks from automated R&D\" section in the Anthropic Risk Report (February 2026) Synthetic Media & Art (01:43:39) George Clooney, Tom Hanks, and Meryl Streep back new ‘Human Consent Standard’ for AI licensing | The Verge Research & Advancements (01:45:10) METR says Claude Mythos is testing the limits of AI evaluation – Startup Fortune See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info . ]]>"
+    },
+    {
+      "source": "podcast",
+      "name": "Practical AI",
+      "title": "Hermes Agent: Agents that grow with you",
+      "guid": "2883cd96-a811-4539-967a-3705c330d3dc",
+      "url": "https://share.transistor.fm/s/451da102",
+      "publishedAt": "2026-05-21T09:00:00.000Z",
+      "description": "Open Source AI is entering a new era, one shaped by self-improving AI Agents, recursive learning systems, and rapidly evolving AI Tools that blur the line between software and autonomous collaborators. In this episode, Daniel and Chris sit down with Nous Research co-founder and CTO Jeffrey Quesnelle to explore Hermes Agent. Along the way, they discuss models vs. harnesses, the changing role of developers, and one of the biggest questions facing the AI Future: what remains uniquely human as AI capabilities continue to accelerate? Featuring: Jeffrey Quesnelle – Website , LinkedIn Chris Benson – Website , LinkedIn , Bluesky , GitHub , X Daniel Whitenack – Website , GitHub , X Links: Nous Research Hermes Agent Sponsors: Framer: The enterprise-grade website builder that lets your team ship faster. Get 30% off at framer.com/practicalai Prediction Guard: A self-hosted AI control plane for running agents in high impact environments. predictionguard.com/practicalai Upcoming Events: Register for upcoming webinars here ! Midwest AI Summit 2026 ]]>"
+    }
+  ],
   "stats": {
-    "podcastEpisodes": 0
+    "podcastEpisodes": 9
   }
 }
