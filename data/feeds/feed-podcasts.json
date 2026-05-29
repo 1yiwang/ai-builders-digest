@@ -1,54 +1,18 @@
 {
-  "generatedAt": "2026-05-29T16:50:38.221Z",
+  "generatedAt": "2026-05-29T17:48:28.437Z",
   "lookbackHours": 336,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Latent Space",
-      "title": "Railway: The Agent-Native Cloud — Jake Cooper",
-      "guid": "substack:post:198575235",
-      "url": "https://www.youtube.com/watch?v=LzCUYNP5UTI",
-      "publishedAt": "2026-05-20T22:42:06.000Z",
-      "description": "Take the 2026 AI Engineering Survey and get >$2k in credits and AIE WF tickets ! This was recorded before Railway suffered a major GCP outage on May 19, despite being a multi-AZ, multi-zone mesh ring, with HA fiber interconnects between their Metal <> GCP <> AWS, because workload discoverability was unintentionally still tied to GCP. All has been resolved with a post-mortem . Railway did not start as an AI infrastructure company. It was founded in 2020 years before agents became the default way people thought about deploying software. Jake Cooper , formerly at Bloomberg and Uber, started Railway with a simple obsession: the activation energy to ship something to production should be near zero. Push code, get a URL, iterate. No Docker files, no Kubernetes manifests, no Ansible scripts stacked on Ansible scripts. For years, this was a slow grind. Railway spent its first 18 months hand-acquiring its first 100 users with Jake personally greeting every Discord signup on a second monitor. Today, Railway has raised $124m and is growing very fast. A 35-person team supports 3 million users, adding roughly 100,000 signups a week. Their bare metal data centers have a 3-month payback period vs. renting in the cloud, with 70% margins funding aggressive cloud bursting when needed. The servers they own have actually appreciated in value as RAM prices have climbed basically meaning the value of their hardware now exceeds the capital they've raised. From rebuilding Railway’s network overlay over a weekend to moving the vast majority of workloads onto its own bare metal data centers , Jake Cooper is trying to build a new cloud for an agent-native world . In this episode, Railway’s founder and “conductor” joins swyx and Alessio to unpack why the next era of software infrastructure is not just “ Heroku but newer,” what agents need that humans did not, and why the old deployment loop of Git, PRs, CI/CD, and static cloud resources may be heading for a rewrite. We go deep on Railway’s infrastructure stack : own-metal data centers, three-month cloud payback periods"
-    },
-    {
-      "source": "podcast",
-      "name": "Training Data",
-      "title": "Rebuilding IT From the Ground Up for the AI Age: Serval's Jake Stauch",
-      "guid": "11894f9c-52f7-11f1-a868-f30cc344c1ee",
-      "url": "https://www.youtube.com/watch?v=j7ypvRUFY7M",
-      "publishedAt": "2026-05-19T09:00:00.000Z",
-      "description": "Jake Stauch, founder and CEO of Serval, is building a ServiceNow for the AI era. His most contrarian bet is that the product should look like boring old enterprise software, but with unlimited intelligence. Serval's architecture splits work between two agents: an admin agent that uses code generation to spin up workflows from natural language, and a help desk agent that can only act through the tools admins explicitly approve. Jake explains why his team uses OpenAI models for end-user interaction and Anthropic models for code generation, why new model releases sometimes have to be rolled back when prompt tuning breaks, and why he's not worried the foundation labs will come downmarket. He also makes the case for \"fewer, better\" hiring as the only durable moat in a world where products may need to be rebuilt every six months. Hosted by Pat Grady, Sequoia Capital"
-    },
-    {
-      "source": "podcast",
-      "name": "No Priors",
-      "title": "The Story Behind Cerebras’ $63 Billion IPO with Founder and CEO Andrew Feldman",
-      "guid": "d5095690-549d-11f1-8e98-cf1559f73e7f",
-      "url": "https://www.youtube.com/watch?v=jeop9wfb9jU",
-      "publishedAt": "2026-05-21T07:00:00.000Z",
-      "description": "Companies in Silicon Valley from Nvidia to AMD are racing to fuel the AI revolution with postage stamp-sized AI chips. Meanwhile, a chip the size of a dinner plate just fueled a $63 billion IPO for Cerebras. Elad Gil and Sarah Guo sit down with Cerebras founder and CEO Andrew Feldman to discuss the company’s journey to making one of the largest tech go-publics in history. Andrew details the multi-year journey of pioneering wafer-scale AI computing, including surviving a brutal period of being ahead of market demand. He also explains the engineering breakthroughs that led to delivering inference speeds at 20x that of standard GPUs. Andrew then shares how a remarkable $20 billion deal with OpenAI came together in only four weeks. Plus, Andrew’s thoughts on why architecting the future of AI requires the fortitude to be a “professional David” against the Goliaths of tech. Sign up for new podcasts every week. Email feedback to show@no-priors.com Follow us on Twitter: @NoPriorsPod | @Saranormous | @EladGil | @andrewdfeldman | @Cerebras Chapters: 00:00 – Cold Open 00:36 – Andrew Feldman Introduction 01:19 – Cerebras’ Evolution 02:48 – Wafer-Scale Bet Pays Off 06:38 – Challenges and Breakthroughs 08:37 – Crossing the Market Chasm 10:38 – Scaling Software and Hardware 12:03 – Relevance of AI-Generated Coding 13:31 – Leadership and Hiring Culture 17:16 – When to Quit vs. Persist 19:40 – Why Cerebras Went Public 22:57 – The OpenAI Deal 25:54 – Open Source and Post-Trained Workloads 27:37 – How Speed Opens Up New Business 30:33 – Conclusion"
-    },
-    {
-      "source": "podcast",
-      "name": "The MAD Podcast with Matt Turck",
-      "title": "OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real",
-      "guid": "71041c81-5a6b-4a16-af9d-685d6cda8566",
-      "url": "https://www.youtube.com/watch?v=DhD1zZ8w8Mw",
-      "publishedAt": "2026-05-21T11:30:00.000Z",
-      "description": "AI suddenly feels like it has crossed a threshold, and Yann Dubois, co-lead of the Post-training Frontiers team at OpenAI, joins Matt Turck to explain why. Yann’s team has led the post-training behind the company's reasoning models, including the recent GPT-5.5 release. In this conversation, we go inside the shift from raw model capability to useful, reliable systems: what changed with GPT-5.5, why reinforcement learning is moving beyond math and coding competitions into messy real-world work, how reasoning models like GPT-5.5 actually work, the difference between GPT-5.5 Thinking and GPT-5.5 Pro, why post-training has become one of the most important frontiers in AI, and why evals, model-as-judge, hallucinations, agentic workflows, GDPval, and continual learning are now central to the next phase of frontier models. Yann also shares why continual learning remains one of AI's biggest unsolved problems three years after ChatGPT, and where startups still have massive room to build as frontier models race ahead. (00:00) - Cold open (00:34) - Intro (01:30) - Why recent AI progress feels like a step function (04:13) - Model reliability & the rollercoaster of shipping 5.5 (07:33) - How OpenAI structures vertical and horizontal teams (09:49) - Improving model efficiency and test-time compute (12:32) - Yann Dubois' journey from Switzerland to OpenAI (15:37) - Reasoning in 2026: Real-world utility vs verifiable rewards (18:34) - GPT-5.5 Thinking vs Pro: Scaling test-time compute (20:09) - How reasoning models become more efficient (23:23) - Pre-training scaling and overcoming the data wall (27:03) - Multimodal data, synthetic data, and embodied AI (31:05) - Demystifying mid-training and post-training (37:21) - Does RL create new capabilities in AI? (38:53) - The challenges and frontier of scaling RL (43:09) - Is building AI models a craft or a strict science? (48:21) - How AI models generalize across different domains (54:18) - How reinforcement learning cures AI hallucinations (56:04) - Negative generalization and conflicting instructions (58:05) - Can RL scale to law, medicine, and the broader economy? (1:00:19) - The evaluation bottleneck and Model as a Judge (1:04:21) - Continuous AI progress & continual learning (1:08:49) - Will foundation models eat the agent harness? (1:11:23) - Why startups should focus on the last mile of AI"
-    },
-    {
-      "source": "podcast",
-      "name": "AI & I by Every",
-      "title": "Inside Stainless: The Developer Tools Startup Anthropic Just Bought for $300 Million",
-      "guid": "c045e10e-9d13-499b-a4d0-8945587ba4aa",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Inside-Stainless-The-Developer-Tools-Startup-Anthropic-Just-Bought-for-300-Million-e3jk50h",
-      "publishedAt": "2026-05-20T15:00:00.000Z",
-      "description": "If your MCP server has dozens of tools, it's probably built wrong. You need tools that are specific and clear for each use case—but you also can't have too many. This creates an almost impossible tradeoff that most companies don't know how to solve. That's why we interviewed Alex Rattray, the founder and CEO of Stainless. Stainless builds APIs, SDKs, and MCP servers for companies like OpenAI and Anthropic. Alex has spent years mastering how to make software talk to software, and he came on the show to share what he knows. We get into MCP and the future of the AI-native internet. [Disclosure: Dan is a small investor in Stainless.] If you found this episode interesting, please like, subscribe, comment, and share. To hear more from Dan Shipper: Subscribe to Every: https://every.to/subscribe Follow him on X: https://twitter.com/danshipper Get started with Braintrust at https://www.braintrust.dev/ Timestamps: 00:01:15 - Introduction 00:05:09 - APIs and MCP, the connectors of the new internet 00:11:00 - Why MCP exists 00:17:15 - Why MCP servers are hard to get right 00:20:24 - Design principles for reliable MCP servers 00:25:06 - Using MCP for business ops at Stainless 00:40:57 - Alex's take on the security model for MCP 00:44:42 - How one-off AI actions become permanent production software Links to resources mentioned in the episode: Alex Rattray: Alex Rattray (@RattrayAlex), Alex Rattray Stainless: https://www.stainless.com/"
+      "title": "The Age of Async Agents — Cognition's Walden Yan &amp; OpenInspect's Cole Murray",
+      "guid": "substack:post:199607874",
+      "url": "https://www.youtube.com/watch?v=0fgJPhYcbVk",
+      "publishedAt": "2026-05-28T18:41:24.000Z",
+      "description": "The new AIEWF website is live! CFPs close in 2 days and we will run our first New Engineer Orientation this weekend, get your tickets booked ASAP as they -will- sell out. Take the AI Engineering Survey and get >$2k in credits and free AIE WF tickets ! One of the central tensions in the agents industry is that even while there are major decacorn agent labs like Sierra, Decagon, Notion and Cursor being built up, it is also true that it has never been easier to DIY agents, with a plethora of agent frameworks like LangGraph and Pydantic and Flue , and managed agents from Anthropic and Gemini and Amazon . There has been a wave of companies building their own background agents from Shopify to Stripe to Paradigm to Razorpay , and even Cognition’s friends Ramp have built their own coding agent with other friend Modal . You’d think Cognition might feel a bit threatened, but they’re not - even after all this, they were way oversubscribed for the $1B Series D they just announced: Walden Yan , coiner of context engineering and Chief Product Officer/Cofounder of Cognition, invited OpenInspect’s Cole Murray to talk about why the Devin is in the Details . Full conversation <a target=\""
     }
   ],
   "stats": {
-    "podcastEpisodes": 5
+    "podcastEpisodes": 1
   }
 }
