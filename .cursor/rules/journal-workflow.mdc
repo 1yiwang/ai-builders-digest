@@ -4,7 +4,7 @@ alwaysApply: true
 ---
 # Daily Workflow
 
-This rule is project-agnostic. The same file lives in every project under `D:\Projects\`. Edit one, copy to the others.
+This rule is project-agnostic. Master copy lives in `D:\Projects\cursor-daily-workflow` (`1yiwang/cursor-daily-workflow`). To update across projects, edit there and run `pwsh ./scripts/install.ps1 -Update -Target <project-path>`.
 
 ## Trigger phrases
 
@@ -93,13 +93,20 @@ If the day's work touched sister projects under `D:\Projects\`:
 
 ## Installing this workflow in another project
 
-Copy these 4 files into the target project:
+Clone the master repo somewhere, then run the install script against your target project:
 
+```powershell
+git clone https://github.com/1yiwang/cursor-daily-workflow.git D:\Projects\cursor-daily-workflow
+pwsh D:\Projects\cursor-daily-workflow\scripts\install.ps1 -Target D:\Projects\my-new-project
 ```
-.cursor/rules/knowledge-capture.mdc
-.cursor/rules/journal-workflow.mdc          (this file)
-scripts/journal-archive.ps1
-Project-Journal-Obsidian.md                  (header-only template, no entries yet)
+
+To update an existing installation when this template repo changes:
+
+```powershell
+git -C D:\Projects\cursor-daily-workflow pull
+pwsh D:\Projects\cursor-daily-workflow\scripts\install.ps1 -Update -Target D:\Projects\my-new-project
 ```
+
+The journal file (`Project-Journal-Obsidian.md`) is project-specific and is **never overwritten** on update — only created on first install.
 
 Then write the project's first dated entry by triggering an EOD summary on a real day's work. Don't seed fake history.
