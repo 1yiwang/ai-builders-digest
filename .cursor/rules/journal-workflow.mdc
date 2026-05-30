@@ -16,7 +16,7 @@ EN is the primary form; ZH alternatives in italics. All triggers are case-insens
 | **Mid-day new idea / pivot** | (just say it in chat — see "Plans evolve" below) | — | — |
 | **Interim sediment** — capture a chunk into the topical doc that fits | `log this` | `record this`, `sediment this`, `note this`, `update <doc-name>` | *"记一下"*, *"沉淀一下"*, *"把这段记进 X"* |
 | **EOD summary** — write/update today's journal entry consolidating everything | `EOD` | `wrap up`, `end of day`, `summarize today`, `eod summary` | *"总结今天"*, *"今天到此"*, *"晚上最后总结"* |
-| **Confirm & push** — after reviewing the journal commit | `ship it` | `lgtm push`, `looks good push`, `push it`, `confirmed push`, `push` | *"推一下"*, *"确认了推"*, *"可以推了"* |
+| **Confirm & push** — after reviewing the journal commit. **Re-runnable**: trigger again any time later in the day if more work happens. | `ship it` | `lgtm push`, `looks good push`, `push it`, `confirmed push`, `push` | *"推一下"*, *"确认了推"*, *"可以推了"* |
 | **Archive** past-month entries | `archive journal` | — | *"归档日志"* |
 
 > Prefer the unambiguous primary EN triggers when you want zero-ask routing. Phrases not on this list (e.g. "总结沉淀文档") are recognized but the agent may ask to disambiguate interim vs EOD.
@@ -29,7 +29,7 @@ Expected flow for a working day:
 2. **Morning, in Cursor** — open this project's window, say `today's plan: …` summarizing what you'll do today.
 3. **Mid-day, in Cursor** — work. Use `log this` periodically to capture meaningful chunks into the right topical doc (`docs/working_log.md`, `docs/email_inbox_plan.md`, `PROGRESS.md`, etc.). New ideas welcome anytime — see "Plans evolve" below.
 4. **Evening, in Cursor** — say `EOD`. The agent reads today's git log + today's interim sediments + this session's edits, then writes or **updates** today's `Project-Journal-Obsidian.md` entry covering all 9 sections. Commit with `journal: <YYYY-MM-DD> …` prefix; **no push**.
-5. **Evening, in Cursor** — review the commit. If good, say `ship it`. Agent pushes. GitHub is now caught up for the day; no further pushes today.
+5. **Evening, in Cursor** — review the commit. If good, say `ship it`. Agent pushes. This closes the day's *main* loop, but **`ship it` is not single-use** — if more work comes up later (urgent fix, late-evening pivot, you remember a thing at midnight), do another `EOD` (which idempotently updates today's entry) and another `ship it`. Multiple `EOD → ship it` cycles per day are fine; the journal entry keeps getting updated and each push moves origin forward to the latest state.
 6. **Evening, in Obsidian** — tell the Obsidian librarian to read the updated `Project-Journal-Obsidian.md`. Concept notes / cross-project links / tags get refreshed on that side.
 
 Steps 1 and 6 happen in Obsidian; steps 2–5 happen in Cursor. The single contract between the two sides is one file per project: `Project-Journal-Obsidian.md`.
