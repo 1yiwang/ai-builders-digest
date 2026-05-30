@@ -1,6 +1,6 @@
 # AI Builders Digest — 进度文档
 
-最后更新：2026-05-29
+最后更新：2026-05-30
 
 ## 已完成
 
@@ -119,6 +119,16 @@
 - ✅ Editor's Note：每句 ≤25 词，禁止 cram
 - ✅ 卡片数：7-10 → 6-8，宁缺毋滥
 - ✅ 测试验证：新版 6 卡片 3 章节 (vs 旧版 10 卡片 5 章节)，质量明显提升
+
+### 工作流脚手架与基础设施（2026-05-30）
+- ✅ Repo 跨盘移动：`C:\Users\Monica\ai-builders-digest` → `D:\Projects\ai-builders-digest`
+- ✅ `scripts/publish.ps1` 路径无关化：`$RepoRoot` 由 `$PSScriptRoot` 派生，不再硬编码（commit `f2536e9`）
+- ✅ 引入 `cursor-daily-workflow` scaffold（`1yiwang/cursor-daily-workflow`）：
+  - `.cursor/rules/journal-workflow.mdc`（trigger phrases / 日循环 / EOD 流程）
+  - `.cursor/rules/knowledge-capture.mdc`（新概念自动入库到 NCD 表）
+  - `scripts/journal-archive.ps1`（月度归档脚本）
+  - `Project-Journal-Obsidian.md`（与 Obsidian 单文件契约的日志）
+- ✅ 与四个姊妹项目共享同一份工作流契约：`swiss-job-agent-web`（master）、`CV-site`、`permit-advisor`、本项目
 
 ## 待开发
 

@@ -68,7 +68,19 @@ Pipeline live (M/W/F CI auto-publish + Telegram push). Today: workflow infrastru
 
 ### Architecture & Key Decisions
 - Path-agnostic script approach: derive repo root from `$PSScriptRoot` rather than hard-coding an absolute path. Survives any future folder moves; today's path fix was triggered by exactly the failure mode this prevents.
-- Same workflow scaffolding as sibling projects under `D:\Projects\`. Existing `PROGRESS.md` left **in place** as the legacy feature-grouped progress doc (last updated 2026-05-29). New dated entries from today onward go in this file.
+- Same workflow scaffolding as sibling projects under `D:\Projects\`. Existing `PROGRESS.md` left **in place** as the legacy feature-grouped progress doc (refreshed today to 2026-05-30). New dated entries from today onward go in this file.
+
+### Project Snapshot (as of 2026-05-30)
+- **Status**: live in production. CI auto-publishes Mon/Wed/Fri 06:00 UTC + Telegram push.
+- **Latest issue**: `2026-05-29` (6 cards across 3 sections, v2 prompt). Prior: `2026-05-25` (8 cards). Both rendered under `issues/`.
+- **Pipeline**: `npm run full` = feed → magazine JSON → render HTML → update archive → Telegram. Triggered by `.github/workflows/daily-digest.yml`.
+- **AI backend**: DeepSeek (Anthropic-compatible gateway `api.deepseek.com/anthropic`), with Anthropic-format fallback. Switching is env-var-driven (`DEEPSEEK_API_KEY` vs `ANTHROPIC_API_KEY`) — zero-cost migration.
+- **Sources**: 9 X/Twitter accounts (Nitter RSS by default, X API v2 if `X_BEARER_TOKEN` set) + 4 ML podcasts + 8 blogs (HF/OpenAI/Together + Karpathy/Simon Willison/Chip Huyen + 2 中文). Sources frozen in `config/sources.json`.
+- **UI**: cover (`index.html`) with 6-node glassmorphic constellation + breathing-light bulb; per-issue page with EN/DE tabs, priority sort, light/dark toggle, mobile-responsive (480px breakpoint, WCAG AA touch targets).
+- **Data shape**: `data/issues/*.json` is the source of truth (cards + priority + sections). `data/feeds/*.json` cached feeds. `data/state-feed.json` dedup state + X user-id cache.
+- **Known runtime-state leak**: Telegram bot token + a few configs still live in `~/.follow-builders/.env` on `C:` drive (kept by design for the `follow-builders` Cursor skill). Critical configs (prompt, author identities, avatars manifest) are in repo `config/`.
+- **Backlog**: 多领域分版 (金融 / 政策 / 生物科技). Single-line backlog from `PROGRESS.md`; no started work yet.
+- **Authoritative progress doc**: `PROGRESS.md` (feature-grouped, refreshed 2026-05-30 to include today's workflow-scaffold work).
 
 ### Blockers
 - A leftover file with mojibake filename `ui修改.txt` at repo root (looks like a stale Windows note from an earlier session). Not blocking anything; can be renamed or removed at convenience.
@@ -78,7 +90,7 @@ Pipeline live (M/W/F CI auto-publish + Telegram push). Today: workflow infrastru
 - (TBD on the next active session.) From legacy `PROGRESS.md` backlog (2026-05-29): "多领域分版 (金融 / 政策 / 生物科技)".
 
 ### Notes for Librarian
-- Legacy progress doc: `PROGRESS.md` at repo root — feature-grouped, frozen at 2026-05-29 unless updated manually. New dated entries go in this file.
+- Authoritative progress doc: `PROGRESS.md` at repo root — feature-grouped, refreshed 2026-05-30 to include today's workflow-scaffold work. New **dated** entries go in this journal; PROGRESS.md continues to grow as the by-feature truth.
 - Repo location: `D:\Projects\ai-builders-digest` (moved today from `C:\Users\Monica\ai-builders-digest`).
 - Paired Cursor skill: `follow-builders` (in `~/.cursor/skills/follow-builders/`); runtime state in `~/.follow-builders/` was kept in place by design.
 - Sister projects under `D:\Projects\`: `swiss-job-agent-web` (master copy of these workflow rules), `CV-site`, `permit-advisor`.
