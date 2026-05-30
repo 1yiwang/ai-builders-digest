@@ -10,10 +10,25 @@ This rule is project-agnostic. The same file lives in every project under `D:\Pr
 
 | User says (any of) | I do |
 |---|---|
-| "今天计划：…" / "today's plan: …" / "今天我要做 …" | Acknowledge the plan, hold it as session context. Do **not** write to the journal yet. |
-| "写今天的日志" / "总结今天" / "EOD summary" / "wrap up" | Write a new dated entry at the **top** of `Project-Journal-Obsidian.md` using the canonical 9-section template. `git add` + `git commit` (message prefix `journal: <YYYY-MM-DD>`). Do **not** push. |
-| "推一下" / "push" / "ship it" | `git push`. Only after the journal commit was reviewed by the user. |
+| "今天计划：…" / "today's plan: …" / "今天我要做 …" | Acknowledge the plan, hold it as session context. Do **not** write to any file yet. |
+| **Interim sediment** — "沉淀一下" / "记一下" / "log this" / "把这段记进 X" / "更新 X" / "总结沉淀文档"† | Pick the most relevant **topical doc** in this project (`docs/working_log.md`, `docs/email_inbox_plan.md`, `docs/next_iteration_plan.md`, `PROGRESS.md` in some sister repos, or any `docs/*.md` plan doc that fits the chunk of work) and append/update there. **Do not touch `Project-Journal-Obsidian.md` in interim mode.** Commit with a regular conventional message (no `journal:` prefix). Do **not** push. If unclear which doc fits, ask. |
+| **EOD summary** — "总结今天" / "写今天的日志" / "EOD summary" / "wrap up" / "晚上最后总结" / "今天到此" / "今天结束" | Write or **update** today's dated entry at the top of `Project-Journal-Obsidian.md` using the canonical 9-section template. **Idempotent** — multiple EOD calls in one day update the same entry, never duplicate the `## YYYY-MM-DD` heading. `git add` + `git commit` (message prefix `journal: <YYYY-MM-DD>`). Do **not** push. |
+| "推一下" / "push" / "ship it" | `git push`. Only after the journal / interim commit was reviewed by the user. |
 | "归档日志" / "archive journal" | Run `powershell -ExecutionPolicy Bypass -File ./scripts/journal-archive.ps1`. Past-month entries move to `docs/journal-archive/YYYY-MM.md`. Commit the rewrite with message `chore: archive journal entries through <YYYY-MM>`. |
+
+† **"总结沉淀文档" is ambiguous** — defaults to **interim** mode unless framed as "最后" / "EOD" / "wrap up" / "晚上结束". When in doubt, ask: "interim 进 `<best-guess doc>`，还是 EOD 写 journal 总结？"
+
+## Interim sediment vs EOD summary
+
+Same root word ("沉淀") can mean either, but the intent is different:
+
+- **Interim sediment** captures a chunk of work into the topical doc that best fits — chronological progress goes in `working_log.md`, Email feature work goes in `email_inbox_plan.md`, backlog moves go in `next_iteration_plan.md`, design decisions go in the relevant plan doc. Multiple sediments per day are fine. Each is its own commit. The journal stays untouched.
+- **EOD summary** is the **consolidating record** — one per day, in `Project-Journal-Obsidian.md`. It draws from today's git log + topical-doc sediments + this session's edits to produce the comprehensive 9-section entry.
+
+**Disambiguation rules:**
+1. **Explicit doc names override everything**: "沉淀进 working_log.md" / "记到 PROGRESS.md" / "更新 email_inbox_plan.md" → write there directly, no inference.
+2. **Explicit EOD framing wins**: "总结今天" / "wrap up" / "最后总结" / "晚上结束" → EOD mode.
+3. **Otherwise default to interim** and pick the topical doc by content fit. Ask if no doc obviously fits.
 
 ## Journal contract
 
@@ -25,13 +40,15 @@ This rule is project-agnostic. The same file lives in every project under `D:\Pr
 
 When the user triggers an EOD summary:
 
-1. `git log --since="6:00 today" --pretty=format:"%h %s"` — recall what got committed.
+1. `git log --since="6:00 today" --pretty=format:"%h %s"` — recall what got committed today.
 2. `git status --short` — uncommitted work-in-progress.
 3. Recall this session's file edits.
-4. Fill **all 9 sections** of the template. If a section has nothing meaningful, write `None`.
-5. The `New Concepts Discovered` table follows `.cursor/rules/knowledge-capture.mdc` rules. If today's scan found nothing, write a single row `| None | — | — | — |` so the next reader knows the scan happened.
-6. Commit message format: `journal: <YYYY-MM-DD> <one-line summary>`.
-7. **Do not push.** Wait for explicit "push" trigger.
+4. **Read today's interim sediments** — skim `docs/working_log.md`, `docs/email_inbox_plan.md`, and any other plan docs touched today (use `git log --since=...` paths) for sections added today; consolidate them into the journal entry.
+5. **Check whether today's entry already exists** in `Project-Journal-Obsidian.md`. If yes, **update it surgically** (StrReplace on individual sections or append bullets to existing sections); never create a duplicate `## YYYY-MM-DD` heading. If no, append a new entry at the top, immediately after the canonical template block + `---` separator.
+6. Fill **all 9 sections** of the template. If a section has nothing meaningful, write `None`.
+7. The `New Concepts Discovered` table follows `.cursor/rules/knowledge-capture.mdc` rules. If today's scan found nothing, write a single row `| None | — | — | — |` so the next reader knows the scan happened.
+8. Commit message format: `journal: <YYYY-MM-DD> <one-line summary>`. If today's entry was updated rather than created, the message can read `journal: <YYYY-MM-DD> update — <what changed>`.
+9. **Do not push.** Wait for explicit "push" trigger.
 
 ## Cross-project work
 
