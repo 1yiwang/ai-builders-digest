@@ -18,7 +18,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$RepoRoot = "C:\Users\Monica\ai-builders-digest"
+$RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $JsonPath = Join-Path $RepoRoot "data\issues\ai-builders-digest-$Date.json"
 $HtmlPath = Join-Path $RepoRoot "issues\ai-builders-digest-$Date.html"
 $IndexPath = Join-Path $RepoRoot "index.html"
