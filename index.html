@@ -229,11 +229,16 @@
     top: 55%;
     transform: translate(-50%, -50%);
     z-index: 0;
-    width: 240px;
-    height: 240px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
-    filter: blur(25px);
+    background:
+      radial-gradient(circle,
+        rgba(252, 213, 185, 0.22) 0%,
+        rgba(244, 114, 182, 0.10) 35%,
+        rgba(168, 85, 247, 0.06) 60%,
+        transparent 72%);
+    filter: blur(32px);
     pointer-events: none;
     animation: glow-breathe 4s ease-in-out infinite;
   }
@@ -261,43 +266,80 @@
   }
 
   .star-node {
+    --size: 64px;
     position: absolute;
-    width: 56px;
-    height: 56px;
+    width: var(--size);
+    height: var(--size);
     left: var(--nx);
     top: var(--ny);
-    margin-left: -28px;
-    margin-top: -28px;
+    margin-left: calc(var(--size) / -2);
+    margin-top: calc(var(--size) / -2);
     z-index: 2;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(168, 85, 247, 0.25);
-    box-shadow:
-      0 4px 20px rgba(0, 0, 0, 0.3),
-      0 0 12px rgba(168, 85, 247, 0.2);
+    /* No own background/border — the inline SVG draws the chat-bubble shape */
+    filter:
+      drop-shadow(0 4px 22px rgba(0, 0, 0, 0.35))
+      drop-shadow(0 0 12px rgba(192, 132, 252, 0.28));
     animation: floatNode 6s ease-in-out infinite;
     animation-delay: var(--nd, 0s);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
   }
 
-  .star-node-inner {
+  /* Size tiers */
+  .star-node[data-size="lg"] { --size: 92px; }
+  .star-node[data-size="md"] { --size: 70px; }
+  .star-node[data-size="sm"] { --size: 50px; }
+
+  /* The chat bubble shape (circle + triangular tail). Drawn once with the
+     tail at bottom-right (45° in screen coords); CSS rotates the SVG to
+     point the tail at any of the 8 directions. The avatar lives in a
+     separate, never-rotated layer (.star-node-inner) so it stays upright. */
+  .bubble-shape {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
+    overflow: visible;
+    pointer-events: none;
+    z-index: 0;
+    transition: transform 0.4s ease;
+  }
+  .bubble-shape path {
+    fill: rgba(255, 255, 255, 0.05);
+    stroke: rgba(192, 132, 252, 0.45);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+  }
+
+  /* Rotation per tail direction. Base path points tail at 45° (br). */
+  .star-node[data-tail="br"] .bubble-shape { transform: rotate(0deg);   }
+  .star-node[data-tail="b"]  .bubble-shape { transform: rotate(45deg);  }
+  .star-node[data-tail="bl"] .bubble-shape { transform: rotate(90deg);  }
+  .star-node[data-tail="l"]  .bubble-shape { transform: rotate(135deg); }
+  .star-node[data-tail="tl"] .bubble-shape { transform: rotate(180deg); }
+  .star-node[data-tail="t"]  .bubble-shape { transform: rotate(225deg); }
+  .star-node[data-tail="tr"] .bubble-shape { transform: rotate(270deg); }
+  .star-node[data-tail="r"]  .bubble-shape { transform: rotate(315deg); }
+
+  .star-node-inner {
+    position: absolute;
+    /* Sit perfectly inside the main circle (r=47 in 100-unit viewBox = 94%). */
+    width: 94%;
+    height: 94%;
+    left: 3%;
+    top: 3%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: 16px;
+    font-size: clamp(11px, calc(var(--size) * 0.22), 22px);
     font-weight: 500;
     color: #ffffff;
     overflow: hidden;
+    z-index: 1;
+    /* The avatar/initials never rotate even when the bubble shape does. */
   }
 
   .star-node-inner img {
@@ -346,12 +388,15 @@
   }
 
   .star-node:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.12) !important;
     animation: none !important;
-    border-color: #a855f7;
-    box-shadow:
-      0 8px 32px rgba(0, 0, 0, 0.4),
-      0 0 24px rgba(168, 85, 247, 0.35);
+    filter:
+      drop-shadow(0 8px 32px rgba(0, 0, 0, 0.45))
+      drop-shadow(0 0 22px rgba(192, 132, 252, 0.55));
+  }
+  .star-node:hover .bubble-shape path {
+    stroke: rgba(192, 132, 252, 0.85);
+    fill: rgba(255, 255, 255, 0.08);
   }
 
   .star-node:hover .star-node-tooltip,
@@ -700,18 +745,12 @@
       width: clamp(120px, 24vw, 180px);
     }
 
-    /* Star nodes — scale down for small screens */
-    .star-node {
-      width: 36px;
-      height: 36px;
-      margin-left: -18px;
-      margin-top: -18px;
-    }
-    .star-node[data-col="left"]  { left: 18%; }
-    .star-node[data-col="right"] { left: 82%; }
-    .star-node-inner {
-      font-size: 13px;
-    }
+    /* Star nodes — scale down per size tier for small screens */
+    .star-node[data-size="lg"] { --size: 60px; }
+    .star-node[data-size="md"] { --size: 46px; }
+    .star-node[data-size="sm"] { --size: 34px; }
+    .star-node[data-col="left"]  { left: 14%; }
+    .star-node[data-col="right"] { left: 86%; }
     .star-node-tooltip {
       top: -28px;
       padding: 3px 10px 4px;
@@ -818,13 +857,46 @@
             <div class="bulb-stage" id="bulb-stage">
               <div class="bulb-glow-backdrop" aria-hidden="true"></div>
               <div class="bulb-svg-wrap" aria-hidden="true">
-                <svg viewBox="0 0 100 140">
-                  <path d="M28,58 C28,22 72,22 72,58 C72,82 64,90 60,100 L40,100 C36,90 28,82 28,58 Z" fill="none" stroke="#c084fc" stroke-width="1.2" stroke-linecap="round"/>
-                  <path d="M38,70 L50,48 L62,70" fill="none" stroke="#c084fc" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
-                  <line x1="50" y1="70" x2="50" y2="82" stroke="#c084fc" stroke-width="0.6" opacity="0.4"/>
-                  <rect x="40" y="100" width="20" height="4" rx="1.5" fill="#c084fc" opacity="0.3"/>
-                  <rect x="37" y="105" width="26" height="5" rx="2" fill="#c084fc" opacity="0.2"/>
-                  <rect x="34" y="111" width="32" height="5" rx="2.5" fill="#c084fc" opacity="0.12"/>
+                <svg viewBox="0 0 100 100">
+                  <defs>
+                    <radialGradient id="bulbInnerGlow" cx="50%" cy="38%" r="42%">
+                      <stop offset="0%"   stop-color="rgba(252, 213, 185, 0.55)"/>
+                      <stop offset="55%"  stop-color="rgba(252, 213, 185, 0.12)"/>
+                      <stop offset="100%" stop-color="rgba(252, 213, 185, 0)"/>
+                    </radialGradient>
+                  </defs>
+
+                  <!-- Round bulb body (perfect circle) -->
+                  <circle cx="50" cy="40" r="33" fill="url(#bulbInnerGlow)"/>
+                  <circle cx="50" cy="40" r="33" fill="none" stroke="#fcd5b9" stroke-width="1.4"
+                          vector-effect="non-scaling-stroke"/>
+
+                  <!-- W-shape filament inside the bulb -->
+                  <path d="M37 50 L44 36 L50 50 L56 36 L63 50"
+                        fill="none" stroke="#fcd5b9" stroke-width="1.1"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        vector-effect="non-scaling-stroke" opacity="0.95"/>
+
+                  <!-- Two support wires from filament tips down toward base -->
+                  <line x1="37" y1="50" x2="42" y2="70" stroke="#fcd5b9" stroke-width="0.7"
+                        vector-effect="non-scaling-stroke" opacity="0.5"/>
+                  <line x1="63" y1="50" x2="58" y2="70" stroke="#fcd5b9" stroke-width="0.7"
+                        vector-effect="non-scaling-stroke" opacity="0.5"/>
+
+                  <!-- Connecting neck under the round body -->
+                  <line x1="42" y1="73" x2="58" y2="73" stroke="#fcd5b9" stroke-width="1.3"
+                        vector-effect="non-scaling-stroke" opacity="0.55"/>
+
+                  <!-- Screw threads (3 horizontal lines, slightly tapering inward) -->
+                  <line x1="42" y1="77" x2="58" y2="77" stroke="#fcd5b9" stroke-width="1.2"
+                        vector-effect="non-scaling-stroke" opacity="0.48"/>
+                  <line x1="42" y1="82" x2="58" y2="82" stroke="#fcd5b9" stroke-width="1.2"
+                        vector-effect="non-scaling-stroke" opacity="0.36"/>
+                  <line x1="43" y1="87" x2="57" y2="87" stroke="#fcd5b9" stroke-width="1.2"
+                        vector-effect="non-scaling-stroke" opacity="0.26"/>
+
+                  <!-- Bottom contact -->
+                  <ellipse cx="50" cy="92" rx="6.5" ry="2" fill="#fcd5b9" opacity="0.22"/>
                 </svg>
               </div>
             </div>
@@ -889,14 +961,26 @@
   <script>
     const siteAvatar = (fileName) => `./assets/avatars/${fileName}`;
 
+    // Position layout follows the chat-bubble constellation reference:
+    // big bubbles flank the bulb at top-left / top-right, a small "speak-up"
+    // bubble crowns the top, two mid-size bubbles sit at mid-left / mid-right,
+    // and one mid-size bubble grounds the bottom. Tails point toward the bulb.
+    // Tail direction is the angle from the node toward the central bulb,
+    // discretized to one of: br | b | bl | l | tl | t | tr | r.
     var starNodes = [
-      { name: 'Andrej Karpathy', src: siteAvatar('x-karpathy.jpg'), href: 'https://x.com/karpathy',       nx: '24%', ny: '20%', nd: '-0.5s' },
-      { name: 'Amanda Askell',   src: siteAvatar('x-AmandaAskell.jpg'), href: 'https://x.com/AmandaAskell', nx: '50%', ny: '8%',  nd: '-1.5s' },
-      { name: 'Aaron Levie',     src: siteAvatar('x-levie.jpg'),      href: 'https://x.com/levie',          nx: '76%', ny: '20%', nd: '-2.5s' },
-      { name: 'Guillermo Rauch', src: siteAvatar('x-rauchg.jpg'),     href: 'https://x.com/rauchg',         nx: '24%', ny: '82%', nd: '-3.5s' },
-      { name: 'Latent Space',    src: siteAvatar('podcast-latent-space.jpg'), href: 'https://www.youtube.com/@LatentSpacePod', nx: '50%', ny: '94%', nd: '-4.5s' },
-      { name: 'Sam Altman',      src: siteAvatar('x-sama.jpg'),       href: 'https://x.com/sama',           nx: '76%', ny: '82%', nd: '-5.5s' }
+      { name: 'Andrej Karpathy', src: siteAvatar('x-karpathy.jpg'),           href: 'https://x.com/karpathy',                  nx: '18%', ny: '24%', nd: '-0.5s', size: 'lg', tail: 'br' },
+      { name: 'Amanda Askell',   src: siteAvatar('x-AmandaAskell.jpg'),       href: 'https://x.com/AmandaAskell',              nx: '50%', ny: '6%',  nd: '-1.5s', size: 'sm', tail: 'b'  },
+      { name: 'Sam Altman',      src: siteAvatar('x-sama.jpg'),               href: 'https://x.com/sama',                      nx: '82%', ny: '24%', nd: '-2.5s', size: 'lg', tail: 'bl' },
+      { name: 'Guillermo Rauch', src: siteAvatar('x-rauchg.jpg'),             href: 'https://x.com/rauchg',                    nx: '12%', ny: '60%', nd: '-3.5s', size: 'md', tail: 'r'  },
+      { name: 'Aaron Levie',     src: siteAvatar('x-levie.jpg'),              href: 'https://x.com/levie',                     nx: '88%', ny: '60%', nd: '-4.5s', size: 'md', tail: 'l'  },
+      { name: 'Latent Space',    src: siteAvatar('podcast-latent-space.jpg'), href: 'https://www.youtube.com/@LatentSpacePod', nx: '50%', ny: '92%', nd: '-5.5s', size: 'md', tail: 't'  }
     ];
+
+    // Single SVG path that draws a chat bubble (circle + triangular tail at
+    // bottom-right). All other tail directions are achieved by CSS-rotating
+    // this SVG, so we only ever maintain one path. Geometry: viewBox 100x100,
+    // main circle cx=50 cy=50 r=47, tail tip at (96.5, 96.5).
+    var BUBBLE_PATH = 'M 69.86 92.6 A 47 47 0 1 0 92.6 69.86 L 96.5 96.5 Z';
 
     function getInitials(name) {
       return String(name || '')
@@ -914,6 +998,8 @@
 
       stage.querySelectorAll('.star-node').forEach(function(n) { n.remove(); });
 
+      var SVG_NS = 'http://www.w3.org/2000/svg';
+
       starNodes.forEach(function(entry) {
         var node = document.createElement('a');
         node.className = 'star-node';
@@ -924,12 +1010,27 @@
         node.style.setProperty('--nx', entry.nx);
         node.style.setProperty('--ny', entry.ny);
         node.style.setProperty('--nd', entry.nd);
+        node.setAttribute('data-size', entry.size || 'md');
+        node.setAttribute('data-tail', entry.tail || 'none');
 
         // Tag column position for responsive CSS
         var nxVal = parseFloat(entry.nx);
         if (nxVal <= 30) node.setAttribute('data-col', 'left');
         else if (nxVal >= 70) node.setAttribute('data-col', 'right');
         else node.setAttribute('data-col', 'center');
+
+        // Chat bubble SVG (circle + triangular tail). Rotated by CSS to
+        // point the tail in 8 directions; the avatar layer below stays
+        // upright regardless of rotation.
+        var svg = document.createElementNS(SVG_NS, 'svg');
+        svg.setAttribute('class', 'bubble-shape');
+        svg.setAttribute('viewBox', '0 0 100 100');
+        svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+        svg.setAttribute('aria-hidden', 'true');
+        var path = document.createElementNS(SVG_NS, 'path');
+        path.setAttribute('d', BUBBLE_PATH);
+        path.setAttribute('vector-effect', 'non-scaling-stroke');
+        svg.appendChild(path);
 
         var inner = document.createElement('div');
         inner.className = 'star-node-inner';
@@ -951,6 +1052,7 @@
 
         inner.appendChild(img);
         inner.appendChild(fallback);
+        node.appendChild(svg);
         node.appendChild(inner);
         node.appendChild(tooltip);
         stage.appendChild(node);
