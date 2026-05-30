@@ -1,0 +1,38 @@
+---
+description: Automatically capture new concepts, patterns, and technologies encountered during development
+globs: ["*.ts", "*.tsx", "*.py", "*.js", "*.jsx", "*.md"]
+---
+When you encounter or use a reusable concept, pattern, technology, or architecture decision during development, record it in the project's progress journal.
+
+**Journal file**: `Project-Journal-Obsidian.md` (or `PROGRESS.md` if the former doesn't exist).
+
+**Where to write**: every dated entry already has a `### New Concepts Discovered` section as part of the canonical journal template (see the file's top-of-file template). Add a new row to today's table. Do **not** create a parallel section, do **not** append it elsewhere in the entry — the table belongs to that section.
+
+If today's scan finds nothing worth capturing, leave a single row `| None | — | — | — |` so the next reader knows the scan happened.
+
+**Row format**:
+
+```markdown
+| Concept | Where in code | Why it matters | One-line description |
+|---------|--------------|----------------|---------------------|
+| rag | `worker/src/.../pipeline_queue_worker.py` | Core AI pattern reusable in any LLM app | Retrieved CV + Requirements from DB, injected into the LLM prompt for scoring context |
+```
+
+**When to trigger**:
+1. You use a design pattern for the second time (it's no longer one-off)
+2. You integrate a new technology/library/framework
+3. You make an architecture decision that could apply to other projects
+4. You solve a non-trivial problem in a reusable way
+5. You notice a pattern across multiple files (e.g. "all LLM calls use the same config resolution pattern")
+
+**Format rules**:
+- `Concept` — short, kebab-case name: `rag`, `agent-workflow`, `prompt-layering`, `aes-256-gcm`
+- `Where in code` — file path relative to project root
+- `Why it matters` — 1 sentence on why this is worth knowing beyond this project
+- `One-line description` — 1 sentence on what it is and how it's used here
+
+**Don't capture**:
+- One-time hacks or workarounds
+- Standard language features
+- Boilerplate setup
+- Already documented concepts (check the file first)

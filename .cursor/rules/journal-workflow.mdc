@@ -1,0 +1,62 @@
+---
+description: Daily plan/summary workflow, trigger phrases, journal location, archive cadence
+alwaysApply: true
+---
+# Daily Workflow
+
+This rule is project-agnostic. The same file lives in every project under `D:\Projects\`. Edit one, copy to the others.
+
+## Trigger phrases
+
+| User says (any of) | I do |
+|---|---|
+| "今天计划：…" / "today's plan: …" / "今天我要做 …" | Acknowledge the plan, hold it as session context. Do **not** write to the journal yet. |
+| "写今天的日志" / "总结今天" / "EOD summary" / "wrap up" | Write a new dated entry at the **top** of `Project-Journal-Obsidian.md` using the canonical 9-section template. `git add` + `git commit` (message prefix `journal: <YYYY-MM-DD>`). Do **not** push. |
+| "推一下" / "push" / "ship it" | `git push`. Only after the journal commit was reviewed by the user. |
+| "归档日志" / "archive journal" | Run `powershell -ExecutionPolicy Bypass -File ./scripts/journal-archive.ps1`. Past-month entries move to `docs/journal-archive/YYYY-MM.md`. Commit the rewrite with message `chore: archive journal entries through <YYYY-MM>`. |
+
+## Journal contract
+
+- One file per project: `Project-Journal-Obsidian.md` at repo root.
+- Newest entry on top. The 9-section canonical template lives at the very top of the file (above all entries).
+- The Obsidian librarian on the user's side **reads** this file and never writes back. Single-writer (this Cursor agent only). The user surfaces Obsidian-side insights by pasting them into chat.
+
+## EOD summary procedure
+
+When the user triggers an EOD summary:
+
+1. `git log --since="6:00 today" --pretty=format:"%h %s"` — recall what got committed.
+2. `git status --short` — uncommitted work-in-progress.
+3. Recall this session's file edits.
+4. Fill **all 9 sections** of the template. If a section has nothing meaningful, write `None`.
+5. The `New Concepts Discovered` table follows `.cursor/rules/knowledge-capture.mdc` rules. If today's scan found nothing, write a single row `| None | — | — | — |` so the next reader knows the scan happened.
+6. Commit message format: `journal: <YYYY-MM-DD> <one-line summary>`.
+7. **Do not push.** Wait for explicit "push" trigger.
+
+## Cross-project work
+
+If the day's work touched sister projects under `D:\Projects\`:
+
+- Write the entry in the project where the **primary** work happened.
+- Use the `Notes for Librarian` section to mention sisters with cross-links.
+- One Cursor window per project — no multi-write across projects.
+
+## Archiving
+
+- Default cadence: **monthly**. Run `powershell -ExecutionPolicy Bypass -File ./scripts/journal-archive.ps1` on or after the 1st of each month.
+- The script moves all entries whose `## YYYY-MM-DD` heading is **not in the current calendar month** out to `docs/journal-archive/YYYY-MM.md`.
+- The live file keeps the canonical template header + only current-month entries.
+- Weekly cadence is also fine — calling the script weekly costs nothing extra (it's a no-op when there's nothing to archive).
+
+## Installing this workflow in another project
+
+Copy these 4 files into the target project:
+
+```
+.cursor/rules/knowledge-capture.mdc
+.cursor/rules/journal-workflow.mdc          (this file)
+scripts/journal-archive.ps1
+Project-Journal-Obsidian.md                  (header-only template, no entries yet)
+```
+
+Then write the project's first dated entry by triggering an EOD summary on a real day's work. Don't seed fake history.
