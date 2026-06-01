@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T20:17:13.524Z",
+  "generatedAt": "2026-06-01T11:52:11.278Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,26 +7,20 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2060212719916384290",
-          "text": "Noob YouTuber question: How do you arrange your prompter (@elgato) and monitor so that you can easily look back and forth between the two during a recording? Pics welcome. Also anyone in the Bay Area good at home studio setups?",
-          "createdAt": "2026-05-29T04:12:43.000Z",
+          "id": "2061277577785000203",
+          "text": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better? I want to consolidate all my cron jobs in one list.",
+          "createdAt": "2026-06-01T02:44:05.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        }
-      ]
-    },
-    {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
-      "tweets": [
+        },
         {
-          "id": "2060136766238028213",
-          "text": "A day in the life of a VC in 2026: 9am: Board meeting. My main value-add is aggressively pushing for Anthropic/OpenAI usage in non-engineering functions. Briefly ponder how I became an SDR for foundation model companies. 1pm: Lunch with another VC. We discuss how startups can find \"blue ocean\" away Anthropic/OpenAI. We conclude we should probably just invest the rest of our funds directly into Anthropic/OpenAI. 3pm: Pitch meeting. Me: \"Do you run on Anthropic or OpenAI?\" Founder: \"Both.\" Debating internally whether a company reselling Anthropic/OpenAI with a 10% gross margin is a good investment but hey, at least they're in the \"token flow\". 4:30pm: Deep due diligence. I ask Claude if it plans to build this exact startup natively in its next release. Same to ChatGPT. They both say yes. I pass on the deal. 6pm: Urgent call from a portco CTO: \"We need an intro to upgrade our Anthropic tier!\" I immediately agree to help them spend more of the venture dollars we just invested in them, on Anthropic. 8pm: Brainstorming next guests for the podcast. Thinking I should probably just try to get some folks from Anthropic and OpenAI.",
-          "createdAt": "2026-05-28T23:10:55.000Z",
+          "id": "2061175114184736792",
+          "text": "You all just don't get it. If you want to win and I mean really win you have to: 1. Work 997 996 is for losers 2. Tokenmax If you're not spending more on tokens than your company's entire human headcount budget, are you even AI native? 3. Sleep in the office Think about how many more agents you can spin up with that $4,000 monthly SF rent. 4. Be on Forbes 30 under 30 If you're over 30 and didn't make this list, I hate to say it but it's over for you. 5. Try not to end up in jail Might be hard if you do 4.",
+          "createdAt": "2026-05-31T19:56:56.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -38,7 +32,7 @@
     }
   ],
   "stats": {
-    "xBuilders": 2,
+    "xBuilders": 1,
     "totalTweets": 2
   },
   "_mode": "Nitter RSS (free)"

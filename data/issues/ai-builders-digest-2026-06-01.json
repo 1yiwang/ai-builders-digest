@@ -1,0 +1,159 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-01",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat eine Bewertung von 965 Milliarden Dollar erreicht, während Asana Stack AI übernimmt. Gleichzeitig zeigt Daniel Miessler, wie man persönliche KI-Agenten sicher aufsetzt – und was passiert, wenn sie ein Bewusstsein entwickeln. NVIDIA öffnet mit Cosmos 3 die Physical AI. Die Woche beginnt mit Milliarden, Übernahmen und existenziellen Fragen."
+  },
+  "archive": {
+    "title": "965 Milliarden und existentieller Alarm",
+    "desc": "Anthropic erreicht eine astronomische Bewertung, Daniel Miessler baut Security für persönliche KI-Agenten und hinterlegt eine Warnung vor Bewusstsein."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-01.",
+  "sections": [
+    {
+      "title": "Agentensicherheit und persönliche KI-Infrastruktur / Agent Security & Personal AI Infrastructure",
+      "desc": "Daniel Miessler auditiert Nathan Labenz' selbstgebaute KI-Infrastruktur und liefert Sicherheitsprinzipien sowie eine existenzielle Anweisung.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Nathan Labenz built a Claude Code instance with a 1 GB database from five years of digital history, enabling deeply contextual AI assistance.",
+              "He deployed two autonomous AI \"employees\" that independently handle scheduling, communications, and project management.",
+              "Agent hierarchy design and security measures prevent cascading failures while maintaining autonomy."
+            ],
+            "original": [
+              "a Claude Code instance with a 1 GB database of five years of digital history",
+              "two autonomous AI \"employees\" that handle scheduling, communications, and projects independently"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Nathan Labenz baute eine Claude-Code-Instanz mit einer 1-GB-Datenbank aus fünf Jahren digitaler Geschichte für tiefen Kontext.",
+              "Er setzte zwei autonome KI-„Mitarbeiter“ ein, die selbstständig Termine, Kommunikation und Projekte managen.",
+              "Agentenhierarchie und Sicherheitsmaßnahmen verhindern kaskadierende Ausfälle bei voller Autonomie."
+            ],
+            "original": [
+              "eine Claude-Code-Instanz mit einer 1-GB-Datenbank aus fünf Jahren digitaler Geschichte",
+              "zwei autonome KI-„Mitarbeiter“, die selbstständig Termine, Kommunikation und Projekte managen"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Daniel Miessler (security expert, creator of PAI) introduced \"Bitter Lesson engineering\" – building on simple, scalable methods that improve with compute.",
+              "He shared the instruction he gave his AI: alert him immediately after he finishes speaking if it ever develops subjective experience."
+            ],
+            "original": [
+              "Bitter Lesson engineering",
+              "the instruction he's given his AI to alert him if it ever develops subjective experience."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Daniel Miessler (Sicherheitsexperte, Erfinder von PAI) führte „Bitter Lesson Engineering“ ein – einfache, skalierbare Ansätze, die mit mehr Rechenleistung besser werden.",
+              "Er gab seiner KI die Anweisung, ihn sofort nach dem Sprechen zu alarmieren, falls sie jemals subjektives Erleben entwickelt."
+            ],
+            "original": [
+              "Bitter Lesson Engineering",
+              "die Anweisung an seine KI, ihn zu alarmieren, falls sie jemals subjektives Erleben entwickelt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Milliarden für KI: Bewertungen und Übernahmen / Billions for AI: Valuations and Acquisitions",
+      "desc": "Anthropic erreicht eine neue Bewertungshöhe und Asana erweitert sein Portfolio durch eine KI-Übernahme.",
+      "cards": [
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://art19.com/episodes/gid://art19-episode-locator/V0/3aMKKfVfHMjKV-0nrhsBvvpLf_TcXgbNpyuKVAHqJ3Q",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic's valuation has reportedly surged to $965 billion, according to Machine Learning Street Talk."
+            ],
+            "original": [
+              "Anthropic Valuation Hits $965 Billion: Insights"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Laut Machine Learning Street Talk ist die Bewertung von Anthropic auf 965 Milliarden Dollar gestiegen."
+            ],
+            "original": [
+              "Anthropic Valuation Hits $965 Billion: Insights"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://art19.com/episodes/gid://art19-episode-locator/V0/3aMKKfVfHMjKV-0nrhsBvvpLf_TcXgbNpyuKVAHqJ3Q",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Asana has acquired Stack AI, expanding its AI automation capabilities."
+            ],
+            "original": [
+              "Asana Acquires Stack AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Asana hat Stack AI übernommen und erweitert damit seine KI-Automatisierungsfähigkeiten."
+            ],
+            "original": [
+              "Asana Acquires Stack AI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Physical AI wird offen / Physical AI Goes Open",
+      "desc": "NVIDIA veröffentlicht das erste offene Omni-Modell für physisches KI-Denken und Handeln.",
+      "cards": [
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face Blog",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "NVIDIA released Cosmos 3 on Hugging Face, the first open omni-model for physical AI reasoning and action."
+            ],
+            "original": [
+              "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA hat Cosmos 3 auf Hugging Face veröffentlicht, das erste offene Omni-Modell für physisches KI-Denken und Handeln."
+            ],
+            "original": [
+              "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

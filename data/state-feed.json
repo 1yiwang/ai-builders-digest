@@ -18,7 +18,9 @@
     "gid://art19-episode-locator/V0/PE-ihmdrGibxtI0e1PFH32ntQ4Y6wlxhc8Ce3AkPwpA": 1780085812545,
     "ad3089a4-5777-11f1-becc-3f76da0aa20e": 1780085813369,
     "gid://art19-episode-locator/V0/R0zXjVH3DYaFju0dKYi1WXnL2dCYAs32UgehU5nU2pw": 1780085814456,
-    "2883cd96-a811-4539-967a-3705c330d3dc": 1780085814983
+    "2883cd96-a811-4539-967a-3705c330d3dc": 1780085814983,
+    "gid://art19-episode-locator/V0/3aMKKfVfHMjKV-0nrhsBvvpLf_TcXgbNpyuKVAHqJ3Q": 1780314714022,
+    "57755330-5c1a-11f1-a264-77bb790f8295": 1780314714084
   },
   "seenArticles": {
     "https://huggingface.co/blog/torch-profiler": 1780085252360,
@@ -36,7 +38,8 @@
     "https://huggingface.co/blog/delta-weight-sync": 1780085815492,
     "https://openai.com/index/trustworthy-third-party-evaluations-foundations": 1780085816282,
     "https://openai.com/index/endava": 1780085816282,
-    "https://openai.com/index/openai-frontier-governance-framework": 1780085816282
+    "https://openai.com/index/openai-frontier-governance-framework": 1780085816282,
+    "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai": 1780314715303
   },
   "xUserIds": {}
 }
