@@ -1,26 +1,44 @@
 {
-  "generatedAt": "2026-06-01T11:51:55.235Z",
+  "generatedAt": "2026-06-03T11:19:36.793Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Machine Learning Street Talk",
-      "title": "Anthropic Valuation Hits $965 Billion: Insights",
-      "guid": "gid://art19-episode-locator/V0/3aMKKfVfHMjKV-0nrhsBvvpLf_TcXgbNpyuKVAHqJ3Q",
-      "publishedAt": "2026-05-29T20:53:27.000Z",
-      "description": "Chapters 00:00 Introduction 00:30 Anthropic's Valuation Surge 05:01 Shift's Robot Training Initiative 09:28 AI in Healthcare at Boston Children's 11:49 Grok's Funding and Independence 14:00 Asana Acquires Stack AI Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "name": "Latent Space",
+      "title": "GitHub's plan for Agents — Kyle Daigle, GitHub",
+      "guid": "substack:post:200249307",
+      "url": "https://www.youtube.com/watch?v=LEwlSyR0cXA",
+      "publishedAt": "2026-06-02T16:48:21.000Z",
+      "description": "I’m excited to work with Microsoft once again as the presenting sponsors of the AI Engineer World’s Fair ! We’ll streaming live from MS Build today for a special crossover pod with our friends at No Priors and the one and only Satya Nadella . However we did not hold back with this interview - we asked all the burning questions about uptime and Copilot that we know you have in your minds. Lets go! For almost two decades, GitHub has been the home of software, where both open source and closed flow, through commits, pull requests, reviews, actions, etc. This ecosystem flourished as open-source maintainers and contributors would continue shipping code for the benefit of the community. However as coding agents began to ship mass quantities of code - growing 1400% in 2026 , it marked a new era that was both extremely exciting and challenging for GitHub. While these agents help more people ship more projects, they also significantly increase the floor of how much code is shipped, how often it is shipped, how many people commit code, and basically orders of magnitude multiples in every dimension of GitHub infrastructure: Now GitHub inevitably experiences more pressure on their infrastructure which was originally designed around human developers moving at human speed. This has resulted in a very publicly notable uptime story: So it begs the question of whether current systems around code can absorb what AI produces. Can CI/CD keep up when every idea becomes a build? Can open source maintainers survive floods of AI-generated slop contributions? Can GitHub preserve the human social contract of software while becoming the operating layer for agents? Which brings us to the perfect person to answer these questions: GitHub COO Kyle Daigle. In this episode, he joins swyx to unpack what happens when AI doesn’t just autocomplete code, but starts changing how companies operate, how open source works, how pull requests get reviewed, and how GitHub itself has to scale. We go deep on GitHub’s internal AI workflows : micro-skills, WorkIQ, MCP, Slack, Teams, email, Copilot workflows, the new Copilot desktop app, CLI, cloud agents, and how Kyle uses agents to look backwards across company context before deciding what to do next. Kyle also reflects on GitHub’s history building webhooks, APIs, Actions, npm, Dependabot, and Semmle, why the AI era is breaking GitHub in new ways, how Actions became a general-purpose compute layer, and what Copilot becomes after code completion. Full Video Pod <strong"
     },
     {
       "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "Inside Nathan's Second Brain: Daniel Miessler, Security Expert &amp; Creator of PAI, Audits My AI Setup",
-      "guid": "57755330-5c1a-11f1-a264-77bb790f8295",
-      "url": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
-      "publishedAt": "2026-06-01T07:56:00.000Z",
-      "description": "Daniel Miessler returns to discuss Nathan's newly built personal AI infrastructure, including a Claude Code instance with a 1 GB database of five years of digital history and two autonomous AI \"employees\" that handle scheduling, communications, and projects independently. They dive deep into agent hierarchy design, security measures, social norms around AI-human interaction and disclosure, and why sharing your \"ideal state\" with AI leads to more proactive assistance. Daniel also introduces his concept of \"Bitter Lesson engineering\" and shares the instruction he's given his AI to alert him if it ever develops subjective experience. Mercury: Run your finances with virtual cards, spending limits, merchant/category locks, and AI-friendly tools like API keys, MCP, and CLI. Check out Mercury at mercury.com Sponsors: Brave Search API: Brave Search API gives AI agents a fast, independent search index for research, RAG pipelines, images, places, and fewer hallucinations. Get $5 in free credits at https://brave.com/search/api/?mtm_campaign=q2-26-cognitive-revolution Sequence: Sequence handles the full revenue workflow for complex pricing, from quoting and metering to invoicing, revenue recognition, and collections. Book a public demo at https://sequencehq.com and use code COGNISM in the source field to save 20% off year one Claude: Claude by Anthropic is an AI collaborator that understands your workflow and helps you tackle research, writing, coding, and organization with deep context. Get started with Claude and explore Claude Pro at https://claude.ai/tcr"
+      "name": "Training Data",
+      "title": "Knowing What Your Customers Want, All the Time: Listen Labs' Alfred Wahlforss",
+      "guid": "245db97c-5de8-11f1-beb7-d7c1b176fe75",
+      "url": "https://www.youtube.com/watch?v=Rumft-rsEu4",
+      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "description": "Alfred Wahlforss, co-founder and CEO of Listen Labs, is building an AI agent that interviews your customers at a scale no focus group ever could—thousands of voice conversations at once, drawn from an audience of 30 million people. A year after launch, Listen serves hundreds of Fortune 100s to Startups including Microsoft, Google, NBC Universal, P&G, Anthropic, Cursor, and Cognition. Alfred explains the counterintuitive finding underneath it all: people are often more honest with an AI than a human interviewer, opening up to a non-judgmental entity that costs less and never makes them feel rushed. He walks through why interview transcripts—not credit card data or behavioral logs—turn out to be the richest fuel for predicting how customers will behave, how Listen back-tests its simulations to know which questions it can and can't answer, and why 80% of the company's engineering goes into building the right audience. As AGI makes building trivial, Alfred argues the scarce resource becomes knowing what to build. That's the loop Listen wants to own."
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning",
+      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
+      "guid": "a014ff02-bdcf-478b-8d23-6c05a4c35788",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+      "publishedAt": "2026-06-01T12:46:52.000Z",
+      "description": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine , and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover. The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments in modern AI — ChatGPT and Claude Code. He nearly spun DeepMind out of Google with a secret $1B Reid Hoffman pledge backing him, but never used the leverage and stayed — and won a Nobel Prize the next year. The episode also zooms out to the structural forces shaping the race — why hyperscalers can't out-recruit concentrated-bet labs, why Sebastian gives OpenAI roughly 50/50 odds of being absorbed by next summer, why he thinks Anthropic should IPO right now, and what the personal histories between Demis, Elon, and Sam reveal about who actually trusts whom. (0:00) Intro (2:04) Was the AI Race Inevitable? (4:03) The 2015 Safety Summit Backfire (7:15) Can Governments Actually Fix This? (9:26) How the World Misread DeepMind (11:27) Why Google Never Makes the Concentrated Bet (15:51) Project Mario: The Secret Spinout Plan (19:43) What Demis Actually Regrets (23:46) Venture Startups vs. Tech Behemoths (27:50) Controlling the Narrative (30:40) The Talent War and Hiring Brand (34:08) David Silver and the RL True Believers (38:21) Demis, Elon, and the Evil Genius Feud (42:39) Great Man Theory vs. Inevitability (45:00) What Demis Didn't Want Published With your host: @jacobeffron - Managing Director at Redpoint"
+    },
+    {
+      "source": "podcast",
+      "name": "Machine Learning Street Talk",
+      "title": "Alphabet's $80 Billion AI Funding Plan",
+      "guid": "gid://art19-episode-locator/V0/ZzJXC_zX0cylkk3p3A0mkfKFkt1bzu4sovxhNg4oBak",
+      "publishedAt": "2026-06-02T21:45:54.000Z",
+      "description": "Chapters 00:00 Introduction 02:02 Alphabet's $80 Billion Raise 04:01 Trump's AI Executive Order 05:46 GitHub Copilot Pricing Issues 07:42 Opal's Pivot to AI Hardware 09:49 Uber Caps AI Spending Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 2
+    "podcastEpisodes": 4
   }
 }

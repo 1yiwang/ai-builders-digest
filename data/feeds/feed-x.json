@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T11:52:11.278Z",
+  "generatedAt": "2026-06-03T11:19:57.891Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2061277577785000203",
-          "text": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better? I want to consolidate all my cron jobs in one list.",
-          "createdAt": "2026-06-01T02:44:05.000Z",
+          "id": "2062018242789670929",
+          "text": "Matt's guide is great but this line is pretty funny: \"They're so lit up by being able to build anything that they don't do anything else. Then they launch and there are no users.\" 😆",
+          "createdAt": "2026-06-03T03:47:14.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,31 @@
           }
         },
         {
-          "id": "2061175114184736792",
-          "text": "You all just don't get it. If you want to win and I mean really win you have to: 1. Work 997 996 is for losers 2. Tokenmax If you're not spending more on tokens than your company's entire human headcount budget, are you even AI native? 3. Sleep in the office Think about how many more agents you can spin up with that $4,000 monthly SF rent. 4. Be on Forbes 30 under 30 If you're over 30 and didn't make this list, I hate to say it but it's over for you. 5. Try not to end up in jail Might be hard if you do 4.",
-          "createdAt": "2026-05-31T19:56:56.000Z",
+          "id": "2061936952400814392",
+          "text": "Have to give the Devin/Windsurf team flowers for staying disciplied through the ups and downs and keeping at it. I know many AI native builders who love Devin now. Will hopefully find some more time to try it myself.",
+          "createdAt": "2026-06-02T22:24:13.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2061846283263103274",
+          "text": "People are saying SaaS is not dead. I think larger enterprise SaaS that can do multiple jobs are probably fine (e.g., Figma). But if you’re building a simple SaaS for a narrow use case, I think it's harder to monetize now because: 1. AI skills can often solve the same problem in a much more flexible, personalized way. 2. AI-native agents like Codex / Claude Code that have a user's personal context and memory have far more knowledge to solve the user's problem vs. a standalone SaaS website or chatbot. 3. People are willing to pay hundreds or thousands for services (human touch is what's rare these days) but charge $20 / month for a SaaS and people will compare it's value to their Claude / ChatGPT subscription. Curious if others feel the same way? I guess I'm in a bubble and most people have not set up their own AI skills yet.",
+          "createdAt": "2026-06-02T16:23:55.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2061833015257612593",
+          "text": "I have to say @meetgranola's pre-meeting briefs are 😙🤌. More automated and useful AI features like this @cjpedregal - maybe weekly recap brief?",
+          "createdAt": "2026-06-02T15:31:12.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -33,7 +55,7 @@
   ],
   "stats": {
     "xBuilders": 1,
-    "totalTweets": 2
+    "totalTweets": 4
   },
   "_mode": "Nitter RSS (free)"
 }

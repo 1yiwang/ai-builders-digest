@@ -1,0 +1,227 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-03",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Heute hat GitHub's COO bestätigt, dass KI-Agenten den Code-Output 2026 um 1400% steigerten und die Plattform überlasten. Währenddessen zeigt Listen Labs, dass KI-Stimminterviews mit Millionen Nutzern ehrlichere Kundeninsights liefern. Sebastian Mallaby enthüllt, wie Demis Hassabis DeepMind beinah mit 1 Mrd. $ ausgliederte – aber letztlich die größten KI-Momente verpasste. Zusammen zeigen diese Entwicklungen: Infrastruktur, Kundenverständnis und strategische Weitsicht werden zu den Engpässen der KI-Ära."
+  },
+  "archive": {
+    "title": "1400% mehr Code: GitHub unter Agentenbeschuss",
+    "desc": "Während KI-Agenten Code-Output explodieren lassen, verschieben sich Kundenverständnis und strategische Prioritäten."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-03.",
+  "sections": [
+    {
+      "title": "Agent Infrastructure: Scale, Serving & Models",
+      "desc": "AI agents are shipping code at unprecedented rates, requiring new approaches to infrastructure and model serving.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.youtube.com/watch?v=LEwlSyR0cXA",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Kyle Daigle (GitHub COO) says AI agents grew code output 1400% in 2026, stressing infrastructure built for human pace.",
+              "GitHub experiences frequent uptime issues as agent-generated code floods PRs and CI/CD; Daigle discusses redesigning systems for agent-scale.",
+              "Open source maintainers drown in AI-generated slop contributions — GitHub sees a need to preserve human social contract."
+            ],
+            "original": [
+              "coding agents began to ship mass quantities of code — growing 1400% in 2026",
+              "Can CI/CD keep up when every idea becomes a build? Can open source maintainers survive floods of AI-generated slop contributions?"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Kyle Daigle (GitHub COO): KI-Agenten steigerten Code-Output 2026 um 1400% und überlasteten die auf menschliche Geschwindigkeit ausgelegte Infrastruktur.",
+              "GitHub kämpft mit Ausfällen, da Agentencode PRs/CI flutet; Daigle plant Neugestaltung für Agentenlast.",
+              "Open-Source-Maintainer ertrinken in KI-generierten Slop-Beiträgen — GitHub will den sozialen Vertrag bewahren."
+            ],
+            "original": [
+              "KI-Coding-Agenten begannen, massenhaft Code zu produzieren – ein Anstieg von 1400% im Jahr 2026",
+              "Kann CI/CD mithalten, wenn jede Idee zu einem Build wird? Können Open-Source-Maintainer die Flut KI-generierter Slop-Beiträge überleben?"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI serves MiniMax-M3 with KV-block-major sparse attention and paged MSA decode to handle 1M-token context efficiently.",
+              "Custom Rust multimodal gateway and optimized index scoring reduce latency for long-context multimodal inference."
+            ],
+            "original": [
+              "KV-block-major sparse attention, paged MSA decode, optimized index scoring, and a Rust-based multimodal gateway."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI setzt MiniMax-M3 mit KV-block-major-sparsamem Attention und paged MSA Decode ein, um 1M-Token-Kontexte effizient zu bedienen.",
+              "Ein eigens entwickeltes multimodales Rust-Gateway und optimierte Indexbewertung senken die Latenz bei langen Kontexten."
+            ],
+            "original": [
+              "KV-block-major-sparsame Aufmerksamkeit, Paged-MSA-Decodierung, optimierte Indexbewertung und ein Rust-basiertes multimodales Gateway."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "JetBrains releases Mellum2, a 12B mixture-of-experts model, expanding their AI tooling beyond IDEs.",
+              "MoE architecture aims for efficient inference on code-related tasks, targeting developer productivity."
+            ],
+            "original": [
+              "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "JetBrains veröffentlicht Mellum2, ein 12B-Mixture-of-Experts-Modell, und erweitert so seine KI-Tools jenseits der IDE.",
+              "Die MoE-Architektur zielt auf effiziente Inferenz bei Code-Aufgaben und soll Entwicklerproduktivität steigern."
+            ],
+            "original": [
+              "Vorstellung von Mellum2: Ein 12B-Mixture-of-Experts-Modell von JetBrains"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "What Customers Really Want: Voice AI & SaaS Economics",
+      "desc": "Understanding user needs shifts: AI voice interviews at scale and the collapse of simple SaaS in the age of personal AI agents.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=Rumft-rsEu4",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Alfred Wahlforss (Listen Labs) serves Fortune 100s with AI voice interviews drawing from 30M-person audience.",
+              "People open up more to AI than human interviewers; transcripts outperform behavioral data for predicting customer behavior.",
+              "80% of engineering goes into building the right audience — knowing what to build becomes the scarce resource."
+            ],
+            "original": [
+              "people are often more honest with an AI than a human interviewer",
+              "interview transcripts turn out to be the richest fuel for predicting how customers will behave"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Alfred Wahlforss (Listen Labs) bedient Fortune-100-Firmen mit KI-Stimminterviews aus einer 30-Mio.-Personen-Zielgruppe.",
+              "Menschen öffnen sich KI gegenüber mehr als menschlichen Interviewern; Transkripte übertreffen Verhaltensdaten als Vorhersagequelle.",
+              "80% der Entwicklung fließt in den Aufbau der richtigen Zielgruppe — was man bauen soll, wird zur knappen Ressource."
+            ],
+            "original": [
+              "Menschen sind oft ehrlicher gegenüber einer KI als einem menschlichen Interviewer",
+              "Interview-Transkripte erweisen sich als die reichhaltigste Quelle, um vorherzusagen, wie sich Kunden verhalten werden"
+            ]
+          }
+        },
+        {
+          "authorKey": "x:petergyang",
+          "sourceName": "@petergyang",
+          "sourceUrl": "https://twitter.com/petergyang/status/2061846283263103274",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Peter Yang argues narrow SaaS faces monetization squeeze as AI skills and personal AI agents (Codex, Claude Code) offer more flexible, personalized solutions.",
+              "Users compare $20/mo SaaS to $20 ChatGPT subscription; human services still command high fees."
+            ],
+            "original": [
+              "AI-native agents like Codex/Claude Code have far more knowledge to solve the user's problem vs. a standalone SaaS",
+              "charge $20/month for a SaaS and people will compare its value to their Claude/ChatGPT subscription"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Peter Yang meint, einfache SaaS-Angebote geraten unter Druck, weil KI-Skills und persönliche KI-Agenten (Codex, Claude Code) flexiblere, personalisierte Lösungen bieten.",
+              "Nutzer vergleichen ein $20/Monat-SaaS mit ihrem $20-ChatGPT-Abo; menschliche Dienstleistungen erzielen weiter hohe Preise."
+            ],
+            "original": [
+              "KI-native Agenten wie Codex/Claude Code besitzen weit mehr Kontext, um das Problem des Nutzers zu lösen, als eine eigenständige SaaS-Website",
+              "verlange $20/Monat für eine SaaS und die Leute vergleichen deren Wert mit ihrem Claude-/ChatGPT-Abo"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Demis Hassabis Paradox: DeepMind's History and the AI Race",
+      "desc": "Sebastian Mallaby unpacks how Demis tried to prevent the AI race, yet DeepMind missed key moments, and what it means for labs today.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Sebastian Mallaby (author, The Infinity Machine) reveals Demis Hassabis nearly spun out DeepMind with a $1B Reid Hoffman pledge.",
+              "Mallaby gives OpenAI 50/50 odds of being absorbed by next summer; suggests Anthropic should IPO right now.",
+              "Demis hedged bets so broadly that DeepMind missed both ChatGPT and Claude Code, the defining consumer moments."
+            ],
+            "original": [
+              "Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists",
+              "he nearly spun DeepMind out of Google with a secret $1B Reid Hoffman pledge backing him"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sebastian Mallaby (Autor, Die Unendlichkeitsmaschine) enthüllt: Demis Hassabis wollte DeepMind fast mit 1 Mrd. $ von Reid Hoffman ausgliedern.",
+              "Mallaby gibt OpenAI eine 50:50-Chance, bis nächsten Sommer absorbiert zu werden; rät Anthropic zum sofortigen Börsengang.",
+              "Hassabis wettete so breit, dass DeepMind sowohl ChatGPT als auch Claude Code verpasste – die prägenden Consumer-Momente."
+            ],
+            "original": [
+              "Demis wollte den KI-Wettlauf verhindern, in dem wir alle jetzt leben, und findet sich nun als einer seiner Hauptakteure wieder",
+              "er spaltete DeepMind beinahe mit einem geheimen 1-Mrd.-$-Versprechen von Reid Hoffman von Google ab"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Codex Everywhere: OpenAI Brings Agent Capabilities to All Roles",
+      "desc": "OpenAI expands Codex plugins and tools beyond developers to analysts, marketers, and designers.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/codex-for-every-role-tool-workflow",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI launches Codex plugins, sites, and annotations for analysts, marketers, designers, and investors — not just developers.",
+              "The expansion aims to embed Codex into everyday business tools, moving AI assistance beyond code generation."
+            ],
+            "original": [
+              "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI führt Codex-Plugins, Sites und Annotations ein – für Analysten, Marketer, Designer und Investoren, nicht nur für Entwickler.",
+              "Die Erweiterung soll Codex in alltägliche Geschäftstools einbetten und KI-Unterstützung über die Code-Generierung hinaus bringen."
+            ],
+            "original": [
+              "Entdecken Sie neue Codex-Plugins, Sites und Annotationen, die Analysten, Marketingleuten, Designern, Investoren und anderen Teams helfen, mehr mit KI zu erreichen."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

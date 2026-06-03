@@ -20,7 +20,11 @@
     "gid://art19-episode-locator/V0/R0zXjVH3DYaFju0dKYi1WXnL2dCYAs32UgehU5nU2pw": 1780085814456,
     "2883cd96-a811-4539-967a-3705c330d3dc": 1780085814983,
     "gid://art19-episode-locator/V0/3aMKKfVfHMjKV-0nrhsBvvpLf_TcXgbNpyuKVAHqJ3Q": 1780314714022,
-    "57755330-5c1a-11f1-a264-77bb790f8295": 1780314714084
+    "57755330-5c1a-11f1-a264-77bb790f8295": 1780314714084,
+    "substack:post:200249307": 1780485573208,
+    "245db97c-5de8-11f1-beb7-d7c1b176fe75": 1780485573954,
+    "a014ff02-bdcf-478b-8d23-6c05a4c35788": 1780485574394,
+    "gid://art19-episode-locator/V0/ZzJXC_zX0cylkk3p3A0mkfKFkt1bzu4sovxhNg4oBak": 1780485575414
   },
   "seenArticles": {
     "https://huggingface.co/blog/torch-profiler": 1780085252360,
@@ -39,7 +43,14 @@
     "https://openai.com/index/trustworthy-third-party-evaluations-foundations": 1780085816282,
     "https://openai.com/index/endava": 1780085816282,
     "https://openai.com/index/openai-frontier-governance-framework": 1780085816282,
-    "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai": 1780314715303
+    "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai": 1780314715303,
+    "https://huggingface.co/blog/Hcompany/holo31": 1780485576938,
+    "https://huggingface.co/blog/JetBrains/mellum2-launch": 1780485576938,
+    "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption": 1780485576938,
+    "https://openai.com/index/travelers": 1780485577253,
+    "https://openai.com/index/codex-for-every-role-tool-workflow": 1780485577253,
+    "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership": 1780485577253,
+    "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets": 1780485577467
   },
   "xUserIds": {}
 }
