@@ -1,79 +1,39 @@
 {
-  "generatedAt": "2026-06-03T11:19:47.636Z",
+  "generatedAt": "2026-06-05T10:06:34.537Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Holo3.1: Fast & Local Computer Use Agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo31",
-      "publishedAt": "2026-06-02T14:13:23.000Z",
+      "name": "OpenAI",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "url": "https://openai.com/index/endava-frontiers",
+      "publishedAt": "2026-06-04T12:00:00.000Z",
       "author": "",
       "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-      "publishedAt": "2026-06-01T15:45:17.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-      "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-      "publishedAt": "2026-06-01T13:51:18.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
+      "content": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-      "url": "https://openai.com/index/travelers",
-      "publishedAt": "2026-06-02T12:00:00.000Z",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "url": "https://openai.com/index/chatgpt-memory-dreaming",
+      "publishedAt": "2026-06-04T09:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
+      "content": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Codex for every role, tool, and workflow",
-      "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
-      "publishedAt": "2026-06-02T09:00:00.000Z",
+      "title": "Biodefense in the Intelligence Age",
+      "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+      "publishedAt": "2026-06-04T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "Serving MiniMax-M3 for efficient inference: Unlocking 1M-Token Context and Multimodality Without Regrets",
-      "url": "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets",
-      "publishedAt": "2026-06-02T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "How Together served MiniMax-M3 efficiently with KV-block-major sparse attention, paged MSA decode, optimized index scoring, and a Rust-based multimodal gateway."
+      "content": "An action plan for AI-powered biological resilience"
     }
   ],
   "stats": {
-    "blogPosts": 7
+    "blogPosts": 3
   }
 }

@@ -24,7 +24,14 @@
     "substack:post:200249307": 1780485573208,
     "245db97c-5de8-11f1-beb7-d7c1b176fe75": 1780485573954,
     "a014ff02-bdcf-478b-8d23-6c05a4c35788": 1780485574394,
-    "gid://art19-episode-locator/V0/ZzJXC_zX0cylkk3p3A0mkfKFkt1bzu4sovxhNg4oBak": 1780485575414
+    "gid://art19-episode-locator/V0/ZzJXC_zX0cylkk3p3A0mkfKFkt1bzu4sovxhNg4oBak": 1780485575414,
+    "substack:post:200614482": 1780653984288,
+    "0c2c7d0c-5fc8-11f1-84fd-97552ff30f86": 1780653984958,
+    "10556d62-a6f5-44a2-aae6-0cb62f28313b": 1780653985251,
+    "19ae4fac-acd5-40bf-b6a7-168292c2c275": 1780653985612,
+    "39522bf7-c802-4596-a9bc-2f1b28b51c39": 1780653985972,
+    "bfe6a926-5f96-11f1-8f47-93918311ffba": 1780653987451,
+    "fe415ec1-2ec5-4f37-9a63-5cb23414339c": 1780653988532
   },
   "seenArticles": {
     "https://huggingface.co/blog/torch-profiler": 1780085252360,
@@ -50,7 +57,10 @@
     "https://openai.com/index/travelers": 1780485577253,
     "https://openai.com/index/codex-for-every-role-tool-workflow": 1780485577253,
     "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership": 1780485577253,
-    "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets": 1780485577467
+    "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets": 1780485577467,
+    "https://openai.com/index/endava-frontiers": 1780653989087,
+    "https://openai.com/index/chatgpt-memory-dreaming": 1780653989087,
+    "https://openai.com/index/biodefense-in-the-intelligence-age": 1780653989087
   },
   "xUserIds": {}
 }
