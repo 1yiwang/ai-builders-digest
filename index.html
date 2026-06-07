@@ -117,7 +117,7 @@
   .cover-date {
     position: absolute;
     top: 18px;
-    left: 22px;
+    left: 66px;
     z-index: 3;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
@@ -164,7 +164,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
-    padding: 20px 34px 0;
+    padding: 34px 34px 0;
   }
 
   .cover-title {
@@ -190,16 +190,17 @@
   }
 
   .cover-deck {
-    max-width: 240px;
+    flex-shrink: 0;
     padding: 4px 0 0 16px;
     border-left: 1px solid rgba(255,255,255,0.12);
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 0.95rem;
     font-weight: 400;
     line-height: 1.2;
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
     color: #64748b;
   }
 
@@ -211,8 +212,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding: 48px 34px 140px;
+    justify-content: center;
+    padding: 56px 34px 120px;
   }
 
   /* Generated cover artwork — a single glowing lightbulb on a black/transparent
@@ -224,7 +225,7 @@
     z-index: 2;
     width: min(560px, 100%);
     aspect-ratio: 1024 / 571;
-    margin: clamp(20px, 4vw, 56px) auto 0;
+    margin: 0 auto;
   }
 
   .cover-art-img {
@@ -451,8 +452,12 @@
       min-height: calc(100svh - 36px);
     }
 
+    .cover-date {
+      left: 38px;
+    }
+
     .cover-topline {
-      padding: 22px 20px 0;
+      padding: 38px 20px 0;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -481,6 +486,7 @@
       text-align: left;
       font-size: 0.82rem;
       line-height: 1.2;
+      white-space: normal;
       color: #64748b;
     }
 
@@ -490,7 +496,7 @@
 
     .cover-art {
       width: 100%;
-      margin-top: 28px;
+      margin-top: 0;
     }
 
     .cover-philosophy {
@@ -521,10 +527,10 @@
     .cover-date {
       font-size: 10px;
       top: 12px;
-      left: 16px;
+      left: 22px;
     }
     .cover-topline {
-      padding: 12px 12px 0;
+      padding: 46px 12px 0;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -550,6 +556,7 @@
       text-align: left;
       font-size: 0.75rem;
       line-height: 1.2;
+      white-space: normal;
       color: #64748b;
     }
     .cover-stage {
@@ -557,7 +564,7 @@
     }
     .cover-art {
       width: 100%;
-      margin-top: 20px;
+      margin-top: 0;
     }
 
     /* Cover philosophy */
@@ -756,29 +763,46 @@
   </div>
 
   <script>
+    // Cover date — derived from the latest published issue (first archive entry)
+    // so it stays current automatically as new issues are added. Falls back to
+    // today's date if no issue is listed.
+    (function setCoverDate() {
+      var el = document.querySelector('.cover-date');
+      if (!el) return;
+      var first = document.querySelector('.archive-date');
+      var iso = first ? first.textContent.trim() : '';
+      var d = iso ? new Date(iso + 'T00:00:00') : new Date();
+      if (isNaN(d.getTime())) d = new Date();
+      var months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+                    'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+      el.textContent = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+    })();
+
     (function initTheme() {
       var html = document.documentElement;
       var toggle = document.querySelector('.theme-toggle');
-      var saved = localStorage.getItem('ai-builders-digest-theme');
+      var KEY = 'ai-builders-digest-theme';
+      function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+      function store(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
       function detectSystem() {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
       function applyTheme(theme) {
         html.setAttribute('data-theme', theme);
-        localStorage.setItem('ai-builders-digest-theme', theme);
+        store(theme);
       }
-      applyTheme(saved || detectSystem());
+      applyTheme(read() || detectSystem());
       if (toggle) {
         toggle.addEventListener('click', function() {
           var current = html.getAttribute('data-theme');
           applyTheme(current === 'dark' ? 'light' : 'dark');
         });
       }
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-        if (!localStorage.getItem('ai-builders-digest-theme')) {
-          applyTheme(e.matches ? 'dark' : 'light');
-        }
-      });
+      try {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+          if (!read()) applyTheme(e.matches ? 'dark' : 'light');
+        });
+      } catch (e) {}
     })();
   </script>
 </body>
