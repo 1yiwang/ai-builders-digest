@@ -7,35 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f0f2f5;
-    --card-bg: #ffffff;
-    --border: #e2e8f0;
-    --text-primary: #1a1f2c;
-    --text-body: #334155;
-    --text-muted: #64748b;
-    --tag-bg: rgba(99, 102, 241, 0.08);
-    --poster-bg: #030915;
-    --poster-inner: transparent;
-    --shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-    --accent-start: #6366f1;
-    --accent-end: #a855f7;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0d111a;
-      --card-bg: #161b26;
-      --border: #232a3b;
-      --text-primary: #ffffff;
-      --text-body: #e2e8f0;
-      --text-muted: #8b949e;
-      --tag-bg: rgba(99, 102, 241, 0.12);
-      --poster-inner: transparent;
-      --shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
-    }
-  }
-
-  [data-theme="dark"] {
     --bg: #0d111a;
     --card-bg: #161b26;
     --border: #232a3b;
@@ -43,20 +14,11 @@
     --text-body: #e2e8f0;
     --text-muted: #8b949e;
     --tag-bg: rgba(99, 102, 241, 0.12);
+    --poster-bg: #030915;
     --poster-inner: transparent;
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
-  }
-
-  [data-theme="light"] {
-    --bg: #f0f2f5;
-    --card-bg: #ffffff;
-    --border: #e2e8f0;
-    --text-primary: #1a1f2c;
-    --text-body: #334155;
-    --text-muted: #64748b;
-    --tag-bg: rgba(99, 102, 241, 0.08);
-    --poster-inner: transparent;
-    --shadow: 0 24px 60px rgba(32, 25, 40, 0.2);
+    --accent-start: #6366f1;
+    --accent-end: #a855f7;
   }
 
   * { box-sizing: border-box; }
@@ -125,37 +87,6 @@
     text-transform: uppercase;
     color: rgba(255,255,255,0.35);
   }
-
-  .theme-toggle {
-    position: absolute;
-    top: 14px;
-    right: 22px;
-    z-index: 3;
-    width: 36px;
-    height: 36px;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    background: rgba(255,255,255,0.1);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    line-height: 1;
-    padding: 0;
-    overflow: hidden;
-    transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
-    backdrop-filter: blur(4px);
-  }
-  .theme-toggle:hover { transform: scale(1.08); border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.18); }
-  .theme-icon-light, .theme-icon-dark {
-    position: absolute;
-    transition: opacity 200ms ease, transform 200ms ease;
-  }
-  .theme-icon-light { opacity: 1; transform: rotate(0deg); }
-  .theme-icon-dark { opacity: 0; transform: rotate(90deg); }
-  [data-theme="dark"] .theme-icon-light { opacity: 0; transform: rotate(-90deg); }
-  [data-theme="dark"] .theme-icon-dark { opacity: 1; transform: rotate(0deg); }
 
   .cover-topline {
     position: relative;
@@ -588,15 +519,6 @@
       margin-top: 12px;
     }
 
-    /* Theme toggle — WCAG touch target */
-    .theme-toggle {
-      width: 44px;
-      height: 44px;
-      top: 10px;
-      right: 14px;
-      font-size: 18px;
-    }
-
     /* Archive */
     .archive {
       padding: 20px 12px 48px;
@@ -646,10 +568,6 @@
     <section class="cover">
       <div class="cover-poster">
         <div class="cover-date">Mai 29, 2026</div>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle light/dark mode">
-          <span class="theme-icon-light">☀</span>
-          <span class="theme-icon-dark">☽</span>
-        </button>
 
         <div class="cover-inner">
           <div class="cover-topline">
@@ -776,33 +694,6 @@
       var months = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
                     'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
       el.textContent = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
-    })();
-
-    (function initTheme() {
-      var html = document.documentElement;
-      var toggle = document.querySelector('.theme-toggle');
-      var KEY = 'ai-builders-digest-theme';
-      function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
-      function store(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
-      function detectSystem() {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-      function applyTheme(theme) {
-        html.setAttribute('data-theme', theme);
-        store(theme);
-      }
-      applyTheme(read() || detectSystem());
-      if (toggle) {
-        toggle.addEventListener('click', function() {
-          var current = html.getAttribute('data-theme');
-          applyTheme(current === 'dark' ? 'light' : 'dark');
-        });
-      }
-      try {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-          if (!read()) applyTheme(e.matches ? 'dark' : 'light');
-        });
-      } catch (e) {}
     })();
   </script>
 </body>
