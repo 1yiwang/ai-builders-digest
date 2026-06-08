@@ -103,7 +103,7 @@
 
   .cover-stage {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     flex: 1;
     min-height: 0;
     display: flex;
@@ -113,28 +113,34 @@
     padding: 56px 34px 120px;
   }
 
-  /* Generated cover artwork — a single glowing lightbulb on a black/transparent
-     background. Blended with `screen` so the dark background drops out and only
-     the bulb + glow show, melting seamlessly into the poster regardless of the
-     exact background color (no visible rectangle / seam). */
-  .cover-art {
-    position: relative;
-    z-index: 2;
-    width: min(680px, 100%);
-    aspect-ratio: 1024 / 571;
-    margin: 0 auto;
-  }
-
-  .cover-art-img {
+  /* 3D hex-mesh globe — full-bleed cover background (globe.gl / WebGL).
+     Decorative only: pointer-events are disabled so it never blocks the
+     masthead or page scrolling. The scrim darkens the top + bottom so the
+     title and philosophy text stay legible over the rotating globe. */
+  #globeViz {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
+    z-index: 0;
+    overflow: hidden;
     pointer-events: none;
-    user-select: none;
-    mix-blend-mode: screen;
+  }
+
+  #globeViz canvas {
+    display: block;
+  }
+
+  .cover-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0) 26%,
+      rgba(0, 0, 0, 0) 58%,
+      rgba(0, 0, 0, 0.68) 100%
+    );
   }
 
   .cover-philosophy {
@@ -358,11 +364,6 @@
       padding: 36px 18px 120px;
     }
 
-    .cover-art {
-      width: 100%;
-      margin-top: 0;
-    }
-
     .cover-philosophy {
       width: calc(100% - 28px);
       bottom: 20px;
@@ -394,10 +395,6 @@
     }
     .cover-stage {
       padding: 24px 12px 100px;
-    }
-    .cover-art {
-      width: 100%;
-      margin-top: 0;
     }
 
     /* Cover philosophy */
@@ -470,16 +467,14 @@
     <section class="cover">
       <div class="cover-poster">
         <div class="cover-inner">
+          <div id="globeViz" aria-hidden="true"></div>
+          <div class="cover-scrim" aria-hidden="true"></div>
+
           <div class="cover-topline">
             <h1 class="cover-title-main">AI Builders Digest</h1>
           </div>
 
           <div class="cover-stage">
-
-            <div class="cover-art" id="cover-art">
-              <img class="cover-art-img" src="./assets/cover-art.png"
-                   alt="A glowing lightbulb — the emblem of AI Builders Digest" />
-            </div>
 
             <div class="cover-philosophy">
               <p>Ein digitales Magazin über die Menschen, die KI-Produkte bauen – ihre Einsichten, Entscheidungen und die tägliche Arbeit hinter den Schlagzeilen.</p>
@@ -592,5 +587,53 @@
     </section>
   </div>
 
+  <!-- 3D hex-mesh globe (decorative cover background). Pinned to globe.gl v2.
+       This block lives outside the archive list / cover-date placeholders, so the
+       CI archive updater never touches it. -->
+  <script src="https://unpkg.com/globe.gl@2"></script>
+  <script>
+    (function initGlobe() {
+      var el = document.getElementById('globeViz');
+      if (!el || typeof Globe !== 'function') return;
+
+      // Realistic night earth: golden city lights on a photographic texture,
+      // wrapped in a deep, cinematic blue atmospheric glow. No vector overlays.
+      var world = Globe()(el)
+        .backgroundColor('rgba(0,0,0,0)')
+        .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+        .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
+        .showAtmosphere(true)
+        .atmosphereColor('#3a66ff')
+        .atmosphereAltitude(0.4);
+
+      function resize() {
+        world.width(el.clientWidth).height(el.clientHeight);
+      }
+      resize();
+      window.addEventListener('resize', resize);
+      window.addEventListener('load', resize);
+
+      var controls = world.controls();
+      controls.autoRotate = true;
+      controls.autoRotateSpeed = 0.6;
+      controls.enableZoom = false;
+      controls.enablePan = false;
+
+      world.pointOfView({ lat: 18, lng: 0, altitude: 2.2 });
+
+      // Soft ambient fill so the night side keeps some depth/texture instead of
+      // going pure flat-black. Wrapped in try/catch — purely an enhancement.
+      try {
+        var lights = world.lights();
+        if (lights && lights.length) {
+          lights.forEach(function (l) {
+            if (l.type === 'AmbientLight') l.intensity = 3.2;
+            if (l.type === 'DirectionalLight') l.intensity = 1.4;
+          });
+          world.lights(lights);
+        }
+      } catch (e) { /* keep default lighting */ }
+    })();
+  </script>
 </body>
 </html>
