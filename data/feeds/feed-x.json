@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T10:06:40.514Z",
+  "generatedAt": "2026-06-08T11:13:24.801Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2062743491365544361",
-          "text": "Also as great as Codex is (and I'm really starting to love it) the frontend design still leaves alot to be desired. I have a /slides skill and you can guess which one Codex made vs. Claude. Yes I know I can make an image with ChatGPT first and then tell Codex to build it but Claude can one shot great looking HTML slides. Codex needs to fix this imo it's often a novice's first impression of a coding or knowledge work tool.",
-          "createdAt": "2026-06-05T03:49:06.000Z",
+          "id": "2063818032280170721",
+          "text": "My wife asked me to take out the trash. I said, “You shouldn’t be prompting me anymore. You should be designing loops.\" Finish the punch line of this dad joke please.",
+          "createdAt": "2026-06-08T02:58:57.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,64 +18,9 @@
           }
         },
         {
-          "id": "2062740262338929110",
-          "text": "I spent the whole day today setting up integrations and skills in Codex for my top creator workflows. Now I'm convinced that you can save at least 50% of your time on any type of knowledge work if you just set up the system upfront. Note that all my workflows have human checkpoints along the way so I can apply my \"taste.\" Anyway, it feels extremely liberating to have all this set up. If you want to do the same, just follow these three steps: 1. Reflect on your past week: - What work did you spend the most time on? - What work was the most repetitive? Pick your most painful, manual workflow to start. 2. List out every single step of that manual workflow. Be very detail oriented. 3. Open Codex (or Claude Code) and paste the list of steps from 2 and ask it \"What integrations and skills can I build to streamline this with your help?\" AI will guide you the rest of the way.",
-          "createdAt": "2026-06-05T03:36:17.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2062685858109800510",
-          "text": "Summer camp assistant Hermes Agent to the rescue @NousResearch",
-          "createdAt": "2026-06-05T00:00:06.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2062662500928421960",
-          "text": "Some more dumb questions about Codex: 1. I use it on my primary laptop which I don't keep on all the time so I don't like setting up cron jobs there. Can I set up the app on my Mac Mini too and run all the cron jobs through that? I have a feeling it's gonna replace OpenClaw/Hermes for me then. 2. Is the image gen feature on Codex basically free? It's using ChatGPT Images 2? 3. Anyone tried generating images first and then using @HeyGen hyperframes to generate videos?",
-          "createdAt": "2026-06-04T22:27:17.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2062602951622099060",
-          "text": "Work has become kicking off a bunch of agents and then watching Youtube movie trailers 🥹",
-          "createdAt": "2026-06-04T18:30:39.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2062585692375658848",
-          "text": "I am interviewing the legend @mvanhorn tomorrow and I'm going to ask him to demo some of these hacks live + his favorite Printing Press integrations. What else should I ask him? Let us know in the replies. Also if you want the interview soon, subscribe here: https://www.youtube.com/@PeterYangYT?subscribe",
-          "createdAt": "2026-06-04T17:22:04.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2062537281693757734",
-          "text": "It's pretty annoying that Codex uses agents.md and Claude Code uses Claude.md. There should be some industry standards to this stuff?",
-          "createdAt": "2026-06-04T14:09:42.000Z",
+          "id": "2063773012000952459",
+          "text": "I’m trying to become a better AI builder and have been lucky enough to interview 5 of the best: 1. @kieranklaassen built the Compound Engineering system that many AI builders swear by. In our episode, he walked through exactly how it works, from planning to skills to commands like /ce-plan, /ce-work, and /lfg (let’s effing go). https://www.youtube.com/watch?v=g6z_4TMDiaE I’ll link the free Compound Engineering system below. 2. @ryancarson has started multiple companies and is now running a startup solo with OpenClaw, Codex, and Devin. It was fascinating to see the system he built to help him run his company. https://www.youtube.com/watch?v=IDqdVZwAwjw 3. @Shpigford has been building products for 25 years. Like many AI builders, he created his own skill stack to streamline the way he works, including /build, /adversarial-code-review, /but-for-real, and /learnings. https://www.youtube.com/watch?v=GdxLaeyu33c 4. @kunchenguid made it to L8 in big tech as a principal engineer, which is very hard. Then he quit to ship 40 PRs a day with agents and build free open source tools for visual planning, parallel agents, and AI code review. https://www.youtube.com/watch?v=88B6DimMD2g I’ll link his GitHub below too. 5. @mvanhorn has built some of the most popular open source AI projects on GitHub despite having no formal engineering background, including /last30days and his Printing Press system. I’m dropping his episode next week on my YouTube. If you’re trying to become a better AI builder too, start with these interviews that show you how real AI builders work. Subscribe for more conversations like this: https://www.youtube.com/@PeterYangYT?subscribe",
+          "createdAt": "2026-06-08T00:00:03.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -86,13 +31,13 @@
       ]
     },
     {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2062587000201580808",
-          "text": "Why AI Can Now Make Discoveries - my conversation with @danintheory, Lead of the Foundations of Reinforcement Learning team at @OpenAI 00:00 Intro: AI's wild week in mathematics 01:21 What OpenAI's Foundations of RL team does 03:08 Dan's journey: from black holes and quantum gravity to frontier AI 07:04 Are AI systems becoming useful for real science 08:21 The AI math moment: Erdős, OpenAI, DeepMind, and Anthropic 08:52 Why the OpenAI result was an act of exploration 10:25 OpenAI vs. DeepMind: informal reasoning vs. formal proof 12:13 RL 101: learning by doing, not just watching 15:10 Why reinforcement learning works 15:58 How RL breaks: sparse feedback and long-horizon tasks 17:03 RLHF: how human feedback shaped early language models 18:48 Move 37, self-play, and the search for novel strategies 22:16 Explore vs. exploit in scientific discovery 24:49 Why RL may now be \"the cake,\" not the cherry on top 25:46 Why RL started working with large language models 27:29 Is RL \"sucking supervision through a straw\"? 28:47 Why language may be the grounding layer for intelligence 31:46 A contrarian take on the Bitter Lesson 32:41 What test-time compute actually is 34:50 How RL gives models the ability to think 35:40 Verifiable rewards, math, coding, and the messy real world 38:00 What physics can teach us about AI 42:08 Is there a thermodynamics of AI? 43:08 From Erdős problems to Einstein-level AI 45:16 Is AI already doing original science? 45:51 How far are we from AI automating AI research 47:41 Why Dan is excited about the future of science",
-          "createdAt": "2026-06-04T17:27:16.000Z",
+          "id": "2063704354910347520",
+          "text": "A common misconception is that training data is low skill, grunt work - scan some notebooks, mine the internet, create labeled samples. The data required to advance the model frontier is the opposite. Labs need training data for high-economic-value tasks. And most of these tasks outside of SWE have little documentation - it is complex, domain-specific knowledge built over the years, spanning legacy tools that don’t talk to each other. That's why we have SWE agents and not knowledge work agents yet. The companies creating this training data, such as Mercor, are doing extremely high-leverage, high-skill work. Critical to moving AI forward. And deeply underappreciated.",
+          "createdAt": "2026-06-07T19:27:14.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -105,7 +50,7 @@
   ],
   "stats": {
     "xBuilders": 2,
-    "totalTweets": 8
+    "totalTweets": 3
   },
   "_mode": "Nitter RSS (free)"
 }

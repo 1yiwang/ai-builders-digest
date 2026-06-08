@@ -31,7 +31,10 @@
     "19ae4fac-acd5-40bf-b6a7-168292c2c275": 1780653985612,
     "39522bf7-c802-4596-a9bc-2f1b28b51c39": 1780653985972,
     "bfe6a926-5f96-11f1-8f47-93918311ffba": 1780653987451,
-    "fe415ec1-2ec5-4f37-9a63-5cb23414339c": 1780653988532
+    "fe415ec1-2ec5-4f37-9a63-5cb23414339c": 1780653988532,
+    "gid://art19-episode-locator/V0/nQoxrMRhEMliQTB8mlE8GxkyrMKGNcNPYV8Y8nBYtis": 1780917179248,
+    "ce1196f0-618a-11f1-98fe-437dc10278bd": 1780917179490,
+    "gid://art19-episode-locator/V0/Ps1BEU9fURpn6sxU440Mlt-lhbqq-joIgtKjmod7P4g": 1780917180415
   },
   "seenArticles": {
     "https://huggingface.co/blog/torch-profiler": 1780085252360,
@@ -60,7 +63,8 @@
     "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets": 1780485577467,
     "https://openai.com/index/endava-frontiers": 1780653989087,
     "https://openai.com/index/chatgpt-memory-dreaming": 1780653989087,
-    "https://openai.com/index/biodefense-in-the-intelligence-age": 1780653989087
+    "https://openai.com/index/biodefense-in-the-intelligence-age": 1780653989087,
+    "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures": 1780917181204
   },
   "xUserIds": {}
 }

@@ -1,0 +1,199 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-08",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic liefert mit Claude Opus 4.8 verbesserte Benchmarks, Dynamic Workflows und eine System Card mit Welfare-Themen—zeitgleich steigt die Bewertung auf 965 Milliarden Dollar und der IPO-Antrag liegt. Während JPMorgan OpenAI vorrechnet, dass der Konzern das 26-fache an Umsatz bräuchte, zeigen Builder wie Kieran Klaassen und Kun Chen, wie praktische Scaffolds und Skill-Stacks die Agentenproduktivität vorantreiben. Madhu Guru erinnert daran, dass echtes Wissenstraining für komplexe Domänen noch fehlt. Die Branche ist zwischen Rekordfinanzierungen und der realen Lücke für Wissensagenten gespalten."
+  },
+  "archive": {
+    "title": "Opus 4.8 und 965-Mrd-IPO",
+    "desc": "Anthropic präsentiert Opus 4.8 mit Welfare-Themen und strebt an die Börse mit 965 Milliarden Dollar Bewertung, während die Agenten-Builder-Community auf Scaffolds setzt und die Trainingsdaten-Lücke bleibt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-08.",
+  "sections": [
+    {
+      "title": "Claude Opus 4.8: Dynamische Workflows und Welfare-Themen",
+      "desc": "Anthropics neues Modell bringt verbesserte Benchmarks, multi-agent Fähigkeiten und wirft ethische Fragen zu Welfare auf.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI",
+          "sourceUrl": "https://lastweekin.ai/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic released Claude Opus 4.8 with improved benchmarks across key evals.",
+              "System card highlights eval-awareness, welfare/corrigibility concerns for advanced AI.",
+              "Dynamic Workflows tool enables long-running multi-agent tasks."
+            ],
+            "original": [
+              "Anthropic released Claude Opus 4.8 with improved benchmark scores, discussed eval-awareness findings and welfare/corrigibility themes from its system card, and introduced Dynamic Workflows for long-running multi-agent tasks."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic veröffentlicht Claude Opus 4.8 mit verbesserten Benchmark-Ergebnissen.",
+              "System Card thematisiert eval-awareness sowie Welfare- und Korrigierbarkeitsrisiken.",
+              "Dynamic Workflows erlauben erstmals langlaufende Multi-Agenten-Aufgaben."
+            ],
+            "original": [
+              "Anthropic veröffentlichte Claude Opus 4.8 mit verbesserten Benchmark-Werten, diskutierte Erkenntnisse zur eval-awareness sowie Welfare- und Korrigierbarkeitsthemen der System Card und führte Dynamic Workflows für langlaufende Multi-Agenten-Aufgaben ein."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI-IPO und Milliardenbewertungen: Anthropics Börsengang",
+      "desc": "Anthropic schließt Rekordfinanzierung ab und bereitet den IPO vor, während JPMorgan die Wirtschaftlichkeit der Infrastruktur-Ausgaben hinterfragt.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI",
+          "sourceUrl": "https://lastweekin.ai/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic raised a $65B Series H at a $965B valuation and filed for an IPO.",
+              "JPMorgan argues OpenAI needs a 26x revenue increase to justify its infrastructure spending."
+            ],
+            "original": [
+              "Anthropic Hits $965 Billion Valuation, Surpassing OpenAI – WSJ",
+              "OpenAI needs a 26x revenue increase to justify its buildout"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic schloss eine Series-H-Runde über 65 Mrd. $ bei 965 Mrd. $ Bewertung ab und reichte IPO-Unterlagen ein.",
+              "JPMorgan rechnet vor, dass OpenAI den Umsatz um den Faktor 26 steigern muss, um die Infrastruktur-Ausgaben zu rechtfertigen."
+            ],
+            "original": [
+              "Anthropic erreicht 965 Milliarden Dollar Bewertung und überholt OpenAI – WSJ",
+              "OpenAI benötigt eine 26-fache Umsatzsteigerung, um seinen Infrastrukturausbau zu rechtfertigen"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Builder Stack: Scaffolds, Skill-Stacks und Solo-Workflows",
+      "desc": "Praktische Scaffolds und selbstgebaute Werkzeugketten steigern die Produktivität von AI-Buildern – von Steuer-Workflows bis zu 40 PRs am Tag.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-in-the-am-week-1-highlights-june-2026/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Cheap AI scaffolds are already improving real-world tax workflows."
+            ],
+            "original": [
+              "…how cheap scaffolds are already improving tax workflows."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Einfache AI-Scaffolds verbessern bereits echte Steuer-Workflows."
+            ],
+            "original": [
+              "…wie günstige Scaffolds bereits Steuer-Workflows verbessern."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:petergyang",
+          "sourceName": "Peter Yang",
+          "sourceUrl": "https://twitter.com/petergyang/status/2063773012000952459",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Kieran Klaassen’s Compound Engineering system, with /ce-plan, /ce-work, /lfg, is widely adopted by AI builders.",
+              "Kun Chen, former L8 Principal Engineer, now ships 40 PRs a day using AI agents and open-sourced visual planning tools."
+            ],
+            "original": [
+              "Kieran Klaassen built the Compound Engineering system that many AI builders swear by… from planning to skills to commands like /ce-plan, /ce-work, and /lfg.",
+              "Kun Chen made it to L8 in big tech as a principal engineer… Then he quit to ship 40 PRs a day with agents and build free open source tools for visual planning, parallel agents, and AI code review."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Kieran Klaassens Compound-Engineering-System mit /ce-plan, /ce-work und /lfg setzt sich bei AI-Buildern durch.",
+              "Kun Chen, Ex-L8-Principal-Engineer, liefert mit Agenten 40 PRs täglich und veröffentlichte Open-Source-Tools für visuelle Planung."
+            ],
+            "original": [
+              "Kieran Klaassen hat das Compound-Engineering-System entwickelt, auf das viele AI-Builder schwören – von Planung bis zu Skills und Commands wie /ce-plan, /ce-work und /lfg.",
+              "Kun Chen schaffte es in Big Tech bis zum L8 Principal Engineer … kündigte und liefert jetzt mit Agenten 40 PRs am Tag und baute kostenlose Open-Source-Tools für visuelle Planung, parallele Agenten und KI-Code-Review."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Trainingsdaten: Warum es noch keine Knowledge-Work-Agenten gibt",
+      "desc": "Hochqualitative Trainingsdaten für domänenspezifische Wissensarbeit sind die unterschätzte Engstelle – und Unternehmen wie Mercor füllen sie.",
+      "cards": [
+        {
+          "authorKey": "x:realmadhuguru",
+          "sourceName": "Madhu Guru",
+          "sourceUrl": "https://twitter.com/realmadhuguru/status/2063704354910347520",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mercor shows the high-skill, high-leverage work of creating training data for knowledge work agents beyond coding.",
+              "Domain-specific legacy systems make SWE agents easier than building agents for complex knowledge work."
+            ],
+            "original": [
+              "The data required to advance the model frontier is the opposite. Labs need training data for high-economic-value tasks. And most of these tasks outside of SWE have little documentation – it is complex, domain-specific knowledge built over the years, spanning legacy tools that don’t talk to each other.",
+              "Companies creating this training data, such as Mercor, are doing extremely high-leverage, high-skill work."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mercor veranschaulicht die hochqualifizierte Arbeit, Trainingsdaten für Wissensagenten jenseits von Coding zu erstellen.",
+              "Domänenspezifische Legacy-Systeme machen SWE-Agenten einfacher als Agenten für komplexe Wissensarbeit."
+            ],
+            "original": [
+              "Die Daten, die nötig sind, um die Modell-Frontier voranzutreiben, sind das Gegenteil. Labs brauchen Trainingsdaten für Aufgaben mit hohem wirtschaftlichem Wert. Die meisten dieser Aufgaben außerhalb von SWE sind kaum dokumentiert – komplexes, über Jahre aufgebautes Domänenwissen, das sich über Legacy-Tools erstreckt, die nicht miteinander kommunizieren.",
+              "Unternehmen, die solche Trainingsdaten erstellen, wie Mercor, leisten extrem wirkungsvolle, hochqualifizierte Arbeit."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Gründer im AI-Labor: Brian Chesky",
+      "desc": "Ein weiterer prominenter Gründer steigt persönlich in die KI-Entwicklung ein.",
+      "cards": [
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://www.machinelearningstreettalk.com",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Brian Chesky (Airbnb) has launched an AI lab, personally entering the AI race as a founder."
+            ],
+            "original": [
+              "Brian Chesky's AI Lab"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Brian Chesky (Airbnb) hat ein eigenes KI-Labor gestartet und steigt persönlich in den KI-Wettstreit ein."
+            ],
+            "original": [
+              "Brian Cheskys KI-Labor"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

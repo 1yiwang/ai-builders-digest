@@ -1,39 +1,19 @@
 {
-  "generatedAt": "2026-06-05T10:06:34.537Z",
+  "generatedAt": "2026-06-08T11:13:17.301Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "How Endava is redesigning software delivery around AI agents",
-      "url": "https://openai.com/index/endava-frontiers",
-      "publishedAt": "2026-06-04T12:00:00.000Z",
+      "name": "Hugging Face",
+      "title": "Amazing Digital Dentures (a failed project)",
+      "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
+      "publishedAt": "2026-06-07T19:44:27.000Z",
       "author": "",
       "description": "",
-      "content": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Dreaming: Better memory for a more helpful ChatGPT",
-      "url": "https://openai.com/index/chatgpt-memory-dreaming",
-      "publishedAt": "2026-06-04T09:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Biodefense in the Intelligence Age",
-      "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
-      "publishedAt": "2026-06-04T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "An action plan for AI-powered biological resilience"
+      "content": ""
     }
   ],
   "stats": {
-    "blogPosts": 3
+    "blogPosts": 1
   }
 }
