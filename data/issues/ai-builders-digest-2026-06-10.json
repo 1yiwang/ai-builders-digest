@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-10",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat mit Fable ein neues Modell veröffentlicht, während Lovable die 500-Millionen-ARR-Marke knackt. Gleichzeitig zeigt eine Studie von Glean, dass 87 % der Beschäftigten KI nutzen, aber nur 13 % eine Leistungssteigerung sehen – ein Produktivitätsparadox. Jensen Huang beschreibt KI-Fabriken als Dynamos des Zeitalters und warnt: Nicht KI ersetzt Jobs, sondern Kollegen, die KI nutzen."
+  },
+  "archive": {
+    "title": "Lovable $500M ARR und das Produktivitätsparadox",
+    "desc": "Der Tag zeigt das Spannungsfeld zwischen gigantischem Wachstum und der versteckten Arbeit hinter KI."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-10.",
+  "sections": [
+    {
+      "title": "Anthropic Ecosystem / Anthropic-Ökosystem",
+      "desc": "Anthropic released a new model and expanded Claude’s reach on Apple platforms.",
+      "cards": [
+        {
+          "authorKey": "x:@petergyang",
+          "sourceName": "@petergyang on X",
+          "sourceUrl": "https://x.com/petergyang/status/2064521408034849019",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic quietly released ‘Fable’, a new model. Peter Yang tested it by generating an F-Zero game.",
+              "Fable needed a few extra prompts (e.g., ‘give it more speed’) but delivered impressive results compared to GPT 5.5."
+            ],
+            "original": [
+              "Did my (very not scientific) F-Zero test for Anthropic's new Fable model. It didn't quite one shot below, I had to give a few more prompts like 'give it more of a sense of speed.' But still impressive! Quote tweeting what GPT 5.5 made from 2 months ago."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic hat heimlich das neue Modell ‘Fable’ veröffentlicht. Peter Yang testete es mit der Generierung eines F-Zero-Spiels.",
+              "Fable benötigte ein paar zusätzliche Prompts, lieferte aber beeindruckende Ergebnisse im Vergleich zu GPT 5.5."
+            ],
+            "original": [
+              "Habe meinen (sehr unwissenschaftlichen) F-Zero-Test für Anthropics neues Fable-Modell gemacht. Es hat nicht ganz auf Anhieb geklappt, ich musste ein paar weitere Prompts wie 'gib ihm mehr Geschwindigkeitsgefühl' eingeben. Aber immer noch beeindruckend!"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-for-foundation-models",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Apple’s Foundation Models framework now supports Claude via a Swift package on iOS 27, macOS 27, visionOS 27.",
+              "Developers can use on-device models for local tasks and seamlessly hand off to Claude for multi-step reasoning, code generation and web search."
+            ],
+            "original": [
+              "Today we're releasing Foundation Models framework support for Claude through a new Swift package… Developers can now use Apple’s Foundation Models framework to hand off to Claude when a request calls for multi-step reasoning, code generation, and more. Claude can also search the web for current information and execute code for data analysis."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Apples Foundation-Models-Framework unterstützt jetzt Claude über ein Swift-Package – verfügbar auf iOS 27, macOS 27, visionOS 27.",
+              "Entwickler können On-Device-Modelle für lokale Aufgaben nutzen und nahtlos an Claude für mehrstufiges Denken, Code-Generierung und Websuche übergeben."
+            ],
+            "original": [
+              "Heute veröffentlichen wir die Unterstützung des Foundation Models Frameworks für Claude durch ein neues Swift-Package … Entwickler können nun Apples Foundation Models Framework nutzen, um an Claude zu übergeben, wenn eine Anfrage mehrstufiges Denken, Code-Generierung und mehr erfordert. Claude kann auch das Web nach aktuellen Informationen durchsuchen und Code für die Datenanalyse ausführen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Startup Milestones / Startup-Meilensteine",
+      "desc": "Two AI-native companies reach major financial turning points.",
+      "cards": [
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://podcasts.apple.com/us/podcast/lovable-hits-500m-in-arr-apple-announces-ai-siri/id1731812702?i=1001004658180",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Lovable, an AI-powered app building platform, reached $500 million in annual recurring revenue (ARR).",
+              "AI search company Perplexity is preparing for an IPO, marking the maturation of AI-native consumer companies."
+            ],
+            "original": [
+              "Chapters 00:00 Lovable's Growth Highlights … 03:52 Perplexity's IPO Plans …"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Lovable, eine KI-gestützte App-Bau-Plattform, hat 500 Millionen US-Dollar jährlich wiederkehrenden Umsatz (ARR) erreicht.",
+              "Die KI-Suchfirma Perplexity bereitet einen Börsengang vor – ein Zeichen für die Reife KI-nativer Konsumentenunternehmen."
+            ],
+            "original": [
+              "Kapitel 00:00 Lovables Wachstumshighlights … 03:52 Perplexitys IPO-Pläne …"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Productivity Paradox / Produktivitätsparadox",
+      "desc": "New data from Glean reveals a gap between AI adoption and organizational performance.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/babysitting-the-machine-glean-s-rebecca-hinds-on-the-hidden-human-labor-of-ai-at-work/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "87% of workers now use AI, saving 13 hours per week on average – but only 13% report significant organisational performance gains.",
+              "Rebecca Hinds terms the hidden work ‘botsitting’ (curating AI outputs) and ‘botshitting’ (delivering work you can’t defend).",
+              "Better-integrated AI tools and smarter detection policies are needed to close the gap."
+            ],
+            "original": [
+              "While 87% now use AI and report saving 13 hours per week, only 13% say their organization is performing significantly better—a paradox explained by two new concepts: 'botsitting' (the hidden labor of making AI useful) and 'botshitting' (delivering AI-generated work you can't defend)."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "87 % der Beschäftigten nutzen KI und sparen im Schnitt 13 Stunden/Woche – aber nur 13 % melden deutliche Leistungssteigerungen ihrer Organisation.",
+              "Rebecca Hinds nennt die versteckte Arbeit ‘Botsitting’ (KI-Ergebnisse kuratieren) und ‘Botshitting’ (unhaltbare Arbeit abliefern).",
+              "Besser integrierte KI-Tools und schlauere Erkennungsrichtlinien sollen die Lücke schließen."
+            ],
+            "original": [
+              "Während 87 % KI nutzen und angaben, 13 Stunden pro Woche zu sparen, sagten nur 13 %, dass ihre Organisation deutlich besser abschneidet – ein Paradox, das durch zwei neue Konzepte erklärt wird: ‚Botsitting‘ (die versteckte Arbeit, KI nützlich zu machen) und ‚Botshitting‘ (von KI generierte Arbeit abliefern, die man nicht verteidigen kann)."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure Vision / Infrastruktur-Vision",
+      "desc": "Jensen Huang outlines the shift to generative computing and the layers of AI investment.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data (Sequoia Capital)",
+          "sourceUrl": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "NVIDIA CEO Jensen Huang frames AI factories as the ‘dynamos’ of the Intelligence Age: electrons in, tokens of intelligence out.",
+              "He described the five-layer AI investment cake: energy, chips, infrastructure, models, applications.",
+              "Huang argues AI will raise labor demand (citing radiology, software engineering) and concludes: ‘You won't lose your job to AI, but to someone who uses AI.’"
+            ],
+            "original": [
+              "Jensen Huang… makes the case that computing is undergoing its biggest shift in 60 years: from retrieval… to generation… machines that take in electrons and send out tokens of intelligence, just as Siemens' dynamo once turned motion into electricity… He describes the five-layer cake of AI investment—energy, chips, infrastructure, models, applications—and dismantles the fear that AI will erase jobs… his bottom line: you won't lose your job to AI, but you might lose it to someone who uses AI."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA-CEO Jensen Huang bezeichnet KI-Fabriken als die „Dynamos“ des Intelligenz-Zeitalters: Elektronen rein, Intelligenz-Token raus.",
+              "Er beschrieb den fünfschichtigen KI-Investitionskuchen: Energie, Chips, Infrastruktur, Modelle, Anwendungen.",
+              "Huang argumentiert, KI werde die Arbeitsnachfrage erhöhen (Radiologie, Softwareentwicklung) und schließt: „Du verlierst deinen Job nicht an KI, sondern an jemanden, der KI nutzt.“"
+            ],
+            "original": [
+              "Jensen Huang … argumentiert, dass die Informatik ihren größten Wandel seit 60 Jahren durchmacht: von der Abfrage … zur Generierung … Maschinen, die Elektronen aufnehmen und Token der Intelligenz aussenden, so wie der Siemens-Dynamo einst Bewegung in Elektrizität verwandelte … Er beschreibt den fünfschichtigen Kuchen der KI-Investitionen – Energie, Chips, Infrastruktur, Modelle, Anwendungen – und widerlegt die Angst, dass KI Arbeitsplätze vernichtet … sein Fazit: Du wirst deinen Job nicht an KI verlieren, aber vielleicht an jemanden, der KI nutzt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "New Developer Tools / Neue Entwicklerwerkzeuge",
+      "desc": "Cohere and Notion ship practical AI tools for coding teams.",
+      "cards": [
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face Blog (CohereLabs)",
+          "sourceUrl": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Cohere launched North Mini Code, a lightweight code generation model for developers, available on Hugging Face.",
+              "The model follows the trend toward small, specialized AI tools that integrate easily into developer workflows."
+            ],
+            "original": [
+              "Introducing North Mini Code: Cohere’s First Model For Developers"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Cohere hat North Mini Code veröffentlicht, ein schlankes Code-Generierungsmodell für Entwickler, verfügbar auf Hugging Face.",
+              "Das Modell folgt dem Trend zu kleinen, spezialisierten KI-Tools, die sich leicht in Entwickler-Workflows integrieren lassen."
+            ],
+            "original": [
+              "Vorstellung von North Mini Code: Coheres erstes Modell für Entwickler"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/notion",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Notion engineers use Codex to one-shot feature specifications, dramatically cutting development time.",
+              "Codex also helped Notion build AI Voice Input for the web and amplify the output of small engineering teams."
+            ],
+            "original": [
+              "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Notion-Ingenieure nutzen Codex, um Feature-Spezifikationen mit einem einzigen Prompt zu erstellen und die Entwicklungszeit drastisch zu verkürzen.",
+              "Codex half Notion außerdem, die KI-Spracheingabe fürs Web zu entwickeln und die Leistung kleiner Entwicklerteams zu vervielfachen."
+            ],
+            "original": [
+              "Wie Notion Codex nutzt, um Spezifikationen per One-Shot zu erstellen, die KI-Spracheingabe fürs Web zu entwickeln und die Entwicklerleistung in kleinen Teams zu vervielfachen."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
