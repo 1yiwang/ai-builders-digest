@@ -37,7 +37,11 @@
     "gid://art19-episode-locator/V0/Ps1BEU9fURpn6sxU440Mlt-lhbqq-joIgtKjmod7P4g": 1780917180415,
     "0fae4dc4-6456-11f1-9180-3f07b7c1bee8": 1781086622991,
     "gid://art19-episode-locator/V0/Ww4oBSpHprg873i6f5vdJEkIw3oS-xL2aFdene6EGRg": 1781086623632,
-    "821adbec-649d-11f1-9151-d7bad7f43aa4": 1781086623688
+    "821adbec-649d-11f1-9151-d7bad7f43aa4": 1781086623688,
+    "c8ac5d90-6517-11f1-83d7-d3b49f07aa8f": 1781260004690,
+    "cfdceef6-642a-11f1-9b24-634dad16ced0": 1781260004727,
+    "bb5cd6c0-a739-49e2-96eb-f03d5c26db38": 1781260005267,
+    "9e7d7537-3ac2-4775-aa7e-e93ad4536b95": 1781260007704
   },
   "seenArticles": {
     "https://huggingface.co/blog/torch-profiler": 1780085252360,
@@ -74,7 +78,12 @@
     "https://openai.com/index/lseg": 1781086624831,
     "https://openai.com/index/nextdoor": 1781086624831,
     "https://openai.com/index/notion": 1781086624831,
-    "https://claude.com/blog/claude-for-foundation-models": 1781086628862
+    "https://claude.com/blog/claude-for-foundation-models": 1781086628862,
+    "https://huggingface.co/blog/torch-mlp-fusion": 1781260007809,
+    "https://openai.com/index/preply": 1781260008225,
+    "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem": 1781260008225,
+    "https://openai.com/index/using-codex-to-simulate-black-holes": 1781260008225,
+    "https://www.together.ai/blog/iso-27001-2022-certification": 1781260008324
   },
   "xUserIds": {}
 }

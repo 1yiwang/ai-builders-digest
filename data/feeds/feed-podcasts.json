@@ -1,35 +1,45 @@
 {
-  "generatedAt": "2026-06-10T10:17:04.378Z",
+  "generatedAt": "2026-06-12T10:26:47.730Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Training Data",
-      "title": "LIVE: Jensen Huang on Building the Dynamo of the Intelligence Age",
-      "guid": "0fae4dc4-6456-11f1-9180-3f07b7c1bee8",
-      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
-      "publishedAt": "2026-06-10T09:00:00.000Z",
-      "description": "Jensen Huang, founder and CEO of NVIDIA, makes the case that computing is undergoing its biggest shift in 60 years: from retrieval, where data centers store files we look up, to generation, where every word, image, and video is produced in real time and customized for whoever is asking. He explains why NVIDIA's AI factories are the dynamos of this era: machines that take in electrons and send out tokens of intelligence, just as Siemens' dynamo once turned motion into electricity. Jensen frames intelligence as the third force to \"cocoon\" the planet after electricity and the internet. He describes the five-layer cake of AI investment—energy, chips, infrastructure, models, applications—and dismantles the fear that AI will erase jobs, using radiology and software engineering to show how automation raised labor demand instead of killing it. His bottom line: you won't lose your job to AI, but you might lose it to someone who uses AI. Hosted by Konstantine Buhler, Sequoia Capital"
+      "title": "Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness",
+      "guid": "c8ac5d90-6517-11f1-83d7-d3b49f07aa8f",
+      "url": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "description": "The entire startup ecosystem is racing to build agent harnesses. Logan Kilpatrick, who leads Google AI Studio and the Gemini API, argues that scramble has a roughly 12-month shelf life. Models will absorb the scaffolding and run it natively, so the edge moves elsewhere. Google's own bet runs in parallel: a single agent harness, born from the Windsurf team and now called Antigravity, has become the connective tissue across search, the Gemini app, Cloud, and AI Studio — the role Gemini-the-model used to play. Logan makes the case that coding already feels like narrow superintelligence, and that \"jagged\" vertical superintelligence (in math, finance, and science) will arrive well before AGI. He argues Google's real goal is maximizing outcomes for users, not eyeball time. He unpacks Omni, the single model built to replace multiple separate systems Google once trained for text, audio, music, image, and video. His throughline: AI is an accelerant for human ambition, not a substitute for it. Hosted by Sonya Huang, Sequoia Capital"
     },
     {
       "source": "podcast",
-      "name": "Machine Learning Street Talk",
-      "title": "Lovable HIts $500M in ARR, Apple Announces AI Siri",
-      "guid": "gid://art19-episode-locator/V0/Ww4oBSpHprg873i6f5vdJEkIw3oS-xL2aFdene6EGRg",
-      "publishedAt": "2026-06-09T18:33:48.000Z",
-      "description": "Chapters 00:00 Lovable's Growth Highlights 00:52 Apple's AI Features 03:52 Perplexity's IPO Plans 09:35 Updates on OpenAI and Tools for Humanity 14:04 Google DeepMind's AI Accelerator 20:06 My Vibe Coding Experience Show Links Selfpause our Vibe coded app: https://apps.apple.com/us/app/selfpause-daily-affirmations/id1518538414 Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "name": "No Priors",
+      "title": "Biohub: The Future of Biology is Open-Source with Co-Founders Mark Zuckerberg, Priscilla Chan, and Head of Science Alex Rives",
+      "guid": "cfdceef6-642a-11f1-9b24-634dad16ced0",
+      "url": "https://www.youtube.com/watch?v=u8cYwaLzN-k",
+      "publishedAt": "2026-06-10T13:00:00.000Z",
+      "description": "Biohub started with an ambitious goal of curing, preventing, and managing all disease by the end of the century. A decade later, thanks to the convergence of frontier AI and biological data, that goal may have been too conservative. In this episode, Elad Gil and Sarah Guo sit down with Biohub co-founders Mark Zuckerberg and Priscilla Chan, alongside Biohub Head of Science Alex Rives. Together, they discuss Biohub’s $500 million virtual biology initiative, which integrates frontier AI with wet-lab work to build predictive world models of cells, proteins, and systems. They also talk about their newly announced open-source engine for digital protein and antibody design, ESMFold2; why Biohub is a nonprofit rather than a venture-backed startup; and how hierarchical simulations will soon allow doctors to treat patients at an individual, mechanistic level. Sign up for new podcasts every week. Email feedback to show@no-priors.com Follow us on Twitter: @NoPriorsPod | @Saranormous | @EladGil | @Biohub | @finkd | @alexrives | @ChanZuckerberg Chapters: 00:00 – Cold Open 01:02 - Mark Zuckerberg, Priscilla Chan, and Alex Rives Introduction 01:26 – Why Biohub and Their Mission 08:27 – Integrating Frontier AI and Frontier Biology 09:45 – Micro to Macro Biological Modeling 14:22 – Mechanistic Interpretiability 16:58 – Why Biohub is a Non-Profit 21:41 – Understanding How Biology Works 24:23 – Timeline for Curing All Diseases 26:25 – Translating Research to Patient Impact 28:04 – Launch of ESMFold2 32:13 – Tackling Off-Target Effects and Edge Cases 38:39 – Putting the Tech in Individual Hands 41:06 – Talent at Biohub 44:25 – What’s Next After ESMFold2 46:10 – Connecting ESMFold2 to Agentic Systems 46:51 – The Virtual Cell 49:33 – Defining Success for Biohub 51:52 – Biohub Strategy Update 56:20 – Conclusion"
     },
     {
       "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "Babysitting the Machine: Glean's Rebecca Hinds on the Hidden Human Labor of AI at Work",
-      "guid": "821adbec-649d-11f1-9151-d7bad7f43aa4",
-      "url": "https://www.cognitiverevolution.ai/babysitting-the-machine-glean-s-rebecca-hinds-on-the-hidden-human-labor-of-ai-at-work/",
-      "publishedAt": "2026-06-10T09:08:03.000Z",
-      "description": "Rebecca Hinds, author of \"Your Best Meeting Ever\" and Head of the Work AI Institute at Glean, breaks down the surprising findings from the new Work AI Index 2026 report surveying 6,000 workers. While 87% now use AI and report saving 13 hours per week, only 13% say their organization is performing significantly better—a paradox explained by two new concepts: \"botsitting\" (the hidden labor of making AI useful) and \"botshitting\" (delivering AI-generated work you can't defend). They discuss practical solutions including better-integrated AI systems, smarter AI detection policies, and aligning work to meaningful missions. LINKS: Rebecca Hinds Personal Website Glean Work AI Institute Your Best Meeting Ever Book Glean Enterprise AI Platform Stanford Future of Work Glean Enterprise Graph Pangram Labs AI Detection OpenAI ChatGPT Product Page Anthropic Claude Product Page Google Gemini Product Page Microsoft 365 Copilot Page Glean AI Transformation 100 Rebecca Hinds LinkedIn Profile Sponsor: Claude: Claude by Anthropic is an AI collaborator that understands your workflow and helps you tackle research, writing, coding, and organization with deep context. Get started with Claude and explore Claude Pro at https://claude.ai/tcr CHAPTERS: (00:00) About the Episode (03:22) Grounding AI adoption (06:46) Methodology and Glean (12:25) Productivity paradox emerges (Part 1) (20:31) Sponsor: Claude (22:22) Productivity paradox emerges (Part 2) (25:36) Bot sitting burden (34:00) Hidden time savings (39:56) Meaning versus automation (47:14) Enterprise graph potential (53:13) Detecting bot slop (01:00:32) Retention and incentives (01:07:54) Transformation and mission (01:20:06) AI teammate model (01:26:01) Future organizational design (01:32:31) Research and meetings (01:41:43) Episode Outro (01:45:07) Outro PRODUCED BY: https://aipodcast.ing"
+      "name": "AI & I by Every",
+      "title": "How Anthropic Uses Claude Fable 5 With Mike Krieger",
+      "guid": "bb5cd6c0-a739-49e2-96eb-f03d5c26db38",
+      "url": "https://www.youtube.com/watch?v=XWpTgCvgYaE",
+      "publishedAt": "2026-06-10T17:27:38.000Z",
+      "description": "Mike Krieger built one of the most consequential consumer apps of the last two decades as the cofounder of Instagram. He is now at the frontier of AI-native product development as head of Anthropic Labs, the team responsible for figuring out what the most capable AI models can do in the hands of real builders.When Krieger first got access to Fable 5 months before its public release, it was exciting and disorienting. “I feel like a total newbie again,” he remembers telling his team. The way he’d been thinking about productivity, strategy, and time management was out of date. The model had outpaced his workflows.Dan Shipper talked with Krieger for AI & I about what it looks like to build with a model as capable as Fable 5, including the new rhythms, challenges, and possibilities it reveals.If you found this episode interesting, please like, subscribe, comment, and share!To hear more from Dan Shipper:Subscribe to Every: https://every.to/subscribeFollow him on X: https://twitter.com/danshipperGet started with Braintrust at https://www.braintrust.dev/ Timestamps:0:03 Introduction1:48 How Fable completely reshaped Mike's workflow4:48 When to use Sonnet versus Fable10:06 What the media tracker Mike built over a weekend reveals about agent-native architecture15:00 The cost to build has collapsed19:03 Is software engineering over?21:48 How Anthropic's engineering teams work today38:39 The mechanics of verification44:39 What people should use the model to build47:24 Dynamic workflowsLinks to resources mentioned in the episode:Mike Krieger on X: https://x.com/mikeykAnthropic Labs: https://www.anthropic.comClaude Code: https://claude.ai/codeEvery: https://every.to Timestamps:0:03 Introduction1:48 How Fable completely reshaped Mike's workflow4:48 When to use Sonnet vs. Fable10:06 What the media tracker Mike built over a weekend reveals about agent-native architecture15:00 The cost to build has collapsed19:03 Is software engineering over?21:48 How Anthropic's engineering teams work today38:39 The mechanics of verification44:39 What people should use the model to build47:24 Dynamic workflowsLinks to resources mentioned in the episode:Mike Krieger on X: https://x.com/mikeykAnthropic Labs: https://www.anthropic.comClaude Code: https://claude.ai/codeEvery: https://every.to"
+    },
+    {
+      "source": "podcast",
+      "name": "Practical AI",
+      "title": "Zero Trust for AI Agents",
+      "guid": "9e7d7537-3ac2-4775-aa7e-e93ad4536b95",
+      "url": "https://share.transistor.fm/s/5c1a087d",
+      "publishedAt": "2026-06-11T09:00:00.000Z",
+      "description": "As AI agents become more capable and autonomous, they also introduce new security challenges. In this 'Fully Connected' episode, Dan and Chris unpack Anthropic’s Zero Trust for AI Agents security framework and what it means for organizations deploying agentic systems. They examine the key security risks facing agentic systems and discuss how organizations can apply Zero Trust principles to deploy AI agents safely. Along the way, they break down practical security controls and discuss how traditional cybersecurity principles must evolve for the age of AI agents. Featuring: Chris Benson – Website , LinkedIn , Bluesky , GitHub , X Daniel Whitenack – Website , GitHub , X Links: Zero Trust for AI Agents OWASP GenAI Project Sponsors: Prediction Guard: A self-hosted AI control plane for running agents in high impact environments. predictionguard.com/practicalai Upcoming Events: Register for upcoming webinars here ! Midwest AI Summit 2026 ]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 3
+    "podcastEpisodes": 4
   }
 }

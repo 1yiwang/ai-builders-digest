@@ -1,0 +1,143 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-12",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google DeepMinds Logan Kilpatrick gibt der aktuellen Agenten-Harness-Welle nur noch 12 Monate Haltbarkeit. Gleichzeitig hat Mark Zuckerbergs Biohub mit ESMFold2 ein offenes Protein-Design-Modell auf einer halben Milliarde Dollar Initiative veröffentlicht. Anthropics Mike Krieger schildert, wie Claude Fable 5 seine gesamte Arbeitsweise neu definiert. Diese Stimmen zeigen: KI-Architekturen – ob in Code, Biologie oder Sicherheit – werden gerade fundamental neu geschrieben."
+  },
+  "archive": {
+    "title": "Die 12-Monats-Haltbarkeit der Agenten-Harness",
+    "desc": "Die Harness-Welle ist kurzlebig, während die KI in Biologie und Entwicklung neue Grundlagen legt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-12.",
+  "sections": [
+    {
+      "title": "Agent Infrastructure: Harnesses, Models, and Zero Trust / Agenten-Infrastruktur: Harnesses, Modelle und Zero Trust",
+      "desc": "As agents become more capable, both the scaffolding and security models are evolving rapidly.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Logan Kilpatrick (Google DeepMind) predicts agent harnesses have a ~12-month shelf life before models absorb that scaffolding natively.",
+              "Google's Antigravity harness, built by the Windsurf team, unifies agent experiences across Gemini, Search, Cloud, and AI Studio.",
+              "Omni, a single model, replaced multiple separate Google systems for text, audio, music, image, and video."
+            ],
+            "original": [
+              "The entire startup ecosystem is racing to build agent harnesses… that scramble has a roughly 12-month shelf life. Models will absorb the scaffolding and run it natively.",
+              "AI is an accelerant for human ambition, not a substitute for it."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Logan Kilpatrick (Google DeepMind) sieht für Agenten-Harnesses nur noch rund 12 Monate Haltbarkeit – Modelle saugen die Scaffolds auf.",
+              "Googles Antigravity-Harness, entstanden aus dem Windsurf-Team, vereint Agentenerlebnisse über Gemini, Suche, Cloud und AI Studio.",
+              "Omni, ein einzelnes Modell, ersetzt mehrere separate Systeme für Text, Audio, Musik, Bilder und Video."
+            ],
+            "original": [
+              "Das gesamte Startup-Ökosystem baut fieberhaft an Agenten-Harnesses … dieser Wettlauf hat eine Haltbarkeit von etwa zwölf Monaten. Modelle werden das Scaffolding absorbieren und nativ ausführen.",
+              "KI ist ein Beschleuniger menschlichen Ehrgeizes, kein Ersatz dafür."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Practical AI",
+          "sourceName": "Practical AI Podcast",
+          "sourceUrl": "https://share.transistor.fm/s/5c1a087d",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Chris Benson & Daniel Whitenack (Practical AI) break down Anthropic’s Zero Trust for AI Agents framework, designed to secure autonomous agent deployments.",
+              "Key risks include agents accessing sensitive data and making decisions without human oversight; the framework uses identity, access, and verification controls."
+            ],
+            "original": [
+              "As AI agents become more capable and autonomous, they also introduce new security challenges. Anthropic’s framework applies Zero Trust principles to deploy agents safely. (paraphrased from episode)"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Chris Benson und Daniel Whitenack (Practical AI) analysieren Anthropics Zero-Trust-Framework für KI-Agenten, das den sicheren Einsatz autonomer Agenten ermöglicht.",
+              "Zu den Risiken zählen Zugriff auf sensible Daten und autonome Entscheidungen; das Framework setzt auf Identitäts-, Zugriffs- und Verifikationskontrollen."
+            ],
+            "original": [
+              "Mit wachsender Fähigkeit und Autonomie von KI-Agenten entstehen neue Sicherheitsherausforderungen. Anthropics Framework wendet Zero-Trust-Prinzipien an, um Agenten sicher einzusetzen. (sinngemäß aus der Episode)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI + Biology: Open-Source Protein Design with ESMFold2 / KI + Biologie: Open-Source-Proteindesign mit ESMFold2",
+      "desc": "Biohub merges frontier AI with wet-lab biology, launching an open-source engine for digital protein design.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=u8cYwaLzN-k",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mark Zuckerberg & Priscilla Chan’s Biohub launched ESMFold2, an open-source engine for digital protein and antibody design, backed by a $500M virtual biology initiative.",
+              "Biohub aims to treat patients at an individual mechanistic level using hierarchical simulations that merge wet-lab experiments with AI world models of cells."
+            ],
+            "original": [
+              "The goal of curing, preventing, and managing all disease by the end of the century may have been too conservative.",
+              "The $500M virtual biology initiative integrates frontier AI with wet-lab work to build predictive world models of cells, proteins, and systems."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mark Zuckerbergs und Priscilla Chans Biohub hat ESMFold2 veröffentlicht – eine Open-Source-Engine für digitales Protein- und Antikörperdesign, finanziert durch eine 500-Mio.-Dollar-Initiative.",
+              "Biohub will Patienten auf individueller mechanistischer Ebene behandeln, indem es Experimente im Labor mit hierarchischen KI-Simulationen von Zellen kombiniert."
+            ],
+            "original": [
+              "Das Ziel, bis zum Ende des Jahrhunderts alle Krankheiten zu heilen, zu verhindern und zu behandeln, könnte zu konservativ gewesen sein.",
+              "Die 500-Mio.-Dollar-Initiative für virtuelle Biologie integriert Spitzen-KI mit Laborarbeit, um prädiktive Weltmodelle von Zellen, Proteinen und Systemen zu bauen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Building with Claude Fable 5: Anthropic's New Workflow Era / Entwickeln mit Claude Fable 5: Anthropics neue Workflow-Ära",
+      "desc": "Mike Krieger shares how Fable 5 changed his entire development workflow and collapsed the cost to build.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://www.youtube.com/watch?v=XWpTgCvgYaE",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mike Krieger (Anthropic Labs) said gaining early access to Fable 5 felt like “being a total newbie” — the model had outrun his workflows.",
+              "Krieger built a media tracker over a weekend using Fable 5, showing cost to build has collapsed and agent-native architecture is the new norm."
+            ],
+            "original": [
+              "I feel like a total newbie again.",
+              "The cost to build has collapsed."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mike Krieger (Anthropic Labs) beschreibt, wie er sich mit Fable 5 „wie ein totaler Neuling“ fühlte – das Modell hatte seine Arbeitsweisen überholt.",
+              "Über ein Wochenende baute Krieger mit Fable 5 einen Media‑Tracker und bewies: Die Entwicklungskosten sind eingebrochen, agenten-native Architektur setzt sich durch."
+            ],
+            "original": [
+              "Ich fühle mich wieder wie ein totaler Neuling.",
+              "Die Kosten für das Bauen sind kollabiert."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
