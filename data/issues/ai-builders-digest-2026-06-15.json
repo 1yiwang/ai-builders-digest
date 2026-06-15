@@ -1,0 +1,165 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-15",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropics Fable-Modell löst Diskussionen aus, während Entwickler die Grenzen von Sicherheitsvorgaben austesten. Gleichzeitig berichten Ari Morcos und Rob Toews, dass Coding-Agenten die Schwelle zu langfristigen Aufgaben überschritten haben und Ingenieure zu Manager von Agenten werden. OpenAI investiert derweil 150 Millionen Dollar in ein Partnernetzwerk, um Enterprise-Adoption zu beschleunigen. Diese Entwicklungen zeigen, wie sich KI-Sicherheit, Agentenautonomie und kommerzielle Durchdringung gleichzeitig verschärfen."
+  },
+  "archive": {
+    "title": "Fable-Backlash und der Agenten-Tipping-Point",
+    "desc": "Die KI-Welt diskutiert über Anthropics restriktive Sicherheitspolitik, während Coding-Agenten den Durchbruch zu komplexen Aufgaben schaffen und OpenAI 150 Millionen in Enterprise-Partnerschaften steckt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-15.",
+  "sections": [
+    {
+      "title": "English: Fable's Safety Backlash & Alignment Debate / German: Fable-Kontroverse: Sicherheit vs. Wettbewerb",
+      "desc": "Anthropic's newly released Fable model sparks backlash over restrictive usage policies, while researchers call for alignment guarantees before recursive self-improvement.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://www.youtube.com/watch?v=W_iO8XxgD_I",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Ari Morcos (Datology AI) and Rob Toews (Radical Ventures) say Anthropic's Fable safety restrictions have staunchest supporters questioning if safety framing masks competitive positioning.",
+              "API refusals and strict safety gates trigger backlash among developers testing the model."
+            ],
+            "original": [
+              "Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning.",
+              "Field reports highlight safety gates and API refusals when using Fable for real-world tasks."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ari Morcos (Datology AI) und Rob Toews (Radical Ventures) hinterfragen, ob Anthropics Fable-Sicherheitsvorgaben Wettbewerbsstrategie verschleiern.",
+              "API-Ablehnungen und strenge Sicherheitsgates lösen Unmut bei Entwicklern aus, die das Modell testen."
+            ],
+            "original": [
+              "Anthropics Beschränkungen beim neuen Fable-Modell lassen selbst größte Unterstützer fragen, ob die Sicherheitsargumentation Wettbewerbspositionierung verdeckt.",
+              "Feldberichte zeigen Sicherheitsgates und API-Verweigerungen beim Einsatz von Fable in realen Szenarien."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-in-the-am-week-2-highlights-june-2026/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Geoffrey Irving and Daniel Murfet argue that alignment theory and guarantees must precede recursive self-improvement to ensure safe superintelligence.",
+              "Their demand coincides with Fable real-world tests revealing frequent API refusals and safety gate activations."
+            ],
+            "original": [
+              "Geoffrey Irving and Daniel Murfet argue for alignment theory and guarantees before recursive self-improvement.",
+              "Fable launch in real workflows exposed safety gates and API refusals."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Geoffrey Irving und Daniel Murfet fordern Alignment-Garantien, bevor rekursive Selbstverbesserung startet.",
+              "Ihr Appell fällt in eine Zeit, in der Fable in Tests durch häufige API-Ablehnungen und Sicherheitsgates auffällt."
+            ],
+            "original": [
+              "Geoffrey Irving und Daniel Murfet argumentieren für Alignment-Theorie und Garantien vor rekursiver Selbstverbesserung.",
+              "Der Fable-Launch in echten Arbeitsabläufen legte Sicherheitsgates und API-Verweigerungen offen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "English: Coding Agents Cross the Threshold / German: Coding-Agenten überschreiten die Schwelle",
+      "desc": "Engineers become managers of agents as coding tools achieve long-horizon tasks, with Fable showing autonomous capabilities in 3D world-building and Twitter experiments.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://www.youtube.com/watch?v=W_iO8XxgD_I",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Coding agents can now handle long-horizon tasks, turning engineers into managers of agent teams instead of line-by-line coders.",
+              "Near-frontier open-weight models are in retreat, with Meta and Chinese labs scaling back access or support."
+            ],
+            "original": [
+              "Coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents.",
+              "Near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Coding-Agenten bewältigen jetzt langfristige Aufgaben und machen Ingenieure zu Manager von Agenten-Teams.",
+              "Offene Modelle auf nahezu Frontier-Niveau verschwinden, da Meta und chinesische Labs den Zugang einschränken."
+            ],
+            "original": [
+              "Coding-Agenten, die die Schwelle zu langen Zeithorizonten überschreiten, haben Ingenieure zu Managern von Agenten gemacht.",
+              "Open-Weight-KI nahe der Frontier scheint zu verschwinden, während Meta und die chinesischen Labs sich zurückziehen."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-in-the-am-week-2-highlights-june-2026/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Fable demonstrated autonomous coding, 3D world-building, and even running a Twitter experiment, but safety gates and API refusals limited full autonomy.",
+              "Field reports from Rahul Sonwalkar and Shlok Khemani highlight hybrid authorship and emerging data agents."
+            ],
+            "original": [
+              "Fable launch in real workflows, from safety gates and API refusals to autonomous coding, 3D world-building, and a Claude-run Twitter experiment.",
+              "Rahul Sonwalkar, Shlok Khemani, Tom McGrath, and Andrew Moore add field reports on data agents, hybrid authorship, and token economics."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Fable zeigte autonomes Coding, 3D-Weltenbau und ein Twitter-Experiment, wurde aber durch Sicherheitsgates und API-Ablehnungen eingeschränkt.",
+              "Feldberichte von Rahul Sonwalkar und Shlok Khemani zeigen hybride Autorenumgebungen und Datenagenten."
+            ],
+            "original": [
+              "Fable-Launch in realen Workflows, von Sicherheitsgates und API-Verweigerungen bis zu autonomem Coding, 3D-Weltenbau und einem Claude-gesteuerten Twitter-Experiment.",
+              "Rahul Sonwalkar, Shlok Khemani, Tom McGrath und Andrew Moore liefern Feldberichte zu Datenagenten, hybrider Autorenschaft und Token-Ökonomie."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "English: Enterprise AI: OpenAI's $150M Partner Push / German: Enterprise-KI: OpenAI investiert 150 Mio. USD",
+      "desc": "OpenAI launches a Partner Network with $150M investment to accelerate enterprise AI adoption globally.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/introducing-openai-partner-network",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "OpenAI invests $150 million in a new Partner Network to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+            ],
+            "original": [
+              "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI investiert 150 Millionen Dollar in ein Partner-Netzwerk, um die KI-Einführung in Unternehmen weltweit zu beschleunigen."
+            ],
+            "original": [
+              "OpenAI startet das Partner Network und investiert 150 Millionen Dollar, um globalen Partnern zu helfen, die Einführung, Bereitstellung und Transformation von KI in Unternehmen zu beschleunigen."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

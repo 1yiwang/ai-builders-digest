@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T10:26:59.111Z",
+  "generatedAt": "2026-06-15T12:36:00.332Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2065294767760769222",
-          "text": "Wow you can play fifa on Netflix now with your phone as the controller. I just tried it and it’s pretty great.",
-          "createdAt": "2026-06-12T04:46:58.000Z",
+          "id": "2066331938760314909",
+          "text": "Dumb question - Why can’t China and India train good enough teams to qualify for the World Cup?",
+          "createdAt": "2026-06-15T01:28:19.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,31 +18,26 @@
           }
         },
         {
-          "id": "2065283568918794658",
-          "text": "These AI models remind me of RPGs tbh",
-          "createdAt": "2026-06-12T04:02:28.000Z",
+          "id": "2066209516912509085",
+          "text": "I think I just avoided a phishing attempt thanks to Codex.",
+          "createdAt": "2026-06-14T17:21:51.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        },
+        }
+      ]
+    },
+    {
+      "handle": "@mattturck",
+      "name": "Matt Turck",
+      "tweets": [
         {
-          "id": "2065205442083742106",
-          "text": "Some of these Bay Area billboard ads have really jumped the shark",
-          "createdAt": "2026-06-11T22:52:01.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2065097409827651893",
-          "text": "Very grateful for all the DMs and support I got after publishing this. I'll be sharing my AI builder journey with you all. It might be some embarassing stuff in the beginning but everyone has to start somewhere :)",
-          "createdAt": "2026-06-11T15:42:44.000Z",
+          "id": "2066495629228998996",
+          "text": "Be Roberto Lopes Get a LinkedIn DM in Portuguese Ignore it as spam Get a 2nd LinkedIn DM in English Reply to it Play in the World Cup for Cabo Verde against Spain today",
+          "createdAt": "2026-06-15T12:18:46.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -54,8 +49,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 1,
-    "totalTweets": 4
+    "xBuilders": 2,
+    "totalTweets": 3
   },
   "_mode": "Nitter RSS (free)"
 }

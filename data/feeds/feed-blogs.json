@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-12T10:26:52.786Z",
+  "generatedAt": "2026-06-15T12:35:52.113Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
-      "url": "https://huggingface.co/blog/torch-mlp-fusion",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
+      "title": "olmo-eval: An evaluation workbench for the model development loop",
+      "url": "https://huggingface.co/blog/allenai/olmo-eval",
+      "publishedAt": "2026-06-12T15:56:10.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -15,45 +15,15 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "How Preply combines AI and human tutors to personalize learning",
-      "url": "https://openai.com/index/preply",
-      "publishedAt": "2026-06-12T00:00:00.000Z",
+      "title": "Introducing the OpenAI Partner Network",
+      "url": "https://openai.com/index/introducing-openai-partner-network",
+      "publishedAt": "2026-06-14T17:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem",
-      "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "How an astrophysicist uses Codex to help simulate black holes",
-      "url": "https://openai.com/index/using-codex-to-simulate-black-holes",
-      "publishedAt": "2026-06-11T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "Building trust in enterprise AI: Together AI earns ISO 27001:2022 certification",
-      "url": "https://www.together.ai/blog/iso-27001-2022-certification",
-      "publishedAt": "2026-06-10T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Together AI has earned ISO 27001:2022 certification, validating our commitment to enterprise-grade security for production AI workloads."
+      "content": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
     }
   ],
   "stats": {
-    "blogPosts": 5
+    "blogPosts": 2
   }
 }
