@@ -264,9 +264,16 @@ async function initGalaxy() {
     planetMesh.userData.builder = b;
     solarGroup.add(planetMesh);
 
-    var labelEl = document.createElement('div');
+    var labelEl = document.createElement('a');
     labelEl.className = 'galaxy-label';
+    labelEl.href = b.xUrl || '#';
+    labelEl.target = '_blank';
+    labelEl.rel = 'noopener noreferrer';
     labelEl.textContent = b.name.split(' ')[0];
+    labelEl.setAttribute('aria-label', b.name + ' on X');
+    labelEl.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
     var labelObj = new CSS2DObject(labelEl);
     labelObj.position.set(0, size + 0.22, 0);
     planetMesh.add(labelObj);
@@ -324,7 +331,7 @@ async function initGalaxy() {
 
   function onPick(event) {
     if (event.target && event.target.closest &&
-        event.target.closest('.galaxy-panel, .cover-topline, .cover-philosophy, .cover-scroll')) return;
+        event.target.closest('.galaxy-panel, .cover-topline, .cover-philosophy, .cover-scroll, a.galaxy-label')) return;
     setPointer(event);
     raycaster.setFromCamera(pointer, camera);
     var hits = raycaster.intersectObjects(solarGroup.children, true);

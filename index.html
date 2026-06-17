@@ -119,6 +119,7 @@
     align-items: center;
     justify-content: center;
     padding: 56px 34px 120px;
+    pointer-events: none;
   }
 
   /* 3D builder galaxy — full-bleed cover (Three.js / WebGL).
@@ -140,6 +141,7 @@
   .galaxy-label-layer {
     position: absolute;
     inset: 0;
+    z-index: 1;
     pointer-events: none;
     overflow: hidden;
   }
@@ -158,6 +160,19 @@
     backdrop-filter: blur(6px);
     transform: translate(-50%, -100%);
     pointer-events: none;
+  }
+
+  a.galaxy-label {
+    pointer-events: auto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+  }
+
+  a.galaxy-label:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(13, 17, 26, 0.88);
   }
 
   .galaxy-label-core {
