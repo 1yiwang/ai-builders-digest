@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Builders Digest</title>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -113,20 +121,201 @@
     padding: 56px 34px 120px;
   }
 
-  /* 3D hex-mesh globe — full-bleed cover background (globe.gl / WebGL).
-     Decorative only: pointer-events are disabled so it never blocks the
-     masthead or page scrolling. The scrim darkens the top + bottom so the
-     title and philosophy text stay legible over the rotating globe. */
-  #globeViz {
+  /* 3D builder galaxy — full-bleed cover (Three.js / WebGL).
+     Canvas is interactive (orbit + planet clicks). Scrim keeps masthead readable. */
+  #galaxyViz {
     position: absolute;
     inset: 0;
     z-index: 0;
     overflow: hidden;
+  }
+
+  #galaxyViz canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    outline: none;
+  }
+
+  .galaxy-label-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .galaxy-label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(13, 17, 26, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    backdrop-filter: blur(6px);
+    transform: translate(-50%, -100%);
     pointer-events: none;
   }
 
-  #globeViz canvas {
-    display: block;
+  .galaxy-label-core {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(196, 132, 252, 0.9);
+    border-color: rgba(168, 85, 247, 0.35);
+  }
+
+  .cover-topline,
+  .cover-philosophy,
+  .cover-scroll {
+    pointer-events: auto;
+  }
+
+  .galaxy-panel-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease, visibility 200ms ease;
+    pointer-events: none;
+  }
+  .galaxy-panel-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .galaxy-panel {
+    position: fixed;
+    z-index: 41;
+    top: 50%;
+    right: max(24px, calc((100vw - 1160px) / 2 + 24px));
+    transform: translateY(-50%) translateX(12px);
+    width: min(320px, calc(100vw - 48px));
+    padding: 22px 22px 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(13, 17, 26, 0.88);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 220ms ease, transform 220ms ease, visibility 220ms ease;
+    pointer-events: none;
+  }
+  .galaxy-panel.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+    pointer-events: auto;
+  }
+
+  .galaxy-panel-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }
+  .galaxy-panel-close:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+  }
+
+  .galaxy-panel-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(168, 85, 247, 0.45);
+    margin-bottom: 14px;
+  }
+
+  .galaxy-panel-kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #a855f7;
+    margin-bottom: 6px;
+  }
+
+  .galaxy-panel-title {
+    margin: 0 0 10px;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  .galaxy-panel-body {
+    margin: 0 0 16px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #8b949e;
+  }
+
+  .galaxy-panel-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #c4b5fd;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .galaxy-panel-link:hover { color: #e9d5ff; }
+
+  #galaxyFallback {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    place-content: center;
+    padding: 80px 24px;
+    pointer-events: auto;
+  }
+  #galaxyFallback[hidden] { display: none; }
+
+  .galaxy-fallback-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+  }
+  .galaxy-fallback-card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .galaxy-fallback-name {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
   }
 
   .cover-scrim {
@@ -369,6 +558,23 @@
       bottom: 20px;
     }
 
+    .galaxy-panel {
+      top: auto;
+      right: 12px;
+      left: 12px;
+      bottom: 12px;
+      width: auto;
+      transform: translateY(16px);
+    }
+    .galaxy-panel.is-open {
+      transform: translateY(0);
+    }
+
+    #galaxyFallback {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 100px 16px 120px;
+    }
+
     .archive {
       padding: 26px 14px 62px;
     }
@@ -467,7 +673,9 @@
     <section class="cover">
       <div class="cover-poster">
         <div class="cover-inner">
-          <div id="globeViz" aria-hidden="true"></div>
+          <div id="galaxyViz" aria-hidden="true">
+            <div id="galaxyFallback" hidden></div>
+          </div>
           <div class="cover-scrim" aria-hidden="true"></div>
 
           <div class="cover-topline">
@@ -492,6 +700,16 @@
 
       <a class="cover-scroll" href="#archive">Scroll for archive</a>
     </section>
+
+    <div class="galaxy-panel-backdrop" id="galaxyPanelBackdrop" aria-hidden="true"></div>
+    <aside class="galaxy-panel" id="galaxyPanel" role="dialog" aria-labelledby="galaxyPanelTitle" aria-hidden="true">
+      <button type="button" class="galaxy-panel-close" id="galaxyPanelClose" aria-label="Close">×</button>
+      <img class="galaxy-panel-avatar" id="galaxyPanelAvatar" src="" alt="" />
+      <div class="galaxy-panel-kicker" id="galaxyPanelKicker">AI Builder</div>
+      <h2 class="galaxy-panel-title" id="galaxyPanelTitle">Builder</h2>
+      <p class="galaxy-panel-body" id="galaxyPanelBody"></p>
+      <a class="galaxy-panel-link" id="galaxyPanelLink" href="#" target="_blank" rel="noopener noreferrer">View on X →</a>
+    </aside>
 
     <section class="archive" id="archive">
       <div class="archive-shell">
@@ -639,53 +857,7 @@
     </section>
   </div>
 
-  <!-- 3D hex-mesh globe (decorative cover background). Pinned to globe.gl v2.
-       This block lives outside the archive list / cover-date placeholders, so the
-       CI archive updater never touches it. -->
-  <script src="https://unpkg.com/globe.gl@2"></script>
-  <script>
-    (function initGlobe() {
-      var el = document.getElementById('globeViz');
-      if (!el || typeof Globe !== 'function') return;
-
-      // Realistic night earth: golden city lights on a photographic texture,
-      // wrapped in a deep, cinematic blue atmospheric glow. No vector overlays.
-      var world = Globe()(el)
-        .backgroundColor('rgba(0,0,0,0)')
-        .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
-        .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
-        .showAtmosphere(true)
-        .atmosphereColor('#3a66ff')
-        .atmosphereAltitude(0.4);
-
-      function resize() {
-        world.width(el.clientWidth).height(el.clientHeight);
-      }
-      resize();
-      window.addEventListener('resize', resize);
-      window.addEventListener('load', resize);
-
-      var controls = world.controls();
-      controls.autoRotate = true;
-      controls.autoRotateSpeed = 0.6;
-      controls.enableZoom = false;
-      controls.enablePan = false;
-
-      world.pointOfView({ lat: 18, lng: 0, altitude: 2.2 });
-
-      // Soft ambient fill so the night side keeps some depth/texture instead of
-      // going pure flat-black. Wrapped in try/catch — purely an enhancement.
-      try {
-        var lights = world.lights();
-        if (lights && lights.length) {
-          lights.forEach(function (l) {
-            if (l.type === 'AmbientLight') l.intensity = 3.2;
-            if (l.type === 'DirectionalLight') l.intensity = 1.4;
-          });
-          world.lights(lights);
-        }
-      } catch (e) { /* keep default lighting */ }
-    })();
-  </script>
+  <!-- Builder galaxy cover (Three.js). Outside archive list — CI-safe. -->
+  <script type="module" src="./assets/js/galaxy-cover.js"></script>
 </body>
 </html>

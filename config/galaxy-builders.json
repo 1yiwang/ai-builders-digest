@@ -1,0 +1,59 @@
+{
+  "builders": [
+    {
+      "id": "x:rauchg",
+      "name": "Guillermo Rauch",
+      "handle": "@rauchg",
+      "label": "Vercel CEO",
+      "xUrl": "https://x.com/rauchg",
+      "avatar": "./assets/avatars/x-rauchg.jpg",
+      "color": "#22d3ee",
+      "size": 0.26,
+      "orbit": { "radius": 2.8, "speed": 0.34, "phase": 0 }
+    },
+    {
+      "id": "x:levie",
+      "name": "Aaron Levie",
+      "handle": "@levie",
+      "label": "Box CEO",
+      "xUrl": "https://x.com/levie",
+      "avatar": "./assets/avatars/x-levie.jpg",
+      "color": "#f97316",
+      "size": 0.24,
+      "orbit": { "radius": 3.2, "speed": 0.28, "phase": 1.25 }
+    },
+    {
+      "id": "x:mattturck",
+      "name": "Matt Turck",
+      "handle": "@mattturck",
+      "label": "FirstMark",
+      "xUrl": "https://x.com/mattturck",
+      "avatar": "./assets/avatars/x-mattturck.jpg",
+      "color": "#fbbf24",
+      "size": 0.28,
+      "orbit": { "radius": 3.6, "speed": 0.24, "phase": 2.5 }
+    },
+    {
+      "id": "x:petergyang",
+      "name": "Peter Yang",
+      "handle": "@petergyang",
+      "label": "Founder & Investor",
+      "xUrl": "https://x.com/petergyang",
+      "avatar": "./assets/avatars/x-petergyang.jpg",
+      "color": "#a855f7",
+      "size": 0.22,
+      "orbit": { "radius": 4.0, "speed": 0.22, "phase": 3.8 }
+    },
+    {
+      "id": "x:trq212",
+      "name": "Thariq",
+      "handle": "@trq212",
+      "label": "Claude Code",
+      "xUrl": "https://x.com/trq212",
+      "avatar": "./assets/avatars/x-trq212.jpg",
+      "color": "#34d399",
+      "size": 0.22,
+      "orbit": { "radius": 4.4, "speed": 0.2, "phase": 4.9 }
+    }
+  ]
+}
