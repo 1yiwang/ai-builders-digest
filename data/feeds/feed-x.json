@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T11:11:54.590Z",
+  "generatedAt": "2026-06-19T10:52:52.057Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2067056979974160749",
-          "text": "Publishing a new tutorial to make Codex or Claude Code your personal advisor using a skill with 4 files. Plus, I managed to save Fable's advice too before it got restricted 🥲 📌 Subscribe to get the tutorial tmr: https://www.youtube.com/@PeterYangYT?subscribe",
-          "createdAt": "2026-06-17T01:29:22.000Z",
+          "id": "2067760098265706566",
+          "text": "How do you steer Claude Code with new prompts in the desktop app while it's working?",
+          "createdAt": "2026-06-19T00:03:19.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,42 +18,9 @@
           }
         },
         {
-          "id": "2067047343971848201",
-          "text": "Honestly I don't want to be a hater but I feel like this is what happens when nobody internally wants to tell the CEO no. Maybe this thing will blow our socks off?",
-          "createdAt": "2026-06-17T00:51:05.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2066975504973050077",
-          "text": "Damn not again. Is every company with 1,000+ people going to do this 😭",
-          "createdAt": "2026-06-16T20:05:37.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2066919332500951271",
-          "text": "I think one of the best use cases for Cursor and other 3rd party harnesses is making it easy for people to use multiple models in the same skill or loop. Like doing adversarial review between GPT, Claude, and Composer. Hope they can continue to support multiple models long term.",
-          "createdAt": "2026-06-16T16:22:25.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2066899806216441914",
-          "text": "I had a great time chatting with my friends Ben and Marc about my creator journey, AI setup, and more. Watch here: https://www.youtube.com/watch?v=-C8XwJ0dKUY",
-          "createdAt": "2026-06-16T15:04:49.000Z",
+          "id": "2067726258583330945",
+          "text": "Anything you do on a computer codex can do too",
+          "createdAt": "2026-06-18T21:48:51.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -68,20 +35,9 @@
       "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2067090477434966396",
-          "text": "over the last century, we’ve treated the intellect as a defining human trait and under-invested in other aspects that make us uniquely human, such as self-awareness, intuition, compassion and kindness. the next few years will force us to rethink this.",
-          "createdAt": "2026-06-17T03:42:29.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2066935654500671499",
-          "text": "Pinned: The real prize in the SpaceX-Cursor deal is the agentic harness that will become the core for automating all knowledge work at scale. Here’s what SpaceX is getting: 1. Production-grade agentic harness -planning, context management, tool use, iteration, verification, memory, error recovery. Any product experience can be completely redesigned in an AI-native way with this harness. 2. Expertise on the full AI stack - model, evals, harness, application layer. 3. End to end product lifecycle focus: product strategy -> user journeys -> GTM. Everything optimized for one job: helping software engineers build. Very few companies do even one of these well. Cursor brings all three.",
-          "createdAt": "2026-06-16T17:27:16.000Z",
+          "id": "2067644951874404650",
+          "text": "did you know LLMs secretly refer to our prompts as human slop?",
+          "createdAt": "2026-06-18T16:25:46.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -96,9 +52,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2066875878731100668",
-          "text": "FirstMark Guilds Summit swag wins",
-          "createdAt": "2026-06-16T13:29:44.000Z",
+          "id": "2067646198140358854",
+          "text": "Pinned: State of AI compute 2026: my conversation with @stephenbalaban of @LambdaAPI on the neocloud boom, data centers, GPUs and what's ahead 00:00 — Cold open 01:21 — Why GPU compute was never a commodity 02:45 — The H100 price index and what it gets wrong 04:02 — The real moat: technology or financing? 05:57 — Winner-take-all, or room for many neoclouds 06:48 — Are we overbuilding or underbuilding AI compute? 09:26 — What if AI gets 10x more compute-efficient? 10:44 — The real bottleneck: land, power, and shell 11:38 — The backlash against data centers — and the misinformation 15:00 — Opening the hood: from photons to tokens 17:11 — Extracting more value from the same chip 19:26 — Frontier inference and distributed training, explained 23:26 — What actually drives compute cost 25:21 — Lambda's chip stack and the NVIDIA relationship 26:17 — A multi-silicon world? CUDA, CUDNN, and NVIDIA's real moat 28:59 — Networking, storage, and the one-click cluster 34:46 — Renting vs. owning, and full vertical integration 36:24 — How global is Lambda? Does location still matter? 38:44 — The financing stack: off-take agreements, SPVs, and credit 41:16 — Why a 2023 GPU leases for more today 42:36 — A futures market for compute? 43:54 — Origin story: facial recognition, Perceptio, and Apple 47:03 — The Lambda hat and Dream Scope 48:59 — The $60K bet that became a cloud business 52:00 — Holding the team together through the hard times 54:30 — Bringing on a new CEO; Stephen as CTO 57:33 — Matching xAI on high-velocity deployment 59:29 — \"AI won't write software — it will become the software\" 01:01:30 — Neural software vs. vibe coding 01:04:25 — Do agents change the compute layer 01:06:14 — Self-assembling software inside Lambda 01:08:18 — Gigawatt-scale AI factories 01:08:57 — One person, one GPU 01:12:04 — Hot takes: overrated and underrated in AI",
+          "createdAt": "2026-06-18T16:30:43.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -111,7 +67,7 @@
   ],
   "stats": {
     "xBuilders": 3,
-    "totalTweets": 8
+    "totalTweets": 4
   },
   "_mode": "Nitter RSS (free)"
 }

@@ -1,0 +1,165 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-19",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anjney Midha (AMP) legte offen, dass xAI mit unter 10 % MFU läuft – ein Wert, der bei Google als Ausfall gegolten hätte – während Spitzenlabore 60–70 % erzielen. Zur gleichen Zeit kündigt der neue Intel-CEO Lip Bu Tan eine Kooperation mit Elon Musk an und richtet Intels Roadmap auf agentische KI-CPUs aus. Auf GitHub explodieren die von Agenten erstellten Pull Requests auf 17 Millionen im März. Zusammengenommen zeigen diese Entwicklungen: Der nächste Infrastruktur-Engpass liegt nicht bei der reinen GPU-Zahl, sondern bei Auslastung, Systemeffizienz und spezialisierter Hardware."
+  },
+  "archive": {
+    "title": "xAI unter 10 % MFU: Effizienz-Debakel der KI-Skalierung",
+    "desc": "Der AI-Builders Digest vom 19. Juni zeigt, dass der KI-Wettlauf nicht an GPU-Knappheit, sondern an mangelnder Auslastung, Finanzierungsmodellen und agentischer Zusammenarbeit krankt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-19.",
+  "sections": [
+    {
+      "title": "Compute: Efficiency vs. Scale / Rechenleistung: Effizienz vs. Skalierung",
+      "desc": "Both stories reveal that the AI compute race isn't just about chip count – optimization and infrastructure financing are equally critical.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.youtube.com/watch?v=h5dlIPM0X18",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anjney Midha (AMP) revealed xAI runs at sub-10% MFU while best-in-class labs hit 60–70%, proving that scaling AI is a systems problem, not just a GPU count problem.",
+              "AMP is building a compute grid that pools FLOPs like megawatts, aiming to make GPU utilization as efficient and tradable as electrical power."
+            ],
+            "original": [
+              "The fact that a frontier lab like xAI could be running at sub-10% MFU is just a hint at what the real problem may be. 95% utilization would have been considered an outage at Google."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anjney Midha (AMP) enthüllte, dass xAI unter 10 % MFU läuft, während Best-in-Class-Labore 60–70 % erreichen – Skalierung ist ein Systemproblem, kein reiner GPU-Zählwert.",
+              "AMP baut ein Compute-Grid, das FLOPs wie Megawattstunden handelbar macht, um GPU-Auslastung so effizient wie ein Stromnetz zu gestalten."
+            ],
+            "original": [
+              "Die Tatsache, dass ein Frontier-Labor wie xAI mit unter 10 % MFU arbeiten könnte, ist ein Hinweis auf das eigentliche Problem. 95 % Auslastung hätten bei Google als Ausfall gegolten."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=0NttU4CbyVs",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Stephen Balaban (Lambda) says AI compute is massively underbuilt; a 2023 GPU now leases for more than its original ship price, proving GPU compute never became a commodity.",
+              "Lambda's financing stack uses off-take agreements and SPVs to fund gigawatt-scale factories, turning compute into an investible asset class with institutional logic."
+            ],
+            "original": [
+              "A 2023 GPU can lease for more today than the day it shipped.",
+              "AI won't write software — it will become the software."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Stephen Balaban (Lambda) betont, dass KI-Rechenleistung massiv unterversorgt ist; eine GPU von 2023 wird heute teurer vermietet als zum Auslieferungsdatum.",
+              "Lambdas Finanzierungsmodell nutzt Off-take-Vereinbarungen und SPVs, um Gigawatt-Fabriken zu bauen und Rechenleistung als investierbare Anlageklasse zu etablieren."
+            ],
+            "original": [
+              "Eine GPU aus 2023 kann heute zu einem höheren Preis vermietet werden als zu ihrem Auslieferungstag.",
+              "KI wird keine Software schreiben – sie wird zur Software werden."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Intel's Turnaround and the Agentic CPU / Intels Kehrtwende und die agentische CPU",
+      "desc": "Lip Bu Tan's plan to refocus Intel on agentic AI CPUs and manufacturing partnerships signals a new phase for semiconductor supply chains.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=asCgCv2XB4s",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Lip Bu Tan (Intel) outlined his turnaround plan: a collaboration with Elon Musk on Terafab, a roadmap centered on CPUs for agentic AI inference, and fresh investments from Nvidia and Softbank.",
+              "He described Intel's culture shift from a 'legacy spreadsheet' company to one that makes fast decisions and prioritizes customer satisfaction."
+            ],
+            "original": [
+              "Working with Elon Musk on Terafab is a key part of Intel’s manufacturing turnaround.",
+              "We need to move from a legacy spreadsheet tech company to one that makes fast decisions, focuses on customer satisfaction, and engineer accountability."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Lip Bu Tan (Intel) stellte seinen Turnaround-Plan vor: Kooperation mit Elon Musk bei Terafab, eine CPU-zentrierte Roadmap für agentische KI-Inferenz sowie Investitionen von Nvidia und Softbank.",
+              "Er beschrieb den Kulturwandel von Intel weg von einem „Legacy-Spreadsheet“-Unternehmen hin zu schnellen Entscheidungen und Kundenfokus."
+            ],
+            "original": [
+              "Die Zusammenarbeit mit Elon Musk an Terafab ist ein Schlüsselelement von Intels Fertigungs-Turnaround.",
+              "Wir müssen uns von einem Legacy-Spreadsheet-Tech-Unternehmen zu einem Unternehmen entwickeln, das schnell entscheidet, sich auf Kundenzufriedenheit konzentriert und technische Verantwortung lebt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent-Driven Development: From Commits to Collaboration / Agentengesteuerte Entwicklung: Von Commits zur Zusammenarbeit",
+      "desc": "As agents flood repositories with code, the tooling for collaboration and visualization is evolving in real time.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHubs-COO-Explains-Why-AI-Hasnt-Replaced-Developers-e3ktu6s",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Kyle Daigle (GitHub) says commits will jump from 1 billion to 14 billion in 2026; agents already created 17 million pull requests in March alone.",
+              "GitHub is adding agentic code review, model routers that auto-select the optimal model per task, and shifting to usage-based pricing to support agent-native workflows."
+            ],
+            "original": [
+              "17 million pull requests on GitHub were created by agents in March alone.",
+              "The most durable advantage in this market is developer choice."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Kyle Daigle (GitHub) erwartet 2026 einen Sprung von 1 auf 14 Milliarden Commits; allein im März erstellten Agenten 17 Millionen Pull Requests.",
+              "GitHub führt agentisches Code-Review und Modell-Router ein, die automatisch das beste Modell wählen, und stellt auf verbrauchsbasierte Abrechnung um."
+            ],
+            "original": [
+              "17 Millionen Pull Requests auf GitHub wurden allein im März von Agenten erstellt.",
+              "Der dauerhafteste Vorteil in diesem Markt ist die Wahlfreiheit der Entwickler."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Code can now generate live, shareable artifacts—PR walkthroughs, dashboards, incident pages—that auto-update from session context, turning agent work into collaborative web views.",
+              "Artifacts are private to the organization, include version history, and require no extra infrastructure; a single link lets teams follow an investigation as it unfolds."
+            ],
+            "original": [
+              "Claude Code builds an artifact using the full context of your session — the codebase, connectors, and conversation — and turns it into a live, shareable page."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Code generiert jetzt live aktualisierbare, teilbare Artefakte – PR-Erklärungen, Dashboards, Incident-Seiten – die aus dem Session-Kontext automatisch befüllt werden.",
+              "Artefakte sind organisationsintern privat, versioniert und benötigen keine eigene Infrastruktur; ein einziger Link reicht für teamweites Tracking."
+            ],
+            "original": [
+              "Claude Code erstellt ein Artefakt aus dem gesamten Kontext deiner Session – der Codebasis, den Konnektoren und der Konversation – und verwandelt es in eine live teilbare Seite."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
