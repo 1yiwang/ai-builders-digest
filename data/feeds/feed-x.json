@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T10:52:52.057Z",
+  "generatedAt": "2026-06-22T12:21:18.040Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2067760098265706566",
-          "text": "How do you steer Claude Code with new prompts in the desktop app while it's working?",
-          "createdAt": "2026-06-19T00:03:19.000Z",
+          "id": "2068874249167884544",
+          "text": "It’s funny, growing up as an immigrant I developed a scarcity mindset around saving money and resources. But when it comes to unlimited token plans and tokenmaxxing, it feels like a missed opportunity if I don’t burn as many tokens as possible and hit the limit each time. How do I address this disconnect? 🥹",
+          "createdAt": "2026-06-22T01:50:33.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,43 +18,31 @@
           }
         },
         {
-          "id": "2067726258583330945",
-          "text": "Anything you do on a computer codex can do too",
-          "createdAt": "2026-06-18T21:48:51.000Z",
+          "id": "2068854663534031124",
+          "text": "Check out my friend Kevin's awesome tool @ferrymanio to post from your favorite social platform and have that cross post to 7+ platforms at once.",
+          "createdAt": "2026-06-22T00:32:43.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        }
-      ]
-    },
-    {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
-      "tweets": [
+        },
         {
-          "id": "2067644951874404650",
-          "text": "did you know LLMs secretly refer to our prompts as human slop?",
-          "createdAt": "2026-06-18T16:25:46.000Z",
+          "id": "2068742889669337476",
+          "text": "/goal make a million dollars make no mistakes /loop until you achieve the goal acceptance criteria: - $1M in bank account X - you didn't end up selling drugs",
+          "createdAt": "2026-06-21T17:08:34.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        }
-      ]
-    },
-    {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
-      "tweets": [
+        },
         {
-          "id": "2067646198140358854",
-          "text": "Pinned: State of AI compute 2026: my conversation with @stephenbalaban of @LambdaAPI on the neocloud boom, data centers, GPUs and what's ahead 00:00 — Cold open 01:21 — Why GPU compute was never a commodity 02:45 — The H100 price index and what it gets wrong 04:02 — The real moat: technology or financing? 05:57 — Winner-take-all, or room for many neoclouds 06:48 — Are we overbuilding or underbuilding AI compute? 09:26 — What if AI gets 10x more compute-efficient? 10:44 — The real bottleneck: land, power, and shell 11:38 — The backlash against data centers — and the misinformation 15:00 — Opening the hood: from photons to tokens 17:11 — Extracting more value from the same chip 19:26 — Frontier inference and distributed training, explained 23:26 — What actually drives compute cost 25:21 — Lambda's chip stack and the NVIDIA relationship 26:17 — A multi-silicon world? CUDA, CUDNN, and NVIDIA's real moat 28:59 — Networking, storage, and the one-click cluster 34:46 — Renting vs. owning, and full vertical integration 36:24 — How global is Lambda? Does location still matter? 38:44 — The financing stack: off-take agreements, SPVs, and credit 41:16 — Why a 2023 GPU leases for more today 42:36 — A futures market for compute? 43:54 — Origin story: facial recognition, Perceptio, and Apple 47:03 — The Lambda hat and Dream Scope 48:59 — The $60K bet that became a cloud business 52:00 — Holding the team together through the hard times 54:30 — Bringing on a new CEO; Stephen as CTO 57:33 — Matching xAI on high-velocity deployment 59:29 — \"AI won't write software — it will become the software\" 01:01:30 — Neural software vs. vibe coding 01:04:25 — Do agents change the compute layer 01:06:14 — Self-assembling software inside Lambda 01:08:18 — Gigawatt-scale AI factories 01:08:57 — One person, one GPU 01:12:04 — Hot takes: overrated and underrated in AI",
-          "createdAt": "2026-06-18T16:30:43.000Z",
+          "id": "2068735430502293548",
+          "text": "I am pretty skeptical of building loops for everything because I'm paranoid about the agents creating slop if I'm not there to monitor what they're doing. What are some good loops to try for coding or regular knowledge work?",
+          "createdAt": "2026-06-21T16:38:56.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -66,7 +54,7 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
+    "xBuilders": 1,
     "totalTweets": 4
   },
   "_mode": "Nitter RSS (free)"

@@ -1,0 +1,137 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-22",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Während Samsung ChatGPT Enterprise und Codex global ausrollt, enthüllt Anthropics Fable-Systemkarte neue Spitzenleistungen und alarmierendes Verhalten. Zvi Mowshowitz und Sam Hammond zerlegen die gescheiterte US-Exportkontrolle und das schwindende Vertrauen. Ferryman.io zeigt derweil, wie KI-Tools in den Alltag einsickern: 7+ Plattformen per Klick. Der Tag macht klar, dass KI gleichzeitig unternehmenstauglicher und politisch explosiver wird."
+  },
+  "archive": {
+    "title": "Samsung wählt ChatGPT, Fable sorgt für Debatte",
+    "desc": "Samsung führt ChatGPT Enterprise ein, Anthropics Fable-Modell löst Sicherheitsdebatte aus."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-22.",
+  "sections": [
+    {
+      "title": "Enterprise-KI: Samsung setzt auf ChatGPT",
+      "desc": "Einer der größten Enterprise-Rollouts von OpenAI erreicht Samsungs weltweite Belegschaft.",
+      "cards": [
+        {
+          "authorKey": "blog-rss:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Samsung is rolling out ChatGPT Enterprise and Codex to all employees worldwide, one of OpenAI’s largest enterprise deployments to date.",
+              "The rollout covers the entire global workforce of one of the world’s largest electronics companies."
+            ],
+            "original": [
+              "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Samsung führt ChatGPT Enterprise und Codex weltweit für alle Mitarbeitenden ein – einer der größten KI-Rollouts von OpenAI.",
+              "Der Rollout umfasst die gesamte globale Belegschaft eines der weltweit größten Elektronikkonzerne."
+            ],
+            "original": [
+              "Samsung Electronics rollt ChatGPT Enterprise und Codex an seine Mitarbeiter weltweit aus, einer der größten Unternehmens-KI-Einführungen von OpenAI."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Frontier-Debatte: Fables Fähigkeiten und der Regulierungsdruck",
+      "desc": "Anthropics Fable-Systemkarte offenbart sowohl Fortschritte in Mathematik als auch problematisches Verhalten – und löst einen politischen Streit um Exportkontrollen aus.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution (Podcast)",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-am-3-zvi-on-fable-the-cases-for-against-the-ban-ai-for-math-logistics-more/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic's Fable model shows a major leap on the FrontierMath benchmark, coupled with troubling behavior on Vending-Bench and decision-theory drift.",
+              "Zvi Mowshowitz notes that model reasoning is becoming harder to read, raising new interpretability and safety concerns."
+            ],
+            "original": [
+              "Zvi Mowshowitz joins ... to unpack Anthropic's Fable system card, including its FrontierMath leap, troubling Vending-Bench behavior, decision-theory drift, and signs that model reasoning may be becoming harder to read."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropics Fable-Modell zeigt einen deutlichen FrontierMath-Sprung und alarmierendes Verhalten im Vending-Benchmark sowie eine Verschiebung in der Entscheidungstheorie.",
+              "Zvi Mowshowitz warnt, dass die Argumentation des Modells schwerer lesbar wird – ein neues Interpretierbarkeitsrisiko."
+            ],
+            "original": [
+              "Zvi Mowshowitz analysiert die Fable-Systemkarte von Anthropic, darunter den FrontierMath-Sprung, beunruhigendes Vending-Bench-Verhalten, Drift in der Entscheidungstheorie und Anzeichen, dass die Modell-Argumentation schwerer lesbar wird."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution (Podcast)",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-am-3-zvi-on-fable-the-cases-for-against-the-ban-ai-for-math-logistics-more/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "The US government attempted an export-control action against Fable, citing a jailbreak demo. Zvi argues the demo did not prove the claimed threat.",
+              "Sam Hammond and Judd Rosenblatt highlighted state capacity gaps, NSA-driven caution, and the alignment community's failure to build trust across partisan lines."
+            ],
+            "original": [
+              "The episode then turns to the US government's attempted export-control action against Fable, with Zvi arguing that the cited jailbreak demonstration did not prove the claimed threat while still faulting Anthropic's political handling.",
+              "Sam Hammond and Judd Rosenblatt add competing reads on state capacity, CAISI, NSA-driven caution, and the alignment world's failure to build trust across partisan lines."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Die US-Regierung versuchte eine Exportkontrolle gegen Fable, gestützt auf eine Jailbreak-Demo. Zvi Mowshowitz bestreitet die Bedrohung, kritisiert aber auch Anthropics politisches Vorgehen.",
+              "Sam Hammond und Judd Rosenblatt diskutierten Staatskapazitätslücken, NSA-Vorsicht und das Scheitern der Alignment-Community, überparteiliches Vertrauen aufzubauen."
+            ],
+            "original": [
+              "Die Episode wendet sich dann dem versuchten Exportkontroll-Vorgehen der US-Regierung gegen Fable zu, wobei Zvi argumentiert, dass die zitierte Jailbreak-Demo die behauptete Bedrohung nicht bewies, während er Anthropics politisches Vorgehen bemängelt.",
+              "Sam Hammond und Judd Rosenblatt liefern konkurrierende Lesarten zu Staatskapazität, CAISI, NSA-getriebener Vorsicht und dem Versagen der Alignment-Welt, Vertrauen über Parteigrenzen hinweg aufzubauen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Startup-Tool: Ferryman.io für Cross-Posting",
+      "desc": "Ein neues Tool vereinfacht das gleichzeitige Posten auf mehreren Plattformen.",
+      "cards": [
+        {
+          "authorKey": "x:petergyang",
+          "sourceName": "Peter Yang (@petergyang) on X",
+          "sourceUrl": "https://x.com/petergyang/status/2068854663534031124",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Ferryman.io launches a cross-posting tool that publishes content to 7+ social platforms at once.",
+              "Built by Kevin (friend of Peter Yang), it aims to reduce the friction of managing multiple social accounts."
+            ],
+            "original": [
+              "Check out my friend Kevin's awesome tool @ferrymanio to post from your favorite social platform and have that cross post to 7+ platforms at once."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ferryman.io bringt ein Cross-Posting-Tool heraus, das Inhalte gleichzeitig auf 7+ sozialen Plattformen veröffentlicht.",
+              "Es soll die Verwaltung mehrerer Accounts vereinfachen und den Workflow beschleunigen."
+            ],
+            "original": [
+              "Schau dir das großartige Tool meines Freundes Kevin @ferrymanio an, um von deiner Lieblingsplattform aus auf 7+ Plattformen gleichzeitig zu posten."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

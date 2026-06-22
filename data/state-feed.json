@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/nQoxrMRhEMliQTB8mlE8GxkyrMKGNcNPYV8Y8nBYtis": 1780917179248,
-    "ce1196f0-618a-11f1-98fe-437dc10278bd": 1780917179490,
-    "gid://art19-episode-locator/V0/Ps1BEU9fURpn6sxU440Mlt-lhbqq-joIgtKjmod7P4g": 1780917180415,
     "0fae4dc4-6456-11f1-9180-3f07b7c1bee8": 1781086622991,
     "gid://art19-episode-locator/V0/Ww4oBSpHprg873i6f5vdJEkIw3oS-xL2aFdene6EGRg": 1781086623632,
     "821adbec-649d-11f1-9151-d7bad7f43aa4": 1781086623688,
@@ -20,10 +17,11 @@
     "dcd52486-f53c-4374-9265-02f38a80f5f7": 1781866348651,
     "a7d1fb70-81db-44be-92b8-e46db37a1532": 1781866349026,
     "gid://art19-episode-locator/V0/XjGt50btjpvVPJ_tzGIYtf6LlkrrXUcO9sbTZ_FGmic": 1781866350349,
-    "c37a60de-6a84-11f1-8575-effbbcc9e55f": 1781866350413
+    "c37a60de-6a84-11f1-8575-effbbcc9e55f": 1781866350413,
+    "gid://art19-episode-locator/V0/-tv5mSfpY_4EFQ1goMVdm8BqvtvfB3nUKmrjJT40lJQ": 1782130859052,
+    "c28e8034-6d6c-11f1-b57e-bb21aa000d78": 1782130859128
   },
   "seenArticles": {
-    "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures": 1780917181204,
     "https://huggingface.co/blog/ServiceNow-AI/code-switching": 1781086624497,
     "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code": 1781086624497,
     "https://huggingface.co/blog/mishig/spaces-agents-md": 1781086624497,
@@ -53,7 +51,8 @@
     "https://openai.com/index/improving-health-intelligence-in-chatgpt": 1781866352354,
     "https://openai.com/index/diagnose-rare-childhood-diseases": 1781866352354,
     "https://www.together.ai/blog/kimi-k2-7-code-vs-claude-fable-5": 1781866352418,
-    "https://claude.com/blog/artifacts-in-claude-code": 1781866364604
+    "https://claude.com/blog/artifacts-in-claude-code": 1781866364604,
+    "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment": 1782130860295
   },
   "xUserIds": {}
 }
