@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T12:21:18.040Z",
+  "generatedAt": "2026-06-24T09:46:27.770Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2068874249167884544",
-          "text": "It’s funny, growing up as an immigrant I developed a scarcity mindset around saving money and resources. But when it comes to unlimited token plans and tokenmaxxing, it feels like a missed opportunity if I don’t burn as many tokens as possible and hit the limit each time. How do I address this disconnect? 🥹",
-          "createdAt": "2026-06-22T01:50:33.000Z",
+          "id": "2069603490524254473",
+          "text": "What is design if what’s accessing your product is just an agent looking for an api or CLI?",
+          "createdAt": "2026-06-24T02:08:18.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2068854663534031124",
-          "text": "Check out my friend Kevin's awesome tool @ferrymanio to post from your favorite social platform and have that cross post to 7+ platforms at once.",
-          "createdAt": "2026-06-22T00:32:43.000Z",
+          "id": "2069551302246592799",
+          "text": "wtf the Google Workspace CLI is super useful it should be celebrated?",
+          "createdAt": "2026-06-23T22:40:55.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,20 +29,43 @@
           }
         },
         {
-          "id": "2068742889669337476",
-          "text": "/goal make a million dollars make no mistakes /loop until you achieve the goal acceptance criteria: - $1M in bank account X - you didn't end up selling drugs",
-          "createdAt": "2026-06-21T17:08:34.000Z",
+          "id": "2069530765352907180",
+          "text": "Human-agent interaction is basically trending towards managing a highly capable employee. 1 on 1s and performance reviews for Claude next? 😅",
+          "createdAt": "2026-06-23T21:19:19.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        },
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
         {
-          "id": "2068735430502293548",
-          "text": "I am pretty skeptical of building loops for everything because I'm paranoid about the agents creating slop if I'm not there to monitor what they're doing. What are some good loops to try for coding or regular knowledge work?",
-          "createdAt": "2026-06-21T16:38:56.000Z",
+          "id": "2069455097193697393",
+          "text": "I’ve had the chance to see this ecosystem from the different sides - enterprises, agent startups, data providers, labs. The core tension here is that the business models, moats, value exchange, execution playbooks for all players are being figured out in real time. This debate around token pricing is really a debate over where value will accrue - models, application layer, distribution or other layers. Expect a lot of strong opinions from the different sides to shape the narrative in their favor.",
+          "createdAt": "2026-06-23T16:18:38.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@mattturck",
+      "name": "Matt Turck",
+      "tweets": [
+        {
+          "id": "2069481767652794768",
+          "text": "Expanding the world cup from 32 to 48 teams was such a genius idea. Creates some Cinderalla stories (Curacao, Cabo Verde, DR Congo etc), and enables the stars (Messi, Ronaldo, MBappe, Haaland etc) to shine early. Loving it all so far.",
+          "createdAt": "2026-06-23T18:04:37.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -54,8 +77,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 1,
-    "totalTweets": 4
+    "xBuilders": 3,
+    "totalTweets": 5
   },
   "_mode": "Nitter RSS (free)"
 }

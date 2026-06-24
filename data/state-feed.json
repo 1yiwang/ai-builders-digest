@@ -19,7 +19,9 @@
     "gid://art19-episode-locator/V0/XjGt50btjpvVPJ_tzGIYtf6LlkrrXUcO9sbTZ_FGmic": 1781866350349,
     "c37a60de-6a84-11f1-8575-effbbcc9e55f": 1781866350413,
     "gid://art19-episode-locator/V0/-tv5mSfpY_4EFQ1goMVdm8BqvtvfB3nUKmrjJT40lJQ": 1782130859052,
-    "c28e8034-6d6c-11f1-b57e-bb21aa000d78": 1782130859128
+    "c28e8034-6d6c-11f1-b57e-bb21aa000d78": 1782130859128,
+    "gid://art19-episode-locator/V0/a02n5lTcshLO_qY0lP2UzhvBLv8LlRwZR0YDbRSpuOw": 1782294366020,
+    "374f6952-6f0b-11f1-b000-7fde7620446a": 1782294366098
   },
   "seenArticles": {
     "https://huggingface.co/blog/ServiceNow-AI/code-switching": 1781086624497,
@@ -52,7 +54,14 @@
     "https://openai.com/index/diagnose-rare-childhood-diseases": 1781866352354,
     "https://www.together.ai/blog/kimi-k2-7-code-vs-claude-fable-5": 1781866352418,
     "https://claude.com/blog/artifacts-in-claude-code": 1781866364604,
-    "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment": 1782130860295
+    "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment": 1782130860295,
+    "https://huggingface.co/blog/ibm-research/cuga-apps": 1782294367273,
+    "https://huggingface.co/blog/huggingface-hub-release-ci": 1782294367273,
+    "https://huggingface.co/blog/cross-origin-storage": 1782294367273,
+    "https://openai.com/index/helping-build-shared-standards-for-advanced-ai": 1782294367562,
+    "https://openai.com/index/gpt-5-immunology-mystery": 1782294367562,
+    "https://openai.com/index/omio": 1782294367562,
+    "https://www.together.ai/blog/parallelkernelbench": 1782294367643
   },
   "xUserIds": {}
 }

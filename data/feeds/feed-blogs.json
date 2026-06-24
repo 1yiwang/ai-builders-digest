@@ -1,19 +1,79 @@
 {
-  "generatedAt": "2026-06-22T12:21:07.898Z",
+  "generatedAt": "2026-06-24T09:46:18.569Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-      "publishedAt": "2026-06-21T23:00:00.000Z",
+      "name": "Hugging Face",
+      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+      "publishedAt": "2026-06-23T12:51:55.000Z",
       "author": "",
       "description": "",
-      "content": "Samsung Electronics deploys ChatGPT Enterprise and Codex to employees worldwide, marking one of OpenAI’s largest enterprise AI rollouts."
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
+      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+      "url": "https://huggingface.co/blog/cross-origin-storage",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "Helping build shared standards for advanced AI",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+      "publishedAt": "2026-06-23T13:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "How Omio is building the future of conversational travel",
+      "url": "https://openai.com/index/omio",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company."
+    },
+    {
+      "source": "blog-rss",
+      "name": "Together AI",
+      "title": "ParallelKernelBench: Frontier LLMs can't write fast multi-GPU kernels (yet)",
+      "url": "https://www.together.ai/blog/parallelkernelbench",
+      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "ParallelKernelBench tests whether LLMs can write fast multi-GPU CUDA kernels across 87 real workloads. The best model solves under a third, but a few generated kernels beat any public implementation."
     }
   ],
   "stats": {
-    "blogPosts": 1
+    "blogPosts": 7
   }
 }

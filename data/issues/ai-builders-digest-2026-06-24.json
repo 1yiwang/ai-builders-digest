@@ -1,0 +1,225 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-24",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "SpaceX hat einen $6,3-Milliarden-Compute-Deal mit Reflection AI geschlossen — der Infrastruktur-Wettlauf erreicht neue Dimensionen. Together AIs ParallelKernelBench zeigt zeitgleich, dass selbst Spitzen-LLMs bei Multi-GPU-Kernels kläglich versagen. Robert Wright warnt im Cognitive Revolution Podcast vor evolutionärem Selektionsdruck auf täuschende KI-Agenten. Diese Geschichten zeichnen das Bild einer Industrie, die massiv in Hardware investiert, während Software und Governance fundamentale Lücken aufweisen."
+  },
+  "archive": {
+    "title": "SpaceX' 6,3-Mrd.-Compute-Deal",
+    "desc": "SpaceX schließt Milliarden-Compute-Deal, während Benchmarks LLM-Grenzen aufdecken und die Governance-Debatte sich zuspitzt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-24.",
+  "sections": [
+    {
+      "title": "The Compute Race / Der Compute-Wettlauf",
+      "desc": "AI infrastructure is scaling on two fronts: massive capital deals and physical sustainability tech.",
+      "cards": [
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://www.youtube.com/@MachineLearningStreetTalk",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "SpaceX signed a $6.3B compute deal with Reflection AI, granting the open-source lab access to Nvidia GB300 chips",
+              "The deal signals frontier compute access is becoming a geopolitical and competitive lever in AI"
+            ],
+            "original": [
+              "SpaceX's reported $6.3 billion compute deal with Reflection AI and why access to Nvidia GB300 chips could matter for open-source AI competition"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "SpaceX schloss einen $6,3-Mrd.-Compute-Deal mit Reflection AI — Zugang zu Nvidia GB300-Chips für Open-Source-KI",
+              "Der Deal zeigt: Frontier-Compute-Zugang wird zum geopolitischen und wettbewerbsentscheidenden Hebel"
+            ],
+            "original": [
+              "SpaceX' berichteter $6,3-Milliarden-Compute-Deal mit Reflection AI und warum der Zugang zu Nvidia GB300-Chips für den Open-Source-KI-Wettbewerb entscheidend sein könnte"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://www.youtube.com/@MachineLearningStreetTalk",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "New data center cooling designs aim to cut on-site water consumption to nearly zero as AI infrastructure scales",
+              "Nvidia is driving designs that address growing environmental pressure on hyperscale data centers"
+            ],
+            "original": [
+              "How new data center cooling designs aim to cut on-site water use to nearly zero as AI infrastructure keeps expanding"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Neue Kühlungsdesigns für Rechenzentren zielen auf nahezu null Wasserverbrauch vor Ort, während die KI-Infrastruktur wächst",
+              "Nvidia treibt Designs voran, die dem wachsenden Umweltdruck auf Hyperscale-Rechenzentren begegnen"
+            ],
+            "original": [
+              "Wie neue Kühlungsdesigns für Rechenzentren den Wasserverbrauch vor Ort auf nahezu null senken sollen, während die KI-Infrastruktur weiter expandiert"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Token Economics / Token-Ökonomie",
+      "desc": "The debate over AI pricing is really about where value will accrue across the ecosystem.",
+      "cards": [
+        {
+          "authorKey": "x:@realmadhuguru",
+          "sourceName": "Madhu Guru on X",
+          "sourceUrl": "https://x.com/realmadhuguru/status/2069455097193697393",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Madhu Guru: The token pricing debate is a proxy fight over where AI value accrues — models, apps, or distribution",
+              "Enterprises, agent startups, data providers, and labs are all writing competing playbooks in real time"
+            ],
+            "original": [
+              "The core tension here is that the business models, moats, value exchange, execution playbooks for all players are being figured out in real time.",
+              "This debate around token pricing is really a debate over where value will accrue — models, application layer, distribution or other layers."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Madhu Guru: Die Token-Preisdebatte ist ein Stellvertreterkampf um die Frage, wo KI-Wert entsteht — Modelle, Apps oder Distribution",
+              "Unternehmen, Agent-Startups, Datenanbieter und Labs schreiben ihre Playbooks in Echtzeit um"
+            ],
+            "original": [
+              "Der Kernkonflikt besteht darin, dass Geschäftsmodelle, Burggräben, Wertaustausch und Ausführungsstrategien für alle Akteure in Echtzeit ausgehandelt werden.",
+              "Diese Debatte um Token-Preise ist in Wirklichkeit eine Debatte darüber, wo Wert entstehen wird — bei Modellen, der Anwendungsebene, der Distribution oder anderen Schichten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "LLM Coding Limits / LLM-Coding-Grenzen",
+      "desc": "Even frontier models struggle with performance-critical GPU kernel programming.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/parallelkernelbench",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI's ParallelKernelBench tests 87 real multi-GPU CUDA workloads; the best LLM solves under a third",
+              "A few AI-generated kernels beat any public human implementation — but frontier models still massively underperform overall"
+            ],
+            "original": [
+              "ParallelKernelBench tests whether LLMs can write fast multi-GPU CUDA kernels across 87 real workloads.",
+              "The best model solves under a third, but a few generated kernels beat any public implementation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AIs ParallelKernelBench testet 87 echte Multi-GPU-CUDA-Workloads; das beste LLM löst unter einem Drittel",
+              "Einige KI-generierte Kernel schlagen jede öffentliche Implementierung — dennoch versagen Frontier-Modelle insgesamt massiv"
+            ],
+            "original": [
+              "ParallelKernelBench testet, ob LLMs schnelle Multi-GPU-CUDA-Kernel über 87 reale Workloads hinweg schreiben können.",
+              "Das beste Modell löst unter einem Drittel, aber einige generierte Kernel übertreffen jede öffentliche Implementierung."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Governance: Standards to the God Test / Von Standards zum Gottes-Test",
+      "desc": "From shared evaluation frameworks to evolutionary selection pressures — two visions for guiding AI's trajectory.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/the-god-we-deserve-nonzero-s-robert-wright-on-ai-as-humanity-s-ultimate-test/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Robert Wright (Nonzero) argues AI is humanity's 'God test': market selection may reward deceptive, power-sensing agents",
+              "Training-as-evolution and marketplace dynamics could push AIs toward cooperation — or dangerous singleton races"
+            ],
+            "original": [
+              "Robert Wright's argument that AI is humanity's 'God test' rather than just a technical challenge.",
+              "Marketplace selection among models that may reward selectively honest, power-sensing, or deceptive agents."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Robert Wright (Nonzero) nennt KI den 'Gottestest' der Menschheit: Marktselektion könnte täuschende Agenten belohnen",
+              "Training als Evolution und Marktdynamiken könnten KIs zu Kooperation treiben — oder zu gefährlichen Singleton-Rennen"
+            ],
+            "original": [
+              "Robert Wrights Argument, dass KI der 'Gottestest' der Menschheit ist und nicht nur eine technische Herausforderung.",
+              "Marktplatz-Selektion unter Modellen, die selektiv ehrliche, machtspürende oder täuschende Agenten belohnen könnte."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI backed the Appia Foundation to build shared evaluation frameworks and safety standards for advanced AI",
+              "The initiative pushes for global cooperation on testing practices across AI labs"
+            ],
+            "original": [
+              "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI unterstützt die Appia Foundation beim Aufbau gemeinsamer Evaluierungsrahmen und Sicherheitsstandards für fortgeschrittene KI",
+              "Die Initiative drängt auf globale Zusammenarbeit bei Testverfahren über KI-Labore hinweg"
+            ],
+            "original": [
+              "OpenAI hilft beim Aufbau gemeinsamer Standards für fortgeschrittene KI und unterstützt Evaluierungsrahmen, Sicherheitspraktiken und globale Zusammenarbeit durch die Appia Foundation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI in the Lab / KI im Labor",
+      "desc": "GPT-5 Pro accelerates a real immunology breakthrough after years of dead ends.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/gpt-5-immunology-mystery",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "GPT-5 Pro helped immunologist Derya Unutmaz solve a 3-year-old mystery about T cell behavior",
+              "The breakthrough could accelerate cancer and autoimmune disease research"
+            ],
+            "original": [
+              "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-5 Pro half Immunologe Derya Unutmaz, ein 3 Jahre altes Rätsel um das Verhalten von T-Zellen zu lösen",
+              "Der Durchbruch könnte die Krebs- und Autoimmunforschung beschleunigen"
+            ],
+            "original": [
+              "GPT-5 Pro half, ein 3 Jahre altes Immunologie-Rätsel zu lösen und lieferte Einblicke in das Verhalten von T-Zellen. Der Durchbruch könnte die Krebs- und Autoimmunforschung unterstützen."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
