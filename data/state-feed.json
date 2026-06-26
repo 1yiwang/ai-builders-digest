@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "0fae4dc4-6456-11f1-9180-3f07b7c1bee8": 1781086622991,
-    "gid://art19-episode-locator/V0/Ww4oBSpHprg873i6f5vdJEkIw3oS-xL2aFdene6EGRg": 1781086623632,
-    "821adbec-649d-11f1-9151-d7bad7f43aa4": 1781086623688,
     "c8ac5d90-6517-11f1-83d7-d3b49f07aa8f": 1781260004690,
     "cfdceef6-642a-11f1-9b24-634dad16ced0": 1781260004727,
     "bb5cd6c0-a739-49e2-96eb-f03d5c26db38": 1781260005267,
@@ -21,16 +18,15 @@
     "gid://art19-episode-locator/V0/-tv5mSfpY_4EFQ1goMVdm8BqvtvfB3nUKmrjJT40lJQ": 1782130859052,
     "c28e8034-6d6c-11f1-b57e-bb21aa000d78": 1782130859128,
     "gid://art19-episode-locator/V0/a02n5lTcshLO_qY0lP2UzhvBLv8LlRwZR0YDbRSpuOw": 1782294366020,
-    "374f6952-6f0b-11f1-b000-7fde7620446a": 1782294366098
+    "374f6952-6f0b-11f1-b000-7fde7620446a": 1782294366098,
+    "a982f792-6f55-11f1-b29a-1be1b9f3ee0a": 1782467049614,
+    "5ae96ad9-5cee-4cda-ad01-8edea9dfbc0a": 1782467050043,
+    "6ae01ce4-60f3-48ba-9f63-c352a10dc8d2": 1782467050487,
+    "gid://art19-episode-locator/V0/j5glX3rgFN-V0XdCnKlZQ9MEEN66DyBb6oi98lQo9Ps": 1782467051195,
+    "gid://art19-episode-locator/V0/FXlQyDfn88vh57Cf4hegyyO4RFbR1kyh26Sn4o0rOSY": 1782467052046,
+    "37f81653-c822-4beb-a29e-da0193b2e3a7": 1782467052318
   },
   "seenArticles": {
-    "https://huggingface.co/blog/ServiceNow-AI/code-switching": 1781086624497,
-    "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code": 1781086624497,
-    "https://huggingface.co/blog/mishig/spaces-agents-md": 1781086624497,
-    "https://openai.com/index/lseg": 1781086624831,
-    "https://openai.com/index/nextdoor": 1781086624831,
-    "https://openai.com/index/notion": 1781086624831,
-    "https://claude.com/blog/claude-for-foundation-models": 1781086628862,
     "https://huggingface.co/blog/torch-mlp-fusion": 1781260007809,
     "https://openai.com/index/preply": 1781260008225,
     "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem": 1781260008225,
@@ -61,7 +57,12 @@
     "https://openai.com/index/helping-build-shared-standards-for-advanced-ai": 1782294367562,
     "https://openai.com/index/gpt-5-immunology-mystery": 1782294367562,
     "https://openai.com/index/omio": 1782294367562,
-    "https://www.together.ai/blog/parallelkernelbench": 1782294367643
+    "https://www.together.ai/blog/parallelkernelbench": 1782294367643,
+    "https://huggingface.co/blog/vllm-jobs": 1782467052517,
+    "https://huggingface.co/blog/allenai/hybrid-token-prediction": 1782467052517,
+    "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel": 1782467052517,
+    "https://openai.com/index/how-agents-are-transforming-work": 1782467053145,
+    "https://openai.com/index/openai-broadcom-jalapeno-inference-chip": 1782467053145
   },
   "xUserIds": {}
 }

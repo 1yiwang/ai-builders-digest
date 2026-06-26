@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Builders Digest · 2026-06-26</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #1a1f2c;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --tag-bg: rgba(99, 102, 241, 0.08);
+    --tag-text: #6366f1;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    --edition-bg: rgba(255,255,255,0.6);
+    --footer-bg: #f8fafc;
+    --tabs-bg: rgba(0,0,0,0.04);
+    --card-hover-border: #cbd5e1;
+    --accent-start: #6366f1;
+    --accent-end: #a855f7;
+    --card-radius: 12px;
+    --max-width: 720px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d111a;
+      --card-bg: #161b26;
+      --border: #232a3b;
+      --text-primary: #ffffff;
+      --text-body: #e2e8f0;
+      --text-muted: #8b949e;
+      --tag-bg: rgba(99, 102, 241, 0.12);
+      --tag-text: #a5b4fc;
+      --shadow: none;
+      --edition-bg: rgba(22, 27, 38, 0.5);
+      --footer-bg: rgba(0,0,0,0.15);
+      --tabs-bg: rgba(255,255,255,0.04);
+      --card-hover-border: #363f58;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0d111a;
+    --card-bg: #161b26;
+    --border: #232a3b;
+    --text-primary: #ffffff;
+    --text-body: #e2e8f0;
+    --text-muted: #8b949e;
+    --tag-bg: rgba(99, 102, 241, 0.12);
+    --tag-text: #a5b4fc;
+    --shadow: none;
+    --edition-bg: rgba(22, 27, 38, 0.5);
+    --footer-bg: rgba(0,0,0,0.15);
+    --tabs-bg: rgba(255,255,255,0.04);
+    --card-hover-border: #363f58;
+  }
+
+  :root[data-theme="light"] {
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --text-primary: #1a1f2c;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --tag-bg: rgba(99, 102, 241, 0.08);
+    --tag-text: #6366f1;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    --edition-bg: rgba(255,255,255,0.6);
+    --footer-bg: #f8fafc;
+    --tabs-bg: rgba(0,0,0,0.04);
+    --card-hover-border: #cbd5e1;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-body);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; height: auto; }
+
+  .masthead, .intro, .section-header, .feed, footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .masthead { padding-top: 56px; }
+  .masthead-rule { border: none; border-top: 2px solid var(--border); margin: 0 0 16px; }
+  .masthead-inner { display: flex; justify-content: center; gap: 16px; align-items: baseline; border-bottom: 1px solid var(--border); padding-bottom: 14px; flex-wrap: wrap; }
+  .masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .masthead-subtitle { margin-top: 10px; padding-bottom: 12px; color: var(--text-muted); font-size: 13px; text-align: center; }
+
+  .theme-toggle {
+    position: relative;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--card-bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+    overflow: hidden;
+  }
+  .theme-toggle:hover { transform: scale(1.08); border-color: var(--accent-start); }
+  .theme-icon-light, .theme-icon-dark {
+    position: absolute;
+    transition: opacity 200ms ease, transform 200ms ease;
+  }
+  .theme-icon-light { opacity: 1; transform: rotate(0deg); }
+  .theme-icon-dark { opacity: 0; transform: rotate(90deg); }
+  [data-theme="dark"] .theme-icon-light { opacity: 0; transform: rotate(-90deg); }
+  [data-theme="dark"] .theme-icon-dark { opacity: 1; transform: rotate(0deg); }
+
+
+  .edition-strip {
+    position: relative;
+    margin-top: 10px;
+    min-height: 46px;
+    padding: 10px 120px 12px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--edition-bg);
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  .edition-strip .edition-sep { margin: 0 8px; color: var(--text-muted); opacity: 0.5; }
+  .edition-strip-text { display: block; }
+  .edition-return-link {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 999px;
+    color: var(--accent-start);
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    background: rgba(99, 102, 241, 0.08);
+    transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+  .edition-return-link:hover, .edition-return-link:focus-visible {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--accent-start);
+    transform: translateY(-50%) translateX(-2px);
+  }
+  .edition-return-link:focus-visible { outline: none; }
+
+  .intro { padding-top: 28px; }
+  .intro-inner { max-width: 680px; margin: 0 auto; padding: 0 0 0 20px; border-left: 3px solid var(--accent-start); }
+  .intro-kicker {
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  .intro p {
+    margin: 0;
+    max-width: none;
+    color: var(--text-muted);
+    font-size: clamp(15px, 1.6vw, 16px);
+    line-height: 1.9;
+    text-wrap: pretty;
+    font-family: 'Crimson Text', 'Georgia', serif;
+    overflow-wrap: anywhere;
+  }
+
+  .section-header { margin-top: 48px; }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin: 0 0 8px;
+    color: var(--text-primary);
+    line-height: 1.25;
+  }
+  .section-desc { margin: 0 0 22px; color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+
+  .feed { display: flex; flex-direction: column; gap: 24px; }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: border-color 200ms ease;
+  }
+  .card:hover { border-color: var(--card-hover-border); }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--accent-start);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid rgba(99, 102, 241, 0.25);
+  }
+  .avatar img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .avatar-fallback { display: none; align-items: center; justify-content: center; width: 100%; height: 100%; color: #a5b4fc; }
+  .avatar.is-fallback img { display: none; }
+  .avatar.is-fallback .avatar-fallback { display: flex; }
+
+  .author-info { flex: 1; min-width: 140px; }
+  .author-name { font-weight: 600; font-size: 15px; color: var(--text-primary); }
+  .author-name-row { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .author-handle { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .author-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  .card-tabs {
+    display: inline-flex;
+    gap: 4px;
+    background: var(--tabs-bg);
+    border-radius: 999px;
+    padding: 3px;
+    border: 1px solid var(--border);
+  }
+  .lang-tab {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.06em;
+    transition: all 200ms ease;
+  }
+  .lang-tab.is-active {
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    color: #fff;
+  }
+  .lang-tab:not(.is-active):hover { color: var(--text-body); }
+
+  .card-body { padding: 0; }
+  .lang-panel {
+    display: none;
+    padding: 22px 24px 24px;
+    animation: fadeSlideIn 220ms ease;
+  }
+  .lang-panel.is-active { display: block; }
+  .lang-panel p { margin: 0 0 1.2rem; font-size: 15px; line-height: 1.75; color: var(--text-body); }
+  .lang-panel p:last-child { margin-bottom: 0; }
+  .lang-panel ol { margin: 0 0 1.2rem 22px; padding: 0; }
+  .lang-panel li { margin: 0 0 8px; font-size: 15px; line-height: 1.7; }
+  .inline-code {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card-footer {
+    padding: 14px 24px 18px;
+    border-top: 1px solid var(--border);
+    background: var(--footer-bg);
+  }
+  .card-footer a {
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 200ms ease;
+  }
+  .card.is-low-priority { display: none; }
+  .card.is-low-priority.is-visible { display: block; }
+
+  .section-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px dashed var(--border);
+    border-radius: var(--card-radius);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+  }
+  .section-toggle:hover {
+    border-color: var(--accent-start);
+    color: var(--accent-start);
+    background: var(--tag-bg);
+  }
+  .section-toggle .section-toggle-hide { display: none; }
+  .section-toggle.is-expanded .section-toggle-show { display: none; }
+  .section-toggle.is-expanded .section-toggle-hide { display: inline; }
+
+  .card-footer a:hover {
+    transform: translateX(4px);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-start);
+  }
+
+  footer { padding-top: 32px; padding-bottom: 56px; color: var(--text-muted); font-size: 13px; text-align: center; }
+
+  @media (max-width: 680px) {
+    .masthead-inner { align-items: center; }
+    .edition-strip { padding-right: 12px; padding-left: 12px; }
+    .edition-strip-text { padding-right: 0; }
+    .edition-return-link { position: static; transform: none; margin-top: 8px; font-size: 11px; }
+    .edition-return-link:hover { transform: translateX(-2px); }
+    .card-header { padding: 16px 18px 14px; }
+    .card-tabs { margin-left: 0; margin-top: 4px; }
+    .lang-panel { padding: 18px 18px 20px; }
+    .card-footer { padding: 12px 18px 16px; }
+    .edition-strip .edition-sep { margin: 0 5px; }
+    .intro-inner { padding-left: 14px; }
+    .intro p { line-height: 1.84; }
+  }
+
+  @media (max-width: 480px) {
+    :root { --max-width: 100%; }
+    .masthead { padding-top: 32px; }
+    .masthead-title { font-size: 24px; }
+    .masthead-subtitle { font-size: 11px; }
+    .edition-strip { padding: 8px 12px 10px; font-size: 11px; }
+    .edition-return-link { position: static; transform: none; margin-top: 6px; font-size: 11px; }
+    .edition-return-link:hover { transform: translateX(-2px); }
+    .edition-strip .edition-sep { margin: 0 4px; }
+    .intro { padding-top: 20px; }
+    .intro-inner { padding-left: 12px; border-left-width: 2px; }
+    .intro-kicker { font-size: 10px; }
+    .intro-copy { font-size: 14px; line-height: 1.78; }
+    .section-header { margin-top: 32px; }
+    .section-label { font-size: 10px; }
+    .section-title { font-size: 20px; }
+    .section-desc { font-size: 13px; margin-bottom: 16px; }
+    .feed { gap: 18px; }
+    .card-header { padding: 12px 14px 12px; gap: 10px; }
+    .avatar { width: 36px; height: 36px; }
+    .author-name { font-size: 14px; }
+    .author-handle { font-size: 11px; }
+    .author-tag { font-size: 11px; padding: 2px 6px; }
+    .author-info { min-width: 0; }
+    .card-tabs { margin-left: 0; margin-top: 4px; }
+    .lang-tab { padding: 10px 16px; font-size: 12px; }
+    .lang-panel { padding: 14px 14px 16px; }
+    .lang-panel p { font-size: 14px; }
+    .lang-panel li { font-size: 14px; }
+    .lang-panel ol { margin-left: 16px; }
+    .inline-code { font-size: 12px; padding: 2px 6px; }
+    .card-footer { padding: 10px 14px 14px; }
+    .card-footer a { font-size: 13px; }
+    .section-toggle { padding: 14px 0; font-size: 12px; }
+    .theme-toggle { width: 44px; height: 44px; }
+    .theme-icon-light, .theme-icon-dark { font-size: 18px; }
+    .masthead, .intro, .section-header, .feed, footer { padding-left: 14px; padding-right: 14px; }
+    footer { padding-top: 24px; padding-bottom: 40px; font-size: 12px; }
+  }
+</style>
+</head>
+<body data-publish-date="2026-06-26" data-issue-number="14" data-edition-name="DE+EN Ausgabe">
+  <header class="masthead">
+    <hr class="masthead-rule">
+    <div class="masthead-inner">
+      <div class="masthead-title">AI Builders Digest</div>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle light/dark mode">
+        <span class="theme-icon-light">☀</span>
+        <span class="theme-icon-dark">☽</span>
+      </button>
+    </div>
+    <div class="masthead-subtitle">Bilingual edition / Zweisprachige Ausgabe</div>
+    <div class="edition-strip">
+      <span class="edition-strip-text" id="edition-strip-text">Nr. 14｜2026-06-26｜DE+EN Ausgabe｜7 Beiträge｜6 Autoren｜4 Themen</span>
+      <a class="edition-return-link" href="../index.html">Zurück</a>
+    </div>
+  </header>
+
+  <section class="intro" data-kicker="Einleitung / Editor&#39;s Note" data-text="Cloudflare-CEO Matthew Prince sieht Bots als dominierende Traffic-Quelle, während OpenAI und Broadcom einen eigenen Inferenzchip vorstellen. Die Internet-Infrastruktur wird grundlegend für Agenten umgebaut. SpaceX kauft den Coding-Startup Cursor für 60 Milliarden Dollar – ein massives Signal für den Wert von KI-Codegenerierung. Engram und Surge AI verfolgen zwei gegensätzliche Visionen: persönliche Modelle mit Gedächtnis versus übermenschliche allgemeine KI.">
+    <div class="intro-inner">
+      <div class="intro-kicker">Einleitung / Editor&#39;s Note</div>
+      <p class="intro-copy">Cloudflare-CEO Matthew Prince sieht Bots als dominierende Traffic-Quelle, während OpenAI und Broadcom einen eigenen Inferenzchip vorstellen. Die Internet-Infrastruktur wird grundlegend für Agenten umgebaut. SpaceX kauft den Coding-Startup Cursor für 60 Milliarden Dollar – ein massives Signal für den Wert von KI-Codegenerierung. Engram und Surge AI verfolgen zwei gegensätzliche Visionen: persönliche Modelle mit Gedächtnis versus übermenschliche allgemeine KI.</p>
+    </div>
+  </section>
+
+  <section class="section-header">
+    <div class="section-label">Theme 01</div>
+    <h2 class="section-title">Bots &amp; Hardware: The New Machine Internet / Bots &amp; Hardware: Das neue Internet der Maschinen</h2>
+    <p class="section-desc">Cloudflare sieht Bots als dominierende Traffic-Quelle, während OpenAI mit Broadcom einen eigenen Chip für LLM-Inferenz baut.</p>
+  </section>
+  <section class="feed">
+    <article class="card" data-author-key="podcast:The MAD Podcast with Matt Turck" data-author-name="The MAD Podcast" data-author-tag="FirstMark Podcast" data-author-handle="@mattturck" data-author-avatar="../assets/avatars/podcast-the-mad-podcast-with-matt-turck.jpg" data-priority="1">
+      <div class="card-header">
+        <div class="avatar"><img src="../assets/avatars/podcast-the-mad-podcast-with-matt-turck.jpg" alt="The MAD Podcast avatar"><span class="avatar-fallback">TM</span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name">The MAD Podcast</span>
+            <span class="author-tag">FirstMark Podcast</span>
+          </div>
+          <div class="author-handle">@mattturck</div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+          <p>Bots übertreffen laut Cloudflare-CEO Matthew Prince den menschlichen Internetverkehr; ein einzelner KI-Agent besucht 5.000 Seiten für eine Aufgabe – das alte Web-Geschäftsmodell bricht.</p>
+          <p>Cloudflares AI Gateway verarbeitet täglich 241 Milliarden Token mit Audit- und Guardrail-Funktionen; Edge-Inferenz auf Workers gilt als Schlüssel für Agenten-Compute.</p>
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>Bots now outnumber human traffic on the internet, Cloudflare CEO Matthew Prince reveals; one AI agent visiting 5,000 sites for a single task signals the old web business model is breaking.</p>
+          <p>Cloudflare&#39;s AI Gateway processes 241 billion tokens daily, adding auditing and guardrails; edge inference on Workers is positioned as key to agent compute.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://www.youtube.com/watch?v=UN47z_opfmo" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+
+    <article class="card" data-author-key="blog-rss:OpenAI" data-author-name="" data-author-tag="" data-author-handle="" data-author-avatar="" data-priority="1">
+      <div class="card-header">
+        <div class="avatar is-fallback"><img src="" alt="Author avatar"><span class="avatar-fallback"></span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name"></span>
+            <span class="author-tag"></span>
+          </div>
+          <div class="author-handle"></div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>OpenAI and Broadcom unveil Jalapeño, a custom LLM inference chip designed to improve performance, efficiency, and scale across AI systems.</p>
+          <p>The chip signals OpenAI&#39;s move into custom silicon to reduce reliance on external GPU suppliers for inference workloads.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+  </section>
+
+  <section class="section-header">
+    <div class="section-label">Theme 02</div>
+    <h2 class="section-title">Business: $60B Deal and Market Shifts / Business: 60-Milliarden-Dollar-Deal und Marktanteile</h2>
+    <p class="section-desc">SpaceX kauft Cursor für 60 Milliarden Dollar; ChatGPTs Marktanteil fällt unter 50 Prozent.</p>
+  </section>
+  <section class="feed">
+    <article class="card" data-author-key="podcast:Last Week in AI" data-author-name="" data-author-tag="" data-author-handle="" data-author-avatar="" data-priority="1">
+      <div class="card-header">
+        <div class="avatar is-fallback"><img src="" alt="Author avatar"><span class="avatar-fallback"></span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name"></span>
+            <span class="author-tag"></span>
+          </div>
+          <div class="author-handle"></div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>SpaceX completes IPO at $1.75T valuation, then acquires AI coding startup Cursor for $60B, positioning xAI with Cursor&#39;s talent, data, and code generation product.</p>
+          <p>The deal signals that coding agents are the most valuable AI application right now, with Cursor&#39;s huge user base and data likely strategic assets.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://lastweek.in.ai/" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+
+    <article class="card" data-author-key="podcast:Last Week in AI" data-author-name="" data-author-tag="" data-author-handle="" data-author-avatar="" data-priority="2">
+      <div class="card-header">
+        <div class="avatar is-fallback"><img src="" alt="Author avatar"><span class="avatar-fallback"></span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name"></span>
+            <span class="author-tag"></span>
+          </div>
+          <div class="author-handle"></div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>ChatGPT&#39;s market share drops below 50% for the first time, as Gemini and Claude gain ground, according to TechCrunch via Last Week in AI.</p>
+          <p>The shift indicates intensifying competition in chatbot usage, eroding OpenAI&#39;s once-dominant market position.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://lastweek.in.ai/" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+  </section>
+
+  <section class="section-header">
+    <div class="section-label">Theme 03</div>
+    <h2 class="section-title">Two Visions: Personal Models vs. Superhuman AI / Zwei Visionen: Persönliche Modelle vs. Superhumane KI</h2>
+    <p class="section-desc">Engram will Unternehmenswissen in Model-Weights backen, während Surge AI-CEO Chen glaubt, dass Skalierungsgesetze KI bald übermenschlich machen.</p>
+  </section>
+  <section class="feed">
+    <article class="card" data-author-key="podcast:Training Data" data-author-name="Training Data" data-author-tag="Sequoia Podcast" data-author-handle="@SequoiaCap" data-author-avatar="../assets/avatars/podcast-training-data.jpg" data-priority="1">
+      <div class="card-header">
+        <div class="avatar"><img src="../assets/avatars/podcast-training-data.jpg" alt="Training Data avatar"><span class="avatar-fallback">TD</span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name">Training Data</span>
+            <span class="author-tag">Sequoia Podcast</span>
+          </div>
+          <div class="author-handle">@SequoiaCap</div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>Dan Biderman and Jessy Lin (Engram) bake company knowledge directly into model weights, achieving frontier-level performance with up to 100x fewer tokens than prompt-based approaches.</p>
+          <p>Working with Microsoft, Notion, and Harvey, Engram envisions every user having a privately trained, continually learning model—the &#39;ChatGPT moment for memory&#39;.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://www.youtube.com/watch?v=aiR7F4jqjXY" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+
+    <article class="card" data-author-key="podcast:AI &amp; I by Every" data-author-name="AI &amp; I" data-author-tag="Every Podcast" data-author-handle="@every" data-author-avatar="../assets/avatars/podcast-ai-i-by-every.jpg" data-priority="1">
+      <div class="card-header">
+        <div class="avatar"><img src="../assets/avatars/podcast-ai-i-by-every.jpg" alt="AI &amp; I avatar"><span class="avatar-fallback">A&amp;</span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name">AI &amp; I</span>
+            <span class="author-tag">Every Podcast</span>
+          </div>
+          <div class="author-handle">@every</div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>Fields medalist Timothy Gowers expected AI would prove a theorem, signaling &#39;all over for mathematicians very soon&#39;—but it only found a counterexample, buying a year or two.</p>
+          <p>Surge AI CEO Edwin Chen, whose company trains frontier models, argues scaling laws hold and nothing humans can do AI won&#39;t do better; benchmarks like Riemann-bench measure progress.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://www.youtube.com/watch?v=omX6wrLuX08" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+  </section>
+
+  <section class="section-header">
+    <div class="section-label">Theme 04</div>
+    <h2 class="section-title">Trust: Insurance for AI Agents / Vertrauen: Versicherung für KI-Agenten</h2>
+    <p class="section-desc">Das AIUC-1-Framework bringt Standards und Audit auf agentische KI, um das Vertrauen der Unternehmen zu gewinnen.</p>
+  </section>
+  <section class="feed">
+    <article class="card" data-author-key="podcast:Practical AI" data-author-name="" data-author-tag="" data-author-handle="" data-author-avatar="" data-priority="2">
+      <div class="card-header">
+        <div class="avatar is-fallback"><img src="" alt="Author avatar"><span class="avatar-fallback"></span></div>
+        <div class="author-info">
+          <div class="author-name-row">
+            <span class="author-name"></span>
+            <span class="author-tag"></span>
+          </div>
+          <div class="author-handle"></div>
+        </div>
+        <div class="card-tabs">
+          <button class="lang-tab is-active" type="button" data-lang="de">Deutsch</button>
+          <button class="lang-tab" type="button" data-lang="en">English</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="lang-panel de is-active" data-lang="de">
+
+        </div>
+        <div class="lang-panel en" data-lang="en">
+          <p>Emil Lassen from AIUC introduces the AIUC-1 framework: standards, certification, audit, and insurance layered on AI agents to accelerate enterprise adoption.</p>
+          <p>Red teaming based on standards is pitched as key to building trust before the &#39;AI hailstorm&#39; of agentic systems hits enterprises.</p>
+        </div>
+      </div>
+      <div class="card-footer"><a href="https://share.transistor.fm/s/e039d1ca" target="_blank" rel="noopener noreferrer">Quelle / Source →</a></div>
+    </article>
+  </section>
+
+  <footer data-source-note="Source: Follow Builders curated daily digest. Generated on 2026-06-26.">Source: Follow Builders curated daily digest. Generated on 2026-06-26.</footer>
+
+  <script>
+    window.AI_BUILDERS_TEMPLATE_SOURCES = {
+      identities: {"x:petergyang":{"name":"Peter Yang","handle":"@petergyang","label":"Founder & Investor"},"x:nikunj":{"name":"Nikunj Kothari","handle":"@nikunj","label":"FPV Ventures"},"x:levie":{"name":"Aaron Levie","handle":"@levie","label":"Box CEO"},"x:realmadhuguru":{"name":"Madhu Guru","handle":"@realmadhuguru","label":"Google"},"x:trq212":{"name":"Thariq","handle":"@trq212","label":"Claude Code"},"x:zarazhangrui":{"name":"Zara Zhang","handle":"@zarazhangrui","label":"Follow Builders"},"x:mattturck":{"name":"Matt Turck","handle":"@mattturck","label":"FirstMark"},"x:rauchg":{"name":"Guillermo Rauch","handle":"@rauchg","label":"Vercel CEO"},"podcast:Latent Space":{"name":"Latent Space","handle":"@LatentSpacePod","label":"Podcast"},"podcast:Training Data":{"name":"Training Data","handle":"@SequoiaCap","label":"Sequoia Podcast"},"podcast:No Priors":{"name":"No Priors","handle":"@NoPriorsPod","label":"Podcast"},"podcast:Unsupervised Learning":{"name":"Unsupervised Learning","handle":"@RedpointAI","label":"Redpoint Podcast"},"podcast:The MAD Podcast with Matt Turck":{"name":"The MAD Podcast","handle":"@mattturck","label":"FirstMark Podcast"},"podcast:AI & I by Every":{"name":"AI & I","handle":"@every","label":"Every Podcast"},"blog:Anthropic Engineering":{"name":"Anthropic Engineering","handle":"@AnthropicAI","label":"Engineering Blog"},"blog:Claude Blog":{"name":"Claude Blog","handle":"@AnthropicAI","label":"Product Blog"}},
+      avatars: {"x:petergyang":{"localPath":"assets/avatars/x-petergyang.jpg","fileUrl":"https://unavatar.io/twitter/petergyang?size=96","source":"unavatar.io"},"x:nikunj":{"localPath":"assets/avatars/x-nikunj.jpg","fileUrl":"https://unavatar.io/twitter/nikunj?size=96","source":"unavatar.io"},"x:levie":{"localPath":"assets/avatars/x-levie.jpg","fileUrl":"https://unavatar.io/twitter/levie?size=96","source":"unavatar.io"},"x:realmadhuguru":{"localPath":"assets/avatars/x-realmadhuguru.jpg","fileUrl":"https://unavatar.io/twitter/realmadhuguru?size=96","source":"unavatar.io"},"x:trq212":{"localPath":"assets/avatars/x-trq212.jpg","fileUrl":"https://unavatar.io/twitter/trq212?size=96","source":"unavatar.io"},"x:zarazhangrui":{"localPath":"assets/avatars/x-zarazhangrui.jpg","fileUrl":"https://unavatar.io/twitter/zarazhangrui?size=96","source":"unavatar.io"},"x:mattturck":{"localPath":"assets/avatars/x-mattturck.jpg","fileUrl":"https://unavatar.io/twitter/mattturck?size=96","source":"unavatar.io"},"x:rauchg":{"localPath":"assets/avatars/x-rauchg.jpg","fileUrl":"https://unavatar.io/twitter/rauchg?size=96","source":"unavatar.io"},"podcast:Latent Space":{"localPath":"assets/avatars/podcast-latent-space.jpg","fileUrl":"https://substackcdn.com/feed/podcast/1084089/ca7468da5614a246d2906ee8926f6de7.jpg","source":"rss-feed"},"podcast:Training Data":{"localPath":"assets/avatars/podcast-training-data.jpg","fileUrl":"https://megaphone.imgix.net/podcasts/8ca8a61c-08b4-11ef-97ab-9fe273d59030/image/4a16fd33b06708003827556209cd42b7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress","source":"rss-feed"},"podcast:No Priors":{"localPath":"assets/avatars/podcast-no-priors.jpg","fileUrl":"https://megaphone.imgix.net/podcasts/803e0244-9d0f-11ed-923a-4bb54bf77468/image/NO_PRIORS_ALBUM_and_PROFILE_PIC-01.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress","source":"rss-feed"},"podcast:Unsupervised Learning":{"localPath":"assets/avatars/podcast-unsupervised-learning.jpg","fileUrl":"https://image.simplecastcdn.com/images/ff0dbf2f-5711-4964-9172-807c39ca4824/be7895b2-4fcc-4f70-9864-584710596b1d/3000x3000/redpoint-unsupervised-learning-logo.jpg?aid=rss_feed","source":"rss-feed"},"podcast:The MAD Podcast with Matt Turck":{"localPath":"assets/avatars/podcast-the-mad-podcast-with-matt-turck.jpg","fileUrl":"https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40657026/40657026-1768486187830-f8f544fbc7c46.jpg","source":"rss-feed"},"podcast:AI & I by Every":{"localPath":"assets/avatars/podcast-ai-i-by-every.jpg","fileUrl":"https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/39682537/39682537-1775054001844-43161ae9155e9.jpg","source":"rss-feed"},"blog:Claude Blog":{"localPath":"assets/avatars/blog-claude-blog.jpg","fileUrl":"https://claude.com/favicon.ico","source":"favicon"},"blog:Anthropic Engineering":{"localPath":"assets/avatars/blog-anthropic-engineering.jpg","fileUrl":"https://www.anthropic.com/favicon.ico","source":"favicon"}}
+    };
+
+    function getTemplateAuthorSources() {
+      var sources = window.AI_BUILDERS_TEMPLATE_SOURCES || {};
+      return { identities: sources.identities || {}, avatars: sources.avatars || {} };
+    }
+
+    function getAuthorInitials(name) {
+      return (name || '').split(/\s+/).filter(Boolean).slice(0, 2).map(function(part) { return part[0]; }).join('').toUpperCase();
+    }
+
+    function hydrateTemplateCopy() {
+      var intro = document.querySelector('.intro');
+      if (intro) {
+        var kicker = intro.querySelector('.intro-kicker');
+        var copy = intro.querySelector('.intro-copy');
+        if (kicker) kicker.textContent = intro.dataset.kicker || '';
+        if (copy) copy.textContent = intro.dataset.text || '';
+      }
+      var footer = document.querySelector('footer');
+      if (footer) footer.textContent = footer.dataset.sourceNote || '';
+    }
+
+    function hydrateAuthorMeta() {
+      var sources = getTemplateAuthorSources();
+      document.querySelectorAll('.card').forEach(function(card) {
+        var authorKey = card.dataset.authorKey || '';
+        var identity = sources.identities[authorKey] || {};
+        var avatarEntry = sources.avatars[authorKey] || {};
+
+        var name = identity.name || card.dataset.authorName || '';
+        var rawHandle = identity.handle || card.dataset.authorHandle || '';
+        var handle = rawHandle && rawHandle.indexOf('@') === 0 ? rawHandle : (rawHandle ? '@' + rawHandle : '');
+        var tag = identity.label || card.dataset.authorTag || '';
+        var avatar = avatarEntry.fileUrl || avatarEntry.localPath || card.dataset.authorAvatar || '';
+
+        var nameNode = card.querySelector('.author-name');
+        var tagNode = card.querySelector('.author-tag');
+        var handleNode = card.querySelector('.author-handle');
+        var avatarNode = card.querySelector('.avatar');
+        var avatarImg = card.querySelector('.avatar img');
+        var avatarFallback = card.querySelector('.avatar-fallback');
+
+        if (nameNode) nameNode.textContent = name;
+        if (tagNode) tagNode.textContent = tag;
+        if (handleNode) handleNode.textContent = handle;
+        if (avatarImg) {
+          avatarImg.src = avatar;
+          avatarImg.alt = name ? name + ' avatar' : 'Author avatar';
+        }
+        if (avatarNode) avatarNode.classList.toggle('is-fallback', !avatar);
+        if (avatarFallback) avatarFallback.textContent = getAuthorInitials(name);
+      });
+    }
+
+    function updateEditionStrip() {
+      var publishDate = document.body.dataset.publishDate;
+      var editionName = document.body.dataset.editionName || 'DE+EN Ausgabe';
+      var editionStrip = document.getElementById('edition-strip-text');
+      if (!publishDate || !editionStrip) return;
+
+      var issueNumber = document.body.dataset.issueNumber || '';
+      if (!issueNumber) return;
+
+      var selectedCount = document.querySelectorAll('.card').length;
+      var authorCount = new Set([].slice.call(document.querySelectorAll('.author-handle')).map(function(node) { return node.textContent.trim(); }).filter(Boolean)).size;
+      var themeCount = document.querySelectorAll('.section-header').length;
+      var parts = ['Nr. ' + issueNumber, publishDate, editionName, selectedCount + ' Beitr\u00e4ge', authorCount + ' Autoren', themeCount + ' Themen'];
+      editionStrip.innerHTML = parts.map(function(part) { return '<span class="edition-item">' + part + '</span>'; }).join('<span class="edition-sep">|</span>');
+    }
+
+    document.querySelectorAll('.card').forEach(function(card) {
+      var tabs = card.querySelectorAll('.lang-tab');
+      var panels = card.querySelectorAll('.lang-panel');
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var lang = tab.dataset.lang;
+          if (tab.classList.contains('is-active')) return;
+
+          tabs.forEach(function(t) { t.classList.toggle('is-active', t === tab); });
+          panels.forEach(function(p) { p.classList.toggle('is-active', p.dataset.lang === lang); });
+        });
+      });
+    });
+
+    (function initTheme() {
+      var html = document.documentElement;
+      var toggle = document.querySelector('.theme-toggle');
+      var saved = localStorage.getItem('ai-builders-digest-theme');
+
+      function detectSystem() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function applyTheme(theme) {
+        html.setAttribute('data-theme', theme);
+        localStorage.setItem('ai-builders-digest-theme', theme);
+      }
+
+      html.setAttribute('data-theme', saved || detectSystem());
+
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var current = html.getAttribute('data-theme');
+          applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+      }
+    })();
+
+    document.querySelectorAll('.section-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var feed = toggle.parentElement;
+        var cards = feed.querySelectorAll('.card.is-low-priority');
+        var expanded = toggle.classList.toggle('is-expanded');
+        cards.forEach(function(card) { card.classList.toggle('is-visible', expanded); });
+      });
+    });
+
+    hydrateTemplateCopy();
+    hydrateAuthorMeta();
+    updateEditionStrip();
+  </script>
+</body>
+</html>

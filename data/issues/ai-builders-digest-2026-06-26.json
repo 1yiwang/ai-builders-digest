@@ -1,0 +1,225 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-26",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Cloudflare-CEO Matthew Prince sieht Bots als dominierende Traffic-Quelle, während OpenAI und Broadcom einen eigenen Inferenzchip vorstellen. Die Internet-Infrastruktur wird grundlegend für Agenten umgebaut. SpaceX kauft den Coding-Startup Cursor für 60 Milliarden Dollar – ein massives Signal für den Wert von KI-Codegenerierung. Engram und Surge AI verfolgen zwei gegensätzliche Visionen: persönliche Modelle mit Gedächtnis versus übermenschliche allgemeine KI."
+  },
+  "archive": {
+    "title": "Bots, Chips und 60 Milliarden Dollar",
+    "desc": "Das Internet wird von Bots dominiert, während OpenAI eigene Chips baut und SpaceX Cursor für 60 Milliarden Dollar kauft."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-26.",
+  "sections": [
+    {
+      "title": "Bots & Hardware: The New Machine Internet / Bots & Hardware: Das neue Internet der Maschinen",
+      "desc": "Cloudflare sieht Bots als dominierende Traffic-Quelle, während OpenAI mit Broadcom einen eigenen Chip für LLM-Inferenz baut.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=UN47z_opfmo",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Bots now outnumber human traffic on the internet, Cloudflare CEO Matthew Prince reveals; one AI agent visiting 5,000 sites for a single task signals the old web business model is breaking.",
+              "Cloudflare's AI Gateway processes 241 billion tokens daily, adding auditing and guardrails; edge inference on Workers is positioned as key to agent compute."
+            ],
+            "original": [
+              "Cloudflare now sees automated traffic overtaking human traffic online",
+              "Inside Cloudflare: 241 billion tokens and 'Cloudflare OS'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Bots übertreffen laut Cloudflare-CEO Matthew Prince den menschlichen Internetverkehr; ein einzelner KI-Agent besucht 5.000 Seiten für eine Aufgabe – das alte Web-Geschäftsmodell bricht.",
+              "Cloudflares AI Gateway verarbeitet täglich 241 Milliarden Token mit Audit- und Guardrail-Funktionen; Edge-Inferenz auf Workers gilt als Schlüssel für Agenten-Compute."
+            ],
+            "original": [
+              "Cloudflare sieht nun, dass automatisierter Traffic den menschlichen Traffic online überholt",
+              "Im Inneren von Cloudflare: 241 Milliarden Token und 'Cloudflare OS'"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog-rss:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI and Broadcom unveil Jalapeño, a custom LLM inference chip designed to improve performance, efficiency, and scale across AI systems.",
+              "The chip signals OpenAI's move into custom silicon to reduce reliance on external GPU suppliers for inference workloads."
+            ],
+            "original": [
+              "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
+            ],
+            "de": {
+              "rewrite": [
+                "OpenAI und Broadcom stellen Jalapeño vor, einen massgeschneiderten LLM-Inferenzchip für bessere Leistung, Effizienz und Skalierung in KI-Systemen.",
+                "Der Chip signalisiert OpenAIs Einstieg in eigene Silizium-Entwicklung, um die Abhängigkeit von externen GPU-Lieferanten für Inferenz zu reduzieren."
+              ],
+              "original": [
+                "OpenAI und Broadcom stellen Jalapeño vor, einen massgeschneiderten KI-Chip für LLM-Inferenz, um Leistung, Effizienz und Skalierung in KI-Systemen zu verbessern."
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Business: $60B Deal and Market Shifts / Business: 60-Milliarden-Dollar-Deal und Marktanteile",
+      "desc": "SpaceX kauft Cursor für 60 Milliarden Dollar; ChatGPTs Marktanteil fällt unter 50 Prozent.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI (#249)",
+          "sourceUrl": "https://lastweek.in.ai/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "SpaceX completes IPO at $1.75T valuation, then acquires AI coding startup Cursor for $60B, positioning xAI with Cursor's talent, data, and code generation product.",
+              "The deal signals that coding agents are the most valuable AI application right now, with Cursor's huge user base and data likely strategic assets."
+            ],
+            "original": [
+              "SpaceX completed an IPO at a roughly $1.75T valuation and then moved to acquire AI coding startup Cursor for $60B",
+              "positioning xAI with Cursor’s talent, data, and product"
+            ],
+            "de": {
+              "rewrite": [
+                "SpaceX schliesst Börsengang mit 1,75 Bio. Dollar Bewertung ab und kauft KI-Coding-Startup Cursor für 60 Mrd. Dollar, um xAI mit Cursors Talent, Daten und Produkt zu stärken.",
+                "Der Deal zeigt, dass Coding-Agenten aktuell die wertvollste KI-Anwendung sind; Cursors Nutzerbasis und Daten gelten als strategische Vermögenswerte."
+              ],
+              "original": [
+                "SpaceX hat einen Börsengang mit rund 1,75 Billionen Dollar Bewertung abgeschlossen und daraufhin den KI-Coding-Startup Cursor für 60 Milliarden Dollar übernommen",
+                "xAI mit Cursors Talent, Daten und Produkt positionieren"
+              ]
+            }
+          }
+        },
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI (#249)",
+          "sourceUrl": "https://lastweek.in.ai/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "ChatGPT's market share drops below 50% for the first time, as Gemini and Claude gain ground, according to TechCrunch via Last Week in AI.",
+              "The shift indicates intensifying competition in chatbot usage, eroding OpenAI's once-dominant market position."
+            ],
+            "original": [
+              "ChatGPT's market share slips below 50% for first time",
+              "Gemini and Claude gain"
+            ],
+            "de": {
+              "rewrite": [
+                "ChatGPTs Marktanteil fällt erstmals unter 50 Prozent, während Gemini und Claude aufholen, berichtet TechCrunch via Last Week in AI.",
+                "Die Verschiebung deutet auf verschärften Wettbewerb bei Chatbots hin und untergräbt OpenAIs einst dominierende Position."
+              ],
+              "original": [
+                "ChatGPTs Marktanteil rutscht zum ersten Mal unter 50 Prozent",
+                "Gemini und Claude holen auf"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Two Visions: Personal Models vs. Superhuman AI / Zwei Visionen: Persönliche Modelle vs. Superhumane KI",
+      "desc": "Engram will Unternehmenswissen in Model-Weights backen, während Surge AI-CEO Chen glaubt, dass Skalierungsgesetze KI bald übermenschlich machen.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data (Sequoia Capital)",
+          "sourceUrl": "https://www.youtube.com/watch?v=aiR7F4jqjXY",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dan Biderman and Jessy Lin (Engram) bake company knowledge directly into model weights, achieving frontier-level performance with up to 100x fewer tokens than prompt-based approaches.",
+              "Working with Microsoft, Notion, and Harvey, Engram envisions every user having a privately trained, continually learning model—the 'ChatGPT moment for memory'."
+            ],
+            "original": [
+              "bake a team's knowledge directly into the model's weights, so it knows your company the way an employee of several years does",
+              "matching or beating frontier models while consuming up to 100x fewer tokens"
+            ],
+            "de": {
+              "rewrite": [
+                "Dan Biderman und Jessy Lin (Engram) backen Unternehmenswissen direkt in Modellgewichte ein und erreichen Frontier-Leistung mit bis zu 100x weniger Token als Prompt-basierte Ansätze.",
+                "Mit Partnern wie Microsoft, Notion und Harvey verfolgt Engram eine Vision, in der jeder Nutzer ein privat trainiertes, ständig lernendes Modell besitzt – den 'ChatGPT-Moment für Gedächtnis'."
+              ],
+              "original": [
+                "das Wissen eines Teams direkt in die Modellgewichte einbacken, sodass es dein Unternehmen so kennt wie ein Mitarbeiter nach mehreren Jahren",
+                "Frontier-Modelle erreichen oder übertreffen und dabei bis zu 100x weniger Token verbrauchen"
+              ]
+            }
+          }
+        },
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://www.youtube.com/watch?v=omX6wrLuX08",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Fields medalist Timothy Gowers expected AI would prove a theorem, signaling 'all over for mathematicians very soon'—but it only found a counterexample, buying a year or two.",
+              "Surge AI CEO Edwin Chen, whose company trains frontier models, argues scaling laws hold and nothing humans can do AI won't do better; benchmarks like Riemann-bench measure progress."
+            ],
+            "original": [
+              "it was 'all over for mathematicians very soon'",
+              "the model had found a counterexample, it bought him another year or two"
+            ],
+            "de": {
+              "rewrite": [
+                "Fields-Medaillist Timothy Gowers erwartete, dass KI einen Satz beweisen würde – ein Zeichen, dass es 'bald vorbei für Mathematiker' sei; doch die KI fand nur ein Gegenbeispiel und kaufte ein bis zwei Jahre Zeit.",
+                "Surge-AI-CEO Edwin Chen, dessen Firma Frontier-Modelle trainiert, argumentiert, dass Skalierungsgesetze halten und nichts, was Menschen tun, von KI nicht besser gemacht werden kann; Benchmarks wie Riemann-bench messen den Fortschritt."
+              ],
+              "original": [
+                "es sei 'bald vorbei für Mathematiker'",
+                "das Modell fand nur ein Gegenbeispiel, das kaufte ihm noch ein oder zwei Jahre"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Trust: Insurance for AI Agents / Vertrauen: Versicherung für KI-Agenten",
+      "desc": "Das AIUC-1-Framework bringt Standards und Audit auf agentische KI, um das Vertrauen der Unternehmen zu gewinnen.",
+      "cards": [
+        {
+          "authorKey": "podcast:Practical AI",
+          "sourceName": "Practical AI",
+          "sourceUrl": "https://share.transistor.fm/s/e039d1ca",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Emil Lassen from AIUC introduces the AIUC-1 framework: standards, certification, audit, and insurance layered on AI agents to accelerate enterprise adoption.",
+              "Red teaming based on standards is pitched as key to building trust before the 'AI hailstorm' of agentic systems hits enterprises."
+            ],
+            "original": [
+              "How do we build trust in AI agents before the AI hailstorm arrives?",
+              "the enterprise flywheel of standards, certification, audit, and insurance is being applied to AI agents"
+            ],
+            "de": {
+              "rewrite": [
+                "Emil Lassen von AIUC präsentiert das AIUC-1-Framework: Standards, Zertifizierung, Audit und Versicherung für KI-Agenten, um die Einführung in Unternehmen zu beschleunigen.",
+                "Red Teaming auf Basis von Standards soll Vertrauen schaffen, bevor der 'KI-Hagelsturm' agentischer Systeme die Unternehmen trifft."
+              ],
+              "original": [
+                "Wie bauen wir Vertrauen in KI-Agenten auf, bevor der KI-Hagelsturm kommt?",
+                "Das Unternehmens-Schwungrad aus Standards, Zertifizierung, Audit und Versicherung wird auf KI-Agenten angewandt"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-24T09:46:18.569Z",
+  "generatedAt": "2026-06-26T09:44:31.932Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Build real agentic apps using CUGA: two dozen working examples on a lightweight harness",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
-      "publishedAt": "2026-06-23T12:51:55.000Z",
+      "title": "Run a vLLM Server on HF Jobs in One Command",
+      "url": "https://huggingface.co/blog/vllm-jobs",
+      "publishedAt": "2026-06-26T00:00:00.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -15,9 +15,9 @@
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Shipping huggingface_hub every week with AI, open tools, and a human in the loop",
-      "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "title": "Which tokens does a hybrid model predict better?",
+      "url": "https://huggingface.co/blog/allenai/hybrid-token-prediction",
+      "publishedAt": "2026-06-25T16:11:42.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -25,9 +25,9 @@
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
-      "url": "https://huggingface.co/blog/cross-origin-storage",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
+      "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+      "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+      "publishedAt": "2026-06-24T16:00:13.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -35,45 +35,25 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Helping build shared standards for advanced AI",
-      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-      "publishedAt": "2026-06-23T13:00:00.000Z",
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "publishedAt": "2026-06-25T02:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation."
+      "content": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-      "url": "https://openai.com/index/gpt-5-immunology-mystery",
-      "publishedAt": "2026-06-23T17:00:00.000Z",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "publishedAt": "2026-06-24T06:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "How Omio is building the future of conversational travel",
-      "url": "https://openai.com/index/omio",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "ParallelKernelBench: Frontier LLMs can't write fast multi-GPU kernels (yet)",
-      "url": "https://www.together.ai/blog/parallelkernelbench",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "ParallelKernelBench tests whether LLMs can write fast multi-GPU CUDA kernels across 87 real workloads. The best model solves under a third, but a few generated kernels beat any public implementation."
+      "content": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
     }
   ],
   "stats": {
-    "blogPosts": 7
+    "blogPosts": 5
   }
 }

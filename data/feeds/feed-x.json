@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T09:46:27.770Z",
+  "generatedAt": "2026-06-26T09:44:40.785Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2069603490524254473",
-          "text": "What is design if what’s accessing your product is just an agent looking for an api or CLI?",
-          "createdAt": "2026-06-24T02:08:18.000Z",
+          "id": "2070353698140958818",
+          "text": "I'm planning to go to Japan (again!) in December and this time I asked Codex to use the browser to navigate Google Flights and individual hotel websites, find and save all the prices, give me the direct booking links on the dates that I want + save it all in a doc. I should just tell it to book everything next.",
+          "createdAt": "2026-06-26T03:49:21.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2069551302246592799",
-          "text": "wtf the Google Workspace CLI is super useful it should be celebrated?",
-          "createdAt": "2026-06-23T22:40:55.000Z",
+          "id": "2070352201944625405",
+          "text": "lol this is pretty insane but I'm not surprised Identity verification 100% coming to model access",
+          "createdAt": "2026-06-26T03:43:24.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,26 +29,53 @@
           }
         },
         {
-          "id": "2069530765352907180",
-          "text": "Human-agent interaction is basically trending towards managing a highly capable employee. 1 on 1s and performance reviews for Claude next? 😅",
-          "createdAt": "2026-06-23T21:19:19.000Z",
+          "id": "2070318195190464538",
+          "text": "Feels pretty weird that I can only directly access Codex on mobile through this random iPhone shortcut I made. (yes I know I can use chatgpt but that takes too many taps)",
+          "createdAt": "2026-06-26T01:28:17.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        }
-      ]
-    },
-    {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
-      "tweets": [
+        },
         {
-          "id": "2069455097193697393",
-          "text": "I’ve had the chance to see this ecosystem from the different sides - enterprises, agent startups, data providers, labs. The core tension here is that the business models, moats, value exchange, execution playbooks for all players are being figured out in real time. This debate around token pricing is really a debate over where value will accrue - models, application layer, distribution or other layers. Expect a lot of strong opinions from the different sides to shape the narrative in their favor.",
-          "createdAt": "2026-06-23T16:18:38.000Z",
+          "id": "2070288522796470380",
+          "text": "😭😭😭 Who gets to have it early?",
+          "createdAt": "2026-06-25T23:30:22.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2070225291293905207",
+          "text": "Why even visit your email inbox anymore.",
+          "createdAt": "2026-06-25T19:19:07.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2070210031149310328",
+          "text": "I am excited to attend @aiDotEngineer on Tuesday for the first time and the scale of this conference that @swyx and team put together is simply massive.",
+          "createdAt": "2026-06-25T18:18:28.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2070190902216470918",
+          "text": "How do I reach an actual human at Google AdSense - is there a customer support team? They keep directing me to user forums 😭",
+          "createdAt": "2026-06-25T17:02:28.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -63,9 +90,31 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2069481767652794768",
-          "text": "Expanding the world cup from 32 to 48 teams was such a genius idea. Creates some Cinderalla stories (Curacao, Cabo Verde, DR Congo etc), and enables the stars (Messi, Ronaldo, MBappe, Haaland etc) to shine early. Loving it all so far.",
-          "createdAt": "2026-06-23T18:04:37.000Z",
+          "id": "2070349010007646700",
+          "text": "Was truly a transformational decision to hire Russell Crowe as USMNT coach",
+          "createdAt": "2026-06-26T03:30:43.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2070269902322110786",
+          "text": "How can you not love the World Cup - MetLife loses its mind as Ecuador pulls off the upset #ECUGER",
+          "createdAt": "2026-06-25T22:16:23.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2070201850129711254",
+          "text": "Bots have already won the Internet: my conversation with @eastdakota, CEO of @Cloudflare about agents, edge AI, and the new business model of the Internet (with some wild stories interspersed) 00:00 - Intro 01:27 - The moment bots passed humans online 04:05 - \"Agent,\" \"bot,\" \"crawler\" -- what they really mean 05:28 - Why your AI agent visits 5,000 sites to do one thing 06:27 - The internet's business model is breaking 06:52 - What happens to \"brands\" when machines do the buying 08:11 - What Cloudflare actually does, explained simply 10:29 - Hackers, human rights groups & an accidental product-market fit 13:37 - Building a global network (and the Telecom Pakistan cricket story) 21:10 - One hacker, from Turkish escort sites to Eurovision to JP Morgan 30:54 - Fundraising, VCs & an unlikely founding team 37:06 - How Cloudflare became an AI infrastructure company 40:24 - Cloudflare Workers and why the edge wins for inference 44:30 - AI Gateway: auditing, guardrails & runaway costs 47:05 - Why agents need a new kind of compute 52:13 - A \"Log4j every week\": security in the agentic era 56:03 - Inside Cloudflare: 241 billion tokens and \"Cloudflare OS\" 01:05:02 - Builders, sellers and \"measurers\" 01:06:30 - The decision Matthew thinks every company will face 01:11:09 - What to do if AI is coming for your job 01:13:56 - Content Independence Day & the new economics of the web 01:18:27 - Pay-per-crawl, micropayments & out-scaling Visa 01:20:20 - A better internet: Spotify, local news & \"holes in the cheese\"",
+          "createdAt": "2026-06-25T17:45:58.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -77,8 +126,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
-    "totalTweets": 5
+    "xBuilders": 2,
+    "totalTweets": 10
   },
   "_mode": "Nitter RSS (free)"
 }
