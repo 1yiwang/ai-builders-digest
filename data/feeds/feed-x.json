@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T09:44:40.785Z",
+  "generatedAt": "2026-06-29T11:18:43.489Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2070353698140958818",
-          "text": "I'm planning to go to Japan (again!) in December and this time I asked Codex to use the browser to navigate Google Flights and individual hotel websites, find and save all the prices, give me the direct booking links on the dates that I want + save it all in a doc. I should just tell it to book everything next.",
-          "createdAt": "2026-06-26T03:49:21.000Z",
+          "id": "2071353107242774863",
+          "text": "I’ll be honest with you all I still don’t know what Agentforce is",
+          "createdAt": "2026-06-28T22:00:39.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2070352201944625405",
-          "text": "lol this is pretty insane but I'm not surprised Identity verification 100% coming to model access",
-          "createdAt": "2026-06-26T03:43:24.000Z",
+          "id": "2071288846046884051",
+          "text": "Taste 😅",
+          "createdAt": "2026-06-28T17:45:18.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2070318195190464538",
-          "text": "Feels pretty weird that I can only directly access Codex on mobile through this random iPhone shortcut I made. (yes I know I can use chatgpt but that takes too many taps)",
-          "createdAt": "2026-06-26T01:28:17.000Z",
+          "id": "2071274181073969564",
+          "text": "Take a wild guess if this is a real journalist or not",
+          "createdAt": "2026-06-28T16:47:01.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2070288522796470380",
-          "text": "😭😭😭 Who gets to have it early?",
-          "createdAt": "2026-06-25T23:30:22.000Z",
+          "id": "2071246789697757583",
+          "text": "Who's going to AI Engineer on Tuesday?",
+          "createdAt": "2026-06-28T14:58:11.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -51,70 +51,9 @@
           }
         },
         {
-          "id": "2070225291293905207",
-          "text": "Why even visit your email inbox anymore.",
-          "createdAt": "2026-06-25T19:19:07.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2070210031149310328",
-          "text": "I am excited to attend @aiDotEngineer on Tuesday for the first time and the scale of this conference that @swyx and team put together is simply massive.",
-          "createdAt": "2026-06-25T18:18:28.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2070190902216470918",
-          "text": "How do I reach an actual human at Google AdSense - is there a customer support team? They keep directing me to user forums 😭",
-          "createdAt": "2026-06-25T17:02:28.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
-      "tweets": [
-        {
-          "id": "2070349010007646700",
-          "text": "Was truly a transformational decision to hire Russell Crowe as USMNT coach",
-          "createdAt": "2026-06-26T03:30:43.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2070269902322110786",
-          "text": "How can you not love the World Cup - MetLife loses its mind as Ecuador pulls off the upset #ECUGER",
-          "createdAt": "2026-06-25T22:16:23.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2070201850129711254",
-          "text": "Bots have already won the Internet: my conversation with @eastdakota, CEO of @Cloudflare about agents, edge AI, and the new business model of the Internet (with some wild stories interspersed) 00:00 - Intro 01:27 - The moment bots passed humans online 04:05 - \"Agent,\" \"bot,\" \"crawler\" -- what they really mean 05:28 - Why your AI agent visits 5,000 sites to do one thing 06:27 - The internet's business model is breaking 06:52 - What happens to \"brands\" when machines do the buying 08:11 - What Cloudflare actually does, explained simply 10:29 - Hackers, human rights groups & an accidental product-market fit 13:37 - Building a global network (and the Telecom Pakistan cricket story) 21:10 - One hacker, from Turkish escort sites to Eurovision to JP Morgan 30:54 - Fundraising, VCs & an unlikely founding team 37:06 - How Cloudflare became an AI infrastructure company 40:24 - Cloudflare Workers and why the edge wins for inference 44:30 - AI Gateway: auditing, guardrails & runaway costs 47:05 - Why agents need a new kind of compute 52:13 - A \"Log4j every week\": security in the agentic era 56:03 - Inside Cloudflare: 241 billion tokens and \"Cloudflare OS\" 01:05:02 - Builders, sellers and \"measurers\" 01:06:30 - The decision Matthew thinks every company will face 01:11:09 - What to do if AI is coming for your job 01:13:56 - Content Independence Day & the new economics of the web 01:18:27 - Pay-per-crawl, micropayments & out-scaling Visa 01:20:20 - A better internet: Spotify, local news & \"holes in the cheese\"",
-          "createdAt": "2026-06-25T17:45:58.000Z",
+          "id": "2071235961208578393",
+          "text": "I'm trying to wrap my head around these two ideas: 1. Cloud agents are coming we should use VPS vs. our laptops 2. Everyone should buy hardware to run local models Aren't they conflicting a bit?",
+          "createdAt": "2026-06-28T14:15:09.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -126,8 +65,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 2,
-    "totalTweets": 10
+    "xBuilders": 1,
+    "totalTweets": 5
   },
   "_mode": "Nitter RSS (free)"
 }

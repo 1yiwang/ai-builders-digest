@@ -1,9 +1,5 @@
 {
   "seenVideos": {
-    "c8ac5d90-6517-11f1-83d7-d3b49f07aa8f": 1781260004690,
-    "cfdceef6-642a-11f1-9b24-634dad16ced0": 1781260004727,
-    "bb5cd6c0-a739-49e2-96eb-f03d5c26db38": 1781260005267,
-    "9e7d7537-3ac2-4775-aa7e-e93ad4536b95": 1781260007704,
     "dbb5e4ba-4a75-4107-b2e2-3d2b7c90dd36": 1781526944176,
     "bb577036-6728-11f1-b57d-dffdf0434ea1": 1781526945199,
     "e2c76d2e-68ea-11f1-b835-0fa4c8d306ac": 1781694682732,
@@ -24,14 +20,11 @@
     "6ae01ce4-60f3-48ba-9f63-c352a10dc8d2": 1782467050487,
     "gid://art19-episode-locator/V0/j5glX3rgFN-V0XdCnKlZQ9MEEN66DyBb6oi98lQo9Ps": 1782467051195,
     "gid://art19-episode-locator/V0/FXlQyDfn88vh57Cf4hegyyO4RFbR1kyh26Sn4o0rOSY": 1782467052046,
-    "37f81653-c822-4beb-a29e-da0193b2e3a7": 1782467052318
+    "37f81653-c822-4beb-a29e-da0193b2e3a7": 1782467052318,
+    "gid://art19-episode-locator/V0/ZbBRNZ6iQaLS_ZU9NmmaeED2-uTvrmavw-xVf6gYklw": 1782731909300,
+    "fcb85f02-7229-11f1-bad4-fb7d8fc444f4": 1782731909363
   },
   "seenArticles": {
-    "https://huggingface.co/blog/torch-mlp-fusion": 1781260007809,
-    "https://openai.com/index/preply": 1781260008225,
-    "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem": 1781260008225,
-    "https://openai.com/index/using-codex-to-simulate-black-holes": 1781260008225,
-    "https://www.together.ai/blog/iso-27001-2022-certification": 1781260008324,
     "https://huggingface.co/blog/allenai/olmo-eval": 1781526945959,
     "https://openai.com/index/introducing-openai-partner-network": 1781526946163,
     "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware": 1781694685180,
@@ -62,7 +55,10 @@
     "https://huggingface.co/blog/allenai/hybrid-token-prediction": 1782467052517,
     "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel": 1782467052517,
     "https://openai.com/index/how-agents-are-transforming-work": 1782467053145,
-    "https://openai.com/index/openai-broadcom-jalapeno-inference-chip": 1782467053145
+    "https://openai.com/index/openai-broadcom-jalapeno-inference-chip": 1782467053145,
+    "https://openai.com/index/mapping-ai-jobs-transition-eu": 1782731911181,
+    "https://openai.com/index/hp-frontier-partnership": 1782731911181,
+    "https://claude.com/blog/claude-for-foundation-models": 1782731915805
   },
   "xUserIds": {}
 }

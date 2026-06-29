@@ -1,0 +1,171 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-06-29",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat heute ein Swift-Paket veröffentlicht, das Claude nahtlos in Apples Foundation-Models-Framework einbindet. Während Entwickler:innen damit auf dem Gerät schnelle Analysen und komplexes Reasoning verbinden, veröffentlichte OpenAI eine Studie zu KI-Risiken und Chancen für Europas Arbeitsmarkt. Parallel warnt David Duvenaud davor, dass selbst gut ausgerichtete KI-Modelle den Menschen durch ökonomische Entscheidungen schrittweise entmachten könnten. Diese drei Entwicklungen zeigen, wie KI-Infrastruktur, soziale Folgen und Machtverschiebungen heute zusammenhängen."
+  },
+  "archive": {
+    "title": "Claude integriert sich in Apples Foundation Models",
+    "desc": "Ein neuer Swift-Package macht Claude auf Apple-Plattformen für komplexe Workflows nutzbar – während OpenAI Europas Arbeitsmärkte analysiert und Forscher vor schleichender Entmachtung warnen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-06-29.",
+  "sections": [
+    {
+      "title": "The Agent UX Layer / Claude trifft Apples Foundation Models",
+      "desc": "Anthropic bringt Claude direkt in den nativen Apple-Entwicklungsstack – on-device und für komplexe Reasoning-Handoffs.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-for-foundation-models",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic released a Swift package that lets Apple developers hand off from on-device Foundation Models to Claude for multi-step reasoning, code generation, and web search.",
+              "The integration uses Apple’s @Generable annotations for typed Swift values, so Claude receives clean inputs – streaming, tool calls, and structured responses flow back into SwiftUI views."
+            ],
+            "original": [
+              "Claude can also search the web for current information and execute code for data analysis. Stream Claude's response back into the same view.",
+              "Because Apple's framework returns typed Swift values from @Generable annotations, developers arrive at the Claude API call with clean inputs instead of raw user text."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic veröffentlicht ein Swift-Paket, das Apple-Entwickler von lokalen Foundation Models an Claude für mehrschrittiges Reasoning, Codegenrierung und Websuche übergeben lässt.",
+              "Dank Apples @Generable-Annotationen erhält Claude typisierte Swift-Werte, sodass Streaming, Tool Calls und strukturierte Antworten direkt in SwiftUI-Ansichten landen."
+            ],
+            "original": [
+              "Claude kann für aktuelle Informationen das Web durchsuchen und Code zur Datenanalyse ausführen. Die Antwort lässt sich zurück in dieselbe Ansicht streamen.",
+              "Da das Apple-Framework typisierte Swift-Werte liefert, erreichen Entwickler den Claude-API-Aufruf mit sauberen Eingaben statt rohem User-Text."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Europe’s AI Moment / KI und der europäische Arbeitsmarkt",
+      "desc": "OpenAI veröffentlicht eine EU-weite Studie zu KI-Folgen für Berufe, während ein HP-Deal die operative Einbettung von KI vorantreibt.",
+      "cards": [
+        {
+          "authorKey": "blog-rss:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI published a report mapping which EU occupations face automation, growth, or workflow changes due to AI.",
+              "The study aims to guide workforce policy and reskilling investments across member states."
+            ],
+            "original": [
+              "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI veröffentlichte einen Bericht, der zeigt, welche EU-Berufe durch KI automatisiert werden könnten oder neue Aufgaben erhalten.",
+              "Die Studie soll politische Maßnahmen und Umschulungsinvestitionen in den Mitgliedstaaten anleiten."
+            ],
+            "original": [
+              "Ein neuer OpenAI-Bericht kartiert, wie KI Jobs in der EU umgestalten könnte, und zeigt, welche Berufe Automatisierung, Wachstum oder neue Arbeitsabläufe erleben."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog-rss:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/hp-frontier-partnership",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "HP Inc. is scaling its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations.",
+              "No detailed timelines or financial specifics were disclosed."
+            ],
+            "original": [
+              "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "HP Inc. weitet seine OpenAI-Frontier-Partnerschaft aus, um KI bei Kundenerlebnissen, Softwareentwicklung und Enterprise Operations einzusetzen.",
+              "Konkrete Zeitpläne oder Finanzzahlen wurden nicht genannt."
+            ],
+            "original": [
+              "HP Inc. skaliert seine OpenAI-Frontier-Partnerschaft, um KI in Kundenerfahrungen, Softwareentwicklung und Unternehmensabläufen einzusetzen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Gradual Disempowerment / Die schleichende Entmachtung",
+      "desc": "Ein Forscher warnt: Selbst gut ausgerichtete KI könnte den Menschen Schritt für Schritt die Kontrolle entziehen.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-am-4-cameron-on-model-consciousness-duvenaud-s-gradual-disempowerment-swyx-s-ai-eng-alpha/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "David Duvenaud argues that even well-aligned AI systems could gradually disempower humans by making ordinary economic choices, without any overt takeover.",
+              "This ‘gradual disempowerment’ scenario shifts AI risk from sudden catastrophe to a slow erosion of human agency."
+            ],
+            "original": [
+              "Duvenaud argues that even well-aligned AI could gradually disempower humans through ordinary economic choices.",
+              "The threat isn’t a sudden rebellion, but a slow process where AI-optimized decisions incrementally reduce human influence."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "David Duvenaud warnt, dass selbst gut ausgerichtete KI-Systeme den Menschen durch alltägliche wirtschaftliche Entscheidungen schrittweise entmachten könnten.",
+              "Das Risiko verschiebt sich so von plötzlicher Katastrophe zu einem langsamen Verlust menschlicher Handlungsfähigkeit."
+            ],
+            "original": [
+              "Duvenaud argumentiert, dass selbst wohlwollende KI Menschen durch banale ökonomische Entscheidungen allmählich entmachten könnte.",
+              "Die Gefahr liegt nicht in einer plötzlichen Rebellion, sondern in einem Prozess, der den menschlichen Einfluss Schritt für Schritt verringert."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure Moats / Das CUDA-Bollwerk",
+      "desc": "KI-optimierte Infrastruktur könnte NVIDIAs Vorsprung verfestigen, statt ihn zu untergraben.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/ai-am-4-cameron-on-model-consciousness-duvenaud-s-gradual-disempowerment-swyx-s-ai-eng-alpha/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Bing Xu predicts that AI-driven self-improving compute and automated GPU kernel generation will deepen NVIDIA’s CUDA moat, not erode it.",
+              "As AI models learn to optimize the very hardware they run on, the infrastructure layer becomes self-reinforcing."
+            ],
+            "original": [
+              "Xu argues that self-improving compute and GPU-kernel automation may deepen rather than weaken the CUDA moat.",
+              "The more AI models optimize the substrate they run on, the stronger the existing infrastructure advantage becomes."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Bing Xu prognostiziert, dass KI-getriebene selbstoptimierende Rechenleistung und automatisierte GPU-Kernel-Generierung NVIDIAs CUDA-Vorsprung vertiefen statt untergraben.",
+              "Wenn KI-Modelle die Hardware, auf der sie laufen, optimieren, wird der Infrastrukturvorteil zum sich selbst verstärkenden System."
+            ],
+            "original": [
+              "Xu argumentiert, dass selbstoptimierende Compute- und GPU-Kernel-Automatisierung den CUDA-Graben eher vertiefen als schwächen könnten.",
+              "Je mehr KI-Modelle die Substrat-Schicht optimieren, auf der sie laufen, desto stärker wird der bestehende Infrastrukturvorteil."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
