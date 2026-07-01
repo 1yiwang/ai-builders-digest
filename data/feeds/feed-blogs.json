@@ -1,39 +1,79 @@
 {
-  "generatedAt": "2026-06-29T11:18:36.305Z",
+  "generatedAt": "2026-07-01T10:05:06.773Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Mapping Europe’s AI Workforce Opportunity",
-      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-      "publishedAt": "2026-06-29T07:00:00.000Z",
+      "name": "Hugging Face",
+      "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench",
+      "publishedAt": "2026-06-30T18:32:50.000Z",
       "author": "",
       "description": "",
-      "content": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes."
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Why Specialization Is Inevitable",
+      "url": "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable",
+      "publishedAt": "2026-06-30T14:39:11.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
+      "url": "https://huggingface.co/blog/eee-community-evals",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
-      "url": "https://openai.com/index/hp-frontier-partnership",
-      "publishedAt": "2026-06-28T17:00:00.000Z",
+      "title": "How ChatGPT adoption has expanded",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "HP Inc. scales its OpenAI Frontier partnership to deploy AI across customer experiences, software development, and enterprise operations."
+      "content": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages."
     },
     {
-      "source": "blog",
-      "name": "Claude Blog",
-      "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
-      "url": "https://claude.com/blog/claude-for-foundation-models",
-      "publishedAt": "Jun 08, 2026",
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Today we&#x27;re releasing Foundation Models framework support for Claude through a new Swift package that lets Apple developers use Apple&#x27;s Foundation Models framework to call Claude for more complex workflows. Apple’s Foundation Models framework gives developers access to tap into models natively from Swift. It is very easy to use and can return typed Swift values through guided generation in as few as three lines of code. Developers can use this to tap into Apple’s on-device models for fast, local tasks like summarization or extraction. Developers can now use Apple’s Foundation Models framework to hand off to Claude when a request calls for multi-step reasoning, code generation, and more. Claude can also search the web for current information and execute code for data analysis. Stream Claude&#x27;s response back into the same view. Because Apple&#x27;s framework returns typed Swift values from @Generable annotations, developers arrive at the Claude API call with clean inputs instead of raw user text. What this unlocks The Foundation Models framework already powers a range of intelligent on-device features — journaling apps that surface personalized prompts, document apps that summarize contracts, learning apps that explain a concept at a student&#x27;s level. Adding Claude extends each of those patterns. A journaling app can generate daily prompts on-device, then ask Claude to find threads across months of entries. A study app can define a term on-device, then hand off to Claude when the student follows up with \"why does this matter for everything else we&#x27;ve covered?\" It&#x27;s one experience for the user, backed by the right model for each step. Getting started Claude support with the Foundation Models framework will be available tomorrow and works through Apple&#x27;s Foundation Models framework on iOS 27, iPadOS 27, macOS 27, and visionOS 27, and watch OS 27. Add it to your project, sign in with an Anthropic API key, and pass typed outputs from Apple&#x27;s on-device pass into a Claude request — the package handles streaming, tool calls, and structured responses back into your SwiftUI view."
+      "content": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug."
+    },
+    {
+      "source": "blog-rss",
+      "name": "Together AI",
+      "title": "Together AI at ICML 2026: frontier research across the full stack",
+      "url": "https://www.together.ai/blog/icml-2026",
+      "publishedAt": "2026-06-30T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "Nine papers at ICML 2026 across the full stack. The research that becomes the Together platform. Find us at booth B714 in Seoul."
     }
   ],
   "stats": {
-    "blogPosts": 3
+    "blogPosts": 7
   }
 }

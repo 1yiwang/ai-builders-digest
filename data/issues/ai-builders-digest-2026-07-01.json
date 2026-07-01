@@ -1,0 +1,197 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-01",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Dylan Patel von SemiAnalysis zeigte heute, wie Software-Hardware-Co-Design KI um Faktor 100x beschleunigt. Anthropic kontert mit Claude Sonnet 5 und 63 % agentischem Coding für $2/M Token. Thomas von Tschammer (Neural Concept) katapultiert die Automobilentwicklung von 50 auf 1.500 Iterationen pro Tag. Selbst ein 18 Jahre alter Bug fällt durch KI-gestützte Core-Dump-Analyse – Fortschritt entsteht nicht nur in Modellgröße, sondern in systemischer Effizienz."
+  },
+  "archive": {
+    "title": "Co-Design, Sonnet 5 und 1.500 Designs",
+    "desc": "Dylan Patel entschlüsselt den 100x-Vorteil von Hardware-Software-Co-Design, während Anthropic Sonnet 5 launcht und Neural Concept JLRs Designprozess beschleunigt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-01.",
+  "sections": [
+    {
+      "title": "Die wahre 100x: Hardware-Software-Co-Design und Inference-Ökonomie / The Real 100x: Hardware-Software Co-Design & Inference Economics",
+      "desc": "Dylan Patel explains why co-design outperforms raw compute and how inference costs are plummeting.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dylan Patel (SemiAnalysis) argues software-hardware co-design turns 2x gains here and there into 100x: optimizing models, kernels, and silicon together.",
+              "DeepSeek's experts were shaped for Nvidia Hopper; TPUs struggle. OpenAI's sparser models and Anthropic's denser ones pull toward different hardware—the CUDA moat was never just about CUDA."
+            ],
+            "original": [
+              "The biggest gains in AI don't come from faster chips, they come from software-hardware co-design. Optimizing the model, the kernels, and the silicon together turns a 2x here and a 2x there into 100x.",
+              "DeepSeek's experts were shaped for Nvidia's Hopper (and why TPUs struggle to run it), why OpenAI's sparser models and Anthropic's denser ones pull them toward different hardware, and why the so-called CUDA moat was never really about CUDA."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dylan Patel (SemiAnalysis): Software-Hardware-Co-Design macht aus 2x hier und 2x dort 100x – indem Modelle, Kernel und Silizium gemeinsam optimiert werden.",
+              "DeepSeeks Architektur wurde auf Nvidias Hopper getrimmt, TPUs kämpfen damit. OpenAIs spärlichere und Anthropics dichtere Modelle verlangen unterschiedliche Hardware – der CUDA‑Graben war nie nur CUDA."
+            ],
+            "original": [
+              "Die größten Sprünge in der KI kommen nicht von schnelleren Chips, sondern von Software-Hardware-Co-Design. Optimiert man Modell, Kernel und Silizium gemeinsam, wird aus 2x hier und 2x dort 100x.",
+              "DeepSeeks Experten wurden auf Nvidias Hopper geformt (und TPUs haben Mühe damit), OpenAIs spärlichere und Anthropics dichtere Modelle ziehen sie zu unterschiedlicher Hardware, und der angebliche CUDA‑Graben war nie wirklich CUDA."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "InferenceX, a living benchmark, runs the latest models on $50M+ donated hardware daily, tracking a ~60× annual drop in cost per unit of quality.",
+              "Patel predicts inference will be a bigger market than oil; the compute crunch persists because model value expands faster than compute grows."
+            ],
+            "original": [
+              "InferenceX, his living benchmark that runs the latest models on over $50M of donated hardware daily, tracking a roughly 60x annual drop in cost per unit of quality.",
+              "He makes the case that inference will be a bigger market than oil, that the compute crunch persists because models expand the value of useful work faster than compute grows."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "InferenceX, ein lebendiger Benchmark, testet täglich neueste Modelle auf gespendeter Hardware im Wert von über $50 Mio. und verfolgt einen jährlichen Kostensenkungstrend von ~60× pro Qualitätseinheit.",
+              "Patel prognostiziert: Inference wird ein größerer Markt als Öl. Der Compute-Engpass bleibt, weil Modelle den Nutzen schneller steigern als die Rechenleistung wächst."
+            ],
+            "original": [
+              "InferenceX, sein lebendiger Benchmark, führt täglich neue Modelle auf über 50 Mio. $ gespendeter Hardware aus und verfolgt einen Kostenrückgang um etwa das 60‑fache pro Jahr pro Qualitätseinheit.",
+              "Er legt dar, dass Inference ein größerer Markt als Öl sein wird, der Compute‑Engpass aber bestehen bleibt, weil Modelle den Wert nutzbarer Arbeit schneller ausweiten als Compute wächst."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Anthropic bringt Claude Sonnet 5: 63 % agentic Coding / Anthropic Ships Claude Sonnet 5: 63% Agentic Coding",
+      "desc": "A new model benchmark and competitive landscape shift.",
+      "cards": [
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://art19.com/episode/V0/SzadjqWR6Fsbrwt3YGQDDasmnSAw79AyvxfXSumwakg",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Sonnet 5 achieves 63% agentic coding at $2/M tokens, a strong new baseline from Anthropic.",
+              "Google ships Nano Banana 2, intensifying the race for cost-efficient coding models."
+            ],
+            "original": [
+              "Claude Sonnet 5 hits 63% agentic coding at $2/M tokens; Google ships Nano Banana 2."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Sonnet 5 erreicht 63 % agentisches Coding für $2/M Token – eine neue Benchmark von Anthropic.",
+              "Google liefert Nano Banana 2 aus und verschärft den Wettlauf um kostengünstige Coding-Modelle."
+            ],
+            "original": [
+              "Claude Sonnet 5 erreicht 63 % agentisches Coding bei $2/M Token; Google liefert Nano Banana 2."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "KI-native Physik-Entwicklung: 1.500 Designs pro Tag / AI-Native Physical Engineering: 1,500 Designs a Day",
+      "desc": "Neural Concept accelerates JLR's aerodynamic design from 50 to 1,500 iterations daily.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/1000-designs-a-day-neural-concept-s-thomas-von-tschammer-on-ai-native-engineering/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Thomas von Tschammer (Neural Concept) shows physics-aware AI evaluates 3D designs in minutes, moving Jaguar Land Rover from ~50 to 1,500 aerodynamic evaluations per day.",
+              "Battery cool‑plate suppliers cut development cycles while improving performance; AI‑led engineering compresses timelines and leaves slower legacy OEMs exposed."
+            ],
+            "original": [
+              "Neural Concept’s models learn from simulation and test data to evaluate 3D designs in minutes, helping Jaguar Land Rover move from about 50 external‑aerodynamics evaluations per day to 1,500.",
+              "Companies that make engineering iterations AI‑led can compress development cycles, while legacy OEMs risk falling further behind faster‑moving Chinese and digital‑native hardware competitors."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Thomas von Tschammer (Neural Concept) demonstriert, wie physikbewusste KI 3D‑Designs in Minuten bewertet und Jaguar Land Rover von 50 auf 1.500 Aerodynamik‑Iterationen pro Tag bringt.",
+              "Batteriekühlplatten‑Zulieferer verkürzen Entwicklungszyklen und steigern die Leistung; KI‑geführte Entwicklung komprimiert Zeitpläne und setzt träge OEMs unter Druck."
+            ],
+            "original": [
+              "Die Modelle von Neural Concept lernen aus Simulations‑ und Testdaten, um 3D‑Designs in Minuten zu bewerten, und helfen Jaguar Land Rover, von etwa 50 auf 1.500 externe Aerodynamik‑Bewertungen pro Tag zu kommen.",
+              "Unternehmen, die Ingenieursiterationen KI‑geführt gestalten, können Entwicklungszyklen verkürzen, während etablierte OEMs riskieren, weiter hinter schnelleren chinesischen und digital‑nativen Hardware‑Wettbewerbern zurückzufallen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Infrastruktur-Debugging: 18 Jahre alter Bug gefunden / Infrastructure Debugging: 18‑Year‑Old Bug Found",
+      "desc": "OpenAI engineers use core dump analysis to uncover a decades‑old software bug.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI engineers used large‑scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and an 18‑year‑old software bug."
+            ],
+            "original": [
+              "OpenAI engineers used large‑scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long‑standing software bug."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI‑Ingenieure nutzten großangelegte Core‑Dump‑Analysen, um seltene Infrastruktur‑Abstürze zu debuggen, und fanden einen Hardwarefehler sowie einen 18 Jahre alten Software‑Bug."
+            ],
+            "original": [
+              "OpenAI‑Ingenieure setzten großflächige Core‑Dump‑Analysen ein, um seltene Infrastruktur‑Abstürze zu untersuchen, und entdeckten sowohl einen Hardwarefehler als auch einen lange bestehenden Software‑Bug."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Forschungsvorstoß: Together AI auf der ICML 2026 / Research Push: Together AI at ICML 2026",
+      "desc": "The company brings 9 papers to the conference, spanning the AI stack.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/icml-2026",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Together AI presents 9 papers at ICML 2026, covering the full stack – the research that feeds directly into their platform."
+            ],
+            "original": [
+              "Nine papers at ICML 2026 across the full stack. The research that becomes the Together platform."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI präsentiert 9 Paper auf der ICML 2026, die den gesamten Stack abdecken – Forschung, die direkt in die Plattform einfließt."
+            ],
+            "original": [
+              "Neun Paper auf der ICML 2026 über den gesamten Stack hinweg. Die Forschung, die zur Together‑Plattform wird."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

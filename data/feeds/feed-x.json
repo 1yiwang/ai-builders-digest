@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T11:18:43.489Z",
+  "generatedAt": "2026-07-01T10:05:15.479Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2071353107242774863",
-          "text": "I’ll be honest with you all I still don’t know what Agentforce is",
-          "createdAt": "2026-06-28T22:00:39.000Z",
+          "id": "2072165346476511583",
+          "text": "What does this mean btw? After I hit 50% weekly usage Fable is no longer available?",
+          "createdAt": "2026-07-01T03:48:12.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2071288846046884051",
-          "text": "Taste 😅",
-          "createdAt": "2026-06-28T17:45:18.000Z",
+          "id": "2072111311396438410",
+          "text": "Setting an alarm at midnight to get Fable to fix all my projects 😅",
+          "createdAt": "2026-07-01T00:13:29.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2071274181073969564",
-          "text": "Take a wild guess if this is a real journalist or not",
-          "createdAt": "2026-06-28T16:47:01.000Z",
+          "id": "2072098874081296855",
+          "text": "This whole game to make a \"(model) is INSANE\" video whenever the latest model drops - I'm not sure I want to play it tbh.",
+          "createdAt": "2026-06-30T23:24:03.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2071246789697757583",
-          "text": "Who's going to AI Engineer on Tuesday?",
-          "createdAt": "2026-06-28T14:58:11.000Z",
+          "id": "2072051258882666620",
+          "text": "I think @charlieholtz is right - the term \"software factory\" implies assembly line style tasks. That can't be the future of work with AI. We should be collaborating with agents like a conductor working with an orchestra or a film director working with a crew or a chef leading a kitchen. Work needs to be creative.",
+          "createdAt": "2026-06-30T20:14:51.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -51,9 +51,54 @@
           }
         },
         {
-          "id": "2071235961208578393",
-          "text": "I'm trying to wrap my head around these two ideas: 1. Cloud agents are coming we should use VPS vs. our laptops 2. Everyone should buy hardware to run local models Aren't they conflicting a bit?",
-          "createdAt": "2026-06-28T14:15:09.000Z",
+          "id": "2072004576442802487",
+          "text": "GLM's new harness - should it be just called Z Codex",
+          "createdAt": "2026-06-30T17:09:21.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2071985410809700863",
+          "text": "Been using @riversidedotfm for 2 years now to produce my podcast and will continue to be a loyal customer. Great to see them expand to end to end content production. You can get 1 month free with \"peteryang\" at checkout: https://creators.riverside.com/PeterYang",
+          "createdAt": "2026-06-30T15:53:12.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
+        {
+          "id": "2071970221477470694",
+          "text": "The biggest challenge for trad PMs trying to adapt to AI native building is a lack of magical thinking. A decade of frameworks, “agile” and metric obsession has led to constraint-first, incremental thinking. I used to combat this on my teams by asking them to imagine we had tech from 100 yrs in the future, the experiences it would enable and working backward from that. the ideas would always be far more creative. the funny thing is, that technology from the future is here. go build that magical thing!",
+          "createdAt": "2026-06-30T14:52:50.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@mattturck",
+      "name": "Matt Turck",
+      "tweets": [
+        {
+          "id": "2072088791393669144",
+          "text": "LE DICTATEUR #fraswe",
+          "createdAt": "2026-06-30T22:44:00.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -65,8 +110,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 1,
-    "totalTweets": 5
+    "xBuilders": 3,
+    "totalTweets": 8
   },
   "_mode": "Nitter RSS (free)"
 }
