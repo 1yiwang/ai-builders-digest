@@ -1,0 +1,217 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-03",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "NVIDIA treibt mit Nemotron 3 Ultra seine Open-Source-Strategie voran, während Together AI mit 800 Millionen Dollar frischem Kapital die Open-Source-Bewegung befeuert. Valar Atomics zeigt, dass atomgetriebene Blackwell-Chips keine Zukunftsmusik mehr sind, und Anthropic plant mit Samsung einen eigenen KI-Chip. Diese Entwicklungen machen klar: Die nächste Phase der KI wird nicht nur von Modellen, sondern von echter Infrastruktur bestimmt."
+  },
+  "archive": {
+    "title": "NVIDIA verschenkt Modelle, Together kassiert $800M",
+    "desc": "Ein Doppelschub für Open-Source-KI: NVIDIA erklärte seine Modellstrategie und Together AI sammelte 800 Millionen Dollar ein."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-03.",
+  "sections": [
+    {
+      "title": "Open Models Everywhere / Open Source überall",
+      "desc": "From NVIDIA’s strategic open‑source push to a record $800M funding round, open AI models are gaining momentum.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=Oojrfdl42LI",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Bryan Catanzaro (VP Applied Deep Learning Research, NVIDIA) says NVIDIA builds and gives away models like Nemotron 3 Ultra to boost GPU demand and strengthen the open ecosystem.",
+              "Nemotron 3 Ultra is trained in 4‑bit (NVFP4) with a hybrid Mamba‑Transformer architecture, mixture‑of‑experts, and multi‑token prediction that predicts 5 tokens at once.",
+              "Catanzaro argues open AI is safer than closed and that NVIDIA’s research culture runs on “the mission is the boss.”"
+            ],
+            "original": [
+              "“The mission is the boss — that’s how we decide who gets the GPUs.”",
+              "“Open AI is safer than closed.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Bryan Catanzaro (VP Applied Deep Learning Research, NVIDIA) erklärt, warum NVIDIA Modelle wie Nemotron 3 Ultra verschenkt: um die GPU‑Nachfrage anzukurbeln und das offene Ökosystem zu stärken.",
+              "Nemotron 3 Ultra wird mit 4‑Bit‑Training (NVFP4), einer hybriden Mamba‑Transformer‑Architektur, Mixture‑of‑Experts und Multi‑Token‑Prediction (5 Tokens auf einmal) betrieben.",
+              "Catanzaro hält offene KI für sicherer als geschlossene und beschreibt die Forschungskultur als: „Die Mission ist der Boss.“"
+            ],
+            "original": [
+              "„Die Mission ist der Boss — so entscheiden wir, wer die GPUs bekommt.“",
+              "„Offene KI ist sicherer als geschlossene.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/announcing-our-series-c",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI raised $800M in Series C funding to accelerate the shift to open‑source AI, arguing the economics of closed models don’t scale.",
+              "The funding signals that investors are betting on open‑weight alternatives as enterprises seek cost‑effective, customizable models."
+            ],
+            "original": [
+              "“We raised $800M to accelerate the shift to open‑source AI. Here's why the economics of closed models don't scale, and what we're building next.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI sammelte 800 Millionen Dollar in einer Series‑C‑Finanzierung, um die Wende zu Open‑Source‑KI zu beschleunigen – denn geschlossene Modelle rechnen sich wirtschaftlich nicht.",
+              "Die Finanzierung zeigt, dass Investoren auf offene Modelle setzen, während Unternehmen nach kosteneffizienten, anpassbaren Alternativen suchen."
+            ],
+            "original": [
+              "„Wir haben $800M eingesammelt, um den Wandel zu Open‑Source‑KI zu beschleunigen. Hier ist, warum die Ökonomie geschlossener Modelle nicht skaliert – und was wir als Nächstes bauen.“"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI‑Infrastruktur: Kernreaktoren und Custom‑Chips",
+      "desc": "Nuclear energy meets Blackwell, while Anthropic and Samsung plan their own chip – hardware becomes the new battleground.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=5Xvbq_zvOQ4",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Isaiah Taylor (Valar Atomics) connected a live nuclear reactor directly to an NVIDIA Blackwell chip, creating the world’s first nuclear‑powered website.",
+              "Valar exploited a DOE pathway revived by a Trump‑era executive order, bypassing decades of regulatory gridlock to build and run advanced reactors.",
+              "Taylor calls nuclear a hardware execution problem, not a science problem: “We’re not simulating, we’re splitting atoms.”"
+            ],
+            "original": [
+              "“Valar Atomics is busy splitting atoms.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Isaiah Taylor (Valar Atomics) schloss einen funktionierenden Kernreaktor direkt an einen NVIDIA‑Blackwell‑Chip an und betrieb damit die erste atomgetriebene Website.",
+              "Valar nutzte einen DOE‑Pfad, den eine Trump‑Executive‑Order wiederbelebte, um jahrzehntelange Regulierungshürden zu umgehen und moderne Reaktoren zu bauen.",
+              "Taylor sieht Kernenergie als Hardware‑Ausführungsproblem: „Wir simulieren nicht, wir spalten Atome.“"
+            ],
+            "original": [
+              "„Valar Atomics ist damit beschäftigt, Atome zu spalten.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Machine Learning Street Talk",
+          "sourceName": "Machine Learning Street Talk",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic and Samsung are reportedly working on a custom AI chip to reduce dependence on NVIDIA hardware for running large models.",
+              "The partnership could accelerate a trend toward vertically integrated AI stacks with proprietary silicon."
+            ],
+            "original": [
+              "“Anthropic and Samsung’s reported plans to develop a custom AI chip could reduce reliance on Nvidia hardware.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic und Samsung planen angeblich einen eigenen KI‑Chip, um die Abhängigkeit von NVIDIA‑Hardware zu verringern.",
+              "Die Kooperation könnte den Trend zu vertikal integrierten KI‑Stacks mit eigener Siliziumbasis beschleunigen."
+            ],
+            "original": [
+              "„Die Berichte zu Anthropic und Samsungs Plänen für einen Custom‑AI‑Chip könnten die Abhängigkeit von NVIDIA‑Hardware senken.“"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Diffusion Revolution in Drug Design / Diffusionsrevolution im Wirkstoffdesign",
+      "desc": "Genesis Molecular AI is applying the most innovative diffusion techniques to 3D structure prediction, opening agentic workflows for pharma.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/the-coolest-diffusion-research-isnt",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Sergey Edunov (ex‑Meta, Llama 2/3 lead) says the most innovative diffusion research today isn’t in LLMs but in 3D structure prediction for molecules.",
+              "Genesis’ PEARL model routinely meets accuracy thresholds needed for real‑world drug design, enabling new agentic workflows that iterate molecules in silico."
+            ],
+            "original": [
+              "“Actually, some of the most innovative diffusion research that’s happening in our field is happening in 3D structure prediction right now.” — Evan Feinberg"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sergey Edunov (ex‑Meta, Llama‑2/3‑Lead) findet, dass die innovativste Diffusionsforschung heute nicht bei LLMs, sondern in der 3D‑Strukturvorhersage für Moleküle stattfindet.",
+              "Das PEARL‑Modell von Genesis erreicht routinemäßig Genauigkeiten, die für echtes Wirkstoffdesign nötig sind, und ermöglicht agentische Workflows für virtuelles Molekül‑Screening."
+            ],
+            "original": [
+              "„Tatsächlich findet einige der innovativsten Diffusionsforschung in unserem Feld gerade in der 3D‑Strukturvorhersage statt.“ — Evan Feinberg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Workflows: Codex, Consulting & Real‑Time Voice",
+      "desc": "From vibe‑coding with Codex to a real‑time voice AI powered by Cerebras, AI is reshaping how knowledge workers build and interact.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-AI-Workflows-Behind-Everys-Consulting-Team-e3lh60h",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Natalia Quintero (Every consulting) went from AI‑skeptic to building a custom CRM and a medical‑care app with Codex, shifting from “knowledge work as sculpting” to “knowledge work as gardening.”",
+              "She still uses SaaS like Asana and Attio, arguing that even with AI agents, human management remains essential."
+            ],
+            "original": [
+              "“The shift from knowledge work as sculpting to knowledge work as gardening.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Natalia Quintero (Every Consulting) entwickelte sich von einer KI‑Skeptikerin zur Builderin und erstellte mit Codex ein eigenes CRM sowie eine App für die Pflege ihres Vaters – Wissensarbeit als „Gärtnern“ statt „Bildhauen“.",
+              "Sie setzt weiterhin auf SaaS wie Asana und Attio und betont, dass KI‑Agenten menschliche Führung brauchen."
+            ],
+            "original": [
+              "„Der Wandel von Wissensarbeit als Formen zur Arbeit als Gärtnern.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face Blog",
+          "sourceUrl": "https://huggingface.co/blog/cerebras-gemma4-voice-ai",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Hugging Face and Cerebras optimized Google’s Gemma 4 on Cerebras’ wafer‑scale hardware for real‑time voice AI, promising low‑latency speech interaction."
+            ],
+            "original": [
+              "“Hugging Face and Cerebras bring Gemma 4 to real‑time voice AI.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hugging Face und Cerebras haben Googles Gemma 4 auf Cerebras’ Wafer‑Scale‑Hardware für Echtzeit‑Sprach‑KI optimiert und versprechen geringe Latenz für Sprachassistenten."
+            ],
+            "original": [
+              "„Hugging Face und Cerebras bringen Gemma 4 in die Echtzeit‑Sprach‑KI.“"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

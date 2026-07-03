@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "e2c76d2e-68ea-11f1-b835-0fa4c8d306ac": 1781694682732,
-    "gid://art19-episode-locator/V0/EAWM5ta3AM6uO4_Wn3l9HKwi3s1xAdTCgI6Gckyen-Q": 1781694683824,
-    "gid://art19-episode-locator/V0/bsuF2Z01P7XUY2OXjWfcduPeUZzz1QxygqgZUqRQJuc": 1781694684533,
     "substack:post:202359797": 1781866347429,
     "a66948ce-6ab7-11f1-8901-5f20f0cddb6d": 1781866348159,
     "dcd52486-f53c-4374-9265-02f38a80f5f7": 1781866348651,
@@ -23,17 +20,15 @@
     "fcb85f02-7229-11f1-bad4-fb7d8fc444f4": 1782731909363,
     "fb9d2daa-719d-11f1-9e13-9f44da352371": 1782900292273,
     "gid://art19-episode-locator/V0/SzadjqWR6Fsbrwt3YGQDDasmnSAw79AyvxfXSumwakg": 1782900293449,
-    "fa32f1cc-7529-11f1-afda-df0320fd1c68": 1782900293535
+    "fa32f1cc-7529-11f1-afda-df0320fd1c68": 1782900293535,
+    "substack:post:204393300": 1783071069848,
+    "ee5028a8-75be-11f1-bab0-67711adf1682": 1783071070652,
+    "8cc3ae0d-bd6a-4b43-a0a4-6ee35f9b802e": 1783071071167,
+    "3a41b0c9-9f64-41b5-b88e-6b3dfce609b5": 1783071071459,
+    "gid://art19-episode-locator/V0/PbodRlo4-7Ptf8FSkY-1fSPL9o8Ivn7WXA34sIFV0UQ": 1783071072421,
+    "9df756ce-a670-48bb-91a2-12140d03ce58": 1783071073691
   },
   "seenArticles": {
-    "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware": 1781694685180,
-    "https://huggingface.co/blog/zai-org/glm-52-blog": 1781694685180,
-    "https://openai.com/index/deployment-simulation": 1781694685449,
-    "https://www.anthropic.com/engineering/how-we-contain-claude": 1781694695914,
-    "https://www.anthropic.com/engineering/april-23-postmortem": 1781694699217,
-    "https://www.anthropic.com/engineering/managed-agents": 1781694705003,
-    "https://claude.com/blog/claude-managed-agents-updates": 1781694705712,
-    "https://claude.com/blog/new-in-claude-managed-agents": 1781694706275,
     "https://huggingface.co/blog/ServiceNow/mosaicleaks": 1781866351721,
     "https://huggingface.co/blog/peft-beyond-lora": 1781866351722,
     "https://huggingface.co/blog/is-it-agentic-enough": 1781866351722,
@@ -64,7 +59,9 @@
     "https://openai.com/index/how-chatgpt-adoption-has-expanded": 1782900295422,
     "https://openai.com/index/introducing-genebench-pro": 1782900295422,
     "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug": 1782900295422,
-    "https://www.together.ai/blog/icml-2026": 1782900295814
+    "https://www.together.ai/blog/icml-2026": 1782900295814,
+    "https://huggingface.co/blog/cerebras-gemma4-voice-ai": 1783071073886,
+    "https://www.together.ai/blog/announcing-our-series-c": 1783071074257
   },
   "xUserIds": {}
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T10:05:15.479Z",
+  "generatedAt": "2026-07-03T09:31:29.681Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2072165346476511583",
-          "text": "What does this mean btw? After I hit 50% weekly usage Fable is no longer available?",
-          "createdAt": "2026-07-01T03:48:12.000Z",
+          "id": "2072842766053499353",
+          "text": "How I’m getting the most out of Fable before July 7: 1. Prep context with cheaper models 2. Plan with Fable, execute with another model 3. Use lower effort, like Medium, and babysit what Fable is doing 📌 Watch my full tutorial for 5 Fable-worthy use cases to try: https://youtu.be/5CBnWGP5vIs",
+          "createdAt": "2026-07-03T00:40:01.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2072111311396438410",
-          "text": "Setting an alarm at midnight to get Fable to fix all my projects 😅",
-          "createdAt": "2026-07-01T00:13:29.000Z",
+          "id": "2072746659713606016",
+          "text": "I havea bunch of YouTube adsense revenue trapped in my account b/c Google won't confirm my tax info...and there's no way to reach a real human to talk to. Anyone have any connections who work at YouTube or Adsense?",
+          "createdAt": "2026-07-02T18:18:08.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2072098874081296855",
-          "text": "This whole game to make a \"(model) is INSANE\" video whenever the latest model drops - I'm not sure I want to play it tbh.",
-          "createdAt": "2026-06-30T23:24:03.000Z",
+          "id": "2072737599362621866",
+          "text": "I am interviewing @NousResearch Hermes co-founder @karan4d tomorrow, what topics would you like to see us cover? I already covered setup, integrations, and basic cron jobs in a previous tutorial - so what else would y'all like to hear about? This chart is a vertical line lol",
+          "createdAt": "2026-07-02T17:42:07.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,48 +40,9 @@
           }
         },
         {
-          "id": "2072051258882666620",
-          "text": "I think @charlieholtz is right - the term \"software factory\" implies assembly line style tasks. That can't be the future of work with AI. We should be collaborating with agents like a conductor working with an orchestra or a film director working with a crew or a chef leading a kitchen. Work needs to be creative.",
-          "createdAt": "2026-06-30T20:14:51.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2072004576442802487",
-          "text": "GLM's new harness - should it be just called Z Codex",
-          "createdAt": "2026-06-30T17:09:21.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2071985410809700863",
-          "text": "Been using @riversidedotfm for 2 years now to produce my podcast and will continue to be a loyal customer. Great to see them expand to end to end content production. You can get 1 month free with \"peteryang\" at checkout: https://creators.riverside.com/PeterYang",
-          "createdAt": "2026-06-30T15:53:12.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
-      "tweets": [
-        {
-          "id": "2071970221477470694",
-          "text": "The biggest challenge for trad PMs trying to adapt to AI native building is a lack of magical thinking. A decade of frameworks, “agile” and metric obsession has led to constraint-first, incremental thinking. I used to combat this on my teams by asking them to imagine we had tech from 100 yrs in the future, the experiences it would enable and working backward from that. the ideas would always be far more creative. the funny thing is, that technology from the future is here. go build that magical thing!",
-          "createdAt": "2026-06-30T14:52:50.000Z",
+          "id": "2072720933446701170",
+          "text": "Intelligence is now metered 🥲 Have to use this very wisely",
+          "createdAt": "2026-07-02T16:35:54.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -96,9 +57,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2072088791393669144",
-          "text": "LE DICTATEUR #fraswe",
-          "createdAt": "2026-06-30T22:44:00.000Z",
+          "id": "2072723410975629364",
+          "text": "Pinned: Inside Nemotron and NVIDIA's AI lab: my conversation with Bryan Catanzaro (@ctnzr). @nvidia is a chip company. So why does it put hundreds of researchers on building AI models - and then give them away for free? We go deep into the Nemotron models, what it takes to build a top AI lab, and the future of frontier AI. 01:33 - Is open source AI catching the frontier? 05:29 - Do closed labs blocking distillation slow open source down? 07:42 - Is the US falling behind China? 10:30 - Why companies actually choose open models 12:39 - A \"crazy\" 2008 bet: machine learning on GPUs 15:33 - Working with Andrew Ng and Dario Amodei at Baidu 17:41 - Coming back to NVIDIA: DLSS and the birth of Megatron 21:55 - The real reason NVIDIA builds its own models 24:28 - Is Moore's Law really dead? 33:37 - The Nemotron family: Nano, Super, Ultra 35:09 - Built for agents: why NVIDIA bets on speed 36:02 - How you train a 550B model in 4 bits 39:25 - Hybrid Mamba-Transformer, explained simply 42:31 - Mixture of experts, and why NVIDIA built NVL72 around it 47:26 - Why a 1-million-token context window matters 49:26 - Multi-token prediction: how the model predicts 5 tokens at once 52:47 - Multi-teacher distillation: teaching one model from many 58:01 - Where reinforcement learning goes next 01:00:16 - Inside NVIDIA's research org: \"the mission is the boss\" 01:04:03 - How NVIDIA decides who gets the GPUs 01:10:53 - Why NVIDIA still feels entrepreneurial after 33 years 01:12:58 - Why Bryan doesn't believe in the singularity 01:17:50 - The AI backlash 01:19:18 - The controversial case: open AI is safer than closed",
+          "createdAt": "2026-07-02T16:45:45.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -110,8 +71,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
-    "totalTweets": 8
+    "xBuilders": 2,
+    "totalTweets": 5
   },
   "_mode": "Nitter RSS (free)"
 }
