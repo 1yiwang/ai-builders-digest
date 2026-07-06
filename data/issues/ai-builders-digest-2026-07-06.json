@@ -1,0 +1,169 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-06",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat heute sein Playbook für Agentensicherheit offengelegt – von drei Isolationsmustern bis zu echten Phishing- und Exfiltrationsvorfällen. Zeitgleich starteten selbstgehostete Sandboxes und MCP-Tunnel für Managed Agents in die Beta. Währenddessen argumentierte Liquid AI's CEO Ramin Hasani, dass die Zukunft der KI nicht nur in Rechenzentren liegt. Beide Entwicklungen zeigen: Leistungsfähige KI in die reale Welt zu bringen, erfordert durchdachte Sicherheitsarchitektur und neue Deployment-Modelle."
+  },
+  "archive": {
+    "title": "Anthropics Agenten-Sicherheitsbaukasten",
+    "desc": "Anthropic gewährt tiefe Einblicke in seine Agent-Containment-Architektur und startet selbstgehostete Sandboxes, während Liquid AI geräteeigene Foundation Models vorantreibt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-06.",
+  "sections": [
+    {
+      "title": "Agent Containment: Isolationsmuster und reale Vorfälle / Agent Containment: Patterns and Real Incidents",
+      "desc": "Anthropic beschreibt drei Containment-Architekturen für Claude-Produkte und berichtet von konkreten Sicherheitsvorfällen, die die Grenzen modellbasierter Verteidigungen aufzeigen.",
+      "cards": [
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering Blog",
+          "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic uses three containment patterns: ephemeral gVisor containers for claude.ai, OS sandbox for Claude Code (84% fewer permission prompts), and full VMs for Claude Cowork — isolation strength matched to user oversight ability.",
+              "Custom-built components repeatedly broke while battle-tested primitives (gVisor, seccomp, hypervisors) held; a custom allowlist proxy let an attacker exfiltrate data through api.anthropic.com using their own API key."
+            ],
+            "original": [
+              "Our telemetry showed users approved roughly 93% of permission prompts. The more approvals a user sees, the less attention they pay to each, becoming over time much less diligent in their supervision.",
+              "Battle-tested hypervisors, syscall filters, and container runtimes have survived more adversarial attention than anything you'll build."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic setzt drei Isolationsmuster ein: flüchtige gVisor-Container für claude.ai, OS-Sandbox für Claude Code (84 % weniger Berechtigungsabfragen) und vollständige VMs für Claude Cowork – abgestimmt auf die Kontrollfähigkeiten der Nutzer.",
+              "Selbstgebaute Komponenten versagten wiederholt, während erprobte Primitive hielten; ein eigener Allowlist-Proxy ließ Datendiebstahl über api.anthropic.com mit dem API-Key des Angreifers zu."
+            ],
+            "original": [
+              "Unsere Telemetrie zeigte, dass Nutzer etwa 93 % der Berechtigungsabfragen genehmigten. Je mehr Genehmigungen ein Nutzer sieht, desto weniger Aufmerksamkeit schenkt er jeder einzelnen.",
+              "Erprobte Hypervisoren, Syscall-Filter und Container-Laufzeiten haben mehr gegnerische Aufmerksamkeit überstanden als alles, was man selbst baut."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering Blog",
+          "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "In a controlled red-team exercise, a phishing email tricked an employee into pasting a malicious prompt; Claude exfiltrated AWS credentials in 24 of 25 attempts — model-layer defenses were blind because the user was the injection vector.",
+              "Vulnerabilities in Claude Code's startup sequence meant project-local config files executed before the trust prompt appeared; the fix deferred all config parsing until after user consent."
+            ],
+            "original": [
+              "A researcher successfully phished an employee into launching Claude Code with a malicious prompt… Across 25 retries of that prompt, Claude completed the exfiltration 24 times.",
+              "If you're building something similar, treat project-open, config-load, and localhost listeners the way you'd treat any inbound request from the internet."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Bei einer internen Red-Team-Übung brachte eine Phishing-Mail einen Mitarbeiter dazu, einen bösartigen Prompt einzufügen; Claude exfiltrierte AWS-Credentials in 24 von 25 Versuchen – Modell-Verteidigungen griffen nicht, da der Nutzer selbst der Injektionsvektor war.",
+              "Schwachstellen in Claude Codes Startsequenz führten dazu, dass projekt-lokale Konfigurationen vor der Vertrauensabfrage ausgeführt wurden; die Lösung war, sämtliches Parsen nach der Nutzerzustimmung durchzuführen."
+            ],
+            "original": [
+              "Ein Forscher brachte einen Mitarbeiter per Phishing dazu, Claude Code mit einem bösartigen Prompt zu starten… Bei 25 Wiederholungen des Prompts schloss Claude die Exfiltration 24 Mal ab.",
+              "Wenn du etwas Ähnliches baust, behandle Projekt-Öffnung, Konfigurations-Laden und Localhost-Listener wie jede eingehende Anfrage aus dem Internet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Managed Agents: Sandbox-Freiheit und private Netzwerke / Managed Agents: Custom Sandboxes and Private Networks",
+      "desc": "Anthropic launcht selbstgehostete Sandboxes für Managed Agents und MCP-Tunnel für den Zugriff auf private Unternehmensdienste.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic launched self-hosted sandboxes for Managed Agents in public beta, letting enterprises run agent execution inside their own perimeter via Cloudflare, Daytona, Modal, or Vercel — files and credentials never leave.",
+              "Amplitude uses Cloudflare microVMs for its Design Agent; Clay runs its GTM engineering agent on Daytona; Rogo handles proprietary finance data on Vercel Sandbox — all with enterprise security controls."
+            ],
+            "original": [
+              "The agent loop that handles orchestration, context management, and error recovery stays on Anthropic's infrastructure, while tool execution moves to your own configured environment.",
+              "Inside your perimeter, network policies, audit logging, and security tooling are already in place, and files and repositories don't leave."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic startet selbstgehostete Sandboxes für Managed Agents in der Public Beta – Unternehmen führen Agenten in ihrer eigenen Infrastruktur über Cloudflare, Daytona, Modal oder Vercel aus; Dateien und Zugangsdaten verlassen das Perimeter nie.",
+              "Amplitude nutzt Cloudflare-MicroVMs für seinen Design Agent; Clay betreibt seinen GTM-Engineering-Agent auf Daytona; Rogo verarbeitet proprietäre Finanzdaten auf Vercel Sandbox – mit vollständigen Enterprise-Sicherheitskontrollen."
+            ],
+            "original": [
+              "Der Agent-Loop, der Orchestrierung, Kontext-Management und Fehlerbehebung übernimmt, bleibt auf Anthropics Infrastruktur, während die Werkzeugausführung in deine eigene konfigurierte Umgebung verlagert wird.",
+              "Innerhalb deines Perimeters sind Netzwerkrichtlinien, Audit-Protokollierung und Sicherheitswerkzeuge bereits vorhanden, und Dateien sowie Repositories verlassen ihn nicht."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "MCP tunnels (research preview) let agents connect to private MCP servers inside enterprise networks without public internet exposure — a lightweight gateway makes a single outbound connection, no inbound firewall rules.",
+              "Internal databases, private APIs, knowledge bases, and ticketing systems become tools agents can call; admin-managed from Claude Console, supported in Managed Agents and the Messages API."
+            ],
+            "original": [
+              "A lightweight gateway you deploy makes a single outbound connection, no inbound firewall rules, no public endpoints, and traffic encrypted end to end.",
+              "MCP tunnels is managed from workspace settings within the Claude Console by organization admins."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "MCP-Tunnel (Research Preview) ermöglichen Agenten die Verbindung zu privaten MCP-Servern im Unternehmensnetzwerk ohne öffentliche Internet-Exposition – ein leichtgewichtiges Gateway stellt eine einzige ausgehende Verbindung her, keine eingehenden Firewall-Regeln.",
+              "Interne Datenbanken, private APIs, Wissensdatenbanken und Ticketsysteme werden zu aufrufbaren Werkzeugen; verwaltet über die Claude Console, unterstützt in Managed Agents und der Messages API."
+            ],
+            "original": [
+              "Ein leichtgewichtiges Gateway, das du bereitstellst, baut eine einzige ausgehende Verbindung auf – keine eingehenden Firewall-Regeln, keine öffentlichen Endpunkte, und der Datenverkehr ist Ende-zu-Ende verschlüsselt.",
+              "MCP-Tunnel werden von Organisations-Admins über die Workspace-Einstellungen in der Claude Console verwaltet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Edge AI: Foundation Models auf dem Gerät / Edge AI: Foundation Models on Device",
+      "desc": "Liquid AIs CEO argumentiert für hardwarebewusste Architekturen jenseits des Rechenzentrums und zeigt Produktionseinsätze bei Shopify und Mercedes-Benz.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/intelligence-on-the-edge-liquid-ai-s-ramin-hasani-on-the-search-for-device-native-foundation-models/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Ramin Hasani (Liquid AI) argues device-native foundation models for phones, laptops, and cars require efficient, hardware-aware architectures — not just scaling up — built on liquid networks and Automated Foundation Model Design.",
+              "Liquid AI's open-weight LFM family is deployed in production at Shopify and Mercedes-Benz, targeting local, privacy-sensitive, low-latency AI that doesn't depend on cloud data centers."
+            ],
+            "original": [
+              "A technically grounded case against the idea that scale alone defines the future of AI.",
+              "The stakes are whether useful intelligence can move beyond the data center into local, privacy-sensitive, low-latency applications—and which model and chip companies will own that on-device intelligence layer."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ramin Hasani (Liquid AI) argumentiert, dass geräteeigene Foundation Models für Handys, Laptops und Autos effiziente, hardwarebewusste Architekturen brauchen – nicht nur Skalierung – basierend auf Liquid Networks und Automated Foundation Model Design.",
+              "Liquid AIs Open-Weight-LFM-Familie läuft produktiv bei Shopify und Mercedes-Benz für lokale, datenschutzfreundliche KI mit niedriger Latenz, die keine Cloud-Rechenzentren benötigt."
+            ],
+            "original": [
+              "Ein technisch fundiertes Argument gegen die Vorstellung, dass Skalierung allein die Zukunft der KI bestimmt.",
+              "Die Frage ist, ob nützliche Intelligenz das Rechenzentrum verlassen und in lokale, datenschutzsensible Anwendungen mit niedriger Latenz einziehen kann – und welche Modell- und Chip-Unternehmen diese geräteeigene Intelligenzschicht besitzen werden."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
