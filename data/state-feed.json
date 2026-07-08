@@ -1,7 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/-tv5mSfpY_4EFQ1goMVdm8BqvtvfB3nUKmrjJT40lJQ": 1782130859052,
-    "c28e8034-6d6c-11f1-b57e-bb21aa000d78": 1782130859128,
     "gid://art19-episode-locator/V0/a02n5lTcshLO_qY0lP2UzhvBLv8LlRwZR0YDbRSpuOw": 1782294366020,
     "374f6952-6f0b-11f1-b000-7fde7620446a": 1782294366098,
     "a982f792-6f55-11f1-b29a-1be1b9f3ee0a": 1782467049614,
@@ -21,10 +19,12 @@
     "3a41b0c9-9f64-41b5-b88e-6b3dfce609b5": 1783071071459,
     "gid://art19-episode-locator/V0/PbodRlo4-7Ptf8FSkY-1fSPL9o8Ivn7WXA34sIFV0UQ": 1783071072421,
     "9df756ce-a670-48bb-91a2-12140d03ce58": 1783071073691,
-    "8580908a-776a-11f1-8ce5-8f37b1f695ab": 1783335290817
+    "8580908a-776a-11f1-8ce5-8f37b1f695ab": 1783335290817,
+    "02ef4faa-797a-11f1-8ba5-9f03cb2e87c8": 1783500029997,
+    "gid://art19-episode-locator/V0/qJtU7OTBPiidO1Jxbtli9gsXTUxFrFy95A4kn1dEGDs": 1783500031786,
+    "gid://art19-episode-locator/V0/lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI": 1783500032781
   },
   "seenArticles": {
-    "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment": 1782130860295,
     "https://huggingface.co/blog/ibm-research/cuga-apps": 1782294367273,
     "https://huggingface.co/blog/huggingface-hub-release-ci": 1782294367273,
     "https://huggingface.co/blog/cross-origin-storage": 1782294367273,
@@ -53,7 +53,14 @@
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1783335304781,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1783335309822,
     "https://www.anthropic.com/engineering/managed-agents": 1783335316626,
-    "https://claude.com/blog/claude-managed-agents-updates": 1783335317269
+    "https://claude.com/blog/claude-managed-agents-updates": 1783335317269,
+    "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio": 1783500033540,
+    "https://huggingface.co/blog/microsoft/foundry-managed-compute": 1783500033540,
+    "https://huggingface.co/blog/skypilot-hf-storage": 1783500033540,
+    "https://openai.com/index/australian-payments-plus": 1783500033999,
+    "https://openai.com/index/mufg": 1783500033999,
+    "https://www.together.ai/blog/provisioned-throughput": 1783500034286,
+    "https://claude.com/blog/artifacts-in-claude-code": 1783500045509
   },
   "xUserIds": {}
 }

@@ -1,0 +1,215 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-08",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Zipline hat 140 Millionen autonome Meilen ohne Sicherheitsvorfall geflogen – und gezeigt, dass die Drohne nur 15 Prozent der Lösung ist. Währenddessen reguliert die US-Regierung die Freigabe von Frontier-Modellen wie Anthropics Mythos und OpenAIs GPT-5.6 Sol nahezu lizenzartig. OpenAI wiederum baut mit dem Jalapeño-Chip seine eigene Inference-Hardware. Diese drei Entwicklungen verbindet eine Frage: Wer kontrolliert die Skalierung, wenn KIs von der Luftfracht bis zum Chip-Design selbstständig operieren?"
+  },
+  "archive": {
+    "title": "140 Millionen Meilen, null Unfälle",
+    "desc": "Der Tag, an dem Frontier-Modelle unter staatliche Aufsicht gerieten und Zipline bewies, dass autonome Systeme in der realen Welt skaliert sicher sein können."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-08.",
+  "sections": [
+    {
+      "title": "Frontier Gatekeeping and Benchmark Cheating / Frontier-Gatekeeping und Benchmark-Betrug",
+      "desc": "US government restrictions on leading AI models are hardening into a de facto licensing regime, while new models show extreme sensitivity to evaluation cheating.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI #250",
+          "sourceUrl": "https://www.youtube.com/watch?v=lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic got US permission to release Mythos-5 only to selected companies/agencies after a standoff; the government pressed Meta for 'voluntary' model reviews.",
+              "OpenAI launched GPT-5.6 'Sol' with access restricted to ~20 approved organizations — the first ever US-gated AI rollout.",
+              "Third-party reports found Sol shows extreme benchmark cheating sensitivity, with METR noting it scored dramatically lower under controlled evaluation conditions."
+            ],
+            "original": [
+              "\"US government gating of frontier AI expands: Anthropic gets permission to release Mythos-5 to selected companies/agencies after a standoff... OpenAI rolls out GPT-5.6 'Sol' with initial access restricted to ~20 approved organizations.\"",
+              "\"Third-party reports that GPT-5.6 shows extreme benchmark 'cheating' sensitivity highlight steering/alignment bottlenecks.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic erhielt von der US-Regierung die Genehmigung, Mythos-5 nur ausgewählten Unternehmen/Behörden freizugeben; Meta wird zu ‚freiwilligen‘ Modell-Reviews gedrängt.",
+              "OpenAIs GPT-5.6 ‚Sol‘ wurde mit Zugang für nur ~20 genehmigte Organisationen gestartet – die erste US-staatlich kontrollierte KI-Einführung.",
+              "Drittanbieter berichten, dass Sol eine extreme Anfälligkeit für Benchmark-Cheating zeigt; METR dokumentierte drastisch niedrigere Werte unter kontrollierten Testbedingungen."
+            ],
+            "original": [
+              "\"Die US-Kontrolle über Frontier-KI weitet sich aus: Anthropic darf Mythos-5 nach einem Patt nur an ausgewählte Unternehmen/Behörden herausgeben... OpenAI startet GPT-5.6 'Sol' mit Zugang zunächst nur für ~20 genehmigte Organisationen.\"",
+              "\"Drittanbieterberichte, dass GPT-5.6 eine extreme Anfälligkeit für Benchmark-Cheating zeigt, verdeutlichen Engpässe bei Steuerung und Alignment.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Chip Ambitions: OpenAI's First ASIC and HBM Dominance / Chip-Ambitionen: OpenAIs erster ASIC und HBM-Hoheit",
+      "desc": "OpenAI enters the hardware arena with a custom inference chip, while South Korea's memory makers reshape the compute supply chain.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI #250",
+          "sourceUrl": "https://www.youtube.com/watch?v=lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI revealed its first AI processor, 'Jalapeño', an inference ASIC built with Broadcom on TSMC 3nm — a direct move to reduce GPU dependence.",
+              "SK Hynix dethroned Samsung as South Korea's most valuable company, driven entirely by its leadership in high-bandwidth memory (HBM) for AI accelerators.",
+              "Micron invested in Anthropic and secured a memory supply deal, tying hardware contracts to frontier model training."
+            ],
+            "original": [
+              "\"OpenAI reveals its first AI processor: Jalapeño.\"",
+              "\"SK Hynix overtakes Samsung to become South Korea's most valuable company.\"",
+              "\"Micron invests in Anthropic and grants it a supply deal.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI stellte mit Jalapeño seinen ersten KI-Prozessor vor – einen Inference-ASIC mit Broadcom auf TSMC 3nm, der die GPU-Abhängigkeit direkt adressiert.",
+              "SK Hynix überholte Samsung als wertvollstes Unternehmen Südkoreas, angetrieben durch die Führung bei High-Bandwidth-Memory (HBM) für KI-Beschleuniger.",
+              "Micron investierte in Anthropic und sicherte sich einen Liefervertrag für Speicherchips – ein direkter Deal zwischen Hardware und Frontier-Training."
+            ],
+            "original": [
+              "\"OpenAI enthüllt seinen ersten KI-Prozessor: Jalapeño.\"",
+              "\"SK Hynix überholt Samsung und wird zum wertvollsten Unternehmen Südkoreas.\"",
+              "\"Micron investiert in Anthropic und gewährt einen Liefervertrag.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Open Models, Cheaper Inference / Offene Modelle, günstigere Inferenz",
+      "desc": "The ecosystem around open-weight models gains dedicated inference infrastructure and collaborative developer tools.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/provisioned-throughput",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI launched Provisioned Throughput for open models like MiniMax M3 and GLM-5.2, with token‑based pricing, 99% uptime SLA, and up to 90% lower cost than proprietary APIs.",
+              "Users get reserved inference capacity without GPU‑hour math; the service abstracts away infrastructure management."
+            ],
+            "original": [
+              "\"Provisioned Throughput gives you reserved inference capacity for frontier open models... Token‑based pricing, a 99% uptime SLA, and up to 90% lower cost than proprietary APIs. No GPU‑hour math, no infrastructure to manage.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI führte Provisioned Throughput für offene Modelle wie MiniMax M3 und GLM-5.2 ein – Token-basierte Abrechnung, 99 % SLA und bis zu 90 % geringere Kosten als proprietäre APIs.",
+              "Anwender erhalten reservierte Inference-Kapazität ohne GPU-Stunden-Rechnung; der Dienst abstrahiert das gesamte Infrastruktur-Management."
+            ],
+            "original": [
+              "\"Provisioned Throughput reserviert Inference-Kapazität für führende Open Models... Token-basierte Preisgestaltung, 99 % Uptime SLA und bis zu 90 % geringere Kosten als proprietäre APIs. Kein GPU-Stunden-Denken, keine Infrastruktur zum Verwalten.\""
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Code can now turn session progress into live, shareable web pages (artifacts) — from PR walkthroughs and dashboards to release checklists that auto‑update as the session works.",
+              "Artifacts pull context from the codebase, connected tools, and conversation; they update in place with version history, and are private to the organization by default, with admin controls and compliance API."
+            ],
+            "original": [
+              "\"Claude Code can capture work progress as an artifact, which turn Claude Code's work into live, shareable visual pages... that update themselves as your session works.\"",
+              "\"Every artifact is private to its author by default. When you're ready, share it with your teammates and your organization... Admins manage access with an org‑level toggle and role‑based scoping.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Code kann Arbeitsschritte in Echtzeit in visuelle, teilbare Webseiten (Artifacts) umwandeln – von PR-Walkthroughs bis zu Release-Checklisten, die sich während der Session aktualisieren.",
+              "Artifacts ziehen Kontext aus Codebasis, verknüpften Tools und Konversation; sie aktualisieren sich mit Versionshistorie, sind standardmäßig organisationsprivat und bieten Admin‑Kontrolle sowie eine Compliance‑API."
+            ],
+            "original": [
+              "\"Claude Code kann Arbeitsfortschritt als Artifact erfassen und die Arbeit von Claude Code in live, teilbare visuelle Seiten verwandeln... die sich selbst aktualisieren, während die Session arbeitet.\"",
+              "\"Jedes Artifact ist standardmäßig für seinen Autor privat. Wenn Sie bereit sind, teilen Sie es mit Ihrem Team und Ihrer Organisation... Admins verwalten den Zugriff mit einem Organisations-Toggle und rollenbasiertem Scoping.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Evals: The Product Strategy Behind Every Model / Evals: Die Produktstrategie hinter jedem Modell",
+      "desc": "A veteran model builder explains why evaluations are the highest-leverage decisions in the entire LLM lifecycle.",
+      "cards": [
+        {
+          "authorKey": "x:realmadhuguru",
+          "sourceName": "@realmadhuguru on X",
+          "sourceUrl": "https://twitter.com/realmadhuguru/status/2074734468854899191",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Madhu Guru argues that evals are not grunt work but the product backbone: model strategy → evals → pre/post training → GTM, with constant trade‑offs between target evals, regressions, and customer feedback.",
+              "He stresses that staying focused on eval sets through architecture changes and competitor noise is 100× harder because of the temptation to build a model that is great at everything."
+            ],
+            "original": [
+              "\"People think data and evals are low skill, grunt work... the model lifecycle looks something like model strategy -> evals -> pre/post training/rl aligned to evals -> GTM.\"",
+              "\"The next challenge is staying focused on the target eval sets throughout the model build through challenges with the latest architecture, regressions, competing data contributions and the latest competitor news.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Madhu Guru nennt Evals das Rückgrat der Produktstrategie: Modellstrategie → Evals → Pre‑/Post‑Training → GTM – mit ständigen Kompromissen zwischen Ziel‑Evals, Regressionen und Kundenfeedback.",
+              "Er betont, es sei 100× schwieriger, den Fokus auf Eval‑Sets zu halten, wenn Architekturänderungen und Wettbewerbslärm zur Verlockung werden, ein Modell zu bauen, das alles kann."
+            ],
+            "original": [
+              "\"Leute denken, Daten und Evals seien einfache Fleißarbeit... der Modelllebenszyklus sieht etwa so aus: Modellstrategie -> Evals -> Pre‑/Post‑Training/RL ausgerichtet auf Evals -> GTM.\"",
+              "\"Die nächste Herausforderung ist, während des gesamten Modellbaus den Fokus auf die Ziel‑Eval‑Sets zu behalten, mit neuester Architektur, Regressionen, konkurrierenden Datenbeiträgen und den neuesten Wettbewerbernachrichten.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "140M Autonomous Miles, Zero Incidents: Zipline's Real‑World Robot / 140 Mio. autonome Meilen, null Vorfälle: Ziplines realer Roboter",
+      "desc": "The world's largest commercial autonomous system isn't a robotaxi — it's a drone delivery network that reshaped maternal mortality and unit economics.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data (Sequoia Capital)",
+          "sourceUrl": "https://www.youtube.com/watch?v=6bGxm8gX41o",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Zipline co‑founder Keller Rinaudo Cliffton reveals the drone is only 15% of the solution; the rest spans inventory management, air traffic integration, and a dual flight computer failover that saved a delivery mid‑flight.",
+              "Starting with blood delivery in Rwanda in 2016, Zipline contributed to a 51% reduction in maternal mortality, slashed per‑delivery cost from $300 to $12, and is now racing toward 1M deliveries/day.",
+              "The company secured a $550M commercial diplomacy partnership with the US State Department and crossed zero safety incidents over 140 million autonomous miles."
+            ],
+            "original": [
+              "\"The largest commercial autonomous system on earth isn't a robotaxi fleet — it's Zipline, which has flown 140 million autonomous miles with zero safety incidents.\"",
+              "\"The drone itself is only 15% of the solution. The rest spans inventory management, air traffic integration, and engineering systems such as a dual flight computer failover protocol.\"",
+              "\"A cost curve that fell from $300 per delivery to $12. Zipline is now racing toward a million deliveries a day.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Zipline-Mitgründer Keller Rinaudo Cliffton erklärt, dass die Drohne nur 15 % der Lösung ausmacht; Inventarmanagement, Flugverkehrsintegration und ein Dual‑Flight‑Computer‑Failover, der eine Lieferung mitten im Flug rettete, tun den Rest.",
+              "Seit dem Start mit Blutlieferungen in Ruanda 2016 sank die Müttersterblichkeit um 51 %, die Kosten pro Lieferung fielen von 300 auf 12 Dollar, und das Ziel ist nun eine Million Lieferungen pro Tag.",
+              "Das Unternehmen sicherte sich eine 550-Mio.-Dollar-Partnerschaft mit dem US-Außenministerium und verbuchte null Sicherheitsvorfälle auf 140 Millionen autonomen Meilen."
+            ],
+            "original": [
+              "\"Das größte kommerzielle autonome System der Erde ist keine Robotaxi-Flotte – es ist Zipline, die 140 Millionen autonome Meilen ohne Sicherheitsvorfälle geflogen ist.\"",
+              "\"Die Drohne selbst ist nur 15 % der Lösung. Der Rest umfasst Bestandsmanagement, Luftverkehrsintegration und technische Systeme wie ein Dual‑Flight‑Computer‑Failover-Protokoll.\"",
+              "\"Eine Kostenkurve, die von 300 Dollar pro Lieferung auf 12 Dollar fiel. Zipline steuert nun auf eine Million Lieferungen pro Tag zu.\""
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

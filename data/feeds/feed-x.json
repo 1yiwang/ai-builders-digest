@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T10:55:25.037Z",
+  "generatedAt": "2026-07-08T08:40:53.556Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2073966701629374820",
-          "text": "What a game wow what a game",
-          "createdAt": "2026-07-06T03:06:08.000Z",
+          "id": "2074733842230108672",
+          "text": "So what is the qualification criteria for folks to get early access to this model?",
+          "createdAt": "2026-07-08T05:54:29.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2073945318283252167",
-          "text": "Damn they better have some armored vehicles to escort these English players out of the stadium 😅",
-          "createdAt": "2026-07-06T01:41:10.000Z",
+          "id": "2074705840284815678",
+          "text": "I woudl like to interview an AI-native designer to show us how to build with design.md, components, and more vs. the typical process. Who's the best person to talk to?",
+          "createdAt": "2026-07-08T04:03:13.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2073930836551032858",
-          "text": "I'm really excited to share these upcoming episodes for my podcast soon. One small ask: My birthday is on Thursday, July 9, and it would be amazing to finally hit 100K YouTube subscribers by then. I’m at 98.5K now, so pretty close :) 📌 If you’re looking forward to these episodes, consider subscribing here: https://www.youtube.com/@PeterYangYT?sub_confirmation=1&utm_source=newsletter-header I appreciate your support!",
-          "createdAt": "2026-07-06T00:43:37.000Z",
+          "id": "2074616982197174515",
+          "text": "Dumb question: I’ve been running most of my cron jobs locally on my Mac Mini because it’s already authenticated with Google Workspace and the other apps I use. But should I run these jobs in the cloud instead with these apps OAuth’d to my Claude or ChatGPT account? How should I think about what jobs should stay local vs. move to the cloud?",
+          "createdAt": "2026-07-07T22:10:07.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,103 @@
           }
         },
         {
-          "id": "2073811046041800766",
-          "text": "Is there an easy way to give Codex the ability to listen to audio or hear words? Trying to use it to clip stuff and remove filler words. Whisper is not very reliable.",
-          "createdAt": "2026-07-05T16:47:37.000Z",
+          "id": "2074579727365591297",
+          "text": "Me if Anthropic extends Fable rate limits (sound on) 😅",
+          "createdAt": "2026-07-07T19:42:05.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074555759904579838",
+          "text": "Every Argentina match is a banger",
+          "createdAt": "2026-07-07T18:06:51.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074553363035996239",
+          "text": "LOLLLL best match ever",
+          "createdAt": "2026-07-07T17:57:19.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074551032240312778",
+          "text": "YES!!!!! Vamos Messi!",
+          "createdAt": "2026-07-07T17:48:04.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074544797814321410",
+          "text": "I cannot watch anymore this is terrible",
+          "createdAt": "2026-07-07T17:23:17.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074529675775455655",
+          "text": "Go Argentina damn it 😅",
+          "createdAt": "2026-07-07T16:23:12.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
+        {
+          "id": "2074734468854899191",
+          "text": "true. let’s unpack this..people think data and evals are low skill, grunt work that you can just buy and stuff into models. in practice, the model lifecycle looks something like model strategy -> evals -> pre/post training/rl aligned to evals -> GTM. like any product strategy, you need strong opinions up front but it is 100x harder because of the allure of building an LLM that is great at everything. the next challenge is staying focused on the target eval sets throughout the model build through challenges with the latest architecture, regressions, competing data contributions and the latest competitor news. you then make choices between multiple checkpoints trading off on target evals, regression evals and early customer feedback. so yes, it begins with an opinion expressed through evals and if you execute well, you land somewhere near your target.",
+          "createdAt": "2026-07-08T05:56:58.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074658481760821390",
+          "text": "having worked with Brendan and mercor, can confirm they are excellent. also having worked in ai models for enterprise, can confirm the opportunity around data and evals for enterprise is massssive.",
+          "createdAt": "2026-07-08T00:55:01.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2074576440268661107",
+          "text": "guys, stop fixing typos and audio transcription errors in your prompts to ai. they cracked the IMO. they know what ‘teh’ is.",
+          "createdAt": "2026-07-07T19:29:01.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -57,31 +151,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2073972907491865062",
-          "text": "when I ask my AI agent to “make no mistakes”",
-          "createdAt": "2026-07-06T03:30:48.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2073890630569251150",
-          "text": "Tournament of the older goalies",
-          "createdAt": "2026-07-05T22:03:52.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2073889293567693110",
-          "text": "Norway: best jersey, best fan celebration, best striker.",
-          "createdAt": "2026-07-05T21:58:33.000Z",
+          "id": "2074441949772169216",
+          "text": "VC greeting his top AI portfolio company vs that SaaS investment from 8 years ago that’s running out of cash",
+          "createdAt": "2026-07-07T10:34:36.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -93,8 +165,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 2,
-    "totalTweets": 7
+    "xBuilders": 3,
+    "totalTweets": 13
   },
   "_mode": "Nitter RSS (free)"
 }
