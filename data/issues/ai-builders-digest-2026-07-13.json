@@ -1,0 +1,115 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-13",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Heute zeigte Peter Yang, dass über 90 % der Nutzer auf GPT-5.6 Sol setzen. Währenddessen klagt ein Nutzer über Claudes Design, das Exploration behindert. Zeitgleich senkt Davidad seine p(doom) auf unter 5 % und plädiert für weisere KI. Diese drei Stories spiegeln die Spannung zwischen Nutzeroberfläche, Marktmacht und existenzieller Sicherheit."
+  },
+  "archive": {
+    "title": "90 % auf GPT-5.6 Sol, p(doom) fällt auf 5 %",
+    "desc": "GPT-5.6 dominiert den Markt, während Davidad seinen existenziellen Risikoblick entspannt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-13.",
+  "sections": [
+    {
+      "title": "Adoption Check: GPT-5.6 Sol zieht fast alle Nutzer an",
+      "desc": "Die neueste Modellgeneration dominiert den API-Verkehr – mit klaren Konsequenzen für Entwickler.",
+      "cards": [
+        {
+          "authorKey": "x:@petergyang",
+          "sourceName": "@petergyang",
+          "sourceUrl": "https://x.com/petergyang/status/2076519927843000448",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Peter Yang observes that 90%+ of users are now on GPT-5.6 Sol, with less than 10% on Terra or Luna.",
+              "The rapid migration suggests strong performance or default settings are making alternative model tiers practically invisible."
+            ],
+            "original": [
+              "Seeing this quite often today. My wild guess is 90%+ of people are using GPT 5.6 Sol and <10% are using Terra or Luna."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Peter Yang beobachtet, dass über 90 % der Nutzer GPT-5.6 Sol verwenden – weniger als 10 % greifen zu Terra oder Luna.",
+              "Die schnelle Migration deutet auf starke Leistung oder voreingestellte Präferenzen, die andere Modellstufen unsichtbar machen."
+            ],
+            "original": [
+              "Seeing this quite often today. My wild guess is 90%+ of people are using GPT 5.6 Sol and <10% are using Terra or Luna."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sicherheitsdenken: Davidads neuer Alignment-Ansatz",
+      "desc": "Der einflussreiche Forscher senkt sein existenzielles Risiko drastisch und setzt auf weisere statt nur sicherere Systeme.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/alignment-with-awakening-davidad-on-moral-realism-ai-wisdom-why-his-p-doom-is-down-to-5/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "David Dalrymple (ARIA) lowered his p(doom) to under 5% and shifted from pure formal verification toward “Alignment with Awakening.”",
+              "He says global coordination on safe AI is now implausible; aligned systems must recognize shared good and form defensive coalitions.",
+              "Despite the philosophical shift, he still expects verified artifacts and proof infrastructure to remain essential."
+            ],
+            "original": [
+              "Davidad: “Global coordination around safe AI use is no longer plausible; aligned AI must recognize shared good and form defensive coalitions.”",
+              "He argues the crucial question is whether AI systems can resist the corrupting incentives of verifier-gamed RL."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "David Dalrymple (ARIA) senkt seine p(doom) auf unter 5 % und bewegt sich von formaler Verifikation zur „Alignment with Awakening“.",
+              "Globale Koordination hält er für unrealistisch; ausgerichtete KI müsse gemeinsame Werte erkennen und defensive Koalitionen bilden.",
+              "Trotz der philosophischen Wende erwartet er, dass verifizierte Artefakte und Proof-Infrastruktur essenziell bleiben."
+            ],
+            "original": [
+              "Davidad: „Globale Koordination ist nicht mehr plausibel; ausgerichtete KI muss gemeinsame Werte erkennen und defensive Koalitionen bilden.“",
+              "Er fragt, ob KI-Systeme den korrumpierenden Anreizen von verifier-gamed RL widerstehen können."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Produktfeedback: Claude-Design unterbricht Exploration",
+      "desc": "Ein Nutzer kritisiert die UX von Claude, die das iterative Erkunden ausbremst.",
+      "cards": [
+        {
+          "authorKey": "x:@petergyang",
+          "sourceName": "@petergyang",
+          "sourceUrl": "https://x.com/petergyang/status/2076349015000826018",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "A user reports Claude’s design shows frequent context warnings that discourage iterative exploration and variation.",
+              "The feedback suggests the product could manage context automatically instead of prompting the user, which kills the creative flow."
+            ],
+            "original": [
+              "I keep seeing this in Claude Design … Seeing messages like this makes me not want to explore variations, etc."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ein Nutzer berichtet, dass Claude häufig Kontextwarnungen anzeigt, die iteratives Explorieren und Variieren behindern.",
+              "Das Feedback legt nahe, dass das Produkt den Kontext automatisch verwalten sollte, anstatt den Nutzer auszubremsen."
+            ],
+            "original": [
+              "Ich sehe das ständig im Claude-Design … Solche Nachrichten rauben mir die Lust, Varianten auszuprobieren."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T08:40:53.556Z",
+  "generatedAt": "2026-07-13T09:42:00.201Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2074733842230108672",
-          "text": "So what is the qualification criteria for folks to get early access to this model?",
-          "createdAt": "2026-07-08T05:54:29.000Z",
+          "id": "2076519927843000448",
+          "text": "Seeing this quite often today. My wild guess is 90%+ of people are using GPT 5.6 Sol and <10% are using Terra or Luna.",
+          "createdAt": "2026-07-13T04:11:45.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2074705840284815678",
-          "text": "I woudl like to interview an AI-native designer to show us how to build with design.md, components, and more vs. the typical process. Who's the best person to talk to?",
-          "createdAt": "2026-07-08T04:03:13.000Z",
+          "id": "2076510899490480228",
+          "text": "Anthropic makes great models too but I don't understand why they communicate like this. I think they need to engage the community more directly like what OpenAI is doing.",
+          "createdAt": "2026-07-13T03:35:52.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2074616982197174515",
-          "text": "Dumb question: I’ve been running most of my cron jobs locally on my Mac Mini because it’s already authenticated with Google Workspace and the other apps I use. But should I run these jobs in the cloud instead with these apps OAuth’d to my Claude or ChatGPT account? How should I think about what jobs should stay local vs. move to the cloud?",
-          "createdAt": "2026-07-07T22:10:07.000Z",
+          "id": "2076366572986482922",
+          "text": "What is an example of a popular piece of writing (maybe an X article or long twee?) that upon a closer look was written with AI and full of slop?",
+          "createdAt": "2026-07-12T18:02:22.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2074579727365591297",
-          "text": "Me if Anthropic extends Fable rate limits (sound on) 😅",
-          "createdAt": "2026-07-07T19:42:05.000Z",
+          "id": "2076354838858981385",
+          "text": "Thank you Claude :) Just extend it permanently yeah?",
+          "createdAt": "2026-07-12T17:15:45.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -51,92 +51,9 @@
           }
         },
         {
-          "id": "2074555759904579838",
-          "text": "Every Argentina match is a banger",
-          "createdAt": "2026-07-07T18:06:51.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074553363035996239",
-          "text": "LOLLLL best match ever",
-          "createdAt": "2026-07-07T17:57:19.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074551032240312778",
-          "text": "YES!!!!! Vamos Messi!",
-          "createdAt": "2026-07-07T17:48:04.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074544797814321410",
-          "text": "I cannot watch anymore this is terrible",
-          "createdAt": "2026-07-07T17:23:17.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074529675775455655",
-          "text": "Go Argentina damn it 😅",
-          "createdAt": "2026-07-07T16:23:12.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
-      "tweets": [
-        {
-          "id": "2074734468854899191",
-          "text": "true. let’s unpack this..people think data and evals are low skill, grunt work that you can just buy and stuff into models. in practice, the model lifecycle looks something like model strategy -> evals -> pre/post training/rl aligned to evals -> GTM. like any product strategy, you need strong opinions up front but it is 100x harder because of the allure of building an LLM that is great at everything. the next challenge is staying focused on the target eval sets throughout the model build through challenges with the latest architecture, regressions, competing data contributions and the latest competitor news. you then make choices between multiple checkpoints trading off on target evals, regression evals and early customer feedback. so yes, it begins with an opinion expressed through evals and if you execute well, you land somewhere near your target.",
-          "createdAt": "2026-07-08T05:56:58.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074658481760821390",
-          "text": "having worked with Brendan and mercor, can confirm they are excellent. also having worked in ai models for enterprise, can confirm the opportunity around data and evals for enterprise is massssive.",
-          "createdAt": "2026-07-08T00:55:01.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2074576440268661107",
-          "text": "guys, stop fixing typos and audio transcription errors in your prompts to ai. they cracked the IMO. they know what ‘teh’ is.",
-          "createdAt": "2026-07-07T19:29:01.000Z",
+          "id": "2076349015000826018",
+          "text": "I keep seeing this in Claude Design and while I get it shouldn't the product just become better at managing context automatically? I'm not a designer but design is a very iterative and explorative process. Seeing messages like this makes me not want to explore variations, etc.",
+          "createdAt": "2026-07-12T16:52:36.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -151,9 +68,20 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2074441949772169216",
-          "text": "VC greeting his top AI portfolio company vs that SaaS investment from 8 years ago that’s running out of cash",
-          "createdAt": "2026-07-07T10:34:36.000Z",
+          "id": "2076343266291626064",
+          "text": "And Argentina will get to play Monaco, Easter Island and Willy Wonka’s Chocolate Factory",
+          "createdAt": "2026-07-12T16:29:45.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2076311766049374598",
+          "text": "me when they say anyone can now build apps with an agentic coding tool",
+          "createdAt": "2026-07-12T14:24:35.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -165,8 +93,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
-    "totalTweets": 13
+    "xBuilders": 2,
+    "totalTweets": 7
   },
   "_mode": "Nitter RSS (free)"
 }

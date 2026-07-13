@@ -1,13 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/a02n5lTcshLO_qY0lP2UzhvBLv8LlRwZR0YDbRSpuOw": 1782294366020,
-    "374f6952-6f0b-11f1-b000-7fde7620446a": 1782294366098,
-    "a982f792-6f55-11f1-b29a-1be1b9f3ee0a": 1782467049614,
-    "5ae96ad9-5cee-4cda-ad01-8edea9dfbc0a": 1782467050043,
-    "6ae01ce4-60f3-48ba-9f63-c352a10dc8d2": 1782467050487,
-    "gid://art19-episode-locator/V0/j5glX3rgFN-V0XdCnKlZQ9MEEN66DyBb6oi98lQo9Ps": 1782467051195,
-    "gid://art19-episode-locator/V0/FXlQyDfn88vh57Cf4hegyyO4RFbR1kyh26Sn4o0rOSY": 1782467052046,
-    "37f81653-c822-4beb-a29e-da0193b2e3a7": 1782467052318,
     "gid://art19-episode-locator/V0/ZbBRNZ6iQaLS_ZU9NmmaeED2-uTvrmavw-xVf6gYklw": 1782731909300,
     "fcb85f02-7229-11f1-bad4-fb7d8fc444f4": 1782731909363,
     "fb9d2daa-719d-11f1-9e13-9f44da352371": 1782900292273,
@@ -22,21 +14,11 @@
     "8580908a-776a-11f1-8ce5-8f37b1f695ab": 1783335290817,
     "02ef4faa-797a-11f1-8ba5-9f03cb2e87c8": 1783500029997,
     "gid://art19-episode-locator/V0/qJtU7OTBPiidO1Jxbtli9gsXTUxFrFy95A4kn1dEGDs": 1783500031786,
-    "gid://art19-episode-locator/V0/lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI": 1783500032781
+    "gid://art19-episode-locator/V0/lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI": 1783500032781,
+    "gid://art19-episode-locator/V0/5oB9gJj_p7zZrqO1su0CJEjkEZs5PGrjkQmS9PKG6s8": 1783935704211,
+    "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273
   },
   "seenArticles": {
-    "https://huggingface.co/blog/ibm-research/cuga-apps": 1782294367273,
-    "https://huggingface.co/blog/huggingface-hub-release-ci": 1782294367273,
-    "https://huggingface.co/blog/cross-origin-storage": 1782294367273,
-    "https://openai.com/index/helping-build-shared-standards-for-advanced-ai": 1782294367562,
-    "https://openai.com/index/gpt-5-immunology-mystery": 1782294367562,
-    "https://openai.com/index/omio": 1782294367562,
-    "https://www.together.ai/blog/parallelkernelbench": 1782294367643,
-    "https://huggingface.co/blog/vllm-jobs": 1782467052517,
-    "https://huggingface.co/blog/allenai/hybrid-token-prediction": 1782467052517,
-    "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel": 1782467052517,
-    "https://openai.com/index/how-agents-are-transforming-work": 1782467053145,
-    "https://openai.com/index/openai-broadcom-jalapeno-inference-chip": 1782467053145,
     "https://openai.com/index/mapping-ai-jobs-transition-eu": 1782731911181,
     "https://openai.com/index/hp-frontier-partnership": 1782731911181,
     "https://claude.com/blog/claude-for-foundation-models": 1782731915805,
