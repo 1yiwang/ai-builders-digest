@@ -1,0 +1,139 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-15",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat GPT-5.6 und die Agent-App ChatGPT Work auf den Desktop gebracht, während SpaceXAI mit Grok 4.5 einen aggressiven Preiskampf startet. Anthropic setzt indes auf offene Ökosystem-Standards und überlässt Sandbox-Hosting Partnern wie Modal und Vercel. Die Frage des Tages: Wer liefert das bessere Agentenerlebnis – die geschlossene Super-App oder das offene Protokoll?"
+  },
+  "archive": {
+    "title": "Agenten-Desktop, Preiskampf, Ökosystem-Wette",
+    "desc": "OpenAI launcht GPT-5.6 mit ChatGPT Work, SpaceXAI kontert mit Grok 4.5 zu Tiefstpreisen, und Anthropic setzt auf offene Standards und Partner."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-15.",
+  "sections": [
+    {
+      "title": "GPT-5.6: Agenten-Desktop und die Grenzen der Generalisten / GPT-5.6: Agent Desktop and the Limits of Generalists",
+      "desc": "OpenAI's new desktop agent and model reveal strengths and specialized gaps in AI productivity tools.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI",
+          "sourceUrl": "https://lastweekin.ai",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI rolled out GPT-5.6 (Sol and Luna) to all users and rebranded its desktop agentic coding product as ChatGPT Work.",
+              "US government reportedly greenlit the release after a delay, raising concerns about ad hoc frontier oversight and jailbreak risks.",
+              "A UK agency report says the model likely has cyber vulnerabilities similar to Anthropic’s Fable that triggered export controls."
+            ],
+            "original": [
+              "The new ChatGPT superapp takes aim at Claude Desktop",
+              "OpenAI’s latest AI model likely has similar cyber vulnerabilities to one that led to U.S. export controls on Anthropic’s Fable, British agency says."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI hat GPT-5.6 (Sol und Luna) für alle Nutzer freigegeben und das agentische Desktop-Coding-Produkt in ChatGPT Work umbenannt.",
+              "Die US-Regierung genehmigte die Veröffentlichung Berichten zufolge nach Verzögerung, was Bedenken über willkürliche Aufsicht und Jailbreak-Risiken weckt.",
+              "Ein britischer Behördenbericht warnt vor ähnlichen Cyber-Risiken wie bei Anthropics Fable, das Exportkontrollen auslöste."
+            ],
+            "original": [
+              "Die neue ChatGPT-Super-App zielt auf Claude Desktop ab",
+              "Das neueste KI-Modell von OpenAI weist wahrscheinlich ähnliche Cyber-Schwachstellen auf wie eines, das zu US-Exportkontrollen für Anthropics Fable führte."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:@petergyang",
+          "sourceName": "Peter Yang on X",
+          "sourceUrl": "https://twitter.com/petergyang/status/2077103041397084269",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Fable remains significantly better than GPT-5.6 Sol for HTML slides and videos; Sol’s output is unusable. For landing pages, Sol has caught up."
+            ],
+            "original": [
+              "For making html slides and videos … Fable is still significantly better than GPT 5.6 Sol. The stuff that Sol makes is unusable. For landing pages, 5.6 Sol has caught up."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Fable bleibt deutlich besser als GPT-5.6 Sol für HTML-Präsentationen und Videos; Sols Output ist unbrauchbar. Bei Landing-Pages hat Sol gleichgezogen."
+            ],
+            "original": [
+              "Für HTML-Präsentationen und Videos … Fable ist immer noch deutlich besser als GPT 5.6 Sol. Was Sol produziert, ist unbrauchbar. Bei Landing-Pages hat 5.6 Sol aufgeholt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Preiskampf vs. Plattform-Wette: Grok 4.5 und Anthropics Ökosystem / Price War vs. Platform Bet: Grok 4.5 and Anthropic's Ecosystem",
+      "desc": "One side attacks on price; the other builds open standards for an electricity-like agent infrastructure.",
+      "cards": [
+        {
+          "authorKey": "podcast:Last Week in AI",
+          "sourceName": "Last Week in AI",
+          "sourceUrl": "https://lastweekin.ai",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "SpaceX AI launched Grok 4.5, a very low-cost, Opus-class coding model for finance and legal with minimal safety documentation.",
+              "Grok 4.5 undercuts Anthropic and OpenAI on coding agent pricing, intensifying cost competition."
+            ],
+            "original": [
+              "SpaceXAI, Cursor Launch Grok 4.5 AI Model for Finance, Legal Applications – Bloomberg",
+              "SpaceXAI’s Grok 4.5 Undercuts Anthropic and OpenAI on Coding Agent Pricing"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "SpaceX AI startete Grok 4.5, ein extrem günstiges Coding-Modell auf Opus-Niveau für Finanzen und Recht, mit minimalen Sicherheitsunterlagen.",
+              "Grok 4.5 unterbietet Anthropic und OpenAI bei den Preisen für Coding-Agenten und verschärft den Kostenwettbewerb."
+            ],
+            "original": [
+              "SpaceXAI und Cursor bringen Grok 4.5 KI-Modell für Finanz- und Rechtsanwendungen auf den Markt – Bloomberg",
+              "SpaceXAIs Grok 4.5 unterbietet Anthropic und OpenAI bei der Preisgestaltung für Coding-Agenten"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=vPnVTHYplrQ",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Katelyn Lesse & Angela Jiang (Anthropic) describe their platform as knowledge-execution-coordination layers; top-layer ‘strategies’ give each token a job like advising, executing, reflecting.",
+              "They self-host sandboxes with Modal, Vercel, Cloudflare; open MCP standards to the industry; closed only on model routing.",
+              "The ecosystem bet: transformative like electricity because everyone can plug in, and no company wires it alone."
+            ],
+            "original": [
+              "Angela frames the platform as a three-layer stack: knowledge, execution, and coordination.",
+              "the real leverage is what’s at the top: 'strategies,' or meta-harnesses that give each token a different job, from advising to executing to reflecting to memory.",
+              "Angela's frame for the ecosystem bet is electricity: transformative only because everyone could plug in, and no company wired it alone."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Katelyn Lesse & Angela Jiang (Anthropic) beschreiben die Plattform als Wissens-Ausführungs-Koordinations-Schichten; Top-Level-‘Strategien’ weisen jedem Token Aufgaben wie Beraten, Ausführen, Reflektieren zu.",
+              "Selbst gehostete Sandboxes mit Modal, Vercel, Cloudflare; offene MCP-Standards für die Branche; geschlossen nur beim Modell-Routing.",
+              "Die Ökosystem-Wette: Wie beim Strom transformativ, weil jeder einstecken kann, und kein Unternehmen ihn allein verdrahtet."
+            ],
+            "original": [
+              "Angela beschreibt die Plattform als Drei-Schichten-Architektur: Wissen, Ausführung und Koordination.",
+              "Der wahre Hebel liegt an der Spitze: ‘Strategien’ oder Meta-Harnesses, die jedem Token eine andere Rolle zuweisen – vom Beraten über das Ausführen bis zum Reflektieren und Erinnern.",
+              "Angelas Vergleich für die Ökosystem-Wette ist Elektrizität: transformativ nur, weil sich jeder einstecken konnte und kein Unternehmen es allein verkabelte."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

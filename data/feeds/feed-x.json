@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:42:00.201Z",
+  "generatedAt": "2026-07-15T08:28:01.132Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2076519927843000448",
-          "text": "Seeing this quite often today. My wild guess is 90%+ of people are using GPT 5.6 Sol and <10% are using Terra or Luna.",
-          "createdAt": "2026-07-13T04:11:45.000Z",
+          "id": "2077196815951417649",
+          "text": "Tomorrow, I’m sharing a new video on how I use ChatGPT Work (also known as Codex 😅) to do almost everything on my computer. I’ll cover my complete setup in 7 steps below, from choosing the right GPT-5.6 model to managing email, calendar, and recurring tasks. 📌 Subscribe to get the tutorial tomorrow: https://www.youtube.com/@PeterYangYT?sub_confirmation=1",
+          "createdAt": "2026-07-15T01:01:28.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2076510899490480228",
-          "text": "Anthropic makes great models too but I don't understand why they communicate like this. I think they need to engage the community more directly like what OpenAI is doing.",
-          "createdAt": "2026-07-13T03:35:52.000Z",
+          "id": "2077172496424751376",
+          "text": "Holy shit a time traveler or cope?",
+          "createdAt": "2026-07-14T23:24:49.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2076366572986482922",
-          "text": "What is an example of a popular piece of writing (maybe an X article or long twee?) that upon a closer look was written with AI and full of slop?",
-          "createdAt": "2026-07-12T18:02:22.000Z",
+          "id": "2077132606798442817",
+          "text": "Honestly the way Spain is playing it’ll be a huge upset if they’re not the champions",
+          "createdAt": "2026-07-14T20:46:19.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2076354838858981385",
-          "text": "Thank you Claude :) Just extend it permanently yeah?",
-          "createdAt": "2026-07-12T17:15:45.000Z",
+          "id": "2077118932952264800",
+          "text": "So...these two teams seem to play alot better than Argentina or England 😅",
+          "createdAt": "2026-07-14T19:51:59.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -51,9 +51,42 @@
           }
         },
         {
-          "id": "2076349015000826018",
-          "text": "I keep seeing this in Claude Design and while I get it shouldn't the product just become better at managing context automatically? I'm not a designer but design is a very iterative and explorative process. Seeing messages like this makes me not want to explore variations, etc.",
-          "createdAt": "2026-07-12T16:52:36.000Z",
+          "id": "2077115676893057233",
+          "text": "Viva España!",
+          "createdAt": "2026-07-14T19:39:02.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2077103041397084269",
+          "text": "For making html slides and videos (e.g., using @HyperFrames_ ) Fable is still significantly better than GPT 5.6 Sol. The stuff that Sol makes is unusable. For landing pages, 5.6 Sol has caught up.",
+          "createdAt": "2026-07-14T18:48:50.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2077093016620384401",
+          "text": "This is super cute although I don't understand why people have to sign in with ChatGPT to visit a ChatGPT created website?",
+          "createdAt": "2026-07-14T18:09:00.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2077047201889747096",
+          "text": "I get podcast outreach from various PR agencies and I have to say almost 100% of the time they're pitching a CEO or exec to promote their product (which makes for bad episodes). The best CEO and exec episodes show real workflows with no agenda.",
+          "createdAt": "2026-07-14T15:06:57.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -68,9 +101,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2076343266291626064",
-          "text": "And Argentina will get to play Monaco, Easter Island and Willy Wonka’s Chocolate Factory",
-          "createdAt": "2026-07-12T16:29:45.000Z",
+          "id": "2077168963822231753",
+          "text": "The cruel reality of the World Cup is that 47 out of 48 teams go home heartbroken. We love it anyway.",
+          "createdAt": "2026-07-14T23:10:47.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -79,9 +112,9 @@
           }
         },
         {
-          "id": "2076311766049374598",
-          "text": "me when they say anyone can now build apps with an agentic coding tool",
-          "createdAt": "2026-07-12T14:24:35.000Z",
+          "id": "2077139555535241253",
+          "text": "How France played 10/10 football throughout the World Cup and 4/10 football in the semi final will need to be studied in football school as the ultimate cautionary tale.",
+          "createdAt": "2026-07-14T21:13:56.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -94,7 +127,7 @@
   ],
   "stats": {
     "xBuilders": 2,
-    "totalTweets": 7
+    "totalTweets": 10
   },
   "_mode": "Nitter RSS (free)"
 }

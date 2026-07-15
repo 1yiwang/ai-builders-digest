@@ -1,7 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/ZbBRNZ6iQaLS_ZU9NmmaeED2-uTvrmavw-xVf6gYklw": 1782731909300,
-    "fcb85f02-7229-11f1-bad4-fb7d8fc444f4": 1782731909363,
     "fb9d2daa-719d-11f1-9e13-9f44da352371": 1782900292273,
     "gid://art19-episode-locator/V0/SzadjqWR6Fsbrwt3YGQDDasmnSAw79AyvxfXSumwakg": 1782900293449,
     "fa32f1cc-7529-11f1-afda-df0320fd1c68": 1782900293535,
@@ -16,12 +14,12 @@
     "gid://art19-episode-locator/V0/qJtU7OTBPiidO1Jxbtli9gsXTUxFrFy95A4kn1dEGDs": 1783500031786,
     "gid://art19-episode-locator/V0/lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI": 1783500032781,
     "gid://art19-episode-locator/V0/5oB9gJj_p7zZrqO1su0CJEjkEZs5PGrjkQmS9PKG6s8": 1783935704211,
-    "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273
+    "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273,
+    "e80c1332-7efe-11f1-aad6-934cf71a1d19": 1784104064310,
+    "gid://art19-episode-locator/V0/ecYfV5uBbkLJjJZZYH6uK0ZuIdG4MGsLZEuu63CvaDw": 1784104065777,
+    "gid://art19-episode-locator/V0/9kRwA4CwNkyVI31rI2kR06etVuIAE1usvHlaJyqtOQg": 1784104066811
   },
   "seenArticles": {
-    "https://openai.com/index/mapping-ai-jobs-transition-eu": 1782731911181,
-    "https://openai.com/index/hp-frontier-partnership": 1782731911181,
-    "https://claude.com/blog/claude-for-foundation-models": 1782731915805,
     "https://huggingface.co/blog/ibm-research/scarfbench": 1782900295080,
     "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable": 1782900295080,
     "https://huggingface.co/blog/eee-community-evals": 1782900295080,
@@ -42,7 +40,10 @@
     "https://openai.com/index/australian-payments-plus": 1783500033999,
     "https://openai.com/index/mufg": 1783500033999,
     "https://www.together.ai/blog/provisioned-throughput": 1783500034286,
-    "https://claude.com/blog/artifacts-in-claude-code": 1783500045509
+    "https://claude.com/blog/artifacts-in-claude-code": 1783500045509,
+    "https://openai.com/index/managing-ai-investments-in-agentic-era": 1784104067680,
+    "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex": 1784104067680,
+    "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex": 1784104067680
   },
   "xUserIds": {}
 }
