@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T08:28:01.132Z",
+  "generatedAt": "2026-07-17T08:22:42.484Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2077196815951417649",
-          "text": "Tomorrow, I’m sharing a new video on how I use ChatGPT Work (also known as Codex 😅) to do almost everything on my computer. I’ll cover my complete setup in 7 steps below, from choosing the right GPT-5.6 model to managing email, calendar, and recurring tasks. 📌 Subscribe to get the tutorial tomorrow: https://www.youtube.com/@PeterYangYT?sub_confirmation=1",
-          "createdAt": "2026-07-15T01:01:28.000Z",
+          "id": "2077982627278303279",
+          "text": "Underrated reply 🤣",
+          "createdAt": "2026-07-17T05:04:00.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2077172496424751376",
-          "text": "Holy shit a time traveler or cope?",
-          "createdAt": "2026-07-14T23:24:49.000Z",
+          "id": "2077966904938127502",
+          "text": "smh trying to use Claude Code browser use Hope they hire some good folks to fix this",
+          "createdAt": "2026-07-17T04:01:31.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2077132606798442817",
-          "text": "Honestly the way Spain is playing it’ll be a huge upset if they’re not the champions",
-          "createdAt": "2026-07-14T20:46:19.000Z",
+          "id": "2077963295747899856",
+          "text": "Wait a minute, ChatGPT Work is dead?",
+          "createdAt": "2026-07-17T03:47:11.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2077118932952264800",
-          "text": "So...these two teams seem to play alot better than Argentina or England 😅",
-          "createdAt": "2026-07-14T19:51:59.000Z",
+          "id": "2077962383503561174",
+          "text": "Go to Settings -> Preferences -> Appearance -> Dock icon and Codex lives on.",
+          "createdAt": "2026-07-17T03:43:33.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -51,9 +51,9 @@
           }
         },
         {
-          "id": "2077115676893057233",
-          "text": "Viva España!",
-          "createdAt": "2026-07-14T19:39:02.000Z",
+          "id": "2077923445724348832",
+          "text": "It’s super weird to me that air conditioners are not the norm in Europe. Is there a good explanation why?",
+          "createdAt": "2026-07-17T01:08:50.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -62,31 +62,26 @@
           }
         },
         {
-          "id": "2077103041397084269",
-          "text": "For making html slides and videos (e.g., using @HyperFrames_ ) Fable is still significantly better than GPT 5.6 Sol. The stuff that Sol makes is unusable. For landing pages, 5.6 Sol has caught up.",
-          "createdAt": "2026-07-14T18:48:50.000Z",
+          "id": "2077906158577459349",
+          "text": "Recently hit 100K subscribers on YouTube. Some reflections: 1. Packaging (e.g., thumbnails and titles) matters but not as much as delivering value right away. 2. Viewers can tell if your podcast guest is trying to promote something. Sharing practical workflows matters more than how famous the guest is. 3. Some of my videos have 300K+ views while others have 1K. I can't predict the outcome, but I can show up consistently every week. 4. There's a tension between maximizing views (\"This model changes everything!\") and actually making content that I like. Haven't quite figured this out yet. Thanks for your support and let me know in the replies what videos you'd like to see next on my channel: https://www.youtube.com/@PeterYangYT",
+          "createdAt": "2026-07-17T00:00:08.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
             "replies": 0,
             "views": 0
           }
-        },
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
         {
-          "id": "2077093016620384401",
-          "text": "This is super cute although I don't understand why people have to sign in with ChatGPT to visit a ChatGPT created website?",
-          "createdAt": "2026-07-14T18:09:00.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2077047201889747096",
-          "text": "I get podcast outreach from various PR agencies and I have to say almost 100% of the time they're pitching a CEO or exec to promote their product (which makes for bad episodes). The best CEO and exec episodes show real workflows with no agenda.",
-          "createdAt": "2026-07-14T15:06:57.000Z",
+          "id": "2077885624607228018",
+          "text": "Open-weight models like Kimi and GLM will cause a complete rethink of the enterprise AI stack. If you are running an enterprise, you need to maximimize model optionality. Here are 3 things you should be doing: 1. Evals - build rigorous evals representative of your use case (a) Regression evals - tablestakes features that should always work with high reliability (b) Aspirational / hill-climbing evals - harder use cases that the best model for your price point struggles to solve. So you scaffold it with prompting, context management and other techniques to overcome weaknesses or wait for a better model These evals should be easy and quick to run. Eval velocity is a competitive advantage. 2. Model routing - Model selection is about tradiing off quality/cost/latency for your use case. If you have good evals, you know which models to route traffic to for different use cases. This is something you ideally build yourself cos nobody understands your business and users like you do. There are off the shelf routers, but I haven't seen one I would recommend yet. 3. Model-agnostic harness - your system should never know which model is behind the API call. This means your harness normalizes prompt structure, context management, tool definitions, and output parsing across models, making it easy to switch... once your evals pass.",
+          "createdAt": "2026-07-16T22:38:32.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -101,20 +96,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2077168963822231753",
-          "text": "The cruel reality of the World Cup is that 47 out of 48 teams go home heartbroken. We love it anyway.",
-          "createdAt": "2026-07-14T23:10:47.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2077139555535241253",
-          "text": "How France played 10/10 football throughout the World Cup and 4/10 football in the semi final will need to be studied in football school as the ultimate cautionary tale.",
-          "createdAt": "2026-07-14T21:13:56.000Z",
+          "id": "2077791541167268243",
+          "text": "\"We can't build fast enough\": my conversation with Sachin Katti (@sk7037), Head of Industrial Compute at @OpenAI about Stargate, Jalapeno, data center financing, and all things compute. 00:00 — Cold open: “One of the largest things humanity has ever built” 00:30 — Welcome: Sachin Katti, Head of Industrial Compute at OpenAI 01:44 — Is this the biggest infrastructure buildout in history? 03:41 — Why OpenAI is building a new industrial muscle 04:54 — What an AI data center actually is 05:27 — “Factories turning electrons into tokens” 06:35 — Why AI data centers need liquid cooling everywhere 08:10 — The power problem: grids, generation, transmission, substations 10:43 — Behind-the-meter power and gas turbines 11:02 — Why nuclear “can’t come soon enough” 11:49 — Jalapeño: why OpenAI is designing its own AI chips 13:19 — Tokens per watt: the new metric that matters 13:38 — Why inference may now dominate AI compute 14:58 — Is OpenAI overbuilding compute? 16:47 — Why OpenAI thinks the bigger risk is not building fast enough 17:55 — Communities, jobs, water, and the local data-center debate 21:16 — How OpenAI chooses data-center sites 22:25 — What “industrial compute” means inside OpenAI 25:59 — Sachin’s path: Stanford, startups, Intel, OpenAI 28:05 — OpenAI’s compute portfolio: Microsoft, hyperscalers, neoclouds 29:37 — Stargate explained 31:21 — Abilene, Oracle, and the next wave of AI data centers 32:48 — How massive AI compute gets financed 34:05 — How OpenAI designed Jalapeño so quickly 35:59 — AI is starting to help design AI chips 36:20 — MRC: the networking problem behind 100,000 GPUs 38:47 — Bottlenecks: transformers, turbines, electricians, supply chains 40:29 — Guaranteed capacity: intelligence as a supply unit 42:08 — Will AI data centers move to space?",
+          "createdAt": "2026-07-16T16:24:41.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -126,8 +110,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 2,
-    "totalTweets": 10
+    "xBuilders": 3,
+    "totalTweets": 8
   },
   "_mode": "Nitter RSS (free)"
 }

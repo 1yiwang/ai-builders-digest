@@ -1,0 +1,245 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-17",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI treibt mit Stargate und dem eigenen Chip Jalapeño den größten Infrastrukturausbau der Geschichte voran, während Lila Sciences das Labor zum Rechenzentrum erklärt und 10 Billionen wissenschaftliche Tokens produziert. Benedict Evans warnt, dass der KI-Hype mit keinem früheren Plattformwechsel vergleichbar ist – die Ungewissheit über physikalische Grenzen macht den Unterschied. Madhu Guru fordert Unternehmen auf, ihre Stack-Architektur für offene Modelle umzubauen, und Granola-Gründer Chris Pedregal ringt um das Interface der KI-nativen Arbeit. Die Botschaft des Tages: Ob Rechenzentrum, Labor oder Meeting-Workflow – die nächste KI-Welle entscheidet sich an der Verzahnung von Infrastruktur und Interface."
+  },
+  "archive": {
+    "title": "Labor trifft Rechenzentrum",
+    "desc": "OpenAI baut Fabriken für Tokens, Lila Sciences macht aus Laboren Rechenzentren – und die Community ringt um die richtigen Schnittstellen, Modelle und Strategien."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-17.",
+  "sections": [
+    {
+      "title": "Beyond Server Racks: Labs and Tokens as Data Centers / Jenseits der Server: Labore und Tokens als Rechenzentren",
+      "desc": "Two very different projects treat physical infrastructure not as IT but as an industrial-scale factory for intelligence – one for scientific discovery, the other for raw compute.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/the-lab-of-the-future-should-feel",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Andy Beam and Rafa Gómez-Bombarelli (Lila Sciences) built a fully automated AI-guided lab that generates 10 trillion experimentally validated scientific reasoning tokens.",
+              "The lab is architected like a data center: instruments are nodes, a magnetic-levitation transport layer is the ‘PCI bus’, and orchestration runs like a Slurm queue."
+            ],
+            "original": [
+              "“The internet is spent, science is next.” – Andy Beam",
+              "“A lab is an infinite token generator. Produce data at scale, and the synergies give you a general reasoner that can tackle any scientific problem.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Andy Beam und Rafa Gómez-Bombarelli (Lila Sciences) haben ein vollautomatisches KI-gesteuertes Labor gebaut, das 10 Billionen experimentell validierte wissenschaftliche Tokens produziert.",
+              "Das Labor ist wie ein Rechenzentrum aufgebaut: Instrumente sind Knoten, ein Magnetschwebetransport ist der ‚PCI-Bus‘ und die Orchestrierung läuft wie eine Slurm-Queue."
+            ],
+            "original": [
+              "„Das Internet ist aufgebraucht, als Nächstes kommt die Wissenschaft.“ – Andy Beam",
+              "„Ein Labor ist ein unendlicher Token-Generator. Produziere Daten in großem Maßstab, und die Synergien liefern dir ein allgemeines Reasoner, das jedes wissenschaftliche Problem angehen kann.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=wEZBlmvxx4o",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Sachin Katti (OpenAI) reveals Stargate involves $50 billion supercomputers and the custom chip ‘Jalapeño’, designed in-house to maximize tokens per watt.",
+              "Inference now dominates compute demand; AI data centers need liquid cooling everywhere, and OpenAI considers the bigger risk not building fast enough."
+            ],
+            "original": [
+              "“Factories turning electrons into tokens.” – Sachin Katti",
+              "“We can’t build fast enough.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sachin Katti (OpenAI) verrät, dass Stargate 50-Milliarden-Dollar-Supercomputer und den maßgeschneiderten Chip ‚Jalapeño‘ umfasst, intern entwickelt, um Tokens pro Watt zu maximieren.",
+              "Inferenz dominiert jetzt den Rechenbedarf; KI-Rechenzentren brauchen überall Flüssigkühlung, und OpenAI sieht das größere Risiko darin, nicht schnell genug zu bauen."
+            ],
+            "original": [
+              "„Fabriken, die Elektronen in Tokens verwandeln.“ – Sachin Katti",
+              "„Wir können nicht schnell genug bauen.“"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Enterprise AI: Hype Check and Practical Playbook / KI im Unternehmen: Hype-Check und praktischer Leitfaden",
+      "desc": "One analyst challenges the platform-shift analogy while a practitioner lays out the exact steps enterprises need to survive open-weight model proliferation.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://www.youtube.com/watch?v=vDY_ocrkQ5w",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Benedict Evans argues that comparing AI to past platform shifts is useless — the crucial difference is we don’t know AI’s physical or scientific limits.",
+              "Coding became the first enterprise AI use case because it offers scalable verification; most other workflows still need entrepreneurs to invent AI-native solutions."
+            ],
+            "original": [
+              "“The one genuine difference this time is that we don't know AI's physical or scientific limits.”",
+              "“Foundation model labs may end up structurally like TSMC rather than Windows.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Benedict Evans hält Vergleiche von KI mit früheren Plattformwechseln für nutzlos – der entscheidende Unterschied: Wir kennen die physikalischen und wissenschaftlichen Grenzen von KI nicht.",
+              "Coding wurde zum ersten echten Enterprise-Anwendungsfall, weil es skalierbare Verifikation bietet; für die meisten anderen Workflows müssen erst noch KI-native Lösungen erfunden werden."
+            ],
+            "original": [
+              "„Der wirklich neue Unterschied ist, dass wir die physikalischen und wissenschaftlichen Grenzen der KI nicht kennen.“",
+              "„Foundation-Model-Labore könnten strukturell wie TSMC enden und nicht wie Windows.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "x:@realmadhuguru",
+          "sourceName": "X / @realmadhuguru",
+          "sourceUrl": "https://x.com/realmadhuguru/status/2077885624607228018",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Madhu Guru: Open-weight models like Kimi and GLM demand an enterprise AI stack rethink — maximize model optionality with fast, rigorous evals (regression + aspirational).",
+              "Model routing is your job; no vendor understands your business like you. Pair it with a model-agnostic harness so switching models needs only fresh evals."
+            ],
+            "original": [
+              "“Eval velocity is a competitive advantage.”",
+              "“Your system should never know which model is behind the API call.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Madhu Guru: Offene Modelle wie Kimi und GLM erzwingen ein Umdenken im Enterprise-KI-Stack – maximiert Modell-Optionalität durch schnelle, strenge Evals (Regression + ambitionierte Anwendungsfälle).",
+              "Model-Routing ist eure Aufgabe; kein Anbieter versteht euer Geschäft so gut wie ihr selbst. Kombiniert das mit einem modellagnostischen Harness, damit ein Modellwechsel nur neue Evals braucht."
+            ],
+            "original": [
+              "„Eval-Geschwindigkeit ist ein Wettbewerbsvorteil.“",
+              "„Euer System sollte nie wissen, welches Modell hinter dem API-Aufruf steckt.“"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Interface Layer: Meeting Context and Platform Integration / Die Interface-Schicht: Meeting-Kontext und Plattform-Integration",
+      "desc": "Two product stories show how the battle for AI-native workflows is moving from the model layer to the context and platform layer.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/The-Founder-of-a-1-5B-AI-Company-on-What-Comes-After-the-First-Wave-of-AI-Apps-e3m47gg",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Chris Pedregal (Granola) raised $125M at $1.5B valuation and is betting the real fight is over the interface for work in an AI-native world, not meeting notes alone.",
+              "Granola pre-generates millions of meeting briefs and will open an API/MCP layer so any agent can use meeting context to prepare, act, and follow up."
+            ],
+            "original": [
+              "“Running a startup is a knife fight whether things are going well or not.” – Chris Pedregal",
+              "“What interface we use for work, and what work looks like in an AI-native world.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Chris Pedregal (Granola) sammelte 125 Millionen Dollar bei einer Bewertung von 1,5 Milliarden ein und wettet darauf, dass der eigentliche Kampf um das Interface für KI-native Arbeit geht – nicht um Meeting-Notizen.",
+              "Granola erzeugt Millionen von Meeting-Briefings im Voraus und öffnet eine API/MCP-Schicht, damit jeder Agent Meeting-Kontext für Vorbereitung, Aktion und Nachbereitung nutzen kann."
+            ],
+            "original": [
+              "„Ein Startup zu führen ist ein Messerkampf, egal ob es gut oder schlecht läuft.“ – Chris Pedregal",
+              "„Welches Interface wir für die Arbeit nutzen und wie Arbeit in einer KI-nativen Welt aussieht.“"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-for-foundation-models",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude is now available as a Swift package for Apple’s Foundation Models framework, letting iOS/macOS developers hand off from on-device models to Claude for multi-step reasoning and code generation.",
+              "The integration uses @Generable annotations for typed Swift values, enabling seamless streaming, tool calls, and structured responses inside SwiftUI views."
+            ],
+            "original": [
+              "“Claude support with the Foundation Models framework works through Apple’s Foundation Models framework on iOS 27, iPadOS 27, macOS 27, visionOS 27, and watchOS 27.”",
+              "“Pass typed outputs from Apple’s on-device models into a Claude request.”"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude ist jetzt als Swift-Paket für Apples Foundation-Models-Framework verfügbar; iOS-/macOS-Entwickler können von On-Device-Modellen an Claude übergeben, sobald mehrstufiges Reasoning oder Code-Generierung nötig ist.",
+              "Die Integration nutzt @Generable-Annotationen für typisierte Swift-Werte und ermöglicht nahtloses Streaming, Tool-Aufrufe und strukturierte Antworten innerhalb von SwiftUI-Views."
+            ],
+            "original": [
+              "„Claude-Unterstützung mit dem Foundation-Models-Framework funktioniert unter iOS 27, iPadOS 27, macOS 27, visionOS 27 und watchOS 27.“",
+              "„Übergebt typisierte Ausgaben von Apples On-Device-Modellen in eine Claude-Anfrage.“"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model Quick Hits: Retrieval Wins and a New Entrant / Modell-Kurzmeldungen: Retrieval-Sieg und ein Neuzugang",
+      "desc": "Brief updates on a benchmark-leading embedding model and the first launch from a closely watched AI lab.",
+      "cards": [
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face Blog",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "NVIDIA Nemotron 3 Embed achieved #1 overall on the RTEB benchmark, targeting agentic retrieval scenarios."
+            ],
+            "original": [
+              "NVIDIA’s new embedding model ranks first on RTEB, pushing the frontier for retrieval-augmented AI agents."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA Nemotron 3 Embed belegt Platz 1 im RTEB-Benchmark und zielt auf agentische Retrieval-Szenarien."
+            ],
+            "original": [
+              "NVIDIAs neues Embedding-Modell führt die RTEB-Rangliste an und verschiebt die Grenzen für retrieval-gestützte KI-Agenten."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Thinking Machines Lab, founded by ex-OpenAI CTO Mira Murati, launched its first model Inkling, available day zero on Together AI."
+            ],
+            "original": [
+              "Inkling, the debut model from Thinking Machines Lab, is immediately available on Together AI’s inference platform."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Thinking Machines Lab, gegründet von Ex-OpenAI-CTO Mira Murati, veröffentlichte sein erstes Modell Inkling, ab Tag null auf Together AI verfügbar."
+            ],
+            "original": [
+              "Inkling, das Debütmodell von Thinking Machines Lab, ist sofort auf der Inferenzplattform von Together AI verfügbar."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

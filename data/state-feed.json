@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "fb9d2daa-719d-11f1-9e13-9f44da352371": 1782900292273,
-    "gid://art19-episode-locator/V0/SzadjqWR6Fsbrwt3YGQDDasmnSAw79AyvxfXSumwakg": 1782900293449,
-    "fa32f1cc-7529-11f1-afda-df0320fd1c68": 1782900293535,
     "substack:post:204393300": 1783071069848,
     "ee5028a8-75be-11f1-bab0-67711adf1682": 1783071070652,
     "8cc3ae0d-bd6a-4b43-a0a4-6ee35f9b802e": 1783071071167,
@@ -17,16 +14,14 @@
     "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273,
     "e80c1332-7efe-11f1-aad6-934cf71a1d19": 1784104064310,
     "gid://art19-episode-locator/V0/ecYfV5uBbkLJjJZZYH6uK0ZuIdG4MGsLZEuu63CvaDw": 1784104065777,
-    "gid://art19-episode-locator/V0/9kRwA4CwNkyVI31rI2kR06etVuIAE1usvHlaJyqtOQg": 1784104066811
+    "gid://art19-episode-locator/V0/9kRwA4CwNkyVI31rI2kR06etVuIAE1usvHlaJyqtOQg": 1784104066811,
+    "substack:post:207109360": 1784276533086,
+    "8b47cf39-e93a-4301-ae25-e89179d80679": 1784276533959,
+    "b4412830-1477-401f-9df7-975c32f7cb7b": 1784276534672,
+    "91e9a3bc-f51c-4e02-ba84-d7440834a0e4": 1784276535005,
+    "gid://art19-episode-locator/V0/k-uUNvvTrk4zs_vOeOunh40YBMIr_RK-TrHZ-Z_Zqww": 1784276536315
   },
   "seenArticles": {
-    "https://huggingface.co/blog/ibm-research/scarfbench": 1782900295080,
-    "https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable": 1782900295080,
-    "https://huggingface.co/blog/eee-community-evals": 1782900295080,
-    "https://openai.com/index/how-chatgpt-adoption-has-expanded": 1782900295422,
-    "https://openai.com/index/introducing-genebench-pro": 1782900295422,
-    "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug": 1782900295422,
-    "https://www.together.ai/blog/icml-2026": 1782900295814,
     "https://huggingface.co/blog/cerebras-gemma4-voice-ai": 1783071073886,
     "https://www.together.ai/blog/announcing-our-series-c": 1783071074257,
     "https://huggingface.co/blog/revamped-kernels": 1783335292558,
@@ -43,7 +38,17 @@
     "https://claude.com/blog/artifacts-in-claude-code": 1783500045509,
     "https://openai.com/index/managing-ai-investments-in-agentic-era": 1784104067680,
     "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex": 1784104067680,
-    "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex": 1784104067680
+    "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex": 1784104067680,
+    "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb": 1784276538051,
+    "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages": 1784276538051,
+    "https://huggingface.co/blog/security-incident-july-2026": 1784276538051,
+    "https://openai.com/index/why-teens-deserve-access-safe-ai": 1784276538514,
+    "https://openai.com/index/cars24": 1784276538514,
+    "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action": 1784276538514,
+    "https://www.together.ai/blog/99-9-uptime-for-inference": 1784276538661,
+    "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0": 1784276538661,
+    "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters": 1784276538661,
+    "https://claude.com/blog/claude-for-foundation-models": 1784276555235
   },
   "xUserIds": {}
 }
