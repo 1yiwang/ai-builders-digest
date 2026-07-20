@@ -1,33 +1,13 @@
 {
-  "generatedAt": "2026-07-17T08:22:35.735Z",
+  "generatedAt": "2026-07-20T09:30:22.195Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
-      "publishedAt": "2026-07-16T16:01:21.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Newer Models, Same Advantage",
-      "url": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
-      "publishedAt": "2026-07-16T11:49:48.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Security incident disclosure — July 2026",
-      "url": "https://huggingface.co/blog/security-incident-july-2026",
-      "publishedAt": "2026-07-16T00:00:00.000Z",
+      "title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
+      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+      "publishedAt": "2026-07-17T15:57:54.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -35,75 +15,15 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Why teens deserve access to safe AI",
-      "url": "https://openai.com/index/why-teens-deserve-access-safe-ai",
-      "publishedAt": "2026-07-16T16:00:00.000Z",
+      "title": "A scorecard for the AI age",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "publishedAt": "2026-07-17T10:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Learn how OpenAI is making ChatGPT safer for teens with age-appropriate protections, learning tools, parental controls, and expert partnerships."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "How Cars24 scales conversations and builds faster with OpenAI",
-      "url": "https://openai.com/index/cars24",
-      "publishedAt": "2026-07-16T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "The US is advancing AI safety through state and federal action",
-      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "publishedAt": "2026-07-15T12:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "OpenAI outlines a “reverse federalism” approach to AI governance, where state laws help build a national framework for safe, democratic AI."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "What does 99.9% uptime mean for inference?",
-      "url": "https://www.together.ai/blog/99-9-uptime-for-inference",
-      "publishedAt": "2026-07-16T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Reliability numbers are easy to publish. We break down what 99%, 99.9%, and 99.99% uptime actually require, the failure domains each tier has to survive, and the questions to ask any inference provider before you commit."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "Together AI brings Thinking Machines Lab’s new model Inkling on day 0",
-      "url": "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
-      "publishedAt": "2026-07-15T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "New in Together GPU Clusters: Reliability and control for production GPU clusters",
-      "url": "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters",
-      "publishedAt": "2026-07-15T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "See how Together AI is improving production GPU clusters with passive health checks, node repair, stronger Slurm reliability, OIDC, and startup scripts."
-    },
-    {
-      "source": "blog",
-      "name": "Claude Blog",
-      "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
-      "url": "https://claude.com/blog/claude-for-foundation-models",
-      "publishedAt": "Jun 08, 2026",
-      "author": "",
-      "description": "",
-      "content": "Today we&#x27;re releasing Foundation Models framework support for Claude through a new Swift package that lets Apple developers use Apple&#x27;s Foundation Models framework to call Claude for more complex workflows. Apple’s Foundation Models framework gives developers access to tap into models natively from Swift. It is very easy to use and can return typed Swift values through guided generation in as few as three lines of code. Developers can use this to tap into Apple’s on-device models for fast, local tasks like summarization or extraction. Developers can now use Apple’s Foundation Models framework to hand off to Claude when a request calls for multi-step reasoning, code generation, and more. Claude can also search the web for current information and execute code for data analysis. Stream Claude&#x27;s response back into the same view. Because Apple&#x27;s framework returns typed Swift values from @Generable annotations, developers arrive at the Claude API call with clean inputs instead of raw user text. What this unlocks The Foundation Models framework already powers a range of intelligent on-device features — journaling apps that surface personalized prompts, document apps that summarize contracts, learning apps that explain a concept at a student&#x27;s level. Adding Claude extends each of those patterns. A journaling app can generate daily prompts on-device, then ask Claude to find threads across months of entries. A study app can define a term on-device, then hand off to Claude when the student follows up with \"why does this matter for everything else we&#x27;ve covered?\" It&#x27;s one experience for the user, backed by the right model for each step. Getting started Claude support with the Foundation Models framework will be available tomorrow and works through Apple&#x27;s Foundation Models framework on iOS 27, iPadOS 27, macOS 27, and visionOS 27, and watch OS 27. Add it to your project, sign in with an Anthropic API key, and pass typed outputs from Apple&#x27;s on-device pass into a Claude request — the package handles streaming, tool calls, and structured responses back into your SwiftUI view."
+      "content": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute."
     }
   ],
   "stats": {
-    "blogPosts": 10
+    "blogPosts": 2
   }
 }

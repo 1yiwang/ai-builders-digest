@@ -1,0 +1,49 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-20",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Heute ein ruhiger Tag: OpenAI-CFO Sarah Friar stellt einen praxisnahen KI-Scorecard vor, der ROI anhand von Nutzarbeit, Kosten pro erfolgreichen Task, Verlässlichkeit und Compute-Rendite misst. Während andere KI-News nicht belegbare Links enthielten, bleibt die Frage nach messbarer Wertschöpfung zentral. OpenAIs Initiative zeigt, dass Unternehmen jetzt endlich harte Metriken fordern. Trotz eines nachrichtenarmen Tages spiegelt sich hier der allgemeine Trend zur Rechenschaftspflicht."
+  },
+  "archive": {
+    "title": "OpenAIs KI-Scorecard",
+    "desc": "OpenAI präsentiert eine Kennzahlen-Matrix für den unternehmerischen KI-Einsatz."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-20.",
+  "sections": [
+    {
+      "title": "Enterprise AI ROI / OpenAIs neuer Scorecard-Ansatz",
+      "desc": "CFO Sarah Friar veröffentlicht einen messbaren Leistungsindikator für den KI-Einsatz in Unternehmen.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI CFO Sarah Friar proposes a scorecard measuring AI ROI via useful work output, cost per successful task, dependability, and return on compute investment."
+            ],
+            "original": [
+              "'A scorecard for the AI age' introducing metrics: useful work, cost per successful task, dependability, and return on compute."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI-CFO Sarah Friar veröffentlicht eine Scorecard, die KI-ROI anhand von Nutzarbeit, Kosten pro erfolgreichem Task, Verlässlichkeit und Compute-Rendite misst."
+            ],
+            "original": [
+              "'A scorecard for the AI age' – Metriken: useful work, cost per successful task, dependability, return on compute."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

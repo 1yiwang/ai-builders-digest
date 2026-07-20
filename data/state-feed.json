@@ -1,11 +1,5 @@
 {
   "seenVideos": {
-    "substack:post:204393300": 1783071069848,
-    "ee5028a8-75be-11f1-bab0-67711adf1682": 1783071070652,
-    "8cc3ae0d-bd6a-4b43-a0a4-6ee35f9b802e": 1783071071167,
-    "3a41b0c9-9f64-41b5-b88e-6b3dfce609b5": 1783071071459,
-    "gid://art19-episode-locator/V0/PbodRlo4-7Ptf8FSkY-1fSPL9o8Ivn7WXA34sIFV0UQ": 1783071072421,
-    "9df756ce-a670-48bb-91a2-12140d03ce58": 1783071073691,
     "8580908a-776a-11f1-8ce5-8f37b1f695ab": 1783335290817,
     "02ef4faa-797a-11f1-8ba5-9f03cb2e87c8": 1783500029997,
     "gid://art19-episode-locator/V0/qJtU7OTBPiidO1Jxbtli9gsXTUxFrFy95A4kn1dEGDs": 1783500031786,
@@ -19,11 +13,10 @@
     "8b47cf39-e93a-4301-ae25-e89179d80679": 1784276533959,
     "b4412830-1477-401f-9df7-975c32f7cb7b": 1784276534672,
     "91e9a3bc-f51c-4e02-ba84-d7440834a0e4": 1784276535005,
-    "gid://art19-episode-locator/V0/k-uUNvvTrk4zs_vOeOunh40YBMIr_RK-TrHZ-Z_Zqww": 1784276536315
+    "gid://art19-episode-locator/V0/k-uUNvvTrk4zs_vOeOunh40YBMIr_RK-TrHZ-Z_Zqww": 1784276536315,
+    "gid://art19-episode-locator/V0/6w0KkXxHkDOBuE75y3MXa-ceD72ChpCK-CmCLkmnn0E": 1784539796402
   },
   "seenArticles": {
-    "https://huggingface.co/blog/cerebras-gemma4-voice-ai": 1783071073886,
-    "https://www.together.ai/blog/announcing-our-series-c": 1783071074257,
     "https://huggingface.co/blog/revamped-kernels": 1783335292558,
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1783335304781,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1783335309822,
@@ -48,7 +41,9 @@
     "https://www.together.ai/blog/99-9-uptime-for-inference": 1784276538661,
     "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0": 1784276538661,
     "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters": 1784276538661,
-    "https://claude.com/blog/claude-for-foundation-models": 1784276555235
+    "https://claude.com/blog/claude-for-foundation-models": 1784276555235,
+    "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel": 1784539797938,
+    "https://openai.com/index/a-scorecard-for-the-ai-age": 1784539798254
   },
   "xUserIds": {}
 }
