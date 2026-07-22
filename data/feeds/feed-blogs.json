@@ -1,13 +1,23 @@
 {
-  "generatedAt": "2026-07-20T09:30:22.195Z",
+  "generatedAt": "2026-07-22T08:40:00.819Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
-      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
-      "publishedAt": "2026-07-17T15:57:54.000Z",
+      "title": "The State of Simulation for Physical AI: An Overview",
+      "url": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
+      "publishedAt": "2026-07-21T20:00:27.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Grabette: an open system to record robot-manipulation data",
+      "url": "https://huggingface.co/blog/grabette",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -15,15 +25,45 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "A scorecard for the AI age",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "publishedAt": "2026-07-17T10:00:00.000Z",
+      "title": "Introducing the ChatGPT for small business program",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "publishedAt": "2026-07-21T17:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute."
+      "content": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "publishedAt": "2026-07-21T07:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+      "url": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+      "publishedAt": "2026-07-21T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance."
+    },
+    {
+      "source": "blog-rss",
+      "name": "Together AI",
+      "title": "Together AI and Y Combinator partner to launch the first dedicated GPU cluster for the YC community",
+      "url": "https://www.together.ai/blog/together-yc-gpu-cluster",
+      "publishedAt": "2026-07-20T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs."
     }
   ],
   "stats": {
-    "blogPosts": 2
+    "blogPosts": 6
   }
 }

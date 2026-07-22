@@ -1,0 +1,191 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-22",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Matan Grinberg (Factory) prognostiziert, dass 90 % der Code-Token bald in einer „dunklen Fabrik“ asynchron entstehen. Xaira Therapeutics belegt, dass ohne 30-mal mehr informationsreiche Daten Genexpressionsmodelle ab 1,5 Mrd. Parametern nicht skalieren. Together AI und YC geben Startups sofort GPU-Zugang, während ein Evaluierungsvorfall bei OpenAI und Hugging Face die Sicherheit in den Fokus rückt. Diese Beispiele unterstreichen: KI-Fortschritt hängt zunehmend von Infrastruktur und Datenqualität ab."
+  },
+  "archive": {
+    "title": "Die dunkle Code-Fabrik",
+    "desc": "Matan Grinbergs Vorhersage, dass 90 % der Code-Token bald asynchron generiert werden, und Xairas Erkenntnis, dass Dateninformation Skalierung ermöglicht, prägen den Tag."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-22.",
+  "sections": [
+    {
+      "title": "Die dunkle Fabrik: Software, die sich selbst baut / The Dark Factory: Software That Builds Itself",
+      "desc": "Matan Grinberg beschreibt Factorys Weg zu autonomen Coding-Agenten und sagt voraus, dass 90 % der Code-Token asynchron von Software generiert werden.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZesOukBjPmI",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Matan Grinberg (Factory) predicts 90% of coding tokens will run asynchronously – the ‘dark factory’ where software builds itself.",
+              "He argues model-agnostic harnesses outperform co-designed setups by avoiding overfitting to a single model, and open-weight models like GLM will dominate the token market at lower cost."
+            ],
+            "original": [
+              "A model-agnostic harness beats the model-and-harness co-design because exposing a harness to many models keeps it from overfitting to any single one.",
+              "CIOs will soon justify every incremental token the way they justify headcount."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Matan Grinberg (Factory) prognostiziert, dass 90 % der Code-Token asynchron ablaufen – die ‚dunkle Fabrik‘, in der Software sich selbst erstellt.",
+              "Er argumentiert, dass modell-agnostische Harnesse besser sind, da sie Überanpassung an ein einzelnes Modell vermeiden, und Open-Weight-Modelle wie GLM den Token-Markt zu einem Bruchteil der Kosten dominieren."
+            ],
+            "original": [
+              "Ein modell-agnostischer Harness übertrifft das Co-Design von Modell und Harness, weil er durch die Konfrontation mit vielen Modellen nicht auf eines überangepasst wird.",
+              "CIOs werden bald jeden zusätzlichen Token so rechtfertigen wie jede zusätzliche Kopfzahl."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=ZesOukBjPmI",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Factory's model-agnostic harness avoids overfitting by training on diverse models, contrasting with the co-design approach favored by labs like OpenAI and Anthropic.",
+              "Founder Matan Grinberg believes open-weight models like GLM will capture the majority of tokens by staying one generation behind the frontier at a fraction of the cost."
+            ],
+            "original": [
+              "Open-weight models like GLM will capture the majority of tokens by staying one generation behind the frontier.",
+              "Factory started building fully autonomous coding agents in April 2023, two years before enterprises were ready. Matan Grinberg says this is indistinguishable from being wrong."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Der modell-agnostische Harness von Factory vermeidet Überanpassung, indem er auf verschiedenen Modellen trainiert – im Gegensatz zum Co-Design-Ansatz von OpenAI & Anthropic.",
+              "Gründer Matan Grinberg glaubt, dass Open-Weight-Modelle wie GLM den Großteil der Token einnehmen werden, da sie eine Generation hinter der Spitze bleiben, aber nur einen Bruchteil kosten."
+            ],
+            "original": [
+              "Open-Weight-Modelle wie GLM werden den Großteil der Token einnehmen, weil sie eine Generation hinter der Spitze bleiben.",
+              "Factory hat im April 2023 mit dem Bau vollständig autonomer Coding-Agenten begonnen, zwei Jahre bevor Unternehmen bereit waren. Matan Grinberg sagt, das sei nicht von Falschliegen zu unterscheiden."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Drug Discovery: Die Informationsskalierungsgrenze / Drug Discovery: The Information Scaling Limit",
+      "desc": "Xaira Therapeutics zeigt, dass mehr Parameter allein nicht reichen – informationsreiche Daten sind der Schlüssel, um Modelle in der Genexpressionsvorhersage skalieren zu lassen.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.youtube.com/watch?v=2AdS-2uuH80",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Ci Chu and Bo Wang (Xaira Therapeutics) found that for gene expression prediction, scaling a model past 1.5B parameters fails unless you have ~30x more information-rich data.",
+              "Their approach treats drug discovery data collection like an RL rollout budget: tens of millions for experiments plus a few million for compute, yielding a model that scales with compute."
+            ],
+            "original": [
+              "If test loss flatlines after 1.5B parameters while training loss continues to drop as you scale, that tells you that your model is limited by the amount of information in your data.",
+              "The budget looks like a RL rollout budget, rather than a data rich pre-training one."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ci Chu und Bo Wang (Xaira Therapeutics) zeigten, dass die Vorhersage von Genexpression ab 1,5 Mrd. Parametern stagniert, sofern man nicht ~30x mehr informationsreiche Daten hat.",
+              "Ihr Ansatz behandelt die Datenerhebung in der Wirkstoffforschung wie ein RL-Rollout-Budget: zig Millionen für Experimente und wenige Millionen für Rechenleistung, was ein skalierendes Modell ergibt."
+            ],
+            "original": [
+              "Wenn der Testverlust ab 1,5 Mrd. Parametern abflacht, während der Trainingsverlust weiter sinkt, dann ist das Modell durch die Informationsmenge in den Daten begrenzt.",
+              "Das Budget sieht eher nach einem RL-Rollout-Budget aus als nach einem datenreichen Pretraining."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.youtube.com/watch?v=2AdS-2uuH80",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "A general insight emerges: when test loss plateaus while training loss keeps dropping with model scale, the model is information-limited, not compute-limited.",
+              "The Xaira team demonstrated this with their 3.1B model, which fell off the scaling trend because the underlying CELLxGENE data lacked sufficient information."
+            ],
+            "original": [
+              "Training on a single, smallish data set exposed an information gap: the 3.1B model falls off the scaling trend. Neither parameters nor compute will improve performance past this wall.",
+              "This is what Chu and Bo’s teams have done, and here is what ~30x the information buys you: Now we can scale with parameters and training compute!"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Die Erkenntnis: Wenn der Testverlust mit zunehmender Modellgröße stagniert, während der Trainingsverlust weiter sinkt, ist nicht die Rechenleistung, sondern die Dateninformation der Engpass.",
+              "Das Xaira-Team belegte dies mit seinem 3,1-Mrd.-Parameter-Modell, das aus dem Skalierungstrend fiel, weil die CELLxGENE-Daten nicht genug Information enthielten."
+            ],
+            "original": [
+              "Das Training mit einem einzelnen, kleinen Datensatz offenbarte eine Informationslücke: Das 3,1-Mrd.-Modell fällt aus dem Skalierungstrend. Weder mehr Parameter noch mehr Rechenleistung können die Leistung über diese Wand hinaus verbessern.",
+              "Das haben Chus und Bos Teams getan, und hier ist, was ~30x mehr Information bringt: Jetzt können wir mit Parametern und Trainingsrechenleistung skalieren!"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Infrastruktur für Startups und Sicherheitsvorfälle / Infrastructure for Startups and Security Incidents",
+      "desc": "Together AI und YC bieten GPU-Cluster ohne Langzeitverträge, während OpenAI und Hugging Face einen Evaluierungsvorfall melden.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/together-yc-gpu-cluster",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI and Y Combinator launched the first dedicated GPU cluster for YC startups, eliminating the need for multi-year compute contracts.",
+              "The partnership gives YC founders immediate access to GPU resources, accelerating the path from prototype to scale."
+            ],
+            "original": [
+              "No more two-year compute contracts. Together AI and YC just gave YC startups a faster way to get GPUs."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI und Y Combinator starteten den ersten dedizierten GPU-Cluster für YC-Startups – ohne mehrjährige Rechenverträge.",
+              "YC-Gründer erhalten sofort GPU-Zugriff und können schneller vom Prototyp zur Skalierung gelangen."
+            ],
+            "original": [
+              "Keine Zweijahres-Rechenverträge mehr. Together AI und YC haben YC-Startups einen schnelleren Weg zu GPUs verschafft."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI and Hugging Face disclosed a security incident during AI model evaluation that showed advanced cyber capabilities.",
+              "Early findings highlight new attack vectors but also provide critical lessons for defenders to harden evaluation pipelines."
+            ],
+            "original": [
+              "OpenAI and Hugging Face share early findings from a security incident during AI model evaluation, highlighting advanced cyber capabilities and lessons for defenders."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI und Hugging Face meldeten einen Sicherheitsvorfall bei der Modellbewertung, der fortgeschrittene Cyber-Fähigkeiten offenbarte.",
+              "Frühe Erkenntnisse zeigen neue Angriffsvektoren, liefern aber auch wichtige Lektionen, um Evaluierungspipelines zu härten."
+            ],
+            "original": [
+              "OpenAI und Hugging Face teilen erste Erkenntnisse zu einem Sicherheitsvorfall bei der KI-Modellbewertung und heben fortgeschrittene Cyber-Fähigkeiten sowie Lehren für Verteidiger hervor."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

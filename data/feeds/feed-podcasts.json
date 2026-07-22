@@ -1,17 +1,35 @@
 {
-  "generatedAt": "2026-07-20T09:29:57.859Z",
+  "generatedAt": "2026-07-22T08:39:53.034Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
+      "name": "Latent Space",
+      "title": "🔬Causal Models Need Causal Data - Xaira’s X-Cell model for Drug Discovery (Bo Wang &amp; Ci Chu, Chief Discovery Officer &amp; Chief AI Scientist)",
+      "guid": "substack:post:207941607",
+      "url": "https://www.youtube.com/watch?v=2AdS-2uuH80",
+      "publishedAt": "2026-07-21T19:34:06.000Z",
+      "description": "Bet on information If test loss flatlines after 1.5B parameters while training loss continues to drop as you scale, that tells you that your model is limited by the amount of information in your data. Training on a single, smallish data set exposed an information gap: the 3.1B model falls off the scaling trend. Neither parameters nor compute will improve performance past this wall. For predicting changes to gene expression, you need more information rich data . This is what Chu and Bo’s teams have done, and here is what ~30x the information buys you: Now we can scale with parameters and training compute! We don’t know how much this effort costed, but we can guess that data collection experiments and infrastructure was a few tens of millions, and compute + headcount + research was a few million. The budget looks like a RL rollout budget, rather than a data rich pre-training one. We were lucky enough to have the two central figures in this story on our podcast. Taking the lead from Ci Chu and Bo Wang, Xaira Therapeutics is betting that information rich data is the key to AI-driven drug development. Chu was recently promoted to Chief Discovery Officer and Bo to Chief AI Scientist, underscoring just how strategic Xaira considers this bet. Reverse engineering the human cell If you had to figure out how a human cell works, what would you do? A good place to start might be by documenting what genes are expressed (e.g. what RNA is floating around) in different kinds of cells, in different circumstances. That is CELLxGENE , a database of 168M cells built by Chan Zuckerberg Institute that maps each cell to a count of how many times 20K-30K genes were detected in that cell, plus detailed metadata about every cell . A ~4 trillion-entry matrix. If the Protein Data Bank (PDB) unlocked structural biology models ( Boltz Episode , ESM/BioHub Episode ), CELLxGENE has done the same thing for Virtual Cell models. Like PDB, CELLxGENE has inspired a zoo of AI models of RNA expression; so much so that RNA expression models have become synonymous with Virtual Cell models. Bo Wang built one of the most influential, scGPT , that became the starting point for Xaira’s new model. RNA expression ≠ Virtual Cell Models traine"
+    },
+    {
+      "source": "podcast",
+      "name": "Training Data",
+      "title": "Factory's Matan Grinberg: The Coming ‘Dark Factory’ Where Software Builds Itself",
+      "guid": "8b31e580-845b-11f1-850d-e78291a15e5d",
+      "url": "https://www.youtube.com/watch?v=ZesOukBjPmI",
+      "publishedAt": "2026-07-21T09:00:00.000Z",
+      "description": "Factory started building fully autonomous coding agents in April 2023, two years before enterprises were ready. Matan Grinberg now says this is indistinguishable from being wrong. The Factory co-founder and CEO explains how the company survived its \"journey in the desert,\" including the decision to hand nearly all of its revenue back to customers when the product wasn't making developers obsessed. Matan makes the contrarian technical case that a model-agnostic harness beats the model-and-harness co-design that labs like OpenAI and Anthropic favor, because exposing a harness to many models keeps it from overfitting to any single one. He argues open-weight models like GLM will capture the majority of tokens by staying one generation behind the frontier at a fraction of the cost, and that CIOs will soon justify every incremental token the way they justify headcount. Looking ahead, he predicts 90% of coding tokens will run asynchronously—the \"dark factory\" where software builds itself. Hosted by Sonya Huang and Pat Grady, Sequoia Capital"
+    },
+    {
+      "source": "podcast",
       "name": "Machine Learning Street Talk",
-      "title": "Kimi K3 Defeats Anthropic's Strategies",
-      "guid": "gid://art19-episode-locator/V0/6w0KkXxHkDOBuE75y3MXa-ceD72ChpCK-CmCLkmnn0E",
-      "publishedAt": "2026-07-18T08:34:04.000Z",
-      "description": "In this episode, we break down Apple's lawsuit against OpenAI over the hiring of more than 400 employees and what the dispute could mean for competition in the AI industry. We also cover Moonshot AI's K3 model reaching 3 trillion parameters and discuss why that milestone matters for the race to build more capable AI systems. Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "title": "Understanding AI's Contributions to Deezer Music",
+      "guid": "gid://art19-episode-locator/V0/evoXHeo2w3nr8Wf0Yar2KGFASZoQq1HnA8HsekXar3k",
+      "publishedAt": "2026-07-21T23:25:05.000Z",
+      "description": "Chapters 00:00 Introduction 00:37 Deezer's AI Music Stats 01:59 My Personal Experience with AI Music 04:00 AI and Music Royalties 06:36 Challenges Facing AI Music Startups 10:00 Conclusion and Future Prospects The AI Hustle Skool Community: https://www.skool.com/aihustle Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 1
+    "podcastEpisodes": 3
   }
 }
