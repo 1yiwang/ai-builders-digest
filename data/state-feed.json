@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "02ef4faa-797a-11f1-8ba5-9f03cb2e87c8": 1783500029997,
-    "gid://art19-episode-locator/V0/qJtU7OTBPiidO1Jxbtli9gsXTUxFrFy95A4kn1dEGDs": 1783500031786,
-    "gid://art19-episode-locator/V0/lj4OzbUJXm5rExHOINnS86k233DedgPWpV02FJkF6MI": 1783500032781,
     "gid://art19-episode-locator/V0/5oB9gJj_p7zZrqO1su0CJEjkEZs5PGrjkQmS9PKG6s8": 1783935704211,
     "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273,
     "e80c1332-7efe-11f1-aad6-934cf71a1d19": 1784104064310,
@@ -16,16 +13,15 @@
     "gid://art19-episode-locator/V0/6w0KkXxHkDOBuE75y3MXa-ceD72ChpCK-CmCLkmnn0E": 1784539796402,
     "substack:post:207941607": 1784709589829,
     "8b31e580-845b-11f1-850d-e78291a15e5d": 1784709590523,
-    "gid://art19-episode-locator/V0/evoXHeo2w3nr8Wf0Yar2KGFASZoQq1HnA8HsekXar3k": 1784709591759
+    "gid://art19-episode-locator/V0/evoXHeo2w3nr8Wf0Yar2KGFASZoQq1HnA8HsekXar3k": 1784709591759,
+    "substack:post:208082176": 1784882234999,
+    "67540c92-8640-11f1-8f2a-e322343e668d": 1784882235740,
+    "df5bd56e-7e39-4f50-9120-0ec711ece6bc": 1784882236303,
+    "ca96dcfd-41b1-4877-81f0-4d1902836d17": 1784882236515,
+    "gid://art19-episode-locator/V0/wvlF5bGXu4AyC1uXj1qRYQPS8IfP411R8zjKfjqeKYo": 1784882237328,
+    "9bcca966-be29-4f64-951a-2a49fe7b6d3a": 1784882239077
   },
   "seenArticles": {
-    "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio": 1783500033540,
-    "https://huggingface.co/blog/microsoft/foundry-managed-compute": 1783500033540,
-    "https://huggingface.co/blog/skypilot-hf-storage": 1783500033540,
-    "https://openai.com/index/australian-payments-plus": 1783500033999,
-    "https://openai.com/index/mufg": 1783500033999,
-    "https://www.together.ai/blog/provisioned-throughput": 1783500034286,
-    "https://claude.com/blog/artifacts-in-claude-code": 1783500045509,
     "https://openai.com/index/managing-ai-investments-in-agentic-era": 1784104067680,
     "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex": 1784104067680,
     "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex": 1784104067680,
@@ -46,7 +42,16 @@
     "https://openai.com/index/introducing-chatgpt-small-business-program": 1784709593426,
     "https://openai.com/index/hugging-face-model-evaluation-security-incident": 1784709593426,
     "https://openai.com/index/david-velez-robin-vince-join-openai-boards": 1784709593426,
-    "https://www.together.ai/blog/together-yc-gpu-cluster": 1784709593509
+    "https://www.together.ai/blog/together-yc-gpu-cluster": 1784709593509,
+    "https://huggingface.co/blog/nunchaku-diffusers": 1784882239177,
+    "https://openai.com/index/health-in-chatgpt": 1784882239515,
+    "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community": 1784882239515,
+    "https://openai.com/index/how-news-organizations-are-using-ai": 1784882239515,
+    "https://www.together.ai/blog/the-production-platform-for-open-weight-ai-inference": 1784882239770,
+    "https://www.anthropic.com/engineering/how-we-contain-claude": 1784882248116,
+    "https://www.anthropic.com/engineering/april-23-postmortem": 1784882257319,
+    "https://www.anthropic.com/engineering/managed-agents": 1784882263470,
+    "https://claude.com/blog/claude-managed-agents-updates": 1784882264198
   },
   "xUserIds": {}
 }

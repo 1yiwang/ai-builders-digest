@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-22T08:40:09.125Z",
+  "generatedAt": "2026-07-24T08:37:51.860Z",
   "lookbackHours": 24,
   "x": [
     {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
+      "handle": "@petergyang",
+      "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2079735321697325268",
-          "text": "Gemini Flash has always been underrated on X. Enterprises, however, can never seem to get enough of it. Best combination of price, intelligence, and speed.",
-          "createdAt": "2026-07-22T01:08:34.000Z",
+          "id": "2080508139091427741",
+          "text": "The next evolution is being able to spin up multiple ChatGPT Voice threads so I can have a full team talking to me and to each other. 🔥",
+          "createdAt": "2026-07-24T04:19:28.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,114 @@
           }
         },
         {
-          "id": "2079581493542969694",
-          "text": "The more I’ve relied on my second brain, the dumber my main brain has become. I’m realizing there’s tremendous value in carrying around a lot of facts, half-baked ideas, and loose threads in your head. Your subconscious keeps cooking. It makes connections between ideas, extends them, and generates new ones. You also have much better real-time recall during conversations, which lets you connect ideas and think faster. I believe there’s value in a second brain. figuring out how to use one without my main brain getting weaker.",
-          "createdAt": "2026-07-21T14:57:19.000Z",
+          "id": "2080505964936241226",
+          "text": "Before and after with ChatGPT Voice",
+          "createdAt": "2026-07-24T04:10:50.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080500770106134894",
+          "text": "Initial impressions of ChatGPT Voice in Codex: 1. It's an orchestrator thread that you can use voice to drive your other threads. 2. It works ok mostly but it seems you have to be smart about asking it to \"start new thread\" or \"use thread A\" otherwise it'll bundle all your random requests into one thread. 3. While the other thread is working it's just silent, which kind of breaks the immersion a bit. Any other tips @theteriyu @guinnesschen? I still want to be able to start voice from existing threads btw :)",
+          "createdAt": "2026-07-24T03:50:12.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080489081184874542",
+          "text": "Finally got access to ChatGPT Voice in the app, is it not available in existing threads?",
+          "createdAt": "2026-07-24T03:03:45.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080425116727697814",
+          "text": "I cannot find this feature anywhere in the ChatGPT desktop app, can you?",
+          "createdAt": "2026-07-23T22:49:34.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080379800984731964",
+          "text": "Yo @ChatGPTapp shipped what I was complaining about literally a week later. Can’t wait to try this!",
+          "createdAt": "2026-07-23T19:49:30.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080340987516539256",
+          "text": "1. Get ChatGPT images to generate beautiful app UI 2. /goal (attach image) make it look like this ^ seems like a winning combo",
+          "createdAt": "2026-07-23T17:15:16.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080297117881598226",
+          "text": "How do folks keep their design canvas (e.g., in Claude Design, Paper, Figma, Pen) in sync with code using AI? I just prompt AI to \"Update the design to reflect the current code base\" and it works ok but doesn't get all the details right. It's too easy to just ship features in code directly these days. I don't want to have to manually update the design canvas. Any tips?",
+          "createdAt": "2026-07-23T14:20:57.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080281102514856079",
+          "text": "💯",
+          "createdAt": "2026-07-23T13:17:19.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
+        {
+          "id": "2080460579966501257",
+          "text": "Great builders understand the jagged frontier of AI models. Great leaders understand the jagged frontier of their people.",
+          "createdAt": "2026-07-24T01:10:30.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2080315474093760714",
+          "text": "Chatted with a friend who leads security at a public company following the GPT Sol incident. some interesting takeaways.. How do you manage security for effectively infinite agents when identity and access management was designed for a finite number of employees? One employee can now spin up hundreds of agents. Those agents can spawn more agents. Traditionally, each employee has an identity, a role, permissions, and a lifecycle. Do agents inherit the spawning employee’s permissions? What’s their lifecycle - a task, a ticket, a week? Do child agents inherit the same permissions? How do you audit all of this?",
+          "createdAt": "2026-07-23T15:33:54.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -35,9 +140,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2079678469890310430",
-          "text": "When you miss your Series A revenue plan but go for the Series B anyway",
-          "createdAt": "2026-07-21T21:22:40.000Z",
+          "id": "2080451010439352711",
+          "text": "VCs when a founder is raising for a profitable bootstrapped business instead of burning hundreds of millions on compute for a neo-lab",
+          "createdAt": "2026-07-24T00:32:28.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -46,9 +151,9 @@
           }
         },
         {
-          "id": "2079580772285968619",
-          "text": "Not sure if it's the algo, but 2 days later my For You feed continues to be dominated by outrage against the Argentinian team. What a terrible global PR fiasco for Argentina (a beautiful country), and what a fall from grace for Messi.",
-          "createdAt": "2026-07-21T14:54:27.000Z",
+          "id": "2080333707483725876",
+          "text": "My conversation with @andrewdfeldman, CEO of @cerebras. We started from \"what is a wafer?\" and built up to why the entire chip industry is reorganizing around inference speed. 00:00 Cold open & Intro 01:31 Why speed became the AI bottleneck 02:32 Tokens per second per user, explained 03:16 AI’s broadband moment and the Netflix analogy 04:35 The AI chip landscape: GPUs, TPUs, Trainium, ASICs 06:36 What is an ASIC? 08:08 Nvidia, Groq, and the fast inference war 09:16 OpenAI, Broadcom, and specialized silicon 12:10 China, power, and sovereign AI infrastructure 15:05 Is the AI infrastructure boom a bubble? 18:56 The hidden bottlenecks: HBM, CoWoS, and 3nm 22:57 Why agents are creating CPU demand 25:36 Andrew’s path from SeaMicro to Cerebras 26:13 Why Cerebras bet on AI in 2016 31:14 SRAM vs. HBM: why inference is a memory problem 33:19 What wafer-scale computing actually means 34:28 The deep-tech “Everest” problem 36:07 The moment the first Cerebras system worked 36:49 Ringing the bell and surviving deep tech 39:08 How a giant chip handles failure 41:22 Why GPUs struggle with decode 42:17 Prefill vs. decode explained 44:01 The “100 HD movies” problem in AI inference 45:04 How fast inference changes RL and training 48:08 Reasoning models and why they cost more compute 50:08 Verification, guardrails, and small models checking big models 52:37 Multimodal AI and the path to video 53:51 Cerebras’ business model: hardware, cloud, API 55:14 OpenAI’s 750MW inference deal 55:36 Why data centers are measured in megawatts 58:01 AWS Trainium + Cerebras decode 59:29 Fast tokens as a cloud product 01:00:52 Is CUDA still a moat? 01:03:53 How TSMC helped Cerebras build the giant chip 01:07:41 Why nobody cared in 2020 01:08:15 Why chip supply chains are hard to diversify 01:09:54 Why today’s AI models will be the worst you ever use 01:10:38 What fast AI could do to SaaS",
+          "createdAt": "2026-07-23T16:46:21.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -60,8 +165,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 2,
-    "totalTweets": 4
+    "xBuilders": 3,
+    "totalTweets": 13
   },
   "_mode": "Nitter RSS (free)"
 }

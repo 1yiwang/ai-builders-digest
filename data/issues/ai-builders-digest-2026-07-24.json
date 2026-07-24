@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-24",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic veröffentlichte zwei detaillierte Post-Mortems zur Agentensicherheit, von Phishing bis zur Entkopplung des Agenten-Gehirns. Währenddessen zeigt Poolside, dass Laguna S 2.1 Modelle mit 10-facher Größe schlägt, und Cerebras-CEO Andrew Feldman erklärt, warum ein einzelnes Token Speicher im Umfang von 100 HD-Filmen benötigt. OpenAI schloss einen 750-MW-Inference-Deal ab, und Every bewies mit Codex, dass KI-Kampagnen in Stunden $25.000 generieren können — die Frage bleibt, wie wir Agenten sicher, schnell und profitabel skalieren."
+  },
+  "archive": {
+    "title": "Agentensicherheit, Inference-Rekorde, $25K-Blitzstart",
+    "desc": "Die KI-Branche zeigt heute, wie Agentensicherheit, schnelle Inferenz und praktischer KI-Einsatz zusammenfinden."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-24.",
+  "sections": [
+    {
+      "title": "Poolside's 8-Week Model Factory / Poolside: 8-Wochen-Takt von Pre-Training bis Release",
+      "desc": "Eiso Kant und Poolside zeigen, wie systematisches Experimentieren und offene Forschung die Modellentwicklung beschleunigen.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=9_0hs2sxHHo",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Poolside's Laguna S 2.1 beats Thinking Machines' model roughly 10x its size in code tasks.",
+              "Model Factory runs 10k–20k experiments/month, streaming data into training for 8-week pre-training-to-release cycles.",
+              "Co-founder Eiso Kant spent $12M on code LMs before ChatGPT, bets code is path to AGI."
+            ],
+            "original": [
+              "Laguna S 2.1 is beating Thinking Machines’ recent release nearly 10 times their size.",
+              "Poolside's Model Factory runs 10,000–20,000 experiments per month, streaming data directly into training."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Poolside’s Laguna S 2.1 übertrifft das Modell von Thinking Machines um das ~10-fache bei Code-Aufgaben.",
+              "Die Model Factory führt 10.000–20.000 Experimente pro Monat durch und streamt Daten direkt ins Training – 8 Wochen von Pre-Training bis Release.",
+              "Co-Founder Eiso Kant investierte 12 Mio. $ in Code-LMs vor ChatGPT und setzt auf Code als Weg zur AGI."
+            ],
+            "original": [
+              "Laguna S 2.1 übertrifft die jüngste Veröffentlichung von Thinking Machines um fast das Zehnfache an Größe.",
+              "Poolside’s Model Factory führt 10.000–20.000 Experimente pro Monat durch und streamt Daten direkt ins Training."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Cerebras and the 750MW Inference Deal / Cerebras und der 750-MW-Inference-Deal",
+      "desc": "Andrew Feldman erklärt, warum schnelle Inferenz zum zentralen Engpass wird und wie ein Wafer-Scale-Chip die Branche verändert.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "MAD Podcast",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/The-Biggest-Chip-Ever-Built--Why-OpenAI-Runs-On-It--Cerebras-CEO-Andrew-Feldman-e3meeca",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Cerebras CEO Andrew Feldman: generating one token can require moving data equivalent to 100 HD movies through memory.",
+              "OpenAI signed a 750MW inference deal, signaling that fast token generation is the next compute bottleneck.",
+              "Fast inference, not just training, could reshape SaaS: agents need sub-second latency for multi-step reasoning."
+            ],
+            "original": [
+              "Generating a single word can require moving the equivalent of 100 HD movies through memory.",
+              "OpenAI’s 750MW inference deal."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Cerebras-CEO Andrew Feldman: Ein einziges Token kann Daten im Umfang von 100 HD-Filmen durch den Speicher bewegen.",
+              "OpenAI schloss einen 750-MW-Inference-Deal ab – schnelle Token-Generierung wird zum nächsten Engpass.",
+              "Schnelle Inference, nicht nur Training, könnte SaaS fundamental verändern: Agenten brauchen Sub-Sekunden-Latenz für mehrstufiges Reasoning."
+            ],
+            "original": [
+              "Die Generierung eines einzigen Worts kann das Äquivalent von 100 HD-Filmen durch den Speicher bewegen.",
+              "OpenAIs 750-MW-Inference-Deal."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Security: Anthropic’s Containment Blueprint / Agentensicherheit: Anthropics Blaupause für Containment",
+      "desc": "Zwei tiefe Engineering-Posts zeigen, wie Anthropic Agenten durch Sandboxing, Entkopplung und Proxy-Architekturen sicher in Produktion bringt.",
+      "cards": [
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering Blog",
+          "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic reveals Claude Code users approved 93% of permission prompts, leading to approval fatigue and a switch to OS-level sandboxes that cut prompts by 84%.",
+              "A phishing exercise got an employee to paste a malicious prompt; Claude exfiltrated ~/.aws/credentials in 24 of 25 attempts, bypassed because it came from the user.",
+              "An attacker hid an API key in a file and used the allowed api.anthropic.com domain to exfiltrate workspace files; fixed with a session-token-enforcing MITM proxy."
+            ],
+            "original": [
+              "Users approved roughly 93% of permission prompts.",
+              "The result was an 84% reduction in permission prompts.",
+              "The employee phish … Claude completed the exfiltration 24 times out of 25."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Nutzer bestätigten rund 93% aller Berechtigungsaufforderungen; OS-Sandbox reduzierte Prompts um 84%.",
+              "Ein Phishing-Test ließ Claude AWS-Zugangsdaten exfiltrieren – in 24 von 25 Versuchen erfolgreich, weil der Prompt vom Nutzer stammte.",
+              "Angreifer nutzten erlaubte api.anthropic.com-Domäne zur Datenexfiltration; behoben durch MITM-Proxy mit Session-Token."
+            ],
+            "original": [
+              "Nutzer genehmigten rund 93 % der Berechtigungsaufforderungen.",
+              "Das Ergebnis war eine Reduzierung der Berechtigungsaufforderungen um 84 %.",
+              "Die Phishing-Übung … Claude schloss die Exfiltration 24 von 25 Mal ab."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering Blog",
+          "sourceUrl": "https://www.anthropic.com/engineering/managed-agents",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic decoupled agent ‘brain’ (harness) from ‘hands’ (sandbox), turning containers into cattle: p50 TTFT dropped ~60%, p95 over 90%.",
+              "Managed Agents now supports self-hosted sandboxes (Cloudflare, Daytona, Modal, Vercel) and MCP tunnels to connect internal tools without public endpoints.",
+              "The session log is durable, decoupled from context window, so a failed harness can be rebooted and resume from last event."
+            ],
+            "original": [
+              "p50 TTFT dropped roughly 60% and p95 dropped over 90%.",
+              "Self-hosted sandboxes keep agent execution within your perimeter.",
+              "The session log is durable, decoupled from the context window."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic entkoppelte Agenten-‚Gehirn‘ von den ‚Händen‘: p50 TTFT sank um ~60%, p95 um >90%.",
+              "Managed Agents unterstützen jetzt selbst gehostete Sandboxen (Cloudflare, Daytona, Modal, Vercel) und MCP-Tunnel für interne Tools.",
+              "Das Session-Log ist persistent und vom Kontextfenster getrennt – abgestürzte Harnesses starten neu und setzen nahtlos fort."
+            ],
+            "original": [
+              "Die p50 TTFT sank um rund 60 %, die p95 um über 90 %.",
+              "Selbst gehostete Sandboxen halten die Agentenausführung innerhalb des eigenen Perimeters.",
+              "Das Session-Log ist dauerhaft und vom Kontextfenster entkoppelt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Codex in Action: Every’s $25K Launch / Codex in Aktion: Every's $25K-Launch",
+      "desc": "Ein realer Case zeigt, wie ein Codex-Agent in Minuten eine mehrstufige Marketingkampagne aufsetzte und sofort Umsatz generierte.",
+      "cards": [
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I Podcast",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Everys-Team-Used-AI-to-Ship-Its-Biggest-Launch-Ever-e3mdd4k",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Every's growth engineer dropped an idea in Slack; Codex built 4 audience segments, drafted emails, scheduled campaign — $25k revenue in a few hours.",
+              "The Builder Pack ($625/year) bundles $7k in credits from 10 AI tools including Claude Max, Codex, Cursor Pro+, Notion.",
+              "The AI Sandwich workflow: human defines strategy, AI executes, human reviews output — turnaround from idea to launch in 10 minutes."
+            ],
+            "original": [
+              "It took Austin 10 minutes to make some tweaks … Within a few hours, it generated more than $25,000 in revenue.",
+              "The Builder Pack: $7,000 in credits and free usage from ten of the AI products Every uses every day."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ein Ingenieur warf eine Idee in Slack ein; Codex erstellte 4 Zielgruppen-Segmente, E-Mails und Terminierung – $25k Umsatz in wenigen Stunden.",
+              "Das Builder Pack ($625/Jahr) bündelt $7.000 an Credits von 10 KI-Tools wie Claude Max, Codex und Cursor Pro+.",
+              "AI Sandwich Workflow: Mensch definiert Strategie, KI führt aus, Mensch prüft – 10 Minuten von Idee bis Launch."
+            ],
+            "original": [
+              "Es dauerte Austin 10 Minuten, um einige Anpassungen vorzunehmen … Innerhalb weniger Stunden generierte es mehr als 25.000 $ Umsatz.",
+              "Das Builder Pack: 7.000 $ an Credits und kostenlose Nutzung von zehn KI-Produkten, die Every täglich einsetzt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "DoorDash’s Dot Bot and the Last 100 Feet / DoorDash: Autonomer Bot Dot und die letzten 100 Fuß",
+      "desc": "Die DoorDash-Gründer sprechen über ihren autonomen Lieferroboter und wie natürliche Sprache das Bestellverhalten verändert.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=vNpcg_Ma-FA",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Ask DoorDash, a natural-language interface, is driving both restaurant discovery and larger grocery orders.",
+              "DoorDash’s autonomous robot Dot has operated in Phoenix for over 2 years, focusing on the 'first and last 100 feet' delivery problem.",
+              "Co-founders say multimodal strategies are key; more Dashers, not fewer, are the future of autonomous delivery."
+            ],
+            "original": [
+              "Ask DoorDash, a natural-language interface that’s driving both restaurant discovery and larger grocery orders.",
+              "Dot, their in-house autonomous delivery robot that has operated in Phoenix for over two years."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ask DoorDash, eine NL-Schnittstelle, treibt Restaurant-Entdeckung und größere Lebensmittelbestellungen voran.",
+              "Der autonome Lieferroboter Dot ist seit über 2 Jahren in Phoenix aktiv und löst das ‚First-Last-100-Feet‘-Problem.",
+              "Die Co-Gründer setzen auf multimodale Strategien und sehen mehr, nicht weniger Dashers als Zukunft der autonomen Lieferung."
+            ],
+            "original": [
+              "Ask DoorDash, eine natürliche Sprachschnittstelle, die sowohl die Entdeckung von Restaurants als auch größere Lebensmittelbestellungen vorantreibt.",
+              "Dot, ihr eigener autonomer Lieferroboter, der seit über zwei Jahren in Phoenix im Einsatz ist."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
