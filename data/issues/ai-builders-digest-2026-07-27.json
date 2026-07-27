@@ -1,0 +1,133 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-07-27",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Together AI verglich Kimi K3 mit GPT-5.6 Sol – beim pass@4 gewinnt Kimi mit 2,8x mehr Lösungen pro Dollar. Gleichzeitig liefert Claude Code jetzt live teilbare Artifacts, die Teams enger zusammenbringen. Madhu Guru betont, dass wir uns in Phase 1 der versteckten KI-Auswirkungen befinden, während Peter Yang eine Vertrauenslücke bei Nutzern außerhalb des Silicon Valley beobachtet. Die Ergebnisse zeigen: Fortschritt und Akzeptanz entwickeln sich in unterschiedlichen Geschwindigkeiten – die Frage ist, wann sie sich decken."
+  },
+  "archive": {
+    "title": "Lösungen pro Dollar und Vertrauensfrage",
+    "desc": "Ein Benchmark-Vergleich zwischen Kimi K3 und GPT-5.6 Sol zeigt Kostenvorteile, während Nutzer noch an der Integration von KI zweifeln."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-07-27.",
+  "sections": [
+    {
+      "title": "Modelle & Routing: Kimi K3 vs GPT-5.6 Sol / Model Benchmarks & Routing",
+      "desc": "Kimi K3 überzeugt mit Kosten-Effizienz bei mehreren Versuchen, intelligentes Routing kombiniert die Stärken beider Modelle.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI Blog",
+          "sourceUrl": "https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "In 904 DeepSWE rollouts, GPT-5.6 Sol leads pass@1, but Kimi K3 dominates pass@4 with 2.8x more solves per dollar.",
+              "Model routing between the two reaches ~85.6%, opening the door for cost-sensitive hybrid coding agents."
+            ],
+            "original": [
+              "Sol leads pass@1; Kimi K3 wins pass@4 at 2.8x the solves per dollar, and routing between them reaches ~85.6%."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "In 904 DeepSWE-Durchläufen führt GPT-5.6 Sol bei pass@1, aber Kimi K3 schlägt bei pass@4 mit 2,8x mehr gelösten Aufgaben pro Dollar.",
+              "Das Routing zwischen den Modellen erreicht ~85,6 % und ermöglicht kosteneffiziente hybride Coding-Agenten."
+            ],
+            "original": [
+              "Sol führt bei pass@1; Kimi K3 gewinnt bei pass@4 mit 2,8x mehr Lösungen pro Dollar, und das Routing zwischen ihnen erreicht ~85,6 %."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Vom Code zum Produkt: Claude Code Artifacts & die KI-Phasen / From Code to Product",
+      "desc": "Ein neues Feature macht Agentenarbeit sichtbar, während eine strategische Einordnung zeigt, warum der große Durchbruch noch kommt.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Code now generates live, shareable 'Artifacts' – web pages from session context – that auto-update as the agent works.",
+              "Artifacts cover incident pages, PR walkthroughs, license audits, and cost dashboards, all private within the organization."
+            ],
+            "original": [
+              "Artifacts translate the work into a web page anyone can open and explore, like a pull request walkthrough, a dashboard you can filter and sort, or even a release checklist that fills itself out as work gets done."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Code erzeugt jetzt live, teilbare 'Artifacts' – Webseiten aus dem Session-Kontext – die sich automatisch aktualisieren, während der Agent arbeitet.",
+              "Artifacts decken Incident-Seiten, PR-Walkthroughs, Lizenzaudits und Kostendashboards ab – alles privat innerhalb der Organisation."
+            ],
+            "original": [
+              "Artifacts verwandeln die Arbeit in eine Webseite, die jeder öffnen und erkunden kann, etwa einen Pull-Request-Walkthrough, ein filterbares Dashboard oder eine Release-Checkliste, die sich automatisch befüllt."
+            ]
+          }
+        },
+        {
+          "authorKey": "x:realmadhuguru",
+          "sourceName": "X: @realmadhuguru",
+          "sourceUrl": "https://twitter.com/realmadhuguru/status/2081437850466451736",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Madhu Guru: AI’s product impact is in Phase 1 – companies with distribution rapidly expand to adjacent features (e.g. virtual try-ons) without ecosystem‑wide visibility.",
+              "Phase 2 will bring net‑new features and innovation, making AI’s impact undeniable at the software landscape level."
+            ],
+            "original": [
+              "When people say AI hasn’t led to shipped impact … This is phase 1. Companies with distribution are rapidly expanding to adjacent problem areas … Phase 2 will be a lot more net new features and innovation. That’s when we will see the undeniable impact of AI on the shape of the software ecosystem."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Madhu Guru: Der Produkt-Einfluss von KI ist Phase 1 – Unternehmen mit Distribution erweitern angrenzende Funktionen (z.B. virtuelle Anproben), ohne dass das Ökosystem es merkt.",
+              "Phase 2 bringt echte neue Features und Innovation, die den KI-Einfluss auf die Software-Landschaft unübersehbar machen."
+            ],
+            "original": [
+              "Wenn Leute sagen, KI habe nicht zu geliefertem Produkt-Impact geführt … Das ist Phase 1. Unternehmen mit Distribution expandieren schnell in angrenzende Problemfelder … Phase 2 wird viel mehr wirklich neue Features und Innovation bringen. Dann werden wir den unbestreitbaren Einfluss von KI auf die Form des Software-Ökosystems sehen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Nutzervertrauen: Tokens sind nicht das Problem / User Trust: It's Not About Tokens",
+      "desc": "Eine Beobachtung von außerhalb der Tech-Blase zeigt, dass Datenschutz und Vertrauen die Einführung bremsen.",
+      "cards": [
+        {
+          "authorKey": "x:petergyang",
+          "sourceName": "X: @petergyang",
+          "sourceUrl": "https://twitter.com/petergyang/status/2081555286817648738",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Outside Silicon Valley, the top user concern is not token limits but trusting ChatGPT with access to Gmail, Calendar, and Microsoft Office."
+            ],
+            "original": [
+              "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's 'do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Außerhalb des Silicon Valley ist das Hauptanliegen nicht Token-Limits, sondern das Vertrauen, ChatGPT Zugriff auf Gmail, Kalender und Microsoft Office zu gewähren."
+            ],
+            "original": [
+              "Jetzt, wo ich in Kanada bin und mit Leuten spreche, die keine KI-Psychose haben, ist die größte Sorge nicht, ob die Tokens ausgehen, sondern: 'Vertraue ich ChatGPT genug, um meine Gmail-, Kalender-, Google Workspace- und Microsoft Office-Daten zu teilen?'"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

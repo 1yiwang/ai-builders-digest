@@ -1,7 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/5oB9gJj_p7zZrqO1su0CJEjkEZs5PGrjkQmS9PKG6s8": 1783935704211,
-    "5ead906a-7dd8-11f1-8c2e-9313f6ba6c02": 1783935704273,
     "e80c1332-7efe-11f1-aad6-934cf71a1d19": 1784104064310,
     "gid://art19-episode-locator/V0/ecYfV5uBbkLJjJZZYH6uK0ZuIdG4MGsLZEuu63CvaDw": 1784104065777,
     "gid://art19-episode-locator/V0/9kRwA4CwNkyVI31rI2kR06etVuIAE1usvHlaJyqtOQg": 1784104066811,
@@ -19,7 +17,8 @@
     "df5bd56e-7e39-4f50-9120-0ec711ece6bc": 1784882236303,
     "ca96dcfd-41b1-4877-81f0-4d1902836d17": 1784882236515,
     "gid://art19-episode-locator/V0/wvlF5bGXu4AyC1uXj1qRYQPS8IfP411R8zjKfjqeKYo": 1784882237328,
-    "9bcca966-be29-4f64-951a-2a49fe7b6d3a": 1784882239077
+    "9bcca966-be29-4f64-951a-2a49fe7b6d3a": 1784882239077,
+    "gid://art19-episode-locator/V0/fDKCryVZrtVv5uDSaULdvCXwiwiMSDarydsxWOqSZUE": 1785146688491
   },
   "seenArticles": {
     "https://openai.com/index/managing-ai-investments-in-agentic-era": 1784104067680,
@@ -51,7 +50,10 @@
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1784882248116,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1784882257319,
     "https://www.anthropic.com/engineering/managed-agents": 1784882263470,
-    "https://claude.com/blog/claude-managed-agents-updates": 1784882264198
+    "https://claude.com/blog/claude-managed-agents-updates": 1784882264198,
+    "https://huggingface.co/blog/nvidia/cosmos-h-dreams": 1785146689569,
+    "https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing": 1785146689681,
+    "https://claude.com/blog/artifacts-in-claude-code": 1785146693129
   },
   "xUserIds": {}
 }
