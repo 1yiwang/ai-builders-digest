@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T10:05:01.986Z",
+  "generatedAt": "2026-07-29T08:51:45.002Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2081559330537734574",
-          "text": "Living life on the edge everyday",
-          "createdAt": "2026-07-27T01:56:32.000Z",
+          "id": "2082323512069685575",
+          "text": "These are all valid criticisms of Codex, even though I love the product too! I actually had no idea that Sol Pro even existed - is this better than Sol High? Why isn’t it available in Codex?",
+          "createdAt": "2026-07-29T04:33:07.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2081558653300355083",
-          "text": "Just call me Jean Luc Peter",
-          "createdAt": "2026-07-27T01:53:51.000Z",
+          "id": "2082254840655405293",
+          "text": "I got tired of using IMDb to rate movies and TV shows, and Letterboxd doesn’t support video games. So I built Tastemaker to let anyone curate their favorite movies, TV shows, and games all in one beautiful profile. You can use it to: → Rate and review your favorites → Create and share lists → Discover what to watch or play next Because of API limits, I’m launching this as a limited release for the first 100 profiles only. 📌 Claim your free profile now: https://mytastemaker.vercel.app/",
+          "createdAt": "2026-07-29T00:00:15.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2081555286817648738",
-          "text": "Now that I'm in Canada and talk to folks who don't have AI psychosis the number one concern is not running out of tokens it's \"do I trust ChatGPT enough to share my Gmail, Calendar, Google Workspace, Microsoft Office, etc.\"",
-          "createdAt": "2026-07-27T01:40:28.000Z",
+          "id": "2082192591286853766",
+          "text": "You don't need to vibe code JIRA you just need to use @linear",
+          "createdAt": "2026-07-28T19:52:53.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,20 +40,9 @@
           }
         },
         {
-          "id": "2081508562661245209",
-          "text": "Games are arguably the type of software that humans most want to play and use themselves vs. delegate to agents.",
-          "createdAt": "2026-07-26T22:34:48.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2081366913658307027",
-          "text": "The @ChatGPT mobile app becomes very laggy if you’re having a long conversation - even inputting text becomes slow.",
-          "createdAt": "2026-07-26T13:11:56.000Z",
+          "id": "2082137304500719669",
+          "text": "Might be time to pull out my Apple Watch again (it's been collecting dust because I keep forgetting to charge it 😅). I think Granola is useful for more than just meetings. You can also use it to record stream-of-consciousness thoughts, shopping lists from your spouse, and more. Having it available on the Watch is going to be super useful.",
+          "createdAt": "2026-07-28T16:13:12.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -68,26 +57,9 @@
       "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2081437850466451736",
-          "text": "When people say AI hasn’t led to shipped impact in products, here’s the piece they are missing. This is phase 1. Companies with distribution are rapidly expanding to adjacent problem areas - AI helps them execute fast and build functionality that previously required a bunch custom sw (e.g. clothes try on). Companies are figuring out the playbook and the impact is not yet visible at the ecosystem level. Phase 2 will be a lot more net new features and innovation. That’s when we will see the undeniable impact of AI on the shape of the software ecosystem.",
-          "createdAt": "2026-07-26T17:53:49.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
-      "tweets": [
-        {
-          "id": "2081679801769668980",
-          "text": "New study shows that less than 40% of VCs have any successful investment Every VC: “I’m so glad I’m in the 40%!”",
-          "createdAt": "2026-07-27T09:55:15.000Z",
+          "id": "2082112941814661236",
+          "text": "I saw a SWE at work today. No Claude. No wispr. No tab key. Just writing code. With his bare hands.",
+          "createdAt": "2026-07-28T14:36:23.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -99,8 +71,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
-    "totalTweets": 7
+    "xBuilders": 2,
+    "totalTweets": 5
   },
   "_mode": "Nitter RSS (free)"
 }

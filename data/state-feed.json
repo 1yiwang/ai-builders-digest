@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "e80c1332-7efe-11f1-aad6-934cf71a1d19": 1784104064310,
-    "gid://art19-episode-locator/V0/ecYfV5uBbkLJjJZZYH6uK0ZuIdG4MGsLZEuu63CvaDw": 1784104065777,
-    "gid://art19-episode-locator/V0/9kRwA4CwNkyVI31rI2kR06etVuIAE1usvHlaJyqtOQg": 1784104066811,
     "substack:post:207109360": 1784276533086,
     "8b47cf39-e93a-4301-ae25-e89179d80679": 1784276533959,
     "b4412830-1477-401f-9df7-975c32f7cb7b": 1784276534672,
@@ -18,12 +15,12 @@
     "ca96dcfd-41b1-4877-81f0-4d1902836d17": 1784882236515,
     "gid://art19-episode-locator/V0/wvlF5bGXu4AyC1uXj1qRYQPS8IfP411R8zjKfjqeKYo": 1784882237328,
     "9bcca966-be29-4f64-951a-2a49fe7b6d3a": 1784882239077,
-    "gid://art19-episode-locator/V0/fDKCryVZrtVv5uDSaULdvCXwiwiMSDarydsxWOqSZUE": 1785146688491
+    "gid://art19-episode-locator/V0/fDKCryVZrtVv5uDSaULdvCXwiwiMSDarydsxWOqSZUE": 1785146688491,
+    "substack:post:208716574": 1785315088911,
+    "gid://art19-episode-locator/V0/MjhB8v5oYHsLHpG1aTfCNzbCQbPsKbnyqyLiyIweqQE": 1785315091443,
+    "ee974458-89ce-11f1-887c-dbb47ec485c3": 1785315091963
   },
   "seenArticles": {
-    "https://openai.com/index/managing-ai-investments-in-agentic-era": 1784104067680,
-    "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex": 1784104067680,
-    "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex": 1784104067680,
     "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb": 1784276538051,
     "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages": 1784276538051,
     "https://huggingface.co/blog/security-incident-july-2026": 1784276538051,
@@ -53,7 +50,13 @@
     "https://claude.com/blog/claude-managed-agents-updates": 1784882264198,
     "https://huggingface.co/blog/nvidia/cosmos-h-dreams": 1785146689569,
     "https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing": 1785146689681,
-    "https://claude.com/blog/artifacts-in-claude-code": 1785146693129
+    "https://claude.com/blog/artifacts-in-claude-code": 1785146693129,
+    "https://huggingface.co/blog/allenai/olmoearth-infrastructure": 1785315093565,
+    "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders": 1785315093565,
+    "https://huggingface.co/blog/agent-intrusion-technical-timeline": 1785315093565,
+    "https://openai.com/index/scientific-computing-agentic-ai": 1785315093740,
+    "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work": 1785315093740,
+    "https://www.together.ai/blog/configuring-dedicated-model-inference": 1785315093986
   },
   "xUserIds": {}
 }

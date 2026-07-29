@@ -1,17 +1,35 @@
 {
-  "generatedAt": "2026-07-27T10:04:49.438Z",
+  "generatedAt": "2026-07-29T08:51:33.425Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
+      "name": "Latent Space",
+      "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+      "guid": "substack:post:208716574",
+      "url": "https://www.latent.space/p/chatgpt-work",
+      "publishedAt": "2026-07-28T15:26:30.000Z",
+      "description": "There are roughly 100x more people who use code than who can write code. As code that “just works” becomes easier to generate, this group may be the biggest prize of all — if you can get the agentic interface right. A key trend we have been tracking over at AINews is the absolute explosion in Codex usage this year , with MAU now up >10x from Jan 2026 . Less than two weeks after their July 9th launch , OpenAI said ChatGPT Work and Codex had reached 10M million users combined (as we cover in the pod, Codex now powers ChatGPT Work, so all ChatGPT Work users are now users of the Codex harness, even if they aren’t traditional engineers) — showing the early innings of what happens when you graduate from coding agents to knowledge work agents: We’ve been calling out how coding agents are “breaking containment” to do everything else this year to power every other part of knowledge work - and it started with the org chart, with a major reorg last month that amounted to two of Codex’s most prominent leaders, Greg and Tibo, taking responsibility over product and ChatGPT specifically, completing a “Superapp” consolidation cycle first discussed in March . With these updates Codex is no longer just a coding tool. In June, OpenAI said knowledge workers already accounting for roughly 20% of Codex’s user base and growing more than 3x as quickly as developers. A product dedicated for knowledge workers was being pulled out of the Codex team. However, knowledge work has a different set of problems and environments than coding. For decades, knowledge work has been scattered across different primitives like documents for writing, spreadsheets for analysis, slide decks for communication, and specialized applications for everything else. ChatGPT Work now enables users to work across every primitive with agents. Instead of opening an application and manually operating its features, the user can describe an outcome and collaborates with an agent that can assemble the tools, context, and artifact needed to reach it. From building no-code products at Airtable to leading Productivity Engineering at OpenAI, Akshay Nathan has spent much of his career trying to"
+    },
+    {
+      "source": "podcast",
       "name": "Machine Learning Street Talk",
-      "title": "Street Talk: Opus 5 and Voice Advances",
-      "guid": "gid://art19-episode-locator/V0/fDKCryVZrtVv5uDSaULdvCXwiwiMSDarydsxWOqSZUE",
-      "publishedAt": "2026-07-24T23:41:03.000Z",
-      "description": "Chapters 00:00 Introduction 00:04 Clawed Opus 5 Launch 00:13 OpenAI's ChatGPT Voice 09:16 Meta's Productivity Focus 11:01 Silicon Valley's Open AI Push 15:22 CRISPR-Cas9 Enhancements 16:26 Midjourney Acquires CoStar Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "title": "Street Talk on NVIDIA-Super Safe Intelligence Deal",
+      "guid": "gid://art19-episode-locator/V0/MjhB8v5oYHsLHpG1aTfCNzbCQbPsKbnyqyLiyIweqQE",
+      "publishedAt": "2026-07-28T19:56:29.000Z",
+      "description": "Chapters 00:00 Introduction 01:58 Super Safe Intelligence and NVIDIA 03:58 New AI Benchmark Release 06:00 Shifts in Google AI Search 08:10 Open Secure AI Alliance 09:51 Enigma's Robot Control Initiative Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+    },
+    {
+      "source": "podcast",
+      "name": "The Cognitive Revolution",
+      "title": "Nathan Goes to China – Part 1: Tech &amp; Agent Setup, Chinese AI UX, WAIC, and Attitudes on AI",
+      "guid": "ee974458-89ce-11f1-887c-dbb47ec485c3",
+      "url": "https://www.cognitiverevolution.ai/nathan-goes-to-china-part-1-tech-agent-setup-chinese-ai-ux-waic-and-attitudes-on-ai/",
+      "publishedAt": "2026-07-27T16:09:25.000Z",
+      "description": "Nathan returns from two weeks in Beijing and Shanghai for the first of three Chatham House–rules episodes on what China feels like at ground level: getting online, navigating an almost cashless society through WeChat, Alipay, DiDi, Trip.com, and Meituan, and weighing burner-device security advice against the practical reality that international roaming made the Great Firewall mostly irrelevant. He also describes using Claude at home as a semi-autonomous communications monitor while testing DeepSeek, Kimi, and MiniMax as tourist guides in China. The episode contrasts China’s striking digital convenience with pervasive observation, lower payment friction, and AI products that can be useful in everyday contexts yet still lose trust when the stakes feel medical or personal. It also surfaces Doubao’s mass consumer adoption and companionship role, suggesting that the most socially important AI in China may not be the model most discussed in the West. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/nathan-goes-to-china-part-1-tech-agent-setup-chinese-ai-ux-waic-and-attitudes-on-ai/ Sponsor: Claude: Claude by Anthropic is an AI collaborator that understands your workflow and helps you tackle research, writing, coding, and organization with deep context. Get started with Claude and explore Claude Pro at https://claude.ai/tcr CHAPTERS: (00:00) Episode setup and caveats (Part 1) (12:34) Sponsor: Claude (14:26) Episode setup and caveats (Part 2) (14:26) Travel security setup (26:05) Super apps and payments (41:15) Agents and integration (54:31) Beijing AI tourism (01:09:30) Hospitality and service (01:19:10) Tech culture parallels (01:29:23) Ecosystem and incentives (01:42:05) Surveillance and safety (01:51:19) Comfort with contradictions (02:01:23) AI attitudes and diffusion (02:16:16) Resources and next steps (02:19:35) Episode Outro (02:22:49) Outro PRODUCED BY: https://aipodcast.ing SOCIAL LINKS: Website: https://www.cognitiverevolution.ai Twitter (Podcast): https://x.com/cogrev_podcast Twitter (Nathan): https://x.com/labenz LinkedIn: https://linkedin.com/in/nathanlabenz/ Youtube: https://youtube.com/@CognitiveRevolutionPodcast Apple: https://podcasts.apple.com/de/podcast/the-cognitive-revolution-ai-builders-researchers-and/id1669813431 Spotify: https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk"
     }
   ],
   "stats": {
-    "podcastEpisodes": 1
+    "podcastEpisodes": 3
   }
 }
