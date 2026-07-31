@@ -1,33 +1,13 @@
 {
-  "generatedAt": "2026-07-29T08:51:37.905Z",
+  "generatedAt": "2026-07-31T09:12:52.679Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "publishedAt": "2026-07-28T16:27:42.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
-      "publishedAt": "2026-07-28T15:01:45.000Z",
-      "author": "",
-      "description": "",
-      "content": ""
-    },
-    {
-      "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
-      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-      "publishedAt": "2026-07-27T00:00:00.000Z",
+      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "publishedAt": "2026-07-30T15:09:09.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -35,32 +15,52 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Scientific computing in the age of agentic AI",
-      "url": "https://openai.com/index/scientific-computing-agentic-ai",
-      "publishedAt": "2026-07-28T17:00:00.000Z",
+      "title": "Advancing responsible AI across Europe",
+      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "publishedAt": "2026-07-31T15:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond."
+      "content": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "How AI is expanding what people do at work",
-      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-      "publishedAt": "2026-07-27T03:30:00.000Z",
+      "title": "Univé builds an AI-ready workforce",
+      "url": "https://openai.com/index/unive",
+      "publishedAt": "2026-07-31T07:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries."
+      "content": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale."
+    },
+    {
+      "source": "blog-rss",
+      "name": "OpenAI",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale."
     },
     {
       "source": "blog-rss",
       "name": "Together AI",
-      "title": "Configuring Dedicated Model Inference",
-      "url": "https://www.together.ai/blog/configuring-dedicated-model-inference",
+      "title": "Together AI announces strategic partnership with Moonshot AI to natively serve Kimi models",
+      "url": "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models",
       "publishedAt": "2026-07-29T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "The three-part resource model behind Together AI Dedicated Model Inference—endpoints, deployments, configs—and how capacity-aware routing ties them together."
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Together AI",
+      "title": "ThunderAgent: 2x Faster Agentic Inference for Synthetic Data Generation at Scale",
+      "url": "https://www.together.ai/blog/thunderagent",
+      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "ThunderAgent is a program-aware scheduler for agentic inference. By treating each agent workflow as a schedulable program, it eliminates KV cache thrashing to deliver more than 2x single-node throughput and near-linear multi-node scaling."
     }
   ],
   "stats": {

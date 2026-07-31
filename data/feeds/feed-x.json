@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T08:51:45.002Z",
+  "generatedAt": "2026-07-31T09:13:00.314Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2082323512069685575",
-          "text": "These are all valid criticisms of Codex, even though I love the product too! I actually had no idea that Sol Pro even existed - is this better than Sol High? Why isn’t it available in Codex?",
-          "createdAt": "2026-07-29T04:33:07.000Z",
+          "id": "2082939418315198522",
+          "text": "BC is beautiful",
+          "createdAt": "2026-07-30T21:20:31.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,31 +18,9 @@
           }
         },
         {
-          "id": "2082254840655405293",
-          "text": "I got tired of using IMDb to rate movies and TV shows, and Letterboxd doesn’t support video games. So I built Tastemaker to let anyone curate their favorite movies, TV shows, and games all in one beautiful profile. You can use it to: → Rate and review your favorites → Create and share lists → Discover what to watch or play next Because of API limits, I’m launching this as a limited release for the first 100 profiles only. 📌 Claim your free profile now: https://mytastemaker.vercel.app/",
-          "createdAt": "2026-07-29T00:00:15.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2082192591286853766",
-          "text": "You don't need to vibe code JIRA you just need to use @linear",
-          "createdAt": "2026-07-28T19:52:53.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2082137304500719669",
-          "text": "Might be time to pull out my Apple Watch again (it's been collecting dust because I keep forgetting to charge it 😅). I think Granola is useful for more than just meetings. You can also use it to record stream-of-consciousness thoughts, shopping lists from your spouse, and more. Having it available on the Watch is going to be super useful.",
-          "createdAt": "2026-07-28T16:13:12.000Z",
+          "id": "2082845703072837692",
+          "text": "A good game is so much more than just graphics. Core loops, progression systems, story, etc. These are the things that really matter and they're not easy to get right. AI being able to one shot fancy graphics is super cool but one-shotting a good game is a whole different story. A more realistic near-term outcome is game studios and developers using this tech to reduce busy work while still applying their human taste to make great games.",
+          "createdAt": "2026-07-30T15:08:07.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -53,13 +31,13 @@
       ]
     },
     {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
+      "handle": "@mattturck",
+      "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2082112941814661236",
-          "text": "I saw a SWE at work today. No Claude. No wispr. No tab key. Just writing code. With his bare hands.",
-          "createdAt": "2026-07-28T14:36:23.000Z",
+          "id": "2082907699646173484",
+          "text": "The biggest physical AI deployment nobody talks about: my conversation with Sanjit Biswas, CEO of @Samsara (NYSE: $IOT) about AI that sees 99% of US roads every day, and agents that act in the real world. 00:00: Intro 01:16 What is physical AI? 03:04 From IoT dashboards to agentic action 04:36 Why physical AI is harder than software AI 06:07 Safety, cybersecurity, and real-world consequences 07:11 What Samsara does 08:22 $2B ARR, 25 trillion data points and 380k crashes 09:44 How AI can prevent road accidents 11:28 From an MIT research project to Meraki 13:42 Learning physical operations from scratch 15:42 Samsara’s stack: sensors, intelligence, and action 16:39 Inside Samsara’s industrial asset trackers 18:36 Bluetooth, battery life, and connected infrastructure 19:49 A disposable tracking device built like a sticker 21:08 Vehicle gateways and engine diagnostics 22:16 How AI dash cams coach drivers in real time 23:28 Turning the dash cam into an AI interface 24:49 Organizing physical-world data in the cloud 26:32 Selling AI to traditional industries 27:52 Is Samsara’s real-world data its AI moat? 29:22 The network effects of covering 99% of U.S. roads 31:23 Edge AI versus cloud AI 32:35 The models running inside Samsara’s devices 33:52 Generative AI and video reasoning 35:57 Which AI models does Samsara use? 36:50 Inside Samsara Agent Studio 37:56 How an AI warranty agent works 38:50 Starting with practical, lower-risk automation 40:10 Combining agents, workflows, rules, and guardrails 42:07 What today’s AI agents still cannot do 43:07 AI ride-alongs and the future of driver coaching 45:17 Is workplace AI becoming Big Brother? 46:27 How cameras can protect and exonerate drivers 48:48 When AI becomes the judge of your work 50:37 Robots, humanoids, and mixed human-machine fleets 53:19 Samsara’s role in autonomous operations 54:50 How quickly will autonomous trucking arrive 56:32 AI data centers and America’s infrastructure boom 58:16 Should lawyers become plumbers? Demand for tradespeople",
+          "createdAt": "2026-07-30T19:14:28.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -72,7 +50,7 @@
   ],
   "stats": {
     "xBuilders": 2,
-    "totalTweets": 5
+    "totalTweets": 3
   },
   "_mode": "Nitter RSS (free)"
 }
