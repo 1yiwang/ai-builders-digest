@@ -1,69 +1,49 @@
 {
-  "generatedAt": "2026-07-31T09:12:52.679Z",
+  "generatedAt": "2026-08-03T10:00:43.474Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
-      "name": "Hugging Face",
-      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
-      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
-      "publishedAt": "2026-07-30T15:09:09.000Z",
+      "name": "OpenAI",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "publishedAt": "2026-08-01T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": ""
+      "content": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Advancing responsible AI across Europe",
-      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "title": "Building abundant intelligence",
+      "url": "https://openai.com/index/building-abundant-intelligence",
       "publishedAt": "2026-07-31T15:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Univé builds an AI-ready workforce",
-      "url": "https://openai.com/index/unive",
-      "publishedAt": "2026-07-31T07:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale."
-    },
-    {
-      "source": "blog-rss",
-      "name": "OpenAI",
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "publishedAt": "2026-07-30T10:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale."
+      "content": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful."
     },
     {
       "source": "blog-rss",
       "name": "Together AI",
-      "title": "Together AI announces strategic partnership with Moonshot AI to natively serve Kimi models",
-      "url": "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models",
-      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "title": "Kimi K3: The Complete Developer Guide",
+      "url": "https://www.together.ai/blog/kimi-k3-guide",
+      "publishedAt": "2026-08-01T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": ""
+      "content": "Kimi K3 is the first open 3T-class model. See how it benchmarks, what it costs, and how to call it on the Together AI API, with copy-paste code examples."
     },
     {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "ThunderAgent: 2x Faster Agentic Inference for Synthetic Data Generation at Scale",
-      "url": "https://www.together.ai/blog/thunderagent",
-      "publishedAt": "2026-07-29T00:00:00.000Z",
+      "source": "blog",
+      "name": "Claude Blog",
+      "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "publishedAt": "Jun 08, 2026",
       "author": "",
       "description": "",
-      "content": "ThunderAgent is a program-aware scheduler for agentic inference. By treating each agent workflow as a schedulable program, it eliminates KV cache thrashing to deliver more than 2x single-node throughput and near-linear multi-node scaling."
+      "content": "Today we&#x27;re releasing Foundation Models framework support for Claude through a new Swift package that lets Apple developers use Apple&#x27;s Foundation Models framework to call Claude for more complex workflows. Apple’s Foundation Models framework gives developers access to tap into models natively from Swift. It is very easy to use and can return typed Swift values through guided generation in as few as three lines of code. Developers can use this to tap into Apple’s on-device models for fast, local tasks like summarization or extraction. Developers can now use Apple’s Foundation Models framework to hand off to Claude when a request calls for multi-step reasoning, code generation, and more. Claude can also search the web for current information and execute code for data analysis. Stream Claude&#x27;s response back into the same view. Because Apple&#x27;s framework returns typed Swift values from @Generable annotations, developers arrive at the Claude API call with clean inputs instead of raw user text. What this unlocks The Foundation Models framework already powers a range of intelligent on-device features — journaling apps that surface personalized prompts, document apps that summarize contracts, learning apps that explain a concept at a student&#x27;s level. Adding Claude extends each of those patterns. A journaling app can generate daily prompts on-device, then ask Claude to find threads across months of entries. A study app can define a term on-device, then hand off to Claude when the student follows up with \"why does this matter for everything else we&#x27;ve covered?\" It&#x27;s one experience for the user, backed by the right model for each step. Getting started Claude support with the Foundation Models framework will be available tomorrow and works through Apple&#x27;s Foundation Models framework on iOS 27, iPadOS 27, macOS 27, and visionOS 27, and watch OS 27. Add it to your project, sign in with an Anthropic API key, and pass typed outputs from Apple&#x27;s on-device pass into a Claude request — the package handles streaming, tool calls, and structured responses back into your SwiftUI view."
     }
   ],
   "stats": {
-    "blogPosts": 6
+    "blogPosts": 4
   }
 }

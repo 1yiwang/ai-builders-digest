@@ -1,6 +1,5 @@
 {
   "seenVideos": {
-    "gid://art19-episode-locator/V0/6w0KkXxHkDOBuE75y3MXa-ceD72ChpCK-CmCLkmnn0E": 1784539796402,
     "substack:post:207941607": 1784709589829,
     "8b31e580-845b-11f1-850d-e78291a15e5d": 1784709590523,
     "gid://art19-episode-locator/V0/evoXHeo2w3nr8Wf0Yar2KGFASZoQq1HnA8HsekXar3k": 1784709591759,
@@ -19,11 +18,12 @@
     "6676e79c-2984-4653-8a01-2e6431797287": 1785489165814,
     "gid://art19-episode-locator/V0/WOh5RAzse2YNYpDMNgKGxbZnWGgXZv7PNGbC-OgpF9I": 1785489166860,
     "17fab7ca-8c55-11f1-9f1b-3f3ff7360962": 1785489166923,
-    "9b6a2244-3473-4a2e-934b-ed733b3e5214": 1785489167995
+    "9b6a2244-3473-4a2e-934b-ed733b3e5214": 1785489167995,
+    "863550d0-f44f-4411-be36-4f629a92426c": 1785751235037,
+    "0fb6bad0-8eaf-11f1-956a-e372f562a84d": 1785751236695,
+    "gid://art19-episode-locator/V0/xuGmn7qecvsQgzm74aAmNM0Xgiql0gsuGgZOuDomCQY": 1785751237544
   },
   "seenArticles": {
-    "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel": 1784539797938,
-    "https://openai.com/index/a-scorecard-for-the-ai-age": 1784539798254,
     "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai": 1784709593212,
     "https://huggingface.co/blog/grabette": 1784709593212,
     "https://openai.com/index/introducing-chatgpt-small-business-program": 1784709593426,
@@ -53,7 +53,11 @@
     "https://openai.com/index/unive": 1785489168207,
     "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6": 1785489168207,
     "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models": 1785489168386,
-    "https://www.together.ai/blog/thunderagent": 1785489168386
+    "https://www.together.ai/blog/thunderagent": 1785489168386,
+    "https://openai.com/index/ten-advances-in-mathematics": 1785751238254,
+    "https://openai.com/index/building-abundant-intelligence": 1785751238254,
+    "https://www.together.ai/blog/kimi-k3-guide": 1785751238389,
+    "https://claude.com/blog/claude-for-foundation-models": 1785751242972
   },
   "xUserIds": {}
 }
