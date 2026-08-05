@@ -1,8 +1,5 @@
 {
   "seenVideos": {
-    "substack:post:207941607": 1784709589829,
-    "8b31e580-845b-11f1-850d-e78291a15e5d": 1784709590523,
-    "gid://art19-episode-locator/V0/evoXHeo2w3nr8Wf0Yar2KGFASZoQq1HnA8HsekXar3k": 1784709591759,
     "substack:post:208082176": 1784882234999,
     "67540c92-8640-11f1-8f2a-e322343e668d": 1784882235740,
     "df5bd56e-7e39-4f50-9120-0ec711ece6bc": 1784882236303,
@@ -21,15 +18,13 @@
     "9b6a2244-3473-4a2e-934b-ed733b3e5214": 1785489167995,
     "863550d0-f44f-4411-be36-4f629a92426c": 1785751235037,
     "0fb6bad0-8eaf-11f1-956a-e372f562a84d": 1785751236695,
-    "gid://art19-episode-locator/V0/xuGmn7qecvsQgzm74aAmNM0Xgiql0gsuGgZOuDomCQY": 1785751237544
+    "gid://art19-episode-locator/V0/xuGmn7qecvsQgzm74aAmNM0Xgiql0gsuGgZOuDomCQY": 1785751237544,
+    "substack:post:209198968": 1785919624915,
+    "00198340-89dd-11f1-8519-5f4366a34437": 1785919626201,
+    "d31dbc32-c9fa-434f-945f-3a2156527207": 1785919626696,
+    "gid://art19-episode-locator/V0/W4baphRAfYGYAGlYOp7O4MSo2vh3lsDu5Dygupy_ukQ": 1785919627731
   },
   "seenArticles": {
-    "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai": 1784709593212,
-    "https://huggingface.co/blog/grabette": 1784709593212,
-    "https://openai.com/index/introducing-chatgpt-small-business-program": 1784709593426,
-    "https://openai.com/index/hugging-face-model-evaluation-security-incident": 1784709593426,
-    "https://openai.com/index/david-velez-robin-vince-join-openai-boards": 1784709593426,
-    "https://www.together.ai/blog/together-yc-gpu-cluster": 1784709593509,
     "https://huggingface.co/blog/nunchaku-diffusers": 1784882239177,
     "https://openai.com/index/health-in-chatgpt": 1784882239515,
     "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community": 1784882239515,
@@ -57,7 +52,11 @@
     "https://openai.com/index/ten-advances-in-mathematics": 1785751238254,
     "https://openai.com/index/building-abundant-intelligence": 1785751238254,
     "https://www.together.ai/blog/kimi-k3-guide": 1785751238389,
-    "https://claude.com/blog/claude-for-foundation-models": 1785751242972
+    "https://claude.com/blog/claude-for-foundation-models": 1785751242972,
+    "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b": 1785919629203,
+    "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models": 1785919629303,
+    "https://openai.com/index/learn-teach-chatgpt-work-codex": 1785919629303,
+    "https://openai.com/index/apple-is-getting-this-wrong": 1785919629303
   },
   "xUserIds": {}
 }

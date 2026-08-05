@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T10:00:50.117Z",
+  "generatedAt": "2026-08-05T08:47:22.106Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2084065527081980285",
-          "text": "Went to a community center in Canada and it has a full swimming pool, jacuzzi, sauna, and even lazy river. In the most expensive Bay Area neighborhoods, the community center is just a fancy building with empty rooms that you can rent.",
-          "createdAt": "2026-08-02T23:55:16.000Z",
+          "id": "2084855632029774167",
+          "text": "I think if you vibe code a SaaS these days it can just be a self-serve funnel into a more expensive services offering vs. trying to make alot of money with the SaaS itself. But the only thing about services is it feels like consulting and selling \"time for money\" again.",
+          "createdAt": "2026-08-05T04:14:52.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,87 @@
           }
         },
         {
-          "id": "2083947480136421384",
-          "text": "Personality matters! A smart friend that's annoying to talk to is no good.",
-          "createdAt": "2026-08-02T16:06:11.000Z",
+          "id": "2084849701351035182",
+          "text": "Hearing that GPT 5.6 Luna High is much cheaper and basically unlimited usage and I'm running low on Sol :P Can it do complex browser automation tasks? That's 50% of my Codex usage.",
+          "createdAt": "2026-08-05T03:51:18.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2084846191456751725",
+          "text": "Easier to make more money from @X payouts than from a micro SaaS these days",
+          "createdAt": "2026-08-05T03:37:21.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2084665842512588907",
+          "text": "This is a really cool prompt from @kevinrose that asks AI to reflect on all your past threads together and give you a list of insights that you may not know about yourself. To try it just tell ChatGPT or Claude to: \"Make an html report based on https://github.com/kropdx/reflection-engine\" But is it telling me to stop using my judgment and give in to the slop? :) Thanks @bentossell for surfacing this.",
+          "createdAt": "2026-08-04T15:40:42.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@realmadhuguru",
+      "name": "Madhu Guru",
+      "tweets": [
+        {
+          "id": "2084809416105472070",
+          "text": "Ok builders, here’s your playbook. Prototype your product with the best frontier model. Cost be damned. Validate the user experience. Then, 6-8 weeks later when open-weight models catch up - move your production workloads there, and to smaller models where possible. In that order. Don’t start with the cheapest model.",
+          "createdAt": "2026-08-05T01:11:13.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2084667443046502631",
+          "text": "Pinned: The best model for early product validation is almost never the best model for production. Talked to a bunch of founders this weekend. There’s a standard playbook emerging : 1/ Prototype with the best frontier models. Max quality. Ignore cost and latency. Learn what users actually want and iterate. 2/ Once the workflow and UX is validated, optimize like crazy for cost and latency - prompt eng, model routing, harnesses, smaller models, fine tuning. I see most teams get stuck in step 1.",
+          "createdAt": "2026-08-04T15:47:04.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        }
+      ]
+    },
+    {
+      "handle": "@mattturck",
+      "name": "Matt Turck",
+      "tweets": [
+        {
+          "id": "2084759190195536202",
+          "text": "Everyone on X: \"damn, Airtable sold for so low!\" Many SaaS founders, secretly: \"damn, I'd take that any day, at least they had an exit\"",
+          "createdAt": "2026-08-04T21:51:38.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2084635916480450888",
+          "text": "What the world What Europeans thinks Europeans in tech actually in tech do in the do in the Summer. Summer.",
+          "createdAt": "2026-08-04T13:41:47.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -32,8 +110,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 1,
-    "totalTweets": 2
+    "xBuilders": 3,
+    "totalTweets": 8
   },
   "_mode": "Nitter RSS (free)"
 }

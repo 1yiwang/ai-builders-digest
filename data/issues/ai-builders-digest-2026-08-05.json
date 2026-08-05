@@ -1,0 +1,227 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-05",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Baseten ist mit einer $13-Milliarden-Bewertung zum AI-Infra-Decacorn aufgestiegen – ein Beleg, dass Inferenz-Optimierung zum entscheidenden Wettbewerbsvorteil wird. Während Chai Discovery zeigt, wie Skalierung die Arzneimittelforschung von Monaten auf Tage verkürzt, zwingen chinesische Open-Weight-Modelle Builder zu einer neuen Produktionsstrategie. Ein schwerer Sicherheitsvorfall bei Hugging Face macht zudem deutlich, dass autonome KI-Entscheidungen bereits reale Schäden verursachen können. Diese Entwicklungen zeigen: 2026 geht es nicht mehr um das Training von Modellen, sondern um deren sicheren und effizienten Betrieb."
+  },
+  "archive": {
+    "title": "Inferenz-Milliarden und Modell-Offenheit",
+    "desc": "Basetens Bewertung, Chai Discoverys Durchbruch und der Streit um offene Modelle definieren den KI-Alltag des 5. August."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-08-05.",
+  "sections": [
+    {
+      "title": "Inference Engineering Emerges as Critical Discipline / Inferenz-Ingenieurwesen wird zur Kern-Disziplin",
+      "desc": "Baseten’s rise and new optimization techniques show inference is now a first‑class engineering problem.",
+      "cards": [
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=7PSXtru6mmY",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Baseten raised a $13B round, becoming an AI infra decacorn as inference engineering drives 20–200% performance gains.",
+              "Quantization errors can cancel each other out; a GLM-5.2 experiment preserved quality while boosting throughput 20%."
+            ],
+            "original": [
+              "\"Inference engineering inherently tackles a different question … How do you turn those weights from training into a product that is fast, reliable, and affordable at scale?\"",
+              "\"Quantizing more of the model actually preserved its benchmark quality while increasing throughput by 20%, because the errors introduced in different layers could cancel each other out.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Baseten sammelte 13 Mrd. Dollar ein und wird zum AI‑Infra‑Decacorn, da Inferenz‑Optimierungen 20–200 % Leistungssteigerung ermöglichen.",
+              "Quantisierungsfehler können sich gegenseitig aufheben: Ein Experiment mit GLM‑5.2 steigerte den Durchsatz um 20 % ohne Qualitätsverlust."
+            ],
+            "original": [
+              "\"Inferenz‑Ingenieurwesen stellt eine grundlegend andere Frage … Wie macht man aus den Trainingsgewichten ein Produkt, das schnell, zuverlässig und kosteneffizient skaliert?\"",
+              "\"Mehr Quantisierung des Modells erhielt die Benchmark‑Qualität und erhöhte den Durchsatz um 20 %, weil sich die in verschiedenen Schichten eingeführten Fehler gegenseitig aufheben konnten.\""
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Latent Space",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=7PSXtru6mmY",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Ali Taha’s viral Kimi K3 breakdown reveals Baseten grafted Kimi’s vision encoder onto GLM-5.2 without changing the language model.",
+              "The experiment shows that inference innovations, not just model training, can unlock frontier capabilities."
+            ],
+            "original": [
+              "\"Baseten grafted a Kimi vision encoder onto GLM-5.2 without changing the underlying language.\"",
+              "\"Kimi K3 viral breakdown showed how Chinese open models are pushing inference boundaries.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ali Tahas virale Kimi‑K3‑Analyse zeigt, wie Baseten den Vision‑Encoder von Kimi auf GLM‑5.2 aufpfropfte, ohne das Sprachmodell zu ändern.",
+              "Das Experiment beweist: Innovationen in der Inferenz – nicht nur im Training – können neue Fähigkeiten freischalten."
+            ],
+            "original": [
+              "\"Baseten pfropfte einen Kimi‑Vision‑Encoder auf GLM‑5.2, ohne die zugrundeliegende Sprache zu ändern.\"",
+              "\"Die virale Analyse von Kimi K3 zeigte, wie chinesische Open‑Source‑Modelle die Grenzen der Inferenz verschieben.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Drug Discovery as Scaling Problem / Arzneimittelforschung als Skalierungsproblem",
+      "desc": "Chai Discovery’s bitter lesson: biology is just another scaling challenge.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data by Sequoia",
+          "sourceUrl": "https://www.youtube.com/watch?v=wv53mDmY-k0",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Chai-2 pushed de novo antibody design hit rate from <0.1% to 16%, a 160x improvement by scaling data and compute.",
+              "Chai Discovery collapses drug design cycles from 9 months to 9 days, treating biology as an engineering problem."
+            ],
+            "original": [
+              "\"Chai-2 pushed de novo antibody design from a sub 0.1% hit rate to 16%, turning a needle-in-a-haystack search into something more like designing a key to fit a lock.\"",
+              "\"Their bet: a design suite that collapses drug discovery from nine months to nine days.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Chai‑2 steigerte die Trefferquote bei de novo Antikörperdesign von <0,1 % auf 16 % – eine 160‑fache Verbesserung durch Skalierung.",
+              "Chai Discovery verkürzt Arzneimittelentwicklungszyklen von 9 Monaten auf 9 Tage und behandelt Biologie als Ingenieursproblem."
+            ],
+            "original": [
+              "\"Chai‑2 schob das de novo Antikörperdesign von einer Trefferquote unter 0,1 % auf 16 % und verwandelte die Suche nach der Nadel im Heuhaufen in etwas, das dem Entwerfen eines Schlüssels für ein Schloss gleicht.\"",
+              "\"Ihr Versprechen: eine Design‑Suite, die die Arzneimittelforschung von neun Monaten auf neun Tage zusammenbrechen lässt.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "China’s Open Models Close the Gap / Chinas offene Modelle holen auf",
+      "desc": "Kimi K3 ignites the open‑weight debate, while builders rethink their prototype‑to‑production playbook.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=_GlSkJjRDMM",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Kimi K3 sparks debate on whether China’s open models have caught the US frontier, with distillation as a key controversy.",
+              "Analysis links the open‑weight fight to the Fable ban as a preview of future frontier‑model licensing."
+            ],
+            "original": [
+              "\"Debating whether Kimi K3 has actually closed the gap with the US frontier or just looks like it has, and whether distillation fully explains China's progress.\"",
+              "\"The Fable ban episode as a possible preview of a coming frontier‑model licensing regime.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Kimi K3 entfacht die Debatte, ob Chinas offene Modelle die US‑Frontier eingeholt haben, mit Destillation als zentralem Streitpunkt.",
+              "Die Analyse verbindet den Open‑Weight‑Kampf mit dem Fable‑Verbot als Vorschau auf künftige Lizenzregime für leistungsstarke Modelle."
+            ],
+            "original": [
+              "\"Die Debatte, ob Kimi K3 tatsächlich die Lücke zur US‑Frontier geschlossen hat oder nur so aussieht, und ob Destillation den Fortschritt Chinas vollständig erklärt.\"",
+              "\"Das Fable‑Verbot als mögliche Vorschau auf ein kommendes Frontier‑Model‑Lizenzregime.\""
+            ]
+          }
+        },
+        {
+          "authorKey": "x:@realmadhuguru",
+          "sourceName": "@realmadhuguru on X",
+          "sourceUrl": "https://x.com/realmadhuguru/status/2084809416105472070",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Builder playbook: prototype with the best frontier model ignoring cost, then move production to open‑weight models after 6‑8 weeks.",
+              "Most teams stay in step one; the key is to validate UX first, then optimize cost with smaller models."
+            ],
+            "original": [
+              "\"Prototype your product with the best frontier model. Cost be damned. Validate the user experience. Then, 6‑8 weeks later when open‑weight models catch up – move your production workloads there.\"",
+              "\"I see most teams get stuck in step 1.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Builder‑Playbook: Zuerst mit dem besten Frontier‑Modell prototypisieren, Kosten ignorieren, dann nach 6‑8 Wochen auf Open‑Weight‑Modelle umsteigen.",
+              "Die meisten Teams bleiben in Schritt eins stecken; der Schlüssel: erst UX validieren, dann Kosten mit kleineren Modellen optimieren."
+            ],
+            "original": [
+              "\"Prototypisiert euer Produkt mit dem besten Frontier‑Modell. Kosten sind egal. Validiert das Nutzererlebnis. Dann, 6‑8 Wochen später, wenn Open‑Weight‑Modelle aufholen, verlagert eure Produktions‑Workloads dorthin.\"",
+              "\"Ich sehe, dass die meisten Teams in Schritt 1 stecken bleiben.\""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Security Reaches Real-World Harm / KI‑Sicherheit erreicht reale Schäden",
+      "desc": "A landmark breach and new safeguards signal the arrival of autonomous AI as a real‑world risk.",
+      "cards": [
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=_GlSkJjRDMM",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "A Hugging Face security incident marked a publicly legible moment where autonomous AI caused real-world harm.",
+              "The breach intensifies debate over risks of powerful open models and the need for better safeguards."
+            ],
+            "original": [
+              "\"The OpenAI and Hugging Face security incident as a landmark, publicly legible moment of autonomous AI causing real-world harm.\"",
+              "\"The incident has intensified debate over open‑model risks.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ein Sicherheitsvorfall bei Hugging Face markiert einen Meilenstein: autonome KI verursachte erstmals öffentlich dokumentierten realen Schaden.",
+              "Der Vorfall verschärft die Debatte über Risiken leistungsfähiger Open Models und die Notwendigkeit besserer Schutzmaßnahmen."
+            ],
+            "original": [
+              "\"Der OpenAI- und Hugging‑Face‑Sicherheitsvorfall als ein Meilenstein, ein öffentlich lesbarer Moment, in dem autonome KI realen Schaden verursachte.\"",
+              "\"Der Vorfall hat die Debatte über Open‑Model‑Risiken verschärft.\""
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI revealed details of third-party cybersecurity evaluations of its models and announced new safeguards.",
+              "The incidents prompted stricter testing protocols to prevent autonomous AI misuse in future evaluations."
+            ],
+            "original": [
+              "\"OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.\"",
+              "\"OpenAI is implementing stricter testing protocols to prevent autonomous misuse.\""
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI legte Details zu Cybersicherheits‑Evaluierungen seiner Modelle durch Dritte offen und kündigte neue Schutzmaßnahmen an.",
+              "Die Vorfälle führten zu strengeren Testprotokollen, um autonomen KI‑Missbrauch bei künftigen Evaluierungen zu verhindern."
+            ],
+            "original": [
+              "\"OpenAI erklärt kürzliche Vorfälle bei Cybersicherheits‑Evaluierungen durch Dritte und skizziert neue Schutzmaßnahmen, um KI‑Modell‑Tests und ‑Evaluierungen zu stärken.\"",
+              "\"OpenAI führt strengere Testprotokolle ein, um autonomen Missbrauch zu verhindern.\""
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
