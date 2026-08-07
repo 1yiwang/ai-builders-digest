@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-05T08:47:13.542Z",
+  "generatedAt": "2026-08-07T07:35:30.439Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "publishedAt": "2026-08-04T13:58:29.000Z",
+      "title": "Baseten on Hugging Face Inference Providers 🔥",
+      "url": "https://huggingface.co/blog/baseten",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -15,35 +15,45 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-      "publishedAt": "2026-08-04T19:00:00.000Z",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "publishedAt": "2026-08-06T10:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation."
+      "content": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "New ways to learn and teach with ChatGPT Work and Codex",
-      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
-      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "publishedAt": "2026-08-06T06:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build."
+      "content": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Apple is getting this wrong",
-      "url": "https://openai.com/index/apple-is-getting-this-wrong",
-      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "title": "From asking to doing: How the world is putting ChatGPT to work",
+      "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened."
+      "content": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior."
+    },
+    {
+      "source": "blog-rss",
+      "name": "Together AI",
+      "title": "DeepSeek-V4 Flash 0731 vs GPT-5.6 Luna on DeepSWE: Cost and Coding",
+      "url": "https://www.together.ai/blog/deepseek-v4-flash-0731-vs-gpt-5-6-luna-on-deepswe-cost-and-coding",
+      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": "We ran 900 DeepSWE rollouts on DeepSeek-V4 Flash and GPT-5.6 Luna. Luna leads pass@1 by 14 points; DeepSeek delivers 4.8x the solves per dollar."
     }
   ],
   "stats": {
-    "blogPosts": 4
+    "blogPosts": 5
   }
 }

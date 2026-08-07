@@ -22,7 +22,13 @@
     "substack:post:209198968": 1785919624915,
     "00198340-89dd-11f1-8519-5f4366a34437": 1785919626201,
     "d31dbc32-c9fa-434f-945f-3a2156527207": 1785919626696,
-    "gid://art19-episode-locator/V0/W4baphRAfYGYAGlYOp7O4MSo2vh3lsDu5Dygupy_ukQ": 1785919627731
+    "gid://art19-episode-locator/V0/W4baphRAfYGYAGlYOp7O4MSo2vh3lsDu5Dygupy_ukQ": 1785919627731,
+    "17b96322-915c-11f1-aad7-53d361bc6996": 1786088121970,
+    "94e24e7c-48b4-4b72-ba0a-355f50c2441a": 1786088122820,
+    "057b66e4-a02c-4c68-b10c-899c17f9c2d3": 1786088123374,
+    "gid://art19-episode-locator/V0/-pXj5ZL3Q7Ovbf8LU-ftQAv4kr4_ej5Hvl4xqaVOi9s": 1786088124090,
+    "992eb16e-90ee-11f1-9b8a-df3bbb1615db": 1786088124151,
+    "b3360d48-183d-45f8-a014-8bb44ce160b4": 1786088125714
   },
   "seenArticles": {
     "https://huggingface.co/blog/nunchaku-diffusers": 1784882239177,
@@ -56,7 +62,12 @@
     "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b": 1785919629203,
     "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models": 1785919629303,
     "https://openai.com/index/learn-teach-chatgpt-work-codex": 1785919629303,
-    "https://openai.com/index/apple-is-getting-this-wrong": 1785919629303
+    "https://openai.com/index/apple-is-getting-this-wrong": 1785919629303,
+    "https://huggingface.co/blog/baseten": 1786088125916,
+    "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt": 1786088126012,
+    "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai": 1786088126012,
+    "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work": 1786088126012,
+    "https://www.together.ai/blog/deepseek-v4-flash-0731-vs-gpt-5-6-luna-on-deepswe-cost-and-coding": 1786088126138
   },
   "xUserIds": {}
 }

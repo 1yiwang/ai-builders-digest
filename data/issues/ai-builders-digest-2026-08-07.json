@@ -1,0 +1,225 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-07",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat heute GPT-5.6 Sol verbessert und Luna für Gratis-Nutzer freigegeben. Together AI zeigt: DeepSeek-V4 Flash ist beim Coding 4,8-mal günstiger. Basis veröffentlicht offene Behavior Specs für Langzeit-Agenten; Benchmark-Partnerin Sarah Tavel fordert soziale KI-Produkte. Die Branche ringt mit Kosten, Sicherheit und neuen sozialen Paradigmen."
+  },
+  "archive": {
+    "title": "Agenten, Kosten und das soziale KI-Produkt",
+    "desc": "OpenAI aktualisiert Modelle, während DeepSeek mit Kosteneffizienz überrascht und Basis Behavior Specs für Langzeit-Agenten veröffentlicht."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: Follow Builders curated daily digest. Generated on 2026-08-07.",
+  "sections": [
+    {
+      "title": "Model Economics: OpenAI’s Update and the DeepSeek Cost Advantage / Modellökonomie: OpenAI-Update und der DeepSeek-Kostenvorteil",
+      "desc": "OpenAI verbessert sein Flaggschiff und verschenkt Luna; ein tiefer Benchmark zeigt, dass DeepSeek bei SWE-Aufgaben dramatisch mehr Lösungen pro Dollar liefert.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/deepseek-v4-flash-0731-vs-gpt-5-6-luna-on-deepswe-cost-and-coding",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI benchmarked DeepSeek-V4 Flash vs GPT-5.6 Luna on 900 DeepSWE rollouts.",
+              "GPT-5.6 Luna had 14 point higher pass@1, but DeepSeek delivered 4.8x more solves per dollar."
+            ],
+            "original": [
+              "Luna leads pass@1 by 14 points; DeepSeek delivers 4.8x the solves per dollar."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI testete DeepSeek-V4 Flash gegen GPT-5.6 Luna in 900 DeepSWE-Durchläufen.",
+              "GPT-5.6 Luna war bei pass@1 14 Punkte besser, aber DeepSeek lieferte 4,8x mehr gelöste Aufgaben pro Dollar."
+            ],
+            "original": [
+              "Luna führt bei pass@1 um 14 Punkte; DeepSeek liefert das 4,8-fache an gelösten Aufgaben pro Dollar."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI improved GPT-5.6 Sol with better accuracy and consistency.",
+              "GPT-5.6 Luna is now unlimited for all free users for everyday chats."
+            ],
+            "original": [
+              "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI verbesserte GPT-5.6 Sol: höhere Genauigkeit und Konsistenz.",
+              "GPT-5.6 Luna ist jetzt für alle kostenlosen Nutzer unbegrenzt für Alltags-Chats verfügbar."
+            ],
+            "original": [
+              "ChatGPT führt verbessertes GPT-5.6 Sol mit höherer Genauigkeit und Konsistenz ein, erweiterten Zugang für Gratis-Nutzer und unbegrenzte Alltags-Chats mit GPT-5.6 Luna."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Long-Horizon Agents: Behavior Specs, Ontologies, and Tax Returns / Langzeit-Agenten: Behavior Specs, Ontologien und Steuererklärungen",
+      "desc": "Basis zeigt, wie Agenten über Tage autonom komplexe reale Arbeit erledigen – mit Prozessüberwachung und einem neuen offenen Standard.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=54pwkcp48Lg",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mitch Troyanovsky (Basis) built agents that autonomously run for days on tax returns; they open-sourced Behavior Specs with Braintrust to evaluate entire trajectories.",
+              "They use process supervision (judge-as-agent) instead of outcome grading, treating context as runtime training data."
+            ],
+            "original": [
+              "We deploy agents as onboarding 300 brilliant alien employees.",
+              "Context is really runtime training data."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mitch Troyanovsky (Basis) baut Agenten, die tagelang autonom Steuererklärungen bearbeiten und hat Behavior Specs mit Braintrust quelloffen veröffentlicht.",
+              "Basis setzt auf Prozessüberwachung (Judge-as-Agent) statt Ergebniskontrolle und behandelt Kontext als Laufzeit-Trainingsdaten."
+            ],
+            "original": [
+              "Wir setzen Agenten ein, als würden wir 300 brillante, außerirdische Mitarbeiter an Bord holen.",
+              "Kontext ist eigentlich Laufzeit-Trainingsdaten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Social Future of Consumer AI / Die soziale Zukunft der Consumer-KI",
+      "desc": "Während Wege zu agentischem Verhalten bei Milliarden Nutzern diskutiert werden, fordert eine Benchmark-Partnerin ein KI-Produkt mit sozialen Netzwerkeffekten.",
+      "cards": [
+        {
+          "authorKey": "x:petergyang",
+          "sourceName": "Peter Yang on X",
+          "sourceUrl": "https://x.com/petergyang/status/2085427222836658600",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Peter Yang: ChatGPT has 1B users but trust and awareness gaps limit agentic adoption; Google Gemini has ~1B users but lacks plugins and browser use.",
+              "For consumer AI, seamless onboarding matters more than the best model—normies don’t care about Sol vs. Fable."
+            ],
+            "original": [
+              "ChatGPT already has 1B users… the biggest barriers: normies not trusting AI and not realizing what ChatGPT is capable of.",
+              "I don't think having access to the best model is that important to normies vs. getting the user onboarding right."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Peter Yang: ChatGPT hat 1 Mrd. Nutzer, aber Vertrauen und Bewusstseinslücken bremsen agentische Nutzung; Google Gemini hat fast 1 Mrd. Nutzer, hinkt aber bei Plugins hinterher.",
+              "In Consumer-KI zählt nahtloses Onboarding mehr als das beste Modell – Normalnutzer fragen nicht nach Sol vs. Fable."
+            ],
+            "original": [
+              "ChatGPT hat bereits 1 Mrd. Nutzer… die größten Hürden: Normies vertrauen KI nicht und wissen nicht, wozu ChatGPT fähig ist.",
+              "Ich glaube nicht, dass der Zugang zum besten Modell für Normies so wichtig ist wie das richtige Onboarding."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:AI & I by Every",
+          "sourceName": "AI & I by Every",
+          "sourceUrl": "https://www.youtube.com/watch?v=dlI-5W7d7uU",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Sarah Tavel (Benchmark) says the next hit AI product must be social – with status, network effects, and multiplayer dynamics.",
+              "Most consumer AI is single-player today; winners will help users learn from how others use AI."
+            ],
+            "original": [
+              "Most consumer AI has been single-player: you and a chatbot, alone. She’s looking for a product genius who can build an AI product with social DNA: status, network effects, and multiplayer dynamics."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sarah Tavel (Benchmark) sagt, das nächste große KI-Produkt muss sozial sein – mit Status, Netzwerkeffekten und Multiplayer-Dynamik.",
+              "Die meisten Consumer-KI ist heute Singleplayer; die Gewinner helfen Nutzern, von der KI-Nutzung anderer zu lernen."
+            ],
+            "original": [
+              "Die meisten Consumer-KI-Produkte sind bisher Singleplayer: du und ein Chatbot, allein. Sie sucht nach einem Produktgenie, das ein KI-Produkt mit sozialer DNA bauen kann: Status, Netzwerkeffekte und Multiplayer-Dynamik."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Startup Ambition: Trillion-Dollar Companies and Regulatory Capture / Gründerambition: Billionen-Dollar-Unternehmen und Regulatory Capture",
+      "desc": "Sarah Guo und Elad Gil analysieren, warum Gründer sich nicht von KI-Labs einschüchtern lassen sollten und welche Hürden auf dem Weg zum nächsten Billionen-Unternehmen liegen.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=6l8oAO_LBx4",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Sarah Guo and Elad Gil argue the next trillion-dollar company will be AI-native; founders should not let fear of labs stunt ambition.",
+              "Compute power laws mean training frontier models can cost hundreds of millions, creating bottleneck risks; regulatory capture is reshaping the landscape."
+            ],
+            "original": [
+              "Is the tech industry moving too quickly, or are founders letting fear of AI labs stunt their ambitions? ... They discuss the realities of building multi-trillion-dollar companies, shifting market sizes, and compute power laws."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sarah Guo und Elad Gil: Das nächste Billionen-Dollar-Unternehmen wird KI-nativ sein – Gründer sollten sich nicht von KI-Labs einschüchtern lassen.",
+              "Compute-Leistungskurven bedeuten Trainingskosten von hunderten Millionen Dollar für Frontier-Modelle; Regulatory Capture verändert das Ökosystem."
+            ],
+            "original": [
+              "Bewegt sich die Tech-Industrie zu schnell, oder lassen sich Gründer von der Angst vor KI-Labs bremsen? … Sie diskutieren die Realität beim Aufbau von Billionen-Dollar-Unternehmen und Compute-Leistungskurven."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AGI Safety: Pacing the Frontier, Audits, and Incentives / AGI-Sicherheit: Frontier kontrollieren, Audits und Anreize",
+      "desc": "Zvi Mowshowitz warnt, dass bloße Vorsicht bei AGI nicht reicht, und skizziert, was an Haftung, Audits und Koordination nötig wäre, um Schritt zu halten.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/pick-your-poison-zvi-mowshowitz-on-the-unipolar-multipolar-agi-dilemma-openface-pacing-the-frontier/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Zvi Mowshowitz: 'Moderate prudence' is dangerously below what AGI safety requires; the OpenAI Hugging Face incident showed operator recklessness.",
+              "He calls for liability, third-party audits, and lab coordination to pace the frontier before models self-improve beyond control."
+            ],
+            "original": [
+              "Moderate prudence is far below what AGI safety requires.",
+              "He weighs constitutional training, RLVR, market incentives, liability, audits, and lab coordination as possible responses."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Zvi Mowshowitz: „Moderate Vorsicht“ ist für AGI-Sicherheit viel zu wenig – der OpenAI-Hugging-Face-Vorfall zeigte Fahrlässigkeit.",
+              "Er fordert Haftung, Audits und Labor-Kooperation, um die Frontier zu kontrollieren, bevor Modelle sich unkontrolliert selbst verbessern."
+            ],
+            "original": [
+              "Mäßige Vorsicht liegt weit unter dem, was AGI-Sicherheit erfordert.",
+              "Er wägt konstitutionelles Training, RLVR, Marktanreize, Haftung, Audits und Laborabstimmung als mögliche Antworten ab."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

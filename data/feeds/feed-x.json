@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T08:47:22.106Z",
+  "generatedAt": "2026-08-07T07:35:38.930Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2084855632029774167",
-          "text": "I think if you vibe code a SaaS these days it can just be a self-serve funnel into a more expensive services offering vs. trying to make alot of money with the SaaS itself. But the only thing about services is it feels like consulting and selling \"time for money\" again.",
-          "createdAt": "2026-08-05T04:14:52.000Z",
+          "id": "2085520904398999901",
+          "text": "damn where's the ping Tibo to reset button",
+          "createdAt": "2026-08-07T00:18:25.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2084849701351035182",
-          "text": "Hearing that GPT 5.6 Luna High is much cheaper and basically unlimited usage and I'm running low on Sol :P Can it do complex browser automation tasks? That's 50% of my Codex usage.",
-          "createdAt": "2026-08-05T03:51:18.000Z",
+          "id": "2085427222836658600",
+          "text": "Consumer is basically ChatGPT and Google's market to lose in my opinion. ChatGPT already has 1B users and needs to get them to connect their favorite apps and use agents to do work. OpenAI is already pioneering new interaction patterns like voice. The biggest barriers to overcome are: 1) Normies not trusting AI and ChatGPT with full access to their apps and data. 2) Normies not realizing what ChatGPT is now capable of. In both cases, I think marketing and the right messaging are just as important as improving the product. Google Gemini also has almost 1B users and my gut is normies trust it more to connect to email, calendar, Workspace, Chrome, etc since it's all the same login. But Google is behind on 3rd plugins, browser use, and alot of other critical features. They need to make the Gemini app best in class and friendly for normies. They can just copy ChatGPT tbh except make improvements like not have 3 separate modes (ChatGPT/Work/Codex) that ChatGPT and Claude are stuck in. fwiw I don't think having acess to the best model is that important to normies vs. getting the user onboarding right. My non-AI pilled friends could care less about Sol vs Fable as long as the pricing is fair and the model can get their work done reliably.",
+          "createdAt": "2026-08-06T18:06:09.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,9 +29,9 @@
           }
         },
         {
-          "id": "2084846191456751725",
-          "text": "Easier to make more money from @X payouts than from a micro SaaS these days",
-          "createdAt": "2026-08-05T03:37:21.000Z",
+          "id": "2085423674073751813",
+          "text": "This is (of course) a massive distraction but the game I dream of building with AI is a roguelike deckbuilder that has great graphics, gameplay, and story.",
+          "createdAt": "2026-08-06T17:52:03.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -40,9 +40,9 @@
           }
         },
         {
-          "id": "2084665842512588907",
-          "text": "This is a really cool prompt from @kevinrose that asks AI to reflect on all your past threads together and give you a list of insights that you may not know about yourself. To try it just tell ChatGPT or Claude to: \"Make an html report based on https://github.com/kropdx/reflection-engine\" But is it telling me to stop using my judgment and give in to the slop? :) Thanks @bentossell for surfacing this.",
-          "createdAt": "2026-08-04T15:40:42.000Z",
+          "id": "2085421075375202427",
+          "text": "Codex team: If I am in Codex tab and say \"schedule this task in the cloud\" (it's a task that just uses plugins) is it actually going to schedule it in the cloud or I have to switch to ChatGPT Work to do this? It doesn't seem to work?",
+          "createdAt": "2026-08-06T17:41:44.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -57,9 +57,9 @@
       "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2084809416105472070",
-          "text": "Ok builders, here’s your playbook. Prototype your product with the best frontier model. Cost be damned. Validate the user experience. Then, 6-8 weeks later when open-weight models catch up - move your production workloads there, and to smaller models where possible. In that order. Don’t start with the cheapest model.",
-          "createdAt": "2026-08-05T01:11:13.000Z",
+          "id": "2085534442781868128",
+          "text": "Image",
+          "createdAt": "2026-08-07T01:12:13.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -68,9 +68,9 @@
           }
         },
         {
-          "id": "2084667443046502631",
-          "text": "Pinned: The best model for early product validation is almost never the best model for production. Talked to a bunch of founders this weekend. There’s a standard playbook emerging : 1/ Prototype with the best frontier models. Max quality. Ignore cost and latency. Learn what users actually want and iterate. 2/ Once the workflow and UX is validated, optimize like crazy for cost and latency - prompt eng, model routing, harnesses, smaller models, fine tuning. I see most teams get stuck in step 1.",
-          "createdAt": "2026-08-04T15:47:04.000Z",
+          "id": "2085390240899043406",
+          "text": "Pinned: I’ve noticed people are much clearer when they speak through new ideas than writing a doc on it. Somewhere between their mouth and the doc, the core idea gets buried as they try to add context, polish it and make it sound smart. So here’s what I ask my teams to do: record yourself explaining the idea exactly as you would to a friend, use ai to do basic cleanup but keep the rough original structure and flow. Share that doc.",
+          "createdAt": "2026-08-06T15:39:12.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -85,20 +85,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2084759190195536202",
-          "text": "Everyone on X: \"damn, Airtable sold for so low!\" Many SaaS founders, secretly: \"damn, I'd take that any day, at least they had an exit\"",
-          "createdAt": "2026-08-04T21:51:38.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2084635916480450888",
-          "text": "What the world What Europeans thinks Europeans in tech actually in tech do in the do in the Summer. Summer.",
-          "createdAt": "2026-08-04T13:41:47.000Z",
+          "id": "2085402933579964730",
+          "text": "How to build long-horizon AI agents: behavior specs, ontologies, process supervision - my conversation with @mitch_troy, co-founder of @trybasis 01:09 Why Everyone at Basis Was Whispering to AI when @steph_palazzolo walked in 04:12 Accounting as \"an Intelligence Over the Economy\" 06:11 What Makes an Agent Truly Long-Horizon 08:24 Inside an Autonomous, Multi-Day Tax Return 10:19 Agents That Hand Off Like Senior Engineers 11:17 A Brief History of Agents: From ReAct to Today 12:33 Why LLMs Have No Long-Term Memory 14:13 Why AutoGPT Didn't Live Up to Its Promise 15:51 The Three Breakthroughs: Opus 3, o1, o3 17:07 Why Reasoning Models Unlocked Agents 18:23 \"Let's Verify Step by Step\": The Road Not Taken 20:32 Pushing Back on the METR Chart 22:09 Why Coding Agents Won First 25:14 Why Real-World Agents Are Harder 26:55 How Accountants Verify Non-Deterministic Work 29:18 You Can't Scale Tax Returns Like Math 33:16 100 Evals Pass - So What? 35:53 Right Answer, Wrong Process 36:37 Behavior Specs, Explained 39:58 How Specific Should Behaviors Be? 42:18 Context Is Runtime Training Data 44:21 Who Judges the Judge? 46:45 The Move 37 Objection 50:02 The Magic Box Mental Model 52:41 \"Nothing Has Changed Since o3\" 54:56 Open-Sourcing Behavior Specs with @ankrgyl @braintrust 59:45 Ontologies: A World for Agents to Live In 01:04:20 Documentation as Codebase 01:06:33 Why the Founding Fathers Were Context Engineers 01:09:05 Onboarding 300 Brilliant Alien Employees 01:11:10 Self-Improving Agent Systems 01:12:50 The Context Mistake Agent Builders Make 01:14:29 RL on Behavior Adherence 01:17:01 Will the Bitter Lesson Swallow the Harness 01:18:46 \"Technical Moats Are Not Real Moats\" 01:21:03 Advice for AI Builders",
+          "createdAt": "2026-08-06T16:29:38.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -111,7 +100,7 @@
   ],
   "stats": {
     "xBuilders": 3,
-    "totalTweets": 8
+    "totalTweets": 7
   },
   "_mode": "Nitter RSS (free)"
 }
