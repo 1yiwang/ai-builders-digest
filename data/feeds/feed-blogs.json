@@ -1,13 +1,33 @@
 {
-  "generatedAt": "2026-08-07T07:35:30.439Z",
+  "generatedAt": "2026-08-14T07:42:32.494Z",
   "lookbackHours": 72,
   "blogs": [
     {
       "source": "blog-rss",
       "name": "Hugging Face",
-      "title": "Baseten on Hugging Face Inference Providers 🔥",
-      "url": "https://huggingface.co/blog/baseten",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+      "publishedAt": "2026-08-13T17:16:04.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "What We Learned by Reproducing 2,200 papers from ICML",
+      "url": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "publishedAt": "2026-08-13T00:00:00.000Z",
+      "author": "",
+      "description": "",
+      "content": ""
+    },
+    {
+      "source": "blog-rss",
+      "name": "Hugging Face",
+      "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+      "publishedAt": "2026-08-12T16:14:36.000Z",
       "author": "",
       "description": "",
       "content": ""
@@ -15,45 +35,35 @@
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-      "publishedAt": "2026-08-06T10:00:00.000Z",
+      "title": "The builder’s guide to GPT‑5.6",
+      "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "publishedAt": "2026-08-13T11:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna."
+      "content": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "Working with the American Psychological Association on youth mental health and AI",
-      "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-      "publishedAt": "2026-08-06T06:00:00.000Z",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "url": "https://openai.com/index/previewing-ultrafast",
+      "publishedAt": "2026-08-13T10:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health."
+      "content": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second."
     },
     {
       "source": "blog-rss",
       "name": "OpenAI",
-      "title": "From asking to doing: How the world is putting ChatGPT to work",
-      "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
+      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "publishedAt": "2026-08-13T09:00:00.000Z",
       "author": "",
       "description": "",
-      "content": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior."
-    },
-    {
-      "source": "blog-rss",
-      "name": "Together AI",
-      "title": "DeepSeek-V4 Flash 0731 vs GPT-5.6 Luna on DeepSWE: Cost and Coding",
-      "url": "https://www.together.ai/blog/deepseek-v4-flash-0731-vs-gpt-5-6-luna-on-deepswe-cost-and-coding",
-      "publishedAt": "2026-08-06T00:00:00.000Z",
-      "author": "",
-      "description": "",
-      "content": "We ran 900 DeepSWE rollouts on DeepSeek-V4 Flash and GPT-5.6 Luna. Luna leads pass@1 by 14 points; DeepSeek delivers 4.8x the solves per dollar."
+      "content": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI."
     }
   ],
   "stats": {
-    "blogPosts": 5
+    "blogPosts": 6
   }
 }

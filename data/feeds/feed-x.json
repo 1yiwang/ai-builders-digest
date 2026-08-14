@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T07:35:38.930Z",
+  "generatedAt": "2026-08-14T07:42:40.501Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2085520904398999901",
-          "text": "damn where's the ping Tibo to reset button",
-          "createdAt": "2026-08-07T00:18:25.000Z",
+          "id": "2088108304274960667",
+          "text": "What do people include in their product specs these days to make them friendly and concise for both humans and agents? Or two separate sections for each?",
+          "createdAt": "2026-08-14T03:39:49.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,9 +18,9 @@
           }
         },
         {
-          "id": "2085427222836658600",
-          "text": "Consumer is basically ChatGPT and Google's market to lose in my opinion. ChatGPT already has 1B users and needs to get them to connect their favorite apps and use agents to do work. OpenAI is already pioneering new interaction patterns like voice. The biggest barriers to overcome are: 1) Normies not trusting AI and ChatGPT with full access to their apps and data. 2) Normies not realizing what ChatGPT is now capable of. In both cases, I think marketing and the right messaging are just as important as improving the product. Google Gemini also has almost 1B users and my gut is normies trust it more to connect to email, calendar, Workspace, Chrome, etc since it's all the same login. But Google is behind on 3rd plugins, browser use, and alot of other critical features. They need to make the Gemini app best in class and friendly for normies. They can just copy ChatGPT tbh except make improvements like not have 3 separate modes (ChatGPT/Work/Codex) that ChatGPT and Claude are stuck in. fwiw I don't think having acess to the best model is that important to normies vs. getting the user onboarding right. My non-AI pilled friends could care less about Sol vs Fable as long as the pricing is fair and the model can get their work done reliably.",
-          "createdAt": "2026-08-06T18:06:09.000Z",
+          "id": "2088036303816519734",
+          "text": "The biggest compliment I can give @maticrobots is that my wife runs it non-stop which is getting pretty annoying but keeps our floors super clean. 😅",
+          "createdAt": "2026-08-13T22:53:43.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -29,20 +29,9 @@
           }
         },
         {
-          "id": "2085423674073751813",
-          "text": "This is (of course) a massive distraction but the game I dream of building with AI is a roguelike deckbuilder that has great graphics, gameplay, and story.",
-          "createdAt": "2026-08-06T17:52:03.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2085421075375202427",
-          "text": "Codex team: If I am in Codex tab and say \"schedule this task in the cloud\" (it's a task that just uses plugins) is it actually going to schedule it in the cloud or I have to switch to ChatGPT Work to do this? It doesn't seem to work?",
-          "createdAt": "2026-08-06T17:41:44.000Z",
+          "id": "2087946170274570385",
+          "text": "I'm dealing with a family health situation and thought I would be using AI to research and understand the illness but in reality it's been most helpful to navigate the healthcare system bureaucracy.",
+          "createdAt": "2026-08-13T16:55:33.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -57,9 +46,9 @@
       "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2085534442781868128",
-          "text": "Image",
-          "createdAt": "2026-08-07T01:12:13.000Z",
+          "id": "2088074515188519182",
+          "text": "AI industry: this is an era of unlimited creativity, thanks to AI. Also AI industry: we will all name our products ‘Studio’. I counted 20+. Here are a few : Google AI Studio Vertex AI Studio Workspace Studio Copilot Studio Agentforce Studio Joule Studio Writer AI Studio Box AI Studio Alibaba cloud Model Studio Labelbox Evaluation Studio SageMaker Studio Cortex AI Studio LangGraph Studio AI Agent Studio x 4 at least these guys make studio things : Canva Magic Studio ElevenLabs Studio PS: If your AI product is also called Studio and I left you out, apologies. It’s not personal.",
+          "createdAt": "2026-08-14T01:25:33.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -68,9 +57,9 @@
           }
         },
         {
-          "id": "2085390240899043406",
-          "text": "Pinned: I’ve noticed people are much clearer when they speak through new ideas than writing a doc on it. Somewhere between their mouth and the doc, the core idea gets buried as they try to add context, polish it and make it sound smart. So here’s what I ask my teams to do: record yourself explaining the idea exactly as you would to a friend, use ai to do basic cleanup but keep the rough original structure and flow. Share that doc.",
-          "createdAt": "2026-08-06T15:39:12.000Z",
+          "id": "2087916590964851172",
+          "text": "Prompt debt is the new tech debt. With every model update, you should be cutting at least 50% of your prompts. Most AI products have bloated prompts that are making your product quality worse. The typical flow is: model fails at something -> add 10 rules. Tool call fails -> add 10 examples. Output is weird -> add formatting constraints. 3 months later, your system prompt is a novel. Meanwhile the model is way smarter and your micro-managey prompts are turning it into a dumb rules machine.",
+          "createdAt": "2026-08-13T14:58:01.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -85,9 +74,9 @@
       "name": "Matt Turck",
       "tweets": [
         {
-          "id": "2085402933579964730",
-          "text": "How to build long-horizon AI agents: behavior specs, ontologies, process supervision - my conversation with @mitch_troy, co-founder of @trybasis 01:09 Why Everyone at Basis Was Whispering to AI when @steph_palazzolo walked in 04:12 Accounting as \"an Intelligence Over the Economy\" 06:11 What Makes an Agent Truly Long-Horizon 08:24 Inside an Autonomous, Multi-Day Tax Return 10:19 Agents That Hand Off Like Senior Engineers 11:17 A Brief History of Agents: From ReAct to Today 12:33 Why LLMs Have No Long-Term Memory 14:13 Why AutoGPT Didn't Live Up to Its Promise 15:51 The Three Breakthroughs: Opus 3, o1, o3 17:07 Why Reasoning Models Unlocked Agents 18:23 \"Let's Verify Step by Step\": The Road Not Taken 20:32 Pushing Back on the METR Chart 22:09 Why Coding Agents Won First 25:14 Why Real-World Agents Are Harder 26:55 How Accountants Verify Non-Deterministic Work 29:18 You Can't Scale Tax Returns Like Math 33:16 100 Evals Pass - So What? 35:53 Right Answer, Wrong Process 36:37 Behavior Specs, Explained 39:58 How Specific Should Behaviors Be? 42:18 Context Is Runtime Training Data 44:21 Who Judges the Judge? 46:45 The Move 37 Objection 50:02 The Magic Box Mental Model 52:41 \"Nothing Has Changed Since o3\" 54:56 Open-Sourcing Behavior Specs with @ankrgyl @braintrust 59:45 Ontologies: A World for Agents to Live In 01:04:20 Documentation as Codebase 01:06:33 Why the Founding Fathers Were Context Engineers 01:09:05 Onboarding 300 Brilliant Alien Employees 01:11:10 Self-Improving Agent Systems 01:12:50 The Context Mistake Agent Builders Make 01:14:29 RL on Behavior Adherence 01:17:01 Will the Bitter Lesson Swallow the Harness 01:18:46 \"Technical Moats Are Not Real Moats\" 01:21:03 Advice for AI Builders",
-          "createdAt": "2026-08-06T16:29:38.000Z",
+          "id": "2087978386195103916",
+          "text": "Right now, you're either: * an AI-native rocketship, which sounds fun until you realize it means being in a permanent fundraising situation at ever more scary valuations to hoover up capital and talent, and in a constant death match with other rocketships to capture customers, sacrificing gross margins; or * basically left for dead, regardless of how good a company you actually are This has been the case for a while, but feels like it just escalated a notch.",
+          "createdAt": "2026-08-13T19:03:34.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -100,7 +89,7 @@
   ],
   "stats": {
     "xBuilders": 3,
-    "totalTweets": 7
+    "totalTweets": 6
   },
   "_mode": "Nitter RSS (free)"
 }
