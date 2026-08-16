@@ -1,6 +1,25 @@
 # AI Builders Digest — 进度文档
 
-最后更新：2026-05-30
+最后更新：2026-08-16
+
+## 2026-08-16 — 应用岗管线升级（无新数据库）
+
+规划：`docs/llm-pipeline-upgrade-plan.md`。存储仍是 Git JSON，不接 Convex / 任何托管库。
+
+已落地：
+
+- **进模前处理**：`scripts/lib/prepare-feed.js` — 截断 + 规则短名单（12 条、无 URL 丢弃、同一来源最多 2 条）
+- **账本**：出刊写入 `meta`（tokens / 估成本 / `sourceUrls`）；瘦目录 `data/archive-index.json`
+- **校验 + 修 1 次**：`scripts/lib/validate-magazine.js`，失败则把错误打回模型，再失败则跳过本期
+- **本机免费通路**：`DIGEST_PROVIDER=ollama`（CI 不跑本地模型）
+- **回归**：`npm run eval` → `data/eval/last-report.json`
+- **CI 降级**：生成失败或当天无 JSON 时跳过渲染/Telegram，job 保持绿色，并打印 `estCostUsd`
+
+2026-06-17 本地 feed 实测：进模字符 73,057 → 7,440（约 −90%），估 input tokens ~18,265 → 1,860。本轮未调用付费 API。
+
+本机检查：`npm run prepare-feed`、`npm run eval`。CI 检查：Actions → AI Builders Digest (MWF) → Run workflow。
+
+未做（可选）：本机 Ollama 实跑一期 dry-run；用 DeepSeek 出一期带 `meta` 的新刊（现有期都是 legacy）。不上数据库；首页按年分页等约 80 期再做。
 
 ## 已完成
 
@@ -132,7 +151,10 @@
 
 ## 待开发
 
-- 多领域分版（金融/政策/生物科技）
+- 本机 Ollama dry-run 验证零成本出刊（代码已接，需本机已装 Ollama）
+- 出一期带 `meta` 的新刊，让 eval 有 current 样本
+- 首页超过约 80 期时再做静态年分页（不要上数据库）
+- 多领域分版（金融/政策/生物科技）——旧 backlog，非应用岗必需
 
 ## 关键文件
 
@@ -155,4 +177,9 @@
 | `scripts/render-ai-builders-digest.js` | HTML 渲染 |
 | `scripts/update-index-archive.js` | Archive 更新 |
 | `scripts/send-telegram.js` | Telegram 推送 |
+| `scripts/lib/prepare-feed.js` | 截断 / 短名单 |
+| `scripts/lib/validate-magazine.js` | 期刊 schema 校验 |
+| `scripts/eval-magazine.js` | 硬指标回归 |
+| `data/archive-index.json` | 瘦目录（给以后分页预留） |
+| `docs/llm-pipeline-upgrade-plan.md` | 应用岗升级规划 |
 | `.github/workflows/daily-digest.yml` | CI 自动化 |

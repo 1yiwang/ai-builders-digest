@@ -37,26 +37,59 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: |
-          echo "=== Generate local feeds ==="
-          node scripts/generate-feed.js
-
-          echo "=== Generate magazine JSON ==="
-          ISSUE_DATE=$(date +%Y-%m-%d)
+          set -e
+          ISSUE_DATE=$(date -u +%Y-%m-%d)
           JSON_PATH="data/issues/ai-builders-digest-${ISSUE_DATE}.json"
-          if [ -f "$JSON_PATH" ]; then
-            CARD_COUNT=$(node -e "const j=JSON.parse(require('fs').readFileSync('${JSON_PATH}','utf8'));console.log(j.sections.reduce((s,sec)=>s+(sec.cards?.length||0),0))")
-            if [ "$CARD_COUNT" -gt 3 ]; then
-              echo "SKIP: ${JSON_PATH} already has ${CARD_COUNT} cards (preserving existing)"
-            else
-              echo "Existing JSON is thin (${CARD_COUNT} cards), regenerating..."
-              node scripts/generate-magazine-json.js --date "$ISSUE_DATE"
-            fi
-          else
-            node scripts/generate-magazine-json.js --date "$ISSUE_DATE"
+
+          echo "=== Generate local feeds ==="
+          if ! node scripts/generate-feed.js; then
+            echo "WARN: feed generation failed; continuing with committed feeds if present"
           fi
 
+          echo "=== Generate magazine JSON ==="
+          SHOULD_GENERATE=1
+          if [ -f "$JSON_PATH" ]; then
+            CARD_COUNT=$(node -e "const j=JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'));console.log(j.sections.reduce((s,sec)=>s+(sec.cards?.length||0),0))" "$JSON_PATH")
+            if [ "$CARD_COUNT" -gt 3 ]; then
+              echo "SKIP: ${JSON_PATH} already has ${CARD_COUNT} cards (preserving existing)"
+              SHOULD_GENERATE=0
+            else
+              echo "Existing JSON is thin (${CARD_COUNT} cards), regenerating..."
+            fi
+          fi
+
+          if [ "$SHOULD_GENERATE" -eq 1 ]; then
+            set +e
+            node scripts/generate-magazine-json.js --date "$ISSUE_DATE"
+            GEN_EXIT=$?
+            set -e
+            if [ "$GEN_EXIT" -ne 0 ]; then
+              echo "WARN: magazine generation exited ${GEN_EXIT}; skip render/telegram unless JSON exists"
+            fi
+          fi
+
+          if [ ! -f "$JSON_PATH" ]; then
+            echo "WARN: ${JSON_PATH} missing — skip render, archive, telegram (job stays green)"
+            exit 0
+          fi
+
+          echo "=== Issue ledger ==="
+          node -e "
+            const fs = require('fs');
+            const issue = JSON.parse(fs.readFileSync(process.argv[1], 'utf8'));
+            const meta = issue.meta;
+            if (!meta) { console.log('meta: (legacy issue, no ledger)'); process.exit(0); }
+            console.log('provider=' + meta.provider);
+            console.log('model=' + meta.model);
+            console.log('tokensIn=' + meta.tokensIn);
+            console.log('tokensOut=' + meta.tokensOut);
+            console.log('estCostUsd=' + meta.estCostUsd);
+            console.log('cardsPublished=' + meta.cardsPublished);
+            console.log('repairAttempts=' + meta.repairAttempts);
+          " "$JSON_PATH"
+
           echo "=== Render HTML ==="
-          node scripts/render-ai-builders-digest.js "data/issues/ai-builders-digest-${ISSUE_DATE}.json"
+          node scripts/render-ai-builders-digest.js "$JSON_PATH"
 
           echo "=== Update archive ==="
           node scripts/update-index-archive.js

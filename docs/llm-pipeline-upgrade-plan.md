@@ -321,7 +321,7 @@ node scripts/generate-magazine-json.js --date 2026-06-17 --dry-run
 
 验收：对现有 8+ 期跑一遍；允许旧期因当时 prompt 松而失败，报告里分开 `legacy` / `current`。新生成的期必须 pass。
 
-### Stage 6 — CI 降级行为（约 1 小时）
+### Stage 6 — CI 降级行为（约 1 小时） ✅ 已改 workflow（待你在 GitHub 手动跑一次确认）
 
 `.github/workflows/daily-digest.yml`：
 
@@ -380,13 +380,13 @@ Digest 简历只讲：规则预筛 + 约束生成 + schema 修复 + 每期成本
 ## 11. 建议执行顺序
 
 ```
-Stage 0 约束
-  → Stage 1 截断+meta     ← 先做，立刻省钱、立刻有数字
-  → Stage 3 规则短名单     ← 零成本，可和 Stage 2 对调
-  → Stage 2 schema+修复
-  → Stage 5 eval
-  → Stage 4 本机 Ollama
-  → Stage 6 CI 降级
+Stage 0 约束              ✅
+  → Stage 1 截断+meta     ✅
+  → Stage 3 规则短名单     ✅
+  → Stage 2 schema+修复    ✅ 代码已接
+  → Stage 5 eval           ✅
+  → Stage 4 本机 Ollama    ✅ 代码已接，待本机实跑
+  → Stage 6 CI 降级        ✅ workflow 已改，待 Actions 手动跑一次
 ```
 
 Stage 1 和 3 都不调用新模型、不花钱、不碰 Convex。即使云账号全部不可用，这两步也能在本机用已有 feed 做完。
