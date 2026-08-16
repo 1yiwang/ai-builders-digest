@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-08-16T10:37:03.628Z",
+  "lookbackHours": 72,
+  "videos": [
+    {
+      "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "Building And Structuring An AI Native Company",
+      "url": "https://www.youtube.com/watch?v=Z3JyAqh4ixg",
+      "publishedAt": "2026-08-14T14:00:37.000Z",
+      "description": "In this presentation from Startup School Paris, Y Combinator General Partner Tom Blomfield shares findings from his research on how companies are being built with AI infrastructure placed in from the start. \n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs\n\nChapters:\n\n00:00 — Intro\n01:53 — Why Roman Legions Built Your Org Chart\n03:56 — Humans as the Bottleneck\n05:28 — What a Real AI Loop Looks Like\n07:51 — The Data Agent That Changed Everything\n08:39 — The Self-Improving System\n10:32 — Office Hours → Living User Manual\n12:22 — The AI Employee With a VM\n14:08 — What &quot;Company Brain&quot; Actually Means\n15:52 — Humans at the Edge\n17:44 — Burn Tokens, Not Headcount\n18:29 — Make Everything Legible to AI\n19:29 — Simulating Investor Calls"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "Claude AI Failed 650 Times…Then Beat The Human Record",
+      "url": "https://www.youtube.com/watch?v=QnGNF8k_uoc",
+      "publishedAt": "2026-08-14T08:42:07.000Z",
+      "description": "❤️ Check out Weights &amp; Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/riemann-zeta\n\nSource:\nhttps://www.scientificamerican.com/article/no-ai-didnt-just-solve-the-thorniest-problem-in-math/\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "How Reward Hacking Could Escalate Into AI Takeover - Ryan Greenblatt",
+      "url": "https://www.youtube.com/watch?v=0BDdiGQUp7M",
+      "publishedAt": "2026-08-15T21:13:47.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Can't We Raise AI Like We Raise Kids? - Ryan Greenblatt",
+      "url": "https://www.youtube.com/watch?v=wSX0jXBAxwA",
+      "publishedAt": "2026-08-14T20:03:23.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "The UK Safety Institute Caught Mythos Backdooring a GitHub Repo - Ryan Greenblatt",
+      "url": "https://www.youtube.com/watch?v=Z9nRg6UNZBQ",
+      "publishedAt": "2026-08-13T17:56:56.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Exo: Harnesses should see their own code and logs — Alex Krentsel",
+      "url": "https://www.youtube.com/watch?v=5lFD-34dhqE",
+      "publishedAt": "2026-08-15T15:45:32.000Z",
+      "description": "Exo is a systems approach to recursive self improvement. In short, it's a complete AI agent harness (supporting tools, tasks, integrations, etc. similar to OpenClaw, Pi or Hermes), with the crucial difference that it has full visibility into both its code and runtime logs. This allows Exo to incrementally improve every aspect of itself, clone itself, and even manage a lineage of clones.\n\nWhile most agents can do some form of self improvement, such as updating memory or creating skills, Exo is fully recursive in that it can clone or operate on any aspect of itself, from prompts, to memory, tooling, or even basic harness policy itself. It's architected so that this evolution can be done incrementally and (mostly) safely. The only thing it can't muck with is an event log which provides a canonical history of what it's tried to prevent getting stuck in recursive loops.\n\nTimestamps\n0:00 Intro and background on the team\n1:53 Defining the Exo agent thesis\n2:30 The shift in the ML stack: from model weights to agent harnesses\n3:30 Origins of the project: Sky Discover and AI-driven discovery\n5:35 Comparison to OpenClaw and agentic adaptability\n6:52 What is an agent? Policy, context, and action\n8:30 Architectural overview of Exo\n10:45 Implicit vs. explicit system modification\n11:40 Real-world example: Exo playing Pokémon\n12:56 Krentsel's research lineage and systems thinking\n16:20 Decomposing the agent: Executor, Exo Harness, and Sandbox\n19:59 Achieving full recursive self-improvement\n22:00 Transferable agents and teleportation\n24:45 Addressing sub-agents and secret management\n30:40 Interruptible work and system architecture\n32:40 Normalization and protocols (like ACP)\n34:53 Team roles: Martin Casado, Ankur Goyal, and Alex Krentsel\n38:15 Solving the evaluation and reward hacking problem\n39:46 Production story: Driving down costs by 96%\n42:58 Why now? The convergence of code generation and harness development\n44:50 Systems theory, Lisp, and future potential\n\nQuotes\n\n(2:23) &quot;Exo is an agent that's fully recursive. So it's able to safely edit all aspects of itself at runtime.&quot;\n(14:38) &quot;In harness space, we actually have an opportunity to enforce certain properties by the architecture of the system that we design.&quot;\n(43:26) &quot;The big difference here is that the medium for these agents... is the same as the actual building material.&quot;"
+    }
+  ],
+  "stats": {
+    "youtubeVideos": 6
+  }
+}

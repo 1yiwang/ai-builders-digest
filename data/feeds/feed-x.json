@@ -1,26 +1,15 @@
 {
-  "generatedAt": "2026-08-16T08:10:29.589Z",
-  "lookbackHours": 24,
+  "generatedAt": "2026-08-16T10:37:12.222Z",
+  "lookbackHours": 72,
   "x": [
     {
-      "handle": "@petergyang",
-      "name": "Peter Yang",
+      "handle": "@AndrewYNg",
+      "name": "Andrew Ng",
       "tweets": [
         {
-          "id": "2088773343629750535",
-          "text": "I am a fan of Grok Bot but @X is the #1 differentiated data source that it should have access to and it doesn't seem to work? The connector doesn't work and I can't even login to X on the cloud computer. Am I doing something wrong?",
-          "createdAt": "2026-08-15T23:42:27.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088772605323214999",
-          "text": "I 100% agree with Dario that using AI to cure diseases (and speeding up the regulatory approval of AI breakthroughs in healthcare) could bring 10x the benefit to humanity as everything else combined.",
-          "createdAt": "2026-08-15T23:39:31.000Z",
+          "id": "2088302050706686198",
+          "text": "New: A map of the most important skills in AI Engineering.",
+          "createdAt": "2026-08-14T16:29:42.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -31,13 +20,101 @@
       ]
     },
     {
-      "handle": "@realmadhuguru",
-      "name": "Madhu Guru",
+      "handle": "@rauchg",
+      "name": "Guillermo Rauch",
       "tweets": [
         {
-          "id": "2088710566689018103",
-          "text": "There is no longer an excuse for B2B software to have such poor UX. Thanks to AI, every software product can and should be as easy to use as the best consumer software.",
-          "createdAt": "2026-08-15T19:33:00.000Z",
+          "id": "2088838302367732178",
+          "text": "Recursive self improvement",
+          "createdAt": "2026-08-16T04:00:34.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2088801077659635715",
+          "text": "Impressive",
+          "createdAt": "2026-08-16T01:32:39.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2088757738037989755",
+          "text": "I think people don’t realize how much of the success of React is actually @shadcn. I once referred to React as the actual “LEGO brick for adults.” But in reality it was more the description of the geometry of the bricks. The spec. Shadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.",
+          "createdAt": "2026-08-15T22:40:26.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2088735125744070932",
+          "text": "I’m interested in finding and funding the next Disney. True to its original values, focused on the American spirit. Merit, family, overcoming of adversity, optimism, the pursuit of happiness. AI makes everyone able to create. What will define our next generation is *what* we create with it. The next icons. The next unique brand that goes further than how it’s drawn or rendered. Mickey Mouse survived several technological revolutions because of what it represented. I think most big entertainment companies have forgotten that. If you’re creating something cool in this space and need help, technologically or financially, slide into my DMs.",
+          "createdAt": "2026-08-15T21:10:35.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2088323451132199338",
+          "text": "Vercel is the fastest [AI Gateway] infrastructure in the world",
+          "createdAt": "2026-08-14T17:54:44.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2088020529039180204",
+          "text": "One command to rule them all (tokens). I predict that this will become the default way of using coding AI at scale. Uptime, model choice, lower costs, observability, ZDR… The cool thing is that this command configures every *existing* coding harness, like Claude Code & Codex!",
+          "createdAt": "2026-08-13T21:51:02.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2087982033499042205",
+          "text": "Try https://eve.dev with 🆓 GLM 5.2 @ up to 500TPS from @blackboxai",
+          "createdAt": "2026-08-13T19:18:04.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2087900672083857815",
+          "text": "The best things in life are free",
+          "createdAt": "2026-08-13T13:54:46.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2087891362289164333",
+          "text": "𝙷𝚊𝚛𝚗𝚎𝚜𝚜𝙰𝚐𝚎𝚗𝚝 gives you the freedom to run and swap any brain. Or make a bunch of brains compete or collaborate on a problem. It’s now one line of code to switch to @grok.",
+          "createdAt": "2026-08-13T13:17:46.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -50,7 +127,7 @@
   ],
   "stats": {
     "xBuilders": 2,
-    "totalTweets": 3
+    "totalTweets": 10
   },
   "_mode": "Nitter RSS (free)"
 }

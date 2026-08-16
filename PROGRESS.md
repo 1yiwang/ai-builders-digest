@@ -2,6 +2,20 @@
 
 最后更新：2026-08-16
 
+## 2026-08-16 — 新鲜源（X / YouTube）
+
+规划：`docs/fresh-sources-plan.md`。不接 YouTube Data API，不接数据库。
+
+已落地：
+
+- **日期闸门**：scrape / RSS 无日期或早于窗口 → 丢弃，并写入 `seenArticles`（90 天）避免旧文 14 天复活
+- **Lookback**：X / 播客 / 油管 72h（对齐 MWF）；博客 7 天
+- **油管独立源**：`config/sources.json` 的 `youtube[]` → `data/feeds/feed-youtube.json`（公开 Atom）
+- **X 名单**：Karpathy / sama / swyx / Andrew Ng / Peter Yang / Levie / Rauch / Elon（8 个）
+- **短名单**：过期博客进不了 12 席；`kind: youtube` 与 tweet/podcast/blog 并列
+
+本机检查（2026-08-16）：`node scripts/generate-feed.js` → 博客 6 条（8-10～8-12，无 4–6 月 Anthropic）、油管 6 条（8-13～8-15）、X 2 个账号（Nitter；Andrew Ng + Rauch）。`npm run prepare-feed` 短名单 12 条：5 youtube + 4 blog + 3 tweet。`npm run eval`：33 期，current 0/1 fail，legacy 0/32 fail。
+
 ## 2026-08-16 — 应用岗管线升级（无新数据库）
 
 规划：`docs/llm-pipeline-upgrade-plan.md`。存储仍是 Git JSON，不接 Convex / 任何托管库。
@@ -153,8 +167,8 @@
 
 ## 待开发
 
-- 本机 Ollama dry-run 验证零成本出刊（代码已接，需本机已装 Ollama）
-- 出一期带 `meta` 的新刊，让 eval 有 current 样本
+- 出一期带新源 + `meta` 的刊（Stage D，需 DeepSeek）
+- 确认 GitHub Secret `X_BEARER_TOKEN`（没有则 X 仍走不稳的 Nitter）
 - 首页超过约 80 期时再做静态年分页（不要上数据库）
 - 多领域分版（金融/政策/生物科技）——旧 backlog，非应用岗必需
 
@@ -168,7 +182,8 @@
 | `config/prompt.md` | AI 生成 JSON 的 prompt（CI 可用） |
 | `config/author-identities.json` | 作者信息（CI 可用） |
 | `config/avatar-manifest.json` | 头像清单（CI 可用） |
-| `config/sources.json` | 数据源（X/Podcast/Blog） |
+| `config/sources.json` | 数据源（X / YouTube / Podcast / Blog） |
+| `docs/fresh-sources-plan.md` | 新鲜源规划（日期闸门 + 油管 Atom） |
 | `data/issues/*.json` | 杂志原始数据 |
 | `data/feeds/*.json` | 本地 feed 缓存 |
 | `data/state-feed.json` | Feed 状态（已见内容 + X 用户 ID 缓存） |

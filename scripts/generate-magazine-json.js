@@ -33,6 +33,7 @@ const FEED_BLOGS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-bu
 const LOCAL_FEED_X = path.join(REPO_ROOT, 'data', 'feeds', 'feed-x.json');
 const LOCAL_FEED_PODCASTS = path.join(REPO_ROOT, 'data', 'feeds', 'feed-podcasts.json');
 const LOCAL_FEED_BLOGS = path.join(REPO_ROOT, 'data', 'feeds', 'feed-blogs.json');
+const LOCAL_FEED_YOUTUBE = path.join(REPO_ROOT, 'data', 'feeds', 'feed-youtube.json');
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -197,6 +198,10 @@ async function main() {
       console.error(`  ${label}: local → ${localPath}`);
       return JSON.parse(fs.readFileSync(localPath, 'utf8'));
     }
+    if (!remoteUrl) {
+      console.error(`  ${label}: missing local file, using empty fallback`);
+      return null;
+    }
     console.error(`  ${label}: remote → ${remoteUrl}`);
     try {
       return await fetchJSON(remoteUrl);
@@ -209,11 +214,13 @@ async function main() {
   let feedX;
   let feedPodcasts;
   let feedBlogs;
+  let feedYoutube;
   try {
-    [feedX, feedPodcasts, feedBlogs] = await Promise.all([
+    [feedX, feedPodcasts, feedBlogs, feedYoutube] = await Promise.all([
       loadFeed(LOCAL_FEED_X, FEED_X_URL, 'X'),
       loadFeed(LOCAL_FEED_PODCASTS, FEED_PODCASTS_URL, 'Podcasts'),
       loadFeed(LOCAL_FEED_BLOGS, FEED_BLOGS_URL, 'Blogs'),
+      loadFeed(LOCAL_FEED_YOUTUBE, null, 'YouTube'),
     ]);
   } catch (err) {
     console.error(`  Feed loading failed: ${err.message}`);
@@ -225,11 +232,13 @@ async function main() {
     x: feedX?.x || [],
     podcasts: feedPodcasts?.podcasts || [],
     blogs: feedBlogs?.blogs || [],
+    videos: feedYoutube?.videos || [],
     stats: {
       xBuilders: feedX?.x?.length || 0,
       totalTweets: (feedX?.x || []).reduce((sum, account) => sum + (account.tweets?.length || 0), 0),
       podcastEpisodes: feedPodcasts?.podcasts?.length || 0,
       blogPosts: feedBlogs?.blogs?.length || 0,
+      youtubeVideos: feedYoutube?.videos?.length || 0,
     },
   };
 
@@ -237,8 +246,9 @@ async function main() {
   console.error(`  Tweets: ${feedData.stats.totalTweets}`);
   console.error(`  Podcast episodes: ${feedData.stats.podcastEpisodes}`);
   console.error(`  Blog posts: ${feedData.stats.blogPosts}`);
+  console.error(`  YouTube videos: ${feedData.stats.youtubeVideos}`);
 
-  if (feedData.stats.xBuilders === 0 && feedData.stats.podcastEpisodes === 0 && feedData.stats.blogPosts === 0) {
+  if (feedData.stats.xBuilders === 0 && feedData.stats.podcastEpisodes === 0 && feedData.stats.blogPosts === 0 && feedData.stats.youtubeVideos === 0) {
     console.error('');
     console.error('NO_CONTENT: No new updates from builders today.');
     process.exit(0);

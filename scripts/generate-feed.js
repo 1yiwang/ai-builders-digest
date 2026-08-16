@@ -2,7 +2,7 @@
 // ============================================================================
 // AI Builders Digest — Local Feed Generator
 // ============================================================================
-// Fetches podcast RSS + YouTube URLs and blog content (free, no API keys).
+// Fetches X + podcast RSS + YouTube channels + blogs (free; X API optional).
 // Outputs feed JSON files to data/feeds/ for use by generate-magazine-json.js.
 //
 // Usage:
@@ -10,6 +10,7 @@
 //   node scripts/generate-feed.js --x-only
 //   node scripts/generate-feed.js --podcasts-only
 //   node scripts/generate-feed.js --blogs-only
+//   node scripts/generate-feed.js --youtube-only
 // ============================================================================
 
 const fs = require('fs');
@@ -22,9 +23,10 @@ const FEEDS_DIR = path.join(REPO_ROOT, 'data', 'feeds');
 const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
 const STATE_PATH = path.join(REPO_ROOT, 'data', 'state-feed.json');
 
-const PODCAST_LOOKBACK_HOURS = 72; // 3 days
-const BLOG_LOOKBACK_HOURS = 72;
-const X_LOOKBACK_HOURS = 24;
+const PODCAST_LOOKBACK_HOURS = 72; // 3 days — matches MWF gap
+const BLOG_LOOKBACK_HOURS = 168;   // 7 days — engineering blogs publish less often
+const X_LOOKBACK_HOURS = 72;
+const YOUTUBE_LOOKBACK_HOURS = 72;
 
 const X_API_BASE = 'https://api.x.com/2';
 
@@ -32,25 +34,31 @@ const RSS_USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
 // -- State Management --------------------------------------------------------
+function emptyState() {
+  return { seenVideos: {}, seenArticles: {}, xUserIds: {}, youtubeChannelIds: {} };
+}
+
 function loadState() {
-  if (!fs.existsSync(STATE_PATH)) return { seenVideos: {}, seenArticles: {}, xUserIds: {} };
+  if (!fs.existsSync(STATE_PATH)) return emptyState();
   try {
     const state = JSON.parse(fs.readFileSync(STATE_PATH, 'utf-8'));
     if (!state.seenArticles) state.seenArticles = {};
     if (!state.xUserIds) state.xUserIds = {};
+    if (!state.youtubeChannelIds) state.youtubeChannelIds = {};
     return state;
   } catch {
-    return { seenVideos: {}, seenArticles: {}, xUserIds: {} };
+    return emptyState();
   }
 }
 
 function saveState(state) {
-  const cutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  const videoCutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  const articleCutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
   for (const [id, ts] of Object.entries(state.seenVideos || {})) {
-    if (ts < cutoff) delete state.seenVideos[id];
+    if (ts < videoCutoff) delete state.seenVideos[id];
   }
   for (const [id, ts] of Object.entries(state.seenArticles || {})) {
-    if (ts < cutoff) delete state.seenArticles[id];
+    if (ts < articleCutoff) delete state.seenArticles[id];
   }
   const dir = path.dirname(STATE_PATH);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -60,6 +68,30 @@ function saveState(state) {
 // -- Sources -----------------------------------------------------------------
 function loadSources() {
   return JSON.parse(fs.readFileSync(SOURCES_PATH, 'utf-8'));
+}
+
+function toIsoDate(value) {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toISOString();
+}
+
+function isFresh(publishedAt, cutoff) {
+  const iso = toIsoDate(publishedAt);
+  if (!iso) return false;
+  return new Date(iso) >= cutoff;
+}
+
+function extractTimeTag(html) {
+  const match = String(html || '').match(/<time[^>]*datetime=["']([^"']+)["'][^>]*>/i);
+  return toIsoDate(match?.[1]);
+}
+
+function markSeen(state, bucket, key) {
+  if (!key) return;
+  if (!state[bucket]) state[bucket] = {};
+  state[bucket][key] = Date.now();
 }
 
 // -- Podcast: RSS Parser -----------------------------------------------------
@@ -101,7 +133,12 @@ function normalizeTitle(t) {
   return t.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-async function getYouTubeFeedUrl(channelUrl) {
+function youtubeHandleFromUrl(channelUrl) {
+  const match = String(channelUrl || '').match(/\/@([A-Za-z0-9_.-]+)/);
+  return match ? match[1] : '';
+}
+
+async function getYouTubeFeedUrl(channelUrl, state) {
   if (!channelUrl || !channelUrl.includes('youtube.com')) return null;
 
   const playlistMatch = channelUrl.match(/[?&]list=([A-Za-z0-9_-]+)/);
@@ -110,7 +147,10 @@ async function getYouTubeFeedUrl(channelUrl) {
   const channelIdMatch = channelUrl.match(/\/channel\/(UC[A-Za-z0-9_-]+)/);
   if (channelIdMatch) return `https://www.youtube.com/feeds/videos.xml?channel_id=${channelIdMatch[1]}`;
 
-  if (channelUrl.match(/\/@[A-Za-z0-9_.-]+/)) {
+  const handle = youtubeHandleFromUrl(channelUrl);
+  if (handle) {
+    const cached = state?.youtubeChannelIds?.[handle];
+    if (cached) return `https://www.youtube.com/feeds/videos.xml?channel_id=${cached}`;
     try {
       const res = await fetch(channelUrl, {
         headers: { 'User-Agent': RSS_USER_AGENT, 'Accept-Language': 'en-US,en;q=0.9' },
@@ -121,7 +161,13 @@ async function getYouTubeFeedUrl(channelUrl) {
       const idMatch =
         html.match(/"channelId":"(UC[A-Za-z0-9_-]{20,})"/) ||
         html.match(/<meta\s+itemprop="(?:identifier|channelId)"\s+content="(UC[A-Za-z0-9_-]{20,})"/);
-      if (idMatch) return `https://www.youtube.com/feeds/videos.xml?channel_id=${idMatch[1]}`;
+      if (idMatch) {
+        if (state) {
+          if (!state.youtubeChannelIds) state.youtubeChannelIds = {};
+          state.youtubeChannelIds[handle] = idMatch[1];
+        }
+        return `https://www.youtube.com/feeds/videos.xml?channel_id=${idMatch[1]}`;
+      }
     } catch { return null; }
   }
   return null;
@@ -135,8 +181,17 @@ function parseYouTubeFeed(xml) {
     const block = m[1];
     const titleMatch = block.match(/<title>([\s\S]*?)<\/title>/);
     const videoIdMatch = block.match(/<yt:videoId>([\s\S]*?)<\/yt:videoId>/);
+    const publishedMatch = block.match(/<published>([\s\S]*?)<\/published>/);
+    const descMatch = block.match(/<media:description>([\s\S]*?)<\/media:description>/);
     if (titleMatch && videoIdMatch) {
-      videos.push({ title: titleMatch[1].trim(), url: `https://www.youtube.com/watch?v=${videoIdMatch[1].trim()}` });
+      const videoId = videoIdMatch[1].trim();
+      videos.push({
+        title: titleMatch[1].trim(),
+        videoId,
+        url: `https://www.youtube.com/watch?v=${videoId}`,
+        publishedAt: toIsoDate(publishedMatch?.[1]),
+        description: (descMatch?.[1] || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').trim(),
+      });
     }
   }
   return videos;
@@ -174,8 +229,8 @@ function parseYouTubePageData(html) {
   return videos;
 }
 
-async function fetchYouTubeVideos(channelUrl) {
-  const feedUrl = await getYouTubeFeedUrl(channelUrl);
+async function fetchYouTubeVideos(channelUrl, state) {
+  const feedUrl = await getYouTubeFeedUrl(channelUrl, state);
   if (feedUrl) {
     try {
       const res = await fetch(feedUrl, { headers: { 'User-Agent': RSS_USER_AGENT }, signal: AbortSignal.timeout(15000) });
@@ -198,8 +253,8 @@ async function fetchYouTubeVideos(channelUrl) {
   } catch { return []; }
 }
 
-async function findYouTubeEpisodeUrl(channelUrl, episodeTitle) {
-  const videos = await fetchYouTubeVideos(channelUrl);
+async function findYouTubeEpisodeUrl(channelUrl, episodeTitle, state) {
+  const videos = await fetchYouTubeVideos(channelUrl, state);
   if (videos.length === 0) return null;
   const needle = normalizeTitle(episodeTitle);
   const needleTokens = new Set(needle.split(' ').filter(w => w.length > 2));
@@ -216,6 +271,52 @@ async function findYouTubeEpisodeUrl(channelUrl, episodeTitle) {
     if (score > bestScore) { bestScore = score; bestUrl = v.url; }
   }
   return bestScore >= 0.5 ? bestUrl : null;
+}
+
+async function fetchYouTubeContent(sources, state, errors) {
+  const cutoff = new Date(Date.now() - YOUTUBE_LOOKBACK_HOURS * 60 * 60 * 1000);
+  const results = [];
+
+  for (const channel of sources.youtube || []) {
+    if (!channel.url) continue;
+    console.error(`  YouTube: ${channel.name}...`);
+    try {
+      const videos = await fetchYouTubeVideos(channel.url, state);
+      if (videos.length === 0) {
+        errors.push(`YouTube ${channel.name}: no videos from Atom/page`);
+        console.error('    no videos');
+        continue;
+      }
+
+      let added = 0;
+      for (const video of videos) {
+        const videoId = video.videoId || (video.url || '').match(/[?&]v=([^&]+)/)?.[1];
+        if (!videoId || !video.url) continue;
+        if (state.seenVideos[videoId]) continue;
+        if (!isFresh(video.publishedAt, cutoff)) {
+          markSeen(state, 'seenVideos', videoId);
+          continue;
+        }
+
+        results.push({
+          source: 'youtube',
+          name: channel.name,
+          handle: youtubeHandleFromUrl(channel.url) ? `@${youtubeHandleFromUrl(channel.url)}` : '',
+          title: video.title,
+          url: video.url,
+          publishedAt: toIsoDate(video.publishedAt),
+          description: video.description || '',
+        });
+        markSeen(state, 'seenVideos', videoId);
+        added += 1;
+      }
+      console.error(added > 0 ? `    ${added} new video(s)` : '    no new videos in lookback');
+    } catch (err) {
+      errors.push(`YouTube ${channel.name}: ${err.message}`);
+    }
+  }
+
+  return results;
 }
 
 // -- Podcast: Main Fetch -----------------------------------------------------
@@ -249,7 +350,7 @@ async function fetchPodcastContent(sources, state, errors) {
         // Try to match YouTube URL
         let youtubeUrl = null;
         if (podcast.url) {
-          youtubeUrl = await findYouTubeEpisodeUrl(podcast.url, ep.title);
+          youtubeUrl = await findYouTubeEpisodeUrl(podcast.url, ep.title, state);
           if (youtubeUrl) console.error(`      YT match: ${youtubeUrl}`);
         }
 
@@ -353,7 +454,7 @@ function extractAnthropicArticleContent(html) {
         }
         content = textParts.join('\n\n');
       }
-      if (content) return { title, author, publishedAt, content };
+      if (content) return { title, author, publishedAt: toIsoDate(publishedAt) || extractTimeTag(html), content };
     } catch { /* fall through */ }
   }
 
@@ -367,7 +468,7 @@ function extractAnthropicArticleContent(html) {
     .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ')
     .replace(/\s+/g, ' ').trim();
-  return { title, author, publishedAt, content };
+  return { title, author, publishedAt: toIsoDate(publishedAt) || extractTimeTag(html), content };
 }
 
 function extractClaudeBlogArticleContent(html) {
@@ -408,7 +509,7 @@ function extractClaudeBlogArticleContent(html) {
       .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ')
       .replace(/\s+/g, ' ').trim();
   }
-  return { title, author, publishedAt, content };
+  return { title, author, publishedAt: toIsoDate(publishedAt) || extractTimeTag(html), content };
 }
 
 async function fetchBlogContent(sources, state, errors) {
@@ -433,7 +534,11 @@ async function fetchBlogContent(sources, state, errors) {
       const newArticles = [];
       for (const article of candidates.slice(0, MAX_ARTICLES_PER_BLOG)) {
         if (state.seenArticles[article.url]) continue;
-        if (article.publishedAt && new Date(article.publishedAt) < cutoff) continue;
+        const indexDate = toIsoDate(article.publishedAt);
+        if (indexDate && new Date(indexDate) < cutoff) {
+          markSeen(state, 'seenArticles', article.url);
+          continue;
+        }
         newArticles.push(article);
         if (newArticles.length >= MAX_ARTICLES_PER_BLOG) break;
       }
@@ -455,18 +560,23 @@ async function fetchBlogContent(sources, state, errors) {
 
           if (!extracted || !extracted.content) { errors.push(`Blog: No content from ${article.url}`); continue; }
 
+          const publishedAt = toIsoDate(extracted.publishedAt || article.publishedAt);
+          markSeen(state, 'seenArticles', article.url);
+          if (!isFresh(publishedAt, cutoff)) {
+            console.error(`    skip stale/undated: ${article.url}`);
+            continue;
+          }
+
           results.push({
             source: 'blog',
             name: blog.name,
             title: extracted.title || article.title || 'Untitled',
             url: article.url,
-            publishedAt: extracted.publishedAt || article.publishedAt || null,
+            publishedAt,
             author: extracted.author || '',
             description: article.description || '',
             content: extracted.content,
           });
-
-          state.seenArticles[article.url] = Date.now();
           await new Promise(r => setTimeout(r, 500));
         } catch (err) { errors.push(`Blog article ${article.url}: ${err.message}`); }
       }
@@ -514,7 +624,7 @@ function parseBlogRSSFeed(xml) {
           .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#39;/g, "'")
           .trim(),
         url: linkMatch[1].trim(),
-        publishedAt: dateMatch ? new Date(dateMatch[1].trim()).toISOString() : null,
+        publishedAt: toIsoDate(dateMatch ? dateMatch[1].trim() : null),
         content,
       });
     }
@@ -545,8 +655,12 @@ async function fetchBlogRSSContent(sources, state, errors) {
       const newArticles = [];
       for (const article of articles) {
         if (state.seenArticles[article.url]) continue;
-        if (article.publishedAt && new Date(article.publishedAt) < cutoff) continue;
-        newArticles.push(article);
+        const publishedAt = toIsoDate(article.publishedAt);
+        if (!isFresh(publishedAt, cutoff)) {
+          markSeen(state, 'seenArticles', article.url);
+          continue;
+        }
+        newArticles.push({ ...article, publishedAt });
         if (newArticles.length >= 3) break;
       }
 
@@ -794,10 +908,12 @@ async function main() {
   const xOnly = args.includes('--x-only');
   const podcastsOnly = args.includes('--podcasts-only');
   const blogsOnly = args.includes('--blogs-only');
-  const runAll = !xOnly && !podcastsOnly && !blogsOnly;
+  const youtubeOnly = args.includes('--youtube-only');
+  const runAll = !xOnly && !podcastsOnly && !blogsOnly && !youtubeOnly;
   const runX = xOnly || runAll;
   const runPodcasts = podcastsOnly || runAll;
   const runBlogs = blogsOnly || runAll;
+  const runYoutube = youtubeOnly || runAll;
 
   // Load sources
   if (!fs.existsSync(SOURCES_PATH)) {
@@ -857,8 +973,23 @@ async function main() {
     blogs,
     stats: { blogPosts: blogs.length },
   };
-  if (blogs.length > 0 || sources.blogs?.length > 0 || sources.blogRSS?.length > 0) {
+  if (runBlogs && (blogs.length > 0 || sources.blogs?.length > 0 || sources.blogRSS?.length > 0)) {
     fs.writeFileSync(path.join(FEEDS_DIR, 'feed-blogs.json'), JSON.stringify(blogFeed, null, 2));
+  }
+
+  // YouTube channels (first-class, Atom — no Data API)
+  if (runYoutube && sources.youtube?.length > 0) {
+    console.error('[YouTube] Fetching channel Atom feeds...');
+    const videos = await fetchYouTubeContent(sources, state, errors);
+    console.error(`  → ${videos.length} new video(s)\n`);
+
+    const youtubeFeed = {
+      generatedAt: new Date().toISOString(),
+      lookbackHours: YOUTUBE_LOOKBACK_HOURS,
+      videos,
+      stats: { youtubeVideos: videos.length },
+    };
+    fs.writeFileSync(path.join(FEEDS_DIR, 'feed-youtube.json'), JSON.stringify(youtubeFeed, null, 2));
   }
 
   // X/Twitter
@@ -882,7 +1013,9 @@ async function main() {
   if (!process.env.X_BEARER_TOKEN && xResults.length === 0) {
     xFeed.note = 'X feed unavailable — all Nitter RSS instances failed or returned no content. Check instance status at https://github.com/zedeus/nitter/wiki/Instances';
   }
-  fs.writeFileSync(path.join(FEEDS_DIR, 'feed-x.json'), JSON.stringify(xFeed, null, 2));
+  if (runX) {
+    fs.writeFileSync(path.join(FEEDS_DIR, 'feed-x.json'), JSON.stringify(xFeed, null, 2));
+  }
 
   // Save state
   saveState(state);
@@ -896,6 +1029,7 @@ async function main() {
   console.error('  feed-x.json');
   console.error('  feed-podcasts.json');
   console.error('  feed-blogs.json');
+  console.error('  feed-youtube.json');
 }
 
 main().catch(err => {

@@ -3,11 +3,15 @@
 const DEFAULTS = {
   blogChars: 600,
   podcastChars: 800,
+  videoChars: 600,
   budgetTokens: 12000,
   maxPodcasts: 8,
   maxBlogs: 8,
   maxTweets: 20,
+  maxVideos: 8,
   shortlistLimit: 12,
+  blogMaxAgeHours: 168,
+  defaultMaxAgeHours: 72,
 };
 
 const NAME_HINTS =
@@ -40,6 +44,24 @@ function scoreText(text) {
   if (/\d/.test(t) || /[$€%]/.test(t) || /20\d{2}/.test(t)) score += 2;
   if (NAME_HINTS.test(t)) score += 2;
   return score;
+}
+
+function parseItemDate(item) {
+  const raw = item.publishedAt || item.createdAt;
+  if (!raw) return null;
+  const date = new Date(raw);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function isFreshEnough(item) {
+  const date = parseItemDate(item);
+  const maxHours = item.kind === 'blog' ? DEFAULTS.blogMaxAgeHours : DEFAULTS.defaultMaxAgeHours;
+  if (item.kind === 'blog') {
+    if (!date) return false;
+    return Date.now() - date.getTime() <= maxHours * 3600 * 1000;
+  }
+  if (!date) return true;
+  return Date.now() - date.getTime() <= maxHours * 3600 * 1000;
 }
 
 function flattenCandidates(feedData) {
@@ -94,15 +116,31 @@ function flattenCandidates(feedData) {
     });
   }
 
-  return items;
+  for (const video of feedData.videos || []) {
+    if (!video.url) continue;
+    const description = video.description || '';
+    items.push({
+      kind: 'youtube',
+      score: scoreText(`${video.title || ''} ${description}`) + 1,
+      name: video.name,
+      handle: video.handle,
+      title: video.title,
+      url: video.url,
+      publishedAt: video.publishedAt || '',
+      description,
+    });
+  }
+
+  return items.filter(isFreshEnough);
 }
 
 function truncateItem(item) {
   if (item.kind === 'podcast') {
     return { ...item, description: truncateText(item.description, DEFAULTS.podcastChars) };
   }
-  if (item.kind === 'blog') {
-    return { ...item, description: truncateText(item.description, DEFAULTS.blogChars) };
+  if (item.kind === 'blog' || item.kind === 'youtube') {
+    const maxChars = item.kind === 'youtube' ? DEFAULTS.videoChars : DEFAULTS.blogChars;
+    return { ...item, description: truncateText(item.description, maxChars) };
   }
   return item;
 }
@@ -111,6 +149,7 @@ function rebuildFeed(items, generatedAt) {
   const xMap = new Map();
   const podcasts = [];
   const blogs = [];
+  const videos = [];
 
   for (const item of items) {
     if (item.kind === 'tweet') {
@@ -141,6 +180,16 @@ function rebuildFeed(items, generatedAt) {
         publishedAt: item.publishedAt,
         description: item.description,
       });
+    } else if (item.kind === 'youtube') {
+      videos.push({
+        source: 'youtube',
+        name: item.name,
+        handle: item.handle,
+        title: item.title,
+        url: item.url,
+        publishedAt: item.publishedAt,
+        description: item.description,
+      });
     }
   }
 
@@ -149,11 +198,13 @@ function rebuildFeed(items, generatedAt) {
     x: Array.from(xMap.values()),
     podcasts,
     blogs,
+    videos,
     stats: {
       xBuilders: xMap.size,
       totalTweets: Array.from(xMap.values()).reduce((sum, builder) => sum + builder.tweets.length, 0),
       podcastEpisodes: podcasts.length,
       blogPosts: blogs.length,
+      youtubeVideos: videos.length,
     },
   };
 }
@@ -162,7 +213,8 @@ function applySourceCaps(items) {
   const tweets = items.filter((item) => item.kind === 'tweet').slice(0, DEFAULTS.maxTweets);
   const podcasts = items.filter((item) => item.kind === 'podcast').slice(0, DEFAULTS.maxPodcasts);
   const blogs = items.filter((item) => item.kind === 'blog').slice(0, DEFAULTS.maxBlogs);
-  return [...podcasts, ...blogs, ...tweets];
+  const videos = items.filter((item) => item.kind === 'youtube').slice(0, DEFAULTS.maxVideos);
+  return [...podcasts, ...blogs, ...videos, ...tweets];
 }
 
 function tokensFor(items, generatedAt) {
@@ -186,7 +238,9 @@ function prepareFeedForModel(feedData, opts = {}) {
   if (tokensFor(items, generatedAt) > budgetTokens) {
     items = items.map((item) => {
       if (item.kind === 'podcast') return { ...item, description: truncateText(item.description, 400) };
-      if (item.kind === 'blog') return { ...item, description: truncateText(item.description, 300) };
+      if (item.kind === 'blog' || item.kind === 'youtube') {
+        return { ...item, description: truncateText(item.description, 300) };
+      }
       return item;
     });
   }
@@ -234,6 +288,7 @@ module.exports = {
   estimateTokens,
   truncateText,
   flattenCandidates,
+  isFreshEnough,
   prepareFeedForModel,
   shortlistUrls,
 };
@@ -243,24 +298,28 @@ if (require.main === module) {
   const path = require('path');
   const repoRoot = path.resolve(__dirname, '..', '..');
 
-  function load(rel) {
+  function loadOptional(rel) {
     const filePath = path.join(repoRoot, rel);
+    if (!fs.existsSync(filePath)) return {};
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
   }
 
-  const feedX = load('data/feeds/feed-x.json');
-  const feedPodcasts = load('data/feeds/feed-podcasts.json');
-  const feedBlogs = load('data/feeds/feed-blogs.json');
+  const feedX = loadOptional('data/feeds/feed-x.json');
+  const feedPodcasts = loadOptional('data/feeds/feed-podcasts.json');
+  const feedBlogs = loadOptional('data/feeds/feed-blogs.json');
+  const feedYoutube = loadOptional('data/feeds/feed-youtube.json');
   const feedData = {
     generatedAt: new Date().toISOString(),
     x: feedX.x || [],
     podcasts: feedPodcasts.podcasts || [],
     blogs: feedBlogs.blogs || [],
+    videos: feedYoutube.videos || [],
     stats: {
       xBuilders: (feedX.x || []).length,
       totalTweets: (feedX.x || []).reduce((sum, builder) => sum + (builder.tweets || []).length, 0),
       podcastEpisodes: (feedPodcasts.podcasts || []).length,
       blogPosts: (feedBlogs.blogs || []).length,
+      youtubeVideos: (feedYoutube.videos || []).length,
     },
   };
 

@@ -1,14 +1,20 @@
 {
   "x": [
-    { "handle": "petergyang",     "name": "Peter Yang",        "label": "Founder & Investor" },
-    { "handle": "nikunj",         "name": "Nikunj Kothari",    "label": "FPV Ventures" },
-    { "handle": "levie",          "name": "Aaron Levie",       "label": "Box CEO" },
-    { "handle": "realmadhuguru",  "name": "Madhu Guru",        "label": "Google" },
-    { "handle": "trq212",         "name": "Thariq",            "label": "Claude Code" },
-    { "handle": "zarazhangrui",   "name": "Zara Zhang",        "label": "Follow Builders" },
-    { "handle": "mattturck",      "name": "Matt Turck",        "label": "FirstMark" },
-    { "handle": "rauchg",         "name": "Guillermo Rauch",   "label": "Vercel CEO" },
-    { "handle": "elonmusk",       "name": "Elon Musk",          "label": "xAI/Tesla/SpaceX" }
+    { "handle": "karpathy",      "name": "Andrej Karpathy",   "label": "AI / Eureka" },
+    { "handle": "sama",          "name": "Sam Altman",        "label": "OpenAI" },
+    { "handle": "swyx",          "name": "swyx",              "label": "Latent Space" },
+    { "handle": "AndrewYNg",     "name": "Andrew Ng",         "label": "Landing AI / Coursera" },
+    { "handle": "petergyang",    "name": "Peter Yang",        "label": "Founder & Investor" },
+    { "handle": "levie",         "name": "Aaron Levie",       "label": "Box CEO" },
+    { "handle": "rauchg",        "name": "Guillermo Rauch",   "label": "Vercel CEO" },
+    { "handle": "elonmusk",      "name": "Elon Musk",         "label": "xAI/Tesla/SpaceX" }
+  ],
+  "youtube": [
+    { "name": "Andrej Karpathy",   "url": "https://www.youtube.com/@karpathy" },
+    { "name": "Y Combinator",      "url": "https://www.youtube.com/@ycombinator" },
+    { "name": "Two Minute Papers", "url": "https://www.youtube.com/@TwoMinutePapers" },
+    { "name": "Dwarkesh Patel",    "url": "https://www.youtube.com/@DwarkeshPatel" },
+    { "name": "Latent Space",      "url": "https://www.youtube.com/@LatentSpacePod" }
   ],
   "podcasts": [
     {
