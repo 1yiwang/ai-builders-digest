@@ -2,7 +2,7 @@
 // ============================================================================
 // AI Builders Digest — Magazine JSON Generator
 // ============================================================================
-// Fetches raw feed data → prepare/shortlist → DeepSeek → magazine JSON
+// Fetches raw feed data → prepare/shortlist → DeepSeek or Anthropic-compatible gateway → magazine JSON
 //
 // Usage:
 //   node scripts/generate-magazine-json.js
@@ -181,7 +181,7 @@ async function main() {
   if (!opts.prepareOnly) {
     credentials = loadCredentials();
     if (!credentials) {
-      console.error('ERROR: No API key found. Set DEEPSEEK_API_KEY.');
+      console.error('ERROR: No API key found. Set DEEPSEEK_API_KEY or ANTHROPIC_AUTH_TOKEN.');
       process.exit(1);
     }
     console.error(`  Provider: ${credentials.provider}`);
@@ -269,7 +269,7 @@ async function main() {
       credentials,
       systemPrompt,
       userMessage: buildGenerateMessage(prepared, publishDate),
-      maxTokens: 4000,
+      maxTokens: 16000,
     });
   } catch (err) {
     console.error(`  API call failed: ${err.message}`);
@@ -299,7 +299,7 @@ async function main() {
         credentials,
         systemPrompt,
         userMessage: buildRepairMessage(magazineJSON, validation.errors, publishDate),
-        maxTokens: 4000,
+        maxTokens: 16000,
       });
       response = {
         text: repaired.text,

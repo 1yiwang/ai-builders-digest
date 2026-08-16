@@ -1,0 +1,230 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-16",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic gewährt Claude inzwischen routinemäßig Rechte, die interne Dienste lahmlegen könnten – und baut dafür Unternehmens-Sandboxes. Parallel behebt Anthropic drei Claude-Code-Regressionen in v2.1.116 und macht Sitzungen als Live-Artefakte teilbar. Diese Entwicklungen zeigen, wie Agenten-Containment und Entwickler-Workflows zusammenwachsen. Währenddessen erinnert Far-UVC-Hardware daran, dass Infrastruktur auch außerhalb von Software Leben retten kann."
+  },
+  "archive": {
+    "title": "Anthropic macht Agenten-Containment unternehmensreif",
+    "desc": "Anthropic baut Sicherheits- und Workflow-Kontrolle für Claude-Agenten aus, während Far-UVC-Hardware gemeinsame Luft sauber halten will."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-08-16.",
+  "sections": [
+    {
+      "title": "Claude Containment & Enterprise Boundaries / Claude-Containment & Unternehmensgrenzen",
+      "desc": "Anthropic moves from denying risky agent access to making enterprise-controlled sandboxes and tunnels first-class.",
+      "cards": [
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering",
+          "sourceUrl": "https://www.anthropic.com/engineering/how-we-contain-claude",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic now routinely grants Claude permissions that could take down internal services — unthinkable 12 months ago.",
+              "Containment strategy separates failure likelihood from blast radius: safeguards shrink likelihood, but capability growth keeps widening theoretical damage."
+            ],
+            "original": [
+              "Twelve months ago, we'd have rejected out of hand the idea of granting Claude access sufficient to take down an internal Anthropic service. Today that level of access is routine, and Anthropic developers are more productive for it.",
+              "The risk of these deployments has two components: how likely a failure is, and how much damage one could do."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic gibt Claude inzwischen routinemäßig Rechte, mit denen es interne Dienste lahmlegen könnte – vor 12 Monaten noch undenkbar.",
+              "Die Sicherheitsstrategie trennt Ausfallwahrscheinlichkeit vom Schadensradius: Safeguards senken die Wahrscheinlichkeit, aber die Fähigkeiten vergrößern den theoretischen Schaden."
+            ],
+            "original": [
+              "Vor zwölf Monaten hätten wir die Idee, Claude Zugriff zu geben, der einen internen Anthropic-Dienst lahmlegen könnte, sofort abgelehnt. Heute ist dieses Zugriffsniveau Routine, und Entwickler sind produktiver.",
+              "Das Risiko dieser Deployments hat zwei Komponenten: wie wahrscheinlich ein Fehler ist und wie viel Schaden er anrichten kann."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-managed-agents-updates",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Managed Agents can now run in self-hosted sandboxes on your own infrastructure, or via Cloudflare, Daytona, Modal, or Vercel.",
+              "MCP tunnels let agents reach private Model Context Protocol servers inside enterprise network boundaries — research preview.",
+              "Self-hosted sandboxes are public beta; both execution and services stay under enterprise security and runtime controls."
+            ],
+            "original": [
+              "Starting today, Claude Managed Agents can operate in a sandbox you control and connect to your private Model Context Protocol (MCP) servers.",
+              "The sandbox runs on your own infrastructure, or with managed providers like Cloudflare, Daytona, Modal, or Vercel to handle the compute and isolation for you."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Managed Agents können jetzt in selbst gehosteten Sandboxes auf eigener Infrastruktur laufen – oder über Cloudflare, Daytona, Modal und Vercel.",
+              "MCP-Tunnels verbinden Agenten mit privaten Model-Context-Protocol-Servern innerhalb der Unternehmensgrenzen – als Research Preview.",
+              "Selbst gehostete Sandboxes sind Public Beta; Ausführung und Dienste bleiben unter den Sicherheits- und Runtime-Kontrollen des Unternehmens."
+            ],
+            "original": [
+              "Ab heute können Claude Managed Agents in einer Sandbox laufen, die Sie kontrollieren, und sich mit Ihren privaten Model Context Protocol (MCP)-Servern verbinden.",
+              "Die Sandbox läuft auf Ihrer eigenen Infrastruktur oder mit Managed-Providern wie Cloudflare, Daytona, Modal oder Vercel für Compute und Isolation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Claude Code: Postmortem & Artifacts / Claude Code: Postmortem & Artefakte",
+      "desc": "Two Claude Code updates: a postmortem on response quality regressions and a new artifact format that makes sessions shareable.",
+      "cards": [
+        {
+          "authorKey": "blog:Anthropic Engineering",
+          "sourceName": "Anthropic Engineering",
+          "sourceUrl": "https://www.anthropic.com/engineering/april-23-postmortem",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic traced reports of worsening Claude responses to three changes in Claude Code, Agent SDK, and Cowork — API models unaffected.",
+              "All three issues were fixed in v2.1.116 by April 20; Anthropic says models are never intentionally degraded.",
+              "The postmortem commits to making similar regressions 'much less likely' through process changes."
+            ],
+            "original": [
+              "We’ve traced these reports to three separate changes that affected Claude Code, the Claude Agent SDK, and Claude Cowork. The API was not impacted.",
+              "All three issues have now been resolved as of April 20 (v2.1.116)."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic führte Berichte über schlechtere Claude-Antworten auf drei Änderungen in Claude Code, Agent SDK und Cowork zurück – API-Modelle waren nicht betroffen.",
+              "Alle drei Probleme wurden am 20. April in v2.1.116 behoben; Anthropic betont, Modelle werden nie absichtlich verschlechtert.",
+              "Das Postmortem verspricht Prozessänderungen, damit ähnliche Regressionen deutlich unwahrscheinlicher werden."
+            ],
+            "original": [
+              "Wir haben diese Berichte auf drei getrennte Änderungen zurückgeführt, die Claude Code, das Claude Agent SDK und Claude Cowork betrafen. Die API war nicht betroffen.",
+              "Alle drei Probleme wurden zum 20. April in v2.1.116 behoben."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/artifacts-in-claude-code",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Claude Code now captures session progress as live artifacts: PR walkthroughs, system explainers, dashboards, and release checklists that update as work happens.",
+              "Artifacts turn multi-hour coding or incident-analysis sessions into shareable, filterable web pages anyone can open."
+            ],
+            "original": [
+              "Claude Code can capture work progress as an artifact, which turn Claude Code's work into live, shareable visual pages—including PR walkthroughs, system explainers, dashboards, and release checklists—that update themselves as your session works."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Code erfasst Arbeitsfortschritt jetzt als Live-Artefakte: PR-Walkthroughs, System-Erklärer, Dashboards und Release-Checklisten, die sich während der Arbeit aktualisieren.",
+              "Artefakte machen mehrstündige Code- oder Incident-Analysen zu teilbaren, filterbaren Webseiten für alle."
+            ],
+            "original": [
+              "Claude Code kann Arbeitsfortschritt als Artefakt erfassen und macht daraus live aktualisierte, teilbare Seiten – darunter PR-Walkthroughs, System-Erklärer, Dashboards und Release-Checklisten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Airborne Safety Hardware / Sicherheitstechnik gegen luftübertragene Erreger",
+      "desc": "Far-UVC lighting is presented as affordable, room-scale infrastructure against airborne pathogens.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-systems/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Misha Gurevich (Aerolamp) and Vivian Belenky (Columbia) explain that 222 nm far-UVC light inactivates airborne pathogens while human skin's dead outer layer absorbs it.",
+              "Room-scale fixtures cost about $500 and install like ordinary lighting, making clean shared air feasible for schools, transport hubs, and long-term care.",
+              "The main barriers are awareness and adoption, not cost or basic science."
+            ],
+            "original": [
+              "Belenky explains why this wavelength can inactivate airborne pathogens while being absorbed by the dead outer layer of human skin, and why room-scale deployments may function like an extremely strong air purifier.",
+              "The guests argue that the biggest barriers are awareness and adoption rather than cost or basic science, with fixtures around $500 and straightforward installation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Misha Gurevich (Aerolamp) und Vivian Belenky (Columbia) erklären, dass 222-nm-Far-UVC-Licht luftübertragene Erreger inaktiviert, während die tote äußere Hautschicht es absorbiert.",
+              "Raumgroße Leuchten kosten rund 500 Dollar und lassen sich wie normale Beleuchtung installieren – saubere Luft für Schulen, Verkehrsknoten und Pflegeheime wird machbar.",
+              "Die größten Hürden sind Bekanntheit und Adoption, nicht Kosten oder Grundlagenforschung."
+            ],
+            "original": [
+              "Belenky erklärt, warum diese Wellenlänge luftübertragene Erreger inaktivieren kann, während sie von der toten äußeren Hautschicht absorbiert wird, und warum raumgroße Installationen wie ein extrem starker Luftreiniger wirken können.",
+              "Die Gäste argumentieren, dass die größten Hürden Bewusstsein und Adoption sind, nicht Kosten oder Grundlagenforschung, bei rund 500 Dollar pro Leuchte und einfacher Installation."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Product Friction / KI-Produktreibung",
+      "desc": "A prominent AI user flags integration friction in a key product surface.",
+      "cards": [
+        {
+          "authorKey": "x:@petergyang",
+          "sourceName": "Peter Yang on X",
+          "sourceUrl": "https://x.com/petergyang/status/2088773343629750535",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Peter Yang reports Grok Bot's X connector fails and he can't log into X on the cloud computer, despite X being the #1 differentiated data source.",
+              "The bug blocks Grok Bot from accessing the X data Peter Yang sees as its key advantage."
+            ],
+            "original": [
+              "I am a fan of Grok Bot but @X is the #1 differentiated data source that it should have access to and it doesn't seem to work? The connector doesn't work and I can't even login to X on the cloud computer."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Peter Yang meldet, dass der X-Connector von Grok Bot nicht funktioniert und er sich auf dem Cloud-Computer nicht bei X anmelden kann.",
+              "Damit bleibt Grok Bot der Zugriff auf die X-Daten verwehrt, die laut Yang sein wichtigster Differenzierungsfaktor sind."
+            ],
+            "original": [
+              "Ich bin Fan von Grok Bot, aber @X ist die differenzierendste Datenquelle, auf die es Zugriff haben sollte, und es scheint nicht zu funktionieren. Der Connector geht nicht, und ich kann mich auf dem Cloud-Computer nicht einmal bei X anmelden."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-08-16T10:13:56.739Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 120532,
+    "tokensIn": 1442,
+    "tokensOut": 11357,
+    "estCostUsd": 0.003382,
+    "candidatesIn": 10,
+    "shortlistSize": 9,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 67336,
+      "preparedChars": 5886,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "https://claude.com/blog/claude-managed-agents-updates",
+      "https://www.anthropic.com/engineering/april-23-postmortem",
+      "https://claude.com/blog/artifacts-in-claude-code",
+      "https://www.cognitiverevolution.ai/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-systems/",
+      "https://x.com/petergyang/status/2088773343629750535"
+    ]
+  }
+}

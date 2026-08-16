@@ -11,7 +11,7 @@
 - **进模前处理**：`scripts/lib/prepare-feed.js` — 截断 + 规则短名单（12 条、无 URL 丢弃、同一来源最多 2 条）
 - **账本**：出刊写入 `meta`（tokens / 估成本 / `sourceUrls`）；瘦目录 `data/archive-index.json`
 - **校验 + 修 1 次**：`scripts/lib/validate-magazine.js`，失败则把错误打回模型，再失败则跳过本期
-- **本机免费通路**：已撤销。Ollama / `qwen2.5:7b` 在本机 100% CPU 导致发烫死机，已卸载；生成只走 DeepSeek。
+- **本机免费通路**：Ollama 已卸载。生成恢复为 DeepSeek key，否则走 `ANTHROPIC_*`（实际是 `api.deepseek.com/anthropic` 网关，和 8 月 14 日以前的 CI 一样）。
 - **回归**：`npm run eval` → `data/eval/last-report.json`
 - **CI 降级**：生成失败或当天无 JSON 时跳过渲染/Telegram，job 保持绿色，并打印 `estCostUsd`
 

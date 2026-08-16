@@ -1,4 +1,4 @@
-// DeepSeek (primary). Anthropic only if DIGEST_PROVIDER=anthropic is set explicitly.
+// DeepSeek native key first; otherwise ANTHROPIC_* (often DeepSeek's Anthropic-compatible gateway).
 
 function loadDeepSeek(apiKey, baseUrl, model) {
   return {
@@ -9,21 +9,19 @@ function loadDeepSeek(apiKey, baseUrl, model) {
   };
 }
 
+function loadAnthropic(apiKey, baseUrl, model) {
+  return {
+    provider: 'anthropic',
+    apiKey,
+    baseUrl: baseUrl || 'https://api.anthropic.com',
+    model: model || 'claude-sonnet-4-20250514',
+  };
+}
+
 function loadCredentials() {
   const forced = String(process.env.DIGEST_PROVIDER || '').toLowerCase();
   if (forced === 'ollama') {
-    throw new Error('Ollama support was removed. Unset DIGEST_PROVIDER and use DEEPSEEK_API_KEY.');
-  }
-
-  if (forced === 'anthropic') {
-    const apiKey = process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY;
-    if (!apiKey) return null;
-    return {
-      provider: 'anthropic',
-      apiKey,
-      baseUrl: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
-      model: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514',
-    };
+    throw new Error('Ollama support was removed. Unset DIGEST_PROVIDER.');
   }
 
   if (process.env.DEEPSEEK_API_KEY) {
@@ -31,6 +29,14 @@ function loadCredentials() {
       process.env.DEEPSEEK_API_KEY,
       process.env.DEEPSEEK_BASE_URL,
       process.env.DEEPSEEK_MODEL
+    );
+  }
+
+  if (process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY) {
+    return loadAnthropic(
+      process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY,
+      process.env.ANTHROPIC_BASE_URL,
+      process.env.ANTHROPIC_MODEL
     );
   }
 
@@ -42,6 +48,13 @@ function loadCredentials() {
     const env = JSON.parse(fs.readFileSync(settingsPath, 'utf8')).env || {};
     if (env.DEEPSEEK_API_KEY) {
       return loadDeepSeek(env.DEEPSEEK_API_KEY, env.DEEPSEEK_BASE_URL, env.DEEPSEEK_MODEL);
+    }
+    if (env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY) {
+      return loadAnthropic(
+        env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY,
+        env.ANTHROPIC_BASE_URL,
+        env.ANTHROPIC_MODEL
+      );
     }
   }
 
@@ -55,7 +68,19 @@ function usageFromOpenAI(json) {
   };
 }
 
-async function chat({ credentials, systemPrompt, userMessage, maxTokens = 4000 }) {
+function extractAnthropicText(json) {
+  if (typeof json.content === 'string' && json.content.trim()) return json.content;
+  if (Array.isArray(json.content)) {
+    const text = json.content
+      .filter((block) => block && (block.type === 'text' || block.text))
+      .map((block) => block.text || '')
+      .join('\n');
+    if (text.trim()) return text;
+  }
+  return json.choices?.[0]?.message?.content || '';
+}
+
+async function chat({ credentials, systemPrompt, userMessage, maxTokens = 16000 }) {
   const { provider, apiKey, baseUrl, model } = credentials;
   const started = Date.now();
   const root = String(baseUrl || '').replace(/\/$/, '');
@@ -110,11 +135,10 @@ async function chat({ credentials, systemPrompt, userMessage, maxTokens = 4000 }
   const latencyMs = Date.now() - started;
 
   if (provider === 'anthropic') {
-    const text = (json.content || [])
-      .filter((block) => block.type === 'text')
-      .map((block) => block.text)
-      .join('\n');
-    if (!text) throw new Error('Anthropic returned no text content.');
+    const text = extractAnthropicText(json);
+    if (!text) {
+      throw new Error('Anthropic returned no text content. Keys: ' + Object.keys(json).join(','));
+    }
     return {
       text,
       usage: {

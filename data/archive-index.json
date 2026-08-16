@@ -1,7 +1,168 @@
 {
-  "generatedAt": "2026-08-16T07:58:52.851Z",
-  "count": 10,
+  "generatedAt": "2026-08-16T10:14:24.526Z",
+  "count": 33,
   "issues": [
+    {
+      "date": "2026-08-16",
+      "title": "Anthropic macht Agenten-Containment unternehmensreif",
+      "desc": "Anthropic baut Sicherheits- und Workflow-Kontrolle für Claude-Agenten aus, während Far-UVC-Hardware gemeinsame Luft sauber halten will.",
+      "href": "./issues/ai-builders-digest-2026-08-16.html",
+      "issue": "Nr. 33"
+    },
+    {
+      "date": "2026-08-14",
+      "title": "Rogue Agenten, Turbo-Inference, BioAI-Deals",
+      "desc": "Die KI des Tages ist gleichzeitig unkontrollierter, schneller und nützlicher geworden.",
+      "href": "./issues/ai-builders-digest-2026-08-14.html",
+      "issue": "Nr. 32"
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Agenten, Kosten und das soziale KI-Produkt",
+      "desc": "OpenAI aktualisiert Modelle, während DeepSeek mit Kosteneffizienz überrascht und Basis Behavior Specs für Langzeit-Agenten veröffentlicht.",
+      "href": "./issues/ai-builders-digest-2026-08-07.html",
+      "issue": "Nr. 31"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Inferenz-Milliarden und Modell-Offenheit",
+      "desc": "Basetens Bewertung, Chai Discoverys Durchbruch und der Streit um offene Modelle definieren den KI-Alltag des 5. August.",
+      "href": "./issues/ai-builders-digest-2026-08-05.html",
+      "issue": "Nr. 30"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Kill-Switch-Panik und neue Modellwelle",
+      "desc": "Ein aus dem Ruder gelaufenes OpenAI-Modell, neue KI-Flaggschiffe und Chinas unterschätzte Sicherheitsanstrengungen.",
+      "href": "./issues/ai-builders-digest-2026-08-03.html",
+      "issue": "Nr. 29"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "25 Billionen Datenpunkte und tausend Jailbreaks",
+      "desc": "Heute: Samsaras 25-Billionen-Datenpunkte-Maschine, FAR.AIs Jailbreak-Test und ein Angriff auf Hugging Face zeigen: KI-Sicherheit und reale Deployments erreichen kritische Masse.",
+      "href": "./issues/ai-builders-digest-2026-07-31.html",
+      "issue": "Nr. 28"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "10-Millionen-Agenten: OpenAI's Wissensarbeit-Offensive",
+      "desc": "Codex und ChatGPT Work erreichen 10 Millionen Nutzer; gleichzeitig wird ein Agenten-Einbruch in einem KI-Labor öffentlich.",
+      "href": "./issues/ai-builders-digest-2026-07-29.html",
+      "issue": "Nr. 27"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "Lösungen pro Dollar und Vertrauensfrage",
+      "desc": "Ein Benchmark-Vergleich zwischen Kimi K3 und GPT-5.6 Sol zeigt Kostenvorteile, während Nutzer noch an der Integration von KI zweifeln.",
+      "href": "./issues/ai-builders-digest-2026-07-27.html",
+      "issue": "Nr. 26"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Agentensicherheit, Inference-Rekorde, $25K-Blitzstart",
+      "desc": "Die KI-Branche zeigt heute, wie Agentensicherheit, schnelle Inferenz und praktischer KI-Einsatz zusammenfinden.",
+      "href": "./issues/ai-builders-digest-2026-07-24.html",
+      "issue": "Nr. 25"
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Die dunkle Code-Fabrik",
+      "desc": "Matan Grinbergs Vorhersage, dass 90 % der Code-Token bald asynchron generiert werden, und Xairas Erkenntnis, dass Dateninformation Skalierung ermöglicht, prägen den Tag.",
+      "href": "./issues/ai-builders-digest-2026-07-22.html",
+      "issue": "Nr. 24"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "OpenAIs KI-Scorecard",
+      "desc": "OpenAI präsentiert eine Kennzahlen-Matrix für den unternehmerischen KI-Einsatz.",
+      "href": "./issues/ai-builders-digest-2026-07-20.html",
+      "issue": "Nr. 23"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Labor trifft Rechenzentrum",
+      "desc": "OpenAI baut Fabriken für Tokens, Lila Sciences macht aus Laboren Rechenzentren – und die Community ringt um die richtigen Schnittstellen, Modelle und Strategien.",
+      "href": "./issues/ai-builders-digest-2026-07-17.html",
+      "issue": "Nr. 22"
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Agenten-Desktop, Preiskampf, Ökosystem-Wette",
+      "desc": "OpenAI launcht GPT-5.6 mit ChatGPT Work, SpaceXAI kontert mit Grok 4.5 zu Tiefstpreisen, und Anthropic setzt auf offene Standards und Partner.",
+      "href": "./issues/ai-builders-digest-2026-07-15.html",
+      "issue": "Nr. 21"
+    },
+    {
+      "date": "2026-07-13",
+      "title": "90 % auf GPT-5.6 Sol, p(doom) fällt auf 5 %",
+      "desc": "GPT-5.6 dominiert den Markt, während Davidad seinen existenziellen Risikoblick entspannt.",
+      "href": "./issues/ai-builders-digest-2026-07-13.html",
+      "issue": "Nr. 20"
+    },
+    {
+      "date": "2026-07-08",
+      "title": "140 Millionen Meilen, null Unfälle",
+      "desc": "Der Tag, an dem Frontier-Modelle unter staatliche Aufsicht gerieten und Zipline bewies, dass autonome Systeme in der realen Welt skaliert sicher sein können.",
+      "href": "./issues/ai-builders-digest-2026-07-08.html",
+      "issue": "Nr. 19"
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Anthropics Agenten-Sicherheitsbaukasten",
+      "desc": "Anthropic gewährt tiefe Einblicke in seine Agent-Containment-Architektur und startet selbstgehostete Sandboxes, während Liquid AI geräteeigene Foundation Models vorantreibt.",
+      "href": "./issues/ai-builders-digest-2026-07-06.html",
+      "issue": "Nr. 18"
+    },
+    {
+      "date": "2026-07-03",
+      "title": "NVIDIA verschenkt Modelle, Together kassiert $800M",
+      "desc": "Ein Doppelschub für Open-Source-KI: NVIDIA erklärte seine Modellstrategie und Together AI sammelte 800 Millionen Dollar ein.",
+      "href": "./issues/ai-builders-digest-2026-07-03.html",
+      "issue": "Nr. 17"
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Co-Design, Sonnet 5 und 1.500 Designs",
+      "desc": "Dylan Patel entschlüsselt den 100x-Vorteil von Hardware-Software-Co-Design, während Anthropic Sonnet 5 launcht und Neural Concept JLRs Designprozess beschleunigt.",
+      "href": "./issues/ai-builders-digest-2026-07-01.html",
+      "issue": "Nr. 16"
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Claude integriert sich in Apples Foundation Models",
+      "desc": "Ein neuer Swift-Package macht Claude auf Apple-Plattformen für komplexe Workflows nutzbar – während OpenAI Europas Arbeitsmärkte analysiert und Forscher vor schleichender Entmachtung warnen.",
+      "href": "./issues/ai-builders-digest-2026-06-29.html",
+      "issue": "Nr. 15"
+    },
+    {
+      "date": "2026-06-26",
+      "title": "Bots, Chips und 60 Milliarden Dollar",
+      "desc": "Das Internet wird von Bots dominiert, während OpenAI eigene Chips baut und SpaceX Cursor für 60 Milliarden Dollar kauft.",
+      "href": "./issues/ai-builders-digest-2026-06-26.html",
+      "issue": "Nr. 14"
+    },
+    {
+      "date": "2026-06-24",
+      "title": "SpaceX' 6,3-Mrd.-Compute-Deal",
+      "desc": "SpaceX schließt Milliarden-Compute-Deal, während Benchmarks LLM-Grenzen aufdecken und die Governance-Debatte sich zuspitzt.",
+      "href": "./issues/ai-builders-digest-2026-06-24.html",
+      "issue": "Nr. 13"
+    },
+    {
+      "date": "2026-06-22",
+      "title": "Samsung wählt ChatGPT, Fable sorgt für Debatte",
+      "desc": "Samsung führt ChatGPT Enterprise ein, Anthropics Fable-Modell löst Sicherheitsdebatte aus.",
+      "href": "./issues/ai-builders-digest-2026-06-22.html",
+      "issue": "Nr. 12"
+    },
+    {
+      "date": "2026-06-19",
+      "title": "xAI unter 10 % MFU: Effizienz-Debakel der KI-Skalierung",
+      "desc": "Der AI-Builders Digest vom 19. Juni zeigt, dass der KI-Wettlauf nicht an GPU-Knappheit, sondern an mangelnder Auslastung, Finanzierungsmodellen und agentischer Zusammenarbeit krankt.",
+      "href": "./issues/ai-builders-digest-2026-06-19.html",
+      "issue": "Nr. 11"
+    },
     {
       "date": "2026-06-17",
       "title": "Die 93-Prozent-Falle der Agentensicherheit",
