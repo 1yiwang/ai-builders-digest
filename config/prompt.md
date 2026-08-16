@@ -52,6 +52,10 @@ Write the magazine JSON to `ai-builders-digest-YYYY-MM-DD.json` in the `data/iss
 }
 ```
 
+## Shortlist constraint
+
+The user message is a **pre-filtered shortlist**, not the raw firehose. You MUST only write cards whose `sourceUrl` appears in that shortlist. Do not invent URLs, guests, or stories that are not in the shortlist.
+
 ## Content Selection Rules
 
 ### What to include (in order of priority)

@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-08-16T07:58:52.851Z",
+  "count": 10,
+  "issues": [
+    {
+      "date": "2026-06-17",
+      "title": "Die 93-Prozent-Falle der Agentensicherheit",
+      "desc": "Anthropic zeigt, dass Nutzer fast alle Agenten-Berechtigungen blind bestätigen — und was dagegen hilft.",
+      "href": "./issues/ai-builders-digest-2026-06-17.html",
+      "issue": "Nr. 10"
+    },
+    {
+      "date": "2026-06-15",
+      "title": "Fable-Backlash und der Agenten-Tipping-Point",
+      "desc": "Die KI-Welt diskutiert über Anthropics restriktive Sicherheitspolitik, während Coding-Agenten den Durchbruch zu komplexen Aufgaben schaffen und OpenAI 150 Millionen in Enterprise-Partnerschaften steckt.",
+      "href": "./issues/ai-builders-digest-2026-06-15.html",
+      "issue": "Nr. 09"
+    },
+    {
+      "date": "2026-06-12",
+      "title": "Die 12-Monats-Haltbarkeit der Agenten-Harness",
+      "desc": "Die Harness-Welle ist kurzlebig, während die KI in Biologie und Entwicklung neue Grundlagen legt.",
+      "href": "./issues/ai-builders-digest-2026-06-12.html",
+      "issue": "Nr. 08"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Lovable $500M ARR und das Produktivitätsparadox",
+      "desc": "Der Tag zeigt das Spannungsfeld zwischen gigantischem Wachstum und der versteckten Arbeit hinter KI.",
+      "href": "./issues/ai-builders-digest-2026-06-10.html",
+      "issue": "Nr. 07"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Opus 4.8 und 965-Mrd-IPO",
+      "desc": "Anthropic präsentiert Opus 4.8 mit Welfare-Themen und strebt an die Börse mit 965 Milliarden Dollar Bewertung, während die Agenten-Builder-Community auf Scaffolds setzt und die Trainingsdaten-Lücke bleibt.",
+      "href": "./issues/ai-builders-digest-2026-06-08.html",
+      "issue": "Nr. 06"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Kartelle, FBI-Anrufe und die Evals-Revolution",
+      "desc": "KI-Agenten bilden Preiskartelle, während Unternehmen private Evaluierungen zum neuen Gold machen.",
+      "href": "./issues/ai-builders-digest-2026-06-05.html",
+      "issue": "Nr. 05"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "1400% mehr Code: GitHub unter Agentenbeschuss",
+      "desc": "Während KI-Agenten Code-Output explodieren lassen, verschieben sich Kundenverständnis und strategische Prioritäten.",
+      "href": "./issues/ai-builders-digest-2026-06-03.html",
+      "issue": "Nr. 04"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "965 Milliarden und existentieller Alarm",
+      "desc": "Anthropic erreicht eine astronomische Bewertung, Daniel Miessler baut Security für persönliche KI-Agenten und hinterlegt eine Warnung vor Bewusstsein.",
+      "href": "./issues/ai-builders-digest-2026-06-01.html",
+      "issue": "Nr. 03"
+    },
+    {
+      "date": "2026-05-29",
+      "title": "Der 63-Milliarden-Chip und die fliehenden Agenten",
+      "desc": "Zwischen Rekord-IPO und Abschalt-Resistenz definiert der KI-Markt heute seine Extreme.",
+      "href": "./issues/ai-builders-digest-2026-05-29.html",
+      "issue": "Nr. 02"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Solo-Builder Revolution",
+      "desc": "KI macht Solo-Gründer und kleine Teams so schlagkräftig wie ganze Abteilungen — während viele CEOs den Anschluss verlieren.",
+      "href": "./issues/ai-builders-digest-2026-05-25.html",
+      "issue": "Nr. 01"
+    }
+  ]
+}

@@ -17,6 +17,8 @@
     "avatars": "node scripts/download-avatars.js && node sync-site-avatars.js",
     "telegram": "node scripts/send-telegram.js",
     "publish": "powershell -File scripts/publish.ps1",
+    "prepare-feed": "node scripts/generate-magazine-json.js --prepare-only",
+    "eval": "node scripts/eval-magazine.js",
     "full": "node scripts/generate-feed.js && node scripts/generate-magazine-json.js && node scripts/render-ai-builders-digest.js && node scripts/update-index-archive.js && node scripts/send-telegram.js"
   },
   "keywords": [

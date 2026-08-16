@@ -7,6 +7,7 @@ const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const DEFAULT_INDEX_PATH = path.join(REPO_ROOT, 'index.html');
 const ISSUE_HTML_DIR = 'issues';
 const DATA_ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
+const ARCHIVE_INDEX_PATH = path.join(REPO_ROOT, 'data', 'archive-index.json');
 
 function pad2(value) {
   return String(value).padStart(2, '0');
@@ -117,6 +118,37 @@ function formatCoverDate(dateStr) {
 
 // -- Latest issue data -------------------------------------------------------
 
+function writeArchiveIndex(entriesNewestFirst) {
+  const payload = {
+    generatedAt: new Date().toISOString(),
+    count: entriesNewestFirst.length,
+    issues: entriesNewestFirst.map(({ date, title, desc, href, issue }) => ({
+      date,
+      title,
+      desc,
+      href,
+      issue,
+    })),
+  };
+  fs.mkdirSync(path.dirname(ARCHIVE_INDEX_PATH), { recursive: true });
+  fs.writeFileSync(ARCHIVE_INDEX_PATH, JSON.stringify(payload, null, 2), 'utf8');
+}
+
+function numberEntries(entries) {
+  const chronological = entries.slice().sort((a, b) => a.date.localeCompare(b.date));
+  chronological.forEach((entry, index) => {
+    entry.issue = `Nr. ${pad2(index + 1)}`;
+  });
+  return chronological;
+}
+
+function refreshArchiveIndex() {
+  const numbered = numberEntries(loadJsonEntries());
+  const newestFirst = numbered.slice().sort((a, b) => b.date.localeCompare(a.date));
+  writeArchiveIndex(newestFirst);
+  return newestFirst;
+}
+
 function getLatestIssue(jsonEntries) {
   if (jsonEntries.length === 0) return null;
   return jsonEntries
@@ -148,15 +180,13 @@ function main() {
     existingArchive.set(entry.date, entry);
   });
 
-  const chronologicalEntries = Array.from(existingArchive.values()).sort((a, b) => a.date.localeCompare(b.date));
-  chronologicalEntries.forEach((entry, index) => {
-    entry.issue = `Nr. ${pad2(index + 1)}`;
-  });
-
-  const renderedItems = chronologicalEntries
+  const chronologicalEntries = numberEntries(Array.from(existingArchive.values()));
+  const newestFirst = chronologicalEntries
     .slice()
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .map(renderArchiveItem);
+    .sort((a, b) => b.date.localeCompare(a.date));
+  writeArchiveIndex(newestFirst);
+
+  const renderedItems = newestFirst.map(renderArchiveItem);
 
   // Replace archive list
   indexHtml = replaceArchiveList(indexHtml, renderedItems);
@@ -167,9 +197,10 @@ function main() {
 
   fs.writeFileSync(indexPath, indexHtml, 'utf8');
   console.log(`Updated index: ${jsonEntries.length} issue(s) in archive, cover date from ${latestIssue ? latestIssue.date : 'today'}`);
+  console.log(`Wrote ${ARCHIVE_INDEX_PATH}`);
 }
 
-module.exports = { main };
+module.exports = { main, refreshArchiveIndex, writeArchiveIndex, loadJsonEntries };
 
 if (require.main === module) {
   main();

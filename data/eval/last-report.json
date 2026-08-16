@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-08-16T07:58:53.159Z",
+  "totals": {
+    "issues": 10,
+    "current": 0,
+    "legacy": 10,
+    "currentFailed": 0,
+    "legacyFailed": 0
+  },
+  "issues": [
+    {
+      "file": "ai-builders-digest-2026-05-25.json",
+      "date": "2026-05-25",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-05-29.json",
+      "date": "2026-05-29",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-01.json",
+      "date": "2026-06-01",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-03.json",
+      "date": "2026-06-03",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-05.json",
+      "date": "2026-06-05",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-08.json",
+      "date": "2026-06-08",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-10.json",
+      "date": "2026-06-10",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-12.json",
+      "date": "2026-06-12",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-15.json",
+      "date": "2026-06-15",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-17.json",
+      "date": "2026-06-17",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}
