@@ -3,11 +3,9 @@
 const PRICING = {
   'deepseek-chat': { input: 0.14, output: 0.28 },
   'deepseek-reasoner': { input: 0.55, output: 2.19 },
-  ollama: { input: 0, output: 0 },
 };
 
 function priceFor(model, provider) {
-  if (provider === 'ollama') return PRICING.ollama;
   if (PRICING[model]) return PRICING[model];
   if (String(model || '').includes('claude')) return { input: 3, output: 15 };
   return PRICING['deepseek-chat'];

@@ -2,7 +2,7 @@
 // ============================================================================
 // AI Builders Digest — Magazine JSON Generator
 // ============================================================================
-// Fetches raw feed data → prepare/shortlist → DeepSeek/Ollama/Anthropic → magazine JSON
+// Fetches raw feed data → prepare/shortlist → DeepSeek → magazine JSON
 //
 // Usage:
 //   node scripts/generate-magazine-json.js
@@ -181,7 +181,7 @@ async function main() {
   if (!opts.prepareOnly) {
     credentials = loadCredentials();
     if (!credentials) {
-      console.error('ERROR: No API key found. Set DEEPSEEK_API_KEY, or DIGEST_PROVIDER=ollama.');
+      console.error('ERROR: No API key found. Set DEEPSEEK_API_KEY.');
       process.exit(1);
     }
     console.error(`  Provider: ${credentials.provider}`);

@@ -1,32 +1,37 @@
-// Unified chat() for DeepSeek, Ollama (OpenAI-compatible), and Anthropic.
+// DeepSeek (primary). Anthropic only if DIGEST_PROVIDER=anthropic is set explicitly.
+
+function loadDeepSeek(apiKey, baseUrl, model) {
+  return {
+    provider: 'deepseek',
+    apiKey,
+    baseUrl: baseUrl || 'https://api.deepseek.com',
+    model: model || 'deepseek-chat',
+  };
+}
 
 function loadCredentials() {
   const forced = String(process.env.DIGEST_PROVIDER || '').toLowerCase();
   if (forced === 'ollama') {
+    throw new Error('Ollama support was removed. Unset DIGEST_PROVIDER and use DEEPSEEK_API_KEY.');
+  }
+
+  if (forced === 'anthropic') {
+    const apiKey = process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) return null;
     return {
-      provider: 'ollama',
-      apiKey: process.env.OLLAMA_API_KEY || 'ollama',
-      baseUrl: process.env.OLLAMA_BASE_URL || 'http://127.0.0.1:11434',
-      model: process.env.OLLAMA_MODEL || 'qwen2.5:7b',
+      provider: 'anthropic',
+      apiKey,
+      baseUrl: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
+      model: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514',
     };
   }
 
   if (process.env.DEEPSEEK_API_KEY) {
-    return {
-      provider: 'deepseek',
-      apiKey: process.env.DEEPSEEK_API_KEY,
-      baseUrl: process.env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com',
-      model: process.env.DEEPSEEK_MODEL || 'deepseek-chat',
-    };
-  }
-
-  if (process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY) {
-    return {
-      provider: 'anthropic',
-      apiKey: process.env.ANTHROPIC_AUTH_TOKEN || process.env.ANTHROPIC_API_KEY,
-      baseUrl: process.env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
-      model: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514',
-    };
+    return loadDeepSeek(
+      process.env.DEEPSEEK_API_KEY,
+      process.env.DEEPSEEK_BASE_URL,
+      process.env.DEEPSEEK_MODEL
+    );
   }
 
   const fs = require('fs');
@@ -36,20 +41,7 @@ function loadCredentials() {
   if (fs.existsSync(settingsPath)) {
     const env = JSON.parse(fs.readFileSync(settingsPath, 'utf8')).env || {};
     if (env.DEEPSEEK_API_KEY) {
-      return {
-        provider: 'deepseek',
-        apiKey: env.DEEPSEEK_API_KEY,
-        baseUrl: env.DEEPSEEK_BASE_URL || 'https://api.deepseek.com',
-        model: env.DEEPSEEK_MODEL || 'deepseek-chat',
-      };
-    }
-    if (env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY) {
-      return {
-        provider: 'anthropic',
-        apiKey: env.ANTHROPIC_AUTH_TOKEN || env.ANTHROPIC_API_KEY,
-        baseUrl: env.ANTHROPIC_BASE_URL || 'https://api.anthropic.com',
-        model: env.ANTHROPIC_MODEL || 'claude-sonnet-4-20250514',
-      };
+      return loadDeepSeek(env.DEEPSEEK_API_KEY, env.DEEPSEEK_BASE_URL, env.DEEPSEEK_MODEL);
     }
   }
 
