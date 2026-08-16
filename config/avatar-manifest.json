@@ -47,12 +47,12 @@
     },
     "podcast:Training Data": {
       "localPath": "assets/avatars/podcast-training-data.jpg",
-      "fileUrl": "https://megaphone.imgix.net/podcasts/8ca8a61c-08b4-11ef-97ab-9fe273d59030/image/4a16fd33b06708003827556209cd42b7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "fileUrl": "https://megaphone.imgix.net/podcasts/8ca8a61c-08b4-11ef-97ab-9fe273d59030/image/4a16fd33b06708003827556209cd42b7.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress",
       "source": "rss-feed"
     },
     "podcast:No Priors": {
       "localPath": "assets/avatars/podcast-no-priors.jpg",
-      "fileUrl": "https://megaphone.imgix.net/podcasts/803e0244-9d0f-11ed-923a-4bb54bf77468/image/NO_PRIORS_ALBUM_and_PROFILE_PIC-01.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+      "fileUrl": "https://megaphone.imgix.net/podcasts/803e0244-9d0f-11ed-923a-4bb54bf77468/image/NO_PRIORS_ALBUM_and_PROFILE_PIC-01.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress",
       "source": "rss-feed"
     },
     "podcast:Unsupervised Learning": {
@@ -72,15 +72,130 @@
     },
     "blog:Claude Blog": {
       "localPath": "assets/avatars/blog-claude-blog.jpg",
-      "fileUrl": "https://claude.com/favicon.ico",
+      "fileUrl": "https://claude.com/apple-touch-icon.png",
       "source": "favicon"
     },
     "blog:Anthropic Engineering": {
       "localPath": "assets/avatars/blog-anthropic-engineering.jpg",
       "fileUrl": "https://www.anthropic.com/favicon.ico",
       "source": "favicon"
+    },
+    "x:karpathy": {
+      "localPath": "assets/avatars/x-karpathy.jpg",
+      "fileUrl": "https://unavatar.io/twitter/karpathy?size=96",
+      "source": "unavatar.io"
+    },
+    "x:sama": {
+      "localPath": "assets/avatars/x-sama.jpg",
+      "fileUrl": "https://unavatar.io/twitter/sama?size=96",
+      "source": "unavatar.io"
+    },
+    "x:swyx": {
+      "localPath": "assets/avatars/x-swyx.jpg",
+      "fileUrl": "https://unavatar.io/twitter/swyx?size=96",
+      "source": "unavatar.io"
+    },
+    "x:AndrewYNg": {
+      "localPath": "assets/avatars/x-AndrewYNg.jpg",
+      "fileUrl": "https://unavatar.io/twitter/AndrewYNg?size=96",
+      "source": "unavatar.io"
+    },
+    "x:elonmusk": {
+      "localPath": "assets/avatars/x-elonmusk.jpg",
+      "fileUrl": "https://unavatar.io/twitter/elonmusk?size=96",
+      "source": "unavatar.io"
+    },
+    "podcast:Machine Learning Street Talk": {
+      "localPath": "assets/avatars/podcast-machine-learning-street-talk.jpg",
+      "fileUrl": "https://content.production.cdn.art19.com/images/0a/54/3f/bd/0a543fbd-63f2-43cb-ba11-2913ec94dd10/e6a7124a0e96c604cd601b99c2dec52f08e0741356b6a01c37d6231eb2575745d7d6fc3401a5168758de1e1462fb83c4a2854abbbf485a6cf532c43defd1fe9b.jpeg",
+      "source": "rss-feed"
+    },
+    "podcast:The Cognitive Revolution": {
+      "localPath": "assets/avatars/podcast-the-cognitive-revolution.jpg",
+      "fileUrl": "https://megaphone.imgix.net/podcasts/30f818da-c930-11ed-9b4b-1352ca96fb17/image/888e2c534b7c2534213c97e025646932.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress",
+      "source": "rss-feed"
+    },
+    "podcast:Last Week in AI": {
+      "localPath": "assets/avatars/podcast-last-week-in-ai.jpg",
+      "fileUrl": "https://content.production.cdn.art19.com/images/d8/60/88/b2/d86088b2-d713-4824-8483-a985aa7d7f32/e4063a3a93d1635f5b88961b422beb3e4fb4feab7fa085837e15faa5db2703d1830d964620373fcc524cfeee13ef3402821ce39d8fa98fd77271c57a80e7f24d.jpeg",
+      "source": "rss-feed"
+    },
+    "podcast:Practical AI": {
+      "localPath": "assets/avatars/podcast-practical-ai.jpg",
+      "fileUrl": "https://img.transistorcdn.com/WMlp2ug34XB6LDJ3-vnzti_-_y144LUlFW0Xzzn3fss/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8wMTZi/ZWJmNWIwNDdmYTcw/NGJjMTExZjNjZmYy/M2ZjNS5wbmc.jpg",
+      "source": "rss-feed"
+    },
+    "podcast:Dwarkesh Podcast": {
+      "localPath": "assets/avatars/podcast-dwarkesh-podcast.jpg",
+      "fileUrl": "https://substackcdn.com/image/fetch/$s_!zIND!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F31d5a7e6-133e-4dfd-aa27-76c48050874e_96x96.png",
+      "source": "rss-feed"
+    },
+    "youtube:@karpathy": {
+      "localPath": "assets/avatars/youtube-karpathy.jpg",
+      "fileUrl": "https://unavatar.io/youtube/karpathy?size=96",
+      "source": "unavatar.io"
+    },
+    "youtube:@ycombinator": {
+      "localPath": "assets/avatars/youtube-ycombinator.jpg",
+      "fileUrl": "https://unavatar.io/youtube/ycombinator?size=96",
+      "source": "unavatar.io"
+    },
+    "youtube:@TwoMinutePapers": {
+      "localPath": "assets/avatars/youtube-twominutepapers.jpg",
+      "fileUrl": "https://unavatar.io/youtube/TwoMinutePapers?size=96",
+      "source": "unavatar.io"
+    },
+    "youtube:@DwarkeshPatel": {
+      "localPath": "assets/avatars/youtube-dwarkeshpatel.jpg",
+      "fileUrl": "https://unavatar.io/youtube/DwarkeshPatel?size=96",
+      "source": "unavatar.io"
+    },
+    "youtube:@LatentSpacePod": {
+      "localPath": "assets/avatars/youtube-latentspacepod.jpg",
+      "fileUrl": "https://unavatar.io/youtube/LatentSpacePod?size=96",
+      "source": "unavatar.io"
+    },
+    "blog:Hugging Face": {
+      "localPath": "assets/avatars/blog-hugging-face.jpg",
+      "fileUrl": "https://huggingface.co/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:OpenAI": {
+      "localPath": "assets/avatars/blog-openai.jpg",
+      "fileUrl": "https://unavatar.io/openai.com?size=96",
+      "source": "favicon"
+    },
+    "blog:Together AI": {
+      "localPath": "assets/avatars/blog-together-ai.jpg",
+      "fileUrl": "https://unavatar.io/www.together.ai?size=96",
+      "source": "favicon"
+    },
+    "blog:Andrej Karpathy": {
+      "localPath": "assets/avatars/blog-andrej-karpathy.jpg",
+      "fileUrl": "https://unavatar.io/karpathy.github.io?size=96",
+      "source": "favicon"
+    },
+    "blog:Simon Willison": {
+      "localPath": "assets/avatars/blog-simon-willison.jpg",
+      "fileUrl": "https://simonwillison.net/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:Chip Huyen": {
+      "localPath": "assets/avatars/blog-chip-huyen.jpg",
+      "fileUrl": "https://huyenchip.com/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:程序员鱼皮": {
+      "localPath": "assets/avatars/blog-.jpg",
+      "fileUrl": "https://www.cnblogs.com/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:超级小华": {
+      "localPath": "assets/avatars/blog-.jpg",
+      "fileUrl": "https://www.cnblogs.com/favicon.ico",
+      "source": "favicon"
     }
   },
-  "updatedAt": "2026-05-29T16:43:46.179Z",
-  "avatarCount": 16
+  "updatedAt": "2026-08-16T11:30:16.150Z",
+  "avatarCount": 39
 }

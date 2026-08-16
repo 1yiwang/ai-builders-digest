@@ -88,6 +88,69 @@ function normalizeHandle(handle) {
   return handle.startsWith('@') ? handle : `@${handle}`;
 }
 
+function youtubeHandleFromUrl(url) {
+  const match = String(url || '').match(/\/@([A-Za-z0-9_.-]+)/);
+  return match ? match[1] : '';
+}
+
+function authorKeyCandidates(rawKey) {
+  const key = String(rawKey || '').trim();
+  if (!key) return [];
+  const keys = [key];
+  const withAt = key.replace(/^([a-z]+):(?!@)/i, '$1:@');
+  const withoutAt = key.replace(/^([a-z]+):@/i, '$1:');
+  if (withAt !== key) keys.push(withAt);
+  if (withoutAt !== key) keys.push(withoutAt);
+  return keys;
+}
+
+function lookupRecord(map, rawKey) {
+  for (const key of authorKeyCandidates(rawKey)) {
+    if (map[key]) return { key, value: map[key] };
+  }
+  return { key: rawKey || '', value: {} };
+}
+
+function identitiesFromSources(sources) {
+  const entries = {};
+  for (const account of sources.x || []) {
+    entries[`x:${account.handle}`] = {
+      name: account.name,
+      handle: `@${String(account.handle || '').replace(/^@/, '')}`,
+      label: account.label || 'X',
+    };
+  }
+  for (const channel of sources.youtube || []) {
+    const handle = youtubeHandleFromUrl(channel.url);
+    if (!handle) continue;
+    entries[`youtube:@${handle}`] = {
+      name: channel.name,
+      handle: `@${handle}`,
+      label: 'YouTube',
+    };
+  }
+  for (const podcast of sources.podcasts || []) {
+    entries[`podcast:${podcast.name}`] = {
+      name: podcast.name,
+      handle: '',
+      label: 'Podcast',
+    };
+  }
+  for (const blog of [...(sources.blogs || []), ...(sources.blogRSS || [])]) {
+    entries[`blog:${blog.name}`] = {
+      name: blog.name,
+      handle: '',
+      label: 'Blog',
+    };
+  }
+  return entries;
+}
+
+function handleFromAuthorKey(rawKey) {
+  const match = String(rawKey || '').match(/^(?:x|youtube):@?([A-Za-z0-9_.-]+)$/i);
+  return match ? `@${match[1]}` : '';
+}
+
 function toLocalPath(value) {
   if (!value) return '';
   if (value.startsWith('file://')) {
@@ -138,15 +201,21 @@ function renderBlocks(blocks) {
 }
 
 function resolveAuthorMeta(card, authorIdentities, avatarManifest, outputPath) {
-  const key = card.authorKey || '';
-  const identity = authorIdentities[key] || {};
-  const avatar = avatarManifest[key] || {};
-  const avatarSourcePath = toLocalPath(avatar.localPath || avatar.fileUrl || card.authorAvatar || '');
+  const rawKey = card.authorKey || '';
+  const identityHit = lookupRecord(authorIdentities, rawKey);
+  const avatarHit = lookupRecord(avatarManifest, identityHit.key || rawKey);
+  const identity = identityHit.value || {};
+  const avatar = avatarHit.value || {};
+  const localAvatar = avatar.localPath ? toLocalPath(avatar.localPath) : '';
+  const avatarSourcePath = localAvatar && fs.existsSync(localAvatar)
+    ? localAvatar
+    : (card.authorAvatar && fs.existsSync(toLocalPath(card.authorAvatar)) ? toLocalPath(card.authorAvatar) : '');
   const outputDir = path.dirname(outputPath);
 
-  const name = identity.name || card.authorName || '';
-  const handle = normalizeHandle(identity.handle || card.authorHandle || '');
+  const name = identity.name || card.authorName || card.sourceName || '';
+  const handle = normalizeHandle(identity.handle || card.authorHandle || handleFromAuthorKey(rawKey));
   const tag = identity.label || card.authorTag || '';
+  const key = identityHit.key || rawKey;
   const avatarUrl = avatarSourcePath
     ? toRelativeUrl(outputDir, path.join(REPO_ROOT, SITE_AVATAR_DIR, path.basename(avatarSourcePath)))
     : '';
@@ -782,18 +851,27 @@ ${sectionsHtml}
       if (footer) footer.textContent = footer.dataset.sourceNote || '';
     }
 
+    function lookupAuthorRecord(map, authorKey) {
+      if (!authorKey) return {};
+      if (map[authorKey]) return map[authorKey];
+      var stripped = authorKey.replace(/^([a-z]+):@/i, '$1:');
+      if (map[stripped]) return map[stripped];
+      var withAt = authorKey.replace(/^([a-z]+):(?!@)/i, '$1:@');
+      if (withAt !== authorKey && map[withAt]) return map[withAt];
+      return {};
+    }
+
     function hydrateAuthorMeta() {
       var sources = getTemplateAuthorSources();
       document.querySelectorAll('.card').forEach(function(card) {
         var authorKey = card.dataset.authorKey || '';
-        var identity = sources.identities[authorKey] || {};
-        var avatarEntry = sources.avatars[authorKey] || {};
+        var identity = lookupAuthorRecord(sources.identities, authorKey);
 
         var name = identity.name || card.dataset.authorName || '';
         var rawHandle = identity.handle || card.dataset.authorHandle || '';
         var handle = rawHandle && rawHandle.indexOf('@') === 0 ? rawHandle : (rawHandle ? '@' + rawHandle : '');
         var tag = identity.label || card.dataset.authorTag || '';
-        var avatar = avatarEntry.fileUrl || avatarEntry.localPath || card.dataset.authorAvatar || '';
+        var avatar = card.dataset.authorAvatar || '';
 
         var nameNode = card.querySelector('.author-name');
         var tagNode = card.querySelector('.author-tag');
@@ -897,7 +975,9 @@ function main() {
     ? path.resolve(outputPathArg)
     : path.resolve(REPO_ROOT, ISSUE_HTML_DIR, `ai-builders-digest-${input.publishDate || 'output'}.html`);
 
-  const authorIdentities = loadEntries(AUTHOR_IDENTITIES_PATH);
+  const sourcesPath = path.join(REPO_ROOT, 'config', 'sources.json');
+  const fromSources = fs.existsSync(sourcesPath) ? identitiesFromSources(readJson(sourcesPath)) : {};
+  const authorIdentities = { ...fromSources, ...loadEntries(AUTHOR_IDENTITIES_PATH) };
   const avatarManifest = loadEntries(AVATAR_MANIFEST_PATH);
   const html = renderPage(input, authorIdentities, avatarManifest, outputPath);
 

@@ -33,7 +33,7 @@ Write the magazine JSON to `ai-builders-digest-YYYY-MM-DD.json` in the `data/iss
       "desc": "One sentence explaining what connects these stories",
       "cards": [
         {
-          "authorKey": "podcast:Name or blog:Name or youtube:@handle or x:@handle",
+          "authorKey": "podcast:Name or blog:Name or youtube:@handle or x:handle",
           "sourceName": "Human-readable source name",
           "sourceUrl": "https://...",
           "priority": 1,

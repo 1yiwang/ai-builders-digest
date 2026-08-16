@@ -1,5 +1,25 @@
 {
   "entries": {
+    "x:karpathy": {
+      "name": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "label": "AI / Eureka"
+    },
+    "x:sama": {
+      "name": "Sam Altman",
+      "handle": "@sama",
+      "label": "OpenAI"
+    },
+    "x:swyx": {
+      "name": "swyx",
+      "handle": "@swyx",
+      "label": "Latent Space"
+    },
+    "x:AndrewYNg": {
+      "name": "Andrew Ng",
+      "handle": "@AndrewYNg",
+      "label": "Landing AI / Coursera"
+    },
     "x:petergyang": {
       "name": "Peter Yang",
       "handle": "@petergyang",
@@ -40,6 +60,36 @@
       "handle": "@rauchg",
       "label": "Vercel CEO"
     },
+    "x:elonmusk": {
+      "name": "Elon Musk",
+      "handle": "@elonmusk",
+      "label": "xAI/Tesla/SpaceX"
+    },
+    "youtube:@karpathy": {
+      "name": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "label": "YouTube"
+    },
+    "youtube:@ycombinator": {
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "label": "YouTube"
+    },
+    "youtube:@TwoMinutePapers": {
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "label": "YouTube"
+    },
+    "youtube:@DwarkeshPatel": {
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "label": "YouTube"
+    },
+    "youtube:@LatentSpacePod": {
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "label": "YouTube"
+    },
     "podcast:Latent Space": {
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
@@ -70,6 +120,31 @@
       "handle": "@every",
       "label": "Every Podcast"
     },
+    "podcast:Machine Learning Street Talk": {
+      "name": "Machine Learning Street Talk",
+      "handle": "@MLStreetTalk",
+      "label": "Podcast"
+    },
+    "podcast:The Cognitive Revolution": {
+      "name": "The Cognitive Revolution",
+      "handle": "@cogrev_podcast",
+      "label": "Podcast"
+    },
+    "podcast:Last Week in AI": {
+      "name": "Last Week in AI",
+      "handle": "@lastweekinai",
+      "label": "Podcast"
+    },
+    "podcast:Practical AI": {
+      "name": "Practical AI",
+      "handle": "@PracticalAI",
+      "label": "Podcast"
+    },
+    "podcast:Dwarkesh Podcast": {
+      "name": "Dwarkesh Patel",
+      "handle": "@dwarkesh_sp",
+      "label": "Podcast"
+    },
     "blog:Anthropic Engineering": {
       "name": "Anthropic Engineering",
       "handle": "@AnthropicAI",
@@ -79,6 +154,46 @@
       "name": "Claude Blog",
       "handle": "@AnthropicAI",
       "label": "Product Blog"
+    },
+    "blog:Hugging Face": {
+      "name": "Hugging Face",
+      "handle": "@huggingface",
+      "label": "Blog"
+    },
+    "blog:OpenAI": {
+      "name": "OpenAI",
+      "handle": "@OpenAI",
+      "label": "Blog"
+    },
+    "blog:Together AI": {
+      "name": "Together AI",
+      "handle": "@together_ai",
+      "label": "Blog"
+    },
+    "blog:Andrej Karpathy": {
+      "name": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "label": "Blog"
+    },
+    "blog:Simon Willison": {
+      "name": "Simon Willison",
+      "handle": "@simonw",
+      "label": "Blog"
+    },
+    "blog:Chip Huyen": {
+      "name": "Chip Huyen",
+      "handle": "@chipro",
+      "label": "Blog"
+    },
+    "blog:程序员鱼皮": {
+      "name": "程序员鱼皮",
+      "handle": "",
+      "label": "Blog"
+    },
+    "blog:超级小华": {
+      "name": "超级小华",
+      "handle": "",
+      "label": "Blog"
     }
   }
 }

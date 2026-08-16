@@ -49,10 +49,12 @@ function writeJson(filePath, data) {
 }
 
 function slugify(name) {
-  return name
+  const slug = String(name || '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
+  if (slug) return slug;
+  return Buffer.from(String(name || 'author'), 'utf8').toString('hex').slice(0, 12);
 }
 
 async function downloadFile(url, destPath) {
@@ -196,89 +198,132 @@ async function downloadPodcastAvatars(sources, dryRun) {
   return results;
 }
 
-// -- Blog favicons -----------------------------------------------------------
+// -- YouTube channel avatars via unavatar / og:image -------------------------
 
-async function downloadBlogAvatars(sources, dryRun) {
+function youtubeHandleFromUrl(url) {
+  const match = String(url || '').match(/\/@([A-Za-z0-9_.-]+)/);
+  return match ? match[1] : '';
+}
+
+async function downloadYouTubeAvatars(sources, dryRun) {
   const results = {};
-  const blogs = sources.blogs || [];
 
-  for (const blog of blogs) {
-    const key = `blog:${blog.name}`;
-    const slug = slugify(blog.name);
-    const fileName = `blog-${slug}.jpg`;
+  for (const channel of sources.youtube || []) {
+    const handle = youtubeHandleFromUrl(channel.url);
+    if (!handle) continue;
+    const key = `youtube:@${handle}`;
+    const fileName = `youtube-${slugify(handle)}.jpg`;
     const destPath = path.join(AVATARS_DIR, fileName);
 
     if (dryRun) {
-      console.error(`  [DRY RUN] ${key}: favicon → ${fileName}`);
-      results[key] = { localPath: destPath, source: 'favicon' };
+      console.error(`  [DRY RUN] ${key}: unavatar/og:image → ${fileName}`);
+      results[key] = { localPath: destPath, source: 'youtube' };
       continue;
     }
 
-    console.error(`  ${key}: fetching favicon...`);
-
-    // Try common favicon patterns
-    const baseUrl = blog.indexUrl || `https://${blog.articleBaseUrl}`;
-    let origin;
-    try {
-      origin = new URL(baseUrl).origin;
-    } catch {
-      console.error(`    ✗ invalid base URL`);
-      continue;
-    }
-
-    const faviconCandidates = [
-      `${origin}/favicon.ico`,
-      `${origin}/favicon.png`,
-      `${origin}/favicon-32x32.png`,
-      `${origin}/apple-touch-icon.png`,
+    console.error(`  ${key}: downloading...`);
+    const candidates = [
+      `https://unavatar.io/youtube/${handle}?size=${AVATAR_SIZE}`,
+      `https://unavatar.io/youtube/@${handle}?size=${AVATAR_SIZE}`,
     ];
 
     let downloaded = false;
-    for (const favUrl of faviconCandidates) {
-      if (downloaded) break;
-      try {
-        const ok = await downloadFile(favUrl, destPath);
-        if (ok) {
-          console.error(`    ✓ saved: ${fileName} (from ${path.basename(new URL(favUrl).pathname)})`);
-          results[key] = { localPath: destPath, fileUrl: favUrl, source: 'favicon' };
-          downloaded = true;
-        }
-      } catch {
-        // try next candidate
+    for (const url of candidates) {
+      const ok = await downloadFile(url, destPath);
+      if (ok) {
+        console.error(`    ✓ saved: ${fileName}`);
+        results[key] = { localPath: destPath, fileUrl: url, source: 'unavatar.io' };
+        downloaded = true;
+        break;
       }
     }
 
     if (!downloaded) {
-      // Try to scrape favicon from HTML
       try {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 10000);
-        const res = await fetch(blog.indexUrl, { signal: controller.signal });
-        clearTimeout(timeout);
+        const res = await fetch(channel.url, {
+          headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'en-US,en;q=0.9' },
+          signal: AbortSignal.timeout(15000),
+        });
         if (res.ok) {
           const html = await res.text();
-          const match = html.match(/<link[^>]*rel=["'](?:icon|shortcut icon|apple-touch-icon)["'][^>]*href=["']([^"']+)["']/i)
-                     || html.match(/<link[^>]*href=["']([^"']+)["'][^>]*rel=["'](?:icon|shortcut icon|apple-touch-icon)["']/i);
-          if (match) {
-            let iconUrl = match[1];
-            if (iconUrl.startsWith('/')) iconUrl = origin + iconUrl;
-            else if (!iconUrl.startsWith('http')) iconUrl = blog.indexUrl.replace(/\/$/, '') + '/' + iconUrl;
-            const ok = await downloadFile(iconUrl, destPath);
+          const og = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i);
+          if (og?.[1]) {
+            const ok = await downloadFile(og[1], destPath);
             if (ok) {
-              console.error(`    ✓ saved: ${fileName} (from HTML scrape)`);
-              results[key] = { localPath: destPath, fileUrl: iconUrl, source: 'favicon-scrape' };
+              console.error(`    ✓ saved: ${fileName} (og:image)`);
+              results[key] = { localPath: destPath, fileUrl: og[1], source: 'og:image' };
               downloaded = true;
             }
           }
         }
       } catch {
-        // give up
+        // fall through
       }
     }
 
     if (!downloaded) {
-      console.error(`    ✗ no favicon found, will use fallback initials`);
+      console.error(`    ✗ failed, will use fallback initials`);
     }
+  }
+
+  return results;
+}
+
+// -- Blog favicons -----------------------------------------------------------
+
+function blogOrigin(blog) {
+  const raw = blog.indexUrl || blog.articleBaseUrl || blog.feedUrl || blog.homeUrl || '';
+  try {
+    return new URL(raw).origin;
+  } catch {
+    return '';
+  }
+}
+
+async function downloadOneBlogAvatar(blog, key, dryRun) {
+  const slug = slugify(blog.name);
+  const fileName = `blog-${slug}.jpg`;
+  const destPath = path.join(AVATARS_DIR, fileName);
+
+  if (dryRun) {
+    console.error(`  [DRY RUN] ${key}: favicon → ${fileName}`);
+    return { [key]: { localPath: destPath, source: 'favicon' } };
+  }
+
+  console.error(`  ${key}: fetching favicon...`);
+  const origin = blogOrigin(blog);
+  if (!origin) {
+    console.error(`    ✗ invalid base URL`);
+    return {};
+  }
+
+  const faviconCandidates = [
+    `${origin}/apple-touch-icon.png`,
+    `${origin}/favicon-32x32.png`,
+    `${origin}/favicon.png`,
+    `${origin}/favicon.ico`,
+    `https://unavatar.io/${new URL(origin).hostname}?size=${AVATAR_SIZE}`,
+  ];
+
+  for (const favUrl of faviconCandidates) {
+    const ok = await downloadFile(favUrl, destPath);
+    if (ok) {
+      console.error(`    ✓ saved: ${fileName} (from ${favUrl})`);
+      return { [key]: { localPath: destPath, fileUrl: favUrl, source: 'favicon' } };
+    }
+  }
+
+  console.error(`    ✗ no favicon found, will use fallback initials`);
+  return {};
+}
+
+async function downloadBlogAvatars(sources, dryRun) {
+  const results = {};
+  const blogs = [...(sources.blogs || []), ...(sources.blogRSS || [])];
+
+  for (const blog of blogs) {
+    const key = `blog:${blog.name}`;
+    Object.assign(results, await downloadOneBlogAvatar(blog, key, dryRun));
   }
 
   return results;
@@ -295,28 +340,39 @@ async function main() {
   console.error('');
 
   ensureDir(AVATARS_DIR);
+  ensureDir(FOLLOW_BUILDERS_ASSETS);
 
-  // Load current data
-  const identities = readJson(IDENTITIES_PATH);
+  // Repo identities are the source of truth (do not overwrite them from ~/.follow-builders).
+  const identities = fs.existsSync(REPO_IDENTITIES_PATH)
+    ? readJson(REPO_IDENTITIES_PATH)
+    : fs.existsSync(IDENTITIES_PATH)
+      ? readJson(IDENTITIES_PATH)
+      : { entries: {} };
   const sources = readJson(SOURCES_PATH);
-  const manifest = fs.existsSync(MANIFEST_PATH)
-    ? readJson(MANIFEST_PATH)
-    : { entries: {} };
+  const manifest = fs.existsSync(REPO_MANIFEST_PATH)
+    ? readJson(REPO_MANIFEST_PATH)
+    : fs.existsSync(MANIFEST_PATH)
+      ? readJson(MANIFEST_PATH)
+      : { entries: {} };
 
   // 1. Download X/Twitter avatars
-  console.error('[1/3] X/Twitter authors...');
+  console.error('[1/4] X/Twitter authors...');
   const xResults = await downloadXAvatars(identities, dryRun);
 
   // 2. Download podcast channel art
-  console.error('[2/3] Podcast channel art...');
+  console.error('[2/4] Podcast channel art...');
   const podcastResults = await downloadPodcastAvatars(sources, dryRun);
 
-  // 3. Download blog favicons
-  console.error('[3/3] Blog favicons...');
+  // 3. Download YouTube channel avatars
+  console.error('[3/4] YouTube channels...');
+  const youtubeResults = await downloadYouTubeAvatars(sources, dryRun);
+
+  // 4. Download blog favicons (scrape + RSS)
+  console.error('[4/4] Blog favicons...');
   const blogResults = await downloadBlogAvatars(sources, dryRun);
 
   // Merge all results into manifest
-  const allResults = { ...xResults, ...podcastResults, ...blogResults };
+  const allResults = { ...xResults, ...podcastResults, ...youtubeResults, ...blogResults };
   manifest.entries = { ...manifest.entries, ...allResults };
   manifest.updatedAt = new Date().toISOString();
   manifest.avatarCount = Object.keys(manifest.entries).length;
@@ -361,11 +417,9 @@ async function main() {
     console.error(`  Avatar files: ${avatarFiles.length} (${copiedCount} copied to repo)`);
     avatarFiles.forEach(f => console.error(`    - ${f}`));
 
-    // Also sync author-identities to repo
-    if (fs.existsSync(IDENTITIES_PATH)) {
-      fs.copyFileSync(IDENTITIES_PATH, REPO_IDENTITIES_PATH);
-      console.error(`✓ Identities synced to: ${REPO_IDENTITIES_PATH}`);
-    }
+    writeJson(REPO_IDENTITIES_PATH, identities);
+    writeJson(IDENTITIES_PATH, identities);
+    console.error(`✓ Identities saved: ${REPO_IDENTITIES_PATH}`);
   }
 
   console.error('');
