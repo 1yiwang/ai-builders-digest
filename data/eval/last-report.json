@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-16T07:58:53.159Z",
+  "generatedAt": "2026-08-16T08:07:09.789Z",
   "totals": {
-    "issues": 10,
+    "issues": 32,
     "current": 0,
-    "legacy": 10,
+    "legacy": 32,
     "currentFailed": 0,
     "legacyFailed": 0
   },
@@ -83,6 +83,182 @@
     {
       "file": "ai-builders-digest-2026-06-17.json",
       "date": "2026-06-17",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-19.json",
+      "date": "2026-06-19",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-22.json",
+      "date": "2026-06-22",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-24.json",
+      "date": "2026-06-24",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-26.json",
+      "date": "2026-06-26",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-06-29.json",
+      "date": "2026-06-29",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-01.json",
+      "date": "2026-07-01",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-03.json",
+      "date": "2026-07-03",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-06.json",
+      "date": "2026-07-06",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-08.json",
+      "date": "2026-07-08",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-13.json",
+      "date": "2026-07-13",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-15.json",
+      "date": "2026-07-15",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-17.json",
+      "date": "2026-07-17",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-20.json",
+      "date": "2026-07-20",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-22.json",
+      "date": "2026-07-22",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-24.json",
+      "date": "2026-07-24",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-27.json",
+      "date": "2026-07-27",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-29.json",
+      "date": "2026-07-29",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-07-31.json",
+      "date": "2026-07-31",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-08-03.json",
+      "date": "2026-08-03",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-08-05.json",
+      "date": "2026-08-05",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-08-07.json",
+      "date": "2026-08-07",
+      "kind": "legacy",
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "file": "ai-builders-digest-2026-08-14.json",
+      "date": "2026-08-14",
       "kind": "legacy",
       "ok": true,
       "errors": [],

@@ -19,6 +19,8 @@
 
 本机检查：`npm run prepare-feed`、`npm run eval`。CI 检查：Actions → AI Builders Digest (MWF) → Run workflow。
 
+追上 origin 后本地现有 **32 期**（至 2026-08-14），`npm run eval` 全部 legacy 通过。
+
 未做（可选）：本机 Ollama 实跑一期 dry-run；用 DeepSeek 出一期带 `meta` 的新刊（现有期都是 legacy）。不上数据库；首页按年分页等约 80 期再做。
 
 ## 已完成
