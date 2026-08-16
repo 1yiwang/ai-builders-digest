@@ -1,11 +1,5 @@
 {
   "seenVideos": {
-    "feef20f0-8a05-11f1-beda-77fe6808cfdf": 1785489164780,
-    "ec2ad161-8e87-4bd2-9e20-9f6af72518d9": 1785489165434,
-    "6676e79c-2984-4653-8a01-2e6431797287": 1785489165814,
-    "gid://art19-episode-locator/V0/WOh5RAzse2YNYpDMNgKGxbZnWGgXZv7PNGbC-OgpF9I": 1785489166860,
-    "17fab7ca-8c55-11f1-9f1b-3f3ff7360962": 1785489166923,
-    "9b6a2244-3473-4a2e-934b-ed733b3e5214": 1785489167995,
     "863550d0-f44f-4411-be36-4f629a92426c": 1785751235037,
     "0fb6bad0-8eaf-11f1-956a-e372f562a84d": 1785751236695,
     "gid://art19-episode-locator/V0/xuGmn7qecvsQgzm74aAmNM0Xgiql0gsuGgZOuDomCQY": 1785751237544,
@@ -24,15 +18,11 @@
     "7f04c744-6cb4-48c2-a0f9-1a3a46e0137c": 1786693346166,
     "gid://art19-episode-locator/V0/PPaRpvtvBK0Zc1bIWAt7xPcvPXsxE-J2cMaWd3hOa98": 1786693346865,
     "67f4c75e-93d8-11f1-bc73-4b7840ced6dd": 1786693346985,
-    "gid://art19-episode-locator/V0/WJzL6-4HBon32oFone_vefqpySvd-MLLwmmgmd2VC8w": 1786693347520
+    "gid://art19-episode-locator/V0/WJzL6-4HBon32oFone_vefqpySvd-MLLwmmgmd2VC8w": 1786693347520,
+    "gid://art19-episode-locator/V0/GXwz0w7GMNUrV6W74n4oKcvJ9rE9vBadYUNtuObStg4": 1786867813013,
+    "e74f032c-98ea-11f1-a437-a79e349e98f6": 1786867813093
   },
   "seenArticles": {
-    "https://huggingface.co/blog/Dharma-AI/gpu-management": 1785489168120,
-    "https://openai.com/index/advancing-responsible-ai-across-europe": 1785489168207,
-    "https://openai.com/index/unive": 1785489168207,
-    "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6": 1785489168207,
-    "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models": 1785489168386,
-    "https://www.together.ai/blog/thunderagent": 1785489168386,
     "https://openai.com/index/ten-advances-in-mathematics": 1785751238254,
     "https://openai.com/index/building-abundant-intelligence": 1785751238254,
     "https://www.together.ai/blog/kimi-k3-guide": 1785751238389,
@@ -51,7 +41,13 @@
     "https://huggingface.co/blog/allenai/olmoearth-embeddings": 1786693348017,
     "https://openai.com/index/builders-guide-to-gpt-5-6": 1786693348131,
     "https://openai.com/index/previewing-ultrafast": 1786693348131,
-    "https://openai.com/index/dali-rajic-chief-revenue-officer": 1786693348131
+    "https://openai.com/index/dali-rajic-chief-revenue-officer": 1786693348131,
+    "https://huggingface.co/blog/state-of-open-models-summer-2026": 1786867814319,
+    "https://www.anthropic.com/engineering/how-we-contain-claude": 1786867818944,
+    "https://www.anthropic.com/engineering/april-23-postmortem": 1786867819579,
+    "https://www.anthropic.com/engineering/managed-agents": 1786867820194,
+    "https://claude.com/blog/artifacts-in-claude-code": 1786867820816,
+    "https://claude.com/blog/claude-managed-agents-updates": 1786867821367
   },
   "xUserIds": {}
 }

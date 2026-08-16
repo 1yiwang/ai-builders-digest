@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T07:42:40.501Z",
+  "generatedAt": "2026-08-16T08:10:29.589Z",
   "lookbackHours": 24,
   "x": [
     {
@@ -7,9 +7,9 @@
       "name": "Peter Yang",
       "tweets": [
         {
-          "id": "2088108304274960667",
-          "text": "What do people include in their product specs these days to make them friendly and concise for both humans and agents? Or two separate sections for each?",
-          "createdAt": "2026-08-14T03:39:49.000Z",
+          "id": "2088773343629750535",
+          "text": "I am a fan of Grok Bot but @X is the #1 differentiated data source that it should have access to and it doesn't seem to work? The connector doesn't work and I can't even login to X on the cloud computer. Am I doing something wrong?",
+          "createdAt": "2026-08-15T23:42:27.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -18,20 +18,9 @@
           }
         },
         {
-          "id": "2088036303816519734",
-          "text": "The biggest compliment I can give @maticrobots is that my wife runs it non-stop which is getting pretty annoying but keeps our floors super clean. 😅",
-          "createdAt": "2026-08-13T22:53:43.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2087946170274570385",
-          "text": "I'm dealing with a family health situation and thought I would be using AI to research and understand the illness but in reality it's been most helpful to navigate the healthcare system bureaucracy.",
-          "createdAt": "2026-08-13T16:55:33.000Z",
+          "id": "2088772605323214999",
+          "text": "I 100% agree with Dario that using AI to cure diseases (and speeding up the regulatory approval of AI breakthroughs in healthcare) could bring 10x the benefit to humanity as everything else combined.",
+          "createdAt": "2026-08-15T23:39:31.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -46,37 +35,9 @@
       "name": "Madhu Guru",
       "tweets": [
         {
-          "id": "2088074515188519182",
-          "text": "AI industry: this is an era of unlimited creativity, thanks to AI. Also AI industry: we will all name our products ‘Studio’. I counted 20+. Here are a few : Google AI Studio Vertex AI Studio Workspace Studio Copilot Studio Agentforce Studio Joule Studio Writer AI Studio Box AI Studio Alibaba cloud Model Studio Labelbox Evaluation Studio SageMaker Studio Cortex AI Studio LangGraph Studio AI Agent Studio x 4 at least these guys make studio things : Canva Magic Studio ElevenLabs Studio PS: If your AI product is also called Studio and I left you out, apologies. It’s not personal.",
-          "createdAt": "2026-08-14T01:25:33.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2087916590964851172",
-          "text": "Prompt debt is the new tech debt. With every model update, you should be cutting at least 50% of your prompts. Most AI products have bloated prompts that are making your product quality worse. The typical flow is: model fails at something -> add 10 rules. Tool call fails -> add 10 examples. Output is weird -> add formatting constraints. 3 months later, your system prompt is a novel. Meanwhile the model is way smarter and your micro-managey prompts are turning it into a dumb rules machine.",
-          "createdAt": "2026-08-13T14:58:01.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@mattturck",
-      "name": "Matt Turck",
-      "tweets": [
-        {
-          "id": "2087978386195103916",
-          "text": "Right now, you're either: * an AI-native rocketship, which sounds fun until you realize it means being in a permanent fundraising situation at ever more scary valuations to hoover up capital and talent, and in a constant death match with other rocketships to capture customers, sacrificing gross margins; or * basically left for dead, regardless of how good a company you actually are This has been the case for a while, but feels like it just escalated a notch.",
-          "createdAt": "2026-08-13T19:03:34.000Z",
+          "id": "2088710566689018103",
+          "text": "There is no longer an excuse for B2B software to have such poor UX. Thanks to AI, every software product can and should be as easy to use as the best consumer software.",
+          "createdAt": "2026-08-15T19:33:00.000Z",
           "metrics": {
             "likes": 0,
             "retweets": 0,
@@ -88,8 +49,8 @@
     }
   ],
   "stats": {
-    "xBuilders": 3,
-    "totalTweets": 6
+    "xBuilders": 2,
+    "totalTweets": 3
   },
   "_mode": "Nitter RSS (free)"
 }
