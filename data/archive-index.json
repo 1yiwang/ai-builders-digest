@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-08-16T10:44:08.992Z",
-  "count": 33,
+  "generatedAt": "2026-08-17T07:11:13.037Z",
+  "count": 34,
   "issues": [
+    {
+      "date": "2026-08-17",
+      "title": "Cybersicherheits-Modelle werden erwachsen",
+      "desc": "Offene Evals und AWS-Verfügbarkeit machen Cybersicherheits-KI praxistauglich, während GPT-5.6 Sol Finanzarbeit automatisiert.",
+      "href": "./issues/ai-builders-digest-2026-08-17.html",
+      "issue": "Nr. 34"
+    },
     {
       "date": "2026-08-16",
       "title": "Ein Befehl regiert alle Coding-Agenten",

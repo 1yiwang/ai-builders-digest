@@ -1,0 +1,160 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-17",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Guillermo Rauch meldet starke Evals für GLM 5.3 im Cybersicherheitsbereich und will Defensive-Tools häufiger laufen lassen. Parallel bringt OpenAI seine Daybreak-Modelle über AWS Bedrock in Unternehmens-Workflows. OpenAI zeigt mit GPT-5.6 Sol zudem, wie Finanzarbeit in editierbare Dokumente mündet. Dwarkesh Patel diskutiert mit Ryan Greenblatt, ob KI-Risiken beherrschbar sind, aber trotzdem schlecht gemanagt werden."
+  },
+  "archive": {
+    "title": "Cybersicherheits-Modelle werden erwachsen",
+    "desc": "Offene Evals und AWS-Verfügbarkeit machen Cybersicherheits-KI praxistauglich, während GPT-5.6 Sol Finanzarbeit automatisiert."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-08-17.",
+  "sections": [
+    {
+      "title": "Cybersecurity Models / Cybersicherheits-Modelle",
+      "desc": "Cybersicherheits-spezifische Modelle werden über offene Evals und AWS Bedrock zugänglicher.",
+      "cards": [
+        {
+          "authorKey": "x:@rauchg",
+          "sourceName": "Guillermo Rauch",
+          "sourceUrl": "https://x.com/rauchg/status/2089126690043916495",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Guillermo Rauch ran evals on GLM 5.3 and calls it the new open cybersecurity frontier.",
+              "Lower costs let his deepsec.sh security tool run at least 3× more often for defensive work."
+            ],
+            "original": [
+              "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier. Given its lower costs, I expect this to be a boon for defensive security work. e.g., it means you can run https://deepsec.sh at least 3× more often!"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Guillermo Rauch hat GLM 5.3 auf Cybersicherheit evaluiert und nennt es die neue offene Frontier.",
+              "Geringere Kosten erlauben defensive Security-Tools wie deepsec.sh mindestens 3× häufiger auszuführen."
+            ],
+            "original": [
+              "Wir haben Evals zu GLM 5.3 im Bereich Cybersicherheit gefahren. Es ist die neue offene Frontier. Wegen der geringeren Kosten kann man deepsec.sh mindestens 3× häufiger laufen lassen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI's Daybreak cybersecurity models are now available on AWS via Amazon Bedrock.",
+              "Enterprise security teams can call the models through Bedrock for security workflows."
+            ],
+            "original": [
+              "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAIs Daybreak-Modelle für Cybersicherheit sind jetzt über Amazon Bedrock auf AWS verfügbar.",
+              "Enterprise-Security-Teams können die Modelle für Sicherheits-Workflows über Bedrock nutzen."
+            ],
+            "original": [
+              "OpenAI und AWS machen die Cybersicherheitsfunktionen von Daybreak über Amazon Bedrock verfügbar, um Sicherheits-Workflows in Unternehmen zu unterstützen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Finance Workflow Automation / Finanz-Workflow-Automatisierung",
+      "desc": "OpenAI zeigt einen konkreten Anwendungsfall, bei dem GPT-5.6 Sol Finanzarbeit bis zum editierbaren Dokument trägt.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/model-ml",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI highlights Model ML using GPT-5.6 Sol for finance work, from research to editable, traceable PowerPoint decks and Excel workbooks.",
+              "The workflow spans research, analysis, and final deliverables in PowerPoint and Excel."
+            ],
+            "original": [
+              "Model ML uses GPT-5.6 Sol to carry finance work from research and analysis through editable, traceable PowerPoint decks and Excel workbooks."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI zeigt, wie Model ML mit GPT-5.6 Sol Finanzarbeit von Recherche und Analyse bis zu editierbaren PowerPoint-Decks und Excel-Arbeitsmappen führt.",
+              "Der Workflow betont editierbare, nachvollziehbare Dokumente statt reiner Textantworten."
+            ],
+            "original": [
+              "Model ML nutzt GPT-5.6 Sol, um Finanzarbeit von Recherche und Analyse bis zu editierbaren, nachvollziehbaren PowerPoint-Decks und Excel-Arbeitsmappen zu führen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Risk Governance / KI-Risiko-Governance",
+      "desc": "Ein neues Gespräch bei Dwarkesh Patel thematisiert die Lücke zwischen technischer Beherrschbarkeit und institutioneller Umsetzung.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=8bdncWiRRX0",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Ryan Greenblatt on why AI risk might be manageable yet still be mismanaged.",
+              "The title frames risk around technical manageability versus institutional follow-through."
+            ],
+            "original": [
+              "Video title: AI Risk Might Be Manageable Yet Still Be Mismanaged - Ryan Greenblatt"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel spricht mit Ryan Greenblatt über das Risiko, dass KI beherrschbar sein könnte, aber trotzdem schlecht gemanagt wird.",
+              "Der Titel trennt technische Beherrschbarkeit von institutionellem Umsetzungsversagen."
+            ],
+            "original": [
+              "Videotitel: AI Risk Might Be Manageable Yet Still Be Mismanaged – Ryan Greenblatt"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-08-17T07:11:12.931Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 126443,
+    "tokensIn": 3516,
+    "tokensOut": 9588,
+    "estCostUsd": 0.003177,
+    "candidatesIn": 13,
+    "shortlistSize": 7,
+    "cardsPublished": 4,
+    "truncation": {
+      "rawChars": 6290,
+      "preparedChars": 2309,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://x.com/rauchg/status/2089126690043916495",
+      "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "https://openai.com/index/model-ml",
+      "https://www.youtube.com/watch?v=8bdncWiRRX0"
+    ]
+  }
+}

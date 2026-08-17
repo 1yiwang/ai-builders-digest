@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T10:37:12.222Z",
+  "generatedAt": "2026-08-17T07:09:06.447Z",
   "lookbackHours": 72,
   "x": [
     {
@@ -23,6 +23,28 @@
       "handle": "@rauchg",
       "name": "Guillermo Rauch",
       "tweets": [
+        {
+          "id": "2089179650891432270",
+          "text": "xn--c1h.to",
+          "createdAt": "2026-08-17T02:36:58.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
+        {
+          "id": "2089126690043916495",
+          "text": "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier. Given its lower costs, I expect this to be a boon for defensive security work. e.g., it means you can run https://deepsec.sh at least 3× more often!",
+          "createdAt": "2026-08-16T23:06:31.000Z",
+          "metrics": {
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "views": 0
+          }
+        },
         {
           "id": "2088838302367732178",
           "text": "Recursive self improvement",
@@ -77,57 +99,13 @@
             "replies": 0,
             "views": 0
           }
-        },
-        {
-          "id": "2088020529039180204",
-          "text": "One command to rule them all (tokens). I predict that this will become the default way of using coding AI at scale. Uptime, model choice, lower costs, observability, ZDR… The cool thing is that this command configures every *existing* coding harness, like Claude Code & Codex!",
-          "createdAt": "2026-08-13T21:51:02.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2087982033499042205",
-          "text": "Try https://eve.dev with 🆓 GLM 5.2 @ up to 500TPS from @blackboxai",
-          "createdAt": "2026-08-13T19:18:04.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2087900672083857815",
-          "text": "The best things in life are free",
-          "createdAt": "2026-08-13T13:54:46.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2087891362289164333",
-          "text": "𝙷𝚊𝚛𝚗𝚎𝚜𝚜𝙰𝚐𝚎𝚗𝚝 gives you the freedom to run and swap any brain. Or make a bunch of brains compete or collaborate on a problem. It’s now one line of code to switch to @grok.",
-          "createdAt": "2026-08-13T13:17:46.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
         }
       ]
     }
   ],
   "stats": {
     "xBuilders": 2,
-    "totalTweets": 10
+    "totalTweets": 8
   },
   "_mode": "Nitter RSS (free)"
 }
