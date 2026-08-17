@@ -1,6 +1,23 @@
 # AI Builders Digest — 进度文档
 
-最后更新：2026-08-16
+最后更新：2026-08-17
+
+## 2026-08-17 — 72h 新鲜源 + 头像/进模质量
+
+规划：`docs/pipeline-improvement-plan.md`。已推 `main`（`ffa93b4`）。不接数据库。
+
+已落地：
+
+- **头像**：`download-avatars.js` 只在文件真正保存后写 manifest；渲染时本地缺失则用 `fileUrl`，`<img onerror>` 回退首字母
+- **博客 72h**：`BLOG_LOOKBACK_HOURS` / `blogMaxAgeHours` 168 → 72；无日期的过期条目不再写入 `seenArticles`
+- **源**：去掉中文博客；加入 The Decoder、TechCrunch AI、TLDR AI（VentureBeat AI 分类 RSS 停在 2026-05，未采用）
+- **RSS 正文**：不再写空 `description`；无 `content:encoded` 时抓 `og:description`；先解码实体再剥 HTML
+- **进模**：`extractDenseSentences` 替换盲截断；`scoreText` 按类型加权并惩罚空推
+- **软 eval**：无数字 / 子弹 >30 词 / 未知 `authorKey` 只警告，不挡出刊
+
+本机检查（2026-08-17）：Decoder + TechCrunch + Simon 共 9 篇博客（8/16–8/17）；`npm run prepare-feed` 候选 20 → 短名单 12；`npm run eval` 33 期 current 0/1 fail。
+
+下一步：用新管线重出 2026-08-17（CI 今早那期仍是 lookback 168h、空 description）。
 
 ## 2026-08-16 — 新鲜源（X / YouTube）
 

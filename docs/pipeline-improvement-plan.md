@@ -1,5 +1,5 @@
 # Pipeline Improvement Plan
-> Created: 2026-08-17 | Status: implemented
+> Created: 2026-08-17 | Status: shipped (`ffa93b4`); regenerating 2026-08-17 issue with new pipeline
 
 ---
 
