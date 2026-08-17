@@ -1,11 +1,17 @@
 {
-  "generatedAt": "2026-08-17T08:05:40.412Z",
+  "generatedAt": "2026-08-17T08:22:01.991Z",
   "totals": {
     "issues": 34,
     "current": 2,
     "legacy": 32,
     "currentFailed": 0,
-    "legacyFailed": 0
+    "legacyFailed": 0,
+    "faithfulness": {
+      "checked": 15,
+      "skippedNoSource": 0,
+      "numberMisses": 0,
+      "quoteMisses": 0
+    }
   },
   "issues": [
     {
@@ -14,7 +20,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-05-29.json",
@@ -22,7 +29,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-01.json",
@@ -30,7 +38,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-03.json",
@@ -38,7 +47,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-05.json",
@@ -46,7 +56,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-08.json",
@@ -54,7 +65,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-10.json",
@@ -62,7 +74,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-12.json",
@@ -70,7 +83,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-15.json",
@@ -78,7 +92,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-17.json",
@@ -86,7 +101,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-19.json",
@@ -94,7 +110,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-22.json",
@@ -102,7 +119,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-24.json",
@@ -110,7 +128,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-26.json",
@@ -118,7 +137,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-06-29.json",
@@ -126,7 +146,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-01.json",
@@ -134,7 +155,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-03.json",
@@ -142,7 +164,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-06.json",
@@ -150,7 +173,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-08.json",
@@ -158,7 +182,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-13.json",
@@ -166,7 +191,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-15.json",
@@ -174,7 +200,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-17.json",
@@ -182,7 +209,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-20.json",
@@ -190,7 +218,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-22.json",
@@ -198,7 +227,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-24.json",
@@ -206,7 +236,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-27.json",
@@ -214,7 +245,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-29.json",
@@ -222,7 +254,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-07-31.json",
@@ -230,7 +263,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-08-03.json",
@@ -238,7 +272,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-08-05.json",
@@ -246,7 +281,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-08-07.json",
@@ -254,7 +290,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-08-14.json",
@@ -262,7 +299,8 @@
       "kind": "legacy",
       "ok": true,
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "faithfulness": null
     },
     {
       "file": "ai-builders-digest-2026-08-16.json",
@@ -276,7 +314,13 @@
         "card[3] no number in rewrite bullets",
         "card[4] no number in rewrite bullets",
         "card[6] no number in rewrite bullets"
-      ]
+      ],
+      "faithfulness": {
+        "checked": 8,
+        "skippedNoSource": 0,
+        "numberMisses": 0,
+        "quoteMisses": 0
+      }
     },
     {
       "file": "ai-builders-digest-2026-08-17.json",
@@ -289,7 +333,13 @@
         "card[4] no number in rewrite bullets",
         "card[5] no number in rewrite bullets",
         "card[6] no number in rewrite bullets"
-      ]
+      ],
+      "faithfulness": {
+        "checked": 7,
+        "skippedNoSource": 0,
+        "numberMisses": 0,
+        "quoteMisses": 0
+      }
     }
   ]
 }
