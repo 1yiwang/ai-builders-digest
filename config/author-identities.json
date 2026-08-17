@@ -199,6 +199,16 @@
       "name": "TLDR AI",
       "handle": "@tldrai",
       "label": "Daily Brief"
+    },
+    "blog:Latent Space": {
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "label": "Blog"
+    },
+    "blog:Interconnects": {
+      "name": "Interconnects",
+      "handle": "@natolambert",
+      "label": "Blog"
     }
   }
 }

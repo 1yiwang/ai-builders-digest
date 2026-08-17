@@ -78,6 +78,8 @@
     { "name": "Chip Huyen",       "feedUrl": "https://huyenchip.com/feed.xml" },
     { "name": "The Decoder",      "feedUrl": "https://the-decoder.com/feed/" },
     { "name": "TechCrunch AI",    "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-    { "name": "TLDR AI",          "feedUrl": "https://tldr.tech/api/rss/ai" }
+    { "name": "TLDR AI",          "feedUrl": "https://tldr.tech/api/rss/ai" },
+    { "name": "Latent Space",     "feedUrl": "https://www.latent.space/feed" },
+    { "name": "Interconnects",    "feedUrl": "https://www.interconnects.ai/feed" }
   ]
 }

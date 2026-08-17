@@ -199,8 +199,18 @@
       "localPath": "assets/avatars/blog-tldr-ai.jpg",
       "fileUrl": "https://tldr.tech/apple-touch-icon.png",
       "source": "favicon"
+    },
+    "blog:Latent Space": {
+      "localPath": "assets/avatars/blog-latent-space.jpg",
+      "fileUrl": "https://www.latent.space/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:Interconnects": {
+      "localPath": "assets/avatars/blog-interconnects.jpg",
+      "fileUrl": "https://www.interconnects.ai/favicon.ico",
+      "source": "favicon"
     }
   },
-  "updatedAt": "2026-08-17T07:49:14.753Z",
-  "avatarCount": 40
+  "updatedAt": "2026-08-17T08:12:00.000Z",
+  "avatarCount": 42
 }

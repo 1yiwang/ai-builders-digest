@@ -10,7 +10,7 @@
 
 - **头像**：`download-avatars.js` 只在文件真正保存后写 manifest；渲染时本地缺失则用 `fileUrl`，`<img onerror>` 回退首字母
 - **博客 72h**：`BLOG_LOOKBACK_HOURS` / `blogMaxAgeHours` 168 → 72；无日期的过期条目不再写入 `seenArticles`
-- **源**：去掉中文博客；加入 The Decoder、TechCrunch AI、TLDR AI（VentureBeat AI 分类 RSS 停在 2026-05，未采用）
+- **源**：去掉中文博客；加入 The Decoder、TechCrunch AI、TLDR AI、Latent Space、Interconnects（VentureBeat AI 分类 RSS 停在 2026-05，未采用）
 - **RSS 正文**：不再写空 `description`；无 `content:encoded` 时抓 `og:description`；先解码实体再剥 HTML
 - **进模**：`extractDenseSentences` 替换盲截断；`scoreText` 按类型加权并惩罚空推
 - **软 eval**：无数字 / 子弹 >30 词 / 未知 `authorKey` 只警告，不挡出刊
