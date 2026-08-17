@@ -18,7 +18,8 @@
     "telegram": "node scripts/send-telegram.js",
     "publish": "powershell -File scripts/publish.ps1",
     "prepare-feed": "node scripts/generate-magazine-json.js --prepare-only",
-    "eval": "node scripts/eval-magazine.js",
+    "eval": "node scripts/eval-magazine.js && node scripts/eval-shortlist.js",
+    "eval:shortlist": "node scripts/eval-shortlist.js",
     "full": "node scripts/generate-feed.js && node scripts/generate-magazine-json.js && node scripts/render-ai-builders-digest.js && node scripts/update-index-archive.js && node scripts/send-telegram.js"
   },
   "keywords": [

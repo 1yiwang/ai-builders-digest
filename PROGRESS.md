@@ -2,6 +2,18 @@
 
 最后更新：2026-08-17
 
+## 2026-08-17 — 72h 全窗口 + gold 短名单
+
+规划：`docs/applied-ai-next-plan.md` P1。不接数据库。
+
+已落地：
+
+- **窗口语义**：`generate-feed.js` 每次写出 72h 内全部条目；只跳过 `publishDate < today` 的已用卡片 URL（`scripts/lib/published-urls.js`）。同一天重跑不再得到空 feed。
+- **Gold 短名单**：`data/eval/gold/` 三份夹具 + `scripts/eval-shortlist.js`；`npm run eval` 会重放 `prepareFeedForModel` 并断言 URL / 72h / 同源 ≤2。
+- `prepare-feed.js` 增加 `opts.now`，gold 能冻结时钟。
+
+下一步：源健康 JSONL，或 card `publishedAt` / prompt hash。
+
 ## 2026-08-17 — 72h 新鲜源 + 头像/进模质量
 
 规划：`docs/pipeline-improvement-plan.md`。已推 `main`（`ffa93b4`）。不接数据库。
@@ -18,7 +30,7 @@
 
 本机检查（2026-08-17）：Decoder + TechCrunch + Simon 共 9 篇博客（8/16–8/17）；`npm run prepare-feed` 候选 20 → 短名单 12；`npm run eval` 34 期 current 0/2 fail。Faithfulness：15 张有源卡片，0 number/quote miss。
 
-下一步：gold 短名单回归，或 72h 窗口语义（见 `docs/applied-ai-next-plan.md`）。
+下一步：源健康 JSONL（见 `docs/applied-ai-next-plan.md`）。
 
 ## 2026-08-16 — 新鲜源（X / YouTube）
 

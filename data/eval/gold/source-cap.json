@@ -1,0 +1,58 @@
+{
+  "name": "source-cap",
+  "asOf": "2026-08-17T12:00:00.000Z",
+  "feed": {
+    "generatedAt": "2026-08-17T12:00:00.000Z",
+    "x": [],
+    "podcasts": [],
+    "videos": [],
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "Same Blog",
+        "title": "GPT-5 hits 92% SWE-bench",
+        "url": "https://example.com/a",
+        "publishedAt": "2026-08-17T08:00:00.000Z",
+        "description": "OpenAI launched GPT-5 with 92% on SWE-bench and a $10B round."
+      },
+      {
+        "source": "blog",
+        "name": "Same Blog",
+        "title": "Claude 4.1 scores 88% on MMLU",
+        "url": "https://example.com/b",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "description": "Anthropic released Claude 4.1 with 88% MMLU and NVIDIA GPU news."
+      },
+      {
+        "source": "blog",
+        "name": "Same Blog",
+        "title": "Gemini 3 posts 81% on GPQA",
+        "url": "https://example.com/c",
+        "publishedAt": "2026-08-17T06:00:00.000Z",
+        "description": "Google launched Gemini 3 with 81% on GPQA."
+      },
+      {
+        "source": "blog",
+        "name": "Same Blog",
+        "title": "A quiet changelog",
+        "url": "https://example.com/d",
+        "publishedAt": "2026-08-17T05:00:00.000Z",
+        "description": "Small docs tweak with no numbers."
+      },
+      {
+        "source": "blog",
+        "name": "Other Blog",
+        "title": "DeepSeek V4 reaches 90% on SWE-bench",
+        "url": "https://example.com/e",
+        "publishedAt": "2026-08-16T20:00:00.000Z",
+        "description": "DeepSeek launched V4 with 90% SWE-bench and open weights."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": { "min": 2, "max": 3 },
+    "maxPerSource": 2,
+    "mustInclude": ["https://example.com/e"],
+    "mustExclude": []
+  }
+}

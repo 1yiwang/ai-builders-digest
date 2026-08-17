@@ -3,6 +3,8 @@
 // AI Builders Digest — Local Feed Generator
 // ============================================================================
 // Fetches X + podcast RSS + YouTube channels + blogs (free; X API optional).
+// Each run writes the full 72h window. URLs already used as cards in a
+// previous issue (publishDate < today) are skipped so same-day reruns stay full.
 // Outputs feed JSON files to data/feeds/ for use by generate-magazine-json.js.
 //
 // Usage:
@@ -16,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { loadPublishedUrls, isPublished, tweetUrl } = require('./lib/published-urls');
 
 // -- Constants ---------------------------------------------------------------
 const REPO_ROOT = path.resolve(__dirname, '..');
@@ -273,7 +276,7 @@ async function findYouTubeEpisodeUrl(channelUrl, episodeTitle, state) {
   return bestScore >= 0.5 ? bestUrl : null;
 }
 
-async function fetchYouTubeContent(sources, state, errors) {
+async function fetchYouTubeContent(sources, state, errors, usedUrls) {
   const cutoff = new Date(Date.now() - YOUTUBE_LOOKBACK_HOURS * 60 * 60 * 1000);
   const results = [];
 
@@ -289,12 +292,16 @@ async function fetchYouTubeContent(sources, state, errors) {
       }
 
       let added = 0;
+      let skippedUsed = 0;
       for (const video of videos) {
         const videoId = video.videoId || (video.url || '').match(/[?&]v=([^&]+)/)?.[1];
         if (!videoId || !video.url) continue;
-        if (state.seenVideos[videoId]) continue;
         if (!isFresh(video.publishedAt, cutoff)) {
           markSeen(state, 'seenVideos', videoId);
+          continue;
+        }
+        if (isPublished(video.url, usedUrls)) {
+          skippedUsed += 1;
           continue;
         }
 
@@ -310,7 +317,11 @@ async function fetchYouTubeContent(sources, state, errors) {
         markSeen(state, 'seenVideos', videoId);
         added += 1;
       }
-      console.error(added > 0 ? `    ${added} new video(s)` : '    no new videos in lookback');
+      if (added > 0) {
+        console.error(`    ${added} fresh video(s)${skippedUsed ? ` (${skippedUsed} already in a prior issue)` : ''}`);
+      } else {
+        console.error(skippedUsed ? `    no unused videos in lookback (${skippedUsed} already in a prior issue)` : '    no fresh videos in lookback');
+      }
     } catch (err) {
       errors.push(`YouTube ${channel.name}: ${err.message}`);
     }
@@ -320,7 +331,7 @@ async function fetchYouTubeContent(sources, state, errors) {
 }
 
 // -- Podcast: Main Fetch -----------------------------------------------------
-async function fetchPodcastContent(sources, state, errors) {
+async function fetchPodcastContent(sources, state, errors, usedUrls) {
   const cutoff = new Date(Date.now() - PODCAST_LOOKBACK_HOURS * 60 * 60 * 1000);
   const results = [];
 
@@ -338,14 +349,13 @@ async function fetchPodcastContent(sources, state, errors) {
       const episodes = parseRssFeed(await rssRes.text());
       console.error(`    ${episodes.length} episodes in feed`);
 
-      // Check 3 most recent, skip seen ones
+      // Up to 3 most recent in-window episodes; skip only URLs already used in a prior issue
       for (const ep of episodes.slice(0, 3)) {
-        if (state.seenVideos[ep.guid]) continue;
         const epDate = ep.publishedAt ? new Date(ep.publishedAt) : null;
-        if (epDate && epDate < cutoff) continue;
-
-        console.error(`    New: "${ep.title}"`);
-        state.seenVideos[ep.guid] = Date.now();
+        if (epDate && epDate < cutoff) {
+          if (ep.guid) markSeen(state, 'seenVideos', ep.guid);
+          continue;
+        }
 
         // Try to match YouTube URL
         let youtubeUrl = null;
@@ -353,6 +363,14 @@ async function fetchPodcastContent(sources, state, errors) {
           youtubeUrl = await findYouTubeEpisodeUrl(podcast.url, ep.title, state);
           if (youtubeUrl) console.error(`      YT match: ${youtubeUrl}`);
         }
+        const episodeUrl = youtubeUrl || ep.link || '';
+        if (episodeUrl && isPublished(episodeUrl, usedUrls)) {
+          console.error(`    skip (prior issue): "${ep.title}"`);
+          continue;
+        }
+
+        console.error(`    Fresh: "${ep.title}"`);
+        if (ep.guid) state.seenVideos[ep.guid] = Date.now();
 
         // Use RSS description as content — contains show notes, topics, links
         // Strip HTML tags from description for clean text
@@ -376,7 +394,7 @@ async function fetchPodcastContent(sources, state, errors) {
           publishedAt: ep.publishedAt,
           description: cleanDesc,
         });
-        break; // One new episode per podcast per run
+        break; // One in-window unused episode per podcast per run
       }
     } catch (err) {
       errors.push(`Podcast ${podcast.name}: ${err.message}`);
@@ -512,7 +530,7 @@ function extractClaudeBlogArticleContent(html) {
   return { title, author, publishedAt: toIsoDate(publishedAt) || extractTimeTag(html), content };
 }
 
-async function fetchBlogContent(sources, state, errors) {
+async function fetchBlogContent(sources, state, errors, usedUrls) {
   const cutoff = new Date(Date.now() - BLOG_LOOKBACK_HOURS * 60 * 60 * 1000);
   const results = [];
   const MAX_ARTICLES_PER_BLOG = 3;
@@ -531,22 +549,29 @@ async function fetchBlogContent(sources, state, errors) {
       if (blog.indexUrl.includes('anthropic.com')) candidates = parseAnthropicEngineeringIndex(indexHtml);
       else if (blog.indexUrl.includes('claude.com')) candidates = parseClaudeBlogIndex(indexHtml);
 
-      const newArticles = [];
-      for (const article of candidates.slice(0, MAX_ARTICLES_PER_BLOG)) {
-        if (state.seenArticles[article.url]) continue;
+      const freshArticles = [];
+      let skippedUsed = 0;
+      for (const article of candidates) {
         const indexDate = toIsoDate(article.publishedAt);
         if (indexDate && new Date(indexDate) < cutoff) {
           markSeen(state, 'seenArticles', article.url);
           continue;
         }
-        newArticles.push(article);
-        if (newArticles.length >= MAX_ARTICLES_PER_BLOG) break;
+        if (isPublished(article.url, usedUrls)) {
+          skippedUsed += 1;
+          continue;
+        }
+        freshArticles.push(article);
+        if (freshArticles.length >= MAX_ARTICLES_PER_BLOG) break;
       }
 
-      if (newArticles.length === 0) { console.error('    No new articles'); continue; }
-      console.error(`    ${newArticles.length} new article(s)`);
+      if (freshArticles.length === 0) {
+        console.error(skippedUsed ? `    No unused articles (${skippedUsed} already in a prior issue)` : '    No fresh articles');
+        continue;
+      }
+      console.error(`    ${freshArticles.length} fresh article(s)${skippedUsed ? ` (${skippedUsed} already in a prior issue)` : ''}`);
 
-      for (const article of newArticles) {
+      for (const article of freshArticles) {
         try {
           const articleRes = await fetch(article.url, {
             headers: { 'User-Agent': 'FollowBuilders/1.0 (feed aggregator)' },
@@ -666,7 +691,7 @@ async function fetchPageExcerpt(url) {
   }
 }
 
-async function fetchBlogRSSContent(sources, state, errors) {
+async function fetchBlogRSSContent(sources, state, errors, usedUrls) {
   if (!sources.blogRSS || sources.blogRSS.length === 0) return [];
 
   const cutoff = new Date(Date.now() - BLOG_LOOKBACK_HOURS * 60 * 60 * 1000);
@@ -686,21 +711,25 @@ async function fetchBlogRSSContent(sources, state, errors) {
       const xml = await res.text();
       const articles = parseBlogRSSFeed(xml);
 
-      const newArticles = [];
+      const freshArticles = [];
+      let skippedUsed = 0;
       for (const article of articles) {
-        if (state.seenArticles[article.url]) continue;
         const publishedAt = toIsoDate(article.publishedAt);
         if (!isFresh(publishedAt, cutoff)) {
           if (publishedAt) markSeen(state, 'seenArticles', article.url);
           continue;
         }
-        newArticles.push({ ...article, publishedAt });
-        if (newArticles.length >= 3) break;
+        if (isPublished(article.url, usedUrls)) {
+          skippedUsed += 1;
+          continue;
+        }
+        freshArticles.push({ ...article, publishedAt });
+        if (freshArticles.length >= 3) break;
       }
 
-      if (newArticles.length > 0) {
-        console.error(`    ${newArticles.length} new article(s)`);
-        for (const article of newArticles) {
+      if (freshArticles.length > 0) {
+        console.error(`    ${freshArticles.length} fresh article(s)${skippedUsed ? ` (${skippedUsed} already in a prior issue)` : ''}`);
+        for (const article of freshArticles) {
           let content = article.content || '';
           if (!content) content = await fetchPageExcerpt(article.url);
           results.push({
@@ -716,7 +745,7 @@ async function fetchBlogRSSContent(sources, state, errors) {
           state.seenArticles[article.url] = Date.now();
         }
       } else {
-        console.error('    No new articles');
+        console.error(skippedUsed ? `    No unused articles (${skippedUsed} already in a prior issue)` : '    No fresh articles');
       }
     } catch (err) {
       errors.push(`Blog RSS ${blog.name}: ${err.message}`);
@@ -845,7 +874,7 @@ async function fetchAPITweets(token, userId, cutoff) {
     }));
 }
 
-async function fetchXContent(sources, state, errors) {
+async function fetchXContent(sources, state, errors, usedUrls) {
   if (!sources.x || sources.x.length === 0) {
     console.error('  X: No builders in sources.json — skipping');
     return [];
@@ -915,15 +944,19 @@ async function fetchXContent(sources, state, errors) {
         }
       }
 
-      if (tweets.length > 0) {
-        console.error(`    ${tweets.length} recent tweets`);
+      const unusedTweets = (tweets || []).filter(
+        (tweet) => !isPublished(tweetUrl(builder.handle, tweet.id), usedUrls)
+      );
+      const skippedUsed = (tweets || []).length - unusedTweets.length;
+      if (unusedTweets.length > 0) {
+        console.error(`    ${unusedTweets.length} recent tweet(s)${skippedUsed ? ` (${skippedUsed} already in a prior issue)` : ''}`);
         results.push({
           handle: `@${builder.handle}`,
           name: builder.name,
-          tweets,
+          tweets: unusedTweets,
         });
       } else {
-        console.error('    no recent tweets');
+        console.error(skippedUsed ? `    no unused tweets (${skippedUsed} already in a prior issue)` : '    no recent tweets');
       }
     } catch (err) {
       errors.push(`X @${builder.handle}: ${err.message}`);
@@ -959,18 +992,20 @@ async function main() {
   }
   const sources = loadSources();
   const state = loadState();
+  const usedUrls = loadPublishedUrls(REPO_ROOT);
   const errors = [];
 
   // Ensure output directory
   if (!fs.existsSync(FEEDS_DIR)) fs.mkdirSync(FEEDS_DIR, { recursive: true });
 
   console.error('=== AI Builders Digest — Local Feed Generator ===\n');
+  console.error(`Prior-issue URLs excluded: ${usedUrls.size}\n`);
 
   // Podcasts
   if (runPodcasts && sources.podcasts?.length > 0) {
     console.error('[Podcasts] Fetching RSS + YouTube...');
-    const podcasts = await fetchPodcastContent(sources, state, errors);
-    console.error(`  → ${podcasts.length} new episode(s)\n`);
+    const podcasts = await fetchPodcastContent(sources, state, errors, usedUrls);
+    console.error(`  → ${podcasts.length} fresh episode(s)\n`);
 
     const podcastFeed = {
       generatedAt: new Date().toISOString(),
@@ -988,19 +1023,19 @@ async function main() {
 
     // RSS-based blogs (Hugging Face, OpenAI, Together AI, etc.)
     if (sources.blogRSS?.length > 0) {
-      const rssBlogs = await fetchBlogRSSContent(sources, state, errors);
-      console.error(`  RSS: ${rssBlogs.length} new article(s)`);
+      const rssBlogs = await fetchBlogRSSContent(sources, state, errors, usedUrls);
+      console.error(`  RSS: ${rssBlogs.length} fresh article(s)`);
       blogs = blogs.concat(rssBlogs);
     }
 
     // Scraped blogs (Anthropic Engineering, Claude Blog)
     if (sources.blogs?.length > 0) {
-      const scrapedBlogs = await fetchBlogContent(sources, state, errors);
-      console.error(`  Scrape: ${scrapedBlogs.length} new article(s)`);
+      const scrapedBlogs = await fetchBlogContent(sources, state, errors, usedUrls);
+      console.error(`  Scrape: ${scrapedBlogs.length} fresh article(s)`);
       blogs = blogs.concat(scrapedBlogs);
     }
 
-    console.error(`  → ${blogs.length} total new article(s)\n`);
+    console.error(`  → ${blogs.length} total fresh article(s)\n`);
   }
 
   const blogFeed = {
@@ -1016,8 +1051,8 @@ async function main() {
   // YouTube channels (first-class, Atom — no Data API)
   if (runYoutube && sources.youtube?.length > 0) {
     console.error('[YouTube] Fetching channel Atom feeds...');
-    const videos = await fetchYouTubeContent(sources, state, errors);
-    console.error(`  → ${videos.length} new video(s)\n`);
+    const videos = await fetchYouTubeContent(sources, state, errors, usedUrls);
+    console.error(`  → ${videos.length} fresh video(s)\n`);
 
     const youtubeFeed = {
       generatedAt: new Date().toISOString(),
@@ -1032,7 +1067,7 @@ async function main() {
   let xResults = [];
   if (runX && sources.x?.length > 0) {
     console.error('[X/Twitter] Fetching tweets via API v2...');
-    xResults = await fetchXContent(sources, state, errors);
+    xResults = await fetchXContent(sources, state, errors, usedUrls);
     console.error(`  → ${xResults.length} builder(s) with recent tweets\n`);
   }
 

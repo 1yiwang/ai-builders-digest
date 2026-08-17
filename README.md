@@ -16,8 +16,8 @@ This repo treats that as an applied-AI systems problem: **filter before you gene
 RSS / Atom / Nitter (optional X API)
         │
         ▼
-generate-feed.js          72h date gate, skip undated/stale items
-        │                 data/feeds/*.json  +  data/state-feed.json
+generate-feed.js          72h date gate; skip URLs already used in a prior issue
+        │                 same-day reruns still return the full window
         ▼
 prepare-feed.js           density extract + score + caps
         │                 12-item shortlist, ~token budget 12k
@@ -49,7 +49,8 @@ GitHub Actions runs this Mon/Wed/Fri at 06:00 UTC. There is no database, no vect
 - At most **10** cards, at most **2** from the same source
 - Each card needs `authorKey`, `priority` ∈ {1,2,3}, and non-empty `en` / `de` rewrites
 - Feed items older than **72 hours**, or blogs with no parseable date, are dropped
-- Eval (`npm run eval`) replays every `data/issues/*.json` with no model call
+- Each feed run is the **full 72h window**; only URLs already used as cards in a *previous* issue are skipped (same-day reruns stay full)
+- Eval (`npm run eval`) replays every `data/issues/*.json` plus gold shortlist fixtures, with no model call
 - Faithfulness (current issues only, warnings): numbers and English `original` lines must appear in on-disk feed text for that `sourceUrl`. Cards whose source is no longer in `data/feeds/` are skipped.
 
 Soft warnings (do not block publish): rewrite bullets without a number; bullets longer than 30 words; unknown `authorKey`.
@@ -78,7 +79,7 @@ scripts/          feed → prepare → generate → eval → avatars
 scripts/lib/      prepare-feed.js, validate-magazine.js, providers.js
 data/feeds/       last raw intake
 data/issues/      magazine JSON (source of truth)
-data/eval/        last eval report
+data/eval/        last eval report + gold shortlist fixtures
 issues/           rendered HTML
 .github/workflows/daily-digest.yml
 ```
@@ -91,7 +92,7 @@ Needs Node 22+. Put `DEEPSEEK_API_KEY` (or `ANTHROPIC_*` pointing at DeepSeek’
 npm run feed          # refresh data/feeds
 npm run prepare-feed  # shortlist only, no API call
 npm run generate      # DeepSeek → data/issues/ai-builders-digest-YYYY-MM-DD.json
-npm run eval          # schema replay, no API call
+npm run eval          # schema + faithfulness + gold shortlist, no API call
 npm run full          # feed → generate → render → archive → Telegram
 ```
 
@@ -103,6 +104,6 @@ Public RSS/Atom first (Hugging Face, OpenAI, Simon Willison, The Decoder, TechCr
 
 ## Status
 
-Shipped: 72h freshness, density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings against feed text.
+Shipped: 72h full-window feeds (prior-issue URL gate, not seen-since-last-run), density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings, gold shortlist regression.
 
-Next (see [`docs/applied-ai-next-plan.md`](docs/applied-ai-next-plan.md)): gold-set shortlist regression, and treating each feed run as the full 72h window rather than “new since last run.”
+Next (see [`docs/applied-ai-next-plan.md`](docs/applied-ai-next-plan.md)): source-health JSONL, card `publishedAt` / prompt fingerprint.

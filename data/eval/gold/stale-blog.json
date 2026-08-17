@@ -1,0 +1,34 @@
+{
+  "name": "stale-blog",
+  "asOf": "2026-08-17T12:00:00.000Z",
+  "feed": {
+    "generatedAt": "2026-08-17T12:00:00.000Z",
+    "x": [],
+    "podcasts": [],
+    "videos": [],
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "Stale Source",
+        "title": "Old GPT-5 launch with 99% MMLU",
+        "url": "https://example.com/old",
+        "publishedAt": "2026-08-13T12:00:00.000Z",
+        "description": "OpenAI launched GPT-5 with 99% on MMLU and a $2B round."
+      },
+      {
+        "source": "blog",
+        "name": "Fresh Source",
+        "title": "Claude 5 ships with 88% SWE-bench",
+        "url": "https://example.com/fresh",
+        "publishedAt": "2026-08-16T12:00:00.000Z",
+        "description": "Anthropic launched Claude 5 with 88% on SWE-bench."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": { "exact": 1 },
+    "maxPerSource": 2,
+    "mustInclude": ["https://example.com/fresh"],
+    "mustExclude": ["https://example.com/old"]
+  }
+}

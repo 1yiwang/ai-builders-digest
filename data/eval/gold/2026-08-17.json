@@ -1,0 +1,171 @@
+{
+  "name": "2026-08-17-live",
+  "asOf": "2026-08-17T08:02:27.624Z",
+  "feed": {
+    "generatedAt": "2026-08-17T08:02:27.624Z",
+    "x": [
+      {
+        "handle": "@AndrewYNg",
+        "name": "Andrew Ng",
+        "tweets": [
+          {
+            "id": "2088302050706686198",
+            "text": "New: A map of the most important skills in AI Engineering.",
+            "createdAt": "2026-08-14T16:29:42.000Z"
+          }
+        ]
+      },
+      {
+        "handle": "@rauchg",
+        "name": "Guillermo Rauch",
+        "tweets": [
+          {
+            "id": "2089179650891432270",
+            "text": "xn--c1h.to",
+            "createdAt": "2026-08-17T02:36:58.000Z"
+          },
+          {
+            "id": "2089126690043916495",
+            "text": "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier. Given its lower costs, I expect this to be a boon for defensive security work. e.g., it means you can run https://deepsec.sh at least 3× more often!",
+            "createdAt": "2026-08-16T23:06:31.000Z"
+          },
+          {
+            "id": "2088838302367732178",
+            "text": "Recursive self improvement",
+            "createdAt": "2026-08-16T04:00:34.000Z"
+          },
+          {
+            "id": "2088801077659635715",
+            "text": "Impressive",
+            "createdAt": "2026-08-16T01:32:39.000Z"
+          },
+          {
+            "id": "2088757738037989755",
+            "text": "I think people don’t realize how much of the success of React is actually @shadcn. I once referred to React as the actual “LEGO brick for adults.” But in reality it was more the description of the geometry of the bricks. The spec. Shadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.",
+            "createdAt": "2026-08-15T22:40:26.000Z"
+          },
+          {
+            "id": "2088735125744070932",
+            "text": "I’m interested in finding and funding the next Disney. True to its original values, focused on the American spirit. Merit, family, overcoming of adversity, optimism, the pursuit of happiness. AI makes everyone able to create. What will define our next generation is *what* we create with it. The next icons. The next unique brand that goes further than how it’s drawn or rendered. Mickey Mouse survived several technological revolutions because of what it represented. I think most big entertainment companies have forgotten that. If you’re creating something cool in this space and need help, technologically or financially, slide into my DMs.",
+            "createdAt": "2026-08-15T21:10:35.000Z"
+          },
+          {
+            "id": "2088323451132199338",
+            "text": "Vercel is the fastest [AI Gateway] infrastructure in the world",
+            "createdAt": "2026-08-14T17:54:44.000Z"
+          }
+        ]
+      }
+    ],
+    "podcasts": [],
+    "videos": [
+      {
+        "source": "youtube",
+        "name": "Dwarkesh Patel",
+        "handle": "@DwarkeshPatel",
+        "title": "AI Risk Might Be Manageable Yet Still Be Mismanaged - Ryan Greenblatt",
+        "url": "https://www.youtube.com/watch?v=8bdncWiRRX0",
+        "publishedAt": "2026-08-16T20:30:26.000Z",
+        "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+      }
+    ],
+    "blogs": [
+      {
+        "source": "blog-rss",
+        "name": "Simon Willison",
+        "title": "Markdown SVG upgrades",
+        "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+        "publishedAt": "2026-08-16T23:59:37.000Z",
+        "description": "I started building my markdown-svg-renderer tool in May , but I've since added enough features to it that it's worth talking about here again. It's evolved into my ideal tool for sharing Markdown transcripts that include SVG documents. Given my proclivity for drawing pelicans riding bicycles this is a problem that I needed to solve! The tool is very simple. Navigate to markdown-svg-renderer in your browser and paste in some Markdown to see it rendered... or save that Markdown to a CORS-friendly URL or a GitHub Gist and paste in a URL to that document. The URL option will give you a bookmarkable page, for example https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F6f9e48293be5c916652d29f0dc0b0657 - which bakes in the URL to this Gist . If you visit the Gist you'll see raw SVG: In the rendered tool that looks like this instead: As you can see, that SVG block in the Markdown has been transformed into a rendered SVG (in this case animated) plus several tabs. The tabs are the really fun bit. The PNG and JPEG tabs render that SVG to those image formats in the browser and lets you copy or download them - useful for sharing on platforms that d…"
+      },
+      {
+        "source": "blog-rss",
+        "name": "Simon Willison",
+        "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+        "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+        "publishedAt": "2026-08-16T22:00:39.000Z",
+        "description": "Friday's big release was Qwen 3.8 27B , an Apache 2 licensed 27B parameter vision-capable LLM from Alibaba's Qwen research lab. I've been looking forward to this one: 27B is an excellent size for running a model on a reasonably specced laptop, and its predecessor Qwen 3.6 27B was impressive. Qwen's self-reported benchmarks for this model are eye-opening. They show a boost from both Qwen 3.6 27B and the closed-weight Qwen 3.7-Plus, which was one of Qwen's strongest models of any size as recently as May this year . It will be interesting to hear what independent benchmarks have to say about the model. I've been running the model on two different machines: my 128GB M5 Max MacBook Pro, and an NVIDIA DGX Spark . On both machines I'm running LM Studio and their 17GB Q4_K_M quantized build . I also tried using llama-server directly on the Spark. The default of extra high results in spectacular over-thinking Qwen's documentation describes the model as defaulting to xhigh for the reasoning effort, and the LM Studio GGUF I've been trying preserves that default: Qwen3.8 comes with official support for reasoning_effort , which can be used to adjust reasoning depth and control cost: xhigh (defa…"
+      },
+      {
+        "source": "blog-rss",
+        "name": "Simon Willison",
+        "title": "Quoting Dario Amodei",
+        "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
+        "publishedAt": "2026-08-16T15:05:36.000Z",
+        "description": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisis of trust. I think that ordinary people don’t trust companies, governments, or the tech industry and always suspect that we are cooking up some new way to screw them over. The causes of this go back decades and AI is just the latest iteration of it. I don’t think that a glitzy marketing campaign with a positive spin (which some have advocated that Anthropic do) is the way to win back that trust — at this point, saying that AI will cure cancer is more a cliche than it is inspiring, and most people think it is deceptive. The thing that will work is actually curing cancer . I think by far the most accurate criticism of AI companies including Anthropic is that we haven’t yet delivered on our big promises to benefit the world. That is totally on us, and I think it’s the criticism you should be making, instead of all this stuff about messaging and marketing. &mdash; Dario Amodei Tags: anthropic , ai , ai-backlash"
+      },
+      {
+        "source": "blog-rss",
+        "name": "The Decoder",
+        "title": "AI and data centers have leapfrogged Israel, racism, and crypto as US campaign topics",
+        "url": "https://the-decoder.com/ai-and-data-centers-have-leapfrogged-israel-racism-and-crypto-as-us-campaign-topics/",
+        "publishedAt": "2026-08-17T07:58:28.000Z",
+        "description": "AI shows up in nearly 40 percent of all US races, ranking ahead of Israel, racism, and manufacturing as a campaign topic. Data centers and their impact on electricity costs and local resources drive most of the conversation. The article AI and data centers have leapfrogged Israel, racism, and crypto as US campaign topics appeared first on The Decoder ."
+      },
+      {
+        "source": "blog-rss",
+        "name": "The Decoder",
+        "title": "Stripe is reportedly acquiring AI startup OpenRouter for more than $7 billion",
+        "url": "https://the-decoder.com/stripe-is-reportedly-acquiring-ai-startup-openrouter-for-more-than-7-billion/",
+        "publishedAt": "2026-08-17T06:49:10.000Z",
+        "description": "According to Bloomberg, Stripe is acquiring the AI startup OpenRouter for more than $7 billion, up from a latest valuation of $1.3 billion. OpenRouter offers access to over 400 AI models, has eight million users, and its CEO had described the company as \"Stripe for AI.\" Now that's becoming a reality. The article Stripe is reportedly acquiring AI startup OpenRouter for more than $7 billion appeared first on The Decoder ."
+      },
+      {
+        "source": "blog-rss",
+        "name": "The Decoder",
+        "title": "Top mathematicians say LLMs are strong calculators but poor creative thinkers",
+        "url": "https://the-decoder.com/top-mathematicians-say-llms-are-strong-calculators-but-poor-creative-thinkers/",
+        "publishedAt": "2026-08-16T15:31:21.000Z",
+        "description": "Two renowned mathematicians, Timothy Gowers and Peter Sarnak, say large language models are good at combining known methods but lack the intuition for genuinely new mathematical ideas. The article Top mathematicians say LLMs are strong calculators but poor creative thinkers appeared first on The Decoder ."
+      },
+      {
+        "source": "blog-rss",
+        "name": "TechCrunch AI",
+        "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+        "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+        "publishedAt": "2026-08-16T20:57:04.000Z",
+        "description": "OpenRouter's CEO recently described the startup as Stripe for AI."
+      },
+      {
+        "source": "blog-rss",
+        "name": "TechCrunch AI",
+        "title": "Why people aren’t buying Mark Zuckerberg’s AI future",
+        "url": "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/",
+        "publishedAt": "2026-08-16T20:32:01.000Z",
+        "description": "On the latest episode of Equity podcast, we discuss why not everyone is buying Zuckerberg’s vision."
+      },
+      {
+        "source": "blog-rss",
+        "name": "TechCrunch AI",
+        "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+        "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+        "publishedAt": "2026-08-16T16:53:51.000Z",
+        "description": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": {
+      "exact": 10,
+      "min": 4,
+      "max": 12
+    },
+    "maxPerSource": 2,
+    "mustInclude": [
+      "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+    ],
+    "urlsExact": [
+      "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "https://www.youtube.com/watch?v=8bdncWiRRX0",
+      "https://the-decoder.com/ai-and-data-centers-have-leapfrogged-israel-racism-and-crypto-as-us-campaign-topics/",
+      "https://the-decoder.com/stripe-is-reportedly-acquiring-ai-startup-openrouter-for-more-than-7-billion/",
+      "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
+      "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+      "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+      "https://x.com/rauchg/status/2089126690043916495",
+      "https://x.com/rauchg/status/2089179650891432270",
+      "https://x.com/AndrewYNg/status/2088302050706686198"
+    ]
+  }
+}

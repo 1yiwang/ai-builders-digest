@@ -110,18 +110,25 @@ function parseItemDate(item) {
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
-function isFreshEnough(item) {
+function nowMs(value) {
+  if (value == null) return Date.now();
+  const ms = typeof value === 'number' ? value : new Date(value).getTime();
+  return Number.isNaN(ms) ? Date.now() : ms;
+}
+
+function isFreshEnough(item, now = Date.now()) {
   const date = parseItemDate(item);
+  const clock = nowMs(now);
   const maxHours = item.kind === 'blog' ? DEFAULTS.blogMaxAgeHours : DEFAULTS.defaultMaxAgeHours;
   if (item.kind === 'blog') {
     if (!date) return false;
-    return Date.now() - date.getTime() <= maxHours * 3600 * 1000;
+    return clock - date.getTime() <= maxHours * 3600 * 1000;
   }
   if (!date) return true;
-  return Date.now() - date.getTime() <= maxHours * 3600 * 1000;
+  return clock - date.getTime() <= maxHours * 3600 * 1000;
 }
 
-function flattenCandidates(feedData) {
+function flattenCandidates(feedData, now = Date.now()) {
   const items = [];
 
   for (const builder of feedData.x || []) {
@@ -187,7 +194,7 @@ function flattenCandidates(feedData) {
     });
   }
 
-  return items.filter(isFreshEnough);
+  return items.filter((item) => isFreshEnough(item, now));
 }
 
 function truncateItem(item, charBudget) {
@@ -283,9 +290,10 @@ function prepareFeedForModel(feedData, opts = {}) {
   const applyShortlist = opts.applyShortlist !== false;
   const shortlistLimit = opts.shortlistLimit ?? DEFAULTS.shortlistLimit;
   const generatedAt = feedData.generatedAt || new Date().toISOString();
+  const now = nowMs(opts.now ?? Date.now());
 
   const rawChars = JSON.stringify(feedData, null, 2).length;
-  let items = flattenCandidates(feedData).map(truncateItem);
+  let items = flattenCandidates(feedData, now).map(truncateItem);
   const candidatesIn = items.length;
 
   if (tokensFor(items, generatedAt) > budgetTokens) {

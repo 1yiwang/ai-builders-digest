@@ -1,7 +1,7 @@
 # Applied AI Engineer — 下一轮升级
 
 > 日期：2026-08-17  
-> 状态：README ✅、faithfulness eval ✅（2026-08-17）；其余未改管线代码  
+> 状态：README ✅、faithfulness eval ✅、gold 短名单 ✅、72h 全窗口 ✅；源健康账本未做  
 > 约束：不接数据库、不上向量库、不微调、不加 multi-agent。SignalDesk 已经覆盖检索；这边只加深 **生成系统**。
 
 ---
@@ -24,7 +24,7 @@ Applied AI Engineer 不是「会调 API」。他们听的是：
 
 ```
 RSS / Nitter / Atom
-    → generate-feed（72h 闸门 + seen 去重）
+    → generate-feed（72h 全窗口；只跳过上一期已用过的 URL）
     → prepare-feed（密度抽取 + 打分 + 12 条短名单）
     → DeepSeek 一次写成 JSON
     → schema 校验，失败修 1 次
@@ -33,7 +33,7 @@ RSS / Nitter / Atom
 
 本期可讲的数字（2026-08-17 重出）：进模约 741 tokens（原始 41k 字符砍掉 93%），7 张卡片，估成本 $0.0034。
 
-缺口：eval 几乎只检查 JSON 形状，不检查「子弹里的数字是不是源里有的」。
+Eval 现在覆盖 schema、faithfulness（警告）、以及冻结短名单 gold。还缺的是源健康账本和卡片上的 `publishedAt`。
 
 ---
 
@@ -54,24 +54,20 @@ RSS / Nitter / Atom
 
 2026-08-17 实测：15 张有源文本的卡片，0 number miss，0 quote miss。合成用例能抓住「99.9%」这种编造数字。
 
-### P1 — 冻结短名单回归集
+### P1 — 冻结短名单回归集 ✅
 
-挑 3 期（含 2026-08-17）把当天 `data/debug/shortlist-*.json` + 期望约束存进 `data/eval/gold/`：
+`data/eval/gold/` + `scripts/eval-shortlist.js`，由 `npm run eval` 调用。重放 `prepareFeedForModel`，不断模型：
 
-- 必须出现的 URL / 禁止出现的过期 URL  
-- 卡片数 4–10、同源 ≤2  
-- 重放 `prepare-feed` 不断模型，断言短名单稳定  
+- `2026-08-17.json`：冻结当天 feed，断言短名单 URL 集合
+- `stale-blog.json`：>72h 博客必须丢掉
+- `source-cap.json`：同源 ≤2
+- 另测 `loadPublishedUrls`：当天刊 URL 可重跑，上一期刊 URL 排除
 
-这是 applied 岗最常见的「你怎么防止 prompt 一改全崩」。
+改 `prepare-feed.js` 打分或截断若让短名单漂移，gold 会红。
 
-### P1 — 采集窗口 = 最近 72h，去重只防跨期
+### P1 — 采集窗口 = 最近 72h，去重只防跨期 ✅
 
-现在 `seenArticles` 让「同一天重跑」变成空 feed。产品语义应是：
-
-- 每次 feed = 窗口内全部新鲜条目  
-- seen 只用于「上一期已经用过的 URL 不再进下一期」  
-
-MWF 更稳，也更符合「每次查取都是最近 3 天」。
+`seenArticles` / `seenVideos` 不再挡住窗口内条目。`scripts/lib/published-urls.js` 从 `data/issues/` 收集 `publishDate < today` 的卡片 URL；同一天重跑仍写出完整 72h feed，周三才丢掉周一已用过的 URL。
 
 ### P1 — 源健康账本
 
@@ -101,10 +97,10 @@ MWF 更稳，也更符合「每次查取都是最近 3 天」。
 
 ## 落地顺序（约 1 周，穿插投简历）
 
-1. README（0.5 天）— 立刻提升 GitHub 观感  
-2. Faithfulness eval（1 天）— 核心技术故事  
-3. 72h 窗口语义 + 源健康日志（1 天）— 稳定性  
-4. Gold 短名单回归（0.5 天）— 防回归  
-5. card 日期 / prompt hash（0.5 天）— 账本补全  
+1. README ✅  
+2. Faithfulness eval ✅  
+3. 72h 窗口语义 ✅  
+4. Gold 短名单回归 ✅  
+5. 源健康日志 / card 日期 / prompt hash — 还没做  
 
-做完 1–2，简历上 Digest 可以从「自动写杂志」改成「带 groundedness 检查的低成本生成管线」。
+做完 1–4，简历上 Digest 可以讲「带 groundedness 检查和短名单回归的低成本生成管线」。
