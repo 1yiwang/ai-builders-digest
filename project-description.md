@@ -1,132 +1,178 @@
-# AI Builders Digest — Project Description
+# AI Builders Digest — 对外介绍
 
-A fully automated, end-to-end pipeline that turns the daily noise of the AI industry
-into a curated, bilingual (DE/EN) digital magazine.
-
----
-
-## 1. Business Logic (verified against the codebase)
-
-| Stage | What actually happens |
-|---|---|
-| **Trigger** | GitHub Actions cron `0 6 * * 1,3,5` → **Mon / Wed / Fri at 06:00 UTC** (08:00 Zurich). Also manually dispatchable. |
-| **Data Collection** | Three parallel sources, not just X:<br/>• **X / Twitter** — 9 hand-picked AI builders, last **24h** (Nitter RSS by default; X API v2 if `X_BEARER_TOKEN` is set)<br/>• **Podcasts** — 11 feeds, last **72h**<br/>• **Blogs** — 10 sources (2 scraped + 8 RSS), last **72h** |
-| **Clean & Prepare** | Deduplication via persistent state (`data/state-feed.json`), time-window filtering, merge + normalization of all sources into `data/feeds/*.json` ("Prepare AI Input"). |
-| **AI Processing** | A large language model — **DeepSeek (primary)**, **Claude / Anthropic (fallback)** — classifies, distills, and rewrites the feed into **structured bilingual (DE/EN) JSON** (title, sections, cards, priority, tags). |
-| **Store & Render** | The model output is validated and saved as the issue's source-of-truth JSON (`data/issues/*.json`). **Git is the datastore** — there is no traditional database. The issue is rendered to static HTML, the Archive is auto-updated, and a **Telegram** notification is pushed. |
-| **Publish & Display** | The static "digital magazine" (cover + themed sections + browsable back issues) is deployed automatically to **Vercel** (auto-deploy on push; also on GitHub Pages). |
-
-**In one sentence:** X + Podcasts + Blogs → dedup & normalize → LLM bilingual summary → Git storage → static magazine auto-published.
-
-### Key facts / corrections vs. the original draft
-
-- **Number of X builders:** currently **9** (not 6–8).
-- **Sources are not X-only:** the pipeline also aggregates **11 podcasts** and **10 blogs**.
-- **No traditional database:** issues are stored as JSON files, version-controlled in **Git**.
-- **Lookback windows differ:** X = 24h, Podcasts & Blogs = 72h.
-- **Extra output:** a **Telegram** push notification is part of each run.
+> 改 CV-site / 简历时用这一页。数字对照代码核实于 2026-08-17。  
+> Live: [ainews.yiwang.dev](https://ainews.yiwang.dev/) · [repo](https://github.com/1yiwang/ai-builders-digest)
 
 ---
 
-## 2. Architecture Diagram (Mermaid)
+## 那张流程图大概是哪个网站
 
-```mermaid
-flowchart LR
-  %% ===== region (subgraph) tints =====
-  style S1 fill:#fffbeb,stroke:#f59e0b,stroke-width:1px,color:#78350f
-  style S2 fill:#eff6ff,stroke:#3b82f6,stroke-width:1px,color:#1e3a8a
-  style S3 fill:#eef2ff,stroke:#6366f1,stroke-width:1px,color:#312e81
-  style S4 fill:#faf5ff,stroke:#a855f7,stroke-width:1px,color:#581c87
-  style S5 fill:#f0fdf4,stroke:#22c55e,stroke-width:1px,color:#14532d
-  style S6 fill:#fff1f2,stroke:#f43f5e,stroke-width:1px,color:#881337
+画风是粉彩分区、圆角卡片、标题旁线稿图标，和 **[Napkin.ai](https://www.napkin.ai)** 最像。其次才是 [Whimsical](https://whimsical.com) 或 [Excalidraw](https://excalidraw.com)。
 
-  subgraph S1["⏱ Trigger"]
-    direction TB
-    T1["GitHub Actions · Cron<br/>Mon · Wed · Fri — 06:00 UTC"]
-  end
+Napkin 的典型用法：把一段流程贴进去生成图，之后点文字就能改。如果你当时是用旧版 `project-description.md` 里那六段（Trigger / Data Collection / Clean / AI / Store / Publish）生成的，登录 Napkin 看最近项目即可。
 
-  subgraph S2["📡 Data Collection"]
-    direction TB
-    X["X / Twitter<br/>9 AI builders · last 24h<br/>Nitter RSS / X API v2"]
-    P["Podcasts<br/>11 feeds · last 72h"]
-    B["Blogs<br/>10 sources · last 72h"]
-  end
+## 流程图文字（按原图逐格替换）
 
-  subgraph S3["🧹 Clean &amp; Prepare"]
-    direction TB
-    C1["Dedup + time-window filter<br/>persistent state"]
-    C2["Merge &amp; normalize<br/>→ Prepare AI Input (feed JSON)"]
-  end
+结构不用动，六个色块、从左到右。每格仍是标题 + 两三行关键词，不要写成句子。
 
-  subgraph S4["🧠 AI Processing"]
-    direction TB
-    A1["LLM Summarize &amp; Classify<br/>DeepSeek (primary) · Claude (fallback)"]
-    A2["Structured bilingual JSON<br/>title · cards · tags · EN/DE"]
-  end
+### Trigger（黄）
 
-  subgraph S5["🗄 Store &amp; Render"]
-    direction TB
-    D1["Validate + save issue JSON<br/>Git as datastore"]
-    D2["Render magazine HTML"]
-    D3["Auto-update Archive"]
-  end
 
-  subgraph S6["🌐 Publish &amp; Display"]
-    direction TB
-    PUB["Deploy on Vercel<br/>auto on push"]
-    TG["Telegram push"]
-    MAG["Digital Magazine<br/>cover + back issues"]
-  end
+| 原文字                 | 改成                  |
+| ------------------- | ------------------- |
+| GitHub Actions Cron | GitHub Actions Cron |
+| Mon - Wed - Fri     | Mon · Wed · Fri     |
+| 08:00 UTC           | 06:00 UTC           |
 
-  T1 --> X
-  T1 --> P
-  T1 --> B
-  X --> C1
-  P --> C1
-  B --> C1
-  C1 --> C2 --> A1 --> A2 --> D1
-  D1 --> D2 --> D3 --> PUB --> MAG
-  D1 --> TG
 
-  %% ===== node styles =====
-  classDef trigger fill:#fde68a,stroke:#f59e0b,stroke-width:2px,color:#78350f;
-  classDef collect fill:#bfdbfe,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a;
-  classDef clean   fill:#c7d2fe,stroke:#6366f1,stroke-width:2px,color:#312e81;
-  classDef ai      fill:#e9d5ff,stroke:#a855f7,stroke-width:2px,color:#581c87;
-  classDef store   fill:#bbf7d0,stroke:#22c55e,stroke-width:2px,color:#14532d;
-  classDef publish fill:#fecdd3,stroke:#f43f5e,stroke-width:2px,color:#881337;
+原图写成 08:00 UTC 是错的（那是苏黎世时间）。代码是 `0 6 * * 1,3,5`。
 
-  class T1 trigger;
-  class X,P,B collect;
-  class C1,C2 clean;
-  class A1,A2 ai;
-  class D1,D2,D3 store;
-  class PUB,TG,MAG publish;
-```
+### Data Collection（蓝）→ 三个子卡片不要按「X / 播客 / 博客」拆
 
-> Color coding by stage: Trigger = amber, Collection = blue, Clean = indigo, AI = purple, Store = green, Publish = rose.
-> If your Mermaid renderer is strict about emojis, remove `⏱📡🧹🧠🗄🌐` from the subgraph titles.
+**11 feeds 和 13 sources 不重合。**  
+11 = 播客节目；13 = 博客站点。两套名单，没有同一个源数两遍。
+
+**RSS 用在哪**
+
+| 源 | 数量 | 怎么取 |
+|---|---|---|
+| 播客 | 11 | 全是 RSS |
+| 博客 | 13 | **11 个 RSS**，2 个页面抓取（Anthropic、Claude） |
+| YouTube | 5 | Atom（和 RSS 同类） |
+| X | 8 | Nitter 也是 RSS；有 token 才走 API |
+
+所以 RSS 还在，而且覆盖大多数源。只有 Anthropic / Claude 两家博客没有可用 RSS。
+
+原图三个并列盒（X、Podcasts、Blogs）会让 11 和 13 看起来像同一类数字。改成：前两格写真正的信息源和取法，第三格做总结。
+
+| 子卡片 | 原角色 | 改成（关键词） |
+|---|---|---|
+| 左 | X / Twitter Feed | **Sources** |
+| | | X 8 · YouTube 5 |
+| | | podcasts 11 · blogs 13 |
+| 中 | Podcasts Discovery | **Intake** |
+| | | RSS / Atom for most |
+| | | 2 blogs scraped |
+| 右 | Blogs RSS Aggregator | **Window** |
+| | | last 72h |
+| | | Nitter or X API |
+
+不要在三张卡上同时再写一遍 `11 feeds` 和 `13 sources`。数字只出现在左边 Sources 里，并标上 podcasts / blogs，就不会混。
+
+
+### Clean & Prepare（紫）→ 标题可改成 Transform
+
+
+| 原文字                  | 改成                      |
+| -------------------- | ----------------------- |
+| Deduplicate & Filter | 72h date gate           |
+| Time-Window Filter   | prior-issue URL skip    |
+| (Persistent State)   | （删掉 Persistent State）   |
+| Merge & Normalize    | density extract · score |
+| → Prepare AI Input   | max 2 / source          |
+| (Feed JSON)          | 12-item shortlist       |
+
+
+### AI Processing（粉）
+
+
+| 原文字                    | 改成                       |
+| ---------------------- | ------------------------ |
+| LLM Core Engine        | one DeepSeek call        |
+| DeepSeek (Primary)     | URLs locked to shortlist |
+| Claude (Fallback)      | （删掉 Claude）              |
+| Structured JSON Output | DE/EN JSON               |
+| Title • Cards • Tags   | schema · 1 repair        |
+| Bilingual (EN / CN)    | skip if still invalid    |
+
+
+原图 EN/CN 是错的，杂志是 **EN/DE**。
+
+### Store & Render / Publish & Display（绿 + 红）
+
+后面这些格子不用改，原文已经够清楚。重点只改前面的数据准备和 AI Processing。
+
+
+### 改完后每格应看到的字（复制用，对原图格子）
+
+**Trigger**（1 格）  
+GitHub Actions Cron  
+Mon · Wed · Fri  
+06:00 UTC
+
+**Data Collection**（原 3 格，不要按 X/播客/博客切）
+
+左 · 原 X / Twitter Feed  
+X, YouTube, podcasts, blogs  
+8 · 5 · 11 · 13
+
+中 · 原 Podcasts Discovery  
+mostly RSS and Atom  
+Anthropic and Claude: scrape
+
+右 · 原 Blogs RSS Aggregator  
+last 72 hours  
+Nitter, or X API if we have a key
+
+**Clean & Prepare**（原 2 格。不要再写 72h，窗口已在收集阶段说过。）
+
+左 · 原 Deduplicate & Filter  
+Dedup + source cleanup  
+prior-issue URL filter  
+drop stale / undated items
+
+右 · 原 Merge & Normalize  
+Merge & Normalize  
+→ Prepare AI Input  
+(Feed JSON)
+
+**AI Processing**（原 2 格）
+
+左 · 原 LLM Core Engine  
+LLM Core Engine  
+DeepSeek API  
+shortlist context
+
+右 · 原 Structured JSON Output  
+Structured JSON Output  
+Title · Cards · Tags  
+Bilingual EN / DE
+
+**Store & Render / Publish & Display**  
+Keep original text.
+
 
 ---
 
-## 3. Project Description (~150 words)
+## CV 卡片（可粘贴）
 
-### English
+### 介绍段
 
-> **AI Builders Digest** is an autonomous, end-to-end pipeline that turns the daily noise of the AI industry into a curated bilingual magazine. Three times a week, a scheduled GitHub Actions workflow gathers the last 24–72 hours of activity from a hand-picked universe of voices — nine leading AI builders on X, eleven research podcasts, and ten engineering blogs. The raw stream is deduplicated, time-filtered, and normalized, then handed to a large language model (DeepSeek, with Claude as fallback) that classifies, distills, and rewrites it into structured German–English JSON. Each issue is validated, version-controlled in Git, rendered into a static "digital magazine," and deployed automatically to Vercel — complete with a cover, themed sections, and a browsable archive of back issues. From ingestion to publication, every step runs itself: no servers, no manual editing.
+I follow a small set of AI builders to learn how they ship. Checking their X, blogs, and videos every day was eating the morning. AI Builders Digest is the bilingual (DE/EN) magazine that does it for me: three times a week it pulls the last 72 hours and publishes an issue by itself.
 
-### 中文
+I follow a handful of AI builders to learn how they ship, but checking their sites every day was a job. AI Builders Digest is a timed pipeline that fetches the last 72 hours of their posts, three times a week, and publishes a bilingual (DE/EN) magazine by itself. I read the issue, not twenty tabs.
 
-> **AI Builders Digest** 是一条全自动的端到端内容管线，把每天嘈杂的 AI 行业动态提炼成一本精选的中英双语电子杂志。每周三次，定时的 GitHub Actions 工作流从精挑细选的信息源——X 上 9 位顶尖 AI builder、11 档研究类播客、10 个工程博客——抓取过去 24–72 小时的动态；原始数据经去重、时间过滤与归一化后，交给大模型（DeepSeek 为主、Claude 兜底）进行归类、提炼并改写为结构化的中英 JSON。每一期都会校验、用 Git 版本化存储、渲染为静态电子杂志，并自动部署到 Vercel——含封面、主题分区与可浏览的历史期数。从采集到发布，全流程自运行，无需服务器，也无需人工编辑。
+### Extract
 
----
+Last 72h from 8 X, 5 YouTube, 11 podcasts, 13 blogs. Drop stale items and URLs already used in a prior issue.
 
-## 4. Tech Stack (quick reference)
+### Transform
 
-- **Orchestration:** GitHub Actions (cron, MWF 06:00 UTC)
-- **Collection:** Node.js scripts — Nitter RSS / X API v2, podcast RSS + YouTube matching, blog RSS + scrape
-- **AI:** DeepSeek (primary) / Anthropic Claude (fallback), Anthropic-compatible gateway
-- **Storage:** JSON files in Git (`data/issues/*.json` = source of truth; `data/feeds/*.json` = cached feeds; `data/state-feed.json` = dedup state)
-- **Rendering:** Static HTML magazine (bilingual DE/EN), responsive cover + per-issue pages
-- **Notification:** Telegram bot
-- **Hosting:** Vercel (auto-deploy on push) + GitHub Pages
+Evidence-aware preprocessing: keep sentences with numbers, model names, and launch signals; score, dedupe, cap sources, then send a compact shortlist to one DeepSeek JSON call.
+
+### Load
+
+GitHub Actions Mon/Wed/Fri. Git is the datastore. Source-health and run ledgers track failures, token cost, prompt hash, and repair attempts. Vercel + Telegram publish only valid issues.
+
+### 芯片
+
+`GitHub Actions` · `Node.js` · `DeepSeek` · `Vercel` · `Telegram Bot`  
+去掉 `Claude`。日期改成 May 2026 – present。
+
+### 简历一行
+
+Scheduled LLM ETL: extract 72h AI-builder feeds, select evidence before generation, validate DeepSeek JSON, and publish a DE/EN magazine with source-health and cost telemetry.
+
+### 中文（介绍段）
+
+我想跟着少数 AI builder 学他们怎么做东西，但每天去翻他们的网站太耗时间。AI Builders Digest 是一套定时管线：每周三次抓过去 72 小时的更新，自动出一本德英双语电子杂志。我看杂志，不用刷二十个标签页。

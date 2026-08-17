@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T08:29:32.661Z",
+  "generatedAt": "2026-08-17T10:52:01.320Z",
   "totals": {
     "issues": 34,
     "current": 2,
@@ -332,7 +332,8 @@
         "card[3] no number in rewrite bullets",
         "card[4] no number in rewrite bullets",
         "card[5] no number in rewrite bullets",
-        "card[6] no number in rewrite bullets"
+        "card[6] no number in rewrite bullets",
+        "card[6] first bullet starts too generically"
       ],
       "faithfulness": {
         "checked": 7,

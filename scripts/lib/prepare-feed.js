@@ -37,32 +37,55 @@ function splitSentences(text) {
 }
 
 function scoreSentence(sentence) {
-  const s = String(sentence || '');
-  let score = 0;
-  score += (s.match(/\d+(\.\d+)?\s?(%|x|B|M|K|ms|tokens?)?/gi) || []).length * 3;
-  score += (s.match(/\b(GPT|Claude|Gemini|Llama|Grok|Qwen|RLHF|RAG|SWE-bench|SOTA|MMLU|DeepSeek|Anthropic|OpenAI|NVIDIA)\b/gi) || []).length * 2;
-  if (/\b(improv|outperform|achiev|launch|releas|announc|beat|surpass|reduc|increas|rais|ship|open.?sourc|fine-?tun)\w*/i.test(s)) {
-    score += 1;
-  }
-  return score;
+  return scoreSentenceDetailed(sentence).score;
 }
 
-function extractDenseSentences(text, charBudget) {
+function scoreSentenceDetailed(sentence) {
+  const s = String(sentence || '');
+  let score = 0;
+  const reasons = [];
+  const numbers = (s.match(/\d+(\.\d+)?\s?(%|x|B|M|K|ms|tokens?)?/gi) || []).length;
+  const modelNames = (s.match(/\b(GPT|Claude|Gemini|Llama|Grok|Qwen|RLHF|RAG|SWE-bench|SOTA|MMLU|DeepSeek|Anthropic|OpenAI|NVIDIA)\b/gi) || []).length;
+  if (numbers > 0) {
+    score += numbers * 3;
+    reasons.push(`number:${numbers}`);
+  }
+  if (modelNames > 0) {
+    score += modelNames * 2;
+    reasons.push(`model:${modelNames}`);
+  }
+  if (/\b(improv|outperform|achiev|launch|releas|announc|beat|surpass|reduc|increas|rais|ship|open.?sourc|fine-?tun)\w*/i.test(s)) {
+    score += 1;
+    reasons.push('change-signal');
+  }
+  return { score, reasons };
+}
+
+function extractEvidenceChunks(text, charBudget) {
   const value = String(text || '')
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-  if (!value) return '';
-  if (value.length <= charBudget) return value;
+  if (!value) return { text: '', selectedSentences: [], scoreReasons: [] };
+  if (value.length <= charBudget) {
+    return { text: value, selectedSentences: [value], scoreReasons: ['within-budget'] };
+  }
 
   const sentences = splitSentences(value);
-  if (sentences.length === 0) return truncateText(value, charBudget);
+  if (sentences.length === 0) {
+    const fallback = truncateText(value, charBudget);
+    return { text: fallback, selectedSentences: [fallback], scoreReasons: ['fallback-truncate'] };
+  }
 
-  const ranked = sentences.map((sentence, index) => ({
-    sentence,
-    index,
-    score: scoreSentence(sentence) + (index === 0 ? 1 : 0),
-  }));
+  const ranked = sentences.map((sentence, index) => {
+    const detail = scoreSentenceDetailed(sentence);
+    return {
+      sentence,
+      index,
+      score: detail.score + (index === 0 ? 1 : 0),
+      reasons: index === 0 ? ['lead-sentence', ...detail.reasons] : detail.reasons,
+    };
+  });
   ranked.sort((a, b) => b.score - a.score || a.index - b.index);
 
   const picked = [];
@@ -75,9 +98,20 @@ function extractDenseSentences(text, charBudget) {
     used += extra;
     if (used >= charBudget * 0.9) break;
   }
-  if (picked.length === 0) return truncateText(value, charBudget);
+  if (picked.length === 0) {
+    const fallback = truncateText(value, charBudget);
+    return { text: fallback, selectedSentences: [fallback], scoreReasons: ['fallback-truncate'] };
+  }
   picked.sort((a, b) => a.index - b.index);
-  return picked.map((item) => item.sentence).join(' ');
+  return {
+    text: picked.map((item) => item.sentence).join(' '),
+    selectedSentences: picked.map((item) => item.sentence),
+    scoreReasons: [...new Set(picked.flatMap((item) => item.reasons))],
+  };
+}
+
+function extractDenseSentences(text, charBudget) {
+  return extractEvidenceChunks(text, charBudget).text;
 }
 
 function tweetUrl(handle, id) {
@@ -197,16 +231,96 @@ function flattenCandidates(feedData, now = Date.now()) {
   return items.filter((item) => isFreshEnough(item, now));
 }
 
+function normalizeUrlKey(url) {
+  try {
+    const parsed = new URL(String(url || ''));
+    parsed.hash = '';
+    for (const key of [...parsed.searchParams.keys()]) {
+      if (/^utm_|^fbclid$|^gclid$/i.test(key)) parsed.searchParams.delete(key);
+    }
+    return `${parsed.hostname.replace(/^www\./, '')}${parsed.pathname.replace(/\/+$/, '')}${parsed.search}`.toLowerCase();
+  } catch {
+    return String(url || '').trim().toLowerCase().replace(/\/+$/, '');
+  }
+}
+
+function tokenSet(text) {
+  return new Set(
+    String(text || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .split(/\s+/)
+      .filter((word) => word.length > 3)
+  );
+}
+
+function similarity(a, b) {
+  const left = tokenSet(a);
+  const right = tokenSet(b);
+  if (left.size === 0 || right.size === 0) return 0;
+  let overlap = 0;
+  for (const token of left) if (right.has(token)) overlap += 1;
+  return overlap / Math.min(left.size, right.size);
+}
+
+function itemText(item) {
+  return [item.title, item.text, item.description].filter(Boolean).join(' ');
+}
+
+function sourceKey(item) {
+  return item.name || item.handle || item.kind;
+}
+
+function dedupeItems(items) {
+  const kept = [];
+  const dropped = [];
+  const ranked = items
+    .slice()
+    .sort((a, b) => b.score - a.score || String(b.publishedAt || b.createdAt).localeCompare(String(a.publishedAt || a.createdAt)));
+
+  for (const item of ranked) {
+    const urlKey = normalizeUrlKey(item.url);
+    const title = item.title || item.text || '';
+    const text = itemText(item);
+    const duplicate = kept.find((row) => (
+      normalizeUrlKey(row.url) === urlKey ||
+      similarity(row.title || row.text || '', title) >= 0.9 ||
+      similarity(itemText(row), text) >= 0.92
+    ));
+    if (duplicate) {
+      dropped.push({
+        url: item.url,
+        title: title.slice(0, 120),
+        duplicateOf: duplicate.url,
+        reason: 'url/title/text-overlap',
+      });
+    } else {
+      kept.push(item);
+    }
+  }
+
+  return { items: kept, dropped };
+}
+
 function truncateItem(item, charBudget) {
   if (item.kind === 'podcast') {
     const maxChars = charBudget || DEFAULTS.podcastChars;
-    return { ...item, description: extractDenseSentences(item.description, maxChars) };
+    const evidence = extractEvidenceChunks(item.description, maxChars);
+    return { ...item, description: evidence.text, evidence };
   }
   if (item.kind === 'blog' || item.kind === 'youtube') {
     const maxChars = charBudget || (item.kind === 'youtube' ? DEFAULTS.videoChars : DEFAULTS.blogChars);
-    return { ...item, description: extractDenseSentences(item.description, maxChars) };
+    const evidence = extractEvidenceChunks(item.description, maxChars);
+    return { ...item, description: evidence.text, evidence };
   }
-  return item;
+  return {
+    ...item,
+    evidence: {
+      text: item.text || '',
+      selectedSentences: item.text ? [item.text] : [],
+      scoreReasons: item.text ? ['tweet-text'] : [],
+    },
+  };
 }
 
 function rebuildFeed(items, generatedAt) {
@@ -293,8 +407,10 @@ function prepareFeedForModel(feedData, opts = {}) {
   const now = nowMs(opts.now ?? Date.now());
 
   const rawChars = JSON.stringify(feedData, null, 2).length;
-  let items = flattenCandidates(feedData, now).map(truncateItem);
+  let items = flattenCandidates(feedData, now);
   const candidatesIn = items.length;
+  const deduped = dedupeItems(items);
+  items = deduped.items.map(truncateItem);
 
   if (tokensFor(items, generatedAt) > budgetTokens) {
     items = applySourceCaps(items);
@@ -315,7 +431,7 @@ function prepareFeedForModel(feedData, opts = {}) {
       .sort((a, b) => b.score - a.score || String(b.publishedAt || b.createdAt).localeCompare(String(a.publishedAt || a.createdAt)))
       .filter((item) => item.score > -10)
       .filter((item) => {
-        const key = item.name || item.handle || item.kind;
+        const key = sourceKey(item);
         if ((counts[key] || 0) >= 2) return false;
         counts[key] = (counts[key] || 0) + 1;
         return true;
@@ -335,10 +451,33 @@ function prepareFeedForModel(feedData, opts = {}) {
       estimatedTokens: estimateTokens(preparedJson),
       budgetTokens,
       candidatesIn,
+      duplicatesDropped: deduped.dropped.length,
       shortlistSize: items.length,
       dropped: candidatesIn - items.length,
     },
     shortlist: items,
+    prepareReport: {
+      generatedAt,
+      stats: {
+        rawChars,
+        preparedChars: preparedJson.length,
+        estimatedTokens: estimateTokens(preparedJson),
+        budgetTokens,
+        candidatesIn,
+        duplicatesDropped: deduped.dropped.length,
+        shortlistSize: items.length,
+        dropped: candidatesIn - items.length,
+      },
+      duplicateDrops: deduped.dropped,
+      selected: items.map((item) => ({
+        kind: item.kind,
+        source: sourceKey(item),
+        title: item.title || item.text?.slice(0, 100) || '',
+        url: item.url,
+        score: item.score,
+        evidence: item.evidence,
+      })),
+    },
   };
 }
 
@@ -351,6 +490,7 @@ module.exports = {
   estimateTokens,
   truncateText,
   extractDenseSentences,
+  extractEvidenceChunks,
   scoreText,
   flattenCandidates,
   isFreshEnough,

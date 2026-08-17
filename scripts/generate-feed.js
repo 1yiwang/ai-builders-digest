@@ -19,12 +19,14 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 const { loadPublishedUrls, isPublished, tweetUrl } = require('./lib/published-urls');
+const { appendJsonl, makeRunId } = require('./lib/ledger');
 
 // -- Constants ---------------------------------------------------------------
 const REPO_ROOT = path.resolve(__dirname, '..');
 const FEEDS_DIR = path.join(REPO_ROOT, 'data', 'feeds');
 const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
 const STATE_PATH = path.join(REPO_ROOT, 'data', 'state-feed.json');
+const SOURCE_HEALTH_PATH = path.join(REPO_ROOT, 'data', 'eval', 'source-health.jsonl');
 
 const PODCAST_LOOKBACK_HOURS = 72; // 3 days — matches MWF gap
 const BLOG_LOOKBACK_HOURS = 72;
@@ -95,6 +97,107 @@ function markSeen(state, bucket, key) {
   if (!key) return;
   if (!state[bucket]) state[bucket] = {};
   state[bucket][key] = Date.now();
+}
+
+function matchingErrors(errors, patterns) {
+  return (errors || []).filter((error) => patterns.some((pattern) => error.includes(pattern)));
+}
+
+function sourceStatus(count, errs) {
+  if (errs.length > 0) return 'error';
+  return count > 0 ? 'ok' : 'no_content';
+}
+
+function readFeedArray(fileName, key) {
+  const filePath = path.join(FEEDS_DIR, fileName);
+  if (!fs.existsSync(filePath)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    return data[key] || [];
+  } catch {
+    return [];
+  }
+}
+
+function buildSourceHealth({ runId, startedAt, sources, feeds, errors }) {
+  const generatedAt = new Date().toISOString();
+  const durationMs = Math.max(0, Date.parse(generatedAt) - Date.parse(startedAt) || 0);
+  const rows = [];
+  const push = ({ sourceType, sourceName, sourceId, itemsUsed, errs }) => {
+    rows.push({
+      runId,
+      generatedAt,
+      startedAt,
+      durationMs,
+      sourceType,
+      sourceName,
+      sourceId,
+      status: sourceStatus(itemsUsed, errs),
+      itemsSeen: itemsUsed,
+      itemsFresh: itemsUsed,
+      itemsUsed,
+      error: errs[0] || '',
+      errors: errs,
+    });
+  };
+
+  for (const builder of sources.x || []) {
+    const handle = `@${builder.handle}`;
+    const group = (feeds.x || []).find((item) => item.handle === handle);
+    push({
+      sourceType: 'x',
+      sourceName: builder.name,
+      sourceId: handle,
+      itemsUsed: group?.tweets?.length || 0,
+      errs: matchingErrors(errors, [`X @${builder.handle}`, `X user lookup @${builder.handle}`]),
+    });
+  }
+
+  for (const channel of sources.youtube || []) {
+    const count = (feeds.videos || []).filter((item) => item.name === channel.name).length;
+    push({
+      sourceType: 'youtube',
+      sourceName: channel.name,
+      sourceId: channel.url,
+      itemsUsed: count,
+      errs: matchingErrors(errors, [`YouTube ${channel.name}`]),
+    });
+  }
+
+  for (const podcast of sources.podcasts || []) {
+    const count = (feeds.podcasts || []).filter((item) => item.name === podcast.name).length;
+    push({
+      sourceType: 'podcast',
+      sourceName: podcast.name,
+      sourceId: podcast.rssUrl,
+      itemsUsed: count,
+      errs: matchingErrors(errors, [`Podcast ${podcast.name}`, `RSS ${podcast.name}`]),
+    });
+  }
+
+  for (const blog of sources.blogRSS || []) {
+    const count = (feeds.blogs || []).filter((item) => item.name === blog.name).length;
+    push({
+      sourceType: 'blog-rss',
+      sourceName: blog.name,
+      sourceId: blog.feedUrl,
+      itemsUsed: count,
+      errs: matchingErrors(errors, [`Blog RSS ${blog.name}`]),
+    });
+  }
+
+  for (const blog of sources.blogs || []) {
+    const count = (feeds.blogs || []).filter((item) => item.name === blog.name).length;
+    push({
+      sourceType: 'blog-scrape',
+      sourceName: blog.name,
+      sourceId: blog.indexUrl,
+      itemsUsed: count,
+      errs: matchingErrors(errors, [`Blog ${blog.name}`]),
+    });
+  }
+
+  return rows;
 }
 
 // -- Podcast: RSS Parser -----------------------------------------------------
@@ -973,6 +1076,8 @@ async function fetchXContent(sources, state, errors, usedUrls) {
 
 // -- Main --------------------------------------------------------------------
 async function main() {
+  const runId = process.env.DIGEST_RUN_ID || makeRunId('feed');
+  const startedAt = new Date().toISOString();
   const args = process.argv.slice(2);
   const xOnly = args.includes('--x-only');
   const podcastsOnly = args.includes('--podcasts-only');
@@ -999,6 +1104,7 @@ async function main() {
   if (!fs.existsSync(FEEDS_DIR)) fs.mkdirSync(FEEDS_DIR, { recursive: true });
 
   console.error('=== AI Builders Digest — Local Feed Generator ===\n');
+  console.error(`Run ID: ${runId}`);
   console.error(`Prior-issue URLs excluded: ${usedUrls.size}\n`);
 
   // Podcasts
@@ -1090,6 +1196,21 @@ async function main() {
 
   // Save state
   saveState(state);
+
+  const healthRows = buildSourceHealth({
+    runId,
+    startedAt,
+    sources,
+    feeds: {
+      x: xResults,
+      podcasts: runPodcasts ? readFeedArray('feed-podcasts.json', 'podcasts') : [],
+      blogs,
+      videos: runYoutube ? readFeedArray('feed-youtube.json', 'videos') : [],
+    },
+    errors,
+  });
+  appendJsonl(SOURCE_HEALTH_PATH, healthRows);
+  console.error(`Source health: ${healthRows.length} row(s) → ${SOURCE_HEALTH_PATH}`);
 
   if (errors.length > 0) {
     console.error(`⚠ ${errors.length} non-fatal error(s):`);

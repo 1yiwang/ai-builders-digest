@@ -1,0 +1,25 @@
+{
+  "name": "long-article",
+  "asOf": "2026-08-17T12:00:00.000Z",
+  "feed": {
+    "generatedAt": "2026-08-17T12:00:00.000Z",
+    "x": [],
+    "podcasts": [],
+    "videos": [],
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "Long Source",
+        "title": "Qwen agent benchmark release",
+        "url": "https://example.com/qwen-agent-benchmark",
+        "publishedAt": "2026-08-17T08:00:00.000Z",
+        "description": "This is background filler about the company history. It repeats general context without useful numbers. The team has been working on developer tooling for many years. Qwen 3.8 improves SWE-bench Verified to 71% and reduces latency by 28%. More filler about ecosystem adoption follows. Several paragraphs discuss community events and documentation updates. NVIDIA GPU inference throughput increased 2x in the benchmark table. The rest of the article contains partner quotes, conference notes, and general roadmap language that should not dominate the prompt."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": { "exact": 1 },
+    "maxPreparedChars": 2500,
+    "mustInclude": ["https://example.com/qwen-agent-benchmark"]
+  }
+}

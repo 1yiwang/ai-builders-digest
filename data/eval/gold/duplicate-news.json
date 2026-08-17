@@ -1,0 +1,43 @@
+{
+  "name": "duplicate-news",
+  "asOf": "2026-08-17T12:00:00.000Z",
+  "feed": {
+    "generatedAt": "2026-08-17T12:00:00.000Z",
+    "x": [],
+    "podcasts": [],
+    "videos": [],
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "Source A",
+        "title": "OpenAI launches GPT-5 with 92% SWE-bench score",
+        "url": "https://example.com/openai-gpt5",
+        "publishedAt": "2026-08-17T08:00:00.000Z",
+        "description": "OpenAI launches GPT-5 with 92% on SWE-bench and a new API."
+      },
+      {
+        "source": "blog",
+        "name": "Source B",
+        "title": "OpenAI launches GPT 5 with 92 percent SWE bench score",
+        "url": "https://example.org/openai-gpt5-copy",
+        "publishedAt": "2026-08-17T07:00:00.000Z",
+        "description": "OpenAI launches GPT-5 with 92% on SWE-bench and a new API."
+      },
+      {
+        "source": "blog",
+        "name": "Source C",
+        "title": "Anthropic releases Claude benchmark update",
+        "url": "https://example.com/claude-update",
+        "publishedAt": "2026-08-17T06:00:00.000Z",
+        "description": "Anthropic released Claude benchmark updates with 85% on a new agent test."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": { "exact": 2 },
+    "maxPerSource": 2,
+    "minDuplicateDrops": 1,
+    "noDuplicateUrls": true,
+    "mustInclude": ["https://example.com/openai-gpt5", "https://example.com/claude-update"]
+  }
+}

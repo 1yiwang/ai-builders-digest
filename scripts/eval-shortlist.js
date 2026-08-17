@@ -60,6 +60,22 @@ function evaluateGoldCase(caseData, fileName) {
   for (const url of expect.mustExclude || []) {
     if (urls.includes(url)) errors.push(`unexpected URL: ${url}`);
   }
+  if (expect.noDuplicateUrls) {
+    const seen = new Set();
+    for (const url of urls) {
+      if (seen.has(url)) errors.push(`duplicate URL in shortlist: ${url}`);
+      seen.add(url);
+    }
+  }
+  if (expect.maxDuplicateDrops != null && (stats.duplicatesDropped || 0) > expect.maxDuplicateDrops) {
+    errors.push(`duplicate drops ${stats.duplicatesDropped || 0} > max ${expect.maxDuplicateDrops}`);
+  }
+  if (expect.minDuplicateDrops != null && (stats.duplicatesDropped || 0) < expect.minDuplicateDrops) {
+    errors.push(`duplicate drops ${stats.duplicatesDropped || 0} < min ${expect.minDuplicateDrops}`);
+  }
+  if (expect.maxPreparedChars != null && stats.preparedChars > expect.maxPreparedChars) {
+    errors.push(`prepared chars ${stats.preparedChars} > max ${expect.maxPreparedChars}`);
+  }
 
   if (Array.isArray(expect.urlsExact)) {
     const expected = expect.urlsExact;

@@ -5,10 +5,12 @@ const fs = require('fs');
 const path = require('path');
 const { validateMagazineJSON, validateLegacyIssue, collectCardUrls } = require('./lib/validate-magazine');
 const { indexFeeds, evaluateFaithfulness } = require('./lib/faithfulness');
+const { appendJsonl, makeRunId } = require('./lib/ledger');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const REPORT_PATH = path.join(REPO_ROOT, 'data', 'eval', 'last-report.json');
+const RUN_LEDGER_PATH = path.join(REPO_ROOT, 'data', 'eval', 'run-ledger.jsonl');
 const IDENTITIES_PATH = path.join(REPO_ROOT, 'config', 'author-identities.json');
 const FEEDS_DIR = path.join(REPO_ROOT, 'data', 'feeds');
 const DEBUG_DIR = path.join(REPO_ROOT, 'data', 'debug');
@@ -76,7 +78,14 @@ function softEvaluate(data, identities) {
     if (card.authorKey && !lookupIdentity(identities, card.authorKey)) {
       warnings.push(`${loc} unknown authorKey: ${card.authorKey}`);
     }
+    if (/^(this|it|the model|ai)\b/i.test(String(card.en?.rewrite?.[0] || '').trim())) {
+      warnings.push(`${loc} first bullet starts too generically`);
+    }
   });
+  const meta = data.meta || {};
+  if (meta.tokensIn > 12000) warnings.push(`meta tokensIn ${meta.tokensIn} exceeds 12000 budget`);
+  if (meta.estCostUsd > 0.02) warnings.push(`meta estCostUsd ${meta.estCostUsd} exceeds $0.02 guardrail`);
+  if (meta.repairAttempts > 1) warnings.push(`meta repairAttempts ${meta.repairAttempts} exceeds 1`);
   return warnings;
 }
 
@@ -126,6 +135,7 @@ function evaluateIssue(fileName, identities, sourceIndex) {
 }
 
 function main() {
+  const runId = process.env.DIGEST_RUN_ID || makeRunId('eval');
   const identities = loadIdentities();
   const sourceIndex = loadSourceIndex();
   const issues = listIssueFiles().map((fileName) => evaluateIssue(fileName, identities, sourceIndex));
@@ -157,6 +167,18 @@ function main() {
 
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2), 'utf8');
+  appendJsonl(RUN_LEDGER_PATH, {
+    runId,
+    stage: 'eval',
+    status: current.some((item) => !item.ok) ? 'failed' : 'ok',
+    generatedAt: report.generatedAt,
+    currentIssues: current.length,
+    legacyIssues: legacy.length,
+    currentFailed: report.totals.currentFailed,
+    legacyFailed: report.totals.legacyFailed,
+    faithfulness,
+    warningIssues: issues.filter((row) => (row.warnings || []).length > 0).length,
+  });
 
   console.error(`Eval: ${issues.length} issue(s) — current ${report.totals.currentFailed}/${current.length} failed, legacy ${report.totals.legacyFailed}/${legacy.length} failed`);
   console.error(`Faithfulness: ${faithfulness.checked} card(s) with source text, ${faithfulness.numberMisses} number miss(es), ${faithfulness.quoteMisses} quote miss(es), ${faithfulness.skippedNoSource} skipped (source not on disk)`);

@@ -1,0 +1,33 @@
+{
+  "name": "bad-date",
+  "asOf": "2026-08-17T12:00:00.000Z",
+  "feed": {
+    "generatedAt": "2026-08-17T12:00:00.000Z",
+    "x": [],
+    "podcasts": [],
+    "videos": [],
+    "blogs": [
+      {
+        "source": "blog",
+        "name": "No Date Blog",
+        "title": "Undated Claude launch",
+        "url": "https://example.com/no-date",
+        "publishedAt": "",
+        "description": "Claude launch with 90% benchmark score."
+      },
+      {
+        "source": "blog",
+        "name": "Good Date Blog",
+        "title": "DeepSeek API benchmark",
+        "url": "https://example.com/good-date",
+        "publishedAt": "2026-08-17T08:00:00.000Z",
+        "description": "DeepSeek API benchmark improves latency by 32%."
+      }
+    ]
+  },
+  "expect": {
+    "shortlistSize": { "exact": 1 },
+    "mustInclude": ["https://example.com/good-date"],
+    "mustExclude": ["https://example.com/no-date"]
+  }
+}

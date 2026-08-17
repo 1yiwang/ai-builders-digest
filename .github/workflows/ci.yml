@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Syntax check scripts
+        run: |
+          node --check scripts/generate-feed.js
+          node --check scripts/generate-magazine-json.js
+          node --check scripts/eval-magazine.js
+          node --check scripts/eval-shortlist.js
+
+      - name: Offline eval
+        run: npm run eval

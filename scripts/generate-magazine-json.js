@@ -14,15 +14,17 @@
 const fs = require('fs');
 const path = require('path');
 
-const { prepareFeedForModel, shortlistUrls } = require('./lib/prepare-feed');
+const { DEFAULTS, prepareFeedForModel, shortlistUrls } = require('./lib/prepare-feed');
 const { estimateCostUsd } = require('./lib/model-pricing');
 const { validateMagazineJSON, collectCardUrls, countCards } = require('./lib/validate-magazine');
 const { loadCredentials, chat } = require('./lib/providers');
+const { appendJsonl, makeRunId, sha256 } = require('./lib/ledger');
 const { refreshArchiveIndex } = require('../src/archive/update-index-archive');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const DATA_ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const DEBUG_DIR = path.join(REPO_ROOT, 'data', 'debug');
+const RUN_LEDGER_PATH = path.join(REPO_ROOT, 'data', 'eval', 'run-ledger.jsonl');
 const PROMPT_PATH_REPO = path.join(REPO_ROOT, 'config', 'prompt.md');
 const PROMPT_PATH_LOCAL = path.join(require('os').homedir(), '.follow-builders', 'prompts', 'build-magazine-json.md');
 const PROMPT_PATH = fs.existsSync(PROMPT_PATH_REPO) ? PROMPT_PATH_REPO : PROMPT_PATH_LOCAL;
@@ -134,13 +136,20 @@ function buildRepairMessage(magazineJSON, errors, publishDate) {
   ].join('\n');
 }
 
-function buildMeta({ credentials, usage, latencyMs, stats, repairAttempts, magazineJSON }) {
+function prepareVersion() {
+  return sha256(JSON.stringify({ defaults: DEFAULTS, version: 2 })).slice(0, 12);
+}
+
+function buildMeta({ runId, promptSha256, credentials, usage, latencyMs, stats, repairAttempts, magazineJSON }) {
   const tokensIn = usage?.tokensIn || stats.estimatedTokens;
   const tokensOut = usage?.tokensOut || 0;
   return {
+    runId,
     generatedAt: new Date().toISOString(),
     provider: credentials.provider,
     model: credentials.model,
+    promptSha256,
+    prepareVersion: prepareVersion(),
     fallbackUsed: false,
     repairAttempts,
     latencyMs: latencyMs || 0,
@@ -159,6 +168,13 @@ function buildMeta({ credentials, usage, latencyMs, stats, repairAttempts, magaz
   };
 }
 
+function appendRunLedger(row) {
+  appendJsonl(RUN_LEDGER_PATH, {
+    loggedAt: new Date().toISOString(),
+    ...row,
+  });
+}
+
 function writeDebug(name, value) {
   fs.mkdirSync(DEBUG_DIR, { recursive: true });
   const filePath = path.join(DEBUG_DIR, name);
@@ -168,11 +184,14 @@ function writeDebug(name, value) {
 }
 
 async function main() {
+  const runId = process.env.DIGEST_RUN_ID || makeRunId('issue');
+  const startedAt = new Date().toISOString();
   const opts = parseArgs();
   const publishDate = opts.date || todayISO();
   const jsonPath = path.join(DATA_ISSUES_DIR, `ai-builders-digest-${publishDate}.json`);
 
   console.error('=== AI Builders Digest — Magazine JSON Generator ===');
+  console.error(`Run ID: ${runId}`);
   console.error(`Date: ${publishDate}`);
   console.error(`Output: ${jsonPath}`);
   console.error('');
@@ -254,22 +273,34 @@ async function main() {
     process.exit(0);
   }
 
-  const { prepared, stats, shortlist } = prepareFeedForModel(feedData);
+  const { prepared, stats, shortlist, prepareReport } = prepareFeedForModel(feedData);
   console.error(`  Raw chars: ${stats.rawChars}`);
   console.error(`  Prepared chars: ${stats.preparedChars} (${Math.round((1 - stats.preparedChars / stats.rawChars) * 100)}% less)`);
   console.error(`  Est. tokens in: ${stats.estimatedTokens} / budget ${stats.budgetTokens}`);
   console.error(`  Candidates: ${stats.candidatesIn} → shortlist ${stats.shortlistSize}`);
   writeDebug(`shortlist-${publishDate}.json`, { stats, shortlist });
+  writeDebug(`prepare-report-${publishDate}.json`, prepareReport || { stats, shortlist });
 
   if (opts.prepareOnly) {
     console.error('');
     console.error('PREPARE ONLY — no model call.');
+    appendRunLedger({
+      runId,
+      stage: 'prepare-only',
+      publishDate,
+      startedAt,
+      status: 'ok',
+      stats,
+      prepareVersion: prepareVersion(),
+      promptSha256: null,
+    });
     console.log(JSON.stringify({ stats, shortlist: shortlist.map((item) => ({ kind: item.kind, score: item.score, url: item.url })) }, null, 2));
     return;
   }
 
   console.error('[3/5] Loading prompt...');
   const systemPrompt = loadPrompt();
+  const promptSha256 = sha256(systemPrompt);
 
   console.error('[4/5] Calling AI to generate magazine JSON...');
   const allowedUrls = shortlistUrls(shortlist);
@@ -337,6 +368,8 @@ async function main() {
   }
 
   magazineJSON.meta = buildMeta({
+    runId,
+    promptSha256,
     credentials,
     usage: response.usage,
     latencyMs: response.latencyMs,
@@ -359,6 +392,26 @@ async function main() {
     fs.mkdirSync(DATA_ISSUES_DIR, { recursive: true });
     fs.writeFileSync(jsonPath, JSON.stringify(magazineJSON, null, 2), 'utf8');
     refreshArchiveIndex();
+    appendRunLedger({
+      runId,
+      stage: 'issue-generation',
+      publishDate,
+      startedAt,
+      status: 'ok',
+      provider: magazineJSON.meta.provider,
+      model: magazineJSON.meta.model,
+      tokensIn: magazineJSON.meta.tokensIn,
+      tokensOut: magazineJSON.meta.tokensOut,
+      estCostUsd: magazineJSON.meta.estCostUsd,
+      cardsPublished: magazineJSON.meta.cardsPublished,
+      repairAttempts: magazineJSON.meta.repairAttempts,
+      rawChars: stats.rawChars,
+      preparedChars: stats.preparedChars,
+      candidatesIn: stats.candidatesIn,
+      shortlistSize: stats.shortlistSize,
+      prepareVersion: magazineJSON.meta.prepareVersion,
+      promptSha256,
+    });
     console.error(`  Saved: ${jsonPath}`);
     console.log(jsonPath);
   }
