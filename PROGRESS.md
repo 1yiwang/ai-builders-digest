@@ -17,7 +17,7 @@
 
 本机检查（2026-08-17）：Decoder + TechCrunch + Simon 共 9 篇博客（8/16–8/17）；`npm run prepare-feed` 候选 20 → 短名单 12；`npm run eval` 33 期 current 0/1 fail。
 
-下一步：用新管线重出 2026-08-17（CI 今早那期仍是 lookback 168h、空 description）。
+已用新管线重出 **2026-08-17**：7 张卡片（TechCrunch / Simon / Decoder / Rauch / Ng / Dwarkesh），估成本 $0.0034。硬 eval 通过。待确认后 push。
 
 ## 2026-08-16 — 新鲜源（X / YouTube）
 

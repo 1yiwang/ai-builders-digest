@@ -5,11 +5,11 @@
   "editionName": "DE+EN Ausgabe",
   "intro": {
     "kicker": "Einleitung / Editor's Note",
-    "text": "Guillermo Rauch meldet starke Evals für GLM 5.3 im Cybersicherheitsbereich und will Defensive-Tools häufiger laufen lassen. Parallel bringt OpenAI seine Daybreak-Modelle über AWS Bedrock in Unternehmens-Workflows. OpenAI zeigt mit GPT-5.6 Sol zudem, wie Finanzarbeit in editierbare Dokumente mündet. Dwarkesh Patel diskutiert mit Ryan Greenblatt, ob KI-Risiken beherrschbar sind, aber trotzdem schlecht gemanagt werden."
+    "text": "Stripe will Berichten zufolge OpenRouter für über sieben Milliarden Dollar übernehmen. Parallel nennt Dario Amodei die KI-Gegenreaktion eine fundamentale Vertrauenskrise. Guillermo Rauch und Simon Willison testen derweil neue offene Modelle wie GLM 5.3 und Qwen 3.8. Diese Geschichten zeigen, wie Bezahlung, Vertrauen und offene Modellökonomie die nächste KI-Phase bestimmen."
   },
   "archive": {
-    "title": "Cybersicherheits-Modelle werden erwachsen",
-    "desc": "Offene Evals und AWS-Verfügbarkeit machen Cybersicherheits-KI praxistauglich, während GPT-5.6 Sol Finanzarbeit automatisiert."
+    "title": "Stripes Sieben-Milliarden-Dollar-Wette auf OpenRouter",
+    "desc": "Ein milliardenschwerer Stripe-Deal, offene Modelltests und wachsende Vertrauensfragen prägen den Tag."
   },
   "viewLabels": {
     "rewrite": "Kurz",
@@ -18,8 +18,38 @@
   "footerNote": "Source: AI Builders Digest. Generated on 2026-08-17.",
   "sections": [
     {
-      "title": "Cybersecurity Models / Cybersicherheits-Modelle",
-      "desc": "Cybersicherheits-spezifische Modelle werden über offene Evals und AWS Bedrock zugänglicher.",
+      "title": "AI Payments Consolidation / Konsolidierung bei KI-Zahlungsinfrastruktur",
+      "desc": "A reported $7B+ acquisition would make payments infrastructure a direct AI gateway player.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch",
+          "sourceUrl": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Stripe is reportedly acquiring AI gateway startup OpenRouter for more than $7 billion.",
+              "The reported price signals consolidation in the AI API gateway market."
+            ],
+            "original": [
+              "[Paraphrase] Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Stripe übernimmt Berichten zufolge das AI-Gateway-Startup OpenRouter für mehr als sieben Milliarden Dollar.",
+              "Der Preis signalisiert Konsolidierung im Markt für KI-API-Gateways."
+            ],
+            "original": [
+              "[Paraphrase] Stripe will Berichten zufolge das AI-Gateway-Startup OpenRouter für über sieben Milliarden Dollar übernehmen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "New Open Models Under Review / Neue Open-Modelle im Test",
+      "desc": "GLM 5.3 and Qwen 3.8 show open models advancing fast but with deployment quirks.",
       "cards": [
         {
           "authorKey": "x:@rauchg",
@@ -28,83 +58,79 @@
           "priority": 1,
           "en": {
             "rewrite": [
-              "Guillermo Rauch ran evals on GLM 5.3 and calls it the new open cybersecurity frontier.",
-              "Lower costs let his deepsec.sh security tool run at least 3× more often for defensive work."
+              "Guillermo Rauch evaluated GLM 5.3's cybersecurity capabilities and calls it the new open frontier.",
+              "Lower costs let defensive security tools like deepsec.sh run at least 3× more often."
             ],
             "original": [
-              "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier. Given its lower costs, I expect this to be a boon for defensive security work. e.g., it means you can run https://deepsec.sh at least 3× more often!"
+              "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier.",
+              "you can run https://deepsec.sh at least 3× more often!"
             ]
           },
           "de": {
             "rewrite": [
-              "Guillermo Rauch hat GLM 5.3 auf Cybersicherheit evaluiert und nennt es die neue offene Frontier.",
-              "Geringere Kosten erlauben defensive Security-Tools wie deepsec.sh mindestens 3× häufiger auszuführen."
+              "Guillermo Rauch hat GLM 5.3 in Cybersecurity getestet und nennt es die neue offene Frontier.",
+              "Niedrigere Kosten erlauben defensive Tools wie deepsec.sh mindestens dreimal häufigere Läufe."
             ],
             "original": [
-              "Wir haben Evals zu GLM 5.3 im Bereich Cybersicherheit gefahren. Es ist die neue offene Frontier. Wegen der geringeren Kosten kann man deepsec.sh mindestens 3× häufiger laufen lassen."
+              "Wir haben GLM 5.3 in Cybersecurity evaluiert. Es ist die neue offene Frontier.",
+              "Du kannst deepsec.sh mindestens dreimal häufiger ausführen."
             ]
           }
         },
         {
-          "authorKey": "blog:OpenAI",
-          "sourceName": "OpenAI",
-          "sourceUrl": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-          "priority": 1,
-          "en": {
-            "rewrite": [
-              "OpenAI's Daybreak cybersecurity models are now available on AWS via Amazon Bedrock.",
-              "Enterprise security teams can call the models through Bedrock for security workflows."
-            ],
-            "original": [
-              "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows."
-            ]
-          },
-          "de": {
-            "rewrite": [
-              "OpenAIs Daybreak-Modelle für Cybersicherheit sind jetzt über Amazon Bedrock auf AWS verfügbar.",
-              "Enterprise-Security-Teams können die Modelle für Sicherheits-Workflows über Bedrock nutzen."
-            ],
-            "original": [
-              "OpenAI und AWS machen die Cybersicherheitsfunktionen von Daybreak über Amazon Bedrock verfügbar, um Sicherheits-Workflows in Unternehmen zu unterstützen."
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "title": "Finance Workflow Automation / Finanz-Workflow-Automatisierung",
-      "desc": "OpenAI zeigt einen konkreten Anwendungsfall, bei dem GPT-5.6 Sol Finanzarbeit bis zum editierbaren Dokument trägt.",
-      "cards": [
-        {
-          "authorKey": "blog:OpenAI",
-          "sourceName": "OpenAI",
-          "sourceUrl": "https://openai.com/index/model-ml",
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison's Weblog",
+          "sourceUrl": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
           "priority": 2,
           "en": {
             "rewrite": [
-              "OpenAI highlights Model ML using GPT-5.6 Sol for finance work, from research to editable, traceable PowerPoint decks and Excel workbooks.",
-              "The workflow spans research, analysis, and final deliverables in PowerPoint and Excel."
+              "Simon Willison finds Qwen 3.8 27B excellent, but it defaults to wildly overthinking.",
+              "The behavior creates practical overhead for developers who don't tune reasoning output."
             ],
             "original": [
-              "Model ML uses GPT-5.6 Sol to carry finance work from research and analysis through editable, traceable PowerPoint decks and Excel workbooks."
+              "[Paraphrase] Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things."
             ]
           },
           "de": {
             "rewrite": [
-              "OpenAI zeigt, wie Model ML mit GPT-5.6 Sol Finanzarbeit von Recherche und Analyse bis zu editierbaren PowerPoint-Decks und Excel-Arbeitsmappen führt.",
-              "Der Workflow betont editierbare, nachvollziehbare Dokumente statt reiner Textantworten."
+              "Simon Willison findet Qwen 3.8 27B exzellent, aber es neigt standardmäßig zu übertriebenem Nachdenken.",
+              "Das Verhalten erzeugt praktischen Mehraufwand für Entwickler ohne Reasoning-Tuning."
             ],
             "original": [
-              "Model ML nutzt GPT-5.6 Sol, um Finanzarbeit von Recherche und Analyse bis zu editierbaren, nachvollziehbaren PowerPoint-Decks und Excel-Arbeitsmappen zu führen."
+              "[Paraphrase] Qwen 3.8 27B ist exzellent, neigt aber standardmäßig zu übertriebenem Nachdenken."
             ]
           }
         }
       ]
     },
     {
-      "title": "AI Risk Governance / KI-Risiko-Governance",
-      "desc": "Ein neues Gespräch bei Dwarkesh Patel thematisiert die Lücke zwischen technischer Beherrschbarkeit und institutioneller Umsetzung.",
+      "title": "Trust and Risk Management / Vertrauen und Risikomanagement",
+      "desc": "Frontier labs and researchers focus on public trust and execution risk.",
       "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch",
+          "sourceUrl": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dario Amodei (Anthropic) says AI backlash is fundamentally a crisis of trust.",
+              "The statement positions trust-building as a core challenge for frontier AI labs."
+            ],
+            "original": [
+              "Anthropic CEO says AI backlash is 'fundamentally a crisis of trust'."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dario Amodei (Anthropic) nennt die KI-Gegenreaktion eine fundamentale Vertrauenskrise.",
+              "Die Aussage positioniert Vertrauensaufbau als zentrale Aufgabe für Frontier-Labs."
+            ],
+            "original": [
+              "Anthropic-CEO sagt, KI-Gegenreaktion sei 'fundamental eine Vertrauenskrise'."
+            ]
+          }
+        },
         {
           "authorKey": "youtube:@DwarkeshPatel",
           "sourceName": "Dwarkesh Patel",
@@ -112,20 +138,74 @@
           "priority": 2,
           "en": {
             "rewrite": [
-              "Dwarkesh Patel interviews Ryan Greenblatt on why AI risk might be manageable yet still be mismanaged.",
-              "The title frames risk around technical manageability versus institutional follow-through."
+              "Dwarkesh Patel interviews Ryan Greenblatt on AI risk that may be manageable yet still mismanaged.",
+              "Greenblatt frames the key risk as organizational execution, not technical impossibility."
             ],
             "original": [
-              "Video title: AI Risk Might Be Manageable Yet Still Be Mismanaged - Ryan Greenblatt"
+              "[Paraphrase] AI Risk Might Be Manageable Yet Still Be Mismanaged - Ryan Greenblatt"
             ]
           },
           "de": {
             "rewrite": [
-              "Dwarkesh Patel spricht mit Ryan Greenblatt über das Risiko, dass KI beherrschbar sein könnte, aber trotzdem schlecht gemanagt wird.",
-              "Der Titel trennt technische Beherrschbarkeit von institutionellem Umsetzungsversagen."
+              "Dwarkesh Patel spricht mit Ryan Greenblatt über KI-Risiken, die beherrschbar, aber schlecht gemanagt sein könnten.",
+              "Greenblatt sieht das Kernrisiko in der organisatorischen Umsetzung, nicht in technischer Unmöglichkeit."
             ],
             "original": [
-              "Videotitel: AI Risk Might Be Manageable Yet Still Be Mismanaged – Ryan Greenblatt"
+              "[Paraphrase] KI-Risiko könnte beherrschbar und trotzdem schlecht gemanagt sein - Ryan Greenblatt"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Engineering's Mainstream Moment / AI Engineering im Mainstream",
+      "desc": "Skills mapping and campaign prominence show AI engineering entering mainstream discourse.",
+      "cards": [
+        {
+          "authorKey": "x:@AndrewYNg",
+          "sourceName": "Andrew Ng",
+          "sourceUrl": "https://x.com/AndrewYNg/status/2088302050706686198",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Andrew Ng published a map of the most important skills in AI Engineering.",
+              "The map aims to define core competencies for the emerging AI engineering role."
+            ],
+            "original": [
+              "New: A map of the most important skills in AI Engineering."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Andrew Ng hat eine Karte der wichtigsten Fähigkeiten im AI Engineering veröffentlicht.",
+              "Die Karte soll Kernkompetenzen für die neue Rolle des AI Engineer definieren."
+            ],
+            "original": [
+              "Neu: Eine Karte der wichtigsten Fähigkeiten im AI Engineering."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/ai-and-data-centers-have-leapfrogged-israel-racism-and-crypto-as-us-campaign-topics/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "AI and data centers have leapfrogged Israel, racism, and crypto as US campaign topics.",
+              "Data center buildouts and AI policy now sit at the center of political debate."
+            ],
+            "original": [
+              "[Paraphrase] AI and data centers have leapfrogged Israel, racism, and crypto as US campaign topics."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "KI und Rechenzentren haben Israel, Rassismus und Krypto als US-Wahlkampfthemen überholt.",
+              "Rechenzentrumsausbau und KI-Politik stehen jetzt im Zentrum der politischen Debatte."
+            ],
+            "original": [
+              "[Paraphrase] KI und Rechenzentren haben Israel, Rassismus und Krypto als US-Wahlkampfthemen überholt."
             ]
           }
         }
@@ -133,28 +213,31 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-08-17T07:11:12.931Z",
+    "generatedAt": "2026-08-17T08:05:01.810Z",
     "provider": "anthropic",
     "model": "deepseek-v4-pro",
     "fallbackUsed": false,
     "repairAttempts": 0,
-    "latencyMs": 126443,
-    "tokensIn": 3516,
-    "tokensOut": 9588,
-    "estCostUsd": 0.003177,
-    "candidatesIn": 13,
-    "shortlistSize": 7,
-    "cardsPublished": 4,
+    "latencyMs": 129298,
+    "tokensIn": 4129,
+    "tokensOut": 10129,
+    "estCostUsd": 0.003414,
+    "candidatesIn": 18,
+    "shortlistSize": 10,
+    "cardsPublished": 7,
     "truncation": {
-      "rawChars": 6290,
-      "preparedChars": 2309,
+      "rawChars": 41304,
+      "preparedChars": 2964,
       "budgetTokens": 12000
     },
     "sourceUrls": [
+      "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
       "https://x.com/rauchg/status/2089126690043916495",
-      "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-      "https://openai.com/index/model-ml",
-      "https://www.youtube.com/watch?v=8bdncWiRRX0"
+      "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+      "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+      "https://www.youtube.com/watch?v=8bdncWiRRX0",
+      "https://x.com/AndrewYNg/status/2088302050706686198",
+      "https://the-decoder.com/ai-and-data-centers-have-leapfrogged-israel-racism-and-crypto-as-us-campaign-topics/"
     ]
   }
 }
