@@ -185,15 +185,20 @@
       "handle": "@chipro",
       "label": "Blog"
     },
-    "blog:程序员鱼皮": {
-      "name": "程序员鱼皮",
-      "handle": "",
-      "label": "Blog"
+    "blog:The Decoder": {
+      "name": "The Decoder",
+      "handle": "@TheDecoder",
+      "label": "AI News"
     },
-    "blog:超级小华": {
-      "name": "超级小华",
-      "handle": "",
-      "label": "Blog"
+    "blog:TechCrunch AI": {
+      "name": "TechCrunch AI",
+      "handle": "@TechCrunch",
+      "label": "AI News"
+    },
+    "blog:TLDR AI": {
+      "name": "TLDR AI",
+      "handle": "@tldrai",
+      "label": "Daily Brief"
     }
   }
 }

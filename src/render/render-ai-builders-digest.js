@@ -216,9 +216,10 @@ function resolveAuthorMeta(card, authorIdentities, avatarManifest, outputPath) {
   const handle = normalizeHandle(identity.handle || card.authorHandle || handleFromAuthorKey(rawKey));
   const tag = identity.label || card.authorTag || '';
   const key = identityHit.key || rawKey;
+  const remoteAvatar = /^https?:\/\//i.test(avatar.fileUrl || '') ? avatar.fileUrl : '';
   const avatarUrl = avatarSourcePath
     ? toRelativeUrl(outputDir, path.join(REPO_ROOT, SITE_AVATAR_DIR, path.basename(avatarSourcePath)))
-    : '';
+    : remoteAvatar;
 
   return {
     key,
@@ -261,7 +262,7 @@ function renderCard(card, authorIdentities, avatarManifest, labels, outputPath, 
 
   return `    <article class="card${hiddenClass}" data-author-key="${escapeHtml(author.key)}" data-author-name="${escapeHtml(author.name)}" data-author-tag="${escapeHtml(author.tag)}" data-author-handle="${escapeHtml(author.handle)}" data-author-avatar="${escapeHtml(author.avatarUrl)}" data-priority="${card.priority || ''}">
       <div class="card-header">
-        <div class="avatar${author.avatarUrl ? '' : ' is-fallback'}"><img src="${escapeHtml(author.avatarUrl)}" alt="${escapeHtml(author.name ? `${author.name} avatar` : 'Author avatar')}"><span class="avatar-fallback">${escapeHtml(author.initials)}</span></div>
+        <div class="avatar${author.avatarUrl ? '' : ' is-fallback'}"><img src="${escapeHtml(author.avatarUrl)}" alt="${escapeHtml(author.name ? `${author.name} avatar` : 'Author avatar')}" onerror="this.removeAttribute('src'); this.parentNode.classList.add('is-fallback');"><span class="avatar-fallback">${escapeHtml(author.initials)}</span></div>
         <div class="author-info">
           <div class="author-name-row">
             <span class="author-name">${escapeHtml(author.name)}</span>
@@ -866,12 +867,13 @@ ${sectionsHtml}
       document.querySelectorAll('.card').forEach(function(card) {
         var authorKey = card.dataset.authorKey || '';
         var identity = lookupAuthorRecord(sources.identities, authorKey);
+        var avatarRecord = lookupAuthorRecord(sources.avatars, authorKey);
 
         var name = identity.name || card.dataset.authorName || '';
         var rawHandle = identity.handle || card.dataset.authorHandle || '';
         var handle = rawHandle && rawHandle.indexOf('@') === 0 ? rawHandle : (rawHandle ? '@' + rawHandle : '');
         var tag = identity.label || card.dataset.authorTag || '';
-        var avatar = card.dataset.authorAvatar || '';
+        var avatar = card.dataset.authorAvatar || avatarRecord.fileUrl || '';
 
         var nameNode = card.querySelector('.author-name');
         var tagNode = card.querySelector('.author-tag');

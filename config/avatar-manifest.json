@@ -185,17 +185,22 @@
       "fileUrl": "https://huyenchip.com/favicon.ico",
       "source": "favicon"
     },
-    "blog:程序员鱼皮": {
-      "localPath": "assets/avatars/blog-.jpg",
-      "fileUrl": "https://www.cnblogs.com/favicon.ico",
+    "blog:The Decoder": {
+      "localPath": "assets/avatars/blog-the-decoder.jpg",
+      "fileUrl": "https://the-decoder.com/favicon.ico",
       "source": "favicon"
     },
-    "blog:超级小华": {
-      "localPath": "assets/avatars/blog-.jpg",
-      "fileUrl": "https://www.cnblogs.com/favicon.ico",
+    "blog:TechCrunch AI": {
+      "localPath": "assets/avatars/blog-techcrunch-ai.jpg",
+      "fileUrl": "https://techcrunch.com/favicon.ico",
+      "source": "favicon"
+    },
+    "blog:TLDR AI": {
+      "localPath": "assets/avatars/blog-tldr-ai.jpg",
+      "fileUrl": "https://tldr.tech/apple-touch-icon.png",
       "source": "favicon"
     }
   },
-  "updatedAt": "2026-08-16T11:30:16.150Z",
-  "avatarCount": 39
+  "updatedAt": "2026-08-17T07:49:14.753Z",
+  "avatarCount": 40
 }

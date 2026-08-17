@@ -24,7 +24,7 @@ const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
 const STATE_PATH = path.join(REPO_ROOT, 'data', 'state-feed.json');
 
 const PODCAST_LOOKBACK_HOURS = 72; // 3 days — matches MWF gap
-const BLOG_LOOKBACK_HOURS = 168;   // 7 days — engineering blogs publish less often
+const BLOG_LOOKBACK_HOURS = 72;
 const X_LOOKBACK_HOURS = 72;
 const YOUTUBE_LOOKBACK_HOURS = 72;
 
@@ -587,49 +587,83 @@ async function fetchBlogContent(sources, state, errors) {
 
 // -- Blog RSS Fetcher (standard RSS 2.0 feeds) -----------------------------
 
+function stripXmlText(value) {
+  return String(value || '')
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/gi, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractXmlTag(block, tag) {
+  const match = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i'));
+  return match ? match[1] : '';
+}
+
+function extractXmlLink(block) {
+  const href = block.match(/<link[^>]*href=["']([^"']+)["'][^>]*\/?>/i);
+  if (href) return href[1].trim();
+  return stripXmlText(extractXmlTag(block, 'link'));
+}
+
 function parseBlogRSSFeed(xml) {
   const articles = [];
+  const blocks = [];
   const itemRegex = /<item>([\s\S]*?)<\/item>/gi;
+  const entryRegex = /<entry>([\s\S]*?)<\/entry>/gi;
   let m;
-  while ((m = itemRegex.exec(xml)) !== null) {
-    const block = m[1];
-    const titleMatch = block.match(/<title>([\s\S]*?)<\/title>/);
-    const linkMatch = block.match(/<link>([\s\S]*?)<\/link>/);
-    const dateMatch = block.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
-    // Try content:encoded first (WordPress standard), fallback to description
-    const contentMatch =
-      block.match(/<content:encoded>([\s\S]*?)<\/content:encoded>/) ||
-      block.match(/<description>([\s\S]*?)<\/description>/);
+  while ((m = itemRegex.exec(xml)) !== null) blocks.push({ type: 'rss', body: m[1] });
+  while ((m = entryRegex.exec(xml)) !== null) blocks.push({ type: 'atom', body: m[1] });
 
-    if (titleMatch && linkMatch) {
-      const rawContent = contentMatch ? contentMatch[1] : '';
-      const content = rawContent
-        .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-        .replace(/<[^>]+>/g, ' ')
-        .replace(/&amp;/g, '&')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&quot;/g, '"')
-        .replace(/&apos;/g, "'")
-        .replace(/&#39;/g, "'")
-        .replace(/&nbsp;/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-
-      articles.push({
-        title: titleMatch[1]
-          .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-          .replace(/<[^>]+>/g, '')
-          .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-          .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#39;/g, "'")
-          .trim(),
-        url: linkMatch[1].trim(),
-        publishedAt: toIsoDate(dateMatch ? dateMatch[1].trim() : null),
-        content,
-      });
-    }
+  for (const { type, body } of blocks) {
+    const title = stripXmlText(extractXmlTag(body, 'title'));
+    const url = extractXmlLink(body);
+    const dateRaw = type === 'atom'
+      ? (extractXmlTag(body, 'published') || extractXmlTag(body, 'updated'))
+      : (extractXmlTag(body, 'pubDate') || extractXmlTag(body, 'dc:date'));
+    const rawContent =
+      extractXmlTag(body, 'content:encoded') ||
+      extractXmlTag(body, 'content') ||
+      extractXmlTag(body, 'summary') ||
+      extractXmlTag(body, 'description');
+    if (!title || !url) continue;
+    articles.push({
+      title,
+      url,
+      publishedAt: toIsoDate(dateRaw.trim() || null),
+      content: stripXmlText(rawContent),
+    });
   }
   return articles;
+}
+
+async function fetchPageExcerpt(url) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': RSS_USER_AGENT },
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return '';
+    const html = await res.text();
+    const og =
+      html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i);
+    const meta =
+      html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i) ||
+      html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+name=["']description["']/i);
+    return stripXmlText((og && og[1]) || (meta && meta[1]) || '');
+  } catch {
+    return '';
+  }
 }
 
 async function fetchBlogRSSContent(sources, state, errors) {
@@ -657,7 +691,7 @@ async function fetchBlogRSSContent(sources, state, errors) {
         if (state.seenArticles[article.url]) continue;
         const publishedAt = toIsoDate(article.publishedAt);
         if (!isFresh(publishedAt, cutoff)) {
-          markSeen(state, 'seenArticles', article.url);
+          if (publishedAt) markSeen(state, 'seenArticles', article.url);
           continue;
         }
         newArticles.push({ ...article, publishedAt });
@@ -667,6 +701,8 @@ async function fetchBlogRSSContent(sources, state, errors) {
       if (newArticles.length > 0) {
         console.error(`    ${newArticles.length} new article(s)`);
         for (const article of newArticles) {
+          let content = article.content || '';
+          if (!content) content = await fetchPageExcerpt(article.url);
           results.push({
             source: 'blog-rss',
             name: blog.name,
@@ -674,8 +710,8 @@ async function fetchBlogRSSContent(sources, state, errors) {
             url: article.url,
             publishedAt: article.publishedAt,
             author: '',
-            description: '',
-            content: article.content,
+            description: content,
+            content,
           });
           state.seenArticles[article.url] = Date.now();
         }

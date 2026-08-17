@@ -10,7 +10,7 @@ const DEFAULTS = {
   maxTweets: 20,
   maxVideos: 8,
   shortlistLimit: 12,
-  blogMaxAgeHours: 168,
+  blogMaxAgeHours: 72,
   defaultMaxAgeHours: 72,
 };
 
@@ -27,6 +27,59 @@ function truncateText(text, maxChars) {
   return `${value.slice(0, maxChars).trimEnd()}…`;
 }
 
+function splitSentences(text) {
+  return String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 20);
+}
+
+function scoreSentence(sentence) {
+  const s = String(sentence || '');
+  let score = 0;
+  score += (s.match(/\d+(\.\d+)?\s?(%|x|B|M|K|ms|tokens?)?/gi) || []).length * 3;
+  score += (s.match(/\b(GPT|Claude|Gemini|Llama|Grok|Qwen|RLHF|RAG|SWE-bench|SOTA|MMLU|DeepSeek|Anthropic|OpenAI|NVIDIA)\b/gi) || []).length * 2;
+  if (/\b(improv|outperform|achiev|launch|releas|announc|beat|surpass|reduc|increas|rais|ship|open.?sourc|fine-?tun)\w*/i.test(s)) {
+    score += 1;
+  }
+  return score;
+}
+
+function extractDenseSentences(text, charBudget) {
+  const value = String(text || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!value) return '';
+  if (value.length <= charBudget) return value;
+
+  const sentences = splitSentences(value);
+  if (sentences.length === 0) return truncateText(value, charBudget);
+
+  const ranked = sentences.map((sentence, index) => ({
+    sentence,
+    index,
+    score: scoreSentence(sentence) + (index === 0 ? 1 : 0),
+  }));
+  ranked.sort((a, b) => b.score - a.score || a.index - b.index);
+
+  const picked = [];
+  let used = 0;
+  for (const item of ranked) {
+    if (item.score <= 0 && picked.some((row) => row.score > 0)) continue;
+    const extra = used === 0 ? item.sentence.length : item.sentence.length + 1;
+    if (used + extra > charBudget) continue;
+    picked.push(item);
+    used += extra;
+    if (used >= charBudget * 0.9) break;
+  }
+  if (picked.length === 0) return truncateText(value, charBudget);
+  picked.sort((a, b) => a.index - b.index);
+  return picked.map((item) => item.sentence).join(' ');
+}
+
 function tweetUrl(handle, id) {
   const h = String(handle || '').replace(/^@/, '');
   if (!h || !id) return '';
@@ -38,11 +91,15 @@ function isJunkTweet(text) {
   return /^RT\s/i.test(t) || /^RT by @/i.test(t) || /^R to @/i.test(t);
 }
 
-function scoreText(text) {
-  let score = 0;
+function scoreText(text, kind) {
   const t = String(text || '');
+  let score = { podcast: 1.5, youtube: 1.2, blog: 1.0, tweet: 0.8 }[kind] || 1;
   if (/\d/.test(t) || /[$€%]/.test(t) || /20\d{2}/.test(t)) score += 2;
   if (NAME_HINTS.test(t)) score += 2;
+  score += (t.match(/\d+(\.\d+)?\s?%/g) || []).length * 0.5;
+  if (kind === 'tweet' && t.length < 80) score -= 1;
+  if (kind === 'tweet' && t.length < 40 && !/\d/.test(t)) score -= 3;
+  if (/^(Just|Finally|Super|Wow|Amazing|Interesting)\b/i.test(t)) score -= 0.5;
   return score;
 }
 
@@ -71,8 +128,7 @@ function flattenCandidates(feedData) {
     for (const tweet of builder.tweets || []) {
       if (isJunkTweet(tweet.text)) continue;
       const text = tweet.text || '';
-      let score = scoreText(text);
-      if (text.length < 40 && !/\d/.test(text)) score -= 3;
+      const score = scoreText(text, 'tweet');
       const url = tweetUrl(builder.handle, tweet.id);
       if (!url) continue;
       items.push({
@@ -93,7 +149,7 @@ function flattenCandidates(feedData) {
     const description = episode.description || '';
     items.push({
       kind: 'podcast',
-      score: scoreText(`${episode.title || ''} ${description}`) + 1,
+      score: scoreText(`${episode.title || ''} ${description}`, 'podcast'),
       name: episode.name,
       title: episode.title,
       url: episode.url,
@@ -104,10 +160,10 @@ function flattenCandidates(feedData) {
 
   for (const post of feedData.blogs || []) {
     if (!post.url) continue;
-    const body = post.description || post.content || '';
+    const body = post.content || post.description || '';
     items.push({
       kind: 'blog',
-      score: scoreText(`${post.title || ''} ${body}`) + 1,
+      score: scoreText(`${post.title || ''} ${body}`, 'blog'),
       name: post.name,
       title: post.title,
       url: post.url,
@@ -121,7 +177,7 @@ function flattenCandidates(feedData) {
     const description = video.description || '';
     items.push({
       kind: 'youtube',
-      score: scoreText(`${video.title || ''} ${description}`) + 1,
+      score: scoreText(`${video.title || ''} ${description}`, 'youtube'),
       name: video.name,
       handle: video.handle,
       title: video.title,
@@ -134,13 +190,14 @@ function flattenCandidates(feedData) {
   return items.filter(isFreshEnough);
 }
 
-function truncateItem(item) {
+function truncateItem(item, charBudget) {
   if (item.kind === 'podcast') {
-    return { ...item, description: truncateText(item.description, DEFAULTS.podcastChars) };
+    const maxChars = charBudget || DEFAULTS.podcastChars;
+    return { ...item, description: extractDenseSentences(item.description, maxChars) };
   }
   if (item.kind === 'blog' || item.kind === 'youtube') {
-    const maxChars = item.kind === 'youtube' ? DEFAULTS.videoChars : DEFAULTS.blogChars;
-    return { ...item, description: truncateText(item.description, maxChars) };
+    const maxChars = charBudget || (item.kind === 'youtube' ? DEFAULTS.videoChars : DEFAULTS.blogChars);
+    return { ...item, description: extractDenseSentences(item.description, maxChars) };
   }
   return item;
 }
@@ -237,10 +294,8 @@ function prepareFeedForModel(feedData, opts = {}) {
 
   if (tokensFor(items, generatedAt) > budgetTokens) {
     items = items.map((item) => {
-      if (item.kind === 'podcast') return { ...item, description: truncateText(item.description, 400) };
-      if (item.kind === 'blog' || item.kind === 'youtube') {
-        return { ...item, description: truncateText(item.description, 300) };
-      }
+      if (item.kind === 'podcast') return truncateItem(item, 400);
+      if (item.kind === 'blog' || item.kind === 'youtube') return truncateItem(item, 300);
       return item;
     });
   }
@@ -287,6 +342,8 @@ module.exports = {
   DEFAULTS,
   estimateTokens,
   truncateText,
+  extractDenseSentences,
+  scoreText,
   flattenCandidates,
   isFreshEnough,
   prepareFeedForModel,

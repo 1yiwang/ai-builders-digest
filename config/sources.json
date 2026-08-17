@@ -76,7 +76,8 @@
     { "name": "Andrej Karpathy",  "feedUrl": "https://karpathy.github.io/feed.xml" },
     { "name": "Simon Willison",   "feedUrl": "https://simonwillison.net/atom/everything/" },
     { "name": "Chip Huyen",       "feedUrl": "https://huyenchip.com/feed.xml" },
-    { "name": "程序员鱼皮",        "feedUrl": "https://www.cnblogs.com/yupi/rss" },
-    { "name": "超级小华",          "feedUrl": "https://www.cnblogs.com/xiaohuatongxueai/rss" }
+    { "name": "The Decoder",      "feedUrl": "https://the-decoder.com/feed/" },
+    { "name": "TechCrunch AI",    "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+    { "name": "TLDR AI",          "feedUrl": "https://tldr.tech/api/rss/ai" }
   ]
 }

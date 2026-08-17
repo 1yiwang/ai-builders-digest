@@ -48,6 +48,50 @@ function writeJson(filePath, data) {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
+function avatarFileExists(localPath) {
+  if (!localPath) return false;
+  const basename = path.basename(localPath);
+  return fs.existsSync(path.join(REPO_AVATARS_DIR, basename))
+    || fs.existsSync(path.join(AVATARS_DIR, basename))
+    || (path.isAbsolute(localPath) && fs.existsSync(localPath));
+}
+
+function persistAvatarFiles(results) {
+  ensureDir(REPO_AVATARS_DIR);
+  for (const [key, entry] of Object.entries(results)) {
+    if (!entry.localPath || !fs.existsSync(entry.localPath)) {
+      delete results[key];
+      continue;
+    }
+    const fileName = path.basename(entry.localPath);
+    const repoPath = path.join(REPO_AVATARS_DIR, fileName);
+    if (path.resolve(entry.localPath) !== path.resolve(repoPath)) {
+      fs.copyFileSync(entry.localPath, repoPath);
+    }
+    entry.localPath = 'assets/avatars/' + fileName;
+  }
+}
+
+function pruneManifestEntries(entries) {
+  const kept = {};
+  for (const [key, entry] of Object.entries(entries || {})) {
+    if (key.includes('程序员鱼皮') || key.includes('超级小华')) continue;
+    const exists = avatarFileExists(entry.localPath);
+    if (exists) {
+      kept[key] = {
+        ...entry,
+        localPath: 'assets/avatars/' + path.basename(entry.localPath),
+      };
+    } else if (entry.fileUrl && /^https?:\/\//i.test(entry.fileUrl)) {
+      kept[key] = {
+        fileUrl: entry.fileUrl,
+        source: entry.source || 'remote',
+      };
+    }
+  }
+  return kept;
+}
+
 function slugify(name) {
   const slug = String(name || '')
     .toLowerCase()
@@ -371,9 +415,9 @@ async function main() {
   console.error('[4/4] Blog favicons...');
   const blogResults = await downloadBlogAvatars(sources, dryRun);
 
-  // Merge all results into manifest
   const allResults = { ...xResults, ...podcastResults, ...youtubeResults, ...blogResults };
-  manifest.entries = { ...manifest.entries, ...allResults };
+  if (!dryRun) persistAvatarFiles(allResults);
+  manifest.entries = pruneManifestEntries({ ...manifest.entries, ...allResults });
   manifest.updatedAt = new Date().toISOString();
   manifest.avatarCount = Object.keys(manifest.entries).length;
 
@@ -404,7 +448,12 @@ async function main() {
 
     // Copy avatars to repo assets/ for CI
     ensureDir(REPO_AVATARS_DIR);
-    const avatarFiles = fs.readdirSync(AVATARS_DIR).filter(f => /\.(jpg|png|gif|webp|svg)$/i.test(f));
+    const wanted = new Set(
+      Object.values(repoManifest.entries)
+        .map((entry) => entry.localPath && path.basename(entry.localPath))
+        .filter(Boolean)
+    );
+    const avatarFiles = fs.readdirSync(AVATARS_DIR).filter((f) => wanted.has(f));
     let copiedCount = 0;
     avatarFiles.forEach(f => {
       const src = path.join(AVATARS_DIR, f);
