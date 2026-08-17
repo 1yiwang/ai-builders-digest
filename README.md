@@ -50,6 +50,7 @@ GitHub Actions runs this Mon/Wed/Fri at 06:00 UTC. There is no database, no vect
 - Each card needs `authorKey`, `priority` ∈ {1,2,3}, and non-empty `en` / `de` rewrites
 - Feed items older than **72 hours**, or blogs with no parseable date, are dropped
 - Eval (`npm run eval`) replays every `data/issues/*.json` with no model call
+- Faithfulness (current issues only, warnings): numbers and English `original` lines must appear in on-disk feed text for that `sourceUrl`. Cards whose source is no longer in `data/feeds/` are skipped.
 
 Soft warnings (do not block publish): rewrite bullets without a number; bullets longer than 30 words; unknown `authorKey`.
 
@@ -102,6 +103,6 @@ Public RSS/Atom first (Hugging Face, OpenAI, Simon Willison, The Decoder, TechCr
 
 ## Status
 
-Shipped: 72h freshness, density extraction, cost ledger, schema repair, CI degrade-to-green.
+Shipped: 72h freshness, density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings against feed text.
 
-Next (see [`docs/applied-ai-next-plan.md`](docs/applied-ai-next-plan.md)): faithfulness eval (numbers in cards must appear in source text), gold-set shortlist regression, and treating each feed run as the full 72h window rather than “new since last run.”
+Next (see [`docs/applied-ai-next-plan.md`](docs/applied-ai-next-plan.md)): gold-set shortlist regression, and treating each feed run as the full 72h window rather than “new since last run.”

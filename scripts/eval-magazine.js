@@ -4,15 +4,44 @@
 const fs = require('fs');
 const path = require('path');
 const { validateMagazineJSON, validateLegacyIssue, collectCardUrls } = require('./lib/validate-magazine');
+const { indexFeeds, evaluateFaithfulness } = require('./lib/faithfulness');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const REPORT_PATH = path.join(REPO_ROOT, 'data', 'eval', 'last-report.json');
 const IDENTITIES_PATH = path.join(REPO_ROOT, 'config', 'author-identities.json');
+const FEEDS_DIR = path.join(REPO_ROOT, 'data', 'feeds');
+const DEBUG_DIR = path.join(REPO_ROOT, 'data', 'debug');
 
 function loadIdentities() {
-  if (!fs.existsSync(IDENTITIES_PATH)) return {};
-  return JSON.parse(fs.readFileSync(IDENTITIES_PATH, 'utf8')).entries || {};
+  return loadJson(IDENTITIES_PATH).entries || {};
+}
+
+function loadJson(filePath) {
+  if (!fs.existsSync(filePath)) return {};
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function loadSourceIndex() {
+  const feedX = loadJson(path.join(FEEDS_DIR, 'feed-x.json'));
+  const feedPodcasts = loadJson(path.join(FEEDS_DIR, 'feed-podcasts.json'));
+  const feedBlogs = loadJson(path.join(FEEDS_DIR, 'feed-blogs.json'));
+  const feedYoutube = loadJson(path.join(FEEDS_DIR, 'feed-youtube.json'));
+  const shortlist = [];
+  if (fs.existsSync(DEBUG_DIR)) {
+    for (const name of fs.readdirSync(DEBUG_DIR)) {
+      if (!/^shortlist-.*\.json$/.test(name)) continue;
+      const payload = loadJson(path.join(DEBUG_DIR, name));
+      if (Array.isArray(payload.shortlist)) shortlist.push(...payload.shortlist);
+    }
+  }
+  return indexFeeds({
+    x: feedX.x || [],
+    podcasts: feedPodcasts.podcasts || [],
+    blogs: feedBlogs.blogs || [],
+    videos: feedYoutube.videos || [],
+    shortlist,
+  });
 }
 
 function lookupIdentity(identities, authorKey) {
@@ -59,7 +88,7 @@ function listIssueFiles() {
     .sort();
 }
 
-function evaluateIssue(fileName, identities) {
+function evaluateIssue(fileName, identities, sourceIndex) {
   const filePath = path.join(ISSUES_DIR, fileName);
   const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   const legacy = !data.meta;
@@ -77,7 +106,13 @@ function evaluateIssue(fileName, identities) {
   }
 
   const warnings = [...(result.warnings || [])];
-  if (!legacy) warnings.push(...softEvaluate(data, identities));
+  let faithfulness = null;
+  if (!legacy) {
+    warnings.push(...softEvaluate(data, identities));
+    const grounded = evaluateFaithfulness(data, sourceIndex);
+    warnings.push(...grounded.warnings);
+    faithfulness = grounded.stats;
+  }
 
   return {
     file: fileName,
@@ -86,14 +121,27 @@ function evaluateIssue(fileName, identities) {
     ok: result.ok,
     errors: result.errors,
     warnings,
+    faithfulness,
   };
 }
 
 function main() {
   const identities = loadIdentities();
-  const issues = listIssueFiles().map((fileName) => evaluateIssue(fileName, identities));
+  const sourceIndex = loadSourceIndex();
+  const issues = listIssueFiles().map((fileName) => evaluateIssue(fileName, identities, sourceIndex));
   const current = issues.filter((item) => item.kind === 'current');
   const legacy = issues.filter((item) => item.kind === 'legacy');
+  const faithfulness = current.reduce(
+    (acc, item) => {
+      const stats = item.faithfulness || {};
+      acc.checked += stats.checked || 0;
+      acc.skippedNoSource += stats.skippedNoSource || 0;
+      acc.numberMisses += stats.numberMisses || 0;
+      acc.quoteMisses += stats.quoteMisses || 0;
+      return acc;
+    },
+    { checked: 0, skippedNoSource: 0, numberMisses: 0, quoteMisses: 0 }
+  );
   const report = {
     generatedAt: new Date().toISOString(),
     totals: {
@@ -102,6 +150,7 @@ function main() {
       legacy: legacy.length,
       currentFailed: current.filter((item) => !item.ok).length,
       legacyFailed: legacy.filter((item) => !item.ok).length,
+      faithfulness,
     },
     issues,
   };
@@ -110,6 +159,7 @@ function main() {
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2), 'utf8');
 
   console.error(`Eval: ${issues.length} issue(s) — current ${report.totals.currentFailed}/${current.length} failed, legacy ${report.totals.legacyFailed}/${legacy.length} failed`);
+  console.error(`Faithfulness: ${faithfulness.checked} card(s) with source text, ${faithfulness.numberMisses} number miss(es), ${faithfulness.quoteMisses} quote miss(es), ${faithfulness.skippedNoSource} skipped (source not on disk)`);
   console.error(`Report: ${REPORT_PATH}`);
   for (const item of issues.filter((row) => !row.ok)) {
     console.error(`  FAIL ${item.kind} ${item.file}`);

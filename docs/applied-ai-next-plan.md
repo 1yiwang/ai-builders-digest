@@ -1,7 +1,7 @@
 # Applied AI Engineer — 下一轮升级
 
 > 日期：2026-08-17  
-> 状态：README 已写（2026-08-17）；其余未改管线代码  
+> 状态：README ✅、faithfulness eval ✅（2026-08-17）；其余未改管线代码  
 > 约束：不接数据库、不上向量库、不微调、不加 multi-agent。SignalDesk 已经覆盖检索；这边只加深 **生成系统**。
 
 ---
@@ -43,15 +43,16 @@ RSS / Nitter / Atom
 
 仓库根目录 [`README.md`](../README.md)（2026-08-17）：问题 → 管线 → 硬约束 → 2026-08-17 成本数字 → 明确不做向量库。
 
-### P0 — Faithfulness eval（最能拉开差距）
+### P0 — Faithfulness eval ✅
 
-在 `eval-magazine.js` 加软/硬检查，对照 `data/feeds` 原文：
+`scripts/lib/faithfulness.js`，由 `npm run eval` 调用。对照当前 `data/feeds` 原文：
 
-- 卡片里的数字 / 百分比，是否在对应 `sourceUrl` 的 description 里出现  
-- `en.original` 是否能在源文本中找到（或明显是改写，而不是编造）  
-- 继续保留现有：URL 必须在 `meta.sourceUrls` / 短名单里  
+- 卡片 `en.rewrite` 里的数字 / 百分比是否出现在对应 `sourceUrl` 的文本中  
+- `en.original` 是否能在源文本中找到（`[Paraphrase]` 标记的不算引语）  
+- 源不在磁盘上的卡片跳过（旧刊 feed 已被覆盖）  
+- **只警告，不挡出刊**；legacy 刊不跑
 
-不挡历史 legacy 刊；只对带 `meta` 的 current 刊警告或失败。面试可以说：「我们测 groundedness，不只测 JSON 能不能 parse。」
+2026-08-17 实测：15 张有源文本的卡片，0 number miss，0 quote miss。合成用例能抓住「99.9%」这种编造数字。
 
 ### P1 — 冻结短名单回归集
 

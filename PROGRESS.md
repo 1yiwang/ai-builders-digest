@@ -14,10 +14,11 @@
 - **RSS 正文**：不再写空 `description`；无 `content:encoded` 时抓 `og:description`；先解码实体再剥 HTML
 - **进模**：`extractDenseSentences` 替换盲截断；`scoreText` 按类型加权并惩罚空推
 - **软 eval**：无数字 / 子弹 >30 词 / 未知 `authorKey` 只警告，不挡出刊
+- **Faithfulness**：`scripts/lib/faithfulness.js` — 有源文本的卡片检查数字和英文 original 是否在 feed 里；无源则跳过
 
-本机检查（2026-08-17）：Decoder + TechCrunch + Simon 共 9 篇博客（8/16–8/17）；`npm run prepare-feed` 候选 20 → 短名单 12；`npm run eval` 33 期 current 0/1 fail。
+本机检查（2026-08-17）：Decoder + TechCrunch + Simon 共 9 篇博客（8/16–8/17）；`npm run prepare-feed` 候选 20 → 短名单 12；`npm run eval` 34 期 current 0/2 fail。Faithfulness：15 张有源卡片，0 number/quote miss。
 
-下一步：见 `docs/applied-ai-next-plan.md`（README + faithfulness eval 优先）。
+下一步：gold 短名单回归，或 72h 窗口语义（见 `docs/applied-ai-next-plan.md`）。
 
 ## 2026-08-16 — 新鲜源（X / YouTube）
 
