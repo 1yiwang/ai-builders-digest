@@ -1,111 +1,11 @@
 {
-  "generatedAt": "2026-08-17T10:51:18.446Z",
+  "generatedAt": "2026-08-19T06:56:32.150Z",
   "lookbackHours": 72,
-  "x": [
-    {
-      "handle": "@AndrewYNg",
-      "name": "Andrew Ng",
-      "tweets": [
-        {
-          "id": "2088302050706686198",
-          "text": "New: A map of the most important skills in AI Engineering.",
-          "createdAt": "2026-08-14T16:29:42.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    },
-    {
-      "handle": "@rauchg",
-      "name": "Guillermo Rauch",
-      "tweets": [
-        {
-          "id": "2089179650891432270",
-          "text": "xn--c1h.to",
-          "createdAt": "2026-08-17T02:36:58.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2089126690043916495",
-          "text": "We ran evals on GLM 5.3 cybersecurity capabilities. It's the new open frontier. Given its lower costs, I expect this to be a boon for defensive security work. e.g., it means you can run https://deepsec.sh at least 3× more often!",
-          "createdAt": "2026-08-16T23:06:31.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088838302367732178",
-          "text": "Recursive self improvement",
-          "createdAt": "2026-08-16T04:00:34.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088801077659635715",
-          "text": "Impressive",
-          "createdAt": "2026-08-16T01:32:39.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088757738037989755",
-          "text": "I think people don’t realize how much of the success of React is actually @shadcn. I once referred to React as the actual “LEGO brick for adults.” But in reality it was more the description of the geometry of the bricks. The spec. Shadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.",
-          "createdAt": "2026-08-15T22:40:26.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088735125744070932",
-          "text": "I’m interested in finding and funding the next Disney. True to its original values, focused on the American spirit. Merit, family, overcoming of adversity, optimism, the pursuit of happiness. AI makes everyone able to create. What will define our next generation is *what* we create with it. The next icons. The next unique brand that goes further than how it’s drawn or rendered. Mickey Mouse survived several technological revolutions because of what it represented. I think most big entertainment companies have forgotten that. If you’re creating something cool in this space and need help, technologically or financially, slide into my DMs.",
-          "createdAt": "2026-08-15T21:10:35.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        },
-        {
-          "id": "2088323451132199338",
-          "text": "Vercel is the fastest [AI Gateway] infrastructure in the world",
-          "createdAt": "2026-08-14T17:54:44.000Z",
-          "metrics": {
-            "likes": 0,
-            "retweets": 0,
-            "replies": 0,
-            "views": 0
-          }
-        }
-      ]
-    }
-  ],
+  "x": [],
   "stats": {
-    "xBuilders": 2,
-    "totalTweets": 8
+    "xBuilders": 0,
+    "totalTweets": 0
   },
-  "_mode": "Nitter RSS (free)"
+  "_mode": "Nitter RSS (free)",
+  "note": "X feed unavailable — all Nitter RSS instances failed or returned no content. Check instance status at https://github.com/zedeus/nitter/wiki/Instances"
 }

@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-08-17T10:51:03.560Z",
+  "generatedAt": "2026-08-19T06:56:21.695Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Machine Learning Street Talk",
-      "title": "Candid Discussion: Anthropic and Nvidia Investments",
-      "guid": "gid://art19-episode-locator/V0/GXwz0w7GMNUrV6W74n4oKcvJ9rE9vBadYUNtuObStg4",
-      "publishedAt": "2026-08-14T21:53:03.000Z",
-      "description": "Chapters 00:00 Market Valuations and IPOs 00:30 Nvidia's AI Data Center Plan 00:54 Innovative Content Protection 03:01 Thrive Holdings' Strategy 04:15 AI in Healthcare Show Links License your data with Fiund.com Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "name": "Training Data",
+      "title": "Rich Sutton and Khurram Javed: Why AI Models Stop Learning, and How to Start It Again",
+      "guid": "f22093e6-9ac6-11f1-aa57-23eadad59cc7",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "publishedAt": "2026-08-18T09:00:00.000Z",
+      "description": "Rich Sutton, who helped pioneer reinforcement learning and wrote the seminal AI essay The Bitter Lesson, has now cofounded Oak Lab with his former student Khurram Javed. Their goal: to build agents that continuously learn from their own experience rather than from us. Rich doesn't think he holds a radical view: \"I'm not weird. The field is weird.\" He says all learning is continual, and the field is the one that needed a new name for it. Rich and Khurram argue synthetic data is \"a big mistake.\" Their \"big world hypothesis\" is that the world is massively more complex than any agent or simulator, so approximations have to be updated continuously rather than frozen at deployment. Rich calls LLMs an unanticipated scientific breakthrough, but says they represent roughly a quarter of intelligence. He says catastrophic forgetting is \"totally curable\" with the ideas behind their continual backprop algorithm. Khurram explains why the frontier labs can't follow: they sit in a local minimum where a new paradigm gets worse before it gets better. Their target, five to ten years out, is a trillion-parameter mind that keeps learning, stays coherent, and runs on 20 watts. Hosted by Sonya Huang and Alfred Lin, Sequoia Capital"
     },
     {
       "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "Let There Be Germicidal Light: This $500 Fixture Could Stop the Next Pandemic, from Complex Systems",
-      "guid": "e74f032c-98ea-11f1-a437-a79e349e98f6",
-      "url": "https://www.cognitiverevolution.ai/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-systems/",
-      "publishedAt": "2026-08-16T05:43:02.000Z",
-      "description": "Patrick McKenzie (patio11) hosts Aerolamp CEO Misha Gurevich and Chief Scientist Vivian Belenky, a Columbia University researcher, for a Complex Systems conversation about far-UVC germicidal light at roughly 222 nanometers. Belenky explains why this wavelength can inactivate airborne pathogens while being absorbed by the dead outer layer of human skin, and why room-scale deployments may function like an extremely strong air purifier. The guests argue that the biggest barriers are awareness and adoption rather than cost or basic science, with fixtures around $500 and straightforward installation. The stakes are concentrated in schools, transport hubs, long-term care, and future respiratory pandemics, where making clean shared air into ordinary infrastructure could sharply reduce transmission. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/let-there-be-germicidal-light-this-500-fixture-could-stop-the-next-pandemic-from-complex-systems/ Sponsors: Deepgram Flux TTS: Deepgram Flux TTS brings lifelike AI voices with real personalities that handle interruptions, pauses, and natural conversation. Try all the voices free through September 12 at https://deepgram.com/keep-talking Granola: Granola is an AI-powered notepad that securely transcribes meetings and turns rough notes into clean, structured action items. Try it free at https://granola.ai/tcr Claude: Claude by Anthropic is an AI collaborator that understands your workflow and helps you tackle research, writing, coding, and organization with deep context. Get started with Claude and explore Claude Pro at https://claude.ai/tcr CHAPTERS: (00:00) About the Episode (03:19) Far-UVC science and safety (12:41) Deployment and economics (Part 1) (18:04) Sponsors: Deepgram Flux TTS | Granola (20:04) Deployment and economics (Part 2) (27:11) Evidence and pandemics (Part 1) (32:43) Sponsor: Claude (34:13) Evidence and pandemics (Part 2) (38:14) Built environment strategy (47:27) Scaling and home use (56:06) Uncertainty and immunity (01:05:38) Risk and awareness (01:20:45) Episode Outro (01:24:26) Outro PRODUCED BY: https://aipodcast.ing SOCIAL LINKS: Website: https://www.cognitiverevolution.ai Twitter (Podcast): https://x.com/cogrev_podcast Twitter (Nathan): https://x.com/labenz LinkedIn: https://linkedin.com/in/nathanlabenz/ Youtube: https://youtube.com/@CognitiveRevolutionPodcast Apple: https://podcasts.apple.com/de/podcast/the-cognitive-revolution-ai-builders-researchers-and/id1669813431 Spotify: https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk"
+      "name": "Machine Learning Street Talk",
+      "title": "Anthropic Achieves $65B Run Rate, Cursor Launches",
+      "guid": "gid://art19-episode-locator/V0/CAPX37hmeDbnWX0tAP8mfhUDU4FvQFJ2AXiH8jE8rRE",
+      "publishedAt": "2026-08-19T02:33:03.000Z",
+      "description": "Chapters 00:00 Introduction 02:00 Anthropic's Revenue Surge 04:03 ChatGPT for Teens 06:40 Cursor Launches Origin 09:21 OpenAI's Security Overhaul 11:41 Conclusion and Community Announcement Show Links How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
