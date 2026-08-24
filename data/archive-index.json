@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-08-17T08:05:38.785Z",
-  "count": 34,
+  "generatedAt": "2026-08-24T07:15:53.323Z",
+  "count": 35,
   "issues": [
+    {
+      "date": "2026-08-24",
+      "title": "Die 14x-Agenten-Token-Welle",
+      "desc": "Lokale Inferenz wird billiger, Agenten werden zum größten KI-Kunden, und menschliche Kontrolle bleibt nötig.",
+      "href": "./issues/ai-builders-digest-2026-08-24.html",
+      "issue": "Nr. 35"
+    },
     {
       "date": "2026-08-17",
       "title": "Stripes Sieben-Milliarden-Dollar-Wette auf OpenRouter",

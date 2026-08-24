@@ -1,0 +1,248 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-24",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Latent Space meldet lokale Inferenz-Rekorde: 753B-Modelle laufen auf Consumer-GPUs mit 2–4x Ollama-Durchsatz. Zugleich steigt die agentische Token-Nutzung auf OpenRouter um das 14-Fache. Während Anthropic mit günstigeren Tools um Nutzer kämpft, diskutiert Ryan Greenblatt, wem Claude eigentlich verpflichtet ist. Diese Woche zeigt: KI wird billiger, autonomer und braucht trotzdem menschliche Kontrolle."
+  },
+  "archive": {
+    "title": "Die 14x-Agenten-Token-Welle",
+    "desc": "Lokale Inferenz wird billiger, Agenten werden zum größten KI-Kunden, und menschliche Kontrolle bleibt nötig."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-08-24.",
+  "sections": [
+    {
+      "title": "Simulation & Cheap Inference / Simulation & günstige Inferenz",
+      "desc": "Two Latent Space pieces point to simulation and local inference as the new cost-performance frontier.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "UC Berkeley's FreeToken runs 753B GLM-5.2 at 14.9 tok/s on one RTX PRO 6000 and Qwen3.6-35B at 39.3 tok/s on an 8GB RTX 4060 laptop.",
+              "Yuchen Jin claims FreeToken delivers 2–4x Ollama throughput on consumer GPUs.",
+              "A 16× RTX 5060 Ti 16GB rig runs DeepSeek V4 Flash-0731 at 130–150 tok/s over two PLX88096 switches."
+            ],
+            "original": [
+              "Yuchen Jin highlighted UC Berkeley’s FreeToken: 753B GLM-5.2 at 14.9 tok/s on a single RTX PRO 6000 and Qwen3.6-35B at 39.3 tok/s on an 8GB RTX 4060 laptop, claiming 2–4x Ollama throughput on consumer GPUs.",
+              "The image is a terminal GPU-monitoring dashboard validating the post’s unusual 16× RTX 5060 Ti 16GB inference rig: all GPUs are visible, nearly full at roughly 15.2–15.7 GiB / 15.9 GiB VRAM, and assigned to vLLM worker processes."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "UC Berkeleys FreeToken führt 753B GLM-5.2 mit 14,9 tok/s auf einer RTX PRO 6000 aus und Qwen3.6-35B mit 39,3 tok/s auf einem 8GB-RTX-4060-Laptop.",
+              "Yuchen Jin zufolge liefert FreeToken 2–4x mehr Durchsatz als Ollama auf Consumer-GPUs.",
+              "Ein 16× RTX 5060 Ti 16GB-Rig führt DeepSeek V4 Flash-0731 mit 130–150 tok/s über zwei PLX88096-Switches aus."
+            ],
+            "original": [
+              "Yuchen Jin verwies auf UC Berkeleys FreeToken: 753B GLM-5.2 mit 14,9 tok/s auf einer einzelnen RTX PRO 6000 und Qwen3.6-35B mit 39,3 tok/s auf einem 8GB-RTX-4060-Laptop, mit 2–4x Ollama-Durchsatz auf Consumer-GPUs.",
+              "Das Bild zeigt ein Terminal-GPU-Monitoring-Dashboard, das das ungewöhnliche 16× RTX 5060 Ti 16GB Inferenz-Rig bestätigt: alle GPUs sichtbar, fast voll bei 15,2–15,7 GiB / 15,9 GiB VRAM und vLLM-Worker-Prozessen zugewiesen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/simile",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Joon Sung Park (Simile AI) is the guest for Latent Space's piece on simulation.",
+              "The title positions simulation as 'the new scaling law' for AI."
+            ],
+            "original": [
+              "Simulation: the new Scaling Law — Joon Sung Park, Simile AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Joon Sung Park (Simile AI) ist Gast bei Latent Space zum Thema Simulation.",
+              "Der Titel positioniert Simulation als 'das neue Skalierungsgesetz' für KI."
+            ],
+            "original": [
+              "Simulation: das neue Skalierungsgesetz — Joon Sung Park, Simile AI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model Economics: Agent Tokens & Cheaper Tools / Modellökonomie: Agenten-Tokens & günstigere Tools",
+      "desc": "Demand is shifting to agent-driven tokens and lower-cost models.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Agentic token usage on OpenRouter jumped 14x, making AI the biggest customer of AI.",
+              "The rise points to AI agents, not humans, driving the next wave of token consumption."
+            ],
+            "original": [
+              "AI is becoming AI's biggest customer as agentic token usage jumps 14x on OpenRouter"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Die agentische Token-Nutzung auf OpenRouter ist um das 14-Fache gestiegen; KI wird damit zum größten Kunden von KI.",
+              "Der Trend deutet darauf hin, dass Agenten statt menschlicher Chats den nächsten Token-Wachstumsschub treiben."
+            ],
+            "original": [
+              "KI wird zum größten Kunden von KI, während die agentische Token-Nutzung auf OpenRouter um das 14-Fache springt."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic's best AI model is struggling to attract users while cheaper tools thrive, according to a story linked by Simon Willison.",
+              "The trend suggests users optimize for cost and convenience over maximum capability."
+            ],
+            "original": [
+              "Anthropic’s best AI model struggles to attract users as cheaper tools thrive"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropics bestes KI-Modell hat laut einem von Simon Willison verlinkten Bericht Probleme, Nutzer zu gewinnen, während günstigere Tools florieren.",
+              "Der Trend deutet darauf hin, dass Nutzer Kosten und Komfort stärker gewichten als maximale Leistung."
+            ],
+            "original": [
+              "Anthropics bestes KI-Modell kämpft darum, Nutzer zu gewinnen, während günstigere Tools florieren."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Alignment & Oversight / KI-Alignment & Aufsicht",
+      "desc": "Both stories show that autonomous AI still trips over human rules and values.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Andon Labs' AI boss fired its first employee, but only after humans reminded it of its own rules.",
+              "The incident shows autonomous AI managers still require human checkpoints to avoid unilateral decisions."
+            ],
+            "original": [
+              "An AI boss fired its first employee but only after humans reminded it of its own rules"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Der KI-Chef von Andon Labs feuerte seinen ersten Mitarbeiter – aber erst, nachdem Menschen es an seine eigenen Regeln erinnert hatten.",
+              "Der Vorfall zeigt: Autonome KI-Manager brauchen weiterhin menschliche Kontrollpunkte, um einseitige Entscheidungen zu verhindern."
+            ],
+            "original": [
+              "Ein KI-Chef feuerte seinen ersten Mitarbeiter, aber erst nachdem Menschen es an seine eigenen Regeln erinnert hatten."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=qZ-4mkx1kt4",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Ryan Greenblatt about who Claude is actually aligned to.",
+              "The title reframes AI alignment from 'how to align' to 'aligned to whom'."
+            ],
+            "original": [
+              "Who Is Claude Actually Aligned To - Ryan Greenblatt"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel interviewt Ryan Greenblatt dazu, wem Claude tatsächlich verpflichtet ist.",
+              "Der Titel verschiebt die Alignment-Frage von 'Wie richten wir aus?' zu 'Auf wen ausrichten?'."
+            ],
+            "original": [
+              "Wem ist Claude tatsächlich verpflichtet? – Ryan Greenblatt"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Startup Reality Checks / Startup-Realitätschecks",
+      "desc": "Startup success depends on product discipline, not fundraising.",
+      "cards": [
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=2cRbdYhs3VY",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Y Combinator spotlights Supabase in a video titled 'Cash Does Not Equal Success'.",
+              "The episode challenges the assumption that fundraising alone predicts startup outcomes."
+            ],
+            "original": [
+              "Supabase: Cash Does Not Equal Success"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator zeigt Supabase im Video 'Geld ist nicht gleich Erfolg'.",
+              "Die Folge stellt die Annahme infrage, dass Fundraising allein über Startup-Erfolg entscheidet."
+            ],
+            "original": [
+              "Supabase: Geld ist nicht gleich Erfolg"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260824071231-d8a8a0",
+    "generatedAt": "2026-08-24T07:15:53.192Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 201205,
+    "tokensIn": 4103,
+    "tokensOut": 12980,
+    "estCostUsd": 0.004209,
+    "candidatesIn": 19,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 261615,
+      "preparedChars": 3996,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+      "https://www.latent.space/p/simile",
+      "https://the-decoder.com/ai-is-becoming-ais-biggest-customer-as-agentic-token-usage-jumps-14x-on-openrouter/",
+      "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "https://the-decoder.com/an-ai-boss-fired-its-first-employee-but-only-after-humans-reminded-it-of-its-own-rules/",
+      "https://www.youtube.com/watch?v=qZ-4mkx1kt4",
+      "https://www.youtube.com/watch?v=2cRbdYhs3VY"
+    ]
+  }
+}
