@@ -1,15 +1,24 @@
 {
-  "generatedAt": "2026-08-24T07:12:24.448Z",
+  "generatedAt": "2026-08-26T07:00:28.343Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "Supabase: Cash Does Not Equal Success",
-      "url": "https://www.youtube.com/watch?v=2cRbdYhs3VY",
-      "publishedAt": "2026-08-21T14:00:13.000Z",
-      "description": "In this fireside from Startup School Paris, Supabase CEO Paul Copplestone reflects on creating one of the fastest growing dev tools in the AI era.\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs\n\nChapters:\n\n00:00 — Paul's Origin Story\n01:56 — Building Software He Needed 15 Years Ago\n03:11 — Why Bet on 30-Year-Old Postgres?\n04:17 — The Open Source Decision\n07:17 — Do Cloud Giants Threaten You?\n08:33 — The &quot;Open Source Firebase&quot; Pivot\n09:59 — Missing Features, Big Ambitions\n10:26 — Winning Developers Over Firebase\n12:18 — Launch Waves &amp; YC Batch Adoption\n14:27 — How Agents Changed the Metric\n16:50 — Building the First Docs Chatbot\n21:18 — Claude Code Changes Everything\n22:55 — 60%+ of Databases Launched by Agents\n27:03 — Scaling from 220 to 360 People\n31:17 — AI Inside the Company\n34:19 — True Gains Need No Human in the Loop\n38:43 — $500M Round, Staying Grounded\n40:47 — Advice for DevTool Founders Today"
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "This Small AI Will Change Everything",
+      "url": "https://www.youtube.com/watch?v=wMl6c_r0ubw",
+      "publishedAt": "2026-08-24T16:48:40.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Qwen3.8-27b is available here:\nhttps://huggingface.co/Qwen/Qwen3.8-27B\n\nSources:\nhttps://www.reddit.com/r/unsloth/comments/1vogva0/share_your_results_from_qwen3827b/\nhttps://www.reddit.com/r/LocalLLaMA/comments/1voer8u/qwen_38_27b_aquarium_burst_sample_test/\nhttps://x.com/KyleHessling1/status/2088327667733180637\nhttps://www.reddit.com/r/LocalLLaMA/comments/1vqme4y/qwen3827b_q8_0_on_strix_halo_is_seriously/\nhttps://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-a-single-dgx-spark-up-to-1m-context-vllm-mtp-measurements/380244\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Mythos Was Deemed Too Dangerous to Release - Ryan Greenblatt",
+      "url": "https://www.youtube.com/watch?v=wtaoBxnf1vQ",
+      "publishedAt": "2026-08-24T21:43:58.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -22,33 +31,15 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Who Is Claude Actually Aligned To - Ryan Greenblatt",
-      "url": "https://www.youtube.com/watch?v=qZ-4mkx1kt4",
-      "publishedAt": "2026-08-22T21:00:28.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why Machine Learning Is a Much “Shallower” Field Than Math - Ryan Greenblatt",
-      "url": "https://www.youtube.com/watch?v=Fmpgmc40ErI",
-      "publishedAt": "2026-08-21T21:20:26.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Simulating Humanity: from Generative Agents to 8 Billion Digital Twins — Joon Sung Park, Simile AI",
-      "url": "https://www.youtube.com/watch?v=KpOW9Pk4BUs",
-      "publishedAt": "2026-08-21T19:50:24.000Z",
-      "description": "From creating Smallville, the landmark Generative Agents experiment that showed AI characters could remember, plan, socialize, and develop emergent behaviors, to now building foundation models of human behavior, Joon Sung Park is trying to answer a much bigger question: what if we could simulate the world before making decisions in it? In this episode, the Simile co-founder and CEO joins us to unpack the path from generative agents to digital twins, why today’s frontier models still fail to capture how humans actually behave, and what it would take to eventually simulate all 8 billion people on Earth.\n\nWe go deep on Simile’s approach to modeling human behavior: long-form interviews, observational and transaction data, randomized controlled trials, population-level and individual-level models, and post-training on the causal mechanisms behind why people make decisions. Joon explains how his research created digital twins that reproduced human behavior and attitudes 85% as accurately as people reproduced their own responses, why models optimized to be rational can be bad simulations of irrational humans, and why understanding “social physics” may require changing model weights rather than simply prompting frontier LLMs.\n\nWe also explore the much larger ambition behind simulation: testing products and policies before deploying them, finding counterintuitive paths toward desired outcomes, modeling emergent behavior across entire societies, and potentially tackling problems like climate change, democratic instability, and UBI. Joon reflects on scaling laws for simulation, the economics of data-center-scale simulated worlds, the connection to Thomas Schelling and psychohistory, why simulation is surprisingly similar to painting, and whether we might already be living in one.\n\nWe discuss:\n• How Smallville and the Generative Agents paper led to Simile\n• Why Joon’s team asked: “What if we can just recreate the world that we live in?”\n• Why useful personal agents require deep models of the people they serve\n• Memory architectures, Markdown files, and the limits of prompting\n• “Social physics” and behavioral foundation models\n• Why web data captures what people say more than what they actually do\n• Interviews, transactions, observational data, and randomized controlled trials\n• Why predicting the future matters less than understanding how to shape it\n• How Simile creates representative simulated populations\n• Simulation versus prediction and the connection to Foundation’s psychohistory\n• How to evaluate simulations instead of simply stacking LLM hallucinations\n• Creating digital twins of 1,000 real people and reaching 85% behavioral accuracy\n• Why frontier models can struggle to reproduce real human behavior\n• Why good simulations need to reproduce human biases and mistakes\n• Post-training models on randomized controlled trials\n• Population-level versus individual-level simulation\n• Scaling laws for human simulation\n• The long-term ambition to simulate all 8 billion people on Earth\n• Whether simulations could help solve climate change or detect collapsing democracy\n• Thomas Schelling and the history of agent-based modeling\n• Why future simulations could require an entire data center\n• Multi-agent simulations and what happens when simulated people interact\n• Replacing expensive human panels with synthetic populations\n• Why market research is only the starting point for simulation\n• Why Joon sees simulation as surprisingly similar to painting\n• Using simulation to study questions like UBI\n• Whether we are already living in a simulation\n• Why AGI and simulation may be the twin technologies of advanced civilizations\n\n—\n\nJoon Sung Park\n• LinkedIn: https://www.linkedin.com/in/joonspark\n• X: https://x.com/joon_s_pk\n• Simile: simile.ai\n\nTimestamps\n00:00:00 Hook\n00:01:22 Introduction and Joon’s Path from Art to AI\n00:03:08 Smallville, Generative Agents, and the Origins of Simulation\n00:06:25 “Let’s Just Create a World” and the Future of Personal Agents\n00:11:15 Social Physics and Behavioral Foundation Models\n00:15:30 Prediction vs. Simulation: How Do You Shape the Future?\n00:18:21 How Simile Models Real People and Populations\n00:26:57 Evaluating Simulations, Digital Twins, and 85% Accuracy\n00:31:45 Post-Training Models to Reproduce Human Behavior\n00:41:26 Scaling Laws and Simulating 8 Billion People\n00:44:32 From Schelling to Society-Scale Agent Simulations\n00:47:35 The Cost and Economics of Simulating the World\n00:53:27 Real-World Use Cases, Synthetic Populations, and the Market\n00:58:49 The Future of Simulation, Painting, and UBI\n01:05:45 Are We Already Living in a Simulation?\n01:07:30 Building Simile and Hiring"
+      "title": "⏭️ Forward Deployed: Voice AI on what works in 2026",
+      "url": "https://www.youtube.com/watch?v=MwNvowwcZOo",
+      "publishedAt": "2026-08-25T18:45:32.000Z",
+      "description": "Voice agents are one of the hottest use cases in enterprise right now, but also one of the hardest to actually take live. Getting latency low enough to feel human without dumbing down the responses, making reliable tool calls to a CRM without dropping the customer mid-call, building fallback models for when your main provider goes down. None of it is as simple as the demos make it look.\n\nBasil Chatha hosted a fireside chat with five eng leaders who deal with this stuff every day: Basia Sudol (Head of Enterprise Solutions, Decagon), Varun Singh (CPTO, Daily), Steven Diaz (FDE Manager, Vapi), Tyler D'Silva (Founding FDE, Retell AI), and Sudarshan Kamath (Founder, Smallest AI).\n\nWe get into why nobody serious is shipping real-time voice-to-voice yet, why LLMs forget the middle of your prompt (and what that does to your architecture), why a giant prompt quietly destroys your unit economics, and why voice agent costs are now being compared directly against human labor.\n\nPlus the stuff nobody warns you about: turn-taking, HIPAA constraints, why outbound is easier than inbound, why getting an exec to actually like the voice can be harder than any model problem, and more!\n\n---\n\nNote from swyx: this is a test pilot for a new FDE oriented podcast on Latent Space - from Basil Chatha, who is our latest contributor leading our FDE coverage. The full pod is at https://www.youtube.com/watch?v=YnHy7JAVyNw\n\nLet us know what you think!\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 4
   }
 }

@@ -1,35 +1,27 @@
 {
-  "generatedAt": "2026-08-24T07:12:19.591Z",
+  "generatedAt": "2026-08-26T07:00:22.785Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Latent Space",
-      "title": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
-      "guid": "substack:post:212197985",
-      "url": "https://www.latent.space/p/simile",
-      "publishedAt": "2026-08-21T23:37:38.000Z",
-      "description": "When we first dicsussed the Summer of Simulative AI in 2024 we knew it would be a brief summer, but it has recently come back with a vengeance with SimGym in April and now Simile AI’s $2B Series B , backed by GreenOaks and Index Ventures with prominent backers like Fei-Fei Li and Andrej Karpathy, running tens of millions of simulations for Fortune 100 clients like CVS and 85–99% accuracy vs human focus groups. Time to catch up on why this Second Summer of simulation is working! From creating Smallville , the landmark 2023 paper on Generative Agents that showed AI characters could remember, plan, socialize, and develop emergent behaviors , to now building foundation models of human behavior, Joon Sung Park is trying to answer a much bigger question: what if we could simulate the world before making decisions in it? In this episode, the Simile co-founder and CEO joins us to unpack the path from generative agents to digital twins, why today’s frontier models still fail to capture how humans actually behave, and what it would take to eventually simulate all 8 billion people on Earth. We go deep on Simile’s approach to modeling human behavior : long-form interviews, observational and transaction data, randomized controlled trials, population-level and individual-level models, and post-training on the causal mechanisms behind why people make decisions. Joon explains how his research created digital twins that reproduced human behavior and attitudes 85% as accurately as people reproduced their own responses , why models optimized to be rational can be bad simulations of irrational humans, and why understanding “social physics” may require changing model weights rather than simply prompting frontier LLMs. We also explore the much larger ambition behind simulation : testing products and policies before deploying them, finding counterintuitive paths toward desired outcomes, modeling emergent behavior across entire societies, and potentially tackling problems like climate change , democratic instability, and UBI . Joon reflects on scaling laws for simulation , the economics of data-center-scale simulated worlds , the connection to Thomas Schelling and psychohistory, why simulation is surp"
+      "name": "Training Data",
+      "title": "Parallel’s Parag Agrawal: Building a New Web for AI Agents",
+      "guid": "2e1d938c-9fed-11f1-b924-cf663b124449",
+      "url": "https://www.youtube.com/watch?v=fUcnE6pjq5w",
+      "publishedAt": "2026-08-25T09:00:00.000Z",
+      "description": "Parag Agrawal is making a bet that goes against two decades of web search: agents will query the web a thousand times more than humans ever have, and the infrastructure built around human clicks is wrong for them. The former Twitter CEO, now founder and CEO of Parallel Web Systems, explains why Parallel treats human click data as a bug and trains on agent feedback instead. He unpacks the counterintuitive choice to ship a search agent before a search engine, building an index incrementally, and how the new Turbo product cut agentic search to 200 milliseconds. But the problem Parag keeps returning to is economic: the ad-supported internet collapses when agents show up instead of people. His fix draws on Shapley values to pay content owners for the value their pages provide agents, with real dollars reaching publishers, he predicts, within 12 to 24 months. Hosted by Sonya Huang and Andrew Reed, Sequoia Capital"
     },
     {
       "source": "podcast",
-      "name": "Machine Learning Street Talk",
-      "title": "ChatGPT's Machine Learning in iMessage Access",
-      "guid": "gid://art19-episode-locator/V0/qcf9T3kdhc0-U7KYEfnY2KXW_Pn3Y5xH4qBOaKDFME4",
-      "publishedAt": "2026-08-22T03:41:03.000Z",
-      "description": "Chapters 00:00 ChatGPT and iMessage 02:01 Privacy Concerns 05:00 Detection Apps and Meta Glasses 07:59 AI Research Accelerating Concerns 09:59 Micro One's Growth 12:59 Every's AI Clone Innovation Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
-    },
-    {
-      "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "AI in the AM — Weekly Highlights: Relaunch Week (Aug 17–20, 2026)",
-      "guid": "1c66427c-9e23-11f1-bdcf-eb8cc278348e",
-      "url": "https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026/",
-      "publishedAt": "2026-08-22T14:22:00.000Z",
-      "description": "Relaunch week of AI in the AM brings together highlights from four live mornings and nine guests, centered on who checks frontier AI, how wide the gap is between lab-internal systems and public access, where capabilities are landing, and who pays for the physical infrastructure beneath them. Adam Gleave of FAR.AI argues that agent-orchestrated attacks and agentic defenses are already forcing humans out of the loop, while current monitoring has missed the failures it was meant to catch. The discussion weighs misuse versus misalignment through cyber incidents, deceptive agent behavior in evaluations, safeguards like pretraining filtering, and why highly bio-capable open-weight releases pose a different kind of irreversible risk. Alex Turner adds a governance and military-use perspective from his resignation account at Google DeepMind, sharpening the stakes around independent evaluation, enforceable standards, and whether frontier labs can be trusted to grade their own models. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026/ Sponsors: Diffusion: Diffusion helps organizations build custom AI software factories that scale business outcomes, not just outputs. Cognitive Revolution listeners get a 25% service credit on their first engagement at https://diffusion.io/tcr Granola: Granola is an AI-powered notepad that securely transcribes meetings and turns rough notes into clean, structured action items. Try it free at https://granola.ai/tcr Deepgram Flux TTS: Deepgram Flux TTS brings lifelike AI voices with real personalities that handle interruptions, pauses, and natural conversation. Try all the voices free through September 12 at https://deepgram.com/keep-talking Claude: Claude is the AI collaborator for problem solvers, helping with writing, coding, financial models, strategy, and more. Get started with Claude and explore Claude Pro at https://claude.ai/tcr CHAPTERS: (00:01) Checking frontier agents (07:40) Misalignment and harms (Part 1) (12:52) Sponsors: Diffusion | Granola (15:49) Misalignment and harms (Part 2) (19:20) Auditing fragile access (Part 1) (27:38) Sponsors: Deepgram Flux TTS | Claude (29:43) Auditing fragile access (Part 2) (29:59) Military AI red lines (44:58) Raising safety standards (53:50) Internal capability gap (01:05:06) Enterprise agent economics (01:18:27) Cancer vaccines arrive (01:23:48) Emergency AI tools (01:28:59) Real time voice (01:37:51) App layer squeeze (01:44:52) Data center politics (01:52:31) Accounting agent supervision (02:06:25) Compute stack bottlenecks (02:19:47) Public consent pricing (02:28:12) Episode Outro (02:31:38) Outro PRODUCED BY: https://aipodcast.ing"
+      "name": "Practical AI",
+      "title": "AI Proficiency: From Users to Builders",
+      "guid": "5fb15f12-94b9-4fee-a8da-326eab85362e",
+      "url": "https://share.transistor.fm/s/0f57c0bc",
+      "publishedAt": "2026-08-25T09:00:00.000Z",
+      "description": "As AI continues to reshape how organizations work, companies are increasingly asking what AI proficiency should look like across their workforce, and how they can help employees adapt without simply mandating AI adoption. Our returning guest Mike Lewis, Chief AI Architect at TiER1 Performance, joins Dan and Chris to explore AI proficiency through the L0–L3 framework, with a particular focus on the role of non-technical builders. They discuss AI resistance, identifying the right people to build AI-powered solutions, turning tacit knowledge into durable processes, and finding measurable business value from AI. Mike Lewis was previously on Practical AI episode 289: https://practicalai.show/289 Featuring: Mike Lewis – LinkedIn Chris Benson – Website , LinkedIn , Bluesky , GitHub , X Daniel Whitenack – Website , GitHub , X Links: TiER1 Performance Your New Job Is to Onboard AI Agents: How AI Native Companies Actually Operate Sponsors: Midwest AI Summit: Join AI practitioners on October 15 in Indianapolis for practical sessions, hands-on discussions, and real-world AI solutions. Use code PracticalAI20 to save 20% on your registration. https://midwestaisummit.com/#tickets Prediction Guard: A self-hosted AI control plane for running agents in high impact environments. predictionguard.com/practicalai Resources and Events: Register for upcoming webinars here ! Prior Webinars from our partner Prediction Guard Midwest AI Summit 2026 ]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 3
+    "podcastEpisodes": 2
   }
 }
