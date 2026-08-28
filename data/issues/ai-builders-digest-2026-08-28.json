@@ -1,0 +1,252 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-28",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "NVIDIA kauft Hugging Face für 13 Milliarden Dollar und verändert die Open-Source-KI-Landschaft grundlegend. Hot Chips zeigt parallel neue Silizium-Generationen: OpenAIs Jalapeño, Cerebras CS-5, Apple M6. Produkte wie Claude in Chrome und Codex Persistent Mode treiben Agenten in den Alltag. Der Tag macht sichtbar, wie schnell Forschung, Hardware und Vertrieb zusammenwachsen."
+  },
+  "archive": {
+    "title": "NVIDIA kauft Hugging Face für 13 Milliarden",
+    "desc": "Der Tag zeigt, wie M&A, Chip-Innovationen und Agenten-Produkte die KI-Industrie gleichzeitig beschleunigen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-08-28.",
+  "sections": [
+    {
+      "title": "NVIDIA Buys HuggingFace for $13B / NVIDIA kauft Hugging Face für 13 Milliarden Dollar",
+      "desc": "A single deal reshapes open-source AI infrastructure while OpenAI adds retrospective transparency.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "NVIDIA acquires Hugging Face for $13B, consolidating open-source model infrastructure under one chip giant.",
+              "OpenAI published its Hugging Face incident retrospective the same day, adding transparency to platform reliability."
+            ],
+            "original": [
+              "NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
+              "AI News for 8/25/2026-8/26/2026"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA kauft Hugging Face für 13 Milliarden Dollar und bündelt Open-Source-Modellinfrastruktur unter einem Chiphersteller.",
+              "OpenAI veröffentlichte am selben Tag eine Incident-Retro zu Hugging Face und stärkt so die Transparenz der Plattform."
+            ],
+            "original": [
+              "NVIDIA kauft HuggingFace für 13 Milliarden Dollar, während OpenAI seinen HF-Incident-Retro veröffentlicht.",
+              "AI News für 25.8.2026–26.8.2026"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hot Chips 2026 Silicon Launches / Hot Chips 2026: Silizium-Neuvorstellungen",
+      "desc": "Hot Chips 2026 reveals a wave of new silicon from major AI players.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Hot Chips 2026 revealed new silicon: OpenAI's Jalapeño, Cerebras CS-5, Groq 3 LPX, and Apple M6.",
+              "The announcements show a broadening race in AI hardware beyond Nvidia's accelerators."
+            ],
+            "original": [
+              "Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hot Chips 2026 zeigte neue Silizium-Produkte: OpenAIs Jalapeño, Cerebras CS-5, Groq 3 LPX und Apple M6.",
+              "Die Ankündigungen belegen einen breiteren Hardware-Wettbewerb jenseits von Nvidia-Beschleunigern."
+            ],
+            "original": [
+              "Hot Chips: OpenAIs Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agentic Product Launches / Agentische Produktstarts",
+      "desc": "Product launches bring agents closer to everyday browser and coding workflows.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-in-chrome-generally-available",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude in Chrome is now generally available, bringing Anthropic's assistant directly into the browser.",
+              "The GA release arrived August 26, 2026, marking a step toward ambient AI agents."
+            ],
+            "original": [
+              "Claude in Chrome is generally available"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude in Chrome ist jetzt allgemein verfügbar und bringt Anthropics Assistenten direkt in den Browser.",
+              "Die GA-Freigabe erfolgte am 26. August 2026 und markiert einen Schritt hin zu allgegenwärtigen KI-Agenten."
+            ],
+            "original": [
+              "Claude in Chrome ist allgemein verfügbar"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TLDR AI",
+          "sourceName": "TLDR AI",
+          "sourceUrl": "https://tldr.tech/ai/2026-08-28",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Google launched Gemini Omni 1.1, Cohere introduced Parse for document extraction, and OpenAI's Codex gained persistent mode.",
+              "The three updates target multimodal video, document parsing, and long-running coding agents."
+            ],
+            "original": [
+              "Gemini Omni 1.1 🎬, Cohere Parse 📄, Codex persistent mode 👨‍💻"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google brachte Gemini Omni 1.1 heraus, Cohere startete Parse für Dokumentenanalyse, und OpenAI Codex erhielt persistenten Modus.",
+              "Die Updates zielen auf multimodale Videos, Dokumentenparsing und langlebige Coding-Agenten."
+            ],
+            "original": [
+              "Gemini Omni 1.1 🎬, Cohere Parse 📄, Codex persistent mode 👨‍💻"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Safety Boundaries / Grenzen der Agentensicherheit",
+      "desc": "A new writeup exposes safety boundaries in autonomous coding agents.",
+      "cards": [
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Simon Willison documented how to break Claude Code Opus 5 Auto Mode, exposing limits in agent autonomy.",
+              "The writeup, published August 27, 2026, highlights safety boundaries in AI coding agents."
+            ],
+            "original": [
+              "Breaking Claude Code Opus 5 Auto Mode"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison dokumentiert, wie sich der Auto Mode von Claude Code Opus 5 aushebeln lässt, und zeigt Grenzen der Agentenautonomie.",
+              "Der am 27. August 2026 veröffentlichte Beitrag beleuchtet Sicherheitsgrenzen in KI-Coding-Agenten."
+            ],
+            "original": [
+              "Breaking Claude Code Opus 5 Auto Mode"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Startup Category Creation / Startups schaffen neue Kategorien",
+      "desc": "Founders describe building new categories in data infrastructure and AI-native workflows.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=YscDZpVF4CQ",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Ofir Ehrlich and Gonen Stein (Eon) join No Priors to discuss rethinking legacy data infrastructure for agentic AI.",
+              "The conversation positions Eon's platform as purpose-built for AI agent workloads."
+            ],
+            "original": [
+              "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ofir Ehrlich und Gonen Stein (Eon) diskutieren bei No Priors, wie veraltete Dateninfrastruktur für die agentische KI-Ära neu gedacht werden muss.",
+              "Das Gespräch stellt Eons Plattform als speziell für KI-Agenten-Workloads gebaut dar."
+            ],
+            "original": [
+              "Rethinking Legacy Data Infrastructure with Eon Co-Founders Ofir Ehrlich and Gonen Stein"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=x3XOeDckUX0",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Outset on how the startup turned AI interviews into a new product category.",
+              "Outset, a YC-backed company, shares the journey from idea to category creation."
+            ],
+            "original": [
+              "How Outset Turned AI Interviews Into a New Category"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator zeigt im Interview, wie das Startup Outset KI-Interviews zu einer neuen Produktkategorie machte.",
+              "Das YC-unterstützte Unternehmen beschreibt den Weg von der Idee zur Kategoriebildung."
+            ],
+            "original": [
+              "How Outset Turned AI Interviews Into a New Category"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260828183120-72c400",
+    "generatedAt": "2026-08-28T18:33:56.897Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 156606,
+    "tokensIn": 4051,
+    "tokensOut": 12173,
+    "estCostUsd": 0.003976,
+    "candidatesIn": 34,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 118202,
+      "preparedChars": 3805,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+      "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+      "https://claude.com/blog/claude-in-chrome-generally-available",
+      "https://tldr.tech/ai/2026-08-28",
+      "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "https://www.youtube.com/watch?v=YscDZpVF4CQ",
+      "https://www.youtube.com/watch?v=x3XOeDckUX0"
+    ]
+  }
+}

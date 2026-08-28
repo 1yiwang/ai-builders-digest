@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-08-24T07:15:53.323Z",
-  "count": 35,
+  "generatedAt": "2026-08-28T18:33:57.037Z",
+  "count": 36,
   "issues": [
+    {
+      "date": "2026-08-28",
+      "title": "NVIDIA kauft Hugging Face für 13 Milliarden",
+      "desc": "Der Tag zeigt, wie M&A, Chip-Innovationen und Agenten-Produkte die KI-Industrie gleichzeitig beschleunigen.",
+      "href": "./issues/ai-builders-digest-2026-08-28.html",
+      "issue": "Nr. 36"
+    },
     {
       "date": "2026-08-24",
       "title": "Die 14x-Agenten-Token-Welle",

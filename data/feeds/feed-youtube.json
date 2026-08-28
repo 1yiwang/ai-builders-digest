@@ -1,33 +1,60 @@
 {
-  "generatedAt": "2026-08-26T07:00:28.343Z",
+  "generatedAt": "2026-08-28T18:31:11.955Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "How Outset Turned AI Interviews Into a New Category",
+      "url": "https://www.youtube.com/watch?v=x3XOeDckUX0",
+      "publishedAt": "2026-08-27T16:59:23.000Z",
+      "description": "Outset (YC W23) is building an AI customer research platform used by companies like Google, Microsoft, and Nestlé. Its AI interviewers have now conducted millions of conversations, giving companies the scale and speed of a survey with the depth of a one-on-one interview.\n\nIn this founder fireside, Outset co-founder and CEO Aaron Cannon sits down with YC's Harj Taggar to talk about building a product before the market was ready for it, how they helped create the category of AI-moderated research, and what comes next.\n\nAaron shares how they're expanding beyond interviews with Outset's new Simulations Lab and Digital Twins, which let companies simulate their customers and get feedback on everything from messaging and pricing to new products.\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs\n\nChapters:\n00:00 — Intro\n00:24 — What Outset Does\n01:18 — Building a Category Before the Market Was Ready\n06:31 — Landing the First Enterprise Customer\n08:14 — How Better AI Models Changed the Product\n12:57 — When the Market Finally Caught Up\n14:45 — From AI Interviews to Customer Simulations\n19:40 — Aaron’s Path to Becoming a Founder"
+    },
+    {
+      "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "This Small AI Will Change Everything",
-      "url": "https://www.youtube.com/watch?v=wMl6c_r0ubw",
-      "publishedAt": "2026-08-24T16:48:40.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Qwen3.8-27b is available here:\nhttps://huggingface.co/Qwen/Qwen3.8-27B\n\nSources:\nhttps://www.reddit.com/r/unsloth/comments/1vogva0/share_your_results_from_qwen3827b/\nhttps://www.reddit.com/r/LocalLLaMA/comments/1voer8u/qwen_38_27b_aquarium_burst_sample_test/\nhttps://x.com/KyleHessling1/status/2088327667733180637\nhttps://www.reddit.com/r/LocalLLaMA/comments/1vqme4y/qwen3827b_q8_0_on_strix_halo_is_seriously/\nhttps://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-a-single-dgx-spark-up-to-1m-context-vllm-mtp-measurements/380244\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "This Free AI Just Caught The Billion Dollar Giants",
+      "url": "https://www.youtube.com/watch?v=LBiNcdGNgrg",
+      "publishedAt": "2026-08-28T09:44:44.000Z",
+      "description": "❤️ Check out Weights &amp; Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper and Qwen3.8-Flash-Next are available here:\nhttps://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf\nhttps://qwen.ai/blog?id=qwen3.8-flash-next\n\nSources:\nhttps://x.com/analogalok/status/2092697021790708148\nhttps://www.reddit.com/r/unsloth/comments/1vzf6j7/mind_blowing_qwen38flashnext_rtx_3090_128ddr5\nhttps://www.reddit.com/r/LocalLLM/comments/1vz1w00/first_gif_cooked_by_qwen38flashnext\nhttps://x.com/analogalok/status/2092781954529903078/video/1\nhttps://x.com/loktar00/status/2092719895729324224/video/1\n\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "DeepSeek’s New AI System Shouldn’t Be Possible",
+      "url": "https://www.youtube.com/watch?v=L9mMfAFwbl4",
+      "publishedAt": "2026-08-26T13:10:13.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 DeepSeek Harness + paper are available here:\nhttps://deepseek.com/harness/en/\nhttps://github.com/cordiverse/paper\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Mythos Was Deemed Too Dangerous to Release - Ryan Greenblatt",
-      "url": "https://www.youtube.com/watch?v=wtaoBxnf1vQ",
-      "publishedAt": "2026-08-24T21:43:58.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Why Isn’t China Further Behind in AI? - Dylan Patel",
+      "url": "https://www.youtube.com/watch?v=yckuN1rXsHw",
+      "publishedAt": "2026-08-27T19:15:10.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=aV26V1UvkJw\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Giving AI Its Own Values Could Be Dangerous - Ryan Greenblatt",
-      "url": "https://www.youtube.com/watch?v=iUssTMQRDHI",
-      "publishedAt": "2026-08-23T21:21:41.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=-RXD4bTuFTo\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Could the AI Boom Trigger a Global Debt Crisis? - Dylan Patel",
+      "url": "https://www.youtube.com/watch?v=0Hx7QGJhoGs",
+      "publishedAt": "2026-08-26T19:15:20.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=aV26V1UvkJw\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "🔬 Why Transformers Hit a Wall the Moment Physics Shows Up — Anima Anandkumar, Caltech",
+      "url": "https://www.youtube.com/watch?v=79mIutht1f4",
+      "publishedAt": "2026-08-26T16:37:33.000Z",
+      "description": "Most of AI is pointed at language. Anima Anandkumar points it at the physical world, weather, fusion, materials, the systems physics writes down as equations, and finds the usual playbook breaks. There isn't enough data, the resolution is brutal, and no transformer is big enough. Her way through is older than deep learning: build the structure of the world into the model. It already produces weather forecasts that rival the supercomputers on a single GPU.\n\nCo-founder of Accelerated Understanding, Anima has spent two decades in AI, from the theory that predates deep learning, through scaling it at AWS and NVIDIA, and back to first principles. We get into neural operators, Fourier layers, and the spherical harmonics behind FourCastNet 3, then follow the same ideas into fusion reactors, chip design, and formal verification, before closing on her seat on the UN Scientific Advisory Board and why AI for science shouldn't be regulated like a chatbot.\n\nCHAPTERS\n0:00 Cold open and intros\n3:48 Anima's thesis: AI for science, not language models\n6:44 TorchLean: proving what a neural network will do\n12:06 Why physics-informed nets fail, and how neural operators fix it\n16:08 What a neural operator actually is\n19:41 Fourier neural operators, and why Fourier\n26:53 Old math meets deep learning, and why scaling breaks\n32:39 Weather, and the 2021 skeptics\n36:13 One model for weather and climate: assume a sphere\n42:40 Why the physical world is forgiving\n46:19 Modeling across scales, from atoms to planets\n50:33 The data, ECMWF, and calling Hurricane Lee early\n57:48 Long rollouts, and why the sphere stays stable\n1:04:06 Fusion: a plasma digital twin\n1:07:59 Career full circle: theory, scale, and back to principled\n1:13:02 A foundation model for physics, and inverse design\n1:18:13 The UN, regulating AI for science, and a call to action\n\nLINKS\n\nPapers\nFourCastNet: https://arxiv.org/abs/2202.11214\nNeural Operators: https://arxiv.org/abs/2108.08481\nFourier Neural Operator: https://arxiv.org/abs/2010.08895\nFourCastNet 3: https://arxiv.org/abs/2507.12144\nTorchLean: https://arxiv.org/abs/2602.22631\nLean: https://lean-lang.org\n\nAnima Anandkumar\nCaltech: https://www.eas.caltech.edu/people/anima\nUN Scientific Advisory Board: https://www.caltech.edu/about/news/anima-anandkumar-appointed-to-un-scientific-advisory-board\n\nThe show\nLatent Space: https://www.latent.space"
     },
     {
       "source": "youtube",
@@ -40,6 +67,6 @@
     }
   ],
   "stats": {
-    "youtubeVideos": 4
+    "youtubeVideos": 7
   }
 }
