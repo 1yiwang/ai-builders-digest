@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-08-31",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Die GLM-5.2-Deployment-Daten zeigen drastisch sinkende Kosten: 0,15 Dollar pro Million Input-Token und 20-fach günstiger als Qwen3.8 Max. Gleichzeitig kaufen OpenAI und andere Labore Zehntausende Mac minis für Computer-Use-Agenten. Dwarkesh Patel und Dylan Patel fragen unterdessen, wer den KI-Wert abschöpft und ob Spiegel Billionen-Umsätze bremsen. Die Branche verlagert sich von reinen Modellverbesserungen zu Hardware, Kosten und Verteilung der Gewinne."
+  },
+  "archive": {
+    "title": "Spiegel als KI-Umsatzbremse",
+    "desc": "Der Tag verbindet fallende Modellkosten, neue Agenten-Hardware und offene Fragen zur Wertverteilung im KI-Business."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-08-31.",
+  "sections": [
+    {
+      "title": "Model Serving Economics / Modell-Serving-Ökonomie",
+      "desc": "Deployment specs and pricing details show how fast inference costs are falling for large models.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "GLM-5.2 deployment specs: vLLM day-0 support, 744B total / 40B active parameters, 1M context, 128K max output.",
+              "UnslothAI claims a 239GB 2-bit variant retains about 81% accuracy after shrinking from 1.51TB.",
+              "Independent estimates put pricing at $0.15/1M input and $0.47/1M output, roughly 20× cheaper and ~2× faster than Qwen3.8 Max."
+            ],
+            "original": [
+              "744B total / 40B active, 1M context, 128K max output, reusing the GLM-5.2 serving path.",
+              "Roughly 20× cheaper and ~2× faster than Qwen3.8 Max, with pricing around $0.15 / 1M input and $0.47 / 1M output."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GLM-5.2 Deployment: vLLM unterstützt ab Tag 0, 744B Parameter gesamt / 40B aktiv, 1M Kontext, 128K max Output.",
+              "UnslothAI meldet eine 239GB 2-Bit-Variante mit etwa 81% Genauigkeit nach Schrumpfung von 1,51TB.",
+              "Unabhängige Schätzungen: $0,15/1M Input, $0,47/1M Output, rund 20× günstiger und ~2× schneller als Qwen3.8 Max."
+            ],
+            "original": [
+              "744B gesamt / 40B aktiv, 1M Kontext, 128K max Output, Wiederverwendung des GLM-5.2 Serving-Pfads.",
+              "Rund 20× günstiger und ~2× schneller als Qwen3.8 Max, Preise um $0,15 / 1M Input und $0,47 / 1M Output."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Value Capture / KI-Wertschöpfung",
+      "desc": "Two conversations with Dylan Patel frame the economic bottlenecks and value distribution questions around AI.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=5HoyaGFbam0",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Dylan Patel about why trillions in AI revenue could hit a physical bottleneck in mirror supply.",
+              "The episode ties AI scaling economics to hardware constraints rather than model capability."
+            ],
+            "original": [
+              "Title: Why Trillions in AI Revenue Could Be Bottlenecked by Mirrors - Dylan Patel"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel spricht mit Dylan Patel darüber, wie Spiegel zu einem physischen Engpass für Billionen-Umsätze mit KI werden könnten.",
+              "Die These verknüpft KI-Skalierung mit Hardware-Grenzen statt mit Modellfähigkeiten."
+            ],
+            "original": [
+              "Titel: Warum Billionen an KI-Umsätzen durch Spiegel zum Engpass werden könnten – Dylan Patel"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=oey90iiw1kw",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Dylan Patel on who actually captures the value created by AI systems.",
+              "The episode frames value capture as the central strategic question for AI labs, infrastructure providers, and downstream adopters."
+            ],
+            "original": [
+              "Title: Who Captures the Value Created by AI? - Dylan Patel"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel interviewt Dylan Patel dazu, wer den von KI-Systemen geschaffenen Wert tatsächlich abschöpft.",
+              "Die Folge stellt Wertabschöpfung als zentrale strategische Frage für Labs, Infrastruktur und Anwender dar."
+            ],
+            "original": [
+              "Titel: Wer schöpft den von KI geschaffenen Wert ab? – Dylan Patel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Computer-Use Agents / Computer-Use-Agenten",
+      "desc": "Training hardware and developer tools for computer-use agents are advancing in parallel.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents.",
+              "OpenAI and rival labs are scaling Mac mini fleets specifically for computer-use agent training."
+            ],
+            "original": [
+              "OpenAI and rival AI labs are buying tens of thousands of Mac minis to train computer-use agents."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI und konkurrierende KI-Labore kaufen Zehntausende Mac minis, um Computer-Use-Agenten zu trainieren.",
+              "OpenAI und Rivalen skalieren Mac-mini-Flotten gezielt für das Training von Computer-Use-Agenten."
+            ],
+            "original": [
+              "OpenAI und rivalisierende KI-Labore kaufen Zehntausende Mac minis, um Computer-Use-Agenten zu trainieren."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenClaw 2.0 launches with simplified setup, a rebuilt browser app, and multiplayer sessions.",
+              "The release targets easier onboarding and collaborative computer-use workflows."
+            ],
+            "original": [
+              "OpenClaw 2.0 brings simplified setup, a rebuilt browser app, and multiplayer sessions."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenClaw 2.0 erscheint mit vereinfachtem Setup, einer neu aufgebauten Browser-App und Multiplayer-Sessions.",
+              "Das Release zielt auf einfachere Einrichtung und kollaborative Computer-Use-Workflows."
+            ],
+            "original": [
+              "OpenClaw 2.0 bringt vereinfachtes Setup, eine neu aufgebaute Browser-App und Multiplayer-Sessions."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Product Strategy / KI-Produktstrategie",
+      "desc": "Freemium moves in AI meeting tools show how providers are competing for user growth.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Circleback, a meeting notetaker, adds a free tier to attract more customers.",
+              "The free tier is aimed at expanding Circleback's customer base."
+            ],
+            "original": [
+              "Meeting notetaker Circleback adds a free tier to attract more customers."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Circleback führt ein kostenloses Tarifmodell für seinen Meeting-Notiz-Assistenten ein, um mehr Kunden zu gewinnen.",
+              "Der kostenlose Tarif zielt darauf ab, die Kundenbasis von Circleback zu vergrößern."
+            ],
+            "original": [
+              "Meeting-Notiz-Tool Circleback führt ein kostenloses Tarifmodell ein, um mehr Kunden zu gewinnen."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260831132737-b4de18",
+    "generatedAt": "2026-08-31T13:30:35.453Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 177550,
+    "tokensIn": 3800,
+    "tokensOut": 13676,
+    "estCostUsd": 0.004361,
+    "candidatesIn": 13,
+    "shortlistSize": 9,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 80437,
+      "preparedChars": 3203,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+      "https://www.youtube.com/watch?v=5HoyaGFbam0",
+      "https://www.youtube.com/watch?v=oey90iiw1kw",
+      "https://the-decoder.com/openai-and-rival-ai-labs-are-buying-tens-of-thousands-of-mac-minis-to-train-computer-use-agents/",
+      "https://the-decoder.com/openclaw-2-0-brings-simplified-setup-a-rebuilt-browser-app-and-multiplayer-sessions/",
+      "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/"
+    ]
+  }
+}
