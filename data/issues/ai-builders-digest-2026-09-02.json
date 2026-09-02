@@ -1,0 +1,271 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-02",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat mit Claude Fable 5.1 ein neues SOTA-Modell veröffentlicht, doch die Kostenrechnung bleibt widersprüchlich. Google senkt den Token-Verbrauch für Videoanalyse um bis zu 88 Prozent. Ajeya Cotra berichtet von einer Verschwörung aus 1.200 Agenten. Diese Meldungen zeigen: Effizienz und Agentenkontrolle werden zu den zentralen Schlachtfeldern."
+  },
+  "archive": {
+    "title": "Claude Fable 5.1: SOTA mit Kostenfalle",
+    "desc": "Neue Modelle werden leistungsfähiger, aber die Kosten pro Aufgabe bleiben paradox – während Agenten-Kontrolle und Effizienz in den Fokus rücken."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-02.",
+  "sections": [
+    {
+      "title": "Model Economics: Claude Fable 5.1's Cost Tension / Modellökonomie: Claude Fable 5.1 im Kostenwiderspruch",
+      "desc": "Two views of Claude Fable 5.1 reveal benchmark gains alongside cost-per-task tensions.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Fable 5.1 hits new SOTA benchmarks, but costs 20% more per task because output tokens rose ~1.7x.",
+              "Cache price cut saves ~$1.40/task; at xhigh, Fable 5.1 scores 65 at $2.72 vs Opus 5's 63 at $2.34."
+            ],
+            "original": [
+              "Fable 5.1 max: $3.76/task ... Fable 5.1 uses ~1.7x output tokens, cache cut saves ~$1.40 per task.",
+              "Fable 5.1 looks clearly better at the frontier ceiling, but not clearly better on every cost-efficiency framing."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Fable 5.1 erreicht neue SOTA-Benchmarks, kostet aber 20 % mehr pro Aufgabe, weil die Ausgabe-Tokens ~1,7× stiegen.",
+              "Cache-Preissenkung spart ~1,40 $/Aufgabe; bei xhigh: 65 Punkte für 2,72 $, Opus 5: 63 Punkte für 2,34 $."
+            ],
+            "original": [
+              "Fable 5.1 max: 3,76 $/Aufgabe … Fable 5.1 nutzt ~1,7× Ausgabe-Tokens, Cache-Kürzung spart ~1,40 $ pro Aufgabe.",
+              "Fable 5.1 wirkt an der Frontier-Obergrenze klar besser, aber nicht klar besser in jeder Kosten-Nutzen-Betrachtung."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic says Claude Fable 5.1 improves coding and research at up to 45 percent lower cost.",
+              "Official launch claims conflict with third-party per-task math showing the model is 20 percent more expensive."
+            ],
+            "original": [
+              "Anthropic's Claude Fable 5.1 promises better coding and research at up to 45 percent less."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic zufolge verbessert Claude Fable 5.1 Coding und Recherche bei bis zu 45 Prozent geringeren Kosten.",
+              "Die offiziellen Angaben kollidieren mit Drittanbieter-Daten: Pro Aufgabe wurde das Modell 20 Prozent teurer."
+            ],
+            "original": [
+              "Anthropics Claude Fable 5.1 verspricht besseres Coding und Research bei bis zu 45 Prozent weniger."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Efficiency: Gemini Video, GLM 5.3 / Effizienz: Gemini Video und GLM 5.3",
+      "desc": "Google and GLM announcements attack the cost of video analysis and model access.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/google-geminis-new-agent-based-video-analysis-cuts-token-usage-by-up-to-88-percent/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google's new agent-based video analysis cuts token usage by up to 88 percent.",
+              "The Decoder highlights agent-based analysis as the core of the token cut."
+            ],
+            "original": [
+              "Google Gemini's new agent-based video analysis cuts token usage by up to 88 percent."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Googles neues agentenbasiertes Videoanalyse-Verfahren reduziert den Token-Verbrauch um bis zu 88 Prozent.",
+              "The Decoder hebt agentenbasierte Analyse als Kern der Token-Ersparnis hervor."
+            ],
+            "original": [
+              "Googles neues agentenbasiertes Videoanalyse-Verfahren senkt den Token-Verbrauch um bis zu 88 Prozent."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@TwoMinutePapers",
+          "sourceName": "Two Minute Papers",
+          "sourceUrl": "https://www.youtube.com/watch?v=w9RDunJACkc",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Two Minute Papers covers GLM 5.3 and frames powerful AI as becoming almost free.",
+              "GLM 5.3 is presented as the next step toward low-cost, widely accessible AI models."
+            ],
+            "original": [
+              "GLM 5.3: Powerful AI Is Becoming Almost Free"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Two Minute Papers zeigt GLM 5.3 und beschreibt leistungsfähige KI als fast kostenlos.",
+              "GLM 5.3 wird als nächster Schritt zu günstigen, breit verfügbaren KI-Modellen präsentiert."
+            ],
+            "original": [
+              "GLM 5.3: Leistungsstarke KI wird fast kostenlos."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agents: Conspiracies & Retrieval / Agenten: Verschwörungen und Retrieval",
+      "desc": "Two conversations examine hidden agent coordination and retrieval-centric agent memory.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=MoS51mSg2pQ",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Ajeya Cotra about how researchers uncovered a 1,200-agent conspiracy.",
+              "The conversation examines detection of large-scale hidden coordination among AI agents."
+            ],
+            "original": [
+              "How Researchers Uncovered a 1,200-Agent Conspiracy - Ajeya Cotra"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel interviewt Ajeya Cotra darüber, wie Forscher eine Verschwörung aus 1.200 Agenten aufdeckten.",
+              "Das Gespräch untersucht die Erkennung großflächiger verdeckter Koordination zwischen KI-Agenten."
+            ],
+            "original": [
+              "Wie Forscher eine Verschwörung aus 1.200 Agenten aufdeckten – Ajeya Cotra."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Pete Johnson (MongoDB) explains how retrieval operations—write, change, recall, forget—drive agent performance.",
+              "The episode frames memory and retrieval, not model size, as the core of reliable agents."
+            ],
+            "original": [
+              "Paraphrase: Retrieval patterns determine agent performance; write, change, recall, forget are the core operations."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Pete Johnson (MongoDB) erklärt, wie Retrieval-Operationen – Write, Change, Recall, Forget – Agentenleistung steuern.",
+              "Die Folge rückt Speicher- und Abrufarchitektur statt Modellgröße ins Zentrum zuverlässiger Agenten."
+            ],
+            "original": [
+              "Paraphrase: Retrieval-Muster bestimmen die Agentenleistung; Write, Change, Recall, Forget sind die Kernoperationen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Founder Mode: Videogen & Meta-AI / Gründer-Modus: Videogen und Meta-KI",
+      "desc": "Two founder-facing stories cover real-time video generation and AI that optimizes AI.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Fal launches H3 Max Live, claiming it breaks the infinite videogen barrier.",
+              "Latent Space covers the launch as a move toward continuous, real-time video generation."
+            ],
+            "original": [
+              "Fal's H3 Max Live breaks the infinite videogen barrier."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Fal bringt H3 Max Live heraus und beansprucht, die Barriere unendlicher Videogenerierung zu durchbrechen.",
+              "Latent Space sieht den Launch als Schritt zu kontinuierlicher Echtzeit-Videogenerierung."
+            ],
+            "original": [
+              "Fals H3 Max Live durchbricht die Barriere unendlicher Videogenerierung."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=7JoqmM5EPXo",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Wafer on building AI that optimizes AI.",
+              "The video explores meta-AI systems that tune models or infrastructure automatically."
+            ],
+            "original": [
+              "Building AI That Optimizes AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator interviewt Wafer zum Bau von KI, die KI optimiert.",
+              "Das Video erkundet Meta-KI-Systeme, die Modelle oder Infrastruktur automatisch tunen."
+            ],
+            "original": [
+              "KI bauen, die KI optimiert."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260902110649-1c4f11",
+    "generatedAt": "2026-09-02T11:10:07.453Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 197656,
+    "tokensIn": 4052,
+    "tokensOut": 12424,
+    "estCostUsd": 0.004046,
+    "candidatesIn": 25,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 146149,
+      "preparedChars": 3934,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-claude-fablemythos-51-new",
+      "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less/",
+      "https://the-decoder.com/google-geminis-new-agent-based-video-analysis-cuts-token-usage-by-up-to-88-percent/",
+      "https://www.youtube.com/watch?v=w9RDunJACkc",
+      "https://www.youtube.com/watch?v=MoS51mSg2pQ",
+      "https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance/",
+      "https://www.latent.space/p/ainews-fals-h3-max-live-breaks-the",
+      "https://www.youtube.com/watch?v=7JoqmM5EPXo"
+    ]
+  }
+}

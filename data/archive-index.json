@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-08-31T13:30:35.581Z",
-  "count": 37,
+  "generatedAt": "2026-09-02T11:10:07.586Z",
+  "count": 38,
   "issues": [
+    {
+      "date": "2026-09-02",
+      "title": "Claude Fable 5.1: SOTA mit Kostenfalle",
+      "desc": "Neue Modelle werden leistungsfähiger, aber die Kosten pro Aufgabe bleiben paradox – während Agenten-Kontrolle und Effizienz in den Fokus rücken.",
+      "href": "./issues/ai-builders-digest-2026-09-02.html",
+      "issue": "Nr. 38"
+    },
     {
       "date": "2026-08-31",
       "title": "Spiegel als KI-Umsatzbremse",
