@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-02T11:10:07.586Z",
-  "count": 38,
+  "generatedAt": "2026-09-04T11:06:53.873Z",
+  "count": 39,
   "issues": [
+    {
+      "date": "2026-09-04",
+      "title": "GPT-6 Astra dominiert, Meta kontert",
+      "desc": "OpenAI startet mit Astra durch, Meta antwortet mit günstigem Spark-Modell, und die Branche diskutiert AGI.",
+      "href": "./issues/ai-builders-digest-2026-09-04.html",
+      "issue": "Nr. 39"
+    },
     {
       "date": "2026-09-02",
       "title": "Claude Fable 5.1: SOTA mit Kostenfalle",

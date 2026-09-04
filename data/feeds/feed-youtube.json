@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-09-02T11:06:41.603Z",
+  "generatedAt": "2026-09-04T11:04:53.782Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "Building AI That Optimizes AI",
-      "url": "https://www.youtube.com/watch?v=7JoqmM5EPXo",
-      "publishedAt": "2026-09-01T18:00:28.000Z",
-      "description": "Wafer (S25) is building a fast AI inference cloud that runs open-source models at industry-leading speeds by using agents to optimize GPUs at every level of the stack, from custom kernels to speculative decoding. The result is the low cost of open source with the latency of a much smaller model.\n\nIn this episode of Founder Firesides, YC Managing Director Jared Friedman sat down with Wafer co-founders Emilio Andere and Steven Arellano to talk about the college side project that became the company, how they got GLM 5.2 running two to three times faster than anyone else in the market, and why speed and not just cost is pushing enterprises off commercial models.\n\nChapters:\n00:00 - What Wafer is\n01:01 - Who's using it\n01:35 - The $40 million Series A\n01:53 - Zero to $8M ARR in four months\n02:15 - The GLM 5.2 launch that broke everything\n04:21 - Onboarding from a hotel room\n05:29 - Neon Health and the latency problem\n06:18 - The YC Office Hour Simulator\n07:55 - What the A/B test showed\n10:03 - AI that optimizes AI\n11:44 - Starting as cursor for CUDA\n12:55 - The night the agent beat NVIDIA's libraries\n14:41 - Open source adoption is going exponential\n16:07 - Speed, not cost, is the real reason to switch\n18:36 - The side project that became the company\n20:50 - Build things for fun, not as startups\n21:53 - Turning down the jobs\n22:20 - &quot;You don't need a business co-founder&quot;\n23:33 - How to pick a rocket ship\n24:46 - Hiring at Wafer\n25:38 - A day in the life as a member of staff\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
-    },
-    {
-      "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "GLM 5.3: Powerful AI Is Becoming Almost Free",
-      "url": "https://www.youtube.com/watch?v=w9RDunJACkc",
-      "publishedAt": "2026-09-01T09:04:56.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 GLM 5.3 Flash:\nhttps://z.ai/blog/glm-5.3-flash\n\nSources:\nhttps://x.com/louszbd/status/2092694163104113016\nhttps://x.com/semianalysis_/status/2092623833630998556\nhttps://x.com/skalskip92/status/2092748209802154201\nhttps://x.com/louszbd/status/2093047548550525165\nhttps://x.com/atomic_chat_hq/status/2093433913238552712\nhttps://x.com/holytrinity/status/2094093933584257334\nhttps://x.com/KinasRemek/status/2090081611832295581/video/1\nhttps://x.com/AiXsatoshi/status/2093679264013181119/video/1\nhttps://x.com/AiXsatoshi/status/2093353322921263389/video/1\nhttps://x.com/stevibe/status/2092655031040565252\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "Claude Fable AI Is Much Stranger Than The Headlines Suggest",
+      "url": "https://www.youtube.com/watch?v=B3LXEW4Pc-w",
+      "publishedAt": "2026-09-03T08:23:37.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Claude Fable 5.1 paper is available here:\nhttps://www.anthropic.com/claude-fable-and-mythos-5-1\nhttps://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20%26%20Claude%20Mythos%205.1%20System%20Card.pdf\n\nSources:\nhttps://x.com/alexalbert__/status/2094860187743986169?s=46\nhttps://x.com/holytrinity/status/2094866061212459130?s=46\nhttps://x.com/holytrinity/status/2094927984217985474?s=46\nhttps://x.com/omedvibecodes/status/2094887840848965845?s=46\nhttps://x.com/loktar00/status/2094951511742632168?s=46\nhttps://x.com/maxt3chno/status/2094798704385380762?s=46\nhttps://x.com/fabianofirmo/status/2094954495646035978?s=46\nhttps://x.com/fabianofirmo/status/2094954495646035978?s=46\nhttps://x.com/Rubzem/status/2094866225960493189?s=20\nhttps://x.com/atomicagent_io/status/2094895071304839400?s=20\nhttps://x.com/do_owne/status/2095054932466422125\nhttps://x.com/holytrinity/status/2095216452433313915\nhttps://x.com/vib3coded/status/2095329598472860011\nhttps://x.com/MaxForAI/status/2095270764979355651\nhttps://x.com/MengTo/status/2095104073590808644\nhttps://x.com/earthtojake/status/2095352925597884465\nhttps://x.com/alexalbert__/status/2094860187743986169\nhttps://x.com/adonis_singh/status/2095158753796497550\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "How Researchers Uncovered a 1,200-Agent Conspiracy - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=MoS51mSg2pQ",
-      "publishedAt": "2026-09-01T20:05:25.000Z",
+      "title": "How a Rogue AI Swarm Could Hide Inside an AI Company - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=xRKOpMeEQgQ",
+      "publishedAt": "2026-09-03T18:45:05.000Z",
       "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "How AI Could Reprice the Entire Economy - Dylan Patel",
-      "url": "https://www.youtube.com/watch?v=NVXFqpfFCIw",
-      "publishedAt": "2026-08-31T20:53:02.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=aV26V1UvkJw\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Why We Shouldn’t Assume AI Thinks Like Us - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=1_w3KFW7Ks0",
+      "publishedAt": "2026-09-02T18:31:05.000Z",
+      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "The Inference Frontier: from 100 to 10,000 tokens per second — Sean Lie, Cerebras CTO",
+      "url": "https://www.youtube.com/watch?v=3uSI8q_RN-o",
+      "publishedAt": "2026-09-02T17:05:14.000Z",
+      "description": "From pushing inference beyond 4,000 tokens per second to working with OpenAI on a new generation of ultra-fast AI infrastructure, Cerebras is betting that speed doesn’t just make models faster, it makes entirely new kinds of AI possible. In this episode, Cerebras co-founder and CTO Sean Lie joins swyx and Vibhu fresh off Hot Chips to unpack CS4, preview CS5, and explain why 100–200 tokens per second may soon feel like “batch mode.”\n\nWe go deep on Cerebras’ wafer-scale architecture, its partnership with OpenAI, and the emerging hardware stack for frontier inference. Sean breaks down OpenAI’s Jalapeño chip, why AI-first chip design could transform the semiconductor industry, what NVIDIA, Groq, AMD, Etched, and other challengers are getting right and wrong, and why the future of AI infrastructure will increasingly be heterogeneous and disaggregated. We also discuss model-hardware co-design, the path toward 10,000-token-per-second inference, new approaches to memory and 3D packaging, and the growing strategic competition between the US and China across both models and semiconductors.\n\nWe discuss:\n• Why Cerebras believes 100–200 tokens per second is becoming the new “batch mode”\n• CS4 and how Cerebras is pushing inference beyond 4,000 tokens per second\n• CS5 and the path toward 10,000 TPS on medium-sized models\n• Running frontier models at up to 5,000 tokens per second\n• Why Cerebras is effectively sold out of its current capacity\n• How OpenAI is using ultra-fast inference internally for incident response and critical research\n• Why faster inference can enable more reasoning loops and more capable agents\n• OpenAI’s Jalapeño chip and why Sean sees AI-first chip design as the future\n• How Cerebras and OpenAI could combine CS5 and Jalapeño into a new inference stack\n• Sean’s critique of Groq and the limitations of SRAM architectures for frontier-scale models\n• Why inference is breaking apart into specialized workloads like prefill, decode, attention, and expert routing\n• Why future data centers may increasingly be designed like one giant computer\n• How models designed around NVIDIA GPUs leave performance gains on the table for alternative architectures\n• Why hardware-model co-design could unlock massive additional gains\n• NVIDIA, AMD, TPU, and Trainium — and where traditional accelerator architectures are heading\n• Sean’s take on Etched and what next-generation AI hardware startups should actually innovate on\n• Why memory bandwidth, 3D integration, power, and cooling are becoming central bottlenecks\n• The rise of Chinese open models and China’s increasingly independent AI hardware ecosystem\n\n—\n\nSean Lie\n• Cerebras: https://www.cerebras.ai/\n• X: https://x.com/seanlie\n\nTimestamps\n00:00:00 Hook\n00:01:19 Introduction\n00:03:40 CS4 and 4,400 Tokens Per Second\n00:07:07 From “Impossible” Wafer Scale to OpenAI\n00:10:13 CS5 and the Road to 10,000 TPS\n00:12:05 Cerebras Is Sold Out — and OpenAI Wants the Capacity\n00:14:53 Why OpenAI Is Sharing Ultra-Fast Inference\n00:15:53 OpenAI Jalapeño and AI-Designed Chips\n00:20:11 Performance, Power, and the Groq Debate\n00:21:44 Groq’s 31B Benchmark and SRAM Limitations\n00:24:44 The Future of Heterogeneous AI Inference\n00:26:35 Breaking Inference Into Specialized Hardware\n00:29:41 Model-Hardware Co-Design\n00:32:00 NVIDIA, AMD, TPU, and Trainium\n00:33:44 Sean’s Take on Etched\n00:35:30 Why the Next Breakthrough Goes Beyond the Chip\n00:38:31 Memory Bandwidth and 3D Integration\n00:39:19 Power, Cooling, and the Hard Parts of Wafer Scale\n00:40:42 China, Open Models, and the Semiconductor Race\n00:43:04 Cerebras’ IPO and Closing Thoughts"
     }
   ],
   "stats": {

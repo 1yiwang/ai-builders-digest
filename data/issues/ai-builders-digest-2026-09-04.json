@@ -1,0 +1,246 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-04",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat heute mit GPT-6 Astra den bisher größten Modell-Launch hingelegt. Erste Benchmarks zeigen 99,2% pass@4 im SRE-Bench und satte Gewinne bei Code-Migration. Währenddessen kontert Meta mit Muse Spark 1.3, das GPT-5.6-Sol zu über 90% günstigeren Trainingskosten erreicht. Die Branche stellt sich nun der Frage, was diese Sprünge für AGI und Sicherheit bedeuten."
+  },
+  "archive": {
+    "title": "GPT-6 Astra dominiert, Meta kontert",
+    "desc": "OpenAI startet mit Astra durch, Meta antwortet mit günstigem Spark-Modell, und die Branche diskutiert AGI."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-04.",
+  "sections": [
+    {
+      "title": "GPT-6 Astra Launch: Benchmarks and Enterprise Adoption",
+      "desc": "GPT-6 Astra's performance and early customer results show a leap in practical AI capabilities.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "GPT-6 Astra scored 99.2% pass@4 on SRE-Bench, vs 68.7% for GPT-5.6 Sol.",
+              "On code migration, Astra hit 68% accuracy (+10 pts) and ran 2–4x faster than competitors."
+            ],
+            "original": [
+              "Astra effectively saturated SRE-Bench: 99.2% pass@4 vs 68.7% for GPT-5.6 Sol.",
+              "On code migration: 68% accuracy, +10 points over second place, 2–4x faster."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-6 Astra erreichte 99,2% pass@4 im SRE-Bench, gegenüber 68,7% für GPT-5.6 Sol.",
+              "Bei Code-Migration erzielte Astra 68% Genauigkeit (+10 Punkte) und war 2–4x schneller."
+            ],
+            "original": [
+              "Astra hat den SRE-Bench effektiv gesättigt: 99,2% pass@4 vs. 68,7% für GPT-5.6 Sol.",
+              "Bei Code-Migration: 68% Genauigkeit, +10 Punkte über dem Zweitplatzierten, 2–4x schneller."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/playco-game-prototyping-with-astra",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Playco cut manual fixes by 50% when prototyping games with GPT-6 Astra.",
+              "The case study highlights Astra's practical impact on game development workflows."
+            ],
+            "original": [
+              "Paraphrase: Playco cut manual fixes by 50% when prototyping games with GPT-6 Astra."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Playco reduzierte manuelle Korrekturen um 50% beim Prototyping von Spielen mit GPT-6 Astra.",
+              "Die Fallstudie zeigt Astras praktischen Einfluss auf Spieleentwicklungs-Workflows."
+            ],
+            "original": [
+              "Paraphrase: Playco reduzierte manuelle Korrekturen um 50% beim Prototyping von Spielen mit GPT-6 Astra."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/legora-financial-statement-review-with-astra",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Legora reviewed 41 documents in minutes using GPT-6 Astra for financial statement analysis.",
+              "This is an early production use case of Astra in legal/financial document workflows."
+            ],
+            "original": [
+              "Paraphrase: Legora reviewed 41 documents in minutes with GPT-6 Astra."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Legora prüfte 41 Dokumente in Minuten mit GPT-6 Astra für Finanzberichtsanalysen.",
+              "Dies ist ein früher Produktionsanwendungsfall von Astra in juristischen/finanziellen Dokumenten-Workflows."
+            ],
+            "original": [
+              "Paraphrase: Legora prüfte 41 Dokumente in Minuten mit GPT-6 Astra."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Competitive Response: Meta's Muse Spark 1.3",
+      "desc": "Meta answers with a model that matches GPT-5.6-Sol at a fraction of the cost.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Muse Spark 1.3 matches GPT-5.6-Sol, making Meta Superintelligence a frontier lab.",
+              "Training Muse Spark 1.3 costs >90% less than comparable models, according to Latent Space."
+            ],
+            "original": [
+              "Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Muse Spark 1.3 erreicht GPT-5.6-Sol und macht Meta Superintelligence zu einem Frontier-Lab.",
+              "Das Training von Muse Spark 1.3 kostet laut Latent Space über 90% weniger als vergleichbare Modelle."
+            ],
+            "original": [
+              "Muse Spark 1.3 erreicht GPT-5.6-Sol und bestätigt Meta Superintelligence als neuestes Frontier-Lab, >90% Rabatt beim Training."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Strategic Implications: AGI Claims and Safety",
+      "desc": "As capabilities jump, the industry confronts what this means for AGI definitions and safety.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "GPT-6 Astra is the first model that made OpenAI comfortable declaring the 'AGI era' began.",
+              "OpenAI's shift in language signals a major strategic repositioning around AGI timelines."
+            ],
+            "original": [
+              "GPT-6 Astra is the first model making OpenAI willing to declare the 'AGI era'."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-6 Astra ist das erste Modell, das OpenAI dazu brachte, den Beginn der 'AGI-Ära' zu verkünden.",
+              "OpenAIs Sprachwechsel signalisiert eine strategische Neupositionierung bei AGI-Zeitplänen."
+            ],
+            "original": [
+              "GPT-6 Astra ist das erste Modell, das OpenAI bereit macht, die 'AGI-Ära' auszurufen."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://www.youtube.com/watch?v=hdlq-JHpLSw",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Buck Shlegeris (Redwood Research) unpacks OpenAI and HuggingFace revelations and their impact on AI safety.",
+              "He discusses concrete steps to fix AI safety and shares his updated AI takeover odds."
+            ],
+            "original": [
+              "OpenAI/HuggingFace Revelations, Fixing AI Safety & Takeover Odds"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Buck Shlegeris (Redwood Research) analysiert OpenAI- und HuggingFace-Enthüllungen und deren Auswirkungen auf KI-Sicherheit.",
+              "Er diskutiert konkrete Schritte zur Verbesserung der KI-Sicherheit und teilt seine aktualisierten KI-Übernahme-Wahrscheinlichkeiten."
+            ],
+            "original": [
+              "OpenAI/HuggingFace-Enthüllungen, KI-Sicherheit reparieren & Übernahme-Wahrscheinlichkeiten"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hardware Foundations for the AI Era",
+      "desc": "Chip architecture is being rethought to keep up with AI scaling demands.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=85Y6h_jbRfs",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Rene Haas (Arm CEO) outlines how chip architecture is being redefined for AI workloads.",
+              "Haas discusses Arm's role in the evolving AI chip landscape."
+            ],
+            "original": [
+              "Redefining Chip Architecture with Arm CEO Rene Haas"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Rene Haas (Arm CEO) skizziert, wie Chip-Architektur für KI-Workloads neu definiert wird.",
+              "Haas diskutiert Arms Rolle in der sich entwickelnden KI-Chip-Landschaft."
+            ],
+            "original": [
+              "Chip-Architektur neu definieren mit Arm CEO Rene Haas"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260904110459-c0f4a3",
+    "generatedAt": "2026-09-04T11:06:53.697Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 114296,
+    "tokensIn": 3953,
+    "tokensOut": 8286,
+    "estCostUsd": 0.002874,
+    "candidatesIn": 28,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 137182,
+      "preparedChars": 3668,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest",
+      "https://openai.com/index/playco-game-prototyping-with-astra",
+      "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "https://www.latent.space/p/ainews-muse-spark-13-matches-gpt",
+      "https://the-decoder.com/gpt-6-astra-is-the-first-model-making-openai-willing-to-declare-the-agi-era/",
+      "https://www.youtube.com/watch?v=hdlq-JHpLSw",
+      "https://www.youtube.com/watch?v=85Y6h_jbRfs"
+    ]
+  }
+}
