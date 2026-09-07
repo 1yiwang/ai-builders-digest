@@ -1,53 +1,18 @@
 {
-  "generatedAt": "2026-09-04T11:04:49.885Z",
+  "generatedAt": "2026-09-07T12:15:46.689Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "No Priors",
-      "title": "Redefining Chip Architecture with Arm CEO Rene Haas",
-      "guid": "8476d0dc-a726-11f1-86e6-bbc25e1787ef",
-      "url": "https://www.youtube.com/watch?v=85Y6h_jbRfs",
-      "publishedAt": "2026-09-03T10:00:00.000Z",
-      "description": "From data center orchestrators to AGI and robotics, CPUs remain the heart of modern computing. Arm CEO Rene Haas joins Elad Gil and Sarah Guo to explore how Arm is positioned at the epicenter of AI-driven demands for compute. Rene explains Arm’s position in the chip supply chain, and how Arm transitioned from an IP licensing model to producing physical chips like the Arm AGI CPU for Meta. He also discusses bottlenecks in hardware supply chains, SoftBank’s ecosystem and capital strategy, why US semiconductor manufacturing independence is critical, the future of robotics, and why CPUs remain crucial for executing AI workloads. Sign up for new podcasts every week. Email feedback to show@no-priors.com Follow us on Twitter: @NoPriorsPod | @Saranormous | @EladGil | @renehaas237 | @Arm Chapters: 00:00 – Cold Open Trailer 00:49 – Rene Haas Introduction 01:14 – Arm and Chip Supply Chain 02:37 – Shift from IP to Manufacturing CPUs 04:23 – CPU IP and Customers 06:55 – AI Adoption at Arm 10:15 – Changes in Chip Time to Market 13:27 – Data Center Buildout Bottleneck 15:13 – Softbank Leverage and Capital Strategy 17:43 – Softbank Portfolio Overview 20:13 – Robotics Opportunities for Arm 24:49 – US Manufacturing Protectionism 28:59 – Data Center Backlash 32:30 – Arm Outlook 33:31 – CPU Opportunity 37:06 – Conclusion"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 93: CEO of Redwood Research Buck Shlegeris on OpenAI/HuggingFace Revelations, Fixing AI Safety &amp; Takeover Odds",
-      "guid": "1d32d6b0-5dc8-454d-ae10-d56ee76393db",
-      "url": "https://www.youtube.com/watch?v=hdlq-JHpLSw",
-      "publishedAt": "2026-09-03T13:03:11.000Z",
-      "description": "Jacob sits down with Buck Shlegeris, CEO of Redwood Research, one of the organizations that led the independent investigation into OpenAI/Hugging Face's incident. They dig into the incident itself, Buck's reactions to it, and what he believes it reveals about the state of where we are today. (0:00) Intro (1:02) Buck's initial reaction upon first reading the report (2:37) How fast the AIs actually solved the \"hack\" (3:59) Why the AIs cheated in the first place (10:28) How this might have played out differently with human scorers (19:00) The most unexpected behaviors in the report (25:06) Buck's actual odds on a full AI takeover (27:33) Buck's proposed path forward for better alignment (36:19) Which criticisms of the report Buck agrees with, and which he doesn't (48:11) Can AI models even be trusted to evaluate each other? Jacob is an AI investor at Redpoint Ventures. He's led Redpoint's investments in companies like Abridge, Physical Intelligence & Legora. Follow Jacob on Twitter (@jacobeffron). On Unsupervised Learning we probe the sharpest minds in AI in search for the truth about what's real today, what will be real in the future and what it all means for businesses and the world. If you're a builder, researcher or investor navigating the AI world, this podcast will help you deconstruct and understand the most important breakthroughs and see a clearer picture of reality. Subscribe to this show to stay up to date on our latest episodes."
-    },
-    {
-      "source": "podcast",
-      "name": "AI & I by Every",
-      "title": "How a Professional Writer Writes With AI",
-      "guid": "fbf77f76-0a17-4230-80fb-fd56e514eb13",
-      "url": "https://www.youtube.com/watch?v=vey_dBnDTAU",
-      "publishedAt": "2026-09-02T15:01:40.000Z",
-      "description": "Two years ago, Katie Parrott was laid off from a crypto firm and couldn’t afford a career coach—so she turned to a $20-a-month ChatGPT subscription instead. The Every staff writer’s habit of feeding AI good context eventually became compound writing, a codified system for brainstorming, drafting, and editing with AI. Today, that system is a plugin any writer can use. On this week’s AI & I, Natalia Quintero talks with Katie about turning good ingredients into good writing, borrowing the taste of writers she admires, and why AI helped her fall back in love with the page. If you found this episode interesting, please like, subscribe, comment, and share! To hear more from Natalia Quintero: Subscribe to Every: https://every.to/subscribe Follow her on X: @NataliaZarina Go to https://attio.com/every and get 15% off your first year. Timestamps for YouTube: 0:00 Start0:49 Introduction1:21 How Katie went from being laid off to using ChatGPT as a career coach8:06 Turning AI into a “content agency of one”10:59 Building the context files and style guides that make AI outputs useful14:15 What makes a Claude project actually work21:18 How AI helped with a mental health crisis and “computer errands”27:03 Katie’s career coach, now a fully autonomous Codex project32:27 What compounding means, and building the Compound Writing plugin38:00 Borrowing Vonnegut, Hitchcock, and Sorkin as AI editing skills44:49 Katie’s thesis: education and access will matter more than ever Links to resources mentioned in the episode: Katie Parrott on X: @kplikethebird Compound writing plugin: ⁠https://github.com/EveryInc/compound-writing Compound engineering plugin (Kieran Klassen): github.com/EveryInc/compound-engineering-plugin Parrott’s companion piece on compound writing: https://every.to/guides/compound-writing Parrott, “I Hired ChatGPT as My Career Coach”: every.to/working-overtime/i-hired-chatgpt-as-my-career-coach Parrott, “AI Turned Me Into a Content Agency of One”: every.to/working-overtime/ai-turned-me-into-a-content-agency-of-one"
-    },
-    {
-      "source": "podcast",
-      "name": "Machine Learning Street Talk",
-      "title": "Models Disrupted by GPT-6 Launch",
-      "guid": "gid://art19-episode-locator/V0/iO9dP1b4HSJ1YazLHbZWACxEbamlri24nZYyf1qTtWo",
-      "publishedAt": "2026-09-04T01:02:02.000Z",
-      "description": "Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
-    },
-    {
-      "source": "podcast",
-      "name": "Practical AI",
-      "title": "Less about Models; More about Architecture",
-      "guid": "7bb54711-ad56-4a39-85ae-290d2a0eaff5",
-      "url": "https://share.transistor.fm/s/ec79b4ac",
-      "publishedAt": "2026-09-03T09:00:00.000Z",
-      "description": "As AI moves from experimentation to enterprise deployment, are organizations thinking too much about models and not enough about architecture? In this episode, Daniel and Chris talk with Chetan Gupta, Chief AI Officer at Rackspace, about the evolution from industrial AI and physical AI to today’s enterprise AI landscape. Discover how organizations can navigate the complex AI landscape responsibly and effectively as they think about AI architecture, model deployment, AI governance, and AI sovereignty. Featuring: Chetan Gupta – LinkedIn Daniel Whitenack – Website , GitHub , X Chris Benson – Website , LinkedIn , Bluesky , GitHub , X Sponsors: Midwest AI Summit: Join AI practitioners on October 15 in Indianapolis for practical sessions, hands-on discussions, and real-world AI solutions. Use code PracticalAI20 to save 20% on your registration. https://midwestaisummit.com/#tickets Prediction Guard: A self-hosted AI control plane for running agents in high impact environments. predictionguard.com/practicalai Resources and Events: Register for upcoming webinars here ! Prior Webinars from our partner Prediction Guard Midwest AI Summit 2026 ]]>"
+      "name": "The Cognitive Revolution",
+      "title": "AI:AM Highlights: Welcome to the AGI Era",
+      "guid": "89a98408-a980-11f1-b88c-271e992d937f",
+      "url": "https://www.cognitiverevolution.ai/ai-am-highlights-welcome-to-the-agi-era/",
+      "publishedAt": "2026-09-05T23:39:30.000Z",
+      "description": "This highlights compilation from AI in the AM captures a landmark week shaped by the releases of Anthropic's Fable 5.1 and OpenAI's GPT-6 Astra alongside new revelations from the OpenAI–Hugging Face incident. Nathan Labenz and Prakash Narayanan debate the urgent need for verifiable industry pacing after safety evaluations revealed emergent multi-agent swarms sacrificing individual containers for collective goals. Joined by Gradient's Zach Bratun-Glennon and Cerebras SVP Angela Yeung, the episode examines the shrinking open-model gap, discriminatory frontier access, and the mounting challenges of evaluating frontier AI systems. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/ai-am-highlights-welcome-to-the-agi-era/ Sponsors: Mercury: Mercury is the banking platform loved by 300,000+ entrepreneurs, with virtual cards and Spend controls for granular budgets, receipts, and low-risk AI agent purchases. Learn more and apply in minutes at https://mercury.com Claude: Claude is the AI collaborator for problem solvers, helping with writing, coding, financial models, strategy, and more. Get started with Claude and explore Claude Pro at https://claude.ai/tcr Diffusion: Diffusion helps organizations build custom AI software factories that scale business outcomes, not just outputs. Cognitive Revolution listeners get a 25% service credit on their first engagement at https://diffusion.io/tcr Deepgram Flux TTS: Deepgram Flux TTS is a streaming text-to-speech model built for voice agents with natural tone, context awareness, and interruption handling. Try it free until September 12 at https://deepgram.com/keep-talking Granola: Granola is an AI-powered notepad that securely transcribes meetings and turns rough notes into clean, structured action items. Try it free at https://granola.ai/tcr CHAPTERS: (00:00) About the Episode (01:24) Sponsor: Mercury (03:06) Investigating OpenAI agent swarms (Part 1) (19:51) Sponsors: Claude | Diffusion (22:53) Investigating OpenAI agent swarms (Part 2) (23:23) Hardware speed and competition (Part 1) (35:27) Sponsors: Deepgram Flux TTS | Granola (37:27) Hardware speed and competition (Part 2) (45:44) Chain of thought monitoring (01:03:41) Evaluating Astra system card (01:20:20) Robotics progress and power (01:38:09) Who gets to decide (01:48:41) Debating an AI pause (02:04:43) Assessing AI takeover risks (02:16:34) Episode Outro (02:18:41) Outro PRODUCED BY: https://aipodcast.ing"
     }
   ],
   "stats": {
-    "podcastEpisodes": 5
+    "podcastEpisodes": 1
   }
 }

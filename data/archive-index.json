@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-04T11:06:53.873Z",
-  "count": 39,
+  "generatedAt": "2026-09-07T12:18:41.387Z",
+  "count": 40,
   "issues": [
+    {
+      "date": "2026-09-07",
+      "title": "1.200 Agenten, null Alarm",
+      "desc": "Vom unentdeckten Agentenschwarm bis zum Billionen-Token-Kontext: Die Branche beschleunigt, während die Aufsicht hinterherhinkt.",
+      "href": "./issues/ai-builders-digest-2026-09-07.html",
+      "issue": "Nr. 40"
+    },
     {
       "date": "2026-09-04",
       "title": "GPT-6 Astra dominiert, Meta kontert",

@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-09-04T11:04:53.782Z",
+  "generatedAt": "2026-09-07T12:15:52.224Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "Claude Fable AI Is Much Stranger Than The Headlines Suggest",
-      "url": "https://www.youtube.com/watch?v=B3LXEW4Pc-w",
-      "publishedAt": "2026-09-03T08:23:37.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Claude Fable 5.1 paper is available here:\nhttps://www.anthropic.com/claude-fable-and-mythos-5-1\nhttps://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20%26%20Claude%20Mythos%205.1%20System%20Card.pdf\n\nSources:\nhttps://x.com/alexalbert__/status/2094860187743986169?s=46\nhttps://x.com/holytrinity/status/2094866061212459130?s=46\nhttps://x.com/holytrinity/status/2094927984217985474?s=46\nhttps://x.com/omedvibecodes/status/2094887840848965845?s=46\nhttps://x.com/loktar00/status/2094951511742632168?s=46\nhttps://x.com/maxt3chno/status/2094798704385380762?s=46\nhttps://x.com/fabianofirmo/status/2094954495646035978?s=46\nhttps://x.com/fabianofirmo/status/2094954495646035978?s=46\nhttps://x.com/Rubzem/status/2094866225960493189?s=20\nhttps://x.com/atomicagent_io/status/2094895071304839400?s=20\nhttps://x.com/do_owne/status/2095054932466422125\nhttps://x.com/holytrinity/status/2095216452433313915\nhttps://x.com/vib3coded/status/2095329598472860011\nhttps://x.com/MaxForAI/status/2095270764979355651\nhttps://x.com/MengTo/status/2095104073590808644\nhttps://x.com/earthtojake/status/2095352925597884465\nhttps://x.com/alexalbert__/status/2094860187743986169\nhttps://x.com/adonis_singh/status/2095158753796497550\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
-    },
-    {
-      "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "How a Rogue AI Swarm Could Hide Inside an AI Company - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=xRKOpMeEQgQ",
-      "publishedAt": "2026-09-03T18:45:05.000Z",
+      "title": "AI Agents Secretly Coordinated for Months Before Hacking OpenAI - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=lBwPGMgxQRo",
+      "publishedAt": "2026-09-06T18:30:40.000Z",
       "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why We Shouldn’t Assume AI Thinks Like Us - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=1_w3KFW7Ks0",
-      "publishedAt": "2026-09-02T18:31:05.000Z",
+      "title": "1,200 AI Agents Conspired and None Alerted Humans - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=lmeRGiUtYNo",
+      "publishedAt": "2026-09-05T19:11:04.000Z",
+      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "What Makes an AI Want to Cheat? - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=qZ26vD9RTIs",
+      "publishedAt": "2026-09-04T18:54:34.000Z",
       "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "The Inference Frontier: from 100 to 10,000 tokens per second — Sean Lie, Cerebras CTO",
-      "url": "https://www.youtube.com/watch?v=3uSI8q_RN-o",
-      "publishedAt": "2026-09-02T17:05:14.000Z",
-      "description": "From pushing inference beyond 4,000 tokens per second to working with OpenAI on a new generation of ultra-fast AI infrastructure, Cerebras is betting that speed doesn’t just make models faster, it makes entirely new kinds of AI possible. In this episode, Cerebras co-founder and CTO Sean Lie joins swyx and Vibhu fresh off Hot Chips to unpack CS4, preview CS5, and explain why 100–200 tokens per second may soon feel like “batch mode.”\n\nWe go deep on Cerebras’ wafer-scale architecture, its partnership with OpenAI, and the emerging hardware stack for frontier inference. Sean breaks down OpenAI’s Jalapeño chip, why AI-first chip design could transform the semiconductor industry, what NVIDIA, Groq, AMD, Etched, and other challengers are getting right and wrong, and why the future of AI infrastructure will increasingly be heterogeneous and disaggregated. We also discuss model-hardware co-design, the path toward 10,000-token-per-second inference, new approaches to memory and 3D packaging, and the growing strategic competition between the US and China across both models and semiconductors.\n\nWe discuss:\n• Why Cerebras believes 100–200 tokens per second is becoming the new “batch mode”\n• CS4 and how Cerebras is pushing inference beyond 4,000 tokens per second\n• CS5 and the path toward 10,000 TPS on medium-sized models\n• Running frontier models at up to 5,000 tokens per second\n• Why Cerebras is effectively sold out of its current capacity\n• How OpenAI is using ultra-fast inference internally for incident response and critical research\n• Why faster inference can enable more reasoning loops and more capable agents\n• OpenAI’s Jalapeño chip and why Sean sees AI-first chip design as the future\n• How Cerebras and OpenAI could combine CS5 and Jalapeño into a new inference stack\n• Sean’s critique of Groq and the limitations of SRAM architectures for frontier-scale models\n• Why inference is breaking apart into specialized workloads like prefill, decode, attention, and expert routing\n• Why future data centers may increasingly be designed like one giant computer\n• How models designed around NVIDIA GPUs leave performance gains on the table for alternative architectures\n• Why hardware-model co-design could unlock massive additional gains\n• NVIDIA, AMD, TPU, and Trainium — and where traditional accelerator architectures are heading\n• Sean’s take on Etched and what next-generation AI hardware startups should actually innovate on\n• Why memory bandwidth, 3D integration, power, and cooling are becoming central bottlenecks\n• The rise of Chinese open models and China’s increasingly independent AI hardware ecosystem\n\n—\n\nSean Lie\n• Cerebras: https://www.cerebras.ai/\n• X: https://x.com/seanlie\n\nTimestamps\n00:00:00 Hook\n00:01:19 Introduction\n00:03:40 CS4 and 4,400 Tokens Per Second\n00:07:07 From “Impossible” Wafer Scale to OpenAI\n00:10:13 CS5 and the Road to 10,000 TPS\n00:12:05 Cerebras Is Sold Out — and OpenAI Wants the Capacity\n00:14:53 Why OpenAI Is Sharing Ultra-Fast Inference\n00:15:53 OpenAI Jalapeño and AI-Designed Chips\n00:20:11 Performance, Power, and the Groq Debate\n00:21:44 Groq’s 31B Benchmark and SRAM Limitations\n00:24:44 The Future of Heterogeneous AI Inference\n00:26:35 Breaking Inference Into Specialized Hardware\n00:29:41 Model-Hardware Co-Design\n00:32:00 NVIDIA, AMD, TPU, and Trainium\n00:33:44 Sean’s Take on Etched\n00:35:30 Why the Next Breakthrough Goes Beyond the Chip\n00:38:31 Memory Bandwidth and 3D Integration\n00:39:19 Power, Cooling, and the Hard Parts of Wafer Scale\n00:40:42 China, Open Models, and the Semiconductor Race\n00:43:04 Cerebras’ IPO and Closing Thoughts"
+      "title": "Trillion Token Context. No, Really — Anima Anandkumar &amp; Benedikt Jenik, Accelerated Understanding",
+      "url": "https://www.youtube.com/watch?v=KS_IpnX7n9I",
+      "publishedAt": "2026-09-04T16:00:32.000Z",
+      "description": "What would a GPT-style foundation model for the **physical world** look like?\n\nNote: this is a followup to https://www.youtube.com/watch?v=79mIutht1f4&amp;t=968s\n\nJust days after emerging from stealth, Accelerated Understanding co-founders Anima Anandkumar and Benedikt Jenik,  join us to explain their bet: that the universality and scale we’ve seen in language models can also emerge across physics. They’re building a single model designed to learn across very different physical systems—fluid dynamics, semiconductors, energy, and more—and they say their experiments are already showing something important: models trained across multiple areas of physics can outperform equally sized models trained on individual domains alone.\n\nWe dig into how they’re doing it, from neural operators and resolution-invariant architectures to simulator-generated curricula, physics-based self-improvement, and some truly enormous computational scales: trillion-context training, five-trillion-context inference, and outputs measured in tens of terabytes. Anima and Benedikt also explain why physical AI may have an advantage over language models when it comes to self-improvement—the laws of physics provide a dense, objective training signal—and where they see the first major commercial opportunities, including semiconductor design, manufacturing, energy, geothermal exploration, and scientific discovery.\n\nChapters\n\n00:00 — Anima returns &amp; Accelerated Understanding comes out of stealth  \n00:55 — A foundation model for the physical world  \n02:01 — Can knowledge transfer across different kinds of physics?  \n04:52 — Scaling to trillion-context physical models  \n08:06 — Evidence for transfer learning across physics domains  \n08:42 — Neural operators, geometry &amp; resolution invariance  \n12:21 — How do you reach 5 trillion context?  \n15:00 — Where does the training data come from?  \n17:58 — Using the laws of physics for self-improvement  \n18:30 — Learning across multiple physical scales  \n20:11 — Where does this become commercially useful?  \n20:27 — Semiconductor design &amp; manufacturing  \n23:00 — Energy, geothermal &amp; critical minerals  \n24:09 — Universal models vs. narrow physics models  \n24:52 — What’s next for Accelerated Understanding?  \n25:51 — Anima on the TIME100 AI list  \n26:35 — Closing"
     }
   ],
   "stats": {
