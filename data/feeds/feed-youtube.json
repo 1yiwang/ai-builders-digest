@@ -1,7 +1,43 @@
 {
-  "generatedAt": "2026-09-07T12:15:52.224Z",
+  "generatedAt": "2026-09-09T11:09:30.131Z",
   "lookbackHours": 72,
   "videos": [
+    {
+      "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "Centralize is the GPS for Enterprise Deals",
+      "url": "https://www.youtube.com/watch?v=dZLVDPzPITg",
+      "publishedAt": "2026-09-08T18:48:33.000Z",
+      "description": "Rachit Kataria and Will Wang are the co-founders of Centralize (W24), an AI-powered platform that automatically builds org charts of enterprise accounts to help revenue teams map stakeholders, spot gaps, and close complex deals faster. The company recently closed a $15 million Series A led by NEA.\n\nIn this Fireide, Rachit and Will sat down with Diana Hu, Managing Partner at YC, to talk about how Centralize's &quot;trust graph&quot; ingests emails, calls, and CRM data to surface human dynamics inside a prospect's org — and how one customer compressed a six-month sales cycle into weeks to close an eight-figure deal.\n\nhttps://www.usecentralize.com\n\n00:00 — GPS for Enterprise Deals\n00:45 — Who's Already Using It\n01:00 — Building the Trust Graph\n03:19 — Real Customer Outcomes\n05:52 — Six Months to Weeks\n06:08 — Who Should Use Centralize\n07:09 — Who Thrives Here\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "GPT-6 Astra Changes Everything",
+      "url": "https://www.youtube.com/watch?v=eVBJIUxv8N8",
+      "publishedAt": "2026-09-08T08:24:27.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nLinks / sources:\nHoney sim: search for &quot;Variational Stokes: A Unified Pressure-Viscosity Solver for Accurate Viscous Liquids&quot; here: https://cs.uwaterloo.ca/~c2batty/\nhttps://x.com/mindblown_ai/status/2095661874037813298?s=20\nhttps://x.com/aollivier82/status/2096226819401801896?s=46\nhttps://x.com/sahilexec/status/2095688272269984016?s=46\nhttps://x.com/petergostev/status/2095596176804307342?s=20\nhttps://x.com/mattshumer_/status/2095609734845927525?s=20\nhttps://x.com/mattshumer_/status/2095596175705399482?s=46\nhttps://x.com/davis7/status/2095742249275699415?s=46\nhttps://x.com/dimillian/status/2095596700815516004?s=46\nhttps://x.com/sharifshameem/status/2095653641164329143?s=46\nhttps://x.com/skirano/status/2095648379455861054?s=46\nhttps://x.com/petergostev/status/2095596341422440714?s=46\nhttps://x.com/keunhongp/status/2095739550484365620?s=46\nhttps://x.com/Bhavani_00007/status/2095858967515930706?s=20\nhttps://x.com/aibattle_/status/2095994051354919049?s=46\nhttps://x.com/scottstts/status/2096008241104711698?s=46\nhttps://x.com/stefan_3d_ai/status/2096185294165103049?s=46\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "The Case for Open Source AI - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=KmBqPwSoZg0",
+      "publishedAt": "2026-09-08T19:35:17.000Z",
+      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "AI Does Not Need Human Motives to Become Dangerous - Ajeya Cotra",
+      "url": "https://www.youtube.com/watch?v=gYEgDNyBXMU",
+      "publishedAt": "2026-09-07T18:30:11.000Z",
+      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
@@ -13,33 +49,15 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "1,200 AI Agents Conspired and None Alerted Humans - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=lmeRGiUtYNo",
-      "publishedAt": "2026-09-05T19:11:04.000Z",
-      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "What Makes an AI Want to Cheat? - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=qZ26vD9RTIs",
-      "publishedAt": "2026-09-04T18:54:34.000Z",
-      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Trillion Token Context. No, Really — Anima Anandkumar &amp; Benedikt Jenik, Accelerated Understanding",
-      "url": "https://www.youtube.com/watch?v=KS_IpnX7n9I",
-      "publishedAt": "2026-09-04T16:00:32.000Z",
-      "description": "What would a GPT-style foundation model for the **physical world** look like?\n\nNote: this is a followup to https://www.youtube.com/watch?v=79mIutht1f4&amp;t=968s\n\nJust days after emerging from stealth, Accelerated Understanding co-founders Anima Anandkumar and Benedikt Jenik,  join us to explain their bet: that the universality and scale we’ve seen in language models can also emerge across physics. They’re building a single model designed to learn across very different physical systems—fluid dynamics, semiconductors, energy, and more—and they say their experiments are already showing something important: models trained across multiple areas of physics can outperform equally sized models trained on individual domains alone.\n\nWe dig into how they’re doing it, from neural operators and resolution-invariant architectures to simulator-generated curricula, physics-based self-improvement, and some truly enormous computational scales: trillion-context training, five-trillion-context inference, and outputs measured in tens of terabytes. Anima and Benedikt also explain why physical AI may have an advantage over language models when it comes to self-improvement—the laws of physics provide a dense, objective training signal—and where they see the first major commercial opportunities, including semiconductor design, manufacturing, energy, geothermal exploration, and scientific discovery.\n\nChapters\n\n00:00 — Anima returns &amp; Accelerated Understanding comes out of stealth  \n00:55 — A foundation model for the physical world  \n02:01 — Can knowledge transfer across different kinds of physics?  \n04:52 — Scaling to trillion-context physical models  \n08:06 — Evidence for transfer learning across physics domains  \n08:42 — Neural operators, geometry &amp; resolution invariance  \n12:21 — How do you reach 5 trillion context?  \n15:00 — Where does the training data come from?  \n17:58 — Using the laws of physics for self-improvement  \n18:30 — Learning across multiple physical scales  \n20:11 — Where does this become commercially useful?  \n20:27 — Semiconductor design &amp; manufacturing  \n23:00 — Energy, geothermal &amp; critical minerals  \n24:09 — Universal models vs. narrow physics models  \n24:52 — What’s next for Accelerated Understanding?  \n25:51 — Anima on the TIME100 AI list  \n26:35 — Closing"
+      "title": "Inside the Team That Killed Mandatory Code Review — Quinn Slack, AMP",
+      "url": "https://www.youtube.com/watch?v=hvwtHZ5E27c",
+      "publishedAt": "2026-09-07T14:00:06.000Z",
+      "description": "Sponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 4
+    "youtubeVideos": 6
   }
 }

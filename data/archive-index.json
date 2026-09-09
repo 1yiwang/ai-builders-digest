@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-07T12:18:41.387Z",
-  "count": 40,
+  "generatedAt": "2026-09-09T11:12:01.247Z",
+  "count": 41,
   "issues": [
+    {
+      "date": "2026-09-09",
+      "title": "Astra-next greift nach dem Millennium-Preis",
+      "desc": "OpenAI meldet einen mathematischen Coup, während KI-Coding-Bewertungen und Agenten-Koordination die Nachrichten prägen.",
+      "href": "./issues/ai-builders-digest-2026-09-09.html",
+      "issue": "Nr. 41"
+    },
     {
       "date": "2026-09-07",
       "title": "1.200 Agenten, null Alarm",
