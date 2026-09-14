@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-09T11:12:01.247Z",
-  "count": 41,
+  "generatedAt": "2026-09-14T12:34:18.960Z",
+  "count": 42,
   "issues": [
+    {
+      "date": "2026-09-14",
+      "title": "Astra erobert die Produktion",
+      "desc": "OpenAI bringt GPT‑6 Astra in echte Systeme, während chinesische Modelle und geopolitische Spannungen den Markt prägen.",
+      "href": "./issues/ai-builders-digest-2026-09-14.html",
+      "issue": "Nr. 42"
+    },
     {
       "date": "2026-09-09",
       "title": "Astra-next greift nach dem Millennium-Preis",

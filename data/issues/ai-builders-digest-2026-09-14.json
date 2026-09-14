@@ -1,0 +1,271 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-14",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI treibt GPT‑6 Astra in Produktionssysteme: Perplexity und Cognition setzen das Modell über eigene Pipelines hinweg ein. Parallel bestätigen Daten zu DeepSeek V4.1 Flash, dass Chinas Modelle näher an westliche Spitzenmodelle rücken. China kontert US‑Sicherheitswarnungen als Panikmache, während Sam Altman einen Börsengang 2026 ablehnt. Die Branche sortiert sich neu: Modellqualität, geopolitische Spannungen und Kapitalfragen bestimmen den nächsten Zyklus."
+  },
+  "archive": {
+    "title": "Astra erobert die Produktion",
+    "desc": "OpenAI bringt GPT‑6 Astra in echte Systeme, während chinesische Modelle und geopolitische Spannungen den Markt prägen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-14.",
+  "sections": [
+    {
+      "title": "GPT-6 Astra in Production / GPT-6 Astra in der Produktion",
+      "desc": "Three signs that OpenAI's GPT-6 Astra is moving into real customer systems.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Perplexity now runs GPT‑6 Astra across end-to-end systems, not just isolated parts.",
+              "OpenAI's case study positions Astra as production-ready for real-world search workloads."
+            ],
+            "original": [
+              "Perplexity trusts GPT-6 Astra with end-to-end systems"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Perplexity setzt GPT‑6 Astra jetzt in End-to-End-Systemen ein, nicht nur in isolierten Teilen.",
+              "OpenAIs Fallstudie präsentiert Astra als produktionsreif für reale Such-Workloads."
+            ],
+            "original": [
+              "Perplexity vertraut GPT‑6 Astra bei End-to-End-Systemen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/cognition-devin-testing-with-astra",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Cognition is using GPT‑6 Astra so Devin can test its own code changes.",
+              "The integration adds model-based self-testing to Devin's coding agent loop."
+            ],
+            "original": [
+              "Cognition helps Devin test its own work with GPT-6 Astra"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Cognition nutzt GPT‑6 Astra, damit Devin eigene Codeänderungen testen kann.",
+              "Die Integration ergänzt Devins Coding-Agenten-Loop um modellbasiertes Selbsttesten."
+            ],
+            "original": [
+              "Cognition hilft Devin, die eigene Arbeit mit GPT‑6 Astra zu testen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison used GPT‑6 Astra with ChatGPT Work to generate custom running routes.",
+              "The build shows ChatGPT Work as a lightweight orchestrator for personal utilities."
+            ],
+            "original": [
+              "Generating running routes with GPT-6 Astra and ChatGPT Work"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison erzeugte mit GPT‑6 Astra und ChatGPT Work individuelle Laufrouten.",
+              "Der Build zeigt ChatGPT Work als schlanken Orchestrator für persönliche Utility-Aufgaben."
+            ],
+            "original": [
+              "Laufrouten generieren mit GPT‑6 Astra und ChatGPT Work."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "China's AI Push: DeepSeek Scale and Policy Tensions / Chinas KI-Vorstoß: DeepSeek-Skala und politische Spannungen",
+      "desc": "DeepSeek's true parameter count and Beijing's response to U.S. safety warnings signal a hardening race.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "DeepSeek V4.1 Flash is ~748.5B parameters for backbone+engram, not 552B; stored size reaches 763B with vision and DSpark.",
+              "Community workflow: use large DeepSeek V4-class models for planning, then Q38-27B / Q38-35B-Distill / Ornith35B for local agentic execution."
+            ],
+            "original": [
+              "DeepSeek V4.1 Flash is ~748.5B parameters for backbone + engram—not 552B—with a 551.566B backbone and 196.929B engram.",
+              "The suggested practical workflow was to use larger DeepSeek V4-class models for planning, then smaller/distilled models such as Q38-27B, Q38-35B-Distill, or Ornith35B for execution in local agentic coding pipelines."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "DeepSeek V4.1 Flash hat ~748,5 Mrd. Parameter für Backbone+Engram statt 552 Mrd.; gespeichert sind es 763 Mrd. mit Vision und DSpark.",
+              "Workflow: große DeepSeek-V4-Modelle für Planung, dann Q38‑27B / Q38‑35B‑Distill / Ornith35B für lokale Agentenausführung."
+            ],
+            "original": [
+              "DeepSeek V4.1 Flash hat ~748,5 Mrd. Parameter für Backbone+Engram – nicht 552 Mrd. – mit 551,566 Mrd. Backbone und 196,929 Mrd. Engram.",
+              "Der empfohlene Workflow: große DeepSeek-V4-Modelle für die Planung, dann kleinere destillierte Modelle wie Q38-27B, Q38-35B-Distill oder Ornith35B für die lokale Agentenausführung."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Chinese officials rejected U.S. AI safety warnings as fearmongering to lock in American advantage.",
+              "The statement escalates public dispute over AI safety and export controls."
+            ],
+            "original": [
+              "China fires back at U.S. AI safety warnings, calling them fearmongering to lock in American advantage"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Chinesische Beamte wiesen US‑KI‑Sicherheitswarnungen als Panikmache zurück, um Amerikas Vorteil zu sichern.",
+              "Die Äußerung verschärft den öffentlichen Streit über KI‑Sicherheit und Exportkontrollen."
+            ],
+            "original": [
+              "China kontert US‑KI‑Sicherheitswarnungen und nennt sie Panikmache, um Amerikas Vorteil zu sichern."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "OpenAI Strategy: IPO Timing / OpenAI-Strategie: Börsengang-Timing",
+      "desc": "Sam Altman signals that OpenAI will avoid public markets for now.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Sam Altman said an OpenAI IPO in 2026 would be ‘ill-advised.’",
+              "The statement pushes public market debut further out, leaving private investors to fund scaling."
+            ],
+            "original": [
+              "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sam Altman nannte einen OpenAI‑Börsengang 2026 ‘ill-advised’ (unratsam).",
+              "Damit rückt ein öffentliches Listing weiter in die Ferne; private Investoren finanzieren das Skalieren."
+            ],
+            "original": [
+              "OpenAIs Sam Altman sagt, ein Börsengang 2026 wäre ‘unratsam’."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Builders' Toolkit: New Releases and Forward Deployed Practices / Builder-Toolkit: Neue Releases und Forward-Deployed-Praktiken",
+      "desc": "Developer tools and the emerging role of forward deployed engineers show how AI products reach real workflows.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/forward-deployed-engineer-best-practices",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Latent Space argues forward deployed engineers are rising as enterprises need people who can wire AI into real workflows.",
+              "The piece offers best practices for scoping, trust, and living inside customer systems."
+            ],
+            "original": [
+              "The Rise of the Forward Deployed Engineer — and How To Do the Job Right"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Latent Space argumentiert, dass Forward-Deployed-Engineers aufsteigen, weil Unternehmen Leute brauchen, die KI in echte Workflows integrieren.",
+              "Der Beitrag bietet Best Practices für Scoping, Vertrauen und die Arbeit direkt in Kundensystemen."
+            ],
+            "original": [
+              "Der Aufstieg des Forward Deployed Engineer – und wie man den Job richtig macht."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Simon Willison released commit-rewriter 0.1, a tool for rewriting git commit messages.",
+              "Version 0.1 indicates an early, minimal release aimed at developer workflows."
+            ],
+            "original": [
+              "commit-rewriter 0.1"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison veröffentlichte commit-rewriter 0.1, ein Tool zum Umschreiben von Git-Commit-Messages.",
+              "Version 0.1 deutet auf einen frühen, minimalen Release für Developer-Workflows hin."
+            ],
+            "original": [
+              "commit-rewriter 0.1"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260914123112-ffc71f",
+    "generatedAt": "2026-09-14T12:34:18.860Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 186064,
+    "tokensIn": 1374,
+    "tokensOut": 14642,
+    "estCostUsd": 0.004292,
+    "candidatesIn": 17,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 155495,
+      "preparedChars": 3979,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "https://openai.com/index/cognition-devin-testing-with-astra",
+      "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+      "https://the-decoder.com/china-fires-back-at-u-s-ai-safety-warnings-calling-them-fearmongering-to-lock-in-american-advantage/",
+      "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+      "https://www.latent.space/p/forward-deployed-engineer-best-practices",
+      "https://simonwillison.net/2026/Sep/14/commit-rewriter/"
+    ]
+  }
+}

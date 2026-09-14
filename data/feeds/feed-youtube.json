@@ -1,45 +1,27 @@
 {
-  "generatedAt": "2026-09-11T11:05:01.227Z",
+  "generatedAt": "2026-09-14T12:31:07.319Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "Centralize is the GPS for Enterprise Deals",
-      "url": "https://www.youtube.com/watch?v=dZLVDPzPITg",
-      "publishedAt": "2026-09-08T18:48:33.000Z",
-      "description": "Rachit Kataria and Will Wang are the co-founders of Centralize (W24), an AI-powered platform that automatically builds org charts of enterprise accounts to help revenue teams map stakeholders, spot gaps, and close complex deals faster. The company recently closed a $15 million Series A led by NEA.\n\nIn this Fireide, Rachit and Will sat down with Diana Hu, Managing Partner at YC, to talk about how Centralize's &quot;trust graph&quot; ingests emails, calls, and CRM data to surface human dynamics inside a prospect's org — and how one customer compressed a six-month sales cycle into weeks to close an eight-figure deal.\n\nhttps://www.usecentralize.com\n\n00:00 — GPS for Enterprise Deals\n00:45 — Who's Already Using It\n01:00 — Building the Trust Graph\n03:19 — Real Customer Outcomes\n05:52 — Six Months to Weeks\n06:08 — Who Should Use Centralize\n07:09 — Who Thrives Here\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
-    },
-    {
-      "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "I Never Thought I’d See This Happen",
-      "url": "https://www.youtube.com/watch?v=mOvtumfyjCs",
-      "publishedAt": "2026-09-10T08:47:23.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Navier-Stokes solution paper is available here:\nhttps://openai.com/index/navier-stokes-solution/\n\nMy fluid simulations and papers:\nhttps://users.cg.tuwien.ac.at/zsolnai/gfx/fluid_control_msc_thesis/\nhttps://users.cg.tuwien.ac.at/zsolnai/gfx/real_time_fluid_control_eg/\nThe flow from simulation to reality: https://www.nature.com/articles/s41567-022-01788-5\nAll papers: https://users.cg.tuwien.ac.at/zsolnai/\n\nFull interview with Sir Demis Hassabis:\nhttps://www.youtube.com/watch?v=huAwz_BR8WM\n\nSources:\nhttps://www.youtube.com/watch?v=EURkO98VnKc\nhttps://www.youtube.com/watch?v=luOWq1Gdv8c\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Chinese AI Labs Are Keeping Up",
+      "url": "https://www.youtube.com/watch?v=BSCChdPCP54",
+      "publishedAt": "2026-09-13T18:30:00.000Z",
+      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Punishing AI for Cheating Could Backfire - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=Wth831jKhlw",
-      "publishedAt": "2026-09-09T19:48:49.000Z",
-      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "The Case for Open Source AI - Ajeya Cotra",
-      "url": "https://www.youtube.com/watch?v=KmBqPwSoZg0",
-      "publishedAt": "2026-09-08T19:35:17.000Z",
-      "description": "Full episode: https://youtu.be/X50zezLFWWI\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "When will AI be better than human experts?",
+      "url": "https://www.youtube.com/watch?v=F8C0Imuwy38",
+      "publishedAt": "2026-09-12T18:30:08.000Z",
+      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
     }
   ],
   "stats": {
-    "youtubeVideos": 4
+    "youtubeVideos": 2
   }
 }
