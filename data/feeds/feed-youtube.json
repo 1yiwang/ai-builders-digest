@@ -1,7 +1,34 @@
 {
-  "generatedAt": "2026-09-14T12:31:07.319Z",
+  "generatedAt": "2026-09-16T11:20:40.894Z",
   "lookbackHours": 72,
   "videos": [
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
+      "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
+      "publishedAt": "2026-09-15T10:12:34.000Z",
+      "description": "❤️ Check out Weights &amp; Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The papers and sources are available here:\nhttps://proceedings.mlr.press/v202/kirchenbauer23a.html\nhttps://www.nature.com/articles/s41586-024-08025-4\nhttps://www.anthropic.com/news/claude-text-watermark\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "AI Might Build Better AI Before It Can Be a Paralegal",
+      "url": "https://www.youtube.com/watch?v=O9ZU5A3F1wI",
+      "publishedAt": "2026-09-15T18:30:12.000Z",
+      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why So Many AI Models Sound Like Claude",
+      "url": "https://www.youtube.com/watch?v=cu8JoThq88A",
+      "publishedAt": "2026-09-14T18:30:27.000Z",
+      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
@@ -13,15 +40,15 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "When will AI be better than human experts?",
-      "url": "https://www.youtube.com/watch?v=F8C0Imuwy38",
-      "publishedAt": "2026-09-12T18:30:08.000Z",
-      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Recursive Self-Improvement: from Auto Research to Superintelligence — Richard Socher, Recursive",
+      "url": "https://www.youtube.com/watch?v=eDFXtSg3zB8",
+      "publishedAt": "2026-09-14T15:45:28.000Z",
+      "description": "From helping pioneer ideas that foreshadowed prompt-based, general-purpose NLP to now building AI systems that can automate AI research itself, Richard Socher is betting that the next major step in AI is recursive self-improvement. In this episode, Richard joins Latent Space to unpack his vision for the “Eureka Machine”: a superintelligence that can improve the process of invention itself, accelerate AI research, and eventually tackle major problems across science, energy, materials, biology, and more.\n\nPre-order the book &quot;The Eureka Machine&quot; here: https://www.hachettebookgroup.com/titles/richard-socher/the-eureka-machine/9781541705708/?lens=publicaffairs\n\nRichard is the founder of Recursive, You.com, &amp; AIX Ventures. We go deep on Recursive’s early results, including an AI research system that Richard says outperformed humans and their agents on optimization tasks in less than two days, as well as work on NVIDIA GPU kernels where the system discovered improvements without relying on a team of CUDA experts.\n\nWe also explore the harder questions around increasingly capable AI: reward hacking, whether Anthropic-style constitutions actually work, AI regulation and proposals to “pace” frontier development, open-source models as geopolitical soft power, whether today’s LLM paradigm is enough, and what happens if AI systems eventually begin choosing their own goals. Richard reflects on the rejected research that helped inspire later GPT work, open-endedness, the AI Economist, simulations of entire economies, and his framework for thinking about the upper bounds of intelligence itself.\n\nWe discuss:\n• The Eureka Machine and Richard’s vision for an AI that can automate invention\n• Why Richard is optimistic about superintelligence for science and technology\n• Why AI hard-takeoff scenarios may underestimate physical and economic constraints\n• The risks of regulating intelligence itself instead of specific AI applications\n• Reward hacking and why increasingly intelligent AI makes objective design harder\n• Richard’s critique of Anthropic’s constitution and constitutional AI\n• Recursive self-improvement and automating the process of AI research\n• Whether today’s LLM paradigm is enough — and why Richard is less bullish on world models\n• DecaNLP, early prompt-based generalization, and the research that influenced GPT\n• Why rejected research can shape entire technological timelines\n• Open-endedness, evolutionary approaches, and rainbow teaming\n• What happens if AI systems begin setting their own goals\n• Why simple objectives like profit maximization can produce dangerous reward hacks\n• Recursive’s long-term plan to apply self-improving AI to science\n• The compute, hardware, and economic constraints on AI takeoff\n• Recursive’s early NanoChat, NanoGPT, and GPU kernel optimization results\n• Why automating AI research could reduce years of work to weeks\n• Reward engineering and what makes auto-research systems actually work\n• The AI Economist and using simulations to test economic policy\n• Whether LLMs can realistically simulate people and entire economies\n• Benchmark bugs, evaluation harnesses, and the difficulty of measuring AI progress\n• Recursive’s near-term focus on AI for AI research\n• Harness optimization, sandboxing, and web search as core agent infrastructure\n• You.com and the search stack for AI agents\n• AI in finance, backtesting, and the danger of data leakage\n• Richard’s three fundamental components and ten “spaces” of intelligence\n• The theoretical upper bounds of vision, communication, knowledge, and computation\n• Creative intelligence, metacognition, and AI-generated goals\n• Survival, replication, and why AI does not necessarily need to fear being turned off\n• High agency, choosing ambitious goals, and advice for people building with AI\n\nRichard Socher\n• X: https://x.com/RichardSocher\n• LinkedIn: https://www.linkedin.com/in/richardsocher/\n\nTimestamps\n00:00:00 Hook\n00:01:17 The Eureka Machine and Superintelligence\n00:03:40 AI Optimism, Slow Takeoff, and Regulation\n00:09:13 AI Safety, Reward Hacking, and Anthropic's Constitution\n00:13:06 Alignment, Personalization, and Open Source AI\n00:17:03 Why Richard Started Recursive\n00:21:20 Recursive Self-Improvement and the Founding Team\n00:24:12 Are Today's LLMs Enough?\n00:30:20 DecaNLP, GPT, and the Rejected Idea Ahead of Its Time\n00:35:55 Open-Endedness and Evolutionary AI\n00:37:55 What Happens When AI Chooses Its Own Goals?\n00:42:33 Superintelligence for Science\n00:43:57 GPUs, Compute, and the Limits of AI Takeoff\n00:46:24 Recursive's Results: AI Beating Humans and Their Agents\n00:50:31 Reward Engineering and Auto Research\n00:54:29 The AI Economist and Simulating Entire Economies\n00:59:24 LLM Simulations, Personas, and Mode Collapse\n01:04:55 Recursive's Roadmap, Agents, Search, and Finance\n01:10:30 The Upper Bounds and Spaces of Intelligence\n01:31:38 Goals, High Agency, and Advice for Builders"
     }
   ],
   "stats": {
-    "youtubeVideos": 2
+    "youtubeVideos": 5
   }
 }

@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-14T12:34:18.960Z",
-  "count": 42,
+  "generatedAt": "2026-09-16T11:23:30.843Z",
+  "count": 43,
   "issues": [
+    {
+      "date": "2026-09-16",
+      "title": "Der AEF-1-Standard und der Sprachpreiskampf",
+      "desc": "Ein neuer Evaluierungsstandard, günstigere Open-Source-Modelle und Googles Angriff auf GPT-Live-1 prägen den Tag.",
+      "href": "./issues/ai-builders-digest-2026-09-16.html",
+      "issue": "Nr. 43"
+    },
     {
       "date": "2026-09-14",
       "title": "Astra erobert die Produktion",

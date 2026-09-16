@@ -1,0 +1,221 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-16",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI, xAI und Anthropic haben gemeinsam den AEF-1-Standard für Third-Party-Evaluatoren unterzeichnet. Parallel unterbietet DeepSeek-V4.1-Flash etablierte Open-Source-Modelle bei Kosten pro Task deutlich. Google zieht mit Gemini 3.8 Live gegen GPT-Live-1 in den Echtzeit-Sprachmarkt. Zusammen zeigen diese Schritte eine Branche, die Effizienz und Prüfbarkeit vor rohe Skalierung stellt."
+  },
+  "archive": {
+    "title": "Der AEF-1-Standard und der Sprachpreiskampf",
+    "desc": "Ein neuer Evaluierungsstandard, günstigere Open-Source-Modelle und Googles Angriff auf GPT-Live-1 prägen den Tag."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-16.",
+  "sections": [
+    {
+      "title": "Evaluator Standards & Model Economics / Evaluierungsstandards & Modellökonomie",
+      "desc": "A new third-party evaluation standard and a decision-only model both shift model economics toward cheaper, verifiable outputs.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "xAI, OpenAI, and Anthropic all co-signed AEF-1, a new standard for third-party evaluators.",
+              "DeepSeek-V4.1-Flash (Max) hit #3 among open models and the Pareto frontier at +4.87% net improvement for roughly $0.06–$0.07 median cost per task."
+            ],
+            "original": [
+              "AEF-1 standard emerges for Third Party Evaluators, as Xai, OpenAI, and Anthropic all cosign",
+              "Agent Arena reported the model reached #3 among open models and landed on the Pareto frontier with +4.87% net improvement at roughly $0.06–$0.07 median cost per task."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "xAI, OpenAI und Anthropic haben gemeinsam den AEF-1-Standard für unabhängige Evaluatoren unterzeichnet.",
+              "DeepSeek-V4.1-Flash (Max) erreichte Platz 3 unter offenen Modellen und die Pareto-Frontier bei +4,87 % Nettoverbesserung für ca. 0,06–0,07 US-Dollar mediane Kosten pro Task."
+            ],
+            "original": [
+              "AEF-1-Standard entsteht für Third-Party-Evaluatoren; Xai, OpenAI und Anthropic zeichnen alle mit.",
+              "Agent Arena meldete: Das Modell erreichte Platz 3 unter offenen Modellen und landete auf der Pareto-Frontier mit +4,87 % Nettoverbesserung bei ca. 0,06–0,07 US-Dollar medianen Kosten pro Task."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-jev-a-system-one-model-that",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Jev is a 'System One' model that only decides, classifies, routes, and scores — no long text generation.",
+              "It claims >100x faster and >200x cheaper than small frontier LLMs for those decision tasks."
+            ],
+            "original": [
+              "Jev: a 'System One Model' that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Jev ist ein 'System One'-Modell, das nur entscheidet, klassifiziert, routet und bewertet — ohne lange Textgenerierung.",
+              "Für diese Entscheidungsaufgaben soll es >100x schneller und >200x günstiger sein als kleine Frontier-LLMs."
+            ],
+            "original": [
+              "Jev: ein 'System One-Modell', das nur entscheidet/klassifiziert/routet/bewertet — >100x schneller, >200x günstiger als kleine Frontier-LLMs"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Voice AI Price War / Sprach-KI-Preiskampf",
+      "desc": "Google's Gemini 3.8 Live directly undercuts OpenAI's GPT-Live-1 in real-time voice AI.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google launched Gemini 3.8 Live, directly targeting OpenAI's GPT-Live-1 with a fraction-of-the-cost pitch.",
+              "The move turns real-time voice AI into a cost-competition battleground."
+            ],
+            "original": [
+              "Google launches Gemini 3.8 Live to take on OpenAI's GPT-Live-1 at a fraction of the cost"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google hat Gemini 3.8 Live gestartet und zielt damit direkt auf OpenAIs GPT-Live-1 zu einem Bruchteil der Kosten.",
+              "Damit wird Echtzeit-Sprach-KI zum Preiskampf-Schauplatz."
+            ],
+            "original": [
+              "Google startet Gemini 3.8 Live, um OpenAIs GPT-Live-1 zu einem Bruchteil der Kosten herauszufordern."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Enterprise & SMB AI Adoption / KI-Einführung in Unternehmen und KMU",
+      "desc": "From Box's enterprise diffusion to Claude's small-business workflows, commercial AI adoption is moving beyond frontier labs.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic launched Claude for Small Business with new workflows, integrations, and training programs.",
+              "The package targets SMB adoption beyond the enterprise frontier."
+            ],
+            "original": [
+              "Claude for Small Business launches new workflows, integrations, and training programs"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic hat Claude for Small Business mit neuen Workflows, Integrationen und Trainingsprogrammen gestartet.",
+              "Das Paket zielt auf die Einführung von KI in kleinen und mittleren Unternehmen ab."
+            ],
+            "original": [
+              "Claude for Small Business startet neue Workflows, Integrationen und Trainingsprogramme."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=NE4CLThMPGU",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Aaron Levie (Box) discusses reinventing yourself in the AI age and how enterprises actually diffuse AI.",
+              "The conversation centers on enterprise adoption patterns rather than demos."
+            ],
+            "original": [
+              "Box's Aaron Levie: On Reinventing Yourself in the AI Age and Enterprise Diffusion"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Aaron Levie (Box) spricht über Selbst-Neuerfindung im KI-Zeitalter und darüber, wie Unternehmen KI tatsächlich übernehmen.",
+              "Im Zentrum steht die unternehmerische Diffusion statt bloßer Technologie-Demos."
+            ],
+            "original": [
+              "Box' Aaron Levie: Über die Neuerfindung im KI-Zeitalter und die Diffusion in Unternehmen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Risk Perception / KI-Risikowahrnehmung",
+      "desc": "Survey data shows how strongly existential risk concerns were already embedded among AI researchers in 2024.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Nearly one in five AI researchers already expected an extinction scenario from AI back in 2024.",
+              "The finding adds survey data to debates over AI risk and researcher sentiment."
+            ],
+            "original": [
+              "Nearly one in five AI researchers already expected an extinction scenario from AI back in 2024"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Fast jeder fünfte KI-Forscher erwartete bereits 2024 ein Auslöschungsszenario durch KI.",
+              "Diese Umfragedaten untermauern die anhaltende Risikodebatte unter Forschenden."
+            ],
+            "original": [
+              "Fast jeder fünfte KI-Forscher erwartete bereits 2024 ein Auslöschungsszenario durch KI."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260916112046-67b0e1",
+    "generatedAt": "2026-09-16T11:23:30.738Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 164175,
+    "tokensIn": 1362,
+    "tokensOut": 15710,
+    "estCostUsd": 0.004589,
+    "candidatesIn": 25,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 106703,
+      "preparedChars": 4028,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-aef-1-standard-emerges-for",
+      "https://www.latent.space/p/ainews-jev-a-system-one-model-that",
+      "https://the-decoder.com/google-launches-gemini-3-8-live-to-take-on-openais-gpt-live-1-at-a-fraction-of-the-cost/",
+      "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+      "https://www.youtube.com/watch?v=NE4CLThMPGU",
+      "https://the-decoder.com/nearly-one-in-five-ai-researchers-already-expected-an-extinction-scenario-from-ai-back-in-2024/"
+    ]
+  }
+}
