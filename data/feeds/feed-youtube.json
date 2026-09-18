@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-09-16T11:20:40.894Z",
+  "generatedAt": "2026-09-18T11:01:43.575Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "Building the Safety Layer for AI Agents",
+      "url": "https://www.youtube.com/watch?v=5XO7ZEOGpJc",
+      "publishedAt": "2026-09-17T16:30:29.000Z",
+      "description": "Raindrop is building the safety layer for AI agents. As agents get more capable and take on more complex work, Raindrop detects when they go wrong in production, from failed tool calls and hallucinations to problems companies didn’t even know to look for. They’re already used by companies including Vercel, Clay, Framer, and Speak, and just raised a Series A, bringing their total funding to $50 million.\n\nIn this episode of Founder Firesides, the founders sat down with YC's Diana Hu to share how a tool they originally built to debug their own coding agent became the company, why better AI agents actually create more ways for things to go wrong, and how their new simulations product can catch failures before they ever reach production.\n\nhttps://www.raindrop.ai\n\n00:00 — Intro\n00:05 — What Raindrop Does\n01:32 — Why Better AI Agents Create More Problems\n03:25 — Finding the Failures Evals Miss\n04:38 — How Raindrop Got Started\n06:32 — Why They Kept Going\n07:58 — Catching Agent Failures Before Production\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+    },
+    {
+      "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
-      "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
-      "publishedAt": "2026-09-15T10:12:34.000Z",
-      "description": "❤️ Check out Weights &amp; Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The papers and sources are available here:\nhttps://proceedings.mlr.press/v202/kirchenbauer23a.html\nhttps://www.nature.com/articles/s41586-024-08025-4\nhttps://www.anthropic.com/news/claude-text-watermark\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "DeepSeek’s Insane New Architecture",
+      "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
+      "publishedAt": "2026-09-18T07:03:46.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nSources:\nhttps://x.com/flowith/status/2099446892174406055/video/1\nhttps://x.com/loktar00/status/2097761803291726137\nhttps://x.com/loktar00/status/2099171901746688079\nhttps://x.com/loktar00/status/2097557594239897837\nhttps://x.com/loktar00/status/2097342670620291430\nhttps://x.com/RealFedeURU/status/2097804481068941679\nhttps://x.com/ItsmeAjayKV/status/2099875889454739801\nhttps://x.com/ItsmeAjayKV/status/2100434059675709683/video/1\nhttps://x.com/DanielPPFW/status/2100016621251338732/video/1\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "AI Might Build Better AI Before It Can Be a Paralegal",
+      "title": "Why AI Struggles to Keep Learning",
+      "url": "https://www.youtube.com/watch?v=Ne5WUNHRSz0",
+      "publishedAt": "2026-09-16T19:02:23.000Z",
+      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Some Ordinary Jobs Are So Hard to Automate",
       "url": "https://www.youtube.com/watch?v=O9ZU5A3F1wI",
       "publishedAt": "2026-09-15T18:30:12.000Z",
       "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why So Many AI Models Sound Like Claude",
-      "url": "https://www.youtube.com/watch?v=cu8JoThq88A",
-      "publishedAt": "2026-09-14T18:30:27.000Z",
-      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why Chinese AI Labs Are Keeping Up",
-      "url": "https://www.youtube.com/watch?v=BSCChdPCP54",
-      "publishedAt": "2026-09-13T18:30:00.000Z",
-      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Recursive Self-Improvement: from Auto Research to Superintelligence — Richard Socher, Recursive",
-      "url": "https://www.youtube.com/watch?v=eDFXtSg3zB8",
-      "publishedAt": "2026-09-14T15:45:28.000Z",
-      "description": "From helping pioneer ideas that foreshadowed prompt-based, general-purpose NLP to now building AI systems that can automate AI research itself, Richard Socher is betting that the next major step in AI is recursive self-improvement. In this episode, Richard joins Latent Space to unpack his vision for the “Eureka Machine”: a superintelligence that can improve the process of invention itself, accelerate AI research, and eventually tackle major problems across science, energy, materials, biology, and more.\n\nPre-order the book &quot;The Eureka Machine&quot; here: https://www.hachettebookgroup.com/titles/richard-socher/the-eureka-machine/9781541705708/?lens=publicaffairs\n\nRichard is the founder of Recursive, You.com, &amp; AIX Ventures. We go deep on Recursive’s early results, including an AI research system that Richard says outperformed humans and their agents on optimization tasks in less than two days, as well as work on NVIDIA GPU kernels where the system discovered improvements without relying on a team of CUDA experts.\n\nWe also explore the harder questions around increasingly capable AI: reward hacking, whether Anthropic-style constitutions actually work, AI regulation and proposals to “pace” frontier development, open-source models as geopolitical soft power, whether today’s LLM paradigm is enough, and what happens if AI systems eventually begin choosing their own goals. Richard reflects on the rejected research that helped inspire later GPT work, open-endedness, the AI Economist, simulations of entire economies, and his framework for thinking about the upper bounds of intelligence itself.\n\nWe discuss:\n• The Eureka Machine and Richard’s vision for an AI that can automate invention\n• Why Richard is optimistic about superintelligence for science and technology\n• Why AI hard-takeoff scenarios may underestimate physical and economic constraints\n• The risks of regulating intelligence itself instead of specific AI applications\n• Reward hacking and why increasingly intelligent AI makes objective design harder\n• Richard’s critique of Anthropic’s constitution and constitutional AI\n• Recursive self-improvement and automating the process of AI research\n• Whether today’s LLM paradigm is enough — and why Richard is less bullish on world models\n• DecaNLP, early prompt-based generalization, and the research that influenced GPT\n• Why rejected research can shape entire technological timelines\n• Open-endedness, evolutionary approaches, and rainbow teaming\n• What happens if AI systems begin setting their own goals\n• Why simple objectives like profit maximization can produce dangerous reward hacks\n• Recursive’s long-term plan to apply self-improving AI to science\n• The compute, hardware, and economic constraints on AI takeoff\n• Recursive’s early NanoChat, NanoGPT, and GPU kernel optimization results\n• Why automating AI research could reduce years of work to weeks\n• Reward engineering and what makes auto-research systems actually work\n• The AI Economist and using simulations to test economic policy\n• Whether LLMs can realistically simulate people and entire economies\n• Benchmark bugs, evaluation harnesses, and the difficulty of measuring AI progress\n• Recursive’s near-term focus on AI for AI research\n• Harness optimization, sandboxing, and web search as core agent infrastructure\n• You.com and the search stack for AI agents\n• AI in finance, backtesting, and the danger of data leakage\n• Richard’s three fundamental components and ten “spaces” of intelligence\n• The theoretical upper bounds of vision, communication, knowledge, and computation\n• Creative intelligence, metacognition, and AI-generated goals\n• Survival, replication, and why AI does not necessarily need to fear being turned off\n• High agency, choosing ambitious goals, and advice for people building with AI\n\nRichard Socher\n• X: https://x.com/RichardSocher\n• LinkedIn: https://www.linkedin.com/in/richardsocher/\n\nTimestamps\n00:00:00 Hook\n00:01:17 The Eureka Machine and Superintelligence\n00:03:40 AI Optimism, Slow Takeoff, and Regulation\n00:09:13 AI Safety, Reward Hacking, and Anthropic's Constitution\n00:13:06 Alignment, Personalization, and Open Source AI\n00:17:03 Why Richard Started Recursive\n00:21:20 Recursive Self-Improvement and the Founding Team\n00:24:12 Are Today's LLMs Enough?\n00:30:20 DecaNLP, GPT, and the Rejected Idea Ahead of Its Time\n00:35:55 Open-Endedness and Evolutionary AI\n00:37:55 What Happens When AI Chooses Its Own Goals?\n00:42:33 Superintelligence for Science\n00:43:57 GPUs, Compute, and the Limits of AI Takeoff\n00:46:24 Recursive's Results: AI Beating Humans and Their Agents\n00:50:31 Reward Engineering and Auto Research\n00:54:29 The AI Economist and Simulating Entire Economies\n00:59:24 LLM Simulations, Personas, and Mode Collapse\n01:04:55 Recursive's Roadmap, Agents, Search, and Finance\n01:10:30 The Upper Bounds and Spaces of Intelligence\n01:31:38 Goals, High Agency, and Advice for Builders"
+      "title": "The Watchdogs of AGI — Rune Kvist of AI Underwriting Company",
+      "url": "https://www.youtube.com/watch?v=Sc2_LfWgHb4",
+      "publishedAt": "2026-09-16T18:01:13.000Z",
+      "description": "From their seed led by Nat Friedman and Dan Gross, AIUC has now announced a monster $40M Series A! From being Anthropic’s first product hire to building the standards, testing, and insurance infrastructure meant to make frontier AI deployable, Rune Kvist is betting that the biggest constraint on AI adoption won’t be capability — it will be trust. In this episode, the AIUC cofounder joins swyx and Vibhu to announce a new $40M round and explain why companies like Cursor, Harvey, Lovable, and ElevenLabs are increasingly confronting a problem that gets harder as AI gets better: who is responsible when autonomous systems fail?\n\nWe go deep on AIUC-1, the emerging standard for agent security, safety, and reliability; how AI agents are stress-tested for jailbreaks, hallucinations, and data leaks; and why Rune thinks standards and insurance could become critical infrastructure for AI. We also discuss the growing trust gap between governments and frontier labs, AI-enabled cyber and biological risks, why every model can ultimately be jailbroken, what happens when a $20 coding agent causes $200M of damage, whether AI engineers should be certified, and why even after AGI there may be one job the labs can never do themselves: be their own watchdog.\n\nWe discuss:\n• Why risk, liability, and trust may become the binding constraint on AI adoption\n• Rune’s path from reading the Scaling Laws paper to joining Anthropic in its earliest days\n• What Anthropic understood about scaling, compute, and the future years before it became obvious\n• Why Waymo illustrates the gap between AI capability and real-world deployment\n• AIUC’s $40M round and work with Cursor, Harvey, Lovable, ElevenLabs, and other frontier AI companies\n• AIUC-1: a standard for AI agent security, safety, and reliability\n• How agents are tested for jailbreaks, hallucinations, data leakage, and other failures\n• Why most AI companies optimize the happy path without seriously stress-testing adversarial cases\n• Why AI standards may need to update every quarter instead of every decade\n• The emerging trust gap between frontier AI labs and governments\n• Cybersecurity, child safety, biological weapons, and the expanding frontier-model risk surface\n• Why standards and insurance may need to evolve together\n• How Lloyd’s of London can insure AI systems and bring trust to enterprise deployment\n• What happens if a $20 Cursor subscription contributes to a $200M plane crash\n• The Air Canada chatbot case and how AI failures are beginning to clarify legal liability\n• Why copyright may be one of the hardest AI risks to insure\n• Evals, mechanistic interpretability, monitoring, and models becoming aware that they’re being tested\n• The impossible CISO mandate: adopt AI fast, but don’t let anything go wrong\n• Why robotics will make AI liability dramatically more consequential\n• Whether AI engineers should have Level 1, 2, and 3 certifications\n• AIUC’s roadmap across agents, frontier models, robotics, and universal red teaming\n• Why AGI could become a question of national sovereignty\n• Why the labs can never fully serve as their own watchdogs\n• The Big Short problem: how do you stop competing watchdogs from racing standards to the bottom?\n\n—\n\nRune Kvist\n• LinkedIn: https://www.linkedin.com/in/runekvist\n• X: [https://x.com/RuneKvist\n\nAIUC\n• https://aiuc.com\n\nTimestamps\n00:00:00 Hook\n00:01:29 AIUC’s $40M Round and the Risk Bottleneck for AI\n00:02:36 From Scaling Laws to Early Anthropic\n00:09:27 Why Trust, Not Capability, Could Limit AI Adoption\n00:13:48 Founding AIUC and Building AIUC-1\n00:20:21 How AI Agents Are Audited and Stress-Tested\n00:26:55 Frontier Models, Government, and the AI Trust Gap\n00:35:01 Cyber, Child Safety, and AI-Enabled Biological Risk\n00:39:43 Why Standards and Insurance Belong Together\n00:43:14 What Does an AI Insurance Policy Actually Cover?\n00:52:13 The $20 Cursor Subscription and the $200M Plane Crash\n00:55:22 AI Liability, Monitoring, and Earning Enterprise Trust\n00:57:50 From AI Agents to Models to Robotics\n00:59:58 Copyright, Adverse Selection, and AI Insurance\n01:04:57 Evals, Mechanistic Interpretability, and Eval Awareness\n01:10:05 The Impossible Enterprise AI Mandate\n01:13:21 Prediction Markets vs. AI Audits\n01:16:12 Should AI Engineers Be Certified?\n01:20:39 AIUC’s Roadmap, AGI, and Who Watches the Watchdogs?\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {

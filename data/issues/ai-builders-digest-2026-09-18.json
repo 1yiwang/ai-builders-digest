@@ -1,0 +1,213 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-18",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Crusoe sichert sich 3,9 Milliarden Dollar für modulare KI-Fabriken und riesige Rechenzentren. Parallel zeigen Arena-Benchmarks, dass Spitzenmodelle wie Astra und Fable pro Aufgabe deutlich teurer sind. Claude vereint Cowork und Chat, während Y Combinator Raindrops Sicherheitsschicht für KI-Agenten zeigt. Diese Signale deuten auf eine Industrie, die Kosten, Interfaces, Inferenzarchitektur und Agentensicherheit gleichzeitig neu sortiert."
+  },
+  "archive": {
+    "title": "Milliarden, teure Modelle, neue Agentensicherheit",
+    "desc": "Crusoe finanziert KI-Infrastruktur, Benchmarks zeigen hohe Kosten, und Startups bauen die Sicherheitsschicht für Agenten."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-18.",
+  "sections": [
+    {
+      "title": "Cost Reality Check / Kosten-Realitätscheck",
+      "desc": "Benchmarks expose per-task costs while Crusoe raises billions for the infrastructure underneath.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Arena benchmark: Astra Max costs +$11.7% / $3.94 per task vs Sol xHigh +$7.0% / $1.03, making top-tier expensive.",
+              "Swift-Qwen3.8-27B matched Qwen3.8-27B quality while cutting completion tokens 12,547→7,301 and seconds/case 1,481→750."
+            ],
+            "original": [
+              "Astra Max at +$11.7% / $3.94 per task versus Sol xHigh at +$7.0% / $1.03",
+              "Swift-Qwen3.8-27B achieved roughly comparable quality to Qwen3.8-27B while cutting completion tokens from 12,547 to 7,301"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Arena-Benchmark: Astra Max kostet +11,7 % / 3,94 $ pro Aufgabe, Sol xHigh +7,0 % / 1,03 $.",
+              "Swift-Qwen3.8-27B erreicht vergleichbare Qualität, senkt Completion-Tokens von 12.547 auf 7.301 und Sekunden/Fall von 1.481 auf 750."
+            ],
+            "original": [
+              "Astra Max bei +11,7 % / 3,94 $ pro Aufgabe, Sol xHigh bei +7,0 % / 1,03 $",
+              "Swift-Qwen3.8-27B erreichte vergleichbare Qualität bei Reduktion der Completion-Tokens von 12.547 auf 7.301"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Crusoe raised $3.9B to build massive data centers and small modular 'AI factories'."
+            ],
+            "original": [
+              "Crusoe raises $3.9B to build massive data centers and small modular 'AI factories'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Crusoe sichert sich 3,9 Milliarden Dollar für riesige Rechenzentren und kleine modulare 'KI-Fabriken'."
+            ],
+            "original": [
+              "Crusoe raises $3.9B to build massive data centers and small modular 'AI factories'"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Interfaces Collapse / Schnittstellen verschmelzen",
+      "desc": "Claude merges cowork and chat, and Zapier pushes headless tools as the new interface.",
+      "cards": [
+        {
+          "authorKey": "blog:Claude Blog",
+          "sourceName": "Claude Blog",
+          "sourceUrl": "https://claude.com/blog/cowork-is-now-claude",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Claude Cowork and chat are now one Claude, unifying interactive and headless modes in a single product."
+            ],
+            "original": [
+              "Claude Cowork and chat are now one Claude"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Claude Cowork und Chat sind jetzt ein einziges Claude und vereinen interaktive und headless Modi."
+            ],
+            "original": [
+              "Claude Cowork and chat are now one Claude"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/no-code-is-code-zapier-ceo-wade-foster-on-headless-tools-zapier-mcp-automation-bench/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Wade Foster (Zapier CEO) argues no-code is code, with headless tools, Zapier MCP, and Automation Bench.",
+              "Zapier's Automation Bench aims to benchmark agent automation workflows."
+            ],
+            "original": [
+              "No Code Is Code: Zapier CEO Wade Foster on Headless Tools, Zapier MCP & Automation Bench"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Wade Foster (Zapier CEO) sagt: No-Code ist Code, mit Headless-Tools, Zapier MCP und Automation Bench.",
+              "Zapiers Automation Bench soll Agenten-Automatisierungsworkflows vergleichbar machen."
+            ],
+            "original": [
+              "No Code Is Code: Zapier CEO Wade Foster on Headless Tools, Zapier MCP & Automation Bench"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Inference's Next Bet / Die nächste Inferenzwette",
+      "desc": "Stefano Ermon argues diffusion will replace autoregressive decoding for AI inference.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=N1rjtDs8blY",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Stefano Ermon (Inception co-founder & CEO) argues diffusion will win AI inference over autoregressive models."
+            ],
+            "original": [
+              "Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Stefano Ermon (Inception Mitgründer & CEO) argumentiert, dass Diffusion bei KI-Inferenz gewinnen wird."
+            ],
+            "original": [
+              "Why Diffusion Will Win AI Inference with Inception Co-Founder and CEO Stefano Ermon"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Safety Layer / Sicherheitsschicht für Agenten",
+      "desc": "As agents ship, startups build guardrails and safety infrastructure.",
+      "cards": [
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=5XO7ZEOGpJc",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Raindrop on building the safety layer for AI agents."
+            ],
+            "original": [
+              "Building the Safety Layer for AI Agents"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator spricht mit Raindrop über die Sicherheitsschicht für KI-Agenten."
+            ],
+            "original": [
+              "Building the Safety Layer for AI Agents"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260918110149-8aad3d",
+    "generatedAt": "2026-09-18T11:04:14.424Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 144346,
+    "tokensIn": 1358,
+    "tokensOut": 10862,
+    "estCostUsd": 0.003231,
+    "candidatesIn": 28,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 435306,
+      "preparedChars": 3728,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
+      "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+      "https://claude.com/blog/cowork-is-now-claude",
+      "https://www.cognitiverevolution.ai/no-code-is-code-zapier-ceo-wade-foster-on-headless-tools-zapier-mcp-automation-bench/",
+      "https://www.youtube.com/watch?v=N1rjtDs8blY",
+      "https://www.youtube.com/watch?v=5XO7ZEOGpJc"
+    ]
+  }
+}

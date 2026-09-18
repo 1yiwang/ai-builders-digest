@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-16T11:23:30.843Z",
-  "count": 43,
+  "generatedAt": "2026-09-18T11:04:14.532Z",
+  "count": 44,
   "issues": [
+    {
+      "date": "2026-09-18",
+      "title": "Milliarden, teure Modelle, neue Agentensicherheit",
+      "desc": "Crusoe finanziert KI-Infrastruktur, Benchmarks zeigen hohe Kosten, und Startups bauen die Sicherheitsschicht für Agenten.",
+      "href": "./issues/ai-builders-digest-2026-09-18.html",
+      "issue": "Nr. 44"
+    },
     {
       "date": "2026-09-16",
       "title": "Der AEF-1-Standard und der Sprachpreiskampf",
