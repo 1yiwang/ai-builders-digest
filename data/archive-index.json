@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-18T11:04:14.532Z",
-  "count": 44,
+  "generatedAt": "2026-09-21T12:40:08.638Z",
+  "count": 45,
   "issues": [
+    {
+      "date": "2026-09-21",
+      "title": "Chinas Open-Weight-Modelle holen auf",
+      "desc": "Chinesische Open-Weight-Modelle schließen zur US-Frontier auf, während Agenten und Chat-KI härter auf Vertrauen geprüft werden.",
+      "href": "./issues/ai-builders-digest-2026-09-21.html",
+      "issue": "Nr. 45"
+    },
     {
       "date": "2026-09-18",
       "title": "Milliarden, teure Modelle, neue Agentensicherheit",

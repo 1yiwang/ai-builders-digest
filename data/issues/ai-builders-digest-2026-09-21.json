@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-21",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Chinesische Open-Weight-Modelle sind laut Interconnects nur noch zwei bis fünf Monate hinter den US-Frontiermodellen. Alibabas Qwen-Image-2.1 fordert mit sieben Milliarden Parametern geschlossene Bildmodelle heraus. Noam Brown spricht bei Dwarkesh Patel über die wachsende Kluft zwischen ChatGPT und interner OpenAI-KI. Dahinter steckt eine gemeinsame Frage: Wie baut man KI, die nicht nur leistungsfähig, sondern auch vertrauenswürdig ist?"
+  },
+  "archive": {
+    "title": "Chinas Open-Weight-Modelle holen auf",
+    "desc": "Chinesische Open-Weight-Modelle schließen zur US-Frontier auf, während Agenten und Chat-KI härter auf Vertrauen geprüft werden."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-21.",
+  "sections": [
+    {
+      "title": "Open Models: China's Open-Weight Surge / Chinas Open-Weight-Schub",
+      "desc": "Chinese open-weight models are closing the gap with closed US frontier models across text and image generation.",
+      "cards": [
+        {
+          "authorKey": "blog:Interconnects",
+          "sourceName": "Interconnects",
+          "sourceUrl": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Chinese open-weight models are now 2–5 months behind closed US frontier models; US open weights are 6–9 months behind OpenAI and Anthropic.",
+              "Z.ai's GLM-5.3 leads with a score of 45, followed by Moonshot's Kimi K3 at 44 and GLM-5.3-Flash at 42.",
+              "Weekly open-model token usage grew from ~1T in September 2025 to ~80T today."
+            ],
+            "original": [
+              "Chinese open-weight models are approximately 2-5 months behind the closed American frontier, with the open-weight American models being approximately 6-9 months behind the likes of OpenAI and Anthropic.",
+              "Growth in usage from ~1T tokens processed from open models in a week of September 2025 to ~80T tokens per week today."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Chinesische Open-Weight-Modelle liegen nur noch 2–5 Monate hinter der US-Frontier; US-Open-Weight-Modelle 6–9 Monate hinter OpenAI und Anthropic.",
+              "Z.ai's GLM-5.3 führt mit Score 45, gefolgt von Moonshots Kimi K3 (44) und GLM-5.3-Flash (42).",
+              "Die wöchentliche Token-Nutzung offener Modelle stieg von ~1T im September 2025 auf ~80T heute."
+            ],
+            "original": [
+              "Chinesische Open-Weight-Modelle liegen ungefähr 2–5 Monate hinter der geschlossenen amerikanischen Frontier, während US-Open-Weight-Modelle etwa 6–9 Monate hinter OpenAI und Anthropic liegen.",
+              "Wachstum der Nutzung von ~1T Token aus offenen Modellen in einer Woche im September 2025 auf ~80T Token pro Woche heute."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Alibaba released Qwen-Image-2.1, an open-weight 7B image model that claims to beat closed models.",
+              "The model targets image generation, challenging proprietary systems with far fewer parameters."
+            ],
+            "original": [
+              "Alibaba's open-weight Qwen-Image-2.1 claims to beat closed models in image generation with just 7 billion parameters."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Alibaba veröffentlicht Qwen-Image-2.1, ein offenes 7B-Bildmodell, das geschlossene Modelle schlagen soll.",
+              "Das Modell zielt auf Bildgenerierung und fordert proprietäre Systeme mit weit weniger Parametern heraus."
+            ],
+            "original": [
+              "Alibabas Open-Weight-Modell Qwen-Image-2.1 soll mit nur 7 Milliarden Parametern geschlossene Modelle in der Bildgenerierung übertreffen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agentic Systems Under Trust Pressure / Agentische Systeme unter Vertrauensdruck",
+      "desc": "Both Tencent Gander and YC's banking agents target reliability in long-running or regulated workflows.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Tencent introduced Gander, an AI assistant designed to keep talking while it works in the background.",
+              "The feature targets continuous interaction during long-running tasks, not just turn-based chat."
+            ],
+            "original": [
+              "Tencent's Gander aims to keep talking while it works in the background."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Tencent stellt Gander vor, einen KI-Assistenten, der während Hintergrundarbeit weiter spricht.",
+              "Die Funktion zielt auf kontinuierliche Interaktion bei langlaufenden Aufgaben, nicht nur auf Chat-Runden."
+            ],
+            "original": [
+              "Tencents Gander soll weiterreden, während es im Hintergrund arbeitet."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=UKwpr_Trvns",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator discusses what it takes for banks to trust AI agents.",
+              "The session focuses on agent reliability in regulated financial environments."
+            ],
+            "original": [
+              "AI Agents That Banks Can Trust"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator diskutiert, was nötig ist, damit Banken KI-Agenten vertrauen.",
+              "Die Session behandelt Agentenzuverlässigkeit in regulierten Finanzumgebungen."
+            ],
+            "original": [
+              "KI-Agenten, denen Banken vertrauen können"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "The ChatGPT-Internal AI Gap / Die Kluft zwischen ChatGPT und interner KI",
+      "desc": "Noam Brown discusses why public ChatGPT differs from OpenAI's internal models.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=eXFMtMovXXY",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Noam Brown about the growing gap between ChatGPT and the AI inside OpenAI.",
+              "The conversation explores why public ChatGPT differs from internal OpenAI systems."
+            ],
+            "original": [
+              "The Growing Gap Between ChatGPT and the AI Inside OpenAI - Noam Brown"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel spricht mit Noam Brown über die wachsende Kluft zwischen ChatGPT und interner OpenAI-KI.",
+              "Das Gespräch beleuchtet, warum öffentliches ChatGPT von internen OpenAI-Systemen abweicht."
+            ],
+            "original": [
+              "Die wachsende Kluft zwischen ChatGPT und der KI in OpenAI – Noam Brown"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Bio-Inspired Architecture / Bio-inspirierte Architektur",
+      "desc": "Liquid AI draws architectural lessons from biological neural circuits.",
+      "cards": [
+        {
+          "authorKey": "youtube:@LatentSpacePod",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.youtube.com/watch?v=V_9TCu_21SE",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Latent Space interviews Ramin Hasani (Liquid AI) on how a 302-neuron worm inspired their architecture.",
+              "Liquid AI uses biological neural circuits as a blueprint for more efficient AI systems."
+            ],
+            "original": [
+              "A Worm With 302 Neurons Inspired Their Architecture — Ramin Hasani, Liquid AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Latent Space spricht mit Ramin Hasani (Liquid AI), wie ein Wurm mit 302 Neuronen die Architektur inspirierte.",
+              "Liquid AI nutzt biologische neuronale Schaltkreise als Blaupause für effizientere KI-Systeme."
+            ],
+            "original": [
+              "Ein Wurm mit 302 Neuronen inspirierte ihre Architektur – Ramin Hasani, Liquid AI"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260921123721-ac32fd",
+    "generatedAt": "2026-09-21T12:40:08.494Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 166468,
+    "tokensIn": 1326,
+    "tokensOut": 12679,
+    "estCostUsd": 0.003736,
+    "candidatesIn": 18,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 104243,
+      "preparedChars": 3848,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "https://the-decoder.com/alibabas-open-weight-qwen-image-2-1-claims-to-beat-closed-models-in-image-generation-with-just-7-billion-parameters/",
+      "https://the-decoder.com/tencents-gander-aims-to-keep-talking-while-it-works-in-the-background/",
+      "https://www.youtube.com/watch?v=UKwpr_Trvns",
+      "https://www.youtube.com/watch?v=eXFMtMovXXY",
+      "https://www.youtube.com/watch?v=V_9TCu_21SE"
+    ]
+  }
+}

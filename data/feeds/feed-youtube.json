@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-09-18T11:01:43.575Z",
+  "generatedAt": "2026-09-21T12:37:16.865Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Y Combinator",
       "handle": "@ycombinator",
-      "title": "Building the Safety Layer for AI Agents",
-      "url": "https://www.youtube.com/watch?v=5XO7ZEOGpJc",
-      "publishedAt": "2026-09-17T16:30:29.000Z",
-      "description": "Raindrop is building the safety layer for AI agents. As agents get more capable and take on more complex work, Raindrop detects when they go wrong in production, from failed tool calls and hallucinations to problems companies didn’t even know to look for. They’re already used by companies including Vercel, Clay, Framer, and Speak, and just raised a Series A, bringing their total funding to $50 million.\n\nIn this episode of Founder Firesides, the founders sat down with YC's Diana Hu to share how a tool they originally built to debug their own coding agent became the company, why better AI agents actually create more ways for things to go wrong, and how their new simulations product can catch failures before they ever reach production.\n\nhttps://www.raindrop.ai\n\n00:00 — Intro\n00:05 — What Raindrop Does\n01:32 — Why Better AI Agents Create More Problems\n03:25 — Finding the Failures Evals Miss\n04:38 — How Raindrop Got Started\n06:32 — Why They Kept Going\n07:58 — Catching Agent Failures Before Production\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
-    },
-    {
-      "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "DeepSeek’s Insane New Architecture",
-      "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
-      "publishedAt": "2026-09-18T07:03:46.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nSources:\nhttps://x.com/flowith/status/2099446892174406055/video/1\nhttps://x.com/loktar00/status/2097761803291726137\nhttps://x.com/loktar00/status/2099171901746688079\nhttps://x.com/loktar00/status/2097557594239897837\nhttps://x.com/loktar00/status/2097342670620291430\nhttps://x.com/RealFedeURU/status/2097804481068941679\nhttps://x.com/ItsmeAjayKV/status/2099875889454739801\nhttps://x.com/ItsmeAjayKV/status/2100434059675709683/video/1\nhttps://x.com/DanielPPFW/status/2100016621251338732/video/1\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "AI Agents That Banks Can Trust",
+      "url": "https://www.youtube.com/watch?v=UKwpr_Trvns",
+      "publishedAt": "2026-09-18T14:30:33.000Z",
+      "description": "Kastle is building the AI employee for banks. Their agents automate operations across mortgage servicing, consumer lending, and other parts of the bank back office. Today they work with 10 of the top 25 mortgage servicers and have processed more than $2 billion in transactions using AI agents. They just raised a $24M Series A, two years after going through YC.\n\nIn this episode of Founder Firesides, Kastle founders Rishi and Nitish sat down with YC's Diana Hu to share how they went back to zero one month before Demo Day and found their way to one of the hardest places to deploy AI: banking. They talk about finding their first customers and what it takes to make AI agents reliable enough to handle real financial transactions.\n\nhttps://www.kastle.ai\n\nChapters:\n00:00 — Intro\n00:05 — What Kastle Does\n01:00 — Why Banks Need AI Employees\n02:50 — Going Back to Zero Before Demo Day\n05:00 — Finding the Idea for Kastle\n06:43 — Landing Their First Customer\n08:18 — Moving Into a Customer’s Office\n08:59 — The Future of AI Employees in Banking\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why AI Struggles to Keep Learning",
-      "url": "https://www.youtube.com/watch?v=Ne5WUNHRSz0",
-      "publishedAt": "2026-09-16T19:02:23.000Z",
-      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Are We Training AI to Behave or to Cheat Better? - Noam Brown",
+      "url": "https://www.youtube.com/watch?v=deCyYLBfpHI",
+      "publishedAt": "2026-09-20T18:45:11.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Some Ordinary Jobs Are So Hard to Automate",
-      "url": "https://www.youtube.com/watch?v=O9ZU5A3F1wI",
-      "publishedAt": "2026-09-15T18:30:12.000Z",
-      "description": "Full episode:https://youtu.be/PrSf7IOYu-I\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "The Growing Gap Between ChatGPT and the AI Inside OpenAI - Noam Brown",
+      "url": "https://www.youtube.com/watch?v=eXFMtMovXXY",
+      "publishedAt": "2026-09-19T19:34:08.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "What Happens When Every Employee Thinks Like a Founder? - Noam Brown",
+      "url": "https://www.youtube.com/watch?v=aNkh4u4mm14",
+      "publishedAt": "2026-09-18T20:13:16.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "The Watchdogs of AGI — Rune Kvist of AI Underwriting Company",
-      "url": "https://www.youtube.com/watch?v=Sc2_LfWgHb4",
-      "publishedAt": "2026-09-16T18:01:13.000Z",
-      "description": "From their seed led by Nat Friedman and Dan Gross, AIUC has now announced a monster $40M Series A! From being Anthropic’s first product hire to building the standards, testing, and insurance infrastructure meant to make frontier AI deployable, Rune Kvist is betting that the biggest constraint on AI adoption won’t be capability — it will be trust. In this episode, the AIUC cofounder joins swyx and Vibhu to announce a new $40M round and explain why companies like Cursor, Harvey, Lovable, and ElevenLabs are increasingly confronting a problem that gets harder as AI gets better: who is responsible when autonomous systems fail?\n\nWe go deep on AIUC-1, the emerging standard for agent security, safety, and reliability; how AI agents are stress-tested for jailbreaks, hallucinations, and data leaks; and why Rune thinks standards and insurance could become critical infrastructure for AI. We also discuss the growing trust gap between governments and frontier labs, AI-enabled cyber and biological risks, why every model can ultimately be jailbroken, what happens when a $20 coding agent causes $200M of damage, whether AI engineers should be certified, and why even after AGI there may be one job the labs can never do themselves: be their own watchdog.\n\nWe discuss:\n• Why risk, liability, and trust may become the binding constraint on AI adoption\n• Rune’s path from reading the Scaling Laws paper to joining Anthropic in its earliest days\n• What Anthropic understood about scaling, compute, and the future years before it became obvious\n• Why Waymo illustrates the gap between AI capability and real-world deployment\n• AIUC’s $40M round and work with Cursor, Harvey, Lovable, ElevenLabs, and other frontier AI companies\n• AIUC-1: a standard for AI agent security, safety, and reliability\n• How agents are tested for jailbreaks, hallucinations, data leakage, and other failures\n• Why most AI companies optimize the happy path without seriously stress-testing adversarial cases\n• Why AI standards may need to update every quarter instead of every decade\n• The emerging trust gap between frontier AI labs and governments\n• Cybersecurity, child safety, biological weapons, and the expanding frontier-model risk surface\n• Why standards and insurance may need to evolve together\n• How Lloyd’s of London can insure AI systems and bring trust to enterprise deployment\n• What happens if a $20 Cursor subscription contributes to a $200M plane crash\n• The Air Canada chatbot case and how AI failures are beginning to clarify legal liability\n• Why copyright may be one of the hardest AI risks to insure\n• Evals, mechanistic interpretability, monitoring, and models becoming aware that they’re being tested\n• The impossible CISO mandate: adopt AI fast, but don’t let anything go wrong\n• Why robotics will make AI liability dramatically more consequential\n• Whether AI engineers should have Level 1, 2, and 3 certifications\n• AIUC’s roadmap across agents, frontier models, robotics, and universal red teaming\n• Why AGI could become a question of national sovereignty\n• Why the labs can never fully serve as their own watchdogs\n• The Big Short problem: how do you stop competing watchdogs from racing standards to the bottom?\n\n—\n\nRune Kvist\n• LinkedIn: https://www.linkedin.com/in/runekvist\n• X: [https://x.com/RuneKvist\n\nAIUC\n• https://aiuc.com\n\nTimestamps\n00:00:00 Hook\n00:01:29 AIUC’s $40M Round and the Risk Bottleneck for AI\n00:02:36 From Scaling Laws to Early Anthropic\n00:09:27 Why Trust, Not Capability, Could Limit AI Adoption\n00:13:48 Founding AIUC and Building AIUC-1\n00:20:21 How AI Agents Are Audited and Stress-Tested\n00:26:55 Frontier Models, Government, and the AI Trust Gap\n00:35:01 Cyber, Child Safety, and AI-Enabled Biological Risk\n00:39:43 Why Standards and Insurance Belong Together\n00:43:14 What Does an AI Insurance Policy Actually Cover?\n00:52:13 The $20 Cursor Subscription and the $200M Plane Crash\n00:55:22 AI Liability, Monitoring, and Earning Enterprise Trust\n00:57:50 From AI Agents to Models to Robotics\n00:59:58 Copyright, Adverse Selection, and AI Insurance\n01:04:57 Evals, Mechanistic Interpretability, and Eval Awareness\n01:10:05 The Impossible Enterprise AI Mandate\n01:13:21 Prediction Markets vs. AI Audits\n01:16:12 Should AI Engineers Be Certified?\n01:20:39 AIUC’s Roadmap, AGI, and Who Watches the Watchdogs?\n\nSponsorship and business inquiries: business@latent.space"
+      "title": "A Worm With 302 Neurons Inspired Their Architecture — Ramin Hasani, Liquid AI",
+      "url": "https://www.youtube.com/watch?v=V_9TCu_21SE",
+      "publishedAt": "2026-09-18T20:17:04.000Z",
+      "description": "Sponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
