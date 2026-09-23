@@ -1,26 +1,17 @@
 {
-  "generatedAt": "2026-09-21T12:37:13.322Z",
+  "generatedAt": "2026-09-23T11:20:53.477Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Machine Learning Street Talk",
-      "title": "Anthropic Opens Bio \"Wet Lab\" in SF and Meta's Muse App",
-      "guid": "gid://art19-episode-locator/V0/f4ilMMAXYi0R_-Yh1PDjCmqXgftjnGo0qC73ycp8Yyo",
-      "publishedAt": "2026-09-18T21:18:01.000Z",
-      "description": "Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
-    },
-    {
-      "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "AI:AM Highlights: Zvi on Pacing &amp; Trump-Xi, Astra better behaved than Fable? + a new LLM Pain Axis??",
-      "guid": "789d7450-b437-11f1-b9fd-3f862f1d0f0d",
-      "url": "https://www.cognitiverevolution.ai/ai-am-highlights-zvi-on-pacing-trump-xi-astra-better-behaved-than-fable-a-new-llm-pain-axis/",
-      "publishedAt": "2026-09-19T18:28:55.000Z",
-      "description": "Nathan Labenz and Prakash Narayanan review key highlights from the week featuring guests Zvi Mowshowitz, Andon Labs co-founders Lukas Petersson and Axel Backlund, Cameron Berg, and others. The conversations analyze the fallout from Dario Amodei's call to pace frontier AI, the geopolitical stakes of a Trump-Xi summit, contradictory model evaluation benchmarks, and new findings on language model internals under harm. Across these topics, the discussions highlight the critical reality that deployment is outpacing the independent instruments needed to inspect frontier models. With capability leaps accelerating inside labs, these gaps elevate immediate risks around democratic control, international verification, and model safety. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/ai-am-highlights-zvi-on-pacing-trump-xi-astra-better-behaved-than-fable-a-new-llm-pain-axis/ Sponsors: Mercury Command: Mercury Command brings powerful conversational AI directly into your banking, providing real-time natural language access to your finances without exposing data to third-party tools. Learn more and apply online in minutes at https://mercury.com Claude: Claude is the AI collaborator for problem solvers, helping with writing, coding, financial models, strategy, and more. Get started with Claude and explore Claude Pro at https://claude.ai/tcr OutSystems: OutSystems is the leading agentic systems platform that enables enterprises to engineer, orchestrate, and govern AI applications on a single unified platform. Learn more and see how it works at https://outsystems.com/tcr CHAPTERS: (00:00) About the Episode (02:17) Sponsor: Mercury Command (04:05) Pacing the AI frontier (Part 1) (14:58) Sponsors: Claude | OutSystems (18:32) Pacing the AI frontier (Part 2) (18:33) Geopolitics and Trump-Xi summit (41:24) Running autonomous agent businesses (55:04) Techno-puritanism and digital minds (01:02:30) Enterprise compliance with models (01:05:48) Discovering the pain axis (01:21:53) Simulating biological brain connectomes (01:30:04) Exposing corruption using AI (01:36:56) Episode Outro (01:39:48) Outro PRODUCED BY: https://aipodcast.ing SOCIAL LINKS: Website: https://www.cognitiverevolution.ai Twitter (Podcast): https://x.com/cogrev_podcast Twitter (Nathan): https://x.com/labenz LinkedIn: https://linkedin.com/in/nathanlabenz/ Youtube: https://youtube.com/@CognitiveRevolutionPodcast Apple: https://podcasts.apple.com/de/podcast/the-cognitive-revolution-ai-builders-researchers-and/id1669813431 Spotify: https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk"
+      "title": "Anthropic Releases Opus 5.5, OpenAI Unveils New Models",
+      "guid": "gid://art19-episode-locator/V0/XXiBo6_I2P1oyqPv4aAdJ19EoGvZwMXtorfJaxqnQAc",
+      "publishedAt": "2026-09-22T23:12:01.000Z",
+      "description": "Show Links Grow and Scale Your Business with AI: https://www.skool.com/aihustle See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 2
+    "podcastEpisodes": 1
   }
 }

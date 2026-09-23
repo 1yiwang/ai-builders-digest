@@ -1,15 +1,42 @@
 {
-  "generatedAt": "2026-09-21T12:37:16.865Z",
+  "generatedAt": "2026-09-23T11:21:04.292Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Y Combinator",
       "handle": "@ycombinator",
-      "title": "AI Agents That Banks Can Trust",
-      "url": "https://www.youtube.com/watch?v=UKwpr_Trvns",
-      "publishedAt": "2026-09-18T14:30:33.000Z",
-      "description": "Kastle is building the AI employee for banks. Their agents automate operations across mortgage servicing, consumer lending, and other parts of the bank back office. Today they work with 10 of the top 25 mortgage servicers and have processed more than $2 billion in transactions using AI agents. They just raised a $24M Series A, two years after going through YC.\n\nIn this episode of Founder Firesides, Kastle founders Rishi and Nitish sat down with YC's Diana Hu to share how they went back to zero one month before Demo Day and found their way to one of the hardest places to deploy AI: banking. They talk about finding their first customers and what it takes to make AI agents reliable enough to handle real financial transactions.\n\nhttps://www.kastle.ai\n\nChapters:\n00:00 — Intro\n00:05 — What Kastle Does\n01:00 — Why Banks Need AI Employees\n02:50 — Going Back to Zero Before Demo Day\n05:00 — Finding the Idea for Kastle\n06:43 — Landing Their First Customer\n08:18 — Moving Into a Customer’s Office\n08:59 — The Future of AI Employees in Banking\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+      "title": "Automating Billion Dollar Brands",
+      "url": "https://www.youtube.com/watch?v=htAl33M5F54",
+      "publishedAt": "2026-09-22T14:30:06.000Z",
+      "description": "Confido (YC S21) is building the AI workforce for consumer brands, automating everything from accounting to sales and demand planning. They work with brands like Olipop and Dude Wipes, as well as divisions of Mars and Unilever, and recently raised a $55 million Series B led by Insight.\n\nIn this episode of Founder Firesides, Confido co-founders Justin Hunter and Kara Holinski join YC’s Diana Hu to discuss escaping pivot hell, landing their first customer with a Figma prototype, and winning seven-figure deals for AI that does the work. They also explain how they build without product managers.\n\nhttps://www.confidotech.com\n\nChapters:\n\n00:00 — Confido’s $55M Series B  \n00:27 — The AI Workforce for Consumer Brands  \n01:16 — A Year in Pivot Hell  \n02:26 — The Idea Hiding in Plain Sight  \n03:14 — Cold-Emailing the World’s Biggest Brands  \n04:11 — Landing the First Customer With Figma  \n04:39 — Why Consumer Brands Buy AI  \n05:27 — Letting Customers Drive the Roadmap  \n07:09 — The Value Behind Seven-Figure Deals  \n08:31 — The Vision for Confido  \n08:54 — Building Without Product Managers  \n\nApply to Y Combinator: https://www.ycombinator.com/apply  \nWork at a startup: https://www.ycombinator.com/jobs"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "Yes, Jev Is Insane, But There's A Catch",
+      "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+      "publishedAt": "2026-09-22T09:32:13.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementations, models:\nhttps://huggingface.co/convaiinnovations/laya\nhttps://arxiv.org/abs/2503.23303\nhttps://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning\nhttps://huggingface.co/datasets/DeepMostInnovations/saas-sales-conversations\nhttps://arxiv.org/abs/2510.01237\nhttps://huggingface.co/blog/setfit\nhttps://proceedings.iclr.cc/paper_files/paper/2025/hash/5503a7c69d48a2f86fc00b3dc09de686-Abstract-Conference.html\n\nSources:\nhttps://x.com/alexisgallagher/status/2100312082491322873?s=46\nhttps://x.com/tamarajtran/status/2100694549362553153?s=46\nhttps://x.com/maubaron/status/2100738237237002706?s=46\nhttps://x.com/elvissun/status/2100951347080421409?s=46\nhttps://x.com/completeskeptic/status/2099925684256899543?s=46\nhttps://x.com/completeskeptic/status/2099925685720760404?s=46\nhttps://x.com/filippkowalski/status/2100864984448147770?s=46\nhttps://x.com/egafni/status/2100770895325524242?s=46\nhttps://x.com/mizorewww/status/2101473552956555427\nhttps://x.com/miu21590/status/2101857866378362926?s=46\nhttps://x.com/atomic_chat_hq/status/2102160983409955244?s=46\nhttps://x.com/HugoDuprez/status/2100953089003921543?s=20\nhttps://x.com/heyxviraj/status/2102048070649405592?s=20\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Punishing an AI’s “Bad Thoughts” Can Backfire - Noam Brown",
+      "url": "https://www.youtube.com/watch?v=rSQzMoDESTY",
+      "publishedAt": "2026-09-22T18:49:23.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "What AI’s Math Breakthrough Means for Superintelligence - Noam Brown",
+      "url": "https://www.youtube.com/watch?v=Ux1mOqAoaq0",
+      "publishedAt": "2026-09-21T18:35:58.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -22,33 +49,24 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "The Growing Gap Between ChatGPT and the AI Inside OpenAI - Noam Brown",
-      "url": "https://www.youtube.com/watch?v=eXFMtMovXXY",
-      "publishedAt": "2026-09-19T19:34:08.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "What Happens When Every Employee Thinks Like a Founder? - Noam Brown",
-      "url": "https://www.youtube.com/watch?v=aNkh4u4mm14",
-      "publishedAt": "2026-09-18T20:13:16.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=6AgOfiZOWiY\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "🔬 Google's AI Scientist Started as an Attempt to Automate Kaggle — John Platt, Google Fellow",
+      "url": "https://www.youtube.com/watch?v=2xBSGluFkG0",
+      "publishedAt": "2026-09-22T21:07:45.000Z",
+      "description": "From inventing textbook machine learning algorithms to winning an Academy Award and discovering two asteroids, John Platt has spent his career at the intersection of computation and science. In this episode, the Google Fellow joins Latent Space to unpack how AI can accelerate scientific discovery, what it takes to turn a research problem into something an agent can optimize, and why better models still need scientists who know how to avoid fooling themselves.\n\nWe go deep on Google’s Empirical Research Assistance (ERA): an AI research system that grew out of an attempt to automate Kaggle, combines LLMs with tree search to improve experiments, and helped crack a climate modeling problem that had stalled for years. John explains the leap from Gemini 2.0 to 2.5, the dangers of reward hacking, and how AI can help reduce airplane contrail warming and detect wildfires. We also explore fusion, quantum computing, the early days of neural networks, studying under Richard Feynman, and why developing scientific taste still means doing some things the hard way.\n\nWe discuss:\n- John’s Academy Award, two asteroid discoveries, and the legacy of Platt scaling and SMO\n- ERA: how an “auto-Kaggle” idea became a system for scientific research\n- Turning scientific problems into scoreable tasks—and why choosing the score is the hard part\n- How LLMs, tree search, and Upper Confidence Bound guide experimental iteration\n- The Gemini 2.0-to-2.5 inflection that made the approach work\n- Why predictive accuracy doesn’t automatically mean scientific understanding\n- Reward hacking, Goodhart’s law, and the half-pixel labeling error that helped win a Kaggle competition\n- Why John still recommends starting with linear regression or an SVM\n- How airplane contrails trap heat, and why small changes in flight altitude can help\n- Measuring avoided warming—and how ERA helped solve a problem that had resisted years of work\n- Why climate modeling is fundamentally different from weather forecasting\n- FireSat and detecting wildfires before they grow out of control\n- John’s optimism about fusion, the Lawson criterion, and the challenges every approach faces\n- Superconducting qubits, quantum echoes, and what comes after the NISQ era\n- The helium shortage and a startup’s proposal to turn mercury into gold inside a fusion reactor\n- The early neural network community, Hopfield networks, and NeurIPS’ roots at Snowbird\n- Discovering asteroids with film and a stereoscope—and naming one after his mother\n- Learning from Feynman and working as Carver Mead’s sysadmin\n- Why domain expertise, hands-on experimentation, and scientific taste matter in the age of AI\n- John’s 20% time rule for learning, and what gets lost when everything is optimized\n- The future of human scientists—and Feynman’s enduring advice about not fooling yourself\n\nShow Notes: http://latent.space/john-platt\n\n—\n\nJohn Platt\n- LinkedIn: https://www.linkedin.com/in/john-platt-469a0143\n- X: https://x.com/johnplattml\n\nSponsorship and business inquiries: business@latent.space\n\nTimestamps\n00:00:00 Intro\n00:01:17 John Platt: Google Fellow, ML Pioneer, and Academy Award Winner\n00:03:05 ERA: Turning Scientific Problems into Scorable Tasks\n00:09:57 Inside ERA: Tree Search, Parallel Experiments, and Shared Context\n00:14:57 Reward Hacking, Scoring Functions, and the Gemini 2.5 Breakthrough\n00:21:14 Predictive vs. Descriptive Models: The Limits of AI Discovery\n00:31:06 Overfitting, Auto-Kaggle, and Keeping Scientists in the Loop\n00:42:44 Contrails: Using AI to Reduce Aviation’s Climate Impact\n00:47:47 How ERA Cracked a Climate Problem That Had Stalled for Two Years\n00:50:32 CO2, Weather Forecasting, and Why Climate Is Harder to Model\n01:04:52 AlphaFold, Simple Baselines, and When to Trust AI Models\n01:12:34 Fusion Energy: Plasma Control, the Lawson Criterion, and Economics\n01:22:27 FireSat: Detecting Wildfires from Space and Building Climate Resilience\n01:29:19 Scientific Taste, Domain Expertise, and Learning the Hard Way\n01:38:23 Studying with Feynman and the Early Days of Quantum Computing\n01:42:29 Hopfield Networks, NeurIPS, and How GPUs Changed AI\n01:46:38 Discovering Asteroids and Finding a Moon Around One\n01:50:43 How a Student Internship Led to an Academy Award\n01:52:21 Quantum Computing: Willow, Quantum Echoes, and Scaling Qubits\n01:59:22 The Future of Science and the Dream of an “Everything Lab”"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "A Worm With 302 Neurons Inspired Their Architecture — Ramin Hasani, Liquid AI",
-      "url": "https://www.youtube.com/watch?v=V_9TCu_21SE",
-      "publishedAt": "2026-09-18T20:17:04.000Z",
-      "description": "Sponsorship and business inquiries: business@latent.space"
+      "title": "Why I couldn't build Jev at OpenAI — Diogo Almeida, TypeSafe Co-founder &amp; CEO",
+      "url": "https://www.youtube.com/watch?v=cFx9Z3ZXca0",
+      "publishedAt": "2026-09-21T22:10:40.000Z",
+      "description": "From helping build instruction-following models at OpenAI to spending years trying to answer why AI can solve extraordinarily hard problems yet still automate so little real work, Diogo Almeida is betting that the next wave of AI won’t look like chat. In this episode, the TypeSafe founder and CEO joins swyx days after Jev’s breakout launch to explain System One Models: machine-native AI designed for code, calibrated decisions, reliability, and intelligence per dollar.\n\nWe go deep on Jev and RLCD, the failure modes of RLHF, why TypeSafe refuses to optimize around public benchmarks, and why Diogo believes data and the right task matter more than simply scaling compute. Diogo also explains why he left OpenAI, why refusals and safety alignment become fundamentally different problems when AI is infrastructure, how Jev changes the architecture of coding agents, why AI should eventually disappear into the background of software, and why even with a billion dollars, he wouldn’t pre-train a model from scratch.\n\nWe discuss:\n• Why AI can solve extraordinarily hard problems but still fail to automate basic work\n• What System One Models are and why Jev is built for software rather than chat\n• RLHF, mode collapse, calibration, and the hidden costs of optimizing for human preferences\n• Why refusals become a problem when AI is buried inside software dependencies\n• Why TypeSafe rejects public benchmarks and optimizes for intelligence per dollar\n• The “bitterest lesson”: why the right task and the right data can matter more than compute\n• Why TypeSafe thinks of itself as a data lab rather than a model lab\n• RLCD vs. RLHF and RLVR as fundamentally different North Stars for AI\n• Why reliability and robustness matter more than simple determinism\n• Jev’s programming primitives and how intelligence maps into software control flow\n• Why developers should decompose AI workflows into many small, measurable decisions\n• How structured state replaces giant prompts and system messages\n• Why Diogo thinks AI should eventually disappear into the background of software\n• The “inverse SaaS-pocalypse” and how AI could supercharge existing software\n• System One vs. System Two intelligence and the limits of reasoning models\n• Dark data, computer use, real-time intelligence, and Jev’s biggest early use cases\n• Why Jev could reshape coding agents built around a single-model architecture\n• Why Diogo says he wouldn’t pre-train even if you gave him a billion dollars\n• The OpenAI journey that led to TypeSafe and why he thinks most neo-labs are approaching AI incorrectly\n• Coding agents beyond the KV cache, shared state, sub-agents, and the future of multi-agent software\n\n—\n\nDiogo Almeida\n• LinkedIn: https://www.linkedin.com/in/diogomda/\n• X: https://x.com/CompleteSkeptic\n\nTimestamps\n00:00:00 Intro\n00:01:29 Jev Launch Week and the AI Economic Revolution\n00:04:19 What Is Jev? System One Models and Programmable AI\n00:07:23 RLHF, Mode Collapse, Calibration, and Yann LeCun\n00:11:58 Programmatic AI, Refusals, and Safety Alignment\n00:18:50 Why TypeSafe Rejects Public Benchmarks\n00:22:12 The Bitterest Lesson: Data, Compute, and the Right Task\n00:26:28 RLCD vs. RLHF and RLVR\n00:30:11 Why Powerful AI Still Hasn’t Automated the Economy\n00:41:24 Reliability, Robustness, and Determinism\n00:49:40 Model Versioning, LTS, Speed, and Intelligence per Dollar\n00:55:33 Inside Jev’s API and Programming Primitives\n00:59:57 How to Build with Jev: Structure, Decomposition, and Small Decisions\n01:19:57 The Inverse SaaS-pocalypse and AI Disappearing into Software\n01:34:50 Computer Use, Dark Data, and Jev’s Biggest Use Cases\n01:40:17 How Jev Could Reshape Coding Agents\n01:42:29 AI Safety, Frontier Pacing, and the Limits of RLVR\n01:49:32 Why Diogo Wouldn’t Pre-Train with $1 Billion\n01:56:48 The OpenAI Story Behind TypeSafe\n02:03:10 Why Diogo Thinks Most Neo-Labs Are Getting AI Wrong\n02:09:29 Coding Agents Beyond the KV Cache and the Multi-Agent Future"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 7
   }
 }

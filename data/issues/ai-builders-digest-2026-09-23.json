@@ -1,0 +1,214 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-23",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic setzt mit Claude Opus 5.5 einen neuen Standard und senkt Preise um 40 bis 50 Prozent. OpenAI kontert mit GPT-6 Sol und Luna, die zwar günstiger sind, aber kaum mehr leisten. NVIDIA zeigt mit DGX Spark, dass Modelle bis 200B Parameter lokal laufen können. Der Preiskampf verschärft sich, während lokale Inferenz neue Einsatzorte erschließt."
+  },
+  "archive": {
+    "title": "Preiskrieg: Claude Opus 5.5 und halbierte GPT-6-Preise",
+    "desc": "Anthropic und OpenAI liefern sich einen Preiskampf, während NVIDIA lokale Inferenz für 200B-Modelle ermöglicht."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-23.",
+  "sections": [
+    {
+      "title": "Model Price War & Roadmaps / Modell-Preiskrieg & Roadmaps",
+      "desc": "Preissenkungen und neue Modellversionen von Anthropic, OpenAI und Alibaba verschärfen den Wettbewerb.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space AINews",
+          "sourceUrl": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic's Claude Opus 5.5 is now AINews' default model; industry-wide prices drop 40–50%.",
+              "Alibaba's Qwen4 lineup confirmed via slide: Qwen4-27B, Max, Flash, and Plus."
+            ],
+            "original": [
+              "Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+              "A conference slide image appears to confirm an upcoming Qwen4 Series lineup, explicitly listing Qwen4-27B alongside Qwen4-Max, Qwen4-Flash, and Qwen4-Plus."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropics Claude Opus 5.5 ist neuer Standard bei AINews; die Preise fallen branchenweit um 40–50 Prozent.",
+              "Alibabas Qwen4-Lineup per Folie bestätigt: Qwen4-27B, Max, Flash und Plus."
+            ],
+            "original": [
+              "Claude Opus 5.5, das neue Standardmodell für AINews — und alle senken die Preise um 40–50%",
+              "Eine Konferenzfolie bestätigt offenbar eine kommende Qwen4-Serie, die Qwen4-27B neben Qwen4-Max, Qwen4-Flash und Qwen4-Plus auflistet."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI released GPT-6 Sol and Luna with prices cut in half but only marginal performance gains.",
+              "The Decoder describes the move as a price war signal, not a capability leap."
+            ],
+            "original": [
+              "OpenAI's GPT-6 Sol and Luna cut prices in half but barely move the needle on performance."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI veröffentlichte GPT-6 Sol und Luna mit halbierten Preisen, aber nur marginalen Leistungsgewinnen.",
+              "The Decoder wertet das als Preiskampf-Signal, nicht als Fähigkeitssprung."
+            ],
+            "original": [
+              "OpenAIs GPT-6 Sol und Luna halbieren die Preise, bewegen aber bei der Leistung kaum etwas."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI published better prompt caching for GPT-6, aimed at reducing repeated-context costs.",
+              "The update follows the 50% price cut on GPT-6 Sol and Luna."
+            ],
+            "original": [
+              "Better prompt caching for GPT-6"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI veröffentlichte besseres Prompt-Caching für GPT-6, um Kosten bei wiederholten Kontexten zu senken.",
+              "Das Update folgt auf die 50-Prozent-Preissenkung bei GPT-6 Sol und Luna."
+            ],
+            "original": [
+              "Besseres Prompt-Caching für GPT-6"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Local AI Hardware: NVIDIA DGX Spark / Lokale KI-Hardware: NVIDIA DGX Spark",
+      "desc": "NVIDIAs DGX Spark bringt Inferenz für 200B-Modelle in ein tragbares 1,2-kg-Gerät.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space AINews",
+          "sourceUrl": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "NVIDIA DGX Spark packs GB10 Grace Blackwell, 128 GB unified memory, and 1 PFLOP FP4 sparse compute into 1.2 kg.",
+              "NVIDIA claims local inference up to 200B parameters with quantization, and 70B fine-tuning via QLoRA."
+            ],
+            "original": [
+              "A 15×15×5.05 cm, 1.2 kg system with GB10 Grace Blackwell, 128 GB unified memory, and up to 1 PFLOP FP4 sparse theoretical compute… support for local inference on models up to 200B parameters with quantization and fine-tuning up to 70B with methods like QLoRA."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA DGX Spark vereint GB10 Grace Blackwell, 128 GB Unified Memory und 1 PFLOP FP4-Sparse-Rechenleistung in 1,2 kg.",
+              "NVIDIA verspricht lokale Inferenz bis 200B Parameter mit Quantisierung und 70B-Feintuning per QLoRA."
+            ],
+            "original": [
+              "Ein 15×15×5,05 cm großes, 1,2 kg schweres System mit GB10 Grace Blackwell, 128 GB Unified Memory und bis zu 1 PFLOP FP4 Sparse Compute… lokale Inferenz auf Modellen bis 200B Parameter mit Quantisierung und Feintuning bis 70B mit Methoden wie QLoRA."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "OpenAI Expansion: Creators & Southeast Asia / OpenAI-Expansion: Creator & Südostasien",
+      "desc": "OpenAI baut Creator-Tools aus und erschließt Südostasien mit Partner Grab.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-hires-patreon-co-founder-sam-yam-to-lead-a-new-creator-product-division/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI hired Patreon co-founder Sam Yam to lead a new Creator Product division.",
+              "The Decoder reports this signals OpenAI's push into creator monetization tools."
+            ],
+            "original": [
+              "OpenAI hires Patreon co-founder Sam Yam to lead a new Creator Product division"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI stellte Patreon-Mitgründer Sam Yam als Leiter der neuen Creator-Product-Sparte ein.",
+              "The Decoder sieht darin einen Vorstoß in Creator-Monetarisierungstools."
+            ],
+            "original": [
+              "OpenAI stellt Patreon-Mitgründer Sam Yam ein, um eine neue Creator-Product-Sparte zu leiten."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "OpenAI and Grab partnered to bring practical AI skills training to Southeast Asia.",
+              "The initiative targets workforce AI literacy across Grab's regional markets."
+            ],
+            "original": [
+              "Grab and OpenAI bring practical AI skills to Southeast Asia"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI und Grab kooperieren, um praktische KI-Schulungen nach Südostasien zu bringen.",
+              "Die Initiative zielt auf KI-Kompetenzen in Grabs regionalen Märkten."
+            ],
+            "original": [
+              "Grab und OpenAI bringen praktische KI-Fähigkeiten nach Südostasien."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260923112111-fc93fb",
+    "generatedAt": "2026-09-23T11:24:07.532Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 175978,
+    "tokensIn": 1333,
+    "tokensOut": 11687,
+    "estCostUsd": 0.003459,
+    "candidatesIn": 29,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 279953,
+      "preparedChars": 3846,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+      "https://the-decoder.com/openais-gpt-6-sol-and-luna-cut-prices-in-half-but-barely-move-the-needle-on-performance/",
+      "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "https://the-decoder.com/openai-hires-patreon-co-founder-sam-yam-to-lead-a-new-creator-product-division/",
+      "https://openai.com/index/grab-openai-ai-skills-southeast-asia"
+    ]
+  }
+}

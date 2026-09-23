@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-21T12:40:08.638Z",
-  "count": 45,
+  "generatedAt": "2026-09-23T11:24:07.658Z",
+  "count": 46,
   "issues": [
+    {
+      "date": "2026-09-23",
+      "title": "Preiskrieg: Claude Opus 5.5 und halbierte GPT-6-Preise",
+      "desc": "Anthropic und OpenAI liefern sich einen Preiskampf, während NVIDIA lokale Inferenz für 200B-Modelle ermöglicht.",
+      "href": "./issues/ai-builders-digest-2026-09-23.html",
+      "issue": "Nr. 46"
+    },
     {
       "date": "2026-09-21",
       "title": "Chinas Open-Weight-Modelle holen auf",
