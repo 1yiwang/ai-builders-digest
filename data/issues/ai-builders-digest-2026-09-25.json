@@ -1,0 +1,248 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-25",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic hat heute einen Cloud-Deal über 11,6 Milliarden Dollar mit Akamai geschlossen und damit seine Compute-Ausgaben in unter einem Jahr auf über 500 Milliarden Dollar getrieben. Renen Hallak (VAST Data) zeigt parallel die versteckte 30-Milliarden-Dollar-Datenschicht, die diese GPUs speist. Gleichzeitig schrumpfen neue Modelle wie Swift die Denk-Tokens massiv, etwa um 58,5 Prozent. Diese Mischung aus Rechenkapazität, Dateninfrastruktur und Effizienz wird bestimmen, wer im KI-Rennen mithalten kann."
+  },
+  "archive": {
+    "title": "Anthropics 500-Milliarden-Dollar-Compute-Wette",
+    "desc": "Anthropics Compute-Deal, versteckte Dateninfrastruktur und effizientere Modelle markieren den nächsten Infrastruktur-Push."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-25.",
+  "sections": [
+    {
+      "title": "Compute Deals & Data Infrastructure / Rechen-Deals & Dateninfrastruktur",
+      "desc": "Anthropic's compute spending and the hidden data layer behind GPU fleets.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropic-signs-11-6-billion-cloud-deal-with-akamai-pushing-its-compute-spending-past-500-billion-in-under-a-year/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic signed an $11.6 billion cloud deal with Akamai.",
+              "Anthropic's compute spending has passed $500 billion in under a year."
+            ],
+            "original": [
+              "Anthropic signs $11.6 billion cloud deal with Akamai, pushing its compute spending past $500 billion in under a year"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic hat einen Cloud-Deal über 11,6 Milliarden Dollar mit Akamai geschlossen.",
+              "Die Compute-Ausgaben von Anthropic überstiegen innerhalb eines Jahres 500 Milliarden Dollar."
+            ],
+            "original": [
+              "Anthropic unterzeichnet 11,6-Milliarden-Dollar-Cloud-Deal mit Akamai und treibt Compute-Ausgaben in unter einem Jahr über 500 Milliarden Dollar."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=awoR908Yu5Y",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Renen Hallak (VAST Data) maps AI's hidden $30B layer that feeds GPU clusters.",
+              "The conversation focuses on who supplies the data infrastructure behind massive GPU investments."
+            ],
+            "original": [
+              "Paraphrase: VAST Data CEO Renen Hallak discusses the $30B data/storage layer that supplies data to GPU fleets."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Renen Hallak (VAST Data) beschreibt die versteckte 30-Milliarden-Dollar-Schicht, die GPU-Cluster mit Daten versorgt.",
+              "Im Fokus steht, wer die Dateninfrastruktur hinter den massiven GPU-Investitionen liefert."
+            ],
+            "original": [
+              "Paraphrase: VAST-Data-CEO Renen Hallak spricht über die 30-Milliarden-Dollar-Datenschicht, die GPU-Flotten versorgt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Efficient Models & Cheap Custom Training / Effiziente Modelle & günstiges Custom-Training",
+      "desc": "Swift models shrink reasoning tokens and Together AI lowers custom training costs.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-the-future-of-latent-space",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Swift1.5 27B cuts thinking tokens by 58.5% while improving score by 0.35% over base.",
+              "Swift Flash Next reduces thinking tokens 63.4%, runs 1.8x faster, with -0.2% xhigh score delta.",
+              "On Apple Silicon, packed quantized weights hit M2 Max throughput near llama.cpp: Qwen3.5-4B 70.4 tok/s vs 71.8."
+            ],
+            "original": [
+              "Swift1.5 27B with -58.5% thinking tokens and +0.35% score vs base",
+              "Swift Flash Next with -63.4% thinking tokens, 1.8x speedup, and -0.2% xhigh score delta"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Swift1.5 27B reduziert Thinking Tokens um 58,5 % bei +0,35 % Score gegenüber der Basis.",
+              "Swift Flash Next spart 63,4 % Thinking Tokens, ist 1,8x schneller, mit -0,2 % xhigh-Score-Delta.",
+              "Auf Apple Silicon erreichen gepackte Quantisierungen nahe llama.cpp: Qwen3.5-4B 70,4 tok/s vs. 71,8."
+            ],
+            "original": [
+              "Swift1.5 27B mit -58,5 % Thinking Tokens und +0,35 % Score gegenüber der Basis",
+              "Swift Flash Next mit -63,4 % Thinking Tokens, 1,8x Speedup und -0,2 % xhigh-Score-Delta"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/how-to-train-your-own-jev",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI published a guide to train your own Jev for $17.",
+              "The post targets builders who want custom small models without high training costs."
+            ],
+            "original": [
+              "How to train your own Jev for $17"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI zeigt, wie man für 17 Dollar einen eigenen Jev trainiert.",
+              "Der Guide richtet sich an Builder, die günstig eigene kleine Modelle erstellen wollen."
+            ],
+            "original": [
+              "So trainierst du deinen eigenen Jev für 17 Dollar."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Research & Evaluation / KI-Forschung & Evaluation",
+      "desc": "From automating Kaggle to debating how we measure AI progress.",
+      "cards": [
+        {
+          "authorKey": "youtube:@LatentSpacePod",
+          "sourceName": "Latent Space Podcast",
+          "sourceUrl": "https://www.youtube.com/watch?v=2xBSGluFkG0",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Latent Space interviews Google Fellow John Platt on the AI Scientist, which began as an attempt to automate Kaggle.",
+              "The video covers how Google's AI Scientist evolved from a Kaggle automation project into a research tool."
+            ],
+            "original": [
+              "Google's AI Scientist Started as an Attempt to Automate Kaggle — John Platt, Google Fellow"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Latent Space spricht mit Google Fellow John Platt über den AI Scientist, der als Versuch begann, Kaggle zu automatisieren.",
+              "Das Video zeigt, wie Googles AI Scientist aus einem Kaggle-Automatisierungsprojekt zu einem Forschungswerkzeug wurde."
+            ],
+            "original": [
+              "Googles AI Scientist begann als Versuch, Kaggle zu automatisieren — John Platt, Google Fellow"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Interconnects",
+          "sourceName": "Interconnects",
+          "sourceUrl": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "JS Denain (Epoch AI) debates RSI, the US-China capability gap, and jaggedness in AI benchmarks.",
+              "The discussion questions how well current eval metrics capture real AI progress."
+            ],
+            "original": [
+              "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "JS Denain (Epoch AI) diskutiert RSI, die USA-China-Lücke und die Ungleichmäßigkeit von KI-Benchmarks.",
+              "Die Debatte hinterfragt, wie gut aktuelle Eval-Metriken echten KI-Fortschritt abbilden."
+            ],
+            "original": [
+              "Debatte über RSI, die USA-China-Lücke und Jaggedness mit JS Denain von Epoch AI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Incumbent Strategy / Strategie für etablierte Unternehmen",
+      "desc": "Can established companies re-found themselves for the AI era?",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=TCpRwJBQvW0",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Michael Lee (Sequence Holdings) argues incumbents can be re-founded for the AI era.",
+              "The conversation explores how established companies can transform rather than be replaced."
+            ],
+            "original": [
+              "Re-Founding Incumbents for the AI Era with Sequence Holdings Co-Founder and CEO Michael Lee"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Michael Lee (Sequence Holdings) argumentiert, dass etablierte Unternehmen für die KI-Ära neu gegründet werden können.",
+              "Es geht darum, wie Incumbents sich transformieren können, statt ersetzt zu werden."
+            ],
+            "original": [
+              "Incumbents für die KI-Ära neu gründen mit Michael Lee, Co-Founder und CEO von Sequence Holdings"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260925113949-a5e761",
+    "generatedAt": "2026-09-25T11:41:27.420Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 97520,
+    "tokensIn": 1400,
+    "tokensOut": 9231,
+    "estCostUsd": 0.002781,
+    "candidatesIn": 33,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 486180,
+      "preparedChars": 3918,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://the-decoder.com/anthropic-signs-11-6-billion-cloud-deal-with-akamai-pushing-its-compute-spending-past-500-billion-in-under-a-year/",
+      "https://www.youtube.com/watch?v=awoR908Yu5Y",
+      "https://www.latent.space/p/ainews-the-future-of-latent-space",
+      "https://www.together.ai/blog/how-to-train-your-own-jev",
+      "https://www.youtube.com/watch?v=2xBSGluFkG0",
+      "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "https://www.youtube.com/watch?v=TCpRwJBQvW0"
+    ]
+  }
+}

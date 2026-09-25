@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-23T11:24:07.658Z",
-  "count": 46,
+  "generatedAt": "2026-09-25T11:41:27.506Z",
+  "count": 47,
   "issues": [
+    {
+      "date": "2026-09-25",
+      "title": "Anthropics 500-Milliarden-Dollar-Compute-Wette",
+      "desc": "Anthropics Compute-Deal, versteckte Dateninfrastruktur und effizientere Modelle markieren den nächsten Infrastruktur-Push.",
+      "href": "./issues/ai-builders-digest-2026-09-25.html",
+      "issue": "Nr. 47"
+    },
     {
       "date": "2026-09-23",
       "title": "Preiskrieg: Claude Opus 5.5 und halbierte GPT-6-Preise",
