@@ -1,0 +1,213 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-28",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI meldet, dass Proaction mit Codex den Umsatz um 60 Prozent steigerte. Stripe übernimmt OpenRouter, den Modellmarktplatz von Alex Atallah. Parallel veröffentlicht Hugging Face Holo4 für Computer-Use-Agenten. Sicherheitsforscher Ryan Greenblatt warnt: Gerade das Selbstbild als verantwortungsvolles Labor treibt das Wettrüsten an."
+  },
+  "archive": {
+    "title": "Stripe kauft OpenRouter, Proaction wächst 60 %",
+    "desc": "Agenten in Vertrieb und Sprache zeigen Produktionsreife, während Sicherheit und menschliche Entscheidungen neue Flaschenhälse werden."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-28.",
+  "sections": [
+    {
+      "title": "Enterprise AI Agents: Sales and Voice at Scale / Enterprise-Agenten: Vertrieb und Stimme in Produktion",
+      "desc": "Codex and voice AI are moving from demo to production volume.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/proaction",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI reports Proaction boosted sales 60% and saved 75+ hours using Codex-powered workflows.",
+              "The case study positions Codex as a revenue lever, not just a productivity tool."
+            ],
+            "original": [
+              "Close paraphrase from OpenAI: 'Proaction boosts sales 60% and saves 75+ hours with Codex.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI meldet: Proaction steigerte den Umsatz mit Codex um 60 %.",
+              "Die Integration automatisierte Vertriebsaufgaben und positioniert Codex als Umsatzhebel."
+            ],
+            "original": [
+              "Paraphrase laut OpenAI: 'Proaction steigert den Umsatz mit Codex um 60 % und spart über 75 Stunden.'"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator / YouTube",
+          "sourceUrl": "https://www.youtube.com/watch?v=2otGNwNOEUM",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Vapi, the voice AI platform powering a billion calls a year.",
+              "Vapi's scale signals voice is a production agent channel, not just a demo."
+            ],
+            "original": [
+              "Y Combinator title: 'The Voice AI Platform Powering a Billion Calls a Year.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator spricht mit Vapi, der Voice-KI-Plattform für eine Milliarde Anrufe pro Jahr.",
+              "Die Skalierung zeigt: Sprache wird als Produktionskanal für Agenten ernst."
+            ],
+            "original": [
+              "Y Combinator Titel: 'Die Voice-KI-Plattform für eine Milliarde Anrufe pro Jahr.'"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Infrastructure: Marketplaces and Computer Use / Agenten-Infrastruktur: Marktplätze und Computer Use",
+      "desc": "OpenRouter's Stripe acquisition and Holo4's release expand the agent stack.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/openrouter",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Alex Atallah (OpenRouter) and Anjney Midha (AMP) trace OpenRouter's path from seed to Stripe acquisition.",
+              "Atallah flags mixture-of-models routing, OpenClaw, and agentic fraud as the marketplace's next challenges."
+            ],
+            "original": [
+              "Close paraphrase from Latent Space: 'Why Stripe Acquired OpenRouter / The Coming Wave of Agentic Fraud.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Alex Atallah (OpenRouter) und Anjney Midha (AMP) schildern OpenRouters Weg bis zur Stripe-Übernahme.",
+              "Atallah nennt Modell-Mischung, OpenClaw und agentischen Betrug als nächste Marktplatz-Herausforderungen."
+            ],
+            "original": [
+              "Paraphrase laut Latent Space: 'Warum Stripe OpenRouter kaufte / Die kommende Welle agentischen Betrugs.'"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face Blog",
+          "sourceUrl": "https://huggingface.co/blog/Hcompany/holo4",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Hugging Face published Holo4, a model built to power generalist computer-use agents.",
+              "The release targets GUI control across applications rather than single-task automation."
+            ],
+            "original": [
+              "Close paraphrase from Hugging Face: 'Holo4: powering generalist computer-use agents.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hugging Face veröffentlicht Holo4, ein Modell für generalistische Computer-Use-Agenten.",
+              "Die Veröffentlichung zielt auf breite GUI-Steuerung statt auf einzelne Task-Automatisierung."
+            ],
+            "original": [
+              "Paraphrase laut Hugging Face: 'Holo4: Antrieb für generalistische Computer-Use-Agenten.'"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Safety and Development: The Human Bottleneck / Sicherheit und Entwicklung: Der menschliche Flaschenhals",
+      "desc": "Greenblatt's arms-race critique pairs with evidence that humans still decide in model development.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/every-ai-lab-thinks-its-the-responsible-one-and-safety-researcher-ryan-greenblatt-says-thats-what-keeps-the-arms-race-going/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Safety researcher Ryan Greenblatt argues that every lab seeing itself as responsible keeps the arms race going.",
+              "His critique challenges internal safety narratives as the primary brake on frontier development."
+            ],
+            "original": [
+              "Ryan Greenblatt via The Decoder: 'Every AI lab thinks it's the responsible one... that's what keeps the arms race going.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sicherheitsforscher Ryan Greenblatt: Jedes Labor hält sich für verantwortungsvoll – genau das befeuert das Wettrüsten.",
+              "Er widerspricht der Annahme, interne Sicherheitsleitlinien bremsten die Frontier-Entwicklung."
+            ],
+            "original": [
+              "Ryan Greenblatt via The Decoder: 'Jedes KI-Labor hält sich für das verantwortungsvolle – genau das hält das Wettrüsten am Laufen.'"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "A study covered by The Decoder finds AI agents now do more of the work in model development.",
+              "Human decision-making remains the bottleneck, suggesting AI-assisted research rather than autonomous model building."
+            ],
+            "original": [
+              "Close paraphrase from The Decoder: 'AI agents do more of the work in model development, but humans still make the decisions.'"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Eine von The Decoder aufgegriffene Studie zeigt: KI-Agenten übernehmen mehr Arbeit in der Modellentwicklung.",
+              "Entscheidungen bleiben bei Menschen – das deutet auf KI-gestützte Forschung statt autonomes Modellbauen."
+            ],
+            "original": [
+              "Paraphrase laut The Decoder: 'KI-Agenten übernehmen mehr Arbeit in der Modellentwicklung, aber Menschen treffen weiter die Entscheidungen.'"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260928133850-77ddeb",
+    "generatedAt": "2026-09-28T13:40:50.429Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 119798,
+    "tokensIn": 1351,
+    "tokensOut": 10507,
+    "estCostUsd": 0.003131,
+    "candidatesIn": 20,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 275554,
+      "preparedChars": 3904,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://openai.com/index/proaction",
+      "https://www.youtube.com/watch?v=2otGNwNOEUM",
+      "https://www.latent.space/p/openrouter",
+      "https://huggingface.co/blog/Hcompany/holo4",
+      "https://the-decoder.com/every-ai-lab-thinks-its-the-responsible-one-and-safety-researcher-ryan-greenblatt-says-thats-what-keeps-the-arms-race-going/",
+      "https://the-decoder.com/ai-agents-do-more-of-the-work-in-model-development-but-humans-still-make-the-decisions/"
+    ]
+  }
+}

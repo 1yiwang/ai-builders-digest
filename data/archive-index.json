@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-25T11:41:27.506Z",
-  "count": 47,
+  "generatedAt": "2026-09-28T13:40:50.564Z",
+  "count": 48,
   "issues": [
+    {
+      "date": "2026-09-28",
+      "title": "Stripe kauft OpenRouter, Proaction wächst 60 %",
+      "desc": "Agenten in Vertrieb und Sprache zeigen Produktionsreife, während Sicherheit und menschliche Entscheidungen neue Flaschenhälse werden.",
+      "href": "./issues/ai-builders-digest-2026-09-28.html",
+      "issue": "Nr. 48"
+    },
     {
       "date": "2026-09-25",
       "title": "Anthropics 500-Milliarden-Dollar-Compute-Wette",
