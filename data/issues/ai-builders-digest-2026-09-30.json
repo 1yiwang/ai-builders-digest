@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-09-30",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat auf der DevDay 2026 GPT-6.1 Sol, neue Agenten-APIs und 1,2 Milliarden ChatGPT-Nutzer präsentiert. Anthropic warnt, dass Zhipus Open-Weight-Modell GLM-5.3 beim Exploit-Bau fast Claude Mythos Preview erreicht. Google zahlt Verlagen für KI-Antworten fast nichts, während effiziente Modelle wie Opus 5.5 starke Benchmarks liefern. Diese Entwicklung zeigt: Die Branche balanciert zwischen Leistung, Sicherheit und fairer Vergütung."
+  },
+  "archive": {
+    "title": "OpenAI DevDay, GLM-5.3-Warnung, Publisher-Streit",
+    "desc": "OpenAI dominiert die Schlagzeilen, während Sicherheits- und Vergütungsfragen die Branche umtreiben."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-09-30.",
+  "sections": [
+    {
+      "title": "OpenAI DevDay: Sol, Agents, and 1.2B Users / OpenAI DevDay: Sol, Agenten und 1,2 Mrd. Nutzer",
+      "desc": "OpenAI's latest releases and the external reactions that define the week's biggest story.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI Blog",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI launched GPT-6.1 Sol, claiming near-Astra intelligence for roughly a fifth of the price.",
+              "The release targets developers needing high-end reasoning without top-tier inference costs."
+            ],
+            "original": [
+              "Introducing GPT-6.1 Sol",
+              "Paraphrase: OpenAI positions GPT-6.1 Sol as near-Astra intelligence at a fifth of the price."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI hat GPT-6.1 Sol veröffentlicht: laut Ankündigung nahe Astra-Intelligenz für etwa ein Fünftel des Preises.",
+              "Das Modell zielt auf Entwickler, die Spitzenlogik ohne Spitzenkosten benötigen."
+            ],
+            "original": [
+              "Introducing GPT-6.1 Sol",
+              "Paraphrase: OpenAI positioniert GPT-6.1 Sol als nahe Astra-Intelligenz für ein Fünftel des Preises."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI DevDay 2026 brought Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, and Marketplace.",
+              "ChatGPT reached 1.2 billion weekly active users, per Latent Space's DevDay recap."
+            ],
+            "original": [
+              "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI kündigte auf der DevDay 2026 Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces und Marketplace an.",
+              "ChatGPT erreichte laut Recap 1,2 Milliarden wöchentlich aktive Nutzer."
+            ],
+            "original": [
+              "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace und 1,2 Milliarden ChatGPT WAU"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison calls GPT-6.1 Sol 'near-Astra intelligence for a fifth of the price.'",
+              "He frames the release as a price-performance milestone, not a raw capability leap."
+            ],
+            "original": [
+              "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison bezeichnet GPT-6.1 Sol als 'nahe Astra-Intelligenz für ein Fünftel des Preises'.",
+              "Er sieht den Start als Meilenstein beim Preis-Leistungs-Verhältnis, nicht als reinen Fähigkeitssprung."
+            ],
+            "original": [
+              "GPT 6.1 Sol: Nahe Astra-Intelligenz für ein Fünftel des Preises"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model Efficiency: Opus 5.5 and Swift / Modelleffizienz: Opus 5.5 und Swift",
+      "desc": "Benchmarks and inference optimizations show how models are getting cheaper and faster.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Opus 5.5 posts 89.2% on ARC-AGI v2 at $0.40/task and 98.5% on v1.",
+              "Swift Flash Next cuts thinking tokens 63.4%, speeds up 1.8x, with only -0.2% xhigh score delta; M2 Max runs Qwen3.5-4B at 70.4 tok/s."
+            ],
+            "original": [
+              "On ARC-AGI it posts 89.2% on v2 at $0.40/task and 98.5% on v1.",
+              "Swift Flash Next with -63.4% thinking tokens, 1.8x speedup, and -0.2% xhigh score delta."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Opus 5.5 erreicht 89,2 % bei ARC-AGI v2 für 0,40 US-Dollar pro Aufgabe und 98,5 % bei v1.",
+              "Swift Flash Next reduziert Denk-Tokens um 63,4 %, beschleunigt um das 1,8-Fache; M2 Max liefert 70,4 tok/s bei Qwen3.5-4B."
+            ],
+            "original": [
+              "Bei ARC-AGI erreicht es 89,2 % bei v2 für 0,40 US-Dollar pro Aufgabe und 98,5 % bei v1.",
+              "Swift Flash Next mit -63,4 % Denk-Tokens, 1,8-facher Geschwindigkeit und -0,2 % xhigh-Score-Delta."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Open-Weight Security: GLM-5.3 / Open-Weight-Sicherheit: GLM-5.3",
+      "desc": "Anthropic's warning about open-weight capabilities reaching frontier levels.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropic-says-zhipus-open-weight-glm-5-3-nearly-matches-claude-mythos-preview-at-building-exploits/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic says Zhipu's open-weight GLM-5.3 nearly matches Claude Mythos Preview at building exploits.",
+              "The finding raises concerns about open-weight models reaching dangerous capability parity with frontier systems."
+            ],
+            "original": [
+              "Anthropic says Zhipu's open-weight GLM-5.3 nearly matches Claude Mythos Preview at building exploits"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic zufolge erreicht Zhipus Open-Weight-Modell GLM-5.3 beim Exploit-Bau fast Claude Mythos Preview.",
+              "Das wirft Sicherheitsfragen auf: Open-Weight-Modelle holen bei gefährlichen Fähigkeiten gegenüber Frontier-Systemen auf."
+            ],
+            "original": [
+              "Anthropic sagt, Zhipus Open-Weight-Modell GLM-5.3 erreicht beim Exploit-Bau fast Claude Mythos Preview."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI and Publishers: Google's Payment Problem / KI und Verlage: Googles Zahlungsproblem",
+      "desc": "Compensation for AI answers remains unresolved as search shifts.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/google-is-paying-almost-no-publishers-almost-nothing-for-content-used-in-ai-answers/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Google is paying almost no publishers almost nothing for content used in AI answers, per The Decoder.",
+              "The story signals unresolved copyright and compensation battles as AI search scales."
+            ],
+            "original": [
+              "Google is paying almost no publishers almost nothing for content used in AI answers"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Laut The Decoder zahlt Google fast keinen Verlagen fast nichts für Inhalte, die in KI-Antworten verwendet werden.",
+              "Die Meldung zeigt ungelöste Urheberrechts- und Vergütungskonflikte, während KI-Suche skaliert."
+            ],
+            "original": [
+              "Google zahlt fast keinen Verlagen fast nichts für Inhalte, die in KI-Antworten verwendet werden."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20260930122337-8da928",
+    "generatedAt": "2026-09-30T12:25:28.013Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 110386,
+    "tokensIn": 1416,
+    "tokensOut": 13141,
+    "estCostUsd": 0.003878,
+    "candidatesIn": 26,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 127123,
+      "preparedChars": 3895,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://openai.com/index/introducing-gpt-6-1-sol",
+      "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+      "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+      "https://the-decoder.com/anthropic-says-zhipus-open-weight-glm-5-3-nearly-matches-claude-mythos-preview-at-building-exploits/",
+      "https://the-decoder.com/google-is-paying-almost-no-publishers-almost-nothing-for-content-used-in-ai-answers/"
+    ]
+  }
+}

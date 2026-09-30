@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-09-28T13:40:50.564Z",
-  "count": 48,
+  "generatedAt": "2026-09-30T12:25:28.162Z",
+  "count": 49,
   "issues": [
+    {
+      "date": "2026-09-30",
+      "title": "OpenAI DevDay, GLM-5.3-Warnung, Publisher-Streit",
+      "desc": "OpenAI dominiert die Schlagzeilen, während Sicherheits- und Vergütungsfragen die Branche umtreiben.",
+      "href": "./issues/ai-builders-digest-2026-09-30.html",
+      "issue": "Nr. 49"
+    },
     {
       "date": "2026-09-28",
       "title": "Stripe kauft OpenRouter, Proaction wächst 60 %",
