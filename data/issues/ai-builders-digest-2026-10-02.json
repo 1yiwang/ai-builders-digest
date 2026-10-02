@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-02",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google hat mit Gemini 4 Argon ein neues Frontier-Modell vorgestellt, das 1M-Token-Ausgaben unterstützt. Walter Goodwin von Fractile diskutiert parallel die Architekturen der nächsten Generation. Microsoft liefert neue Transkriptions- und Sprachmodelle für Voice-Agenten. Gemeinsam zeigen diese Meldungen, wie schnell sich Modelle und Infrastruktur für Agenten weiterentwickeln."
+  },
+  "archive": {
+    "title": "Argon: Googles 1M-Token-Antwort",
+    "desc": "Google setzt mit Gemini 4 Argon neue Maßstäbe, während Microsoft und Fractile die Agenten-Infrastruktur ausbauen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-02.",
+  "sections": [
+    {
+      "title": "Frontier Models: Gemini 4 Argon and Next-Gen Architectures / Frontier-Modelle: Gemini 4 Argon und Architekturen der nächsten Generation",
+      "desc": "Google launches a new frontier model while Fractile explores what comes after current architectures.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google introduced Gemini 4 Argon with 1M-token output; trusted-tester rollout via Fairwind.",
+              "Artificial Analysis scores Argon 53, matching Astra; Text Arena ranks it #1.",
+              "Argon agents reportedly freed 300 TiB of memory and drove Rust migrations; Ideogram 4.5 launched for multi-turn editing."
+            ],
+            "original": [
+              "Gemini 4 Argon introduced; trusted-tester rollout via Fairwind",
+              "Artificial Analysis: Argon matches Astra at 53"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google hat Gemini 4 Argon mit 1M-Token-Output vorgestellt; Rollout an Trusted Tester über Fairwind.",
+              "Artificial Analysis bewertet Argon mit 53, gleichauf mit Astra; Text Arena sieht Argon auf Platz 1.",
+              "Argon-Agenten haben Berichten zufolge 300 TiB Speicher freigegeben und Rust-Migrationen vorangetrieben; Ideogram 4.5 ermöglicht präzises Multi-Turn-Editing."
+            ],
+            "original": [
+              "Gemini 4 Argon eingeführt; Rollout an Trusted Tester über Fairwind",
+              "Argon zieht bei 53 mit Astra gleich"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=OpeCP4wCxkA",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Walter Goodwin (Fractile) discusses the future of frontier model architectures.",
+              "Fractile, led by Goodwin, focuses on next-generation architecture for frontier AI models."
+            ],
+            "original": [
+              "Founder and CEO Walter Goodwin on the future of frontier model architectures."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Walter Goodwin (Fractile) spricht über die Zukunft von Frontier-Model-Architekturen.",
+              "Fractile unter Goodwin arbeitet an Architekturen der nächsten Generation für Frontier-KI-Modelle."
+            ],
+            "original": [
+              "Walter Goodwin, Gründer und CEO von Fractile, über die Zukunft der Frontier-Model-Architekturen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Reliability: Cheating and Verification / Agentenzuverlässigkeit: Schummeln und Verifikation",
+      "desc": "Two perspectives on why agents misbehave and how verification can improve reliability.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Why-AI-Agents-Cheat--Eric-Ho-Goodfire-e3pm35t",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Eric Ho (Goodfire) explains why AI agents cheat.",
+              "Ho and Goodfire examine the incentives and failure modes behind agent cheating."
+            ],
+            "original": [
+              "Why AI Agents Cheat"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Eric Ho (Goodfire) erklärt, warum KI-Agenten schummeln.",
+              "Ho und Goodfire untersuchen Anreize und Fehlermodi hinter dem Schummeln von Agenten."
+            ],
+            "original": [
+              "Warum KI-Agenten schummeln"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=0-g2-PRrOdw",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator argues better AI starts with better verification.",
+              "The video frames verification as the foundation for more reliable AI systems."
+            ],
+            "original": [
+              "Better AI Starts With Better Verification"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator argumentiert: Bessere KI beginnt mit besserer Verifikation.",
+              "Das Video beschreibt Verifikation als Grundlage für zuverlässigere KI-Systeme."
+            ],
+            "original": [
+              "Bessere KI beginnt mit besserer Verifikation"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Voice Agents: Microsoft's New Models / Voice-Agenten: Microsofts neue Modelle",
+      "desc": "Microsoft AI releases transcription and text-to-speech models targeting voice agent pipelines.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/microsoft-ai-releases-new-transcription-and-text-to-speech-models-for-voice-agents/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Microsoft AI released new transcription and text-to-speech models for voice agents.",
+              "The models target voice agent pipelines, per The Decoder."
+            ],
+            "original": [
+              "Microsoft AI releases new transcription and text-to-speech models for voice agents"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Microsoft AI hat neue Transkriptions- und Text-to-Speech-Modelle für Voice-Agenten veröffentlicht.",
+              "Die Modelle zielen auf Voice-Agent-Pipelines, berichtet The Decoder."
+            ],
+            "original": [
+              "Microsoft AI veröffentlicht neue Transkriptions- und Text-to-Speech-Modelle für Voice-Agenten"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Space Data Centers: Starship's 1,800 Launch Hurdle / Weltraum-Rechenzentren: Starships 1.800-Start-Hürde",
+      "desc": "Google projects the launch cadence required before orbital data centers become practical.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google estimates SpaceX’s Starship must launch 1,800 times before space data centers get off the ground.",
+              "The projection underscores launch cadence as the gating factor for orbital data centers."
+            ],
+            "original": [
+              "Google thinks SpaceX’s Starship has to launch 1,800 times before space data centers get off the ground"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google schätzt, dass SpaceX’ Starship 1.800 Mal starten muss, bevor Weltraum-Rechenzentren abheben.",
+              "Die Prognose unterstreicht die Startkadenz als limitierenden Faktor für orbitale Rechenzentren."
+            ],
+            "original": [
+              "Google glaubt, dass SpaceX’ Starship 1.800 Mal starten muss, bevor Weltraum-Rechenzentren abheben"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261002122056-3853f5",
+    "generatedAt": "2026-10-02T12:22:36.777Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 99568,
+    "tokensIn": 1387,
+    "tokensOut": 11658,
+    "estCostUsd": 0.003458,
+    "candidatesIn": 34,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 342863,
+      "preparedChars": 3976,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+      "https://www.youtube.com/watch?v=OpeCP4wCxkA",
+      "https://podcasters.spotify.com/pod/show/firstmark/episodes/Why-AI-Agents-Cheat--Eric-Ho-Goodfire-e3pm35t",
+      "https://www.youtube.com/watch?v=0-g2-PRrOdw",
+      "https://the-decoder.com/microsoft-ai-releases-new-transcription-and-text-to-speech-models-for-voice-agents/",
+      "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/"
+    ]
+  }
+}
