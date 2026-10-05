@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-10-02T12:20:49.953Z",
+  "generatedAt": "2026-10-05T14:22:06.668Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Y Combinator",
       "handle": "@ycombinator",
-      "title": "Better AI Starts With Better Verification",
-      "url": "https://www.youtube.com/watch?v=0-g2-PRrOdw",
-      "publishedAt": "2026-10-01T15:24:13.000Z",
-      "description": "Halluminate (YC S25) is building reinforcement learning environments and benchmarks to help AI models do knowledge work beyond coding, starting with finance. With a team of fewer than 10 people, the company works with four of the top five closed-source US AI labs and recently raised a $30 million Series A led by Oak HC/FT.\n\nIn this Fireside, co-founders Jerry Wu and Wyatt Marshall sit down with YC Partner Jon Xu to share how testing browser agents led them to building simulations where models practice tasks like completing financial spreadsheets. They explain why accurate scoring and expert review matter more than sheer task volume, and how weak checks can teach models to take shortcuts. They also discuss their vision for simulated companies where teams of AI agents learn to work together.\n\nhttps://halluminate.ai\n\nChapters:\n00:00 — Halluminate’s Pivot From Evals to Training Environments\n03:48 — Teaching AI to Do Financial Work\n07:13 — Why Verification Matters More Than Volume\n10:13 — From Finance to Simulated Companies\n13:30 — AI Safety and Building the Team\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+      "title": "Building AI Agents for Everyone",
+      "url": "https://www.youtube.com/watch?v=kDLji2s7LV4",
+      "publishedAt": "2026-10-02T14:30:34.000Z",
+      "description": "Gumloop (YC W24) is an AI agent builder used by companies like Shopify, Gusto, and Instacart. It lets employees build and share agents that automate work across their existing tools, while IT controls security, data access, and costs.\n\nIn this Fireside, co-founders Max Brodeur-Urbas and Rahul Behal talk to Y Combinator General Partner Gustaf Alströmer share how better models transformed their visual workflow builder into an agent platform, what they learned from 1,100 customer calls, and how one power user helped them land Instacart. They also explain why bringing agents into tools like Slack drives adoption and why the people who understand a task should be the ones automating it—to help teams do more, not simply replace them.\n\nhttps://www.gumloop.com\n\nChapters:\n00:00 — The AI Agent Builder for Every Team\n03:38 — From Workflow Automation to Enterprise AI\n07:20 — What It Takes to Win Enterprise Customers\n11:02 — How the Founders Met and Got Into YC\n15:00 — How Gumloop Uses Its Own Agents\n18:02 — Landing Shopify and Rethinking Pricing\n21:23 — Fundraising and the Limits of Staying Lean\n24:35 — Letting Employees Automate Their Own Work\n27:43 — Building Agents Companies Can Control\n31:23 — Getting IT to Say Yes\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
     },
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "The Startup Industrial Base: Building for the Next 250 — Washington, D.C.",
-      "url": "https://www.youtube.com/watch?v=T6hVGJ4gepk",
-      "publishedAt": "2026-09-30T21:15:15.000Z",
-      "description": "The defense industrial base of the future will be built by small, fast-moving teams working on some of the hardest problems in national security.\n\nLive from Washington, D.C., Y Combinator brings together founders, senior government officials, and military leaders for a day of conversations about rebuilding America’s defense industrial base, working with the government, and closing critical capability gaps across autonomy, munitions, space, secure communications, manufacturing, and more.\n\nFull event agenda here: https://docs.google.com/document/d/1RktUN1vOL4uzPYhwJcdsUvc1molLQhFaQApB_FIMzOk/edit?usp=sharing\n\n0:00- Livestream begins\n10:56 - Intro\n13:04 - YC President &amp; CEO Garry Tan — Opening remarks\n18:57 - Gaurab Chakrabarti (Solugen)\n26:19 - Under Secretary Emil Michael &amp; Jason Miller\n53:37 - Ivan Avanesov (Splash Industries)\n1:03:34 - Eric Braddom (Deepnight)\n1:13:54 - Transportation Secretary Sean Duffy &amp; Garry Tan (Y Combinator)\n1:47:51 - Dr. Jason Cornelius (Perseus Defense)\n1:55:12 - Dante Vaisbort (Albacore)\n2:01:06 - Russell Smith (9 Mothers)\n2:07:14 - Ryan Chow (Metalware)\n2:13:46 - Under Secretary Jules Hurst &amp; Jarren Reid (Usul)\n2:34:40 - Grant Demaree (Onebrief)\n2:51:18 - Matija Milenovic (Hop Aero)\n2:56:43 - Lunch break\n3:24:31 - Eric Alborg (Author, Build for Defense) &amp; Olivia Marotte (Y Combinator)\n3:39:22 - Senator Tim Sheehy &amp; Vivian Shen (Y Combinator)\n3:59:29 - James Walton (Earendil Robotics)\n4:05:55 - Edward Hinson (Zephyr Fusion)\n4:14:22 - Space founders panel — Jacob Reses with Bram Schork (General Astronautics), Skyler Chan (GRU Space), Alex Lisso (Inflection Space Systems) &amp; Jacob Ososke (Orca Aerospace)\n4:38:21 - NASA Administrator Jared Isaacman &amp; Ashi Dissanayake (Spaceium)\n5:00:52 - Andrew Peterson (Array Labs)\n5:05:40 - Congressman Pat Ryan &amp; Tyler Bosmeny (Y Combinator)\n5:26:04 - Jai Relan (Relling)\n5:33:12 - Johnny Doyle (ProvenMetal)\n5:36:47 - Steven Xu (Greypoint Industries)\n5:45:12 - Saarth Shah (Sixtyfour)\n5:51:41 - Afternoon break\n6:09:38 - Tomas Salvo (Reaper) &amp; Taylor Budowich\n6:19:03 - Kyra Rauschenbach (Reality Defender)\n6:23:32 - Leo Kankkunen (DAIVIN!)\n6:31:47 - YC Fall 2026 founders — Chris Golda (Y Combinator) with Kush Agarwal (Aviern), Charlie Jessett (Streamline Systems), Mo Akbar (Foreshadow Industries) &amp; Henrijs Dandzbergs (Lokberg Industries)\n6:55:30 - Robert Thelen (Rownd)\n7:03:11 - Andrei Craciunescu (RiskCube)\n7:10:00 - Alex Le Maitre (Seeing Systems)\n7:15:03 - DIU Chief Technology Officer Chris Murphy &amp; Pete Koomen (Y Combinator)\n7:38:12 - Sebastian Fischer (Wardstone)\n7:47:41 - Kristopher Luo (Null Labs)\n7:57:52 - Luther Lowe (Y Combinator) — Closing remarks"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "The Mistake Both Sides Made in the Korean War - Sarah Paine",
-      "url": "https://www.youtube.com/watch?v=NKMHnGb4S1s",
-      "publishedAt": "2026-10-01T20:15:01.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=f6cjAEr08qk\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "The Billion Dollar AI Advantage Is Disappearing",
+      "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
+      "publishedAt": "2026-10-05T09:53:12.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Korea Shows Why Every War Needs a Clear Goal - Sarah Paine",
-      "url": "https://www.youtube.com/watch?v=shnwID5sN5Q",
-      "publishedAt": "2026-09-30T19:51:42.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=f6cjAEr08qk\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Cortés took the Aztec Empire by taking its emperor hostage - Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=IeQQFxkE5v4",
+      "publishedAt": "2026-10-04T20:52:48.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Great Powers Keep Losing to Insurgencies - Sarah Paine",
-      "url": "https://www.youtube.com/watch?v=6tVCx8AMH38",
-      "publishedAt": "2026-09-29T21:00:06.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=f6cjAEr08qk\nMe on twitter: https://x.com/dwarkesh_sp"
+      "title": "Why Spain’s New World Riches Backfired - Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=KO8JE7XK4Gs",
+      "publishedAt": "2026-10-03T20:50:52.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "How 168 Spaniards Captured the Inca Emperor - Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=KbhNeFEqZS4",
+      "publishedAt": "2026-10-02T20:30:27.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -53,29 +53,11 @@
       "handle": "@LatentSpacePod",
       "title": "Which GPU Clouds Are Actually Good? | ClusterMAX 3.0",
       "url": "https://www.youtube.com/watch?v=MWX36ZYnsm0",
-      "publishedAt": "2026-10-02T05:22:21.000Z",
+      "publishedAt": "2026-10-02T15:00:10.000Z",
       "description": "Which GPU clouds are worth trusting with your AI workloads?\n\nThis Lightning podcast episode explores SemiAnalysis’s ClusterMAX 3.0 and the questions that matter when evaluating managed GPU clusters.\n\nAbout the research: ClusterMAX evaluates configuration, workload performance, reliability and response to failures through hands-on testing, documentation review and customer feedback.\n\nExplore the research:\nClusterMAX 3.0 report: https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard\nRankings: https://www.clustermax.ai/v3\nMethodology: https://www.clustermax.ai/overview\nEvaluation criteria: https://www.clustermax.ai/criteria\nOpen-source audit tool: https://github.com/SemiAnalysisAI/ClusterMAX\n\nSponsorship and business inquiries: business@latent.space\n\n#ClusterMAX #SemiAnalysis #AIInfrastructure"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "Recursive Language Models — Alex Zhang, MIT PhD",
-      "url": "https://www.youtube.com/watch?v=kog7mwsDqnk",
-      "publishedAt": "2026-10-02T00:15:36.000Z",
-      "description": "From GPU kernels and KernelBench to Recursive Language Models, agent harnesses, and massive multi-agent swarms, Alex Zhang is exploring how much capability we’re leaving on the table by wrapping increasingly powerful models in primitive systems. In this episode, the MIT researcher behind RLMs joins swyx to unpack why Claude Code, Codex, and most coding agents are more similar than they look, why better harness design could unlock capabilities already latent in today’s models, and what happens when you can throw 10,000 agents and tens of millions of dollars at a single problem.\n\nWe go deep on GPU Mode and AI-written kernels, research taste and why academics should take bets industry labs won’t, GEV and alternatives to the standard autoregressive language model, and the idea of harnesses as compositional generalizers. Alex explains RLMs, context offloading, programmatic subagent calling, Prime Agent, persistent subagents, and why the “language model” of the future may actually be an invisible swarm of agents underneath a simple interface. We also discuss OpenAI’s massive agent experiments, Kimi swarms, open-ended research at Sakana AI, speculative programmatic tool calling, capability overhang, Neuralese, and where Alex thinks the next big research opportunities may lie.\n\nWe discuss:\n• Why AI-generated GPU kernels still leave substantial room for human expertise\n• How one expert insight can potentially replace enormous amounts of brute-force token search\n• Why PhD students should take research bets that initially look trivial, weird, or pointless\n• What SWE-bench, RLMs, ReAct, and Quiet-STaR reveal about research taste\n• GEV and why a language model does not have to mean an autoregressive text-to-text decoder\n• Why Claude Code, Codex, Pi, and many modern agent harnesses are structurally very similar\n• How harness design can improve compositional generalization across tasks and domains\n• RLMs: context offloading, code execution, recursive subagents, and shared memory\n• Prime Agent, continual harnesses, and persistent agent-to-agent communication\n• Why the model you query in the future may secretly be an entire swarm or scaffold\n• OpenAI’s 10,000-agent experiment, 130B output tokens, and ~$40M-equivalent problem solving\n• Why much of an agent swarm may be wasted search — and why convergence is still hard\n• Kimi versus OpenAI’s approach to multi-agent systems\n• Open-endedness, Sakana AI, and the problem of finding hidden gems in enormous amounts of generated work\n• Why current frontier models may already have a large capability overhang\n• Speculative programmatic tool calling and overlapping tool execution with generation\n• Whether English, code, or an entirely new “Neuralese” constrains how models reason\n• AI for science, fast-moving benchmarks, and how Alex chooses what research problems to bet on\n\nSponsorship and business inquiries: business@latent.space\n\n—\n\nAlex Zhang\n• Website: alexzhang13.github.io\n• X: @a1zhang\n\nTimestamps\n00:00:00 Hook  \n00:01:56 Introduction  \n00:02:45 GPU Mode, KernelBench, and AI-Written Kernels  \n00:09:34 Human Expertise vs. Brute-Force AI Search  \n00:15:16 Research Taste and Taking Big Bets  \n00:21:24 GEV and Rethinking the Language Model  \n00:30:59 Video Game Agents and the Harness Problem  \n00:32:57 Why Claude Code, Codex, and Pi Are So Similar  \n00:38:38 Harnesses as Compositional Generalizers  \n00:46:20 RLMs Explained  \n00:53:57 Prime Agent and Persistent Subagents  \n00:59:37 RLMs in the Wild  \n01:02:26 OpenAI Swarms and the Future of Language Models  \n01:09:22 Open-Endedness and Sakana AI  \n01:17:48 Kimi vs. OpenAI Agent Swarms  \n01:22:02 Capability Overhang and Speculative Tool Calling  \n01:30:15 Neuralese, Future Research, and AI for Science"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "OpenAI’s New Agent Stack: Computer Use, Decisions API, UltraFast, Dots—Ari Weinstein &amp; Nikunj Handa",
-      "url": "https://www.youtube.com/watch?v=z9OkBD2-MDU",
-      "publishedAt": "2026-09-30T21:00:31.000Z",
-      "description": "From giving AI agents their own cloud computers to making Computer Use faster than humans at real-world tasks, OpenAI is pushing agents much closer to actually operating software end-to-end. In this episode, recorded immediately after OpenAI DevDay, Ari Weinstein, who leads product and engineering for Computer Use, joins swyx and Vibhu to unpack Dots, GPT-6.1, the Agents API, App Shots, and the rapid improvements that have made Computer Use dramatically faster, cheaper, and more reliable.\n\nAri explains why Computer Use is now “180 degrees different” from where it was months ago, how agents are learning to debug and recover from failures, why combining screenshots with accessibility data, the DOM, Playwright, and generated code changes the speed equation, and why the next frontier is making agents literally superhuman at using software.\n\nIn the second half, Nikunj from OpenAI’s API team breaks down the new developer stack: async tool calling, mid-turn steering, WebSockets, UltraFast inference, the Decisions API, prompt caching, pre-warming, compaction, and the Agents API. He also shares the unusually fast story behind Decisions API, how OpenAI’s inference teams are using coding agents to optimize their own systems, and the bigger question of whether OpenAI is effectively building an “AI cloud” with higher-level primitives for agents, memory, compute, and state.\n\nWe discuss:\n• Why OpenAI thinks Computer Use has changed dramatically in just the last few months  \n• Dots and what changes when every agent gets its own Linux computer  \n• Why Computer Use can now complete some tasks faster than the average human  \n• The path from human-level to “literally superhuman” software operation  \n• Why modern Computer Use agents are much better at debugging and recovering from failure  \n• How screenshots, accessibility trees, the DOM, Playwright, and generated JavaScript work together  \n• App Shots and why they give models much richer context than ordinary screenshots  \n• Why Computer Use can close the loop between writing software and testing it  \n• Trust, permissions, and safety when agents can make payments or operate third-party websites  \n• Async function calling and why models no longer need to stop reasoning while tools run  \n• Mid-turn steering, WebSockets, and the architecture behind more responsive agents  \n• UltraFast inference and how OpenAI is pushing frontier models toward much lower latency  \n• The rapid internal story behind Decisions API  \n• Why Decisions API is more than just structured outputs at low latency  \n• GPT Live, fast tool calling, and real-time computer control  \n• How OpenAI is using Decisions API internally for support classification and other workflows  \n• Longer prompt caching, cache pre-warming, and building cache-aware applications  \n• Server-side compaction vs manual compaction for long-running agent threads  \n• What should live inside an Agents API versus inside a developer’s own harness  \n• OpenAI as an “AI cloud” and the search for higher-level primitives beyond raw model APIs\nSponsorship and business inquiries: business@latent.space\n\n—\n\nAri Weinstein  \n• Head of Product &amp; Engineering, Computer Use at OpenAI\n\nNikunj Handa\n• Head of Product, API at OpenAI\n\nTimestamps\n\n00:00:00 Hook  \n00:01:12 OpenAI DevDay: Dots, GPT-6.1, Agents API, and Decisions API  \n00:04:04 Dots and Personal Cloud Computers  \n00:06:11 Why Computer Use Is “180 Degrees Different”  \n00:07:16 From Sky to Self-Debugging Computer Use Agents  \n00:10:36 How Computer Use Sees and Operates Software  \n00:13:21 From Faster Than Humans to Superhuman Computer Use  \n00:17:15 Agents API: Trust, Permissions, and Safety  \n00:18:43 Computer Use for Coding, Testing, and QA  \n00:20:26 GPT-6 APIs, Async Tool Calling, and UltraFast Inference  \n00:24:33 The Rapid Story Behind Decisions API  \n00:26:44 What Decisions API Is and How It Works  \n00:31:36 What OpenAI Is Building With the New APIs  \n00:33:35 Prompt Caching, Pre-Warming, and API Performance  \n00:36:32 Context Compaction for Long-Running Agents  \n00:38:25 Memory, Higher-Level APIs, and the AI Cloud"
     }
   ],
   "stats": {
-    "youtubeVideos": 8
+    "youtubeVideos": 6
   }
 }

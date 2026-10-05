@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-02T12:22:36.906Z",
-  "count": 50,
+  "generatedAt": "2026-10-05T14:24:14.846Z",
+  "count": 51,
   "issues": [
+    {
+      "date": "2026-10-05",
+      "title": "Lokale 27B-Modelle fordern die Frontier heraus",
+      "desc": "OpenAI veröffentlicht einen GPT-6-Leitfaden, lokale Modelle holen bei Code-Benchmarks auf, und DeepMind vereinheitlicht Robotik.",
+      "href": "./issues/ai-builders-digest-2026-10-05.html",
+      "issue": "Nr. 51"
+    },
     {
       "date": "2026-10-02",
       "title": "Argon: Googles 1M-Token-Antwort",

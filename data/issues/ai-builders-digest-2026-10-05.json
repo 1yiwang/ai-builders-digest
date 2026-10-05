@@ -1,0 +1,221 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-05",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI veröffentlicht einen praktischen GPT-6-Leitfaden, während lokale 27B-Modelle echte Frontier-Lücken schließen. Latent Space meldet Qwen3.5-Verbesserungen und einen Qwen3.8-27B-Lauf auf einer RTX 4090. Google DeepMind zeigt mit Gemini Robotics 2 einen Weg zu universellen Roboter-Gehirnen. Zusammen deuten diese Signale auf eine neue KI-Landschaft: leistungsfähige Modelle überall, von Rechenzentren bis Robotern."
+  },
+  "archive": {
+    "title": "Lokale 27B-Modelle fordern die Frontier heraus",
+    "desc": "OpenAI veröffentlicht einen GPT-6-Leitfaden, lokale Modelle holen bei Code-Benchmarks auf, und DeepMind vereinheitlicht Robotik."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-05.",
+  "sections": [
+    {
+      "title": "Open Models: Local 27B Closes the Gap",
+      "desc": "Local open-weight models challenge frontier performance on code tasks.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space AINews",
+          "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-cee",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Qwen3.5-2B and Qwen3.5-4B show +9.91% and +7.12% relative gains over GRPO.",
+              "Local Qwen3.8-27B GGUF (14.25 GB) on one RTX 4090 nearly matches frontier models on DeepSWE/local-code (Activity: 730)."
+            ],
+            "original": [
+              "It reports +9.91% (Qwen3.5-2B) and +7.12% (Qwen3.5-4B) relative gains over GRPO.",
+              "The gap is smaller than they told you: local 27B nearly matches frontier on real code tests (Activity: 730)."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Qwen3.5-2B und Qwen3.5-4B erzielen +9,91 % bzw. +7,12 % relative Verbesserungen gegenüber GRPO.",
+              "Lokales Qwen3.8-27B-GGUF (14,25 GB) auf einer RTX 4090 erreicht bei DeepSWE/local-code nahezu Frontier-Niveau (Activity: 730)."
+            ],
+            "original": [
+              "Es meldet +9,91 % (Qwen3.5-2B) und +7,12 % (Qwen3.5-4B) relative Verbesserungen gegenüber GRPO.",
+              "Die Lücke ist kleiner als behauptet: Lokale 27B-Modelle erreichen bei echten Codetests nahezu Frontier-Niveau (Activity: 730)."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "OpenAI's Product Push: GPT-6 Guide & ChatGPT Ads",
+      "desc": "OpenAI publishes educational material while ChatGPT tests new ad formats.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/practical-guide-building-gpt-6",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI published a new guide: 'A model guide for the GPT-6 family'.",
+              "The post appears aimed at developers using GPT-6 variants, though benchmark details are not in the shortlist."
+            ],
+            "original": [
+              "A model guide for the GPT-6 family"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI hat einen neuen Leitfaden veröffentlicht: 'A model guide for the GPT-6 family'.",
+              "Der Beitrag richtet sich offenbar an Entwickler, die GPT-6-Varianten nutzen; Benchmark-Details fehlen in der Shortlist."
+            ],
+            "original": [
+              "A model guide for the GPT-6 family"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/chatgpts-new-ad-format-fills-the-image-generation-loading-screen-with-product-carousels/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "ChatGPT is testing product carousels as ads on the image generation loading screen.",
+              "The Decoder reports the new ad format uses wait time for sponsored product showcases."
+            ],
+            "original": [
+              "ChatGPT's new ad format fills the image generation loading screen with product carousels"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "ChatGPT testet Produktkarussells als Werbung auf dem Ladebildschirm der Bilderzeugung.",
+              "The Decoder berichtet, dass das neue Anzeigenformat Wartezeit für gesponserte Produktpräsentationen nutzt."
+            ],
+            "original": [
+              "ChatGPTs neues Anzeigenformat füllt den Ladebildschirm der Bilderzeugung mit Produktkarussells."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI in Education: Trust Erosion at MIT",
+      "desc": "An MIT report finds AI changes student-faculty interaction and trust.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/ai-is-eroding-office-hours-study-groups-and-the-trust-between-faculty-and-students-mit-report-finds/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "An MIT report finds AI use is eroding office hours, study groups, and faculty-student trust.",
+              "The report notes reduced personal interaction as students rely on AI."
+            ],
+            "original": [
+              "AI is eroding office hours, study groups, and the trust between faculty and students, MIT report finds"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Laut einem MIT-Bericht untergräbt KI-Nutzung Sprechstunden, Lerngruppen und das Vertrauen zwischen Lehrenden und Studierenden.",
+              "Der Bericht beschreibt sinkende persönliche Interaktion, da Studierende auf KI zurückgreifen."
+            ],
+            "original": [
+              "KI untergräbt Sprechstunden, Lerngruppen und das Vertrauen zwischen Lehrenden und Studierenden, so ein MIT-Bericht."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agents & Robotics: From Software to Humanoids",
+      "desc": "Building AI agents for everyone extends from accessible apps to physical robots.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/one-brain-any-body-google-deepmind-s-keerthana-on-gemini-robotics-2-cross-embodiment-humanoids/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Google DeepMind's Keerthana discusses Gemini Robotics 2, a single brain controlling many robot bodies.",
+              "The conversation covers cross-embodiment and humanoid robotics."
+            ],
+            "original": [
+              "One Brain, Any Body: Google DeepMind's Keerthana on Gemini Robotics 2, Cross-Embodiment & Humanoids"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google DeepMinds Keerthana spricht über Gemini Robotics 2, ein einziges Gehirn für viele Roboterkörper.",
+              "Das Gespräch beleuchtet Cross-Embodiment und humanoide Robotik."
+            ],
+            "original": [
+              "One Brain, Any Body: Google DeepMinds Keerthana zu Gemini Robotics 2, Cross-Embodiment & Humanoiden"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=kDLji2s7LV4",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Gumloop on building AI agents for non-technical users.",
+              "The video focuses on making agent workflows accessible to everyone."
+            ],
+            "original": [
+              "Building AI Agents for Everyone"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator interviewt Gumloop zum Bau von KI-Agenten für nicht-technische Nutzer.",
+              "Der Fokus liegt darauf, Agenten-Workflows für alle zugänglich zu machen."
+            ],
+            "original": [
+              "Building AI Agents for Everyone"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261005142211-172d7e",
+    "generatedAt": "2026-10-05T14:24:14.706Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 123295,
+    "tokensIn": 1410,
+    "tokensOut": 11312,
+    "estCostUsd": 0.003365,
+    "candidatesIn": 22,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 99634,
+      "preparedChars": 4085,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-not-much-happened-today-cee",
+      "https://openai.com/index/practical-guide-building-gpt-6",
+      "https://the-decoder.com/chatgpts-new-ad-format-fills-the-image-generation-loading-screen-with-product-carousels/",
+      "https://the-decoder.com/ai-is-eroding-office-hours-study-groups-and-the-trust-between-faculty-and-students-mit-report-finds/",
+      "https://www.cognitiverevolution.ai/one-brain-any-body-google-deepmind-s-keerthana-on-gemini-robotics-2-cross-embodiment-humanoids/",
+      "https://www.youtube.com/watch?v=kDLji2s7LV4"
+    ]
+  }
+}
