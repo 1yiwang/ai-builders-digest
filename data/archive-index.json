@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-05T14:24:14.846Z",
-  "count": 51,
+  "generatedAt": "2026-10-07T13:10:28.451Z",
+  "count": 52,
   "issues": [
+    {
+      "date": "2026-10-07",
+      "title": "OpenAIs 722-Paper-Mathewunder",
+      "desc": "OpenAI meldet einen mathematischen Durchbruch, während Compute-Startups Milliarden sammeln und Sicherheitsdebatten eskalieren.",
+      "href": "./issues/ai-builders-digest-2026-10-07.html",
+      "issue": "Nr. 52"
+    },
     {
       "date": "2026-10-05",
       "title": "Lokale 27B-Modelle fordern die Frontier heraus",
