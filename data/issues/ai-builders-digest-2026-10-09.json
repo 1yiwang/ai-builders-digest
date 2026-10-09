@@ -1,0 +1,271 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-09",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Latent Space meldet GPT-6.1-Sol an der Spitze mit 87,9 Punkten, dicht gefolgt von Claude Opus 5.5 und Grok 4.7. Währenddessen senkte Sophos die Untersuchungszeit für Bedrohungen mit OpenAI Daybreak um 96 Prozent. Die Themen zeigen, wie Modellleistung und Sicherheitspraxis zusammenwachsen. Für Entwickler wird lokale Inferenz mit Saluki 27B auf 16-GB-Laptops praktikabel."
+  },
+  "archive": {
+    "title": "GPT-6.1-Sol führt, Saluki schrumpft, Sophos beschleunigt",
+    "desc": "Benchmark-Führung, lokale Quantisierung und messbare Security-Gewinne prägen den Tag."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-09.",
+  "sections": [
+    {
+      "title": "Open Models & Efficient Inference: Saluki, Claude Haiku, Beam",
+      "desc": "Neue Modelle und Quantisierungen verschieben Preis-Leistung und lokale Nutzbarkeit.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-not-much-happened-today-60f",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Latent Space's leaderboard puts GPT-6.1-Sol at 87.9, ahead of Claude Opus 5.5 (83.2) and Grok 4.7 (82.7).",
+              "Saluki 27B hits 96% of Qwen 3.8's performance at ~1/7 size; a 2-bit quant runs offline on 16GB laptops."
+            ],
+            "original": [
+              "GPT-6.1-Sol leads at 87.9, followed by Claude Opus 5.5 at 83.2 and Grok 4.7 at 82.7.",
+              "Saluki 27B: '96% of Qwen 3.8's performance at ~1/7 the size' ... compressed from ~54 GB for local/offline agentic tool use on 16 GB laptops."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-6.1-Sol führt das Latent-Space-Ranking mit 87,9 Punkten vor Claude Opus 5.5 (83,2) und Grok 4.7 (82,7).",
+              "Saluki 27B erreicht 96 Prozent von Qwen 3.8 bei einem Siebtel der Größe; 2-Bit-Quantisierung läuft offline auf 16-GB-Laptops."
+            ],
+            "original": [
+              "GPT-6.1-Sol führt mit 87,9, gefolgt von Claude Opus 5.5 mit 83,2 und Grok 4.7 mit 82,7.",
+              "Saluki 27B: '96 Prozent der Leistung von Qwen 3.8 bei etwa einem Siebtel der Größe' ... für lokale/offline agentische Nutzung auf 16-GB-Laptops."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Latent Space reports Claude Haiku 5.5 matches or beats GPT-6 Luna at the same price point.",
+              "Pricing parity makes compact-model performance a direct challenge to larger Luna-class models."
+            ],
+            "original": [
+              "Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Latent Space meldet: Claude Haiku 5.5 ist bei gleichem Preis besser als GPT-6 Luna.",
+              "Preisgleichheit macht kompakte Modellleistung zur direkten Konkurrenz für größere Luna-Klassen."
+            ],
+            "original": [
+              "Claude Haiku 5.5 — besser als GPT-6 Luna bei gleichem Preis."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=lx9RjE0GekI",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Misha Laskin (ReflectionAI) presents Beam, an open model positioned as 'The Great American Open Model.'",
+              "No Priors explores whether a US open model can compete with global open releases."
+            ],
+            "original": [
+              "Beam: The Great American Open Model with ReflectionAI Co-Founder and CEO Misha Laskin."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Misha Laskin (ReflectionAI) stellt Beam vor, ein offenes Modell, das als 'The Great American Open Model' positioniert wird.",
+              "No Priors diskutiert, ob ein US-Open-Modell mit globalen offenen Modellen konkurrieren kann."
+            ],
+            "original": [
+              "Beam: The Great American Open Model mit ReflectionAI-Co-Founder und CEO Misha Laskin."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Security & Threat Intelligence: Sophos, Influence Ops",
+      "desc": "Konkrete Sicherheitseinsätze zeigen messbare Zeitersparnis und neue Bedrohungsmuster.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/sophos",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Sophos cut threat investigation time by 96% using OpenAI Daybreak.",
+              "OpenAI Daybreak is running in production security workflows at Sophos."
+            ],
+            "original": [
+              "Sophos cuts threat investigation time by 96% with OpenAI Daybreak."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Sophos senkte die Bedrohungsuntersuchungszeit mit OpenAI Daybreak um 96 Prozent.",
+              "OpenAI Daybreak läuft produktiv in den Security-Workflows von Sophos."
+            ],
+            "original": [
+              "Sophos verkürzt die Bedrohungsuntersuchungszeit mit OpenAI Daybreak um 96 Prozent."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-uncovers-russian-and-iranian-influence-ops-that-planted-fake-stories-in-real-news-outlets/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI identified Russian and Iranian influence operations that planted fake stories in real news outlets.",
+              "The operations used generated content to place narratives inside legitimate media."
+            ],
+            "original": [
+              "OpenAI uncovers Russian and Iranian influence ops that planted fake stories in real news outlets."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI identifizierte russische und iranische Einflussoperationen, die Fake-Storys in echten Nachrichtenmedien platzierten.",
+              "Die Angriffe nutzten generierte Inhalte, um Narrative in legitimen Outlets unterzubringen."
+            ],
+            "original": [
+              "OpenAI deckt russische und iranische Einflussoperationen auf, die gefälschte Geschichten in echten Nachrichtenmedien platzierten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Developer Tools & Voice Interfaces",
+      "desc": "Simon Willison ships voice-built blog features and tokenizer tooling.",
+      "cards": [
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison shipped a new blog feature built using his voice instead of a keyboard.",
+              "The post shows voice input as a practical developer interface for personal automation."
+            ],
+            "original": [
+              "A new feature for my blog, built using my voice"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison veröffentlichte ein neues Blog-Feature, das er per Sprache statt Tastatur entwickelt hat.",
+              "Der Beitrag zeigt Sprache als praktisches Entwickler-Interface für persönliche Automatisierung."
+            ],
+            "original": [
+              "Ein neues Feature für meinen Blog, entwickelt mit meiner Stimme."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/9/ttok/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison released ttok 1.0, a tokenizer utility for working with LLM tokens.",
+              "The release adds a dedicated small tool to his developer toolchain."
+            ],
+            "original": [
+              "Release: ttok 1.0"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison veröffentlichte ttok 1.0, ein Tokenizer-Tool für die Arbeit mit LLM-Tokens.",
+              "Das Release ergänzt seine Entwickler-Toolchain um ein dediziertes kleines Werkzeug."
+            ],
+            "original": [
+              "Release: ttok 1.0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Data Layer for Agents",
+      "desc": "Andy Pavlo discusses what happens when billions of AI agents hit databases.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=74X0DJOVEc8",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Andy Pavlo examines what happens when billions of AI agents hit your database.",
+              "The conversation focuses on database pressure from agentic workloads."
+            ],
+            "original": [
+              "What Happens When Billions of AI Agents Hit Your Database? (Andy Pavlo)"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Andy Pavlo untersucht, was passiert, wenn Milliarden KI-Agenten auf die Datenbank treffen.",
+              "Das Gespräch fokussiert die Datenbankbelastung durch agentische Workloads."
+            ],
+            "original": [
+              "Was passiert, wenn Milliarden KI-Agenten auf deine Datenbank treffen? (Andy Pavlo)"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261009130259-6273ab",
+    "generatedAt": "2026-10-09T13:04:41.393Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 102131,
+    "tokensIn": 1343,
+    "tokensOut": 9222,
+    "estCostUsd": 0.00277,
+    "candidatesIn": 32,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 385769,
+      "preparedChars": 3740,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-not-much-happened-today-60f",
+      "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+      "https://www.youtube.com/watch?v=lx9RjE0GekI",
+      "https://openai.com/index/sophos",
+      "https://the-decoder.com/openai-uncovers-russian-and-iranian-influence-ops-that-planted-fake-stories-in-real-news-outlets/",
+      "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "https://simonwillison.net/2026/Oct/9/ttok/",
+      "https://www.youtube.com/watch?v=74X0DJOVEc8"
+    ]
+  }
+}

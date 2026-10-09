@@ -1,15 +1,33 @@
 {
-  "generatedAt": "2026-10-07T13:08:30.099Z",
+  "generatedAt": "2026-10-09T13:02:53.275Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "The Billion Dollar AI Advantage Is Disappearing",
-      "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
-      "publishedAt": "2026-10-05T09:53:12.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "DeepMind's New AI Just Cracked The Code Of Life",
+      "url": "https://www.youtube.com/watch?v=Wkaw03p3BrM",
+      "publishedAt": "2026-10-07T13:29:33.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nThank you Google DeepMind for the invite.\n\n📝 AlphaGenome Atlas is available here:\nhttps://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/\nhttps://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-atlas/\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why the Maya were harder to conquer than the Aztecs — Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=rGjIBv-nAQw",
+      "publishedAt": "2026-10-08T19:47:31.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "What the Aztec and Inca emperors got wrong about the Spanish — Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=dpjf-6wZhSg",
+      "publishedAt": "2026-10-07T21:02:21.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -22,24 +40,15 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Cortés fought other Spaniards while conquering the Aztecs - Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=3yEg-eQozvU",
-      "publishedAt": "2026-10-05T21:02:12.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Cortés took the Aztec Empire by taking its emperor hostage - Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=IeQQFxkE5v4",
-      "publishedAt": "2026-10-04T20:52:48.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "AI Scientists Are Here: Autonomous Labs &amp; Synthesis Superintelligence — Periodic Labs",
+      "url": "https://www.youtube.com/watch?v=YHiqVRxGViM",
+      "publishedAt": "2026-10-08T00:31:15.000Z",
+      "description": "From building AI systems that reason over noisy physical experiments to creating laboratories where every instrument can become intelligent, Periodic Labs is betting that the next frontier of AI won’t come from simply training on more internet data — it will come from letting models experiment with the real world. In this episode, Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk join swyx and Brandon to explain why scientific discovery is fundamentally different from math and coding, and what it takes to build AI scientists that can actually discover new materials.\n\nWe go deep on Periodic’s vision for “synthesis superintelligence”: reinforcement learning grounded in physical experiments, AI-powered materials characterization, simulations and density functional theory, high-throughput labs, and systems that learn from the entire process of doing science rather than only its published results. Liam and Ekin also explain why frontier models will still need experiments, why failed experiments may be some of the most valuable training data, what it means to give every piece of lab equipment “140 IQ,” and how autonomous experimentation could compress decades of scientific trial-and-error into months.\n\nWe discuss:\n• Why intelligence alone isn’t enough for scientific discovery\n• How reinforcement learning changes when the environment is the physical world\n• Why science requires reasoning under uncertainty, noise, and missing information\n• Prediction, synthesis, and characterization in the materials discovery loop\n• Why physics and materials science are still far from “solved”\n• The “matter compiler” and Periodic’s goal of synthesis superintelligence\n• Phase transitions, X-ray diffraction, and AI-powered materials characterization\n• DFT, simulations, and why experiments remain the ultimate ground truth\n• Room-temperature superconductors, new magnets, batteries, and more efficient compute\n• Why quantum computing may not automatically solve materials discovery\n• What it means for every piece of lab equipment to have “140 IQ”\n• Why data quality and negative results matter more than simply throwing more compute at science\n• Training models on the process of doing science rather than the final answer\n• Why even future frontier models will still need to physically experiment\n• Scaling autonomous labs across AI, chemistry, physics, and custom hardware\n• How automated experimentation could massively increase the “surface area for luck” in discovering new materials\n\n—\nSponsorship and business inquiries: business@latent.space\n\nLiam Fedus\nPeriodic Labs\n\nEkin Dogus Cubuk\nPeriodic Labs\n\nTimestamps\n00:00:00 Introduction\n00:02:49 AI and Reinforcement Learning in the Physical World\n00:09:17 The End-to-End Materials Discovery Loop\n00:13:28 Why Physics Isn’t “Solved”\n00:19:04 The Matter Compiler and AI Characterization\n00:30:22 DFT, Simulation, and Experimental Ground Truth\n00:42:27 Dream Materials, Compute, and Quantum Computing\n00:45:57 Giving Every Lab Instrument “140 IQ”\n00:50:02 Automating the Lab\n00:53:16 Data, Models, and Negative Results\n00:58:13 Training AI on the Process of Science\n01:00:20 Why Frontier AI Still Needs Experiments\n01:06:06 Scaling Autonomous Labs\n01:10:45 Building the Team and Deploying to Industry\n01:17:01 From AI Copilots to Scientific Outcomes\n01:20:57 Automating the Search for Superconductors"
     }
   ],
   "stats": {
-    "youtubeVideos": 4
+    "youtubeVideos": 5
   }
 }
