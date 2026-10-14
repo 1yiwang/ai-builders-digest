@@ -1,0 +1,243 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-14",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google hat Gemini 4 Argon weltweit verfügbar gemacht und nennt es sein leistungsfähigstes Frontier-Modell. Parallel zeigt MSL mit Meta Muse Wonder & Wonder Full Claude-5.5-Niveau und ein Nutzer fährt Qwen3.8 mit 700K Kontext lokal. Liquid AI liefert mit LFM2.5-24B-A2B private On-Device-Agenten, während OpenAI Higgsfield auf über zehn Minuten Videolänge hebt. Zusammen zeigt der Tag einen klaren Trend: Frontier-Leistung wandert in lokale, agentenfähige Systeme."
+  },
+  "archive": {
+    "title": "Frontier-Leistung wandert aufs Gerät",
+    "desc": "Googles Gemini 4 Argon trifft auf lokale 700K-Kontexte und On-Device-Agenten."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-14.",
+  "sections": [
+    {
+      "title": "Frontier Model Race / Frontier-Modell-Rennen",
+      "desc": "Google and MSL publish new frontier model claims and benchmark numbers that reset leaderboard comparisons.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google made Gemini 4 Argon available worldwide, positioning it as its most capable frontier model.",
+              "The launch gives developers immediate access to Google's latest flagship for testing and production."
+            ],
+            "original": [
+              "Gemini 4 Argon is now available worldwide as Google's most capable frontier model"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google hat Gemini 4 Argon weltweit veröffentlicht und nennt es sein leistungsfähigstes Frontier-Modell.",
+              "Der Start gibt Entwicklern sofortigen Zugriff auf Googles neuestes Flaggschiff für Tests und Produktion."
+            ],
+            "original": [
+              "Gemini 4 Argon ist jetzt weltweit verfügbar und Googles leistungsfähigstes Frontier-Modell"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "MSL's Meta Muse Wonder & Wonder Full reaches Claude 5.5-tier performance, per Latent Space's AINews benchmark comparison.",
+              "For context, Gemini 4 Argon scored 62k, Fable 5.1 78k, GPT-6.1 Sol 38k, and GPT-6 Astra 27k on the same measure."
+            ],
+            "original": [
+              "For comparison: Gemini 4 Argon 62k, Fable 5.1 78k, GPT-6.1 Sol 38k, GPT-6 Astra 27k."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "MSLs Meta Muse Wonder & Wonder Full erreicht laut Latent Space Claude-5.5-Niveau.",
+              "Zum Vergleich: Gemini 4 Argon erzielte 62k, Fable 5.1 78k, GPT-6.1 Sol 38k, GPT-6 Astra 27k im selben Benchmark."
+            ],
+            "original": [
+              "Zum Vergleich: Gemini 4 Argon 62k, Fable 5.1 78k, GPT-6.1 Sol 38k, GPT-6 Astra 27k."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Local & On-Device AI / Lokale und On-Device KI",
+      "desc": "Qwen demonstrates 700K context on consumer hardware while Liquid AI ships a 24B on-device agent model.",
+      "cards": [
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Hugging Face and Liquid AI released LFM2.5-24B-A2B to run fast, private agents on-device.",
+              "The 24B-parameter model targets edge deployment for AI agents, cutting cloud latency and privacy risks."
+            ],
+            "original": [
+              "Run fast, private agents on-device with LFM2.5-24B-A2B"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hugging Face und Liquid AI veröffentlichten LFM2.5-24B-A2B für schnelle, private On-Device-Agenten.",
+              "Das 24B-Modell zielt auf Edge-Deployments, um Cloud-Latenz und Datenschutzrisiken zu reduzieren."
+            ],
+            "original": [
+              "Betreiben Sie schnelle, private Agenten auf dem Gerät mit LFM2.5-24B-A2B"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "A user ran Qwen3.8 Flash-Next IQ3_XXS locally with a 700K context window on an RTX 5090 32GB + 64GB RAM.",
+              "They reported 100–120 tok/s throughput, no context compaction, and speculate 1M context may be possible at ~80 tok/s with quality tradeoffs."
+            ],
+            "original": [
+              "RTX 5090 32GB + 64GB RAM — Qwen3.8 Flash-Next IQ3_XXS Running at 700K Context Without a Single Session Compaction ... roughly 100–120 tok/s"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ein Nutzer betrieb Qwen3.8 Flash-Next IQ3_XXS lokal mit 700K Kontextfenster auf einer RTX 5090 32GB + 64GB RAM.",
+              "Er meldete 100–120 Tokens/s Durchsatz, keine Kontext-Kompaktierung, und hält 1M Kontext bei ~80 Tokens/s für möglich mit Qualitätseinbußen."
+            ],
+            "original": [
+              "RTX 5090 32GB + 64GB RAM — Qwen3.8 Flash-Next IQ3_XXS läuft mit 700K Kontext ohne eine einzige Sitzungs-Kompaktierung ... rund 100–120 Tokens/s"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Video Generation / KI-Videogenerierung",
+      "desc": "OpenAI extends Higgsfield from short clips to long-form video with voice.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/higgsfield-longer-videos-voice",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI's Higgsfield video model now generates over 10 minutes of video, up from 1 minute, and adds voice.",
+              "The jump in duration enables long-form AI video, not just short clips."
+            ],
+            "original": [
+              "Higgsfield takes AI video from 1 minute to over 10"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAIs Higgsfield-Videomodell erzeugt jetzt über 10 Minuten Video statt bisher 1 Minute und kann Stimmen hinzufügen.",
+              "Der Sprung in der Dauer ermöglicht langformatige KI-Videos, nicht nur kurze Clips."
+            ],
+            "original": [
+              "Higgsfield bringt KI-Video von 1 Minute auf über 10 Minuten"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Governance & Learning / Agenten-Governance und Lernen",
+      "desc": "GovAI's Alan Chan maps agent monitoring and control, while Ineffable Intelligence proposes a Superlearner architecture.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/governing-ai-agents-alan-chan-of-govai-on-monitoring-agent-ids-rogue-agents-preparing-for-rsi/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Alan Chan (GovAI) outlines governance mechanisms for AI agents: monitoring, unique agent IDs, rogue agent containment, and RSI preparedness.",
+              "The episode focuses on technical controls to detect and constrain autonomous agents before they cause harm."
+            ],
+            "original": [
+              "Governing AI Agents: Alan Chan of GovAI on Monitoring, Agent IDs, Rogue Agents & Preparing for RSI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Alan Chan (GovAI) skizziert Governance-Mechanismen für KI-Agenten: Monitoring, eindeutige Agenten-IDs, Eindämmung abtrünniger Agenten und RSI-Vorbereitung.",
+              "Die Folge konzentriert sich auf technische Kontrollen, um autonome Agenten zu erkennen und einzugrenzen, bevor sie Schaden anrichten."
+            ],
+            "original": [
+              "KI-Agenten regieren: Alan Chan von GovAI über Monitoring, Agenten-IDs, Rogue Agents und Vorbereitung auf RSI"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=L4SWQebqhek",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "David Silver and Lasse Espeholt (Ineffable Intelligence) present a 'Superlearner for the Age of Experience' that learns from experience rather than static datasets.",
+              "The episode explores architectures for agents that improve continuously in real-world tasks."
+            ],
+            "original": [
+              "David Silver and Lasse Espeholt of Ineffable Intelligence: A Superlearner for the Age of Experience"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "David Silver und Lasse Espeholt (Ineffable Intelligence) präsentieren einen 'Superlearner für das Zeitalter der Erfahrung', der aus Erfahrung statt statischen Datensätzen lernt.",
+              "Die Folge untersucht Architekturen für Agenten, die sich kontinuierlich in realen Aufgaben verbessern."
+            ],
+            "original": [
+              "David Silver und Lasse Espeholt von Ineffable Intelligence: Ein Superlearner für das Zeitalter der Erfahrung"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261014113831-cbd52a",
+    "generatedAt": "2026-10-14T11:41:26.501Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 174513,
+    "tokensIn": 1358,
+    "tokensOut": 15417,
+    "estCostUsd": 0.004507,
+    "candidatesIn": 28,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 354928,
+      "preparedChars": 3904,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+      "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+      "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "https://openai.com/index/higgsfield-longer-videos-voice",
+      "https://www.cognitiverevolution.ai/governing-ai-agents-alan-chan-of-govai-on-monitoring-agent-ids-rogue-agents-preparing-for-rsi/",
+      "https://www.youtube.com/watch?v=L4SWQebqhek"
+    ]
+  }
+}

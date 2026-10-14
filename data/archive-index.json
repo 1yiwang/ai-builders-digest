@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-09T13:04:41.547Z",
-  "count": 53,
+  "generatedAt": "2026-10-14T11:41:26.636Z",
+  "count": 54,
   "issues": [
+    {
+      "date": "2026-10-14",
+      "title": "Frontier-Leistung wandert aufs Gerät",
+      "desc": "Googles Gemini 4 Argon trifft auf lokale 700K-Kontexte und On-Device-Agenten.",
+      "href": "./issues/ai-builders-digest-2026-10-14.html",
+      "issue": "Nr. 54"
+    },
     {
       "date": "2026-10-09",
       "title": "GPT-6.1-Sol führt, Saluki schrumpft, Sophos beschleunigt",

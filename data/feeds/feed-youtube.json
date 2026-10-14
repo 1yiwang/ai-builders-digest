@@ -1,7 +1,16 @@
 {
-  "generatedAt": "2026-10-12T15:09:13.858Z",
+  "generatedAt": "2026-10-14T11:38:24.083Z",
   "lookbackHours": 72,
   "videos": [
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
+      "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
+      "publishedAt": "2026-10-13T08:56:12.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The papers are available here:\nhttps://openai.com/index/sharing-ai-progress-in-mathematics/\nhttps://github.com/openai/math\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
     {
       "source": "youtube",
       "name": "Two Minute Papers",
@@ -15,40 +24,58 @@
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why divide and conquer worked for Spain — Si Sheppard",
+      "title": "Why horses terrified the Aztecs — Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=eGlRIz6paTg",
+      "publishedAt": "2026-10-13T21:08:55.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Was Spanish technology really that superior? — Si Sheppard",
+      "url": "https://www.youtube.com/watch?v=RfouV2TYbCo",
+      "publishedAt": "2026-10-12T18:30:26.000Z",
+      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why the Aztecs couldn’t divide the Spanish — Si Sheppard",
       "url": "https://www.youtube.com/watch?v=ybw4AluWjas",
       "publishedAt": "2026-10-11T18:30:33.000Z",
       "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why the conquistadors thought they could win — Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=3ZmX6Kog8sQ",
-      "publishedAt": "2026-10-10T18:30:08.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why the Aztecs were doomed - Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=W5AzhHqawpU",
-      "publishedAt": "2026-10-09T20:51:53.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Robots That Predict the Future: Dyna-2 &amp; Physical AI — Jason Ma, Dyna Robotics",
+      "url": "https://www.youtube.com/watch?v=BHiYomkfoGQ",
+      "publishedAt": "2026-10-13T17:42:33.000Z",
+      "description": "From training a world-action model on over one million hours of human video to deploying robots that fold thousands of napkins daily at Din Tai Fung, Dyna Robotics is pushing physical AI beyond impressive demos and into real-world production. In this episode, Dyna Robotics co-founder and Chief Scientist Jason Ma joins swyx on-site to unpack how robots can learn new tasks from as little as 45 minutes of demonstrations, why predicting the future of the physical world may be the key to general-purpose robotics, and what it actually takes to build robots that work reliably for real customers.\n\nWe go deep on Dyna-2, Dyna's million-hour world-action model that combines future video prediction with robot actions, the scaling laws behind human-to-robot transfer, diffusion transformers and flow matching, and why synthetic environments and self-generated training data could unlock the next wave of robotics progress. Jason also explains why Dyna builds its own hardware instead of relying on off-the-shelf humanoids, how agentic harnesses enable robots to execute hour-long workflows, why dexterous hands and missing sensory data remain major bottlenecks, and what separates real commercial deployments from the graveyard of robotics startups. We also cover world-action models versus vision-language-action models, GPT-6 and coding agents in robotics, and Jason's journey from AlphaGo and Penn to NVIDIA, Google DeepMind, and founding Dyna.\n\nWe discuss:\n- Why Dyna-2 was trained on over one million hours of human video\n- World-action models: predicting future video to guide physical robot actions\n- Diffusion transformers, flow matching, and real-time robotic control\n- How robots learn new tasks with as little as 45 minutes of demonstrations\n- Why robotics has no equivalent of the internet and data remains its biggest scaling challenge\n- Human egocentric video, robot demonstrations, and cross-embodiment transfer\n- Synthetic environments, simulation, and models that generate their own training data\n- Why robots need on-device inference, model distillation, and custom hardware\n- Why Dyna chose wheeled semi-humanoids instead of traditional bipedal robots\n- The hardware bottleneck: why dexterous robot hands still overheat\n- Best Western, Din Tai Fung, and the difference between robotics pilots and scaled deployments\n- The Bitter Lesson of Robotics: scaling data instead of engineering specialized solutions\n- Agentic harnesses and robots executing multi-step, hour-long physical workflows\n- GPT-6, coding agents, and AI-generated simulation environments for robotics research\n- World-action models versus VLAs, and why vision alone may not be enough\n- Jason's journey through AlphaGo, Penn, NVIDIA, Google DeepMind, and the Eureka project\n- Dyna's research culture, deployment-first philosophy, and vision for millions of robots\n\n---\nSponsorship and business inquiries: business@latent.space\n---\n\nJason Ma\n- LinkedIn: https://www.linkedin.com/in/jason-ma-742224a2/\n- X: https://x.com/JasonMa2020\n\nDyna Robotics\n- Website: https://www.dyna.co/\n- X: https://x.com/DynaRobotics\n\nTimestamps\n00:00:00 Hook\n00:01:56 Introduction and Dyna-2's World-Action Model\n00:05:04 Diffusion Transformers, Flow Matching, and Generalist Robots\n00:10:15 The Robotics Data Bottleneck\n00:15:46 Synthetic Data and Self-Improving World Models\n00:18:47 Real-Time Inference and Model Distillation\n00:21:41 Full-Stack Robotics: Hardware and Supply Chains\n00:26:58 Why Dyna Built a Wheeled Semi-Humanoid\n00:31:31 Teaching Robots New Tasks and Evaluating Performance\n00:33:55 Autonomous Workflows and Hardware Limitations\n00:38:02 Real-World Deployments at Best Western and Din Tai Fung\n00:43:03 The Bitter Lesson of Robotics\n00:48:09 Agentic Harnesses for Physical AI\n00:51:03 GPT-6, Coding Agents, and AI-Native Robotics\n00:53:58 World-Action Models vs. VLAs\n01:01:13 From AlphaGo to Founding Dyna Robotics\n01:06:16 Dyna's Research Culture and the Future of Robotics"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Why AlphaFold Didn't Solve Protein Folding — Pushmeet Kohli, Google DeepMind &amp; Sal Candido, Biohub",
-      "url": "https://www.youtube.com/watch?v=NufiHZfMwaw",
-      "publishedAt": "2026-10-10T00:30:41.000Z",
-      "description": "From the Bitter Lesson of AI scaling to the unsolved mysteries of protein folding, Google DeepMind’s Pushmeet Kohli and Biohub’s Sal Candido are rethinking what it takes to build AI that truly understands biology. In this special panel moderated by Brandon Anderson, they explore why AlphaFold’s breakthrough was only the beginning, why scaling compute and data alone won't solve biology, and how the next generation of AI models could transform our understanding of proteins, cells, and human disease.\n\nWe go deep on the future of AI-driven biology: finding scaling laws in biological data, the tradeoffs between scientific intuition and general-purpose architectures, why protein structure prediction is far from solved, and what it would take to build predictive models of living systems. Pushmeet reflects on the lessons behind AlphaFold, the limits of human interpretability, and whether future frontier models could understand other AI systems better than we can. Sal explains why protein language models may already contain scientific knowledge we haven't unlocked, how biological modeling must move beyond individual proteins, and why achieving Biohub's mission to cure all disease requires thinking in terms of 10x breakthroughs rather than incremental improvements.\n\nWe discuss:\n• The Bitter Lesson for biology: why scaling compute and data isn't enough\n• Why finding the right scaling law matters more than blindly increasing model size\n• How low-quality metagenomic data can improve protein language models\n• Why AI researchers optimize for available data instead of the most important scientific problems\n• Lessons from DeepMind on balancing modeling, data generation, and scientific expertise\n• Why building a virtual cell requires fundamentally different datasets\n• AlphaFold's handcrafted architecture and the role of scientific intuition\n• Why good data matters more than simply having more data\n• Inductive biases, scaling laws, and the future of specialized AI architectures\n• Why we aren't in a post-Transformer world, but architectures are evolving\n• Why AlphaFold didn't actually solve all of protein folding\n• Protein dynamics, disorder, and the limitations of static structure prediction\n• How cryo-EM micrographs could unlock richer biological representations\n• Moving from models of individual proteins to models of entire biological systems\n• Feynman's famous principle and why AI can now create things we don't understand\n• The hidden biological knowledge inside protein language models\n• Why model trustworthiness and uncertainty calibration matter more than full interpretability\n• Whether future frontier AI models could interpret other AI systems better than humans\n• When AI could deliver 10x–100x acceleration in drug discovery\n• Why curing all disease requires thinking about 10x breakthroughs instead of 10% improvements\n\n—\n\nPushmeet Kohli — Google DeepMind\n• X: https://x.com/pushmeet\n\nSal Candido — Biohub\n• Biohub: https://biohub.org/team/salvatore-candido/\n\nBrandon Anderson — Moderator\n• LinkedIn: https://www.linkedin.com/in/brandon--anderson\n\nTimestamps\n00:00:00 Hook: AlphaFold Hasn't Solved All of Protein Folding\n00:00:50 Introduction: The Bitter Lesson for Biological Data\n00:01:45 Finding Scaling Laws and the Right Data for Biology\n00:05:36 DeepMind's Bitter Lesson: Start with the Problem\n00:07:41 AlphaFold's Data Limits and Building the Virtual Cell\n00:10:40 Handcrafted Architectures vs. Scaling Compute\n00:12:34 Good Data, Inductive Bias, and Model Design\n00:14:26 Beyond Transformers: Evolving AI Architectures\n00:15:21 AlphaFold's Limits: Structure, Function, and Dynamics\n00:18:24 Cryo-EM and the Next Protein Breakthrough\n00:19:53 From Individual Proteins to Whole Biological Systems\n00:21:28 Feynman's Principle: Creating Without Understanding\n00:23:14 The Hidden Knowledge Inside Protein Language Models\n00:24:34 AlphaFold: Confidence, Trustworthiness, and Interpretability\n00:26:40 Could AI Understand Other Models Better Than Humans?\n00:28:32 When Will AI Transform Drug Discovery and Reach the Clinic?\n00:31:18 Curing All Disease: Why Biology Needs 10x Breakthroughs"
+      "title": "How to kill your SaaS: what we learned replacing a $43K/yr tool with AI agents",
+      "url": "https://www.youtube.com/watch?v=zlD-CkLVKtU",
+      "publishedAt": "2026-10-13T17:31:32.000Z",
+      "description": "A SaaS vendor quoted us $43,000 a year to run speakers for my @AIdotEngineer conferences. That would be fine if it delivered the qualitySo we asked builders to clone it with coding agents, open source, eval by the people who'd actually use it: our human events team.\n\n72 teams submitted. This is what we learned: how the best builders split work between Claude Code and Codex, why our own AI judge ranked the winner 19th, the three things almost every clone got wrong, and why owning software is a different job from building it.\n\nWinners \n🥇 $10,000: Valentin De Matos, OpenRostrum: https://openrostrum.com · https://github.com/openrostrum/openrostrum \n🥈 $5,000: Yazin, Conferencer: https://conferencer.cc · https://github.com/yazinsai/conferencer \n🥉 $1,000: Marko Kraemer, Trackstage: https://trackstage.app · https://github.com/markokraemer/trackstage\n\nValentin's agent guardrails template: https://github.com/Thytu/agent-rules \nHarness Engineering 101: https://thytu.com/posts/harness-engineering \nFull report: https://kms.latent.space\n\nWant to sponsor the next Kill My SaaS? Reach out: business@latent.space\n\nChapters \n0:00 Cold open: is SaaS dead? \n0:54 Why we tried to kill a $43k SaaS \n2:57 Why this software is hard \n4:41 The brief and the rules \n5:12 What the operator saw \n7:31 The AI judge \n10:38 How they built it \n17:20 How you know it works \n20:41 What's still hard \n23:46 Results and winners \n25:52 The real trade: own vs rent \n26:43 Thanks, and what's next\n\nThanks to all Submissions: https://abstract-sync.lovable.app https://callboard.eddyudotong.workers.dev https://callboardhq.com https://chartstead.com https://chautauqua.cc https://conference-engine.65labs.org https://conferencer.cc https://confpilot.com https://curtaincallcfp.com https://eventloom.namuh.co https://gatherpulse.xyz https://greenroom-hq.com https://greenroom.greenroom.workers.dev https://greenroom.kwan765.workers.dev https://greenroom.usespaces.dev https://greenroomplanner.com https://killmysaas.greenroom-events.workers.dev https://lectern.lectern-go7.workers.dev https://marquee.stage11.dev https://namos-sessions.xyz https://onfireside.com https://openboard.alexlazar.dev https://opencallboard.com https://openevents.engineer https://opensession.dev https://opensession.opensession.workers.dev https://openspeaker-kms.premhiru.chatgpt.site https://program-desk.ian-208.workers.dev https://programcue.com https://programloom.com https://project-greenroom-api.adityak6798.workers.dev https://ruckus.to https://session.drawset.com https://sessionbuddy-development.shiny-cloud-dd47.workers.dev https://sessioncanvas.dev https://sessionparty.com https://speakerops.org https://speakerweave.com https://stagecraft.ai-c24.workers.dev https://superstage.alizaidkhoso.workers.dev https://unsession.dev https://untitledconference.com https://vibeboard.io\n\n\nMusic: King Canyon, &quot;Ice &amp; Fire&quot; ft. Son Little.\n\nSponsorship and business inquiries: business@latent.space"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "High Taste Testers: DevDay Edition",
+      "url": "https://www.youtube.com/watch?v=sRBpc624dGk",
+      "publishedAt": "2026-10-12T15:26:32.000Z",
+      "description": "a pilot for our new talk show featuring your favorite opinionmakers and leaders in AI!\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 8
   }
 }
