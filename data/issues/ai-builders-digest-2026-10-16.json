@@ -1,0 +1,212 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-16",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic meldete Investoren fast 50 Prozent Umsatzwachstum auf 16,8 Milliarden Dollar vor dem Börsengang. Parallel wurde Modal mit einer 16-Milliarden-Dollar-Serie-D zum New Yorker KI-Infrastruktur-Decacorn. Meta und Black Forest Labs verschärfen mit Muse Spark Open und FLUX 3 Image Klein die Open-Weight-Konkurrenz. Die Frage ist, ob offene Modelle die steigenden Infrastrukturkosten für mehr Entwickler tragbar machen."
+  },
+  "archive": {
+    "title": "Milliarden-Deals und offene Modelle",
+    "desc": "Anthropic meldet Rekordumsatz vor dem Börsengang, Modal wird Decacorn, und offene Modelle von Meta, Black Forest Labs und Hugging Face senken Hürden."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-16.",
+  "sections": [
+    {
+      "title": "Revenue and Funding Scale / Umsatz- und Finanzierungsmaßstab",
+      "desc": "Anthropic's pre-IPO revenue jump and Modal's infrastructure funding both signal capital rushing into AI scale.",
+      "cards": [
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic told investors quarterly revenue rose nearly 50% to $16.8bn ahead of its IPO.",
+              "The update signals accelerating commercial traction as Anthropic prepares to go public."
+            ],
+            "original": [
+              "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic meldete Investoren ein Quartalswachstum von fast 50 % auf 16,8 Mrd. US-Dollar vor dem Börsengang.",
+              "Das Update zeigt die wachsende kommerzielle Dynamik, während Anthropic den IPO vorbereitet."
+            ],
+            "original": [
+              "Anthropic meldet Investoren ein Umsatzplus von fast 50 % auf 16,8 Mrd. Dollar vor dem Börsengang."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Modal reached $1B ARR and raised a $16B Series D, becoming NYC's newest AI infra decacorn.",
+              "Usage and valuation tripled in 5 months and grew 15x in one year."
+            ],
+            "original": [
+              "Modal’s $1B ARR, $16B Series D makes it NYC’s newest AI Infra Decacorn, 3x usage and 3x valuation in 5 months, 15x in 1 yr"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Modal erreichte 1 Mrd. US-Dollar ARR und sammelte 16 Mrd. US-Dollar in einer Series D ein – New Yorks neuestes KI-Infrastruktur-Decacorn.",
+              "Nutzung und Bewertung verdreifachten sich in fünf Monaten und wuchsen innerhalb eines Jahres um das 15-Fache."
+            ],
+            "original": [
+              "Modal erreicht 1 Mrd. Dollar ARR, 16 Mrd. Dollar Series D – New Yorks neuestes KI-Infra-Decacorn, 3x Nutzung und 3x Bewertung in 5 Monaten, 15x in 1 Jahr."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model Leaderboard Shift / Verschiebung im Modell-Leaderboard",
+      "desc": "Latent Space's leaderboard benchmarks show new GPT-6 Astra dominance and cost-efficient Opus 5.5.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Latent Space's leaderboard shows GPT-6 Astra at 69, ahead of GPT-6.1 Sol 65 and Argon 55.",
+              "Opus 5.5 scores 2.30x the expert baseline at roughly 1/30 of expert cost, leading cost-adjusted performance."
+            ],
+            "original": [
+              "GPT-6 Astra scores 69, GPT-6.1 Sol 65, Argon 55, Opus 5.5 49 and Fable 5.1 46. Leader : Opus 5.5 sits at 2.30x the expert baseline, at roughly 1/30 of expert cost."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Das Latent-Space-Leaderboard führt GPT-6 Astra mit 69 Punkten, vor GPT-6.1 Sol (65) und Argon (55).",
+              "Opus 5.5 erreicht das 2,30-Fache der Experten-Baseline zu etwa 1/30 der Expertenkosten und führt bei der Kosten-Effizienz."
+            ],
+            "original": [
+              "GPT-6 Astra erreicht 69, GPT-6.1 Sol 65, Argon 55, Opus 5.5 49 und Fable 5.1 46. Spitzenreiter: Opus 5.5 liegt beim 2,30-Fachen der Experten-Baseline, zu etwa 1/30 der Expertenkosten."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Open Weights Everywhere / Offene Gewichte überall",
+      "desc": "Open-weight releases span language, multimodal, and image models, lowering barriers for developers.",
+      "cards": [
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "NVIDIA and Hugging Face published an open Indic pretraining pipeline using 2.8 trillion tokens.",
+              "The project includes an open data generation pipeline for low-resource Indic languages."
+            ],
+            "original": [
+              "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIA und Hugging Face veröffentlichten eine offene Indic-Pretraining-Pipeline mit 2,8 Billionen Token.",
+              "Das Projekt umfasst eine offene Datengenerierungs-Pipeline für ressourcenarme indische Sprachen."
+            ],
+            "original": [
+              "Indic-Pretraining skalieren: 2,8 Billionen Token und eine offene Pipeline zur Datengenerierung."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Meta released Muse Spark Open, an open-weight model positioned against Qwen, GLM, and Kimi.",
+              "The release heats up the open-weight competition among major language model providers."
+            ],
+            "original": [
+              "Muse Spark Open is Meta's answer to Qwen, GLM, and Kimi in the open-weight race"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Meta veröffentlichte Muse Spark Open, ein Open-Weight-Modell als Antwort auf Qwen, GLM und Kimi.",
+              "Der Launch verschärft den Wettbewerb um offene Gewichte unter den großen Sprachmodell-Anbietern."
+            ],
+            "original": [
+              "Muse Spark Open ist Metas Antwort auf Qwen, GLM und Kimi im Rennen um offene Gewichte."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Black Forest Labs released FLUX 3 Image Klein, an open-weights image model running on 8 GB of VRAM.",
+              "The model brings consumer-GPU image generation to open weights, lowering hardware barriers."
+            ],
+            "original": [
+              "Black Forest Labs' open-weights image model FLUX 3 Image Klein runs on consumer GPUs with just 8 GB of VRAM"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Black Forest Labs veröffentlichte FLUX 3 Image Klein, ein Open-Weight-Bildmodell, das mit 8 GB VRAM läuft.",
+              "Das Modell senkt die Hardware-Hürde für Bildgenerierung auf Consumer-GPUs."
+            ],
+            "original": [
+              "Black Forest Labs' Open-Weight-Bildmodell FLUX 3 Image Klein läuft auf Consumer-GPUs mit nur 8 GB VRAM."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261016111131-c7a6f4",
+    "generatedAt": "2026-10-16T11:14:27.018Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 175334,
+    "tokensIn": 1420,
+    "tokensOut": 14926,
+    "estCostUsd": 0.004378,
+    "candidatesIn": 32,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 122810,
+      "preparedChars": 3987,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d",
+      "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/",
+      "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/"
+    ]
+  }
+}

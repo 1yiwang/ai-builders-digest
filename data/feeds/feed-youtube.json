@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-10-14T11:38:24.083Z",
+  "generatedAt": "2026-10-16T11:11:26.623Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
-      "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
-      "publishedAt": "2026-10-13T08:56:12.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The papers are available here:\nhttps://openai.com/index/sharing-ai-progress-in-mathematics/\nhttps://github.com/openai/math\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "The War Russia Should Never Have Fought",
+      "url": "https://www.youtube.com/watch?v=8lFFJA1ScZU",
+      "publishedAt": "2026-10-15T20:36:18.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=f6cjAEr08qk\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "DeepSeek Solved AI’s Memory Problem",
-      "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
-      "publishedAt": "2026-10-11T16:53:17.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "How a Small War Becomes a World War - Sarah Paine",
+      "url": "https://www.youtube.com/watch?v=O3-gGygBy3w",
+      "publishedAt": "2026-10-14T21:50:12.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=f6cjAEr08qk\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -31,21 +31,12 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Was Spanish technology really that superior? — Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=RfouV2TYbCo",
-      "publishedAt": "2026-10-12T18:30:26.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why the Aztecs couldn’t divide the Spanish — Si Sheppard",
-      "url": "https://www.youtube.com/watch?v=ybw4AluWjas",
-      "publishedAt": "2026-10-11T18:30:33.000Z",
-      "description": "Full episode: https://youtu.be/LwQQ7nBCGSs\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "From Wet Lab to RL Env: 10,000 Drug-Discovery Campaigns in a Weekend — Ian Quigley, Leash Bio",
+      "url": "https://www.youtube.com/watch?v=hQSBJVreLms",
+      "publishedAt": "2026-10-14T20:34:51.000Z",
+      "description": "From a four-billion-measurement Kaggle competition to models that recognize a molecule’s chemist, Leash Bio is testing what AI actually learns about chemistry. Co-founder and CEO Ian Quigley joins Brandon Anderson and RJ Honicky to explain how Leash makes DNA-encoded libraries (DELs) produce clean, reproducible protein–small-molecule binding data—and why collecting the right experiments matters as much as choosing a model.\n\nWe go deep on hidden shortcuts in public datasets, Hermes’ comparison with Boltz, and the protein mutations that expose memorization. Ian explains how Leash’s measured chemical landscapes can become a sandbox for reasoning agents, with rapid experimental feedback and thousands of medicinal chemistry campaigns. We also examine the limits of DELs, moving hits toward medicines, the economics of AI drug discovery, and the experimental bottlenecks that still need solving.\n\nWe discuss:\n• How DNA-encoded libraries use barcodes and sequencing to screen millions of molecules\n• Catching DNA-binding artifacts with multiple barcodes per molecule\n• Why Leash prioritizes reproducible measurements across many protein targets\n• The BELKA Kaggle competition: four billion measurements, around 2,000 teams, and no better than chance on an unseen chemical library\n• Clever Hans in ChEMBL: learning who made a molecule instead of the chemistry\n• Hermes, simple baselines, careful data splits, and comparisons with Boltz\n• Activity cliffs, engineered protein mutations, and models that memorize protein “nicknames”\n• Agents reasoning about structure–activity relationships in plain English\n• More than 10,000 medicinal chemistry campaigns in a weekend\n• Going from DEL hits to mouse PK/PD, and the case for pills on difficult targets\n• The Kosuri paradox: if you can collect the data, why do you need the model?\n• Experimental know-how, detecting misfolded proteins, and scaling purification\n\n—\n\nShow Notes: https://www.latent.space/publish/post/220316507\n\nIan Quigley — Leash Bio\n• LinkedIn: https://www.linkedin.com/in/iquigley/\n• Leash Bio: https://leash.bio/\n• Leash blog: https://leashbio.substack.com/\n\nRelated Minos release\n• Blog: https://leashbio.substack.com/p/making-reality-replayable\n• Preprint: https://github.com/Leash-Labs/minos-paper/blob/trunk/Minos_Leash.pdf\n• Data and environments: https://strelka.leash.bio/\n\nTimestamps\n\n0:00 Hook: Learning the Chemist, Not the Chemistry\n1:22 Introduction: Ian Quigley and Leash Bio\n2:40 How DNA-Encoded Libraries Work\n5:25 Sequencing as a Scalable Biological Readout\n9:14 Barcodes, Controls, and DNA-Binding False Positives\n11:51 DNA Tags, Off-DNA Validation, and Reproducibility\n15:24 Why Leash’s DEL Strategy Works\n19:19 The Recursion Mafia and Experimental Rigor\n20:51 Why Small-Molecule Drug Discovery Matters\n26:22 Screening Scale and Four Billion Measurements from a Basement\n28:21 BELKA: Designing the Kaggle Competition and Hidden Evaluations\n32:32 What the Kaggle Results Taught Leash\n35:44 Better Data: Protein Diversity, Library Size, and Noise\n40:15 Hermes: Simple Architecture and Rigorous Evaluation\n46:24 Clever Hans: Predicting a Molecule’s Chemist\n55:50 Testing Hermes on External Data and Comparing with Boltz\n59:07 Activity Cliffs and Breaking Protein Binding Pockets\n1:07:12 Reading the Mutant-Screen Results\n1:11:36 Catching Hermes Memorizing Protein “Nicknames”\n1:15:47 Language Models and a Scientific Reasoning Sandbox\n1:21:27 Running 10,000 Medicinal Chemistry Campaigns in a Weekend\n1:24:08 Chemical-Space Coverage and DEL Limitations\n1:26:00 Hard Questions: Generalization and Drug-Like Chemistry\n1:28:36 From DEL Hits to Mouse PK/PD in Six Months\n1:32:51 Drug-Discovery Economics and Pills vs. Antibodies\n1:36:32 The Kosuri Paradox: Why Build a Model If You Can Screen?\n1:40:38 Chemical-Space Generalization and Predicting Potency\n1:42:58 What Stops a Better-Funded Lab from Outscaling Leash?\n1:44:48 Lumacaftor-Like Hits as a Misfolded-Protein Detector\n1:47:01 Removing Bottlenecks: Sequencing and Parallel Purification\n1:49:14 Final Takeaways and Working with Leash\n\nSponsorship and business inquiries: business@latent.space"
     },
     {
       "source": "youtube",
@@ -64,18 +55,9 @@
       "url": "https://www.youtube.com/watch?v=zlD-CkLVKtU",
       "publishedAt": "2026-10-13T17:31:32.000Z",
       "description": "A SaaS vendor quoted us $43,000 a year to run speakers for my @AIdotEngineer conferences. That would be fine if it delivered the qualitySo we asked builders to clone it with coding agents, open source, eval by the people who'd actually use it: our human events team.\n\n72 teams submitted. This is what we learned: how the best builders split work between Claude Code and Codex, why our own AI judge ranked the winner 19th, the three things almost every clone got wrong, and why owning software is a different job from building it.\n\nWinners \n🥇 $10,000: Valentin De Matos, OpenRostrum: https://openrostrum.com · https://github.com/openrostrum/openrostrum \n🥈 $5,000: Yazin, Conferencer: https://conferencer.cc · https://github.com/yazinsai/conferencer \n🥉 $1,000: Marko Kraemer, Trackstage: https://trackstage.app · https://github.com/markokraemer/trackstage\n\nValentin's agent guardrails template: https://github.com/Thytu/agent-rules \nHarness Engineering 101: https://thytu.com/posts/harness-engineering \nFull report: https://kms.latent.space\n\nWant to sponsor the next Kill My SaaS? Reach out: business@latent.space\n\nChapters \n0:00 Cold open: is SaaS dead? \n0:54 Why we tried to kill a $43k SaaS \n2:57 Why this software is hard \n4:41 The brief and the rules \n5:12 What the operator saw \n7:31 The AI judge \n10:38 How they built it \n17:20 How you know it works \n20:41 What's still hard \n23:46 Results and winners \n25:52 The real trade: own vs rent \n26:43 Thanks, and what's next\n\nThanks to all Submissions: https://abstract-sync.lovable.app https://callboard.eddyudotong.workers.dev https://callboardhq.com https://chartstead.com https://chautauqua.cc https://conference-engine.65labs.org https://conferencer.cc https://confpilot.com https://curtaincallcfp.com https://eventloom.namuh.co https://gatherpulse.xyz https://greenroom-hq.com https://greenroom.greenroom.workers.dev https://greenroom.kwan765.workers.dev https://greenroom.usespaces.dev https://greenroomplanner.com https://killmysaas.greenroom-events.workers.dev https://lectern.lectern-go7.workers.dev https://marquee.stage11.dev https://namos-sessions.xyz https://onfireside.com https://openboard.alexlazar.dev https://opencallboard.com https://openevents.engineer https://opensession.dev https://opensession.opensession.workers.dev https://openspeaker-kms.premhiru.chatgpt.site https://program-desk.ian-208.workers.dev https://programcue.com https://programloom.com https://project-greenroom-api.adityak6798.workers.dev https://ruckus.to https://session.drawset.com https://sessionbuddy-development.shiny-cloud-dd47.workers.dev https://sessioncanvas.dev https://sessionparty.com https://speakerops.org https://speakerweave.com https://stagecraft.ai-c24.workers.dev https://superstage.alizaidkhoso.workers.dev https://unsession.dev https://untitledconference.com https://vibeboard.io\n\n\nMusic: King Canyon, &quot;Ice &amp; Fire&quot; ft. Son Little.\n\nSponsorship and business inquiries: business@latent.space"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "High Taste Testers: DevDay Edition",
-      "url": "https://www.youtube.com/watch?v=sRBpc624dGk",
-      "publishedAt": "2026-10-12T15:26:32.000Z",
-      "description": "a pilot for our new talk show featuring your favorite opinionmakers and leaders in AI!\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 8
+    "youtubeVideos": 6
   }
 }
