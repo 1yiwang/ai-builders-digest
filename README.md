@@ -123,3 +123,7 @@ Public RSS/Atom first (Hugging Face, OpenAI, Simon Willison, The Decoder, TechCr
 ## Status
 
 Shipped: 72h full-window feeds (prior-issue URL gate, not seen-since-last-run), density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings, gold shortlist regression, source-health JSONL, run ledger, evidence-aware preprocessing, duplicate gold fixtures, prompt fingerprint, Docker CLI runtime, and PR CI checks.
+
+## License
+
+[MIT](LICENSE)
