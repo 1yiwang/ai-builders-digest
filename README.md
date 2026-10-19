@@ -1,6 +1,6 @@
 # AI Builders Digest
 
-A bilingual (EN/DE) magazine generated three times a week from public AI-builder feeds. Live site: [1yiwang.github.io/ai-builders-digest](https://1yiwang.github.io/ai-builders-digest/). Latest issue: [2026-08-17](https://1yiwang.github.io/ai-builders-digest/issues/ai-builders-digest-2026-08-17.html).
+A bilingual (EN/DE) magazine generated three times a week from public AI-builder feeds. Live site: [1yiwang.github.io/ai-builders-digest](https://1yiwang.github.io/ai-builders-digest/). Latest issue: [2026-10-19](https://1yiwang.github.io/ai-builders-digest/issues/ai-builders-digest-2026-10-19.html).
 
 The interesting part is not the HTML. It is a **scheduled LLM ETL pipeline**: rule-based intake, evidence-aware preprocessing, one structured LLM call, schema repair, source-health telemetry, and Git as the datastore.
 
