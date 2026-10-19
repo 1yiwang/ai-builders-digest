@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-16T11:14:27.134Z",
-  "count": 55,
+  "generatedAt": "2026-10-19T12:54:58.790Z",
+  "count": 56,
   "issues": [
+    {
+      "date": "2026-10-19",
+      "title": "Fünf Prozent Gemeinwohl, 600B für Agenten",
+      "desc": "Anthropic bindet Anteile an öffentliche Zwecke, Stripe sieht Agentenkäufe wachsen, und StepFun bringt ein 600B-MoE-Modell.",
+      "href": "./issues/ai-builders-digest-2026-10-19.html",
+      "issue": "Nr. 56"
+    },
     {
       "date": "2026-10-16",
       "title": "Milliarden-Deals und offene Modelle",

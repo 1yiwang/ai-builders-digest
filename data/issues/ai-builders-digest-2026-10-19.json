@@ -1,0 +1,213 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-19",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Anthropic kündigte an, fünf Prozent seiner Anteile in einen Public-Benefit-Fonds zu überführen. Währenddessen meldet Stripe wachsende Käufe durch KI-Agenten, nennt aber keine Zahlen. StepFun veröffentlichte ein 600B-Sparse-MoE-Modell mit bis zu einer Million Token Kontext. Gemeinsam zeigen diese Meldungen, wie sich Kapital, Governance und Modellkapazität im Agentenzeitalter neu ordnen."
+  },
+  "archive": {
+    "title": "Fünf Prozent Gemeinwohl, 600B für Agenten",
+    "desc": "Anthropic bindet Anteile an öffentliche Zwecke, Stripe sieht Agentenkäufe wachsen, und StepFun bringt ein 600B-MoE-Modell."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-19.",
+  "sections": [
+    {
+      "title": "Frontier Governance & Strategy / Frontier-Governance & Strategie",
+      "desc": "Anthropic's public benefit equity move and Meta's dual open/closed frontier strategy show labs reconfiguring how they share and govern advanced models.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic is committing 5% of its shares to a public benefit fund, TechCrunch reports.",
+              "The move binds equity to public-interest goals rather than leaving governance to ordinary shareholder primacy."
+            ],
+            "original": [
+              "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic überführt 5 Prozent seiner Anteile in einen Public-Benefit-Fonds, berichtet TechCrunch.",
+              "Damit bindet das Unternehmen Eigenkapital an gemeinwohlorientierte Ziele statt an reine Aktionärslogik."
+            ],
+            "original": [
+              "Anthropic sagt, es überführt 5 Prozent seiner Anteile in einen 'Public-Benefit-Fonds'."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Interconnects",
+          "sourceName": "Interconnects",
+          "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Meta is reshaping its frontier model strategy across both open and closed tracks, Interconnects reports.",
+              "The piece examines how dual-track releases alter competition among frontier labs."
+            ],
+            "original": [
+              "Meta shakes up the frontiers, open and closed"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Meta stellt laut Interconnects seine Frontier-Strategie auf offene und geschlossene Modelle um.",
+              "Der Beitrag analysiert, wie diese Doppelstrategie den Wettbewerb der Frontier-Labs verändert."
+            ],
+            "original": [
+              "Meta rüttelt an den Frontiers – offen und geschlossen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Economy & Compute Risk / Agentenökonomie & Compute-Risiko",
+      "desc": "Stripe's agent-purchase signal and The Decoder's neocloud analysis both point to an AI economy where demand is real but unevenly distributed.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "A neocloud shakeout is coming, and Nvidia has the most to lose, The Decoder reports.",
+              "The analysis ties overbuilt AI cloud capacity to concentrated chip-demand risk."
+            ],
+            "original": [
+              "The neocloud shakeout is coming, and Nvidia has the most to lose"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Laut The Decoder steht ein Neocloud-Shakeout bevor, und Nvidia hat am meisten zu verlieren.",
+              "Die Analyse verknüpft überbaute KI-Cloud-Kapazität mit konzentriertem Chipnachfrage-Risiko."
+            ],
+            "original": [
+              "Der Neocloud-Shakeout kommt, und Nvidia hat am meisten zu verlieren."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Stripe says AI agent purchases are adding up, but declines to share exact figures, The Decoder reports.",
+              "The statement confirms agent-driven commerce is measurable, even without public transaction numbers."
+            ],
+            "original": [
+              "Stripe says AI agent purchases are adding up, but it won't share the numbers"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Stripe meldet wachsende KI-Agenten-Käufe, nennt aber keine konkreten Zahlen, so The Decoder.",
+              "Die Aussage bestätigt messbaren Agenten-Commerce, obwohl Stripe keine öffentlichen Transaktionszahlen liefert."
+            ],
+            "original": [
+              "Stripe sagt, KI-Agenten-Käufe summieren sich, nennt aber keine Zahlen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Open Models & Tooling Releases / Offene Modelle & Tooling-Releases",
+      "desc": "StepFun's 600B sparse MoE launch and Simon Willison's Datasette LLM plugin highlight the incremental build-out of open agent infrastructure.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "StepFun released Step-5-Preview-BF16, a sparse MoE model with 600B total / 27B active parameters for agentic workloads.",
+              "The model supports up to 1M token context/output and text+image input, targeting long-horizon agent tasks."
+            ],
+            "original": [
+              "StepFun released Step-5-Preview-BF16, a sparse MoE flagship model for agentic workloads with 600B total / 27B active parameters, up to 1M token context/output, text+image input, and text output."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "StepFun hat Step-5-Preview-BF16 veröffentlicht: ein Sparse-MoE-Modell mit 600B Gesamt-/27B aktiven Parametern für Agenten-Workloads.",
+              "Das Modell unterstützt bis zu 1M Token Kontext/Ausgabe sowie Text+Bild-Eingabe für lange Agentenaufgaben."
+            ],
+            "original": [
+              "StepFun veröffentlichte Step-5-Preview-BF16, ein Sparse-MoE-Flaggschiffmodell für agentische Workloads mit 600B Gesamt-/27B aktiven Parametern, bis zu 1M Token Kontext/Ausgabe, Text+Bild-Eingabe und Text-Ausgabe."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Simon Willison shipped llm-tools-datasette 0.1.1, a Datasette plugin for LLM tool workflows.",
+              "The release is part of his llm plugin ecosystem for querying and tooling."
+            ],
+            "original": [
+              "Release: llm-tools-datasette 0.1.1"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison hat llm-tools-datasette 0.1.1 veröffentlicht, ein Datasette-Plugin für LLM-Tool-Workflows.",
+              "Das Release gehört zu seinem llm-Plugin-Ökosystem für Abfragen und Tooling."
+            ],
+            "original": [
+              "Veröffentlichung: llm-tools-datasette 0.1.1"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261019125239-21e573",
+    "generatedAt": "2026-10-19T12:54:58.654Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 138949,
+    "tokensIn": 1367,
+    "tokensOut": 13228,
+    "estCostUsd": 0.003895,
+    "candidatesIn": 17,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 123643,
+      "preparedChars": 3834,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "https://the-decoder.com/the-neocloud-shakeout-is-coming-and-nvidia-has-the-most-to-lose/",
+      "https://the-decoder.com/stripe-says-ai-agent-purchases-are-adding-up-but-it-wont-share-the-numbers/",
+      "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+      "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/"
+    ]
+  }
+}
