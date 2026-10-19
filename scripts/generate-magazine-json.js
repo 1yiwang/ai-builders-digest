@@ -25,13 +25,8 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 const DATA_ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const DEBUG_DIR = path.join(REPO_ROOT, 'data', 'debug');
 const RUN_LEDGER_PATH = path.join(REPO_ROOT, 'data', 'eval', 'run-ledger.jsonl');
-const PROMPT_PATH_REPO = path.join(REPO_ROOT, 'config', 'prompt.md');
-const PROMPT_PATH_LOCAL = path.join(require('os').homedir(), '.follow-builders', 'prompts', 'build-magazine-json.md');
-const PROMPT_PATH = fs.existsSync(PROMPT_PATH_REPO) ? PROMPT_PATH_REPO : PROMPT_PATH_LOCAL;
+const PROMPT_PATH = path.join(REPO_ROOT, 'config', 'prompt.md');
 
-const FEED_X_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json';
-const FEED_PODCASTS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json';
-const FEED_BLOGS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json';
 const LOCAL_FEED_X = path.join(REPO_ROOT, 'data', 'feeds', 'feed-x.json');
 const LOCAL_FEED_PODCASTS = path.join(REPO_ROOT, 'data', 'feeds', 'feed-podcasts.json');
 const LOCAL_FEED_BLOGS = path.join(REPO_ROOT, 'data', 'feeds', 'feed-blogs.json');
@@ -56,12 +51,6 @@ function parseArgs() {
 function todayISO() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-}
-
-async function fetchJSON(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`);
-  return res.json();
 }
 
 function extractJSON(text) {
@@ -212,22 +201,13 @@ async function main() {
   }
 
   console.error('[2/5] Loading feed data...');
-  async function loadFeed(localPath, remoteUrl, label) {
+  function loadFeed(localPath, label) {
     if (fs.existsSync(localPath)) {
       console.error(`  ${label}: local → ${localPath}`);
       return JSON.parse(fs.readFileSync(localPath, 'utf8'));
     }
-    if (!remoteUrl) {
-      console.error(`  ${label}: missing local file, using empty fallback`);
-      return null;
-    }
-    console.error(`  ${label}: remote → ${remoteUrl}`);
-    try {
-      return await fetchJSON(remoteUrl);
-    } catch (err) {
-      console.error(`  ${label}: remote fetch failed (${err.message}), using empty fallback`);
-      return null;
-    }
+    console.error(`  ${label}: missing local file, using empty fallback`);
+    return null;
   }
 
   let feedX;
@@ -235,12 +215,12 @@ async function main() {
   let feedBlogs;
   let feedYoutube;
   try {
-    [feedX, feedPodcasts, feedBlogs, feedYoutube] = await Promise.all([
-      loadFeed(LOCAL_FEED_X, FEED_X_URL, 'X'),
-      loadFeed(LOCAL_FEED_PODCASTS, FEED_PODCASTS_URL, 'Podcasts'),
-      loadFeed(LOCAL_FEED_BLOGS, FEED_BLOGS_URL, 'Blogs'),
-      loadFeed(LOCAL_FEED_YOUTUBE, null, 'YouTube'),
-    ]);
+    [feedX, feedPodcasts, feedBlogs, feedYoutube] = [
+      loadFeed(LOCAL_FEED_X, 'X'),
+      loadFeed(LOCAL_FEED_PODCASTS, 'Podcasts'),
+      loadFeed(LOCAL_FEED_BLOGS, 'Blogs'),
+      loadFeed(LOCAL_FEED_YOUTUBE, 'YouTube'),
+    ];
   } catch (err) {
     console.error(`  Feed loading failed: ${err.message}`);
     process.exit(1);

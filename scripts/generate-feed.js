@@ -37,6 +37,7 @@ const X_API_BASE = 'https://api.x.com/2';
 
 const RSS_USER_AGENT =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const BLOG_USER_AGENT = 'AIBuildersDigest/1.0 (feed aggregator)';
 
 // -- State Management --------------------------------------------------------
 function emptyState() {
@@ -644,7 +645,7 @@ async function fetchBlogContent(sources, state, errors, usedUrls) {
 
     try {
       const indexRes = await fetch(blog.indexUrl, {
-        headers: { 'User-Agent': 'FollowBuilders/1.0 (feed aggregator)' },
+        headers: { 'User-Agent': BLOG_USER_AGENT },
       });
       if (!indexRes.ok) { errors.push(`Blog ${blog.name}: HTTP ${indexRes.status}`); continue; }
       const indexHtml = await indexRes.text();
@@ -677,7 +678,7 @@ async function fetchBlogContent(sources, state, errors, usedUrls) {
       for (const article of freshArticles) {
         try {
           const articleRes = await fetch(article.url, {
-            headers: { 'User-Agent': 'FollowBuilders/1.0 (feed aggregator)' },
+            headers: { 'User-Agent': BLOG_USER_AGENT },
           });
           if (!articleRes.ok) { errors.push(`Blog article ${article.url}: HTTP ${articleRes.status}`); continue; }
           const articleHtml = await articleRes.text();
@@ -1092,7 +1093,7 @@ async function main() {
   // Load sources
   if (!fs.existsSync(SOURCES_PATH)) {
     console.error(`ERROR: Sources file not found: ${SOURCES_PATH}`);
-    console.error('Create config/sources.json first (see follow-builders config/default-sources.json for reference).');
+    console.error('Create config/sources.json first.');
     process.exit(1);
   }
   const sources = loadSources();

@@ -4,6 +4,8 @@ A bilingual (EN/DE) magazine generated three times a week from public AI-builder
 
 The interesting part is not the HTML. It is a **scheduled LLM ETL pipeline**: rule-based intake, evidence-aware preprocessing, one structured LLM call, schema repair, source-health telemetry, and Git as the datastore.
 
+Issues are written from text this repo fetches itself (public RSS, Atom, Nitter or the X API, and a few blog pages in `config/sources.json`). The habit of following builders rather than influencers is inspired by [Follow Builders](https://github.com/zarazhangrui/follow-builders) by Zara Zhang. This repository does not download or republish that project's feeds.
+
 ## Problem
 
 AI builders publish constantly on X, blogs, YouTube, and podcasts. A raw scrape is too long to dump into a model (tens of thousands of characters, much of it stale or empty). Paying for that context is wasteful, and the model will invent URLs if you let it.
@@ -120,6 +122,4 @@ Public RSS/Atom first (Hugging Face, OpenAI, Simon Willison, The Decoder, TechCr
 
 ## Status
 
-Shipped: 72h full-window feeds (prior-issue URL gate, not seen-since-last-run), density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings, gold shortlist regression.
-
-Current upgrade: source-health JSONL, run ledger, evidence-aware preprocessing, duplicate gold fixtures, prompt fingerprint, Docker CLI runtime, and PR CI checks.
+Shipped: 72h full-window feeds (prior-issue URL gate, not seen-since-last-run), density extraction, cost ledger, schema repair, CI degrade-to-green, faithfulness warnings, gold shortlist regression, source-health JSONL, run ledger, evidence-aware preprocessing, duplicate gold fixtures, prompt fingerprint, Docker CLI runtime, and PR CI checks.

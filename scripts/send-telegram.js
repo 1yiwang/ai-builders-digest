@@ -30,8 +30,6 @@ const os = require('os');
 const REPO_ROOT = path.resolve(__dirname, '..');
 const DATA_ISSUES_DIR = path.join(REPO_ROOT, 'data', 'issues');
 const SETTINGS_PATH = path.join(os.homedir(), '.claude', 'settings.json');
-const FOLLOW_BUILDERS_ENV = path.join(os.homedir(), '.follow-builders', '.env');
-const FOLLOW_BUILDERS_CONFIG = path.join(os.homedir(), '.follow-builders', 'config.json');
 const GITHUB_REPO = '1yiwang/ai-builders-digest';
 const GITHUB_PAGES = `https://${GITHUB_REPO.replace('/', '.github.io/')}`;
 // Fallback: htmlpreview renders raw HTML in browser
@@ -69,34 +67,20 @@ function loadTelegramCredentials(dryRun) {
     chatId = chatId || env.TELEGRAM_CHAT_ID || '';
   }
 
-  // 3. Fallback: .follow-builders/.env + config.json
-  if (!botToken && fs.existsSync(FOLLOW_BUILDERS_ENV)) {
-    const envContent = fs.readFileSync(FOLLOW_BUILDERS_ENV, 'utf8');
-    const match = envContent.match(/TELEGRAM_BOT_TOKEN=(.+)/);
-    if (match) botToken = match[1].trim();
-  }
-  if (!chatId && fs.existsSync(FOLLOW_BUILDERS_CONFIG)) {
-    try {
-      const config = JSON.parse(fs.readFileSync(FOLLOW_BUILDERS_CONFIG, 'utf8'));
-      chatId = config.delivery?.chatId || '';
-    } catch {}
-  }
-
   if (!botToken || !chatId) {
     if (dryRun) {
       console.error('⚠  Credentials not set — showing preview only.');
-      console.error('   Add TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID to ~/.claude/settings.json env block,');
-      console.error('   or ensure ~/.follow-builders/.env and config.json are configured.');
+      console.error('   Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID, or add them to ~/.claude/settings.json env.');
       console.error('');
       return { botToken: 'DRY_RUN', chatId: 'DRY_RUN' };
     }
     if (!botToken) {
       console.error('ERROR: TELEGRAM_BOT_TOKEN not found.');
-      console.error('  Checked: ~/.claude/settings.json, ~/.follow-builders/.env');
+      console.error('  Checked: environment, ~/.claude/settings.json');
     }
     if (!chatId) {
       console.error('ERROR: TELEGRAM_CHAT_ID not found.');
-      console.error('  Checked: ~/.claude/settings.json, ~/.follow-builders/config.json');
+      console.error('  Checked: environment, ~/.claude/settings.json');
     }
     process.exit(1);
   }

@@ -2,17 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
-// Check repo config first (CI-compatible), then local ~/.follow-builders
-const AUTHOR_IDENTITIES_PATH_REPO = path.join(REPO_ROOT, 'config', 'author-identities.json');
-const AUTHOR_IDENTITIES_PATH_LOCAL = path.join(os.homedir(), '.follow-builders', 'assets', 'author-identities.json');
-const AUTHOR_IDENTITIES_PATH = fs.existsSync(AUTHOR_IDENTITIES_PATH_REPO) ? AUTHOR_IDENTITIES_PATH_REPO : AUTHOR_IDENTITIES_PATH_LOCAL;
-
-const AVATAR_MANIFEST_PATH_REPO = path.join(REPO_ROOT, 'config', 'avatar-manifest.json');
-const AVATAR_MANIFEST_PATH_LOCAL = path.join(os.homedir(), '.follow-builders', 'assets', 'avatar-manifest.json');
-const AVATAR_MANIFEST_PATH = fs.existsSync(AVATAR_MANIFEST_PATH_REPO) ? AVATAR_MANIFEST_PATH_REPO : AVATAR_MANIFEST_PATH_LOCAL;
+const AUTHOR_IDENTITIES_PATH = path.join(REPO_ROOT, 'config', 'author-identities.json');
+const AVATAR_MANIFEST_PATH = path.join(REPO_ROOT, 'config', 'avatar-manifest.json');
 const SITE_AVATAR_DIR = path.join('assets', 'avatars');
 const ISSUE_HTML_DIR = 'issues';
 const DATA_ISSUES_DIR = path.join('data', 'issues');
@@ -336,7 +329,7 @@ function renderPage(data, authorIdentities, avatarManifest, outputPath) {
   const editionName = data.editionName || 'DE+EN Ausgabe';
   const introKicker = data.intro?.kicker || "Einleitung / Editor's Note";
   const introText = data.intro?.text || '';
-  const sourceNote = data.footerNote || `Source: Follow Builders curated daily digest. Rebuilt from the ${publishDate} source draft.`;
+  const sourceNote = data.footerNote || `Source: AI Builders Digest. Generated on ${publishDate}.`;
 
   const selectedCount = (data.sections || []).reduce((sum, section) => sum + (section.cards || []).length, 0);
   const authorKeys = new Set();

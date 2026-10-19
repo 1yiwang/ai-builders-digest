@@ -2,10 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
 
-const MANIFEST_PATH = path.join(os.homedir(), '.follow-builders/assets/avatar-manifest.json');
-const OUTPUT_DIR = path.join(__dirname, 'assets', 'avatars');
+const REPO_ROOT = __dirname;
+const MANIFEST_PATH = path.join(REPO_ROOT, 'config', 'avatar-manifest.json');
+const OUTPUT_DIR = path.join(REPO_ROOT, 'assets', 'avatars');
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -22,11 +22,16 @@ function main() {
 
   let copied = 0;
   Object.values(entries).forEach((entry) => {
-    const source = entry.localPath || '';
-    if (!source || !fs.existsSync(source)) return;
+    const raw = entry.localPath || '';
+    if (!raw) return;
+    const source = path.isAbsolute(raw) ? raw : path.join(REPO_ROOT, raw);
+    if (!fs.existsSync(source)) return;
 
     const fileName = path.basename(source);
-    fs.copyFileSync(source, path.join(OUTPUT_DIR, fileName));
+    const dest = path.join(OUTPUT_DIR, fileName);
+    if (path.resolve(source) === path.resolve(dest)) return;
+
+    fs.copyFileSync(source, dest);
     copied += 1;
   });
 

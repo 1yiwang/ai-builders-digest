@@ -14,20 +14,14 @@
 
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
 
 // -- Constants ---------------------------------------------------------------
 
 const REPO_ROOT = path.resolve(__dirname, '..');
-const FOLLOW_BUILDERS_ASSETS = path.join(os.homedir(), '.follow-builders', 'assets');
-const AVATARS_DIR = path.join(FOLLOW_BUILDERS_ASSETS, 'avatars');
-const MANIFEST_PATH = path.join(FOLLOW_BUILDERS_ASSETS, 'avatar-manifest.json');
-const IDENTITIES_PATH = path.join(FOLLOW_BUILDERS_ASSETS, 'author-identities.json');
 const SOURCES_PATH = path.join(REPO_ROOT, 'config', 'sources.json');
-
-// Repo paths for CI compatibility (kept in sync with ~/.follow-builders)
 const REPO_CONFIG_DIR = path.join(REPO_ROOT, 'config');
 const REPO_AVATARS_DIR = path.join(REPO_ROOT, 'assets', 'avatars');
+const AVATARS_DIR = REPO_AVATARS_DIR;
 const REPO_MANIFEST_PATH = path.join(REPO_CONFIG_DIR, 'avatar-manifest.json');
 const REPO_IDENTITIES_PATH = path.join(REPO_CONFIG_DIR, 'author-identities.json');
 
@@ -384,20 +378,14 @@ async function main() {
   console.error('');
 
   ensureDir(AVATARS_DIR);
-  ensureDir(FOLLOW_BUILDERS_ASSETS);
 
-  // Repo identities are the source of truth (do not overwrite them from ~/.follow-builders).
   const identities = fs.existsSync(REPO_IDENTITIES_PATH)
     ? readJson(REPO_IDENTITIES_PATH)
-    : fs.existsSync(IDENTITIES_PATH)
-      ? readJson(IDENTITIES_PATH)
-      : { entries: {} };
+    : { entries: {} };
   const sources = readJson(SOURCES_PATH);
   const manifest = fs.existsSync(REPO_MANIFEST_PATH)
     ? readJson(REPO_MANIFEST_PATH)
-    : fs.existsSync(MANIFEST_PATH)
-      ? readJson(MANIFEST_PATH)
-      : { entries: {} };
+    : { entries: {} };
 
   // 1. Download X/Twitter avatars
   console.error('[1/4] X/Twitter authors...');
@@ -427,47 +415,12 @@ async function main() {
     console.error(`Would create/update ${Object.keys(allResults).length} avatar entries`);
     console.error(JSON.stringify(allResults, null, 2));
   } else {
-    // Save manifest to ~/.follow-builders (primary, with absolute paths)
-    writeJson(MANIFEST_PATH, manifest);
+    writeJson(REPO_MANIFEST_PATH, manifest);
     console.error('');
-    console.error(`✓ Manifest saved: ${MANIFEST_PATH}`);
+    console.error(`✓ Manifest saved: ${REPO_MANIFEST_PATH}`);
     console.error(`  Total entries: ${manifest.avatarCount}`);
 
-    // Also save to repo config/ with repo-relative paths for CI
-    const repoManifest = JSON.parse(JSON.stringify(manifest));
-    for (const key of Object.keys(repoManifest.entries)) {
-      const entry = repoManifest.entries[key];
-      if (entry.localPath) {
-        // Convert absolute Windows path to repo-relative
-        const basename = path.basename(entry.localPath);
-        entry.localPath = 'assets/avatars/' + basename;
-      }
-    }
-    writeJson(REPO_MANIFEST_PATH, repoManifest);
-    console.error(`✓ Repo manifest saved: ${REPO_MANIFEST_PATH}`);
-
-    // Copy avatars to repo assets/ for CI
-    ensureDir(REPO_AVATARS_DIR);
-    const wanted = new Set(
-      Object.values(repoManifest.entries)
-        .map((entry) => entry.localPath && path.basename(entry.localPath))
-        .filter(Boolean)
-    );
-    const avatarFiles = fs.readdirSync(AVATARS_DIR).filter((f) => wanted.has(f));
-    let copiedCount = 0;
-    avatarFiles.forEach(f => {
-      const src = path.join(AVATARS_DIR, f);
-      const dest = path.join(REPO_AVATARS_DIR, f);
-      if (!fs.existsSync(dest) || fs.statSync(src).mtime > fs.statSync(dest).mtime) {
-        fs.copyFileSync(src, dest);
-        copiedCount++;
-      }
-    });
-    console.error(`  Avatar files: ${avatarFiles.length} (${copiedCount} copied to repo)`);
-    avatarFiles.forEach(f => console.error(`    - ${f}`));
-
     writeJson(REPO_IDENTITIES_PATH, identities);
-    writeJson(IDENTITIES_PATH, identities);
     console.error(`✓ Identities saved: ${REPO_IDENTITIES_PATH}`);
   }
 
