@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-19T12:54:58.790Z",
-  "count": 56,
+  "generatedAt": "2026-10-21T11:39:13.652Z",
+  "count": 57,
   "issues": [
+    {
+      "date": "2026-10-21",
+      "title": "DeepSeeks 155-Billionen-Token-Inferenz verdient 22 Millionen pro Tag",
+      "desc": "DeepSeeks DeepInfer verändert die Open-Source-Inferenzökonomie, während KI-Biologie, Robotik und Unternehmensanwendungen konkreter werden.",
+      "href": "./issues/ai-builders-digest-2026-10-21.html",
+      "issue": "Nr. 57"
+    },
     {
       "date": "2026-10-19",
       "title": "Fünf Prozent Gemeinwohl, 600B für Agenten",

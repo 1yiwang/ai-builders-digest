@@ -1,0 +1,269 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-21",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "DeepSeek veröffentlicht DeepInfer, eine Open-Source-Inferenz mit 155 Billionen Token pro Cluster und Tag. Das Modell erwirtschaftet angeblich 22 Millionen Dollar Umsatz pro Tag bei 80 Prozent Marge. Währenddessen kauft OpenAI Orchestra Bio und Anthropic designt Proteinbinder gegen Skorpiongift. Die Industrie verbindet wirtschaftliche Effizienz mit immer konkreteren wissenschaftlichen Anwendungen."
+  },
+  "archive": {
+    "title": "DeepSeeks 155-Billionen-Token-Inferenz verdient 22 Millionen pro Tag",
+    "desc": "DeepSeeks DeepInfer verändert die Open-Source-Inferenzökonomie, während KI-Biologie, Robotik und Unternehmensanwendungen konkreter werden."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-21.",
+  "sections": [
+    {
+      "title": "Open-Source Inference Economics / Open-Source-Inferenzökonomie",
+      "desc": "DeepSeek's open releases pair SOTA inference margins with new artifacts and regulatory scrutiny.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "DeepSeek released DeepInfer, open-source inference running 155T tokens/day per cluster",
+              "It generates $22M/day at ~80% margin, paying back hardware in 81 days"
+            ],
+            "original": [
+              "DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "DeepSeek veröffentlichte DeepInfer, eine Open-Source-Inferenz mit 155 Billionen Token pro Cluster und Tag",
+              "Sie erwirtschaftet 22 Millionen Dollar pro Tag bei etwa 80 Prozent Marge und amortisiert Hardware in 81 Tagen"
+            ],
+            "original": [
+              "DeepSeek DeepInfer: Open-Source-Inferenz mit SOTA-Status, 155 Billionen Token pro Cluster und Tag, 22 Millionen Dollar pro Tag bei etwa 80 Prozent Marge, Amortisation in 81 Tagen"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Interconnects",
+          "sourceName": "Interconnects",
+          "sourceUrl": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Interconnects #25 covers DeepSeek V4.1 Flash 1017, an open model artifact",
+              "It also tracks American-made models and new regulatory controls in the US and China"
+            ],
+            "original": [
+              "DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Interconnects #25 behandelt DeepSeek V4.1 Flash 1017, ein offenes Modell-Artefakt",
+              "Außerdem erfasst es amerikanische Modelle und neue Regulierungen in den USA und China"
+            ],
+            "original": [
+              "DeepSeek V4.1 Flash 1017, amerikanische Modelle und neue Regulierungen in den USA und China"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI in Biology / KI in der Biologie",
+      "desc": "From scorpion-toxin protein binders to an Orchestra Bio acquisition and Biohub's $1.8B virtual-cell data push, AI is moving from models to biological discovery.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/claude-science-tackles-deadly-scorpion-stings-by-designing-protein-binders-from-scratch/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic's Claude Science designed protein binders from scratch to neutralize deadly scorpion stings",
+              "The work is part of a wave of AI-designed biologics, according to The Decoder"
+            ],
+            "original": [
+              "Claude Science tackles deadly scorpion stings by designing protein binders from scratch"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropics Claude Science hat Proteinbinder von Grund auf entworfen, um tödliche Skorpionstiche zu neutralisieren",
+              "Laut The Decoder ist die Arbeit Teil einer Welle KI-entworfener Biologika"
+            ],
+            "original": [
+              "Claude Science bekämpft tödliche Skorpionstiche, indem es Proteinbinder von Grund auf entwirft"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI is acquiring Orchestra Bio to build AI agents that speed up drug development",
+              "The acquisition signals OpenAI's push into biology and drug discovery workflows"
+            ],
+            "original": [
+              "OpenAI acquires Orchestra Bio to build AI agents that speed up drug development"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI übernimmt Orchestra Bio, um KI-Agenten zu bauen, die die Medikamentenentwicklung beschleunigen",
+              "Die Übernahme signalisiert OpenAIs Vorstoß in Biologie und Wirkstoffforschung"
+            ],
+            "original": [
+              "OpenAI übernimmt Orchestra Bio, um KI-Agenten zu bauen, die die Medikamentenentwicklung beschleunigen"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/a-world-model-of-life-biohub-s-alex-rives-on-virtual-cells-measurement-the-1-8b-data-push/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Alex Rives (Biohub) discusses building a world model of life using virtual cells",
+              "Biohub is driving a $1.8B data push with new measurement approaches"
+            ],
+            "original": [
+              "A World Model of Life: Biohub's Alex Rives on Virtual Cells, Measurement, & the $1.8B Data Push"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Alex Rives (Biohub) spricht über den Aufbau eines Weltmodells des Lebens mit virtuellen Zellen",
+              "Biohub treibt eine 1,8-Milliarden-Dollar-Dateninitiative mit neuen Messverfahren voran"
+            ],
+            "original": [
+              "Ein Weltmodell des Lebens: Biohubs Alex Rives über virtuelle Zellen, Messung und die 1,8-Milliarden-Dollar-Dateninitiative"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Robot Data and Simulation / Roboterdaten und Simulation",
+      "desc": "Mecka sensorizes humans to collect training data, while Hugging Face and NVIDIA open simulation-ready 3D assets for robotics.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=0idrTKCDhuE",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Josh Gao (Mecka) runs a robot data factory that sensorizes humans to train robots",
+              "The conversation covers how human movement data feeds robot learning"
+            ],
+            "original": [
+              "Inside the Robot Data Factory: Mecka's Josh Gao on Sensorizing Humans to Train Robots"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Josh Gao (Mecka) betreibt eine Roboterdatenfabrik, die Menschen mit Sensoren ausstattet, um Roboter zu trainieren",
+              "Das Gespräch zeigt, wie menschliche Bewegungsdaten das Roboterlernen speisen"
+            ],
+            "original": [
+              "In der Roboterdatenfabrik: Meckas Josh Gao über das Sensorisieren von Menschen zum Trainieren von Robotern"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Hugging Face and NVIDIA launched SimReady Central, an open library of simulation-ready 3D assets",
+              "The library targets robotics and AI factory simulation workflows"
+            ],
+            "original": [
+              "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hugging Face und NVIDIA starten SimReady Central, eine offene Bibliothek simulationsfertiger 3D-Assets",
+              "Die Bibliothek richtet sich an Robotik- und KI-Fabriksimulationen"
+            ],
+            "original": [
+              "Ankündigung von SimReady Central: Eine offene Bibliothek simulationsfertiger 3D-Assets für Robotik und KI-Fabriken"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Enterprise AI ROI / KI-ROI im Unternehmen",
+      "desc": "OpenAI showcases ChatGPT Work in a franchisee case study with a 94% faster cash reconciliation workflow.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/ted-taylor-restaurant",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI reports a franchisee cut cash reconciliation time by 94% using ChatGPT Work",
+              "The case study highlights ChatGPT Work's role in operational workflows"
+            ],
+            "original": [
+              "Franchisee reconciles cash in 94% less time with ChatGPT Work"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI meldet, dass ein Franchisenehmer die Zeit für die Kassenabstimmung mit ChatGPT Work um 94 Prozent reduziert hat",
+              "Die Fallstudie zeigt ChatGPT Work in operativen Arbeitsabläufen"
+            ],
+            "original": [
+              "Franchisenehmer stimmt Kassen in 94 % weniger Zeit mit ChatGPT Work ab"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261021113650-b27359",
+    "generatedAt": "2026-10-21T11:39:13.511Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 143029,
+    "tokensIn": 1364,
+    "tokensOut": 13826,
+    "estCostUsd": 0.004062,
+    "candidatesIn": 29,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 389070,
+      "preparedChars": 4116,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+      "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+      "https://the-decoder.com/claude-science-tackles-deadly-scorpion-stings-by-designing-protein-binders-from-scratch/",
+      "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
+      "https://www.cognitiverevolution.ai/a-world-model-of-life-biohub-s-alex-rives-on-virtual-cells-measurement-the-1-8b-data-push/",
+      "https://www.youtube.com/watch?v=0idrTKCDhuE",
+      "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+      "https://openai.com/index/ted-taylor-restaurant"
+    ]
+  }
+}
