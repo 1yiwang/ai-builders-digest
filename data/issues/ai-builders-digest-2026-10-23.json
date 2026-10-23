@@ -1,0 +1,244 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-23",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI senkt sein Bewertungsziel und will bis zu 30 Milliarden Dollar aufnehmen. Gleichzeitig zeigt Mistral mit Le Chonk, dass offene Modelle im Westen ernsthaft mitspielen. Cloudflare und MIT-Forschende richten den Blick auf Sicherheit und Verhalten autonomer Agenten. Diese Mischung aus Kapitaldisziplin, offenen Modellen und Agentenpraxis prägt die Branche."
+  },
+  "archive": {
+    "title": "OpenAI senkt Bewertung, Mistral legt nach",
+    "desc": "Während OpenAI seine Bewertung senkt, drängen offene Modelle und reale KI-Anwendungen nach vorn."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-23.",
+  "sections": [
+    {
+      "title": "Model Benchmarks & Open Weights / Modell-Benchmarks & offene Gewichte",
+      "desc": "Neue Benchmark-Zahlen und ein großes offenes Modell zeigen den Stand des Modellwettbewerbs.",
+      "cards": [
+        {
+          "authorKey": "podcast:The MAD Podcast with Matt Turck",
+          "sourceName": "The MAD Podcast with Matt Turck",
+          "sourceUrl": "https://www.youtube.com/watch?v=nxAoCPsGfe8",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Pierre Stock (VP Science, Mistral) details Le Chonk, the West's biggest open model and Mistral's comeback.",
+              "Mistral positions Le Chonk as the largest open Western model available to developers."
+            ],
+            "original": [
+              "Mistral Is SO Back: Inside Le Chonk, the West’s Biggest Open Model (Pierre Stock, VP Science, Mistral)"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Pierre Stock (VP Science, Mistral) stellt Le Chonk vor, das größte offene Modell des Westens.",
+              "Mistral positioniert Le Chonk als Comeback im Rennen um offene Modelle."
+            ],
+            "original": [
+              "Mistral Is SO Back: Einblicke in Le Chonk, das größte offene Modell des Westens (Pierre Stock, VP Science, Mistral)."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-black-october/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "GPT-6 Astra scores 83%, GPT-6.1 Sol 82%, Opus 5.5 78% on agentic code benchmark AA.",
+              "Kitten-TTS 2 ARM NEON optimization cuts real-time factor 15–16% on M4 Pro: 8 threads drop 0.600 to 0.506 RTF."
+            ],
+            "original": [
+              "GPT-6 Astra scores 83%, GPT-6.1 Sol 82% and Opus 5.5 78% ( AA ).",
+              "A contributor reported ARM NEON optimizations for one Kitten-TTS 2 component on an M4 Pro CPU, showing roughly 15–16% real-time-factor reduction: 8 threads from 0.600 to 0.506."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "GPT-6 Astra erreicht 83 %, GPT-6.1 Sol 82 %, Opus 5.5 78 % im agentischen Code-Benchmark AA.",
+              "Kitten-TTS-2-ARM-NEON-Optimierung senkt den Echtzeitfaktor auf M4 Pro um 15–16 %; 8 Threads fallen von 0,600 auf 0,506 RTF."
+            ],
+            "original": [
+              "GPT-6 Astra erreicht 83 %, GPT-6.1 Sol 82 % und Opus 5.5 78 % (AA).",
+              "Ein Contributor meldete ARM-NEON-Optimierungen für eine Kitten-TTS-2-Komponente auf M4 Pro: 8 Threads von 0,600 auf 0,506 RTF."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Capital / Kapital",
+      "desc": "OpenAIs Finanzierung signalisiert einen Strategiewechsel.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI lowers its valuation target and raises up to $30 billion, signaling a more conservative fundraising stance."
+            ],
+            "original": [
+              "OpenAI lowers valuation target, raises up to $30 billion"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI senkt sein Bewertungsziel und nimmt bis zu 30 Milliarden Dollar auf."
+            ],
+            "original": [
+              "OpenAI senkt Bewertungsziel und nimmt bis zu 30 Milliarden Dollar auf."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agentic Systems / Agentische Systeme",
+      "desc": "Sicherheit und Verhalten autonomer Agenten rücken in den Fokus.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=6VprwfSc4Xk",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Dane Knecht (Cloudflare CTO) argues security for the agentic web must be democratized.",
+              "Cloudflare aims to make agent-facing security as accessible as its CDN and WAF services."
+            ],
+            "original": [
+              "Democratizing Security for the Agentic Web with CloudFlare CTO Dane Knecht"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dane Knecht (Cloudflare CTO) fordert, Sicherheit für das agentische Web zu demokratisieren.",
+              "Cloudflare will Agenten-Sicherheit so zugänglich machen wie CDN und WAF."
+            ],
+            "original": [
+              "Sicherheit für das agentische Web demokratisieren – mit Cloudflare CTO Dane Knecht."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "MIT researchers found AI agents with no tasks started playing, revealing emergent idle behavior.",
+              "The observation may inform guardrails for autonomous agents that drift from assigned goals."
+            ],
+            "original": [
+              "Left alone with nothing to do, AI agents started playing"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "MIT-Forschende beobachteten, dass beschäftigungslose KI-Agenten zu spielen begannen.",
+              "Das Verhalten könnte für Guardrails autonomer Agenten relevant sein."
+            ],
+            "original": [
+              "Allein gelassen und ohne Aufgaben begannen KI-Agenten zu spielen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Goes Vertical / KI in der Praxis",
+      "desc": "Konkrete Anwendungen in Mobilität und Gesundheitsausbildung zeigen KI im Praxiseinsatz.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "inDrive plans 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia, challenging Uber in new markets.",
+              "The partnership pairs Pony.ai's autonomous driving tech with Nvidia's compute platform."
+            ],
+            "original": [
+              "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "inDrive plant für 2027 Robotaxi-Tests in Zentralasien mit Pony.ai und Nvidia.",
+              "Die Kooperation kombiniert Pony.ais autonome Fahrtechnik mit Nvidias Rechenplattform."
+            ],
+            "original": [
+              "Uber-Rivale inDrive plant Robotaxi-Tests 2027 in Zentralasien mit Pony.ai und Nvidia."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=fioqpxkOV1A",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator profiles Stepful (YC S21), an AI trade school for healthcare workers.",
+              "Stepful uses AI to train entry-level healthcare staff, addressing workforce shortages."
+            ],
+            "original": [
+              "AI Trade School for Healthcare"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator stellt Stepful (YC S21) vor, eine KI-Handelsschule für Gesundheitsberufe.",
+              "Stepful schult mit KI Gesundheitspersonal und adressiert den Fachkräftemangel."
+            ],
+            "original": [
+              "KI-Handelsschule für das Gesundheitswesen."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261023112558-f3f849",
+    "generatedAt": "2026-10-23T11:27:33.438Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 95148,
+    "tokensIn": 1325,
+    "tokensOut": 9620,
+    "estCostUsd": 0.002879,
+    "candidatesIn": 29,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 372820,
+      "preparedChars": 3752,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://www.youtube.com/watch?v=nxAoCPsGfe8",
+      "https://latent.space/p/ainews-black-october/",
+      "https://the-decoder.com/openai-lowers-valuation-target-raises-up-to-30-billion/",
+      "https://www.youtube.com/watch?v=6VprwfSc4Xk",
+      "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+      "https://www.youtube.com/watch?v=fioqpxkOV1A"
+    ]
+  }
+}
