@@ -1,54 +1,36 @@
 {
-  "generatedAt": "2026-10-23T11:25:51.572Z",
+  "generatedAt": "2026-10-26T12:45:24.026Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "AI Trade School for Healthcare",
-      "url": "https://www.youtube.com/watch?v=fioqpxkOV1A",
-      "publishedAt": "2026-10-21T17:00:31.000Z",
-      "description": "Stepful (YC S21) trains people for healthcare jobs, combining AI-supported learning with local hands-on training. The company trained 30,000 people last year and now works with 39 health systems, including seven of the 10 largest in the U.S. It recently raised a $55 million Series C led by Oak HC/FT.\n\nIn this episode of Founder Firesides, YC Managing Partner Diana Hu hosts co-founders Carl Madi and Tressia Hobeika where they share how cleaners losing their jobs during the pandemic sparked the idea for a faster, more affordable path into healthcare. They discuss preparing students for medical assistant jobs in five months instead of two years, using AI tutors to personalize learning, and helping hospitals train workers without asking them to leave their communities.\n\nhttps://www.stepful.com\n\nChapters:\n00:00 — Tackling the Healthcare Worker Shortage\n03:40 — Building a Faster, Cheaper Path to Healthcare Jobs\n06:57 — AI Tutors and Local Hands-On Training\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Only 3 Companies Can Still Make Cutting-Edge Chips",
+      "url": "https://www.youtube.com/watch?v=Nq8rK9l5M7A",
+      "publishedAt": "2026-10-25T19:07:52.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal",
-      "url": "https://www.youtube.com/watch?v=IiZ9yd2Do8I",
-      "publishedAt": "2026-10-22T16:31:33.000Z",
-      "description": "AI workloads don’t run in neat, three-year rectangles. But much of the GPU market still sells capacity that way. Modal CEO Erik Bernhardsson joins Latent Space to explain how Modal pools compute, scales AI workloads and thinks about the financial risks of building a GPU cloud.\n\nErik takes us from building Spotify’s recommendation system to founding Modal, then digs into GPU supply, alternative accelerators and the surprising growth of agent sandboxes. We also discuss sandbox security, developer experience in the age of agents, forward-deployed engineers and why Modal makes code review optional.\n\nLinks:\n• Modal — https://modal.com/\n• Erik’s writing — https://erikbern.com/\n• Modal on serverless GPU economics — https://modal.com/blog/how-to-price-serverless\n• Modal’s GPU memory snapshots — https://modal.com/blog/gpu-mem-snapshots\n• Scaling to one million concurrent sandboxes — https://modal.com/blog/scaling-to-1-million-concurrent-sandboxes-in-seconds\n• Our earlier conversation with Erik — https://www.latent.space/p/modal\n• Modal CTO Akshat Bubna on AI infrastructure and sandboxes — https://www.latent.space/p/modal2026\n• Latent Space — https://www.latent.space/\n\nTimestamps:\n0:00 What Modal does\n1:25 From Spotify to building Modal\n4:19 Founding before the generative AI boom\n7:43 First customers and fundraising\n10:00 Building for inference and autoscaling\n13:21 Where Modal gets GPU capacity\n15:39 Renting vs. owning infrastructure\n19:45 The risk of GPU prices falling\n24:18 Is AI demand infinite?\n26:12 Alternatives to NVIDIA\n28:25 What Modal can learn from neoclouds\n30:26 GPUs as an asset class\n31:55 Modal’s products: functions and sandboxes\n36:03 The case for smaller training workloads\n41:21 How agent sandboxes are changing\n46:48 Anthropic and sandbox security\n49:29 Using agents to test security\n52:51 Developer experience in the age of agents\n57:45 What Modal’s forward-deployed engineers do\n59:55 Modal’s approach to product management\n1:03:29 Optional code reviews and engineering culture\n1:05:56 Cloud, on-prem and bring-your-own-cloud\n1:09:25 Capacity, fundraising and growth\n1:13:07 Scaling the team\n1:17:28 Erik’s tweets: ephemeral sandboxes\n1:18:31 The problem with rectangular GPU contracts\n1:21:20 Inference providers vs. model builders\n1:23:25 Where models improve next\n\nSponsorship and business inquiries: business@latent.space"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Elon Is Building His Own Chip Fab",
+      "url": "https://www.youtube.com/watch?v=5rpevwB36Jk",
+      "publishedAt": "2026-10-24T18:30:29.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "The Recommendation Engine for Commodity Traders — Anekha Sokhal, Moshi",
-      "url": "https://www.youtube.com/watch?v=DWHyPWnzGAI",
-      "publishedAt": "2026-10-22T14:00:10.000Z",
-      "description": "What would you get if Bloomberg, Claude, and Netflix had a baby? Moshi founder and CEO Anekha Sokhal joins swyx at AI Engineer NYC to discuss building AI tools for traders: connecting market data, handling conflicting sources, and turning insights into recommendations people actually use.\n\nThey also discuss the pressure on AI engineers to become the whole team, and how to make the most of conference conversations.\n\nMoshi: https://hellomoshi.ai/\nAI Engineer: https://ai.engineer/\nLatent Space: https://www.latent.space/\n\nChapters:\n00:00 AI Engineer NYC and the one-person team\n00:54 Meet Anekha Sokhal\n02:30 From math to trading\n05:45 What is Moshi?\n06:53 Structured, unstructured, and private data\n08:26 Building a connected data graph\n10:03 Bloomberg, Claude, and Netflix\n12:19 From dashboards to workflows\n14:49 Trust and private data\n16:12 When sources disagree\n16:45 Parsing messy PDFs\n18:19 AI Engineer NYC and the one-person team\n20:32 Making conference connections\n23:47 Hiring versus finding customers\n25:56 How swyx got into AI\n\nSponsorship and business inquiries: business@latent.space"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "AI in NYC: How Tenex Builds an AI-Native Engineering Team — Alex Lieberman &amp; CJ Hess",
-      "url": "https://www.youtube.com/watch?v=Vki6cklFqxo",
-      "publishedAt": "2026-10-21T04:52:14.000Z",
-      "description": "How do you organize an engineering team when AI agents can do more of the implementation? Alex Lieberman and CJ Hess of Tenex join swyx at AI Engineer New York to discuss paying for outcomes, the MetaHarness process, enterprise AI adoption, and where AI-built software can—and cannot—replace SaaS.\n\nThey explain how Tenex keeps plans, project context and decisions in version control, discuss what gets in the way of deploying agents in companies, and debate the economics of rebuilding software. They also consider the consequences for workers and New York’s AI ecosystem.\n\nChapters:\n00:00 Cold open\n00:16 Title sequence\n00:26 Introductions\n00:51 What Tenex does\n01:32 Why CJ joined Tenex\n03:17 Paying engineers for outcomes\n07:20 Inside MetaHarness\n10:25 Models and long-running tasks\n15:11 Token spending and ROI\n19:29 The enterprise AI adoption gap\n23:22 Why agent deployment is hard\n24:42 Vertical AI and enterprise software\n30:32 Kill My SaaS\n35:23 AI and jobs\n38:18 New York’s AI ecosystem\n42:28 Hiring at Tenex\n\nLinks:\nTenex’s AI-native SDLC: https://www.tenex.co/blog/building-an-ai-native-sdlc\nTenex AI engineering: https://www.tenex.co/ai-engineering\nKill My SaaS results: https://www.youtube.com/watch?v=zlD-CkLVKtU\nAI Engineer NYC keynote: https://ai.engineer/nyc/2026/talks/welcome-back-13\n\nSponsorship and business inquiries: business@latent.space"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "The Programmable Data Center — Evan Conrad, SF Compute",
-      "url": "https://www.youtube.com/watch?v=EAtLq9_vrE0",
-      "publishedAt": "2026-10-20T14:00:07.000Z",
-      "description": "GPU compute is bought and sold like a commodity, but delivering it is a lot messier than trading a contract. Evan Conrad of SF Compute joins swyx at AI Engineer New York to explain the market they’re building—and why he thinks it needs an independent operator.\n\nWe cover:\n• Why SF Compute had to build cloud operations to deliver the GPUs it trades\n• How interruptions, storage and hardware generations affect compute prices\n• Why batch and live inference need different contract terms\n• Physical versus cash settlement, and the risk of trading a price disconnected from actual GPUs\n• Why NVIDIA and the big clouds have different incentives from an independent market\n• How to turn a data center into a programmable GPU cluster\n\nChapters:\n0:00 Why can’t NVIDIA build this?\n0:25 Welcome back to Latent Space\n2:23 From selling a room to running the hotel\n3:47 Physical settlement: actually delivering compute\n6:00 Liquidity and the GPU order book\n8:42 Trading nonstandard compute\n10:00 Interrupting and moving workloads\n12:20 Why hardware cohorts matter\n14:32 How far out do compute contracts go?\n16:19 Batch versus live inference leases\n17:58 The shape of compute prices\n20:33 GPU generations, specifications and SKUs\n23:30 Physical versus cash settlement\n27:00 The emerging compute market ecosystem\n29:03 What it takes to deliver a GPU cluster\n32:24 Sovereign compute\n33:26 Why NVIDIA can’t build this market\n34:48 A programmable data center\n\nSF Compute: https://sfcompute.com\nLatent Space: https://www.latent.space\nSponsorship and business inquiries: business@latent.space"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "There Aren’t Enough Machines to 10x AI Chips",
+      "url": "https://www.youtube.com/watch?v=_cr6GwaaRws",
+      "publishedAt": "2026-10-23T20:30:39.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 3
   }
 }

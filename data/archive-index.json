@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-23T11:27:33.580Z",
-  "count": 58,
+  "generatedAt": "2026-10-26T12:47:21.577Z",
+  "count": 59,
   "issues": [
+    {
+      "date": "2026-10-26",
+      "title": "Kimi, Flora und die Roboterwette",
+      "desc": "Offene Modelle drücken Kosten, während Robotik und Chip-Lieferketten die nächste Infrastrukturwelle bestimmen.",
+      "href": "./issues/ai-builders-digest-2026-10-26.html",
+      "issue": "Nr. 59"
+    },
     {
       "date": "2026-10-23",
       "title": "OpenAI senkt Bewertung, Mistral legt nach",

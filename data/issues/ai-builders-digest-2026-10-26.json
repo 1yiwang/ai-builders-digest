@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-26",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Kimi 3.1 Pro senkt die Kosten pro Aufgabe und bringt offene Modelle näher an geschlossene Spitzenwerte. Zeitgleich macht Nvidias Open-Source-Tool Flora Robotervideo-Labeling 125-mal günstiger, während Toyota Milliarden in humanoide Roboter steckt. Beide Entwicklungen zeigen, wie sich KI von reinen Sprachmodellen zu physischer Automatisierung und industrieller Infrastruktur ausweitet. Die Engpässe bei Maschinen und Fabs werden zum zentralen Thema für alle, die KI-Modelle skalieren wollen."
+  },
+  "archive": {
+    "title": "Kimi, Flora und die Roboterwette",
+    "desc": "Offene Modelle drücken Kosten, während Robotik und Chip-Lieferketten die nächste Infrastrukturwelle bestimmen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-26.",
+  "sections": [
+    {
+      "title": "Model Economics: Kimi 3.1 Pro Benchmarks / Modellökonomie: Kimi 3.1 Pro Benchmarks",
+      "desc": "Kimi 3.1 Pro shifts the cost-per-task equation for open-weight models.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-kimi-31/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Kimi 3.1 Pro costs $1.98/task on the Intelligence Index—roughly unchanged from K3 despite more capable open weights.",
+              "Arena WebDev median is $1.23/task, 29% below K3; standard rates are 50% below Opus 5.5 and 80% below Astra.",
+              "Model generates 55K output tokens per task (+14% vs K3), offsetting some token-price cuts."
+            ],
+            "original": [
+              "On the Intelligence Index, K3.1 Pro generated 55K output tokens per task, versus K3's 48K—approximately 14% more—offsetting some of the token-price reduction.",
+              "Launch commentary emphasized standard rates 50% below Opus 5.5's quoted $4/$20 and 80% below Astra's $10/$50."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Kimi 3.1 Pro kostet 1,98 $ pro Aufgabe im Intelligence Index – kaum verändert gegenüber K3 trotz stärkerer Open Weights.",
+              "Arena WebDev liegt im Median bei 1,23 $ pro Aufgabe, 29 % unter K3; Standardtarife sind 50 % unter Opus 5.5 und 80 % unter Astra.",
+              "Das Modell erzeugt 55K Ausgabetokens pro Aufgabe (+14 % gegenüber K3) und gleicht Tokensenkungen teilweise aus."
+            ],
+            "original": [
+              "Im Intelligence Index erzeugte K3.1 Pro 55K Ausgabetokens pro Aufgabe, gegenüber 48K bei K3 – etwa 14 % mehr – was die Tokensenkung teilweise ausgleicht.",
+              "Launch-Kommentare betonten Standardtarife 50 % unter Opus 5.5 (4 $/20 $) und 80 % unter Astra (10 $/50 $)."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Robotics: Labeling and Factory Bets / Robotik: Labeling und Fabrikwetten",
+      "desc": "Nvidia and Toyota push robotics forward through cheaper data labeling and large factory investments.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Nvidia open-sourced Flora, cutting robot video labeling costs 125x compared to GPT-6 Astra.",
+              "Flora targets robot video labeling, making large-scale training data dramatically cheaper for robotics teams."
+            ],
+            "original": [
+              "Nvidia announced it is open-sourcing Flora, which it says makes robot video labeling 125x cheaper than GPT-6 Astra."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Nvidia hat Flora als Open Source veröffentlicht und senkt die Kosten für Robotervideo-Labeling um das 125-Fache gegenüber GPT-6 Astra.",
+              "Flora zielt auf Robotervideo-Labeling und macht große Trainingsdatensätze für Robotik-Teams deutlich günstiger."
+            ],
+            "original": [
+              "Nvidia macht Flora als Open Source verfügbar; es soll Robotervideo-Labeling 125-mal günstiger machen als GPT-6 Astra."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/toyota-is-betting-6-4-billion-a-year-on-humanoid-robots-and-factory-automation/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Toyota is committing $6.4 billion per year to humanoid robots and factory automation.",
+              "The move puts Toyota among the largest industrial investors in humanoid robotics."
+            ],
+            "original": [
+              "Toyota is betting $6.4 billion a year on humanoid robots and factory automation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Toyota investiert jährlich 6,4 Milliarden Dollar in humanoide Roboter und Fabrikautomatisierung.",
+              "Damit zählt Toyota zu den größten industriellen Investoren im Bereich humanoide Robotik."
+            ],
+            "original": [
+              "Toyota setzt 6,4 Milliarden Dollar pro Jahr auf humanoide Roboter und Fabrikautomatisierung."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Chip Supply Chain Limits / Grenzen der Chip-Lieferkette",
+      "desc": "Dwarkesh Patel examines why scaling AI chips is constrained by a shrinking number of manufacturers and missing equipment.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=Nq8rK9l5M7A",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel explains why only three companies can still make cutting-edge chips.",
+              "The video examines the barriers—capital, equipment, and expertise—that have shrunk the leading-edge fab club."
+            ],
+            "original": [
+              "Why Only 3 Companies Can Still Make Cutting-Edge Chips"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel erklärt, warum nur noch drei Unternehmen modernste Chips fertigen können.",
+              "Das Video beleuchtet die Hürden aus Kapital, Ausrüstung und Know-how, die den Kreis der Spitzenfertiger verkleinert haben."
+            ],
+            "original": [
+              "Warum nur noch drei Unternehmen modernste Chips herstellen können."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=_cr6GwaaRws",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel reports there aren't enough machines to 10x AI chip production.",
+              "Chipmaking equipment, not just fabs, is becoming the bottleneck for scaling AI compute."
+            ],
+            "original": [
+              "There Aren't Enough Machines to 10x AI Chips"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel berichtet, dass es nicht genug Maschinen gibt, um die KI-Chip-Produktion zu verzehnfachen.",
+              "Nicht nur Fabs, sondern die Fertigungsausrüstung selbst wird zum Engpass für KI-Rechenleistung."
+            ],
+            "original": [
+              "Es gibt nicht genug Maschinen, um KI-Chips zu verzehnfachen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Scaling Consumer AI / Skalierung für Konsumenten-KI",
+      "desc": "OpenAI details the storage architecture required to serve one billion ChatGPT users.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI detailed how it scaled online storage to serve over 1 billion ChatGPT users.",
+              "Part II covers the storage architecture needed to handle rapid user growth across global regions."
+            ],
+            "original": [
+              "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI beschreibt, wie es den Online-Speicher für über eine Milliarde ChatGPT-Nutzer skaliert hat.",
+              "Teil II behandelt die Storage-Architektur, die schnelles Nutzerwachstum über globale Regionen bewältigt."
+            ],
+            "original": [
+              "Schnelle Skalierung des Online-Speichers für über eine Milliarde ChatGPT-Nutzer (Teil II)."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261026124528-c4ca34",
+    "generatedAt": "2026-10-26T12:47:21.438Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 113080,
+    "tokensIn": 1366,
+    "tokensOut": 9235,
+    "estCostUsd": 0.002777,
+    "candidatesIn": 18,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 260861,
+      "preparedChars": 3954,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-kimi-31/",
+      "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+      "https://the-decoder.com/toyota-is-betting-6-4-billion-a-year-on-humanoid-robots-and-factory-automation/",
+      "https://www.youtube.com/watch?v=Nq8rK9l5M7A",
+      "https://www.youtube.com/watch?v=_cr6GwaaRws",
+      "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+    ]
+  }
+}
