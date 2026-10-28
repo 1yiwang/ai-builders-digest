@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-26T12:47:21.577Z",
-  "count": 59,
+  "generatedAt": "2026-10-28T12:39:18.958Z",
+  "count": 60,
   "issues": [
+    {
+      "date": "2026-10-28",
+      "title": "Anthropic glänzt und wird selbst gehackt",
+      "desc": "Anthropic führt Benchmarks an und wird zugleich Ziel von KI-Agenten; währenddessen erreicht Voice-KI 100 Millionen Anrufe.",
+      "href": "./issues/ai-builders-digest-2026-10-28.html",
+      "issue": "Nr. 60"
+    },
     {
       "date": "2026-10-26",
       "title": "Kimi, Flora und die Roboterwette",

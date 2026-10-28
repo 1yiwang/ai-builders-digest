@@ -1,36 +1,45 @@
 {
-  "generatedAt": "2026-10-26T12:45:24.026Z",
+  "generatedAt": "2026-10-28T12:37:10.383Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why Only 3 Companies Can Still Make Cutting-Edge Chips",
-      "url": "https://www.youtube.com/watch?v=Nq8rK9l5M7A",
-      "publishedAt": "2026-10-25T19:07:52.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "The AI Billing Stack for Healthcare",
+      "url": "https://www.youtube.com/watch?v=e1NQKzBXfM8",
+      "publishedAt": "2026-10-27T14:00:11.000Z",
+      "description": "Candid Health is rebuilding the medical billing stack for healthcare providers, automating the work required to get claims submitted correctly and providers paid. \n\nMedical billing is a $200–300 billion market, and much of it still runs on decades-old software and manual processes. Today, Candid serves more than 200 healthcare organizations, processes about $7 billion in claims each year, and recently raised a $120 million Series D to keep expanding into the broader healthcare market.\n\nIn this Founder Fireside, co-founder and CEO Nick Perry joins YC's Gustaf Alströmer to share how Candid went from manually reviewing every claim to building the automation layer behind the business. He also explains where AI and agents fit into medical billing, and why the goal is to prevent denials before they happen.\n\nChapters:\n00:00 — What Candid Health Does\n00:26 — Why Medical Billing Is So Complicated\n02:13 — How Medical Claims Actually Work\n07:27 — The $300B Medical Billing Market\n09:14 — Finding Candid’s Wedge\n11:00 — Winning the First Customer\n13:00 — Doing Things That Don’t Scale\n15:33 — Automating RCM With Software and AI\n17:55 — From Palantir to Candid Health\n19:25 — The Moment They Hit Product-Market Fit\n20:44 — Building the Team and Culture\n23:39 — From the First 10 Customers to Scale\n27:24 — Where AI Agents Matter Most\n30:14 — Raising a Series D and What Comes Next\n37:33 — The Startup Lesson Nick Wishes He Knew"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Elon Is Building His Own Chip Fab",
-      "url": "https://www.youtube.com/watch?v=5rpevwB36Jk",
-      "publishedAt": "2026-10-24T18:30:29.000Z",
+      "title": "Chipmakers Can Only See 4 Years Ahead",
+      "url": "https://www.youtube.com/watch?v=RV5t9RbpVAc",
+      "publishedAt": "2026-10-26T19:48:49.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "There Aren’t Enough Machines to 10x AI Chips",
-      "url": "https://www.youtube.com/watch?v=_cr6GwaaRws",
-      "publishedAt": "2026-10-23T20:30:39.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "How Anthropic ships the #1 LLM in the World — with Katelyn Lesse and Angela Jiang",
+      "url": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
+      "publishedAt": "2026-10-27T18:37:32.000Z",
+      "description": "An agent’s sandbox can die without taking the whole agent with it. That’s the idea behind “the brain and the hands,” Anthropic’s architecture for Claude Managed Agents.\n\nNow that the dust has settled on Opus 5.5, it is universally agreed to be the best model in the world. In this conversation with Katelyn Lesse and Angela Jiang, Anthropic’s Heads of Engineering and of Product, goes inside the systems that turn model capabilities into products developers can use.\n\nWe cover:\n\n- Why Anthropic separated the agent harness, session state and execution environment.\n- Letting agents use credentials without putting those credentials inside their sandboxes.\n- Rebuilding the Messages API from Python to Rust with Claude—and verifying the rewrite with shadow traffic.\n- Preventing model distillation while preserving the developer experience.\n- Memory, “dreaming,” agent evaluations and the work still left for human engineers.\n- How Anthropic’s own teams use Claude while keeping responsibility for their code and writing.\n\nThe episode opens with swyx’s look at Anthropic’s S-1: revenue per employee, compute efficiency, and the improvement and investment loops behind the business.\n\n**Related links**\n\n- [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) — Performance, pricing and safeguards.\n- [The brain and the hands](https://www.anthropic.com/research/managed-agents) — The Managed Agents architecture.\n- [How Anthropic contains Claude](https://www.anthropic.com/research/how-we-contain-claude) — Isolation, credentials and network controls.\n- [Harnesses for long-running agents](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents) — Maintaining progress across context windows.\n\nSponsorship and business inquiries: business@latent.space"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "An Eval for AI Scientists That Knows the Answer Key - Ian Quigley, Leash Bio",
+      "url": "https://www.youtube.com/watch?v=vhPCo-8K78U",
+      "publishedAt": "2026-10-26T15:00:07.000Z",
+      "description": "Leash Biosciences built a platform to physically measure thousands of proteins against millions of molecules. In this followup to our Leash Bio podcast with cofounder Ian Quigley, he returns to discuss the release of Minos, Leash’s framework of pre-measured experimental worlds that scientific agents can explore. \n\nIan goes into how scientific agents traverse these environments, whether they use information from prior experiments to inform future choices, how good they get at medicinal chemistry, and how their broad decision making abilities affect their performance. \n\nWe cover:\n- Huge action spaces that can be explored by reasoning agents\n- Which models are the best at medicinal chemistry\n- What mistakes they make and how Leash can tell\n- How agents weren’t ready to do this at all a year ago\n- The basic idea of a lab-in-the-loop with zero latency\n- The path to large numbers of new worlds\n\nLeash published this work and is releasing a few dozen Minos worlds and thousands of agent transcripts for the community to use.\n\nOriginal YouTube with Ian Quigley: https://www.youtube.com/watch?v=hQSBJVreLms\nBlog post: https://leashbio.substack.com/p/making-reality-replayable\nPreprint: https://github.com/Leash-Labs/minos-paper/blob/trunk/Minos_Leash.pdf\nData and transcripts: https://strelka.leash.bio/\n\n\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 3
+    "youtubeVideos": 4
   }
 }

@@ -1,18 +1,26 @@
 {
-  "generatedAt": "2026-10-26T12:45:19.544Z",
+  "generatedAt": "2026-10-28T12:37:06.775Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "AI:AM Highlights: Clean Neurons, Black October, the GPU Credit Crunch, and Buying the Supply Chain",
-      "guid": "770651b2-cf9d-11f1-a1cf-fbc54476004a",
-      "url": "https://www.cognitiverevolution.ai/ai-am-highlights-clean-neurons-black-october-the-gpu-credit-crunch-and-buying-the-supply-chain/",
-      "publishedAt": "2026-10-24T11:45:37.000Z",
-      "description": "Hosts Nathan Labenz and Prakash Narayanan examine whether capital, physical infrastructure, or regulation will set the pace of artificial intelligence. Zvi Mowshowitz evaluates aggressive recursive self-improvement timelines pointing toward 2027, the oversold claims surrounding clean neural networks, and models learning to detect internal probes. SF Compute CEO Evan Conrad argues that credit availability rather than power or chips forms the true bottleneck in AI, while Cambrian managing partner Lonis Hamaili explains why the physical supply chain will capture more value than the labs. Together, these conversations highlight the structural constraints on model scaling and the real-world risks of agent-scale failures. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/ai-am-highlights-clean-neurons-black-october-the-gpu-credit-crunch-and-buying-the-supply-chain/ Sponsors: OutSystems: OutSystems is the leading agentic systems platform, helping enterprises build, modernize, and operate mission-critical applications at the speed of AI. Learn more and start owning your agentic future at https://outsystems.com/tcr Parallel: Parallel provides enterprise-grade web search APIs for AI agents, offering the optimal balance of quality, speed, and cost. Get started for free at https://parallel.ai/tcr Tasklet: Tasklet empowers your business with AI agents that connect to your tools and automate recurring workflows with no code required. Visit https://tasklet.ai and use code cog rev for $50 in free credits CHAPTERS: (00:00) Weekly episode preview (04:58) Recursive self improvement (Part 1) (09:54) Sponsors: OutSystems | Parallel (13:06) Recursive self improvement (Part 2) (13:06) Clean neural networks (Part 1) (26:25) Sponsor: Tasklet (28:03) Clean neural networks (Part 2) (28:03) The cognitive core (35:35) Black October security (41:52) The GPU credit crunch (51:58) Atoms over bits (01:03:53) Rethinking industry bottlenecks (01:10:31) Introducing HelpPeer agents (01:14:23) Leaked federal bill (01:25:59) Episode Outro (01:27:49) Outro PRODUCED BY: https://aipodcast.ing SOCIAL LINKS: Website: https://www.cognitiverevolution.ai Twitter (Podcast): https://x.com/cogrev_podcast Twitter (Nathan): https://x.com/labenz LinkedIn: https://linkedin.com/in/nathanlabenz/ Youtube: https://youtube.com/@CognitiveRevolutionPodcast Apple: https://podcasts.apple.com/de/podcast/the-cognitive-revolution-ai-builders-researchers-and/id1669813431 Spotify: https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk"
+      "name": "Training Data",
+      "title": "European Defense Sovereignty Starts in the Factory: Stark’s Uwe Horstmann and Johannes Schaback",
+      "guid": "538a8146-d177-11f1-8079-5369dbb6e923",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+      "publishedAt": "2026-10-28T09:00:00.000Z",
+      "description": "Two years after its founding, Stark has roughly 700 employees and strike drones in the field in Ukraine. CEO Uwe Horstmann and CTO Johannes Schaback argue that the real lesson of that war is not any single weapon: the innovation ecosystem behind it is the wonder weapon. They explain why Stark designs every system for mass manufacturing from day one, runs 10 to 15 programs like a venture portfolio, and views the staff sergeant who operates a system as just as important as the general who buys it. Johannes recounts the publicly reported failed trial that became a forging moment, as engineers worked around the clock at a freezing test range until they landed three consecutive hits. They discuss NATO’s principles of responsible AI use and the hard-coded constraints in Stark’s autonomy stack. And Uwe lays out his next big idea: defense contracts structured like cloud contracts with surge capacity built in, so production itself becomes deterrence. Hosted by Pat Grady and Luciana Lixandru, Sequoia Capital Chapters 0:00 – Introduction 1:03 – Billions in contracts in 18 months: Stark's four-part playbook 2:28 – The staff sergeant matters as much as the general, and wood beats plastic 7:42 – Why Europe is ready for a neo prime, and why procurement reform will last 11:45 – Startup DNA, venture-style programs, and \"as complex as a washing machine\" 16:27 – Born out of fire: the failed trial and the round-the-clock comeback 21:13 – Where Stark finds talent, and why defense is no longer off-limits 23:48 – Anatomy of a strike, from the wooden crate to the kill zone 27:22 – Vertical integration, multiple domains, and shifting left on manufacturing 32:53 – After the Hugging Face hack: guardrails on autonomous weapons 35:56 – Matching the primes on R&D and scaling to 700 people in two years 39:24 – Deterrence by contract, and Europe's next chapter with the US"
+    },
+    {
+      "source": "podcast",
+      "name": "Machine Learning Street Talk",
+      "title": "Anthropic Faces FTC Scrutiny as OpenAI Claims a Major Math Breakthrough",
+      "guid": "gid://art19-episode-locator/V0/HIDJi6tZ0yPPxebR3AqC08vjobdNo5nxTR3hLz9AgAM",
+      "publishedAt": "2026-10-28T00:44:01.000Z",
+      "description": "Anthropic faces new scrutiny as the FTC seeks executive testimony in its consumer-harm investigation. Jaeden breaks down the news, the reported $63 billion financing plan for Broadcom chips destined for Anthropic, and OpenAI's claim that an internal model refuted the Exponential Time Hypothesis. We also cover Verizon's $2 billion-plus AWS agreement, GPT-6.1 Terra, and Oracle's new Fusion Claw agentic applications. The math result is a claim under review—not a solution to P versus NP—and the FTC investigation is not a finding of wrongdoing. Join the AI Hustle Skool community for practical AI business workflows: https://www.skool.com/aihustle Sources discussed: FTC testimony report: https://www.axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai OpenAI mathematical research: https://github.com/openai/math Verizon earnings and AWS agreement: https://www.verizon.com/about/news/verizon-delivers-another-record-breaking-quarter See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 1
+    "podcastEpisodes": 2
   }
 }
