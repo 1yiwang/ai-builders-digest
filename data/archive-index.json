@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-28T12:39:18.958Z",
-  "count": 60,
+  "generatedAt": "2026-10-30T12:41:17.081Z",
+  "count": 61,
   "issues": [
+    {
+      "date": "2026-10-30",
+      "title": "Benchmarks, Coding Agents und Amerikas ASI-Strategie",
+      "desc": "Neue Benchmarks, Coding-Agenten und nationale ASI-Strategie prägen den KI-Tag.",
+      "href": "./issues/ai-builders-digest-2026-10-30.html",
+      "issue": "Nr. 61"
+    },
     {
       "date": "2026-10-28",
       "title": "Anthropic glänzt und wird selbst gehackt",

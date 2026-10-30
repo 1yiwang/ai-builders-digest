@@ -1,0 +1,223 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-10-30",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google hat mit Gemini 4 Carbon neue Cyber-Leaderboards erobert, bleibt aber hinter Grok 4.7 und Kimi K3.1 Pro. Serval-Gründer Jake Stauch attackiert derweil ServiceNow mit Coding Agents. RAND skizziert Amerikas ASI-Strategie unter dem Leitmotiv 'Freedom of Action'. Simon Willison zeigt, wie autonome Modelle Spielwelten bauen und API-Guthaben Entwickler entlasten."
+  },
+  "archive": {
+    "title": "Benchmarks, Coding Agents und Amerikas ASI-Strategie",
+    "desc": "Neue Benchmarks, Coding-Agenten und nationale ASI-Strategie prägen den KI-Tag."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-10-30.",
+  "sections": [
+    {
+      "title": "Model Benchmarks: Gemini 4 Carbon vs. the Field / Modell-Benchmarks: Gemini 4 Carbon gegen das Feld",
+      "desc": "New leaderboard results and benchmark methodology updates are changing which models developers trust.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-gemini-4-carbon/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google's Gemini 4 Carbon tops leaderboards for cyber defenders but still trails Grok 4.7, Muse Wonder, and Kimi K3.1 Pro at 1678.",
+              "Liquid AI released LFM3-1.7B: a 1.73B tri-hybrid model with 256K context and ~1GB 4-bit edge deployment.",
+              "The ranking before Carbon: Opus 5.5 scored 58, GPT-6 Astra 57, Sonnet 5.5 54."
+            ],
+            "original": [
+              "It still trails Grok 4.7, Muse Wonder and Kimi K3.1 Pro (1678).",
+              "Ranking before Carbon : Opus 5.5 scored 58, followed by GPT-6 Astra (57), GPT-6.1 Sol (55), Sonnet 5.5 (54) and GPT-6.1 Terra (51)."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Googles Gemini 4 Carbon führt Leaderboards für Cyber-Verteidiger an, liegt aber hinter Grok 4.7, Muse Wonder und Kimi K3.1 Pro (1678).",
+              "Liquid AI veröffentlichte LFM3-1.7B: ein 1,73B-Modell mit 256K Kontext und ca. 1 GB 4-Bit-Edge-Deployment.",
+              "Vor Carbon: Opus 5.5 erreichte 58, GPT-6 Astra 57, Sonnet 5.5 54."
+            ],
+            "original": [
+              "Es liegt weiter hinter Grok 4.7, Muse Wonder und Kimi K3.1 Pro (1678).",
+              "Vor Carbon lag Opus 5.5 mit 58, gefolgt von GPT-6 Astra (57), GPT-6.1 Sol (55), Sonnet 5.5 (54) und GPT-6.1 Terra (51)."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Interconnects",
+          "sourceName": "Interconnects",
+          "sourceUrl": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Artificial Analysis v5 revises benchmark methods, reopening the 'benchmarker's dilemma' about which leaderboard rankings reflect real model quality.",
+              "Interconnects examines how benchmark updates alter leaderboard positions and evaluation incentives."
+            ],
+            "original": [
+              "Artificial Analysis v5 and the benchmarker's dilemma"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Artificial Analysis v5 überarbeitet die Benchmark-Methodik und verschärft das 'Benchmarker-Dilemma': Welche Rankings zeigen echte Modellqualität?",
+              "Interconnects analysiert, wie Benchmark-Updates die Leaderboard-Positionen und Anreize verschieben."
+            ],
+            "original": [
+              "Artificial Analysis v5 und das Dilemma der Benchmarker"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Coding Agents & Enterprise Workflows / Coding Agents & Enterprise-Workflows",
+      "desc": "Serval's CEO argues coding agents can challenge ServiceNow for teams outside the enterprise core.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=EZcWEsMuLb4",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Serval co-founder and CEO Jake Stauch positions his coding agents as 'the rest of us' alternative to ServiceNow's enterprise workflow stack.",
+              "The episode covers how Serval aims to bring coding automation to teams that find ServiceNow too heavy."
+            ],
+            "original": [
+              "Taking on ServiceNow: Coding Agents the Rest of Us with Serval Co-Founder and CEO Jake Stauch"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Serval-Mitgründer und CEO Jake Stauch positioniert seine Coding Agents als 'Rest of Us'-Alternative zu ServiceNows Enterprise-Workflow-Stack.",
+              "Die Folge zeigt, wie Serval Code-Automatisierung für Teams bringen will, denen ServiceNow zu schwerfällig ist."
+            ],
+            "original": [
+              "Taking on ServiceNow: Coding Agents the Rest of Us mit Serval-Mitgründer und CEO Jake Stauch"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "National AI Strategy / Nationale KI-Strategie",
+      "desc": "RAND researchers lay out a freedom-of-action framework for America's approach to artificial superintelligence.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "RAND's Joel Predd, Ben Boudreaux, and Matt Chessen outline America's ASI strategy built around 'freedom of action' rather than just safety or competitiveness.",
+              "The conversation frames ASI as a national security issue, with policy options for maintaining US strategic autonomy."
+            ],
+            "original": [
+              "Freedom of Action: America's ASI Strategy, w/ RAND's Joel Predd, Ben Boudreaux & Matt Chessen"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "RANDs Joel Predd, Ben Boudreaux und Matt Chessen skizzieren Amerikas ASI-Strategie mit Fokus auf 'Freedom of Action' statt nur Sicherheit oder Wettbewerb.",
+              "Das Gespräch rahmt ASI als nationale Sicherheitsfrage und diskutiert Politikoptionen für strategische Autonomie."
+            ],
+            "original": [
+              "Freedom of Action: America's ASI Strategy, mit RANDs Joel Predd, Ben Boudreaux und Matt Chessen"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Applied AI Notes / Angewandte KI-Notizen",
+      "desc": "Simon Willison shares two concrete AI-building notes: autonomous game-world models and new API credits for ChatGPT subscribers.",
+      "cards": [
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/29/api-credits/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison reports that eligible ChatGPT subscriptions now include API credits, lowering the cost of building on OpenAI models.",
+              "The change gives ChatGPT subscribers direct API access, bridging consumer and developer plans."
+            ],
+            "original": [
+              "API credits benefit for eligible ChatGPT subscriptions"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison berichtet, dass berechtigte ChatGPT-Abos jetzt API-Guthaben enthalten und so die Kosten für OpenAI-Modellentwicklung sinken.",
+              "Die Änderung verbindet Consumer- und Developer-Pläne: ChatGPT-Abonnenten erhalten direkten API-Zugang."
+            ],
+            "original": [
+              "API-Guthaben für berechtigte ChatGPT-Abonnements"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Simon Willison built a multiplayer game world using autonomous Fable-class models, describing it as 'the most AI-pilled company in the world.'",
+              "The post is a hands-on account of using autonomous model agents to run persistent game world systems."
+            ],
+            "original": [
+              "Building a multiplayer game world with autonomous Fable-class models"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison baute eine Multiplayer-Spielwelt mit autonomen Fable-class-Modellen und nennt sie 'die am stärksten KI-getriebene Firma der Welt'.",
+              "Der Post zeigt praxisnah, wie autonome Modell-Agenten persistente Spielsysteme betreiben können."
+            ],
+            "original": [
+              "Building a multiplayer game world with autonomous Fable-class models"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261030123848-227791",
+    "generatedAt": "2026-10-30T12:41:16.963Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 148240,
+    "tokensIn": 1339,
+    "tokensOut": 13058,
+    "estCostUsd": 0.003844,
+    "candidatesIn": 34,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 246351,
+      "preparedChars": 3905,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-gemini-4-carbon/",
+      "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
+      "https://www.youtube.com/watch?v=EZcWEsMuLb4",
+      "https://www.cognitiverevolution.ai/freedom-of-action-america-s-asi-strategy-w-rand-s-joel-predd-ben-boudreaux-matt-chessen/",
+      "https://simonwillison.net/2026/Oct/29/api-credits/",
+      "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/"
+    ]
+  }
+}

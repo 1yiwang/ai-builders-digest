@@ -1,24 +1,51 @@
 {
-  "generatedAt": "2026-10-28T12:37:10.383Z",
+  "generatedAt": "2026-10-30T12:38:43.373Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Y Combinator",
       "handle": "@ycombinator",
-      "title": "The AI Billing Stack for Healthcare",
-      "url": "https://www.youtube.com/watch?v=e1NQKzBXfM8",
-      "publishedAt": "2026-10-27T14:00:11.000Z",
-      "description": "Candid Health is rebuilding the medical billing stack for healthcare providers, automating the work required to get claims submitted correctly and providers paid. \n\nMedical billing is a $200–300 billion market, and much of it still runs on decades-old software and manual processes. Today, Candid serves more than 200 healthcare organizations, processes about $7 billion in claims each year, and recently raised a $120 million Series D to keep expanding into the broader healthcare market.\n\nIn this Founder Fireside, co-founder and CEO Nick Perry joins YC's Gustaf Alströmer to share how Candid went from manually reviewing every claim to building the automation layer behind the business. He also explains where AI and agents fit into medical billing, and why the goal is to prevent denials before they happen.\n\nChapters:\n00:00 — What Candid Health Does\n00:26 — Why Medical Billing Is So Complicated\n02:13 — How Medical Claims Actually Work\n07:27 — The $300B Medical Billing Market\n09:14 — Finding Candid’s Wedge\n11:00 — Winning the First Customer\n13:00 — Doing Things That Don’t Scale\n15:33 — Automating RCM With Software and AI\n17:55 — From Palantir to Candid Health\n19:25 — The Moment They Hit Product-Market Fit\n20:44 — Building the Team and Culture\n23:39 — From the First 10 Customers to Scale\n27:24 — Where AI Agents Matter Most\n30:14 — Raising a Series D and What Comes Next\n37:33 — The Startup Lesson Nick Wishes He Knew"
+      "title": "Building AI for the $650B Home Services Market",
+      "url": "https://www.youtube.com/watch?v=5NRNqjlmnKQ",
+      "publishedAt": "2026-10-29T19:11:34.000Z",
+      "description": "Broccoli (YC W22) is building an AI front office for home services businesses, answering calls, following up with leads, and booking appointments across voice and text.\n\nToday, they serve more than 500 customers, are booking jobs at a run rate of over $1 billion a year, and expect to end the year at more than $60 million in ARR, up from zero just two years ago, after recently raising a $30 million Series B.\n\nIn this Founder Fireside, Broccoli’s founders AJ Jain and Aditya Ketkar join YC's Gustaf Alstromer to share the long path to finding that business, from an earlier EV startup that never found product-market fit to visiting 140 contractors across the Bay Area to understand their biggest problems firsthand. They explain how embedding inside a plumbing company led to the first version of Broccoli, why answering missed calls became the wedge, and how AI could eventually reshape the work of technicians themselves.\n\nhttps://www.broccoli.com\n\nChapters:\n00:00 — What Broccoli Does\n01:30 — The Long Road to YC\n04:22 — Building Telematica in the Wrong Market\n07:11 — Why the First Idea Didn’t Work\n09:27 — Finding the Right Customer\n11:13 — Going Door to Door\n14:49 — Discovering the Real Problem\n17:53 — Getting the First Customers\n19:11 — The First Version of Broccoli\n20:50 — What Product-Market Fit Felt Like\n23:09 — Scaling to $60M ARR\n26:19 — How AI Will Change the Trades\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
+      "title": "DeepSeek's New AI Is An Absolute Monster",
+      "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
+      "publishedAt": "2026-10-28T17:32:40.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 DeepSeek v4.1 Flash 1017 is available here:\nhttps://api-docs.deepseek.com/news/news261017/\n\nSources:\nhttps://x.com/marcthecreatorr/status/2111427716142571554/video/1\nhttps://x.com/olezhavich/status/2112897791022264814/video/1\nhttps://x.com/notjazii/status/2111432925313179689/video/1\nhttps://x.com/izag82161/status/2113126108787089811/video/1\nhttps://x.com/notjazii/status/2111414086349336841/photo/1\nhttps://x.com/EnvolDev/status/2112304943076184535/video/1\nhttps://x.com/loktar00/status/2111468860935127532/video/1\nhttps://x.com/ItsmeAjayKV/status/2114036230354788581/video/1\nhttps://x.com/SPAC89/status/2111413922989224089/video/1\nhttps://x.com/marcthecreatorr/status/2114074078340649183/video/1\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Chipmakers Can Only See 4 Years Ahead",
-      "url": "https://www.youtube.com/watch?v=RV5t9RbpVAc",
-      "publishedAt": "2026-10-26T19:48:49.000Z",
+      "title": "Why High-NA EUV Pays Off for Intel but Not TSMC",
+      "url": "https://www.youtube.com/watch?v=GAsVE9yRPbk",
+      "publishedAt": "2026-10-29T19:46:33.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "The Transistor That Took 34 Years to Ship",
+      "url": "https://www.youtube.com/watch?v=qNvuN-TG2nQ",
+      "publishedAt": "2026-10-28T18:30:07.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=frYSOKvNiiE\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Why Agents Love Supabase — with Paul Copplestone and Ant Wilson",
+      "url": "https://www.youtube.com/watch?v=zHG6sAss_kE",
+      "publishedAt": "2026-10-28T19:34:35.000Z",
+      "description": "Why do AI agents keep choosing Supabase—and what changes when the agent becomes the user?\n\nSupabase co-founders Paul Copplestone (CEO) and Ant Wilson (CTO) join swyx for their first podcast together after a $0 to $10B speedrun as the preeminent open source, fully remote Postgres platform company. We have watched them grow from a humble Firebase alternative launched during Covid, to now being a full preferred backend for AI-built applications: long-running compute beside the database, declarative schemas, Postgres storage and reliability, Turso, developer memes, community-led distribution, and product-led sales.\n\nThe episode opens with swyx’s commentary on Supabase Select and the company’s journey from zero to a $10B valuation in six years as an open-source, fully remote company. swyx also discusses his seed investment in Supabase and its sponsorship of Latent Space.\n\nChapters\n0:00 Welcome and why agents love Supabase\n5:23 Paul Copplestone and Ant Wilson\n6:39 Compute beside the database\n8:05 OrioleDB and Multigres\n12:50 Scaling up, scaling out, and Turso\n17:53 Developer marketing and memes\n23:15 The launch and the migration\n31:03 Vectors, growth, and AI recommendations\n41:43 Product-led sales and enterprise growth\n49:38 Live migrations and analytics\n58:43 Agent-ready local development\n1:06:43 Community and company workflows\n\nLinks and show notes\nSupabase: https://supabase.link/AYNPC9B\nSupabase Select: https://select.supabase.com/\nBuild from code and Supabase Compute: https://supabase.com/blog/select-2026-build-anything\nOperate with your own agent: https://supabase.com/blog/select-2026-operate-with-confidence\nMultigres and OrioleDB: https://supabase.com/blog/select-2026-scale-without-limits\nTurso acquisition: https://supabase.com/blog/supabase-is-acquiring-turso\nDeclarative schemas: https://supabase.com/blog/declarative-schemas-2-0-pg-delta\nAlpha launch postmortem: https://supabase.com/blog/alpha-launch-postmortem\nSupabase’s Series F: https://supabase.com/blog/supabase-series-f\nLatent Space: https://latent.space/"
     },
     {
       "source": "youtube",
@@ -28,18 +55,9 @@
       "url": "https://www.youtube.com/watch?v=MRQTlwcW-aQ",
       "publishedAt": "2026-10-27T18:37:32.000Z",
       "description": "An agent’s sandbox can die without taking the whole agent with it. That’s the idea behind “the brain and the hands,” Anthropic’s architecture for Claude Managed Agents.\n\nNow that the dust has settled on Opus 5.5, it is universally agreed to be the best model in the world. In this conversation with Katelyn Lesse and Angela Jiang, Anthropic’s Heads of Engineering and of Product, goes inside the systems that turn model capabilities into products developers can use.\n\nWe cover:\n\n- Why Anthropic separated the agent harness, session state and execution environment.\n- Letting agents use credentials without putting those credentials inside their sandboxes.\n- Rebuilding the Messages API from Python to Rust with Claude—and verifying the rewrite with shadow traffic.\n- Preventing model distillation while preserving the developer experience.\n- Memory, “dreaming,” agent evaluations and the work still left for human engineers.\n- How Anthropic’s own teams use Claude while keeping responsibility for their code and writing.\n\nThe episode opens with swyx’s look at Anthropic’s S-1: revenue per employee, compute efficiency, and the improvement and investment loops behind the business.\n\n**Related links**\n\n- [Claude Opus 5.5](https://www.anthropic.com/claude-opus-5-5) — Performance, pricing and safeguards.\n- [The brain and the hands](https://www.anthropic.com/research/managed-agents) — The Managed Agents architecture.\n- [How Anthropic contains Claude](https://www.anthropic.com/research/how-we-contain-claude) — Isolation, credentials and network controls.\n- [Harnesses for long-running agents](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents) — Maintaining progress across context windows.\n\nSponsorship and business inquiries: business@latent.space"
-    },
-    {
-      "source": "youtube",
-      "name": "Latent Space",
-      "handle": "@LatentSpacePod",
-      "title": "An Eval for AI Scientists That Knows the Answer Key - Ian Quigley, Leash Bio",
-      "url": "https://www.youtube.com/watch?v=vhPCo-8K78U",
-      "publishedAt": "2026-10-26T15:00:07.000Z",
-      "description": "Leash Biosciences built a platform to physically measure thousands of proteins against millions of molecules. In this followup to our Leash Bio podcast with cofounder Ian Quigley, he returns to discuss the release of Minos, Leash’s framework of pre-measured experimental worlds that scientific agents can explore. \n\nIan goes into how scientific agents traverse these environments, whether they use information from prior experiments to inform future choices, how good they get at medicinal chemistry, and how their broad decision making abilities affect their performance. \n\nWe cover:\n- Huge action spaces that can be explored by reasoning agents\n- Which models are the best at medicinal chemistry\n- What mistakes they make and how Leash can tell\n- How agents weren’t ready to do this at all a year ago\n- The basic idea of a lab-in-the-loop with zero latency\n- The path to large numbers of new worlds\n\nLeash published this work and is releasing a few dozen Minos worlds and thousands of agent transcripts for the community to use.\n\nOriginal YouTube with Ian Quigley: https://www.youtube.com/watch?v=hQSBJVreLms\nBlog post: https://leashbio.substack.com/p/making-reality-replayable\nPreprint: https://github.com/Leash-Labs/minos-paper/blob/trunk/Minos_Leash.pdf\nData and transcripts: https://strelka.leash.bio/\n\n\n\nSponsorship and business inquiries: business@latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 4
+    "youtubeVideos": 6
   }
 }
