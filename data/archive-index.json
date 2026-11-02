@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-30T12:41:17.081Z",
-  "count": 61,
+  "generatedAt": "2026-11-02T15:33:34.223Z",
+  "count": 62,
   "issues": [
+    {
+      "date": "2026-11-02",
+      "title": "Googles KI-Mode kostet 500 Milliarden Dollar",
+      "desc": "Der Suchriese bekennt erstmals, dass KI-Antworten das Anzeigengeschäft kannibalisieren, während OpenAI und Startups auf Infrastruktur und neue Produkte setzen.",
+      "href": "./issues/ai-builders-digest-2026-11-02.html",
+      "issue": "Nr. 62"
+    },
     {
       "date": "2026-10-30",
       "title": "Benchmarks, Coding Agents und Amerikas ASI-Strategie",

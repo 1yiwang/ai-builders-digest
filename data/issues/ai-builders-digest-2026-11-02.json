@@ -1,0 +1,185 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-02",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google räumte ein, dass AI Mode das Suchumsatzwachstum belastet: minus 15 Prozent und 500 Milliarden Dollar Marktkapitalisierung. Währenddessen kündigte OpenAI das Grid Protectors Program an und Omen AI übernahm Aquatic Labs für 16 Millionen Dollar. Diese Meldungen zeigen, dass KI-Geschäftsmodelle und physische Infrastruktur enger zusammenrücken. Entscheidend wird, ob Unternehmen mit klaren Produkt- und Kostenstrategien auf die neue KI-Realität antworten."
+  },
+  "archive": {
+    "title": "Googles KI-Mode kostet 500 Milliarden Dollar",
+    "desc": "Der Suchriese bekennt erstmals, dass KI-Antworten das Anzeigengeschäft kannibalisieren, während OpenAI und Startups auf Infrastruktur und neue Produkte setzen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-02.",
+  "sections": [
+    {
+      "title": "Search Economics & Consumer AI Pricing / Suchökonomie & Consumer-KI-Preise",
+      "desc": "Google's admission and Anthropic's pricing changes show consumer AI business models under pressure.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Google admits AI Mode hurts Search revenue: -15%, $500B market cap drop, worst since 2004 IPO",
+              "The admission signals AI-first search may cannibalize the company's core ad business at scale"
+            ],
+            "original": [
+              "Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google räumt ein, dass AI Mode den Suchumsatz belastet: minus 15 Prozent, 500 Milliarden Dollar Marktkapitalisierung, schlechtester Wert seit dem Börsengang 2004",
+              "Das Eingeständnis zeigt, dass KI-zentrierte Suche das Kerngeschäft mit Werbung im großen Stil kannibalisieren könnte"
+            ],
+            "original": [
+              "Google räumt ein, dass AI Mode den Suchumsatz belastet: minus 15 Prozent, 500 Milliarden Dollar Verlust, schlechtester seit dem Börsengang 2004."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic renames Max5 to Max ($100/month) and Max20 to Ultra ($200/month)",
+              "Ultra removes 5-hour limits, signaling higher-end consumer plans for heavy usage"
+            ],
+            "original": [
+              "Anthropic renames Max5 and Max20 and removes 5h limits for Max20: 'Max 5x' → 'Max' at $100/month and 'Max 20x' → 'Ultra' at $200/month."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic benennt Max5 in Max (100 Dollar/Monat) und Max20 in Ultra (200 Dollar/Monat) um",
+              "Ultra entfernt die 5-Stunden-Limits und signalisiert teurere Consumer-Tarife für intensive Nutzung"
+            ],
+            "original": [
+              "Anthropic benennt Max5 und Max20 um und entfernt 5h-Limits für Max20: 'Max 5x' → 'Max' für 100 Dollar/Monat und 'Max 20x' → 'Ultra' für 200 Dollar/Monat."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model Releases & Infrastructure Announcements / Modell-Releases & Infrastruktur-Ankündigungen",
+      "desc": "TLDR AI rounds up new model and compute projects while OpenAI targets energy infrastructure.",
+      "cards": [
+        {
+          "authorKey": "blog:TLDR AI",
+          "sourceName": "TLDR AI",
+          "sourceUrl": "https://tldr.tech/ai/2026-11-02",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "TLDR AI highlights DeepSeek super agent, GPT-6 Rosalind, and Google orbital compute",
+              "The roundup signals accelerating model and compute development across labs"
+            ],
+            "original": [
+              "DeepSeek super agent 🤖, GPT-6 Rosalind 🧬, Google orbital compute 🛰️"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "TLDR AI hebt DeepSeek Super Agent, GPT-6 Rosalind und Googles Orbital-Compute hervor",
+              "Der Überblick signalisiert eine Beschleunigung bei Modell- und Compute-Entwicklungen in allen Laboren"
+            ],
+            "original": [
+              "DeepSeek Super Agent 🤖, GPT-6 Rosalind 🧬, Google Orbital Compute 🛰️"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/grid-protectors-program",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI introduces the Grid Protectors Program"
+            ],
+            "original": [
+              "Introducing the Grid Protectors Program"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI stellt das Grid Protectors Program vor"
+            ],
+            "original": [
+              "Einführung des Grid Protectors Program"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI in Specialized Domains / KI in spezialisierten Domänen",
+      "desc": "Omen AI's acquisition shows AI moving into specialized workflows.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Omen AI acquires Aquatic Labs for $16 million to add liquid know-how",
+              "The deal brings liquid model expertise into Omen AI's platform"
+            ],
+            "original": [
+              "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Omen AI übernimmt Aquatic Labs für 16 Millionen Dollar, um Liquid-Know-how zu integrieren",
+              "Der Deal bringt Liquid-Modell-Expertise in die Plattform von Omen AI"
+            ],
+            "original": [
+              "Omen AI erweitert sich um Liquid-Know-how durch die 16-Millionen-Dollar-Übernahme von Aquatic Labs"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261102153050-86b900",
+    "generatedAt": "2026-11-02T15:33:34.068Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 1,
+    "latencyMs": 163428,
+    "tokensIn": 3208,
+    "tokensOut": 14090,
+    "estCostUsd": 0.004394,
+    "candidatesIn": 22,
+    "shortlistSize": 12,
+    "cardsPublished": 5,
+    "truncation": {
+      "rawChars": 148642,
+      "preparedChars": 3936,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
+      "https://tldr.tech/ai/2026-11-02",
+      "https://openai.com/index/grid-protectors-program",
+      "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/"
+    ]
+  }
+}
