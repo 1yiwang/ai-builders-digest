@@ -1,0 +1,277 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-04",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat laut The Decoder GPT-6 Astra ein Hardware-Gerät in unter einer Woche entwerfen lassen. Parallel zeigen Latent Space und Simon Willison, dass LLMs Modellgewichte direkt lesen und schreiben können. Together AI und Nebius positionieren sich mit neuen Inferenz-Tools und Cloud-Strategien gegen Hyperscaler. Diese Entwicklungen deuten auf Modelle, die Hardware, Infrastruktur und sich selbst optimieren."
+  },
+  "archive": {
+    "title": "OpenAI lässt Astra Hardware entwerfen",
+    "desc": "Modelle werden zu Ingenieuren: Sie lesen Gewichte, entwerfen Hardware und optimieren Inferenz."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-04.",
+  "sections": [
+    {
+      "title": "Weight Space Programming: LLMs Read & Write Neural Weights / Weight Space Programming: LLMs lesen und schreiben neuronale Gewichte",
+      "desc": "Beide Beiträge dokumentieren eine neue Fähigkeit: LLMs können neuronale Netzwerkgewichte direkt manipulieren, nicht nur Text.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Weight Space Programming lets LLMs read and write neural network weights, cutting autoresearch out of the RSI loop.",
+              "Benchmark image shows a task likely required multi-step reasoning; only Opus and Mimo exceeded 60/100."
+            ],
+            "original": [
+              "A commenter shared an additional benchmark image showing that at least one task likely required multi-step reasoning, with only Opus and Mimo exceeding 60/100.",
+              "Updated Q4_K_M and Q8_0 GGUFs replaced earlier weights on 2026-11-02 04:50 UTC with 'substantially' improved generation quality."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Weight Space Programming lässt LLMs neuronale Netzwerkgewichte lesen und schreiben und umgeht so Autoresearch in der RSI-Schleife.",
+              "Ein Benchmark-Bild zeigt: Mindestens eine Aufgabe erforderte mehrstufiges Denken; nur Opus und Mimo übertrafen 60/100 Punkte."
+            ],
+            "original": [
+              "Ein Kommentator teilte ein zusätzliches Benchmark-Bild, das zeigt, dass mindestens eine Aufgabe wahrscheinlich mehrstufiges Denken erforderte; nur Opus und Mimo übertrafen 60/100.",
+              "Aktualisierte Q4_K_M- und Q8_0-GGUF-Gewichte ersetzten frühere Gewichte am 02.11.2026 um 04:50 UTC mit 'erheblich' verbesserter Generierungsqualität."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Simon Willison runs Qwen 3.8 27B on his laptop and confirms it can interpret model weights, too.",
+              "This replicates the weight-space capability outside frontier labs, on local hardware."
+            ],
+            "original": [
+              "Qwen 3.8 27B on my laptop can interpret model weights, too"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison führt Qwen 3.8 27B auf seinem Laptop aus und bestätigt: Das Modell kann ebenfalls Modellgewichte interpretieren.",
+              "Damit ist die Weight-Space-Fähigkeit auch außerhalb von Frontier-Laboren und auf lokaler Hardware verfügbar."
+            ],
+            "original": [
+              "Qwen 3.8 27B auf meinem Laptop kann ebenfalls Modellgewichte interpretieren."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure & Cloud Competition: Nebius, Compiler, Polymorphic Inference / Infrastruktur & Cloud-Wettbewerb: Nebius, Compiler, Polymorphic Inference",
+      "desc": "Vom Cloud-Anbieter-Strategie bis zu Inferenz-Tools zeigen diese Beiträge, wie offene Modell-Infrastruktur zur Wettbewerbsfront wird.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/together-compiler-continuous-compilation-for-ai-inference",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Together AI launched Together Compiler, continuous compilation for AI inference.",
+              "The compiler optimizes model inference workloads continuously, aiming to improve performance and reduce cost."
+            ],
+            "original": [
+              "Together Compiler: Continuous Compilation for AI inference"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI hat Together Compiler vorgestellt: kontinuierliche Kompilierung für KI-Inferenz.",
+              "Statt statischer Kompilierung passt sich der Compiler kontinuierlich an wechselnde Modelle und Workloads an."
+            ],
+            "original": [
+              "Together Compiler: Kontinuierliche Kompilierung für KI-Inferenz"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/polymorphic-inference",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI introduced Polymorphic Inference, self-tuning inference for open models.",
+              "The system tunes inference settings per model and traffic pattern, targeting better throughput and latency."
+            ],
+            "original": [
+              "Polymorphic Inference: self-tuning inference for open models"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI stellte Polymorphic Inference vor: selbstoptimierende Inferenz für offene Modelle.",
+              "Das System stimmt Inferenzparameter je Modell und Verkehrsmuster ab und zielt auf besseren Durchsatz und niedrigere Latenz."
+            ],
+            "original": [
+              "Polymorphic Inference: Selbstoptimierende Inferenz für offene Modelle"
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:Unsupervised Learning",
+          "sourceName": "Unsupervised Learning",
+          "sourceUrl": "https://www.youtube.com/watch?v=qJkcjURcAe8",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Nebius CTO argues the startup can race hyperscalers before AWS fully wakes up in AI infrastructure.",
+              "The episode covers Nebius's strategy to compete against AWS in AI cloud services."
+            ],
+            "original": [
+              "Nebius CTO on Racing the Hyperscalers Before AWS Wakes Up"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Der CTO von Nebius argumentiert, das Startup könne mit Hyperscalern konkurrieren, bevor AWS in der KI-Infrastruktur vollständig aufwacht.",
+              "Die Folge behandelt Nebius' Strategie, gegen AWS im KI-Cloud-Markt zu bestehen."
+            ],
+            "original": [
+              "Nebius CTO über den Wettlauf mit Hyperscalern, bevor AWS aufwacht"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "GPT-6 Astra: Hardware Design in Days / GPT-6 Astra: Hardware-Design in Tagen",
+      "desc": "OpenAI claims its latest model can move from prompt to physical hardware design within a week.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week.",
+              "The claim moves frontier models beyond code generation into full hardware design workflows."
+            ],
+            "original": [
+              "OpenAI says GPT-6 Astra designed a hardware device from scratch in under a week"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI sagt, GPT-6 Astra habe in weniger als einer Woche ein Hardware-Gerät von Grund auf entworfen.",
+              "Damit verlagern sich Frontier-Modelle von Codegenerierung zu vollständigen Hardware-Design-Workflows."
+            ],
+            "original": [
+              "OpenAI sagt, GPT-6 Astra habe ein Hardware-Gerät in unter einer Woche von Grund auf entworfen"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Google AI Lock-In in Schools / Google-KI-Bindung an Schulen",
+      "desc": "Google koppelt die Opt-out-Option für KI in Schulen ab 2027 an den Verlust der Suche.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Schools that turn off Google's AI features will lose Google Search access starting in 2027.",
+              "The policy ties core search to AI opt-in, effectively forcing educational institutions to accept AI tools."
+            ],
+            "original": [
+              "Schools that turn off Google's AI will lose search too starting in 2027"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Schulen, die Googles KI-Funktionen deaktivieren, verlieren ab 2027 auch die Google-Suche.",
+              "Die Richtlinie koppelt die Kernsuche an die KI-Zustimmung und zwingt Bildungseinrichtungen faktisch zur Nutzung der KI-Tools."
+            ],
+            "original": [
+              "Schulen, die Googles KI deaktivieren, verlieren ab 2027 auch die Suche"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Vertical AI: Legal Workflows / Vertikale KI: Juristische Workflows",
+      "desc": "Legoras CTO erläutert, wie spezialisierte juristische KI-Assistenten gebaut werden.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Jacob Lauritzen, CTO of Legora, breaks down how his team builds AI for lawyers.",
+              "The conversation covers product decisions, model choices, and workflows for legal-specific AI assistants."
+            ],
+            "original": [
+              "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Jacob Lauritzen, CTO von Legora, erklärt, wie sein Team KI-Systeme für Anwälte baut.",
+              "Das Gespräch behandelt Produktentscheidungen, Modellwahl und Arbeitsabläufe für juristische KI-Assistenten."
+            ],
+            "original": [
+              "KI für Anwälte bauen - Jacob Lauritzen, CTO von Legora"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261104141527-254eb1",
+    "generatedAt": "2026-11-04T14:18:06.923Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 159585,
+    "tokensIn": 1365,
+    "tokensOut": 11055,
+    "estCostUsd": 0.003286,
+    "candidatesIn": 28,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 337155,
+      "preparedChars": 3983,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/",
+      "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "https://www.together.ai/blog/together-compiler-continuous-compilation-for-ai-inference",
+      "https://www.together.ai/blog/polymorphic-inference",
+      "https://www.youtube.com/watch?v=qJkcjURcAe8",
+      "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+      "https://the-decoder.com/schools-that-turn-off-googles-ai-will-lose-search-too-starting-in-2027/",
+      "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/"
+    ]
+  }
+}

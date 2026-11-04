@@ -1,15 +1,24 @@
 {
-  "generatedAt": "2026-11-02T15:30:45.104Z",
+  "generatedAt": "2026-11-04T14:15:22.497Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Two Minute Papers",
-      "handle": "@TwoMinutePapers",
-      "title": "OpenAI Claims It Just Did The Impossible",
-      "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
-      "publishedAt": "2026-10-30T15:57:16.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 OpenAI's paper is available here:\nhttps://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf\n\nOur paper with the cherry splash ray tracing simulation at 0:17 https://users.cg.tuwien.ac.at/zsolnai/gfx/adaptive_metropolis/\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "How Robert Moses Destroyed Anyone in His Way - Robert Caro",
+      "url": "https://www.youtube.com/watch?v=GpnDssoaMdE",
+      "publishedAt": "2026-11-03T20:20:29.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "Why Old Buildings Were More Beautiful - Robert Caro",
+      "url": "https://www.youtube.com/watch?v=WXR6M8A3jog",
+      "publishedAt": "2026-11-02T19:17:50.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
@@ -22,33 +31,33 @@
     },
     {
       "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "The Real Source of LBJ’s Power - Robert Caro",
-      "url": "https://www.youtube.com/watch?v=JgcxgP6-xOk",
-      "publishedAt": "2026-10-31T18:30:23.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Behind Latent Space, ft AIEi Shanghai preview — with swyx and Galen Gao",
+      "url": "https://www.youtube.com/watch?v=QmDLDy3ZSNE",
+      "publishedAt": "2026-11-04T10:32:51.000Z",
+      "description": "Galen Gao (https://substack.com/@linkloud1, https://x.com/Ninggao88) interviews Shawn Wang (swyx) ahead of AIEi Shanghai, the first AI Engineer conference in China. They talk about how a blog on open-source AI became Latent Space, how the AI Engineer community grew, and what local builders brought to Shanghai.\n\nThen they get into Kill My SaaS. An agent can rebuild a tool and pass the entry checks. Choosing a winner still takes someone who knows what an organizer needs to get done. The conversation also covers OpenClaw adoption in China and what Thinking Machines' interaction models change about talking to AI.\n\nChapters\n0:00 AIEi Shanghai\n2:31 Cold open\n3:28 Galen Gao and swyx\n8:01 Learn in Public\n10:54 How Latent Space started\n13:05 The idea for AI Engineer\n25:10 The conference as a dataset\n29:57 Kill My SaaS\n39:31 What the contest judge measured\n46:45 Jev and System One models\n52:49 Writing and founder stories\n1:02:13 Legora and product taste\n1:03:29 OpenClaw adoption in China\n1:07:35 Thinking Machines and interaction models\n1:10:02 Reading and listening recommendations\n\nAI Engineer Shanghai — https://ai.engineer/shanghai/2026\nThe Rise of the AI Engineer — https://latent.space/p/ai-engineer/\nKill My SaaS — https://www.youtube.com/watch?v=zlD-CkLVKtU\nLatent Space — https://latent.space"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Using Agents for Long-Horizon Financial Work — Aman Singh, Arca",
-      "url": "https://www.youtube.com/watch?v=KM3VQZKjpiY",
-      "publishedAt": "2026-10-31T16:00:03.000Z",
-      "description": "Arca head of AI Aman Singh joins Latent Space head of editorial Richard MacManus at AI Engineer New York, to discuss how Arca is building an AI-native wealth management firm. \n\nSingh explains Arca's architecture, which includes a custom harness and persistent memory. He also digs into how Arca runs agentic workflows that span days, not hours.\n\nArca: https://arcawealth.ai/\nAI Engineer: https://ai.engineer/\nLatent Space: https://www.latent.space/\n\nChapters:\n00:00 Introducing Arca’s AI-native wealth management firm\n01:40 How AI supports human financial advisors\n02:40 Choosing models with internal benchmarks\n04:01 Building a custom harness and routing tasks\n05:25 Handling a $100,000 tax bill: Agents and human approvals\n07:20 Agent memory across long-running tasks\n09:22 Safety guardrails and prompt injection defenses\n11:02 Compliance and auditability by default\n12:14 “Agents prompt people more than people prompt agents”\n13:46 Why Arca owns its agent infrastructure\n15:05 AI-native firms versus firms using AI tools\n16:09 Sandboxes and financial plan verification\n18:40 Decision models and checking financial facts\n19:51 Why trade execution stays with human experts\n20:32 Turning staff feedback into evals and improvements\n22:22 Turning operational knowledge into agent context\n23:41 Client examples: Hidden fees and proactive service\n\nSponsorship and business inquiries: business@latent.space"
+      "title": "⚡️ The 2026 Software Factory Infra Stack — Zach Lloyd, Warp.dev",
+      "url": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
+      "publishedAt": "2026-11-03T20:16:25.000Z",
+      "description": "Software factories at Warp: founder and CEO Zach Lloyd walks swyx through the system his team uses to turn tasks into pull requests, measure agent quality, and improve the workflow itself.\n\nThe demo follows a request from Slack to a PR, then explores shared agent traces, cost and throughput scoring, and benchmarks built from real engineering work. Zach reports that tuning models and subagent use brought Warp’s internal cost from about $80 per PR to roughly $15–20, alongside higher throughput.\n\nHow do software factories change the work of product engineers? What belongs in a benchmark? And how can agents help improve the factory that runs them?\n\nJoin Zach and the AI engineering community at AIE CODE, November 10–12, 2026 in San Francisco. Apply to attend: https://ai.engineer/code/2026\n\nChapters\n0:00 Introduction: software factories at Warp\n0:53 AIE CODE in San Francisco\n1:31 Zach Lloyd and software factories\n4:30 Define the factory in code\n7:34 Follow a Slack request to a PR\n8:41 Measure cost, throughput and quality\n14:32 Agents improving the factory\n16:10 Benchmark your own tasks\n23:59 From $80 to $15–20 per PR\n27:03 Who needs software factories?\n33:23 Product engineers and factory engineers\n\nLinks\n• Warp: https://www.warp.dev/\n• AIE CODE: https://ai.engineer/code/2026\n• Zach Lloyd — Software Engineering Is Becoming Factory Engineering: https://youtu.be/tUPPVhBBcoM\n• Suraj Gupta — Building Self-Improving Agent Software Factories: https://youtu.be/TN3mj92oZ8I\n• Latent Space: https://latent.space/\n\nSponsorship and business inquiries: business@latent.space\n\n#SoftwareFactories #Warp #AIEngineering"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Building ChatGPT for Finance — Joseph Kim, OpenAI's Head of Financial Services",
-      "url": "https://www.youtube.com/watch?v=v-d1WTqIULs",
-      "publishedAt": "2026-10-31T03:41:20.000Z",
-      "description": "What does it take to build AI for finance on top of a general-purpose model?\n\nJoseph Kim, who leads work on ChatGPT for Financial Services at OpenAI, joins swyx and Richard at AI Engineer New York to discuss the decisions behind the product: training financial reasoning into a shared model, connecting market data, and building workflows financial professionals can review and trust.\n\nJoseph explains why OpenAI bundled financial data even when connectors already existed, what startups can build with the same plugin primitives, and why human taste and expert judgment are hard to measure. The conversation moves from analyst workflows and review chains to investment ideas and the problem of building useful financial evaluations.\n\nChapters\n0:00 Cold open\n0:25 Introducing Joseph Kim\n0:56 ChatGPT for Financial Services\n2:19 Training financial reasoning into the model\n3:31 Codex adoption inside OpenAI\n4:27 Building a finance product\n5:29 Why bundle financial data?\n6:39 What can startups build?\n9:18 Safety and human review\n12:04 The banking review chain\n12:36 Financial mistakes and AI adoption\n14:56 Judgment, taste and the limits of accuracy\n15:46 Training models on human taste\n18:40 Code quality as a taste benchmark\n19:04 Investment ideas and moving up the analyst stack\n22:14 Why financial evaluations are hard\n25:25 OpenAI’s finance team is hiring\n\nJoseph’s AI Engineer keynote: https://www.youtube.com/watch?v=jiUC6IUMdvc&amp;t=4350s\nChatGPT for Financial Services: https://openai.com/index/introducing-chatgpt-financial-services/\nAI Engineer: https://ai.engineer/\nLatent Space: https://www.latent.space/\n\nSponsorship and business inquiries: business@latent.space"
+      "title": "Building Legal Agents When You Can't See the Data — Jacob Lauritzen, CTO of Legora",
+      "url": "https://www.youtube.com/watch?v=bJBEFzlKPoQ",
+      "publishedAt": "2026-11-02T20:50:24.000Z",
+      "description": "Legora can’t read a single trace of what its agent does for a lawyer. The data belongs to the law firm’s clients. How do you build and test an agent when you can’t see its work?\n\nJacob Lauritzen is the CTO of Legora, one of the fastest-growing companies in legal tech history. The team started in a Stockholm basement with ChatGPT, Swedish law, and a search tool. Today, a lawyer can use Legora to draft and edit Word documents, review 10,000 contracts in a single table, or run due diligence. The agent also coordinates work between lawyers, clients, and other agents. When Legora made its own acquisitions, the team used it for diligence.\n\nWhat we talked about\n\n• Why Legora resisted adding a model picker for years, and why it finally added one\n• Jacob’s estimate that models already do about 60% of legal work well, and why the rest takes a smarter model\n• How three engineers and three lawyers build test environments modeled on customers’ work, much like the “worlds” used in reinforcement learning\n• A citation problem where the model got it right 70% of the time, then 99% after one release. Legora didn’t have to change anything.\n• Why Legora runs everything on Azure and why it doesn’t use ElevenLabs\n• Tabular Review, the million-cell spreadsheet the industry copied down to the name\n• How intake works, how agents create lists, and how a list can start another agent\n• What legal engineers and forward-deployed engineers each do, and who gets to write code\n• The 300 Spartans slide Jacob used to argue that 20 engineers would be enough forever. Now there are 100, and he still feels short-handed.\n• Why Jacob finds Fable and Opus too chatty for drafting and likes Astra’s concise writing\n• Why drafting a long contract is a search problem\n• Whether model labs will cut off legal tools the way they cut off coding tools\n• What happens to law firm partnerships, the billable hour, and jobs for junior lawyers\n\nLegora is hiring engineers in New York, Stockholm, and London.\n\nChapters\n\n0:00 Cold open\n0:40 Meet Jacob Lauritzen, CTO of Legora\n1:05 Starting out as underdogs in a Stockholm basement\n1:54 How Legora grew from ChatGPT with Swedish law into a legal agent\n4:12 The switch from assistant to agent\n5:23 Which models Legora uses and why it added a model picker\n7:48 Are today’s models good enough for lawyers?\n8:20 What agents couldn’t do nine months ago\n9:18 Testing the agent in simulated worlds and a 10,000-file data room\n10:07 The evals team and Legora’s 100 legal engineers\n11:03 When evals didn’t seem worth it and one release took citations from 70% to 99%\n12:18 What legal practice could look like in five to ten years\n14:18 Will the law firm partnership model survive?\n16:40 What happens to paralegals and junior lawyers?\n18:00 The billable hour and why earlier legal tech fell short\n19:39 Where the money goes now\n22:44 How Legora used its own product for acquisition diligence\n23:59 How Swedish and American law firms differ\n26:12 Product metrics when you can’t read the traces\n27:41 Paraphrasing traces and narrowing failures down to 10 or 20 types\n28:42 Why data privacy led Legora to run everything on Azure\n30:04 Open-weight models and model arbitrage\n30:55 Transcription models and why Legora doesn’t use ElevenLabs\n33:33 The agent, Tabular Review, projects, and the Word add-in\n34:24 How a lawyer uses Tabular Review\n35:51 Why a spreadsheet works and what you learn from the first 10 rows\n37:53 How the legal intake bot works in Slack\n39:11 How agents create lists and lists start agents\n40:15 Building products on those same pieces and acquiring Wexler\n42:37 What forward-deployed engineers do at Legora\n43:52 How legal engineers and forward-deployed engineers onboard a big client\n46:43 What’s next for the forward-deployed team over the coming year\n47:24 Why Legora resisted building APIs\n49:26 Can the agent be the API?\n50:12 The 300 Spartans slide and the plan to stay at 20 engineers\n51:32 The bets nobody asked Legora to make\n53:05 Post-training open-weight models for legal research\n54:05 Search, retrieval, and late interaction\n54:51 What makes a good legal agent harness and why drafting depends on search\n56:25 Which model writes the best draft?\n57:03 Hallucinations and Legora’s citation system\n57:41 Do lawyers check the citations?\n58:19 MapReduce or one big context window for a million-token contract?\n1:00:16 Getting anonymized examples and the idea of buying a law firm for its data\n1:01:53 Why Jacob advises against default embeddings\n1:02:44 Will lawyers work in Legora or through Claude?\n1:03:26 Will the model labs cut Legora off?\n1:04:24 Law schools and scholarships for computer science majors\n1:05:28 Hiring in New York, Stockholm, and London\n1:06:09 Why most work eventually becomes legal work\n\nGuest — Jacob Lauritzen, CTO of Legora\nhttps://legora.com\n\nCo-host — swyx, Latent Space\n\nHost — Basil Chatha, Forward Deployed\nhttps://forwardeployed.com"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 6
   }
 }
