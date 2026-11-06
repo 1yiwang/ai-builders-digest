@@ -1,0 +1,221 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-06",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Thinking Machines' Inkling 2 Small setzt neue Massstäbe unter westlichen Open-Weight-Modellen. Parallel zeigt ISTA DASLab, wie ein 763-Milliarden-Parameter-Modell mit einem Bit pro Parameter fast halb so gross wird. Gleichzeitig prüft METR, ob Anthropic seine eigene KI-Warnschwelle schon im Juli überschritten hat. Diese Entwicklungen verbinden Effizienz, Sicherheit und die Frage, wie viel Beschleunigung die Branche verkraftet."
+  },
+  "archive": {
+    "title": "Ein-Bit-Modelle und die Sicherheitsfrage",
+    "desc": "Neue Open-Weight-Rekorde treffen auf wachsende Sicherheitsbedenken und Milliarden-Deals für Agentensicherheit."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-06.",
+  "sections": [
+    {
+      "title": "Open-Weight Efficiency / Open-Weight-Effizienz",
+      "desc": "Zwei neue Open-Weight-Veröffentlichungen zeigen, wie stark Modelle schrumpfen und gleichzeitig konkurrieren.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "ISTA DASLab released quantization/pruning of DeepSeek-V4.1-Flash-1017: 763B sparse MoE at 1 bit/param, retaining 192/384 experts per layer.",
+              "Build stores 72.1 GB vs 138.2 GB for unpruned IQ2_XXS; reports 1.05 bits/parameter (2.06 bpw over 280.1B params)."
+            ],
+            "original": [
+              "ISTA DASLab released an experimental GGUF coder quantization/pruning of DeepSeek-V4.1-Flash-1017.",
+              "the build keeps 192/384 experts per layer, stores 72.1 GB of transformer weights vs 138.2 GB for the unpruned IQ2_XXS build, and reports an “original-model-equivalent” 1.05 bits/parameter"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "ISTA DASLab veröffentlichte eine Quantisierung/Pruning von DeepSeek-V4.1-Flash-1017: 763B MoE mit 1 Bit/Parameter.",
+              "Der Build speichert 72,1 GB statt 138,2 GB und erreicht 1,05 Bit/Parameter (2,06 bpw über 280,1B Parameter)."
+            ],
+            "original": [
+              "ISTA DASLab veröffentlichte eine experimentelle GGUF-Coder-Quantisierung/Pruning von DeepSeek-V4.1-Flash-1017.",
+              "Der Build behält 192/384 Experten pro Layer, speichert 72,1 GB statt 138,2 GB und meldet 1,05 Bit/Parameter."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Thinking Machines' Inkling 2 Small, a 17A-594B model, trained in 68 hours on 12T tokens.",
+              "It beats Muse Spark and claims top spot among western open-weight models."
+            ],
+            "original": [
+              "Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Thinking Machines' Inkling 2 Small (17A-594B) trainierte in 68 Stunden auf 12 Billionen Token.",
+              "Das Modell schlägt Muse Spark und beansprucht die Spitzenposition unter westlichen Open-Weight-Modellen."
+            ],
+            "original": [
+              "Inkling 2 Small: 17A-594B, trainiert in 68 Stunden auf 12 Billionen Token, schlägt Muse Spark."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Safety & Oversight / KI-Sicherheit und Aufsicht",
+      "desc": "METR prüft Anthropics eigene Schwellenwerte, während Sentinel Bio für Agentenüberwachung bei Biologie plädiert.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/metr-finds-anthropic-may-have-crossed-its-own-ai-acceleration-warning-threshold-back-in-july/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "METR found Anthropic may have crossed its own AI acceleration warning threshold back in July.",
+              "The finding adds independent scrutiny to Anthropic's safety posture."
+            ],
+            "original": [
+              "METR finds Anthropic may have crossed its own AI acceleration warning threshold back in July"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "METR hat Hinweise gefunden, dass Anthropic seine eigene KI-Beschleunigungs-Warnschwelle möglicherweise im Juli überschritten hat.",
+              "Der Befund wirft Fragen auf, ob Anthropics interne Sicherheitshürden gehalten haben."
+            ],
+            "original": [
+              "METR findet, dass Anthropic seine eigene KI-Beschleunigungs-Warnschwelle möglicherweise im Juli überschritten hat."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/kyc-becomes-kya-sentinel-bio-s-joshua-monrad-on-dna-screening-uplift-studies-agent-monitoring/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Joshua Monrad (Sentinel Bio) argues KYC should become KYA: know your agent, not just customer.",
+              "He describes DNA screening, uplift studies, and agent monitoring to reduce misuse of AI-enabled biology."
+            ],
+            "original": [
+              "KYC Becomes KYA: Sentinel Bio's Joshua Monrad on DNA Screening, Uplift Studies & Agent Monitoring"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Joshua Monrad (Sentinel Bio) plädiert dafür, KYC zu KYA weiterzuentwickeln: Know Your Agent statt nur Kunde.",
+              "Er beschreibt DNA-Screening, Uplift-Studien und Agentenüberwachung, um Missbrauch KI-gestützter Biologie zu reduzieren."
+            ],
+            "original": [
+              "Aus KYC wird KYA: Joshua Monrad von Sentinel Bio über DNA-Screening, Uplift-Studien und Agentenüberwachung."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Enterprise AI Security / KI-Sicherheit im Unternehmen",
+      "desc": "Palo Alto Networks will mit Clutch das Absichern autonomer Agenten zum Geschäft machen.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Palo Alto Networks is in talks to buy AI agent security startup Clutch for $500M.",
+              "The deal would extend Palo Alto Networks into securing autonomous AI agents."
+            ],
+            "original": [
+              "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Palo Alto Networks verhandelt über den Kauf des KI-Agenten-Sicherheits-Startups Clutch für 500 Millionen US-Dollar.",
+              "Der Deal würde Palo Alto Networks auf die Absicherung autonomer KI-Agenten ausdehnen."
+            ],
+            "original": [
+              "Palo Alto Networks verhandelt über den Kauf des KI-Agenten-Sicherheits-Startups Clutch für 500 Mio. US-Dollar."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Fintech Agents / Fintech-Agenten",
+      "desc": "Robinhoods CEO verknüpft Tokenisierung und agentisches Trading mit seiner Eigentums-Mission.",
+      "cards": [
+        {
+          "authorKey": "podcast:No Priors",
+          "sourceName": "No Priors",
+          "sourceUrl": "https://www.youtube.com/watch?v=yULk8eNa2mg",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Vlad Tenev (Robinhood CEO) details tokenization and agentic trading to expand asset ownership.",
+              "He ties Harmonic to Robinhood's mission of expanding ownership through AI-enabled markets."
+            ],
+            "original": [
+              "Tokenization, Agentic Trading, Harmonic: Robinhood's Mission to Expand Ownership with CEO Vlad Tenev"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Vlad Tenev (CEO von Robinhood) beschreibt Tokenisierung und agentisches Trading als Weg zu breiterem Eigentum.",
+              "Er verbindet Harmonic mit der Robinhood-Mission, Eigentum durch KI-gestützte Märkte auszuweiten."
+            ],
+            "original": [
+              "Tokenization, Agentic Trading, Harmonic: Robinhoods Mission, Eigentum auszuweiten, mit CEO Vlad Tenev."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261106140602-a31d02",
+    "generatedAt": "2026-11-06T14:08:39.751Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 157129,
+    "tokensIn": 1476,
+    "tokensOut": 12538,
+    "estCostUsd": 0.003717,
+    "candidatesIn": 37,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 343602,
+      "preparedChars": 4290,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-behind-latent-space-kill-my-saas-jev-ai-in-2026-aiei-shanghai/",
+      "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+      "https://the-decoder.com/metr-finds-anthropic-may-have-crossed-its-own-ai-acceleration-warning-threshold-back-in-july/",
+      "https://www.cognitiverevolution.ai/kyc-becomes-kya-sentinel-bio-s-joshua-monrad-on-dna-screening-uplift-studies-agent-monitoring/",
+      "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "https://www.youtube.com/watch?v=yULk8eNa2mg"
+    ]
+  }
+}

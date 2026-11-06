@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-04T14:18:07.100Z",
-  "count": 63,
+  "generatedAt": "2026-11-06T14:08:39.872Z",
+  "count": 64,
   "issues": [
+    {
+      "date": "2026-11-06",
+      "title": "Ein-Bit-Modelle und die Sicherheitsfrage",
+      "desc": "Neue Open-Weight-Rekorde treffen auf wachsende Sicherheitsbedenken und Milliarden-Deals für Agentensicherheit.",
+      "href": "./issues/ai-builders-digest-2026-11-06.html",
+      "issue": "Nr. 64"
+    },
     {
       "date": "2026-11-04",
       "title": "OpenAI lässt Astra Hardware entwerfen",
