@@ -1,90 +1,81 @@
 {
-  "generatedAt": "2026-11-06T14:05:56.372Z",
+  "generatedAt": "2026-11-09T15:56:54.755Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "The Observability Layer for the Physical World",
-      "url": "https://www.youtube.com/watch?v=jzAzzJMVIpU",
-      "publishedAt": "2026-11-05T16:30:08.000Z",
-      "description": "Tractian (YC W21) is building physical AI for asset-heavy industries, helping factories and industrial operators monitor critical equipment, predict failures, and prevent costly downtime. Their platform combines proprietary sensors, software, and AI to monitor hundreds of thousands of assets in real time. \n\nThey’ve now crossed $100 million in ARR, growing 90% year over year, and recently raised a $130M Series D at a $1.4B valuation.\n\nIn this Founder Fireside, co-founder and CEO Igor Marinelli joins YC’s Harj Taggar to share how Tractian grew from a problem he first saw through his father’s work as a plant manager into a platform used by some of the world’s largest industrial companies. They dig into how Tractian won its first enterprise customers, why AI is changing the economics of industrial maintenance, and how the company is moving from monitoring machines toward a future where factories can increasingly operate themselves.\n\nhttps://tractian.com\n\nChapters:\n00:00 — What Tractian Does\n02:20 — How Tractian Monitors Machines\n05:38 — Why the MVP Had to Be “Awesome”\n09:13 — The Problem Igor Grew Up With\n11:07 — 88 Factory Visits in Year One\n15:25 — Winning the First Customer\n18:15 — Selling Without Social Proof\n20:24 — How to Structure a Paid Pilot\n22:14 — How AI Changed Tractian\n25:55 — Why Smaller Models Can Win\n31:09 — AI and the Industrial Workforce\n35:04 — Robotics in the Factory\n38:18 — From Monitoring to Autopilot\n41:32 — Fundraising at $1.4B\n46:58 — The Future of Industrial Work\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
-    },
-    {
-      "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "Stop Wasting AI Tokens",
-      "url": "https://www.youtube.com/watch?v=eN92Oatzzks",
-      "publishedAt": "2026-11-04T17:00:39.000Z",
-      "description": "Weave (YC W25) helps engineering teams understand whether their AI coding tools are actually making them more productive. Its models measure the work humans and agents produce and compare that output with AI spending. The company recently raised a $13.5M Series A led by Standard Capital and launched Weave Router, which selects models for different coding tasks.\n\nIn this Fireside, co-founders Adam Cohen and Andrew Churchill discuss how they went from measuring human productivity to optimizing coding agents, why cost per output matters more than raw token spend, and how their AI coach helps engineers work more effectively with agents. They also share their vision for autonomous software factories and explain why combining different models’ strengths could outperform any single model.\n\nhttps://weaveos.com\n\nChapters:\n00:00 — Optimizing AI Coding With Weave\n04:02 — Getting More From Your AI Budget\n08:39 — Measuring Work Beyond Lines of Code\n12:30 — From AI Adoption to Optimization\n16:47 — Measuring AI ROI and Coaching Engineers\n20:16 — Building Software Factories\n25:38 — The Future of Model Routing\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
-    },
-    {
-      "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
-      "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
-      "publishedAt": "2026-11-06T07:27:02.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "OpenAI's Astra Just Opened The Black Box Of AI",
+      "url": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
+      "publishedAt": "2026-11-07T16:24:47.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The Weight Space Programming work is available here:\nhttps://rikiyat.github.io/blog/weight-space-programming/\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why Robert Caro’s Books Are So Long",
-      "url": "https://www.youtube.com/watch?v=RrVLA-WMeKk",
-      "publishedAt": "2026-11-05T19:11:42.000Z",
+      "title": "Was Robert Moses a Hero or a Villain? - Robert Caro",
+      "url": "https://www.youtube.com/watch?v=HqQYah4tXS4",
+      "publishedAt": "2026-11-08T18:30:23.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "The Day Robert Moses’ Phone Stopped Ringing - Robert Caro",
-      "url": "https://www.youtube.com/watch?v=5uCnoxImxbU",
-      "publishedAt": "2026-11-04T18:30:37.000Z",
+      "title": "How to Get Someone to Tell You the Truth - Robert Caro",
+      "url": "https://www.youtube.com/watch?v=HOc77LTkt94",
+      "publishedAt": "2026-11-07T18:30:21.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "How Robert Moses Destroyed Anyone in His Way - Robert Caro",
-      "url": "https://www.youtube.com/watch?v=GpnDssoaMdE",
-      "publishedAt": "2026-11-03T20:20:29.000Z",
+      "title": "The Loneliness That Shaped Lyndon Johnson - Robert Caro",
+      "url": "https://www.youtube.com/watch?v=zSixzC1zYFM",
+      "publishedAt": "2026-11-06T19:33:14.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=f0J_EeW42Lo\nMe on twitter: https://x.com/dwarkesh_sp"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Multicellular Systems - Fabian Theis, Helmholtz Munich",
-      "url": "https://www.youtube.com/watch?v=DLKg78H1wSI",
-      "publishedAt": "2026-11-05T15:10:45.000Z",
-      "description": "Sponsorship and business inquiries: business@latent.space"
+      "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "url": "https://www.youtube.com/watch?v=dpY7YzZo4kE",
+      "publishedAt": "2026-11-08T21:23:23.000Z",
+      "description": "[One Million AI Engineer Special] We’re celebrating one million subscribers on the AI Engineer YouTube channel with Mihail Eric, who teaches Stanford’s Modern Software Developer course and leads AI at Monaco.\n\nWhat do you assign when students can finish last year’s homework with one prompt? For the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to understand an unfamiliar repo, propose a change, and explain it to the person who will review their code.\n\nMihail teaches The Modern Software Developer at Stanford and leads AI at Monaco. We work through his ten-week syllabus, from watching the tool calls inside Claude Code to deciding what a subagent should return to its parent. At Monaco, his team chose to build its own agent workspaces, buy code review tools, and give an on-call agent access to Datadog and GitHub. Mihail explains the reasoning behind those decisions.\n\nMihail thinks open-source repos will become agent-run software factories. If the factory can produce a patch, what should a junior engineer be learning to do?\n\nAI Engineer CODE Summit — https://aie.codes\nAI Engineer on YouTube — https://www.youtube.com/channel/UCLKPca3kwwd-B59HNr-_lvA\n\nChapters\n0:00 One million AI Engineer subscribers and the CODE Summit\n0:51 Mihail Eric and Stanford CS146S\n5:26 What junior engineers need to learn now\n10:02 Open-source maintainers review the students’ code\n15:04 A tour of the ten-week syllabus\n24:04 The loop, tools and harness inside a coding agent\n32:18 Context engineering for a large codebase\n38:15 Skills that make you understand the diff\n46:42 The Monaco.com dispute and the airplane banner\n50:23 What Monaco does for sales teams\n59:21 Inside Monaco’s engineering team\n1:01:40 “You buy to learn, and you build to keep”\n1:05:24 Making repos agent-ready and closing the on-call loop\n1:12:37 When code review becomes the bottleneck\n1:20:37 Security, dependencies and permissions\n1:30:13 Background agents and Stripe’s Minions\n1:34:16 MCP portals and why infrastructure converges\n1:41:22 Building the software factory\n1:45:24 What work is left for developers?\n1:52:16 From personal adoption to team autonomy\n\nShow notes\n• Stanford CS146S syllabus and assignments — https://themodernsoftware.dev/\n• Mihail builds a coding agent from scratch — https://www.mihaileric.com/The-Emperor-Has-No-Clothes/\n• Mihail opens up the Claude Code harness — https://www.mihaileric.com/Demystifying-Claude-Code/\n• Geoffrey Litt on understanding a diff — https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html\n• Monaco’s agent workspaces — https://www.monaco.com/blog/agent-developer-workspaces\n• How to Kill the Code Review — https://latent.space/p/reviews-dead/\n• Faros report on AI adoption and review time — https://www.faros.ai/blog/ai-software-engineering\n• Basis’s Authority Map — https://www.getbasis.ai/blogs/how-we-made-our-monorepo-ergonomic-for-agents#canon-vs-not-canon\n• Stripe’s Minions — https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\n• Boris Cherny’s Steps of AI Adoption — https://x.com/bcherny/status/2077929379661844559\n\nOpening excerpt from Mihail Eric’s interview on The Thinking Mode, EO Studio — https://www.youtube.com/watch?v=wEsjK3Smovw\n\nMore Latent Space interviews — https://latent.space"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "Behind Latent Space: Kill My SaaS, Jev &amp; AI in 2026 | AIEi Shanghai",
-      "url": "https://www.youtube.com/watch?v=QmDLDy3ZSNE",
-      "publishedAt": "2026-11-04T10:32:51.000Z",
-      "description": "Galen Gao (https://substack.com/@linkloud1, https://x.com/Ninggao88) interviews Shawn Wang (swyx) ahead of AIEi Shanghai, the first AI Engineer conference in China. They talk about how a blog on open-source AI became Latent Space, how the AI Engineer community grew, and what local builders brought to Shanghai.\n\nThen they get into Kill My SaaS. An agent can rebuild a tool and pass the entry checks. Choosing a winner still takes someone who knows what an organizer needs to get done. The conversation also covers OpenClaw adoption in China and what Thinking Machines' interaction models change about talking to AI.\n\nChapters\n0:00 AIEi Shanghai\n2:31 Cold open\n3:28 Galen Gao and swyx\n8:01 Learn in Public\n10:54 How Latent Space started\n13:05 The idea for AI Engineer\n25:10 The conference as a dataset\n29:57 Kill My SaaS\n39:31 What the contest judge measured\n46:45 Jev and System One models\n52:49 Writing and founder stories\n1:02:13 Legora and product taste\n1:03:29 OpenClaw adoption in China\n1:07:35 Thinking Machines and interaction models\n1:10:02 Reading and listening recommendations\n\nAI Engineer Shanghai — https://ai.engineer/shanghai/2026\nThe Rise of the AI Engineer — https://latent.space/p/ai-engineer/\nKill My SaaS — https://www.youtube.com/watch?v=zlD-CkLVKtU\nLatent Space — https://latent.space"
+      "title": "GitHub’s Growth: 225M Developers, 34.3B Commits — Jay Parikh, EVP of CoreAI, Microsoft",
+      "url": "https://www.youtube.com/watch?v=rSWiNE92xqM",
+      "publishedAt": "2026-11-08T01:22:17.000Z",
+      "description": "GitHub’s next scaling challenge is the agent workload. The platform has 225 million developers and handled 34.3 billion commits over the past year. Jay Parikh, EVP of CoreAI at Microsoft, joins us straight after his GitHub Universe keynote to talk about rebuilding the software-development stack for that scale.\n\nWe get into Copilot Fusion’s approach to model orchestration and the quality–cost frontier; the harness underneath it; agents that carry a session across phone, desktop and VS Code; and the infrastructure work behind GitHub’s move to Azure. Jay also makes the case for measuring AI spending against completed work and business outcomes.\n\nAlong the way: why Jay skips pull requests in some of his own repos, Matt Pocock’s repo of Markdown instructions, and the open-source maintenance question behind replacing 2,000 dependencies with 20. Stay for the programmable conference badge at the end.\n\nBefore the interview: why agent traffic changes GitHub’s job, Jay’s infrastructure background, and AI Engineer CODE — Nov 10–12 in San Francisco. https://ai.engineer/code\n\nShow notes\n• GitHub’s 2026 Octoverse report — The original charts behind the 34.3B commits and agent-first PR figures. https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/\n• Matt Pocock’s test-driven development skill — Open the Markdown file in the revision that was current when we recorded. https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/tdd/SKILL.md\n• How Copilot Fusion routes a task — GitHub documents when a model drafts alone, when a judge reviews it, and when several models critique it. https://docs.github.com/en/copilot/concepts/models/copilot-fusion\n• A Copilot session across clients — Watch GitHub’s original demos of a session continuing across devices and VS Code. https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases/\n• Push protection for AI-detected secrets — The actual rejected push and what the developer sees in the terminal. https://github.blog/changelog/2026-10-28-push-protection-beyond-predefined-secret-patterns/\n• How GitHub migrates Git replicas — GitHub engineers show how they move live copies across data centers and Azure. https://github.blog/engineering/the-bridge-to-agent-scale-git-infrastructure/\n• Copilot Automations cost controls — The launch example of per-run, daily, weekly and monthly AI credit limits. https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations/\n• The hackable Universe badge — Source, schematics and games for the badge that swyx holds up. https://github.com/badger/home\n\nTimestamps\n0:00 Why GitHub has to scale for agents\n0:26 Introducing Jay Parikh, Microsoft CoreAI\n2:35 AI Engineer CODE in San Francisco\n3:07 After the GitHub Universe keynote\n3:30 One new developer every second\n4:52 GitHub as a social network\n6:23 Do agents still need pull requests?\n8:03 What counts as code in a repo?\n9:47 The Copilot harness and model routing\n12:27 One session across phone, desktop and VS Code\n15:01 Catching a secret before it lands\n17:17 Who maintains the dependencies you replace?\n19:10 GitHub in 2027 and the move to Azure\n20:51 Token budgets and the value of shipped work\n22:36 The programmable Universe badge\n\nMore from Latent Space: https://www.latent.space"
     },
     {
       "source": "youtube",
       "name": "Latent Space",
       "handle": "@LatentSpacePod",
-      "title": "⚡️ The 2026 Software Factory Infra Stack — Zach Lloyd, Warp.dev",
-      "url": "https://www.youtube.com/watch?v=LL0YmIyBKSU",
-      "publishedAt": "2026-11-03T20:16:25.000Z",
-      "description": "Software factories at Warp: founder and CEO Zach Lloyd walks swyx through the system his team uses to turn tasks into pull requests, measure agent quality, and improve the workflow itself.\n\nThe demo follows a request from Slack to a PR, then explores shared agent traces, cost and throughput scoring, and benchmarks built from real engineering work. Zach reports that tuning models and subagent use brought Warp’s internal cost from about $80 per PR to roughly $15–20, alongside higher throughput.\n\nHow do software factories change the work of product engineers? What belongs in a benchmark? And how can agents help improve the factory that runs them?\n\nJoin Zach and the AI engineering community at AIE CODE, November 10–12, 2026 in San Francisco. Apply to attend: https://ai.engineer/code/2026\n\nChapters\n0:00 Introduction: software factories at Warp\n0:53 AIE CODE in San Francisco\n1:31 Zach Lloyd and software factories\n4:30 Define the factory in code\n7:34 Follow a Slack request to a PR\n8:41 Measure cost, throughput and quality\n14:32 Agents improving the factory\n16:10 Benchmark your own tasks\n23:59 From $80 to $15–20 per PR\n27:03 Who needs software factories?\n33:23 Product engineers and factory engineers\n\nLinks\n• Warp: https://www.warp.dev/\n• AIE CODE: https://ai.engineer/code/2026\n• Zach Lloyd — Software Engineering Is Becoming Factory Engineering: https://youtu.be/tUPPVhBBcoM\n• Suraj Gupta — Building Self-Improving Agent Software Factories: https://youtu.be/TN3mj92oZ8I\n• Latent Space: https://latent.space/\n\nSponsorship and business inquiries: business@latent.space\n\n#SoftwareFactories #Warp #AIEngineering"
+      "title": "Why Would Anthropic Go Public Now? — Jamin Ball, Altimeter",
+      "url": "https://www.youtube.com/watch?v=P735f1xlpL0",
+      "publishedAt": "2026-11-07T02:49:28.000Z",
+      "description": "Will Anthropic make it from filing an S-1 to trading on Nasdaq? Jamin Ball, partner at Altimeter and author of Clouded Judgement, joins swyx to walk through the roadshow, the Thanksgiving window and what investors would need to believe about Claude.\n\nJamin makes a case for going public that starts with the lenders financing GPU clusters. Then he opens the accounts: in the first half of 2026, Anthropic reported an $80.7 billion net loss and generated $3.9 billion in operating cash. He explains how the rising value of shares promised to early investors flows through the income statement, and why he watches the cost of serving Claude alongside revenue growth.\n\nRecorded October 29, 2026. Jamin discusses his personal views and discloses Altimeter’s position in Anthropic.\n\nChapters\n00:00 Opening highlights\n01:06 Jamin Ball and Clouded Judgement\n03:20 Reading Anthropic’s first public S-1\n04:28 The roadshow and the Thanksgiving IPO window\n10:02 Why an IPO could help finance data centers\n14:55 What the filing reveals about cash and margins\n17:14 Revenue growth versus the cost of serving Claude\n23:31 How much of an enterprise budget goes to AI?\n27:05 Why the newest models earn so much revenue\n43:55 Staying at the frontier and putting a price on it\n51:55 How fast does a frontier model depreciate?\n58:09 The frontier labs’ innovator’s dilemma\n1:05:01 Why application companies build their own models\n1:08:05 The $80.7B net loss and convertible notes\n1:23:00 Who will lend against the next GPU cluster?\n1:32:40 What Jamin looks for beyond the labs\n1:36:34 Brad Gerstner and investment accounts for children\n\nFurther reading\n• Anthropic’s October 26 announcement — the proposed Nasdaq listing and ticker: https://www.anthropic.com/news/s1-sec\n• The S-1 discussed on the show — financial statements, compute commitments and risk factors: https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm\n• Jamin’s follow-up, “Dispelling the Myths of the Anthropic S-1” — his explanation of the convertible notes: https://cloudedjudgement.substack.com/p/clouded-judgement-103026-dispelling\n• The November 2 amended filing, published after the recording: https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/0001628280-26-068676-index.htm\n\nSponsorship and business inquiries: business@latent.space"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "Cooking with Reducto’s CEO: Why PDFs Still Break AI — Adit Abraham",
+      "url": "https://www.youtube.com/watch?v=KgqWyVVH4Oc",
+      "publishedAt": "2026-11-06T16:30:28.000Z",
+      "description": "Why do PDFs still break AI? Reducto co-founder and CEO Adit Abraham joins Allen Park on Latent Space Cooking to talk AI document parsing and make a steak sandwich with burrata, torched peaches, and chimichurri.\n\nFrom the YC pivot out of long-term memory to Reducto R1 and Deep Extract, Adit explains why even frontier models can miss rows in long documents, how his team catches failures in production, and what it takes to go from reading a PDF to reliably editing one. He also revisits the viral steak tweet that brought him into the kitchen.\n\nSponsorship and business inquiries: business@latent.space\n\nWe talk about:\n• Why complex tables, handwriting, and unusual layouts still trip up AI\n• When specialized models and extraction pipelines beat a general-purpose model\n• Why 99% accuracy can still fall short, and where citations and human review help\n• What independent benchmarks and production evals reveal about messy documents\n• What changes at a billion pages a month, the scale Adit shared at filming\n• What Reducto looks for in engineers, and why it lets candidates use AI in interviews\n• What a Claude Code moment for office work might look like\n\n00:00 Cold Open\n00:13 Meet Adit Abraham and the Viral Steak Tweet\n00:57 From Remembrall to Reducto: YC and the Pivot\n01:57 Why PDFs Are Still Hard for AI\n03:35 What AI Agents Need to Do With Documents\n04:19 Model Routing for Tricky Pages and Tables\n05:29 Build vs. Buy: When to Train Your Own Models\n07:00 Deep Extract, Frontier Models, and Missing Rows\n08:20 Why Everyone Wins Their Own Benchmark\n09:29 Reducto R1: Accuracy, Cost, and a Billion Pages a Month\n10:57 When 99% Accuracy Isn’t Enough\n13:05 Continuous Evals and Production Failures\n16:49 How Reducto Uses AI Agents Internally\n18:28 Hiring With AI and the Eight-Hour Onsite\n20:17 Early Hires and What Obsession Looks Like\n23:17 Blowtorching Peaches\n24:24 Scaling From a Small Team to Series B\n27:34 Competition and the Data Flywheel\n30:52 What Better Parsing Unlocks for Customers\n32:11 Finding a Cofounder at MIT\n34:34 The Anthropic Hackathon, Long-Term Memory, and RAG\n38:49 From Reading PDFs to Redlining Contracts\n43:19 A Claude Code Moment for Office Work\n46:13 What’s Next for Reducto: Extraction, Citations, and Cost\n47:51 Assembling the Steak Sandwich\n49:55 The Steak Allegations and Taste Test"
     }
   ],
   "stats": {
-    "youtubeVideos": 9
+    "youtubeVideos": 8
   }
 }

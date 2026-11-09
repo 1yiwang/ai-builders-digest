@@ -1,0 +1,207 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-09",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI wird laut TLDR AI mit 1,25 Billionen Dollar bewertet. Gleichzeitig bringt Google vier TPU-Varianten heraus und setzt Nvidia unter Druck. Jeffrey Sonnenfeld schätzt die Chance, dass Jensen Huang seinen Job verliert, auf 50:50. Diese Hardware- und Bewertungsdynamik zeigt, wie intensiv der Wettbewerb um KI-Infrastruktur geworden ist."
+  },
+  "archive": {
+    "title": "OpenAI knackt 1,25 Billionen Dollar",
+    "desc": "Während OpenAI mit 1,25 Billionen Dollar bewertet wird, eskaliert der Hardware-Wettbewerb zwischen Google und Nvidia."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-09.",
+  "sections": [
+    {
+      "title": "Compute & Hardware: Local Inference, TPUs, and Nvidia Pressure",
+      "desc": "Hardware competition and performance benchmarks dominate as Google ramps TPUs, Nvidia leadership faces scrutiny, and local GPU inference shows real numbers.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "AINews benchmarks 8×5090 + 4×PRO 6000: ~15,900 tok/s prefill, ~294 tok/s decode, ~5s TTFT on 40k cold prompt.",
+              "Throughput scales from 209–229 tok/s single-user to 1,170 tok/s peak at 32 streams; p95 TTFT 2.7s at 24 concurrent users."
+            ],
+            "original": [
+              "Paraphrase: Reported throughput was 209–229 tok/s single-user with 0.4s first token, 1,003 tok/s at 24 concurrent users with p95 TTFT 2.7s, and 1,170 tok/s peak at 32 streams.",
+              "Paraphrase: On 8×5090 + 4×PRO 6000, current engram table performance is ~15,900 tok/s prefill, ~294 tok/s decode, and ~5s TTFT on a 40k cold prompt."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "AINews misst 8×5090 + 4×PRO 6000: ~15.900 Tokens/s Prefill, ~294 Tokens/s Decode, ~5s TTFT bei 40k Prompt.",
+              "Durchsatz steigt von 209–229 Tokens/s (Single-User) auf 1.170 Tokens/s Spitze bei 32 Streams; p95 TTFT 2,7s bei 24 parallelen Nutzern."
+            ],
+            "original": [
+              "Paraphrase: Berichteter Durchsatz lag bei 209–229 Tokens/s im Single-User-Betrieb mit 0,4s First Token, 1.003 Tokens/s bei 24 parallelen Nutzern und p95 TTFT 2,7s.",
+              "Paraphrase: Auf 8×5090 + 4×PRO 6000 beträgt die aktuelle Engram-Table-Leistung ~15.900 Tokens/s Prefill, ~294 Tokens/s Decode und ~5s TTFT bei 40k kaltem Prompt."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Google shipped four TPU variants in one year, ramping up competition with Nvidia across training and inference.",
+              "The TPU push signals Google's strategy to reduce cloud AI dependence on Nvidia GPUs."
+            ],
+            "original": [
+              "Paraphrase: Google ships four TPU variants in one year as it ramps up competition with Nvidia."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google brachte in einem Jahr vier TPU-Varianten heraus und verschärft damit den Wettbewerb mit Nvidia.",
+              "Die TPU-Offensive zeigt Googles Strategie, Cloud-KI unabhängiger von Nvidia-GPUs zu machen."
+            ],
+            "original": [
+              "Paraphrase: Google bringt vier TPU-Varianten in einem Jahr heraus und verschärft den Wettbewerb mit Nvidia."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Yale's Jeffrey Sonnenfeld puts odds of Jensen Huang losing his job at 'about a 50-50' amid Nvidia's market scrutiny."
+            ],
+            "original": [
+              "Paraphrase: Is Jensen Huang's job on the line? Yale's Jeffrey Sonnenfeld estimates it's 'about a 50-50'."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Jeffrey Sonnenfeld (Yale) schätzt die Wahrscheinlichkeit, dass Jensen Huang seinen Job verliert, auf 'etwa 50:50'."
+            ],
+            "original": [
+              "Paraphrase: Steht Jensen Huangs Job auf dem Spiel? Jeffrey Sonnenfeld von Yale schätzt die Chance auf 'etwa 50:50'."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI Safety & Interpretability",
+      "desc": "From bioweapon warnings to opening the black box of AI, safety and transparency remain central.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Tencent's AI chief warns AI bioweapons are coming and argues closing off models isn't the answer."
+            ],
+            "original": [
+              "Paraphrase: Tencent's AI chief says AI bioweapons are coming, but closing off models isn't the answer."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Tencents KI-Chef warnt: KI-Biowaffen werden kommen, aber das Schließen von Modellen sei keine Lösung."
+            ],
+            "original": [
+              "Paraphrase: Tencents KI-Chef sagt, KI-Biowaffen kommen, aber das Abschotten von Modellen ist nicht die Antwort."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@TwoMinutePapers",
+          "sourceName": "Two Minute Papers",
+          "sourceUrl": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Two Minute Papers covers OpenAI's Astra, a tool that opened the black box of AI by making model internals interpretable."
+            ],
+            "original": [
+              "Paraphrase: OpenAI's Astra Just Opened The Black Box Of AI."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Two Minute Papers erklärt OpenAIs Astra, das die Blackbox der KI öffnet und Modellverhalten interpretierbar macht."
+            ],
+            "original": [
+              "Paraphrase: OpenAIs Astra hat gerade die Blackbox der KI geöffnet."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "OpenAI Valuation & AI R&D Momentum",
+      "desc": "OpenAI's reported valuation hits $1.25T as AI R&D accelerates, signaling continued capital intensity.",
+      "cards": [
+        {
+          "authorKey": "blog:TLDR AI",
+          "sourceName": "TLDR AI",
+          "sourceUrl": "https://tldr.tech/ai/2026-11-09",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "TLDR AI reports OpenAI is now valued at $1.25T, underscoring the massive capital flowing into leading AI labs."
+            ],
+            "original": [
+              "Paraphrase: TLDR AI headline: OpenAI at $1.25T."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "TLDR AI meldet: OpenAI wird mit 1,25 Billionen Dollar bewertet – enormes Kapital fließt in führende KI-Labore."
+            ],
+            "original": [
+              "Paraphrase: TLDR AI meldet OpenAI mit 1,25 Billionen Dollar Bewertung."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261109155700-87d24f",
+    "generatedAt": "2026-11-09T15:59:02.153Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 121056,
+    "tokensIn": 1432,
+    "tokensOut": 11384,
+    "estCostUsd": 0.003388,
+    "candidatesIn": 24,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 429481,
+      "preparedChars": 3999,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+      "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+      "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+      "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+      "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
+      "https://tldr.tech/ai/2026-11-09"
+    ]
+  }
+}

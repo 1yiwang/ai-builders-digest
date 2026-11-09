@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-06T14:08:39.872Z",
-  "count": 64,
+  "generatedAt": "2026-11-09T15:59:02.295Z",
+  "count": 65,
   "issues": [
+    {
+      "date": "2026-11-09",
+      "title": "OpenAI knackt 1,25 Billionen Dollar",
+      "desc": "Während OpenAI mit 1,25 Billionen Dollar bewertet wird, eskaliert der Hardware-Wettbewerb zwischen Google und Nvidia.",
+      "href": "./issues/ai-builders-digest-2026-11-09.html",
+      "issue": "Nr. 65"
+    },
     {
       "date": "2026-11-06",
       "title": "Ein-Bit-Modelle und die Sicherheitsfrage",
