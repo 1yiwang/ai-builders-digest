@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-09T15:59:02.295Z",
-  "count": 65,
+  "generatedAt": "2026-11-11T14:01:24.614Z",
+  "count": 66,
   "issues": [
+    {
+      "date": "2026-11-11",
+      "title": "Mercor: 20-Milliarden-Dollar-Bewertung",
+      "desc": "Der KI-Tag bringt Kapital, Sicherheitslücken und neue Modellvarianten.",
+      "href": "./issues/ai-builders-digest-2026-11-11.html",
+      "issue": "Nr. 66"
+    },
     {
       "date": "2026-11-09",
       "title": "OpenAI knackt 1,25 Billionen Dollar",

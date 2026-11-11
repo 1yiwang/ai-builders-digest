@@ -1,0 +1,243 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-11",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Mercor erreicht eine Bewertung von 20 Milliarden Dollar und zeigt, wie schnell KI-Arbeitsmärkte skalieren. Währenddessen meldet The Decoder, dass Grok-gebaute Apps Patientendaten und Passwörter offengelegt haben. Anthropic liefert mit Claude Fable 5.2 und Mythos 5.2 neue Modellvarianten, Cisco skizziert Koordinationsmechanismen für Multi-Agenten-Systeme. Diese Mischung aus Kapital, Sicherheitsrisiken und Infrastruktur-Fortschritt prägt den KI-Tag."
+  },
+  "archive": {
+    "title": "Mercor: 20-Milliarden-Dollar-Bewertung",
+    "desc": "Der KI-Tag bringt Kapital, Sicherheitslücken und neue Modellvarianten."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-11.",
+  "sections": [
+    {
+      "title": "AI Startups & Work / KI-Startups & Arbeit",
+      "desc": "Two startups show how AI is targeting labor markets and professional services.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mercor raised a $750M Series D at a $20B valuation and reports a $3B run rate.",
+              "The deal makes Mercor one of the highest-valued AI labor marketplaces."
+            ],
+            "original": [
+              "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mercor hat eine Series D über 750 Millionen Dollar bei einer Bewertung von 20 Milliarden Dollar abgeschlossen.",
+              "Die jährliche Umsatzrate liegt laut AINews bei 3 Milliarden Dollar; der KI-Recruiting-Markt wächst rasant."
+            ],
+            "original": [
+              "Titel übersetzt: Mercor: 750 Millionen Dollar Series D bei 20 Milliarden Dollar Bewertung, 3 Milliarden Dollar Run Rate"
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=27H7XzGx8F8",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews Solve Intelligence on building AI systems for patent law.",
+              "The YC episode explores how AI can change legal services for patent attorneys."
+            ],
+            "original": [
+              "How Solve Intelligence Is Building the Future of AI Patent Law"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator stellt Solve Intelligence vor, ein Startup für KI-gestützte Patent-Workflows.",
+              "Die Episode zeigt, wie LLMs juristische Arbeitsabläufe im Patentrecht verändern könnten."
+            ],
+            "original": [
+              "Titel übersetzt: Wie Solve Intelligence die Zukunft des KI-Patentrechts aufbaut"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Security & Data Exports / Sicherheit & Datenexporte",
+      "desc": "Generated apps leak data while training environments cross borders.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline.",
+              "The incident shows security flaws in AI-generated applications handling sensitive enterprise data."
+            ],
+            "original": [
+              "Grok-built apps exposed patient data, plaintext passwords, and SpaceXSI's own sales pipeline"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Grok-generierte Apps legten Patientendaten, Passwörter im Klartext und die Vertriebspipeline von SpaceXSI offen.",
+              "Der Vorfall zeigt Sicherheitslücken in KI-generierten Anwendungen, die sensible Unternehmensdaten verarbeiten."
+            ],
+            "original": [
+              "Titel übersetzt: Grok-gebaute Apps legten Patientendaten, Klartext-Passwörter und die eigene Vertriebspipeline von SpaceXSI offen"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "US data brokers are selling $500M in RL training environments to Chinese AI labs.",
+              "The report raises export-control concerns about reinforcement learning infrastructure crossing borders."
+            ],
+            "original": [
+              "US data brokers are selling half a billion dollars in RL training environments to Chinese AI labs"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "US-Datenhändler verkaufen RL-Trainingsumgebungen im Wert von einer halben Milliarde Dollar an chinesische KI-Labore.",
+              "Der Bericht wirft Fragen zu Exportkontrollen für Reinforcement-Learning-Infrastruktur auf."
+            ],
+            "original": [
+              "Titel übersetzt: US-Datenhändler verkaufen RL-Trainingsumgebungen im Wert von einer halben Milliarde Dollar an chinesische KI-Labore"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Model & Product Launches / Modell- & Produktstarts",
+      "desc": "Anthropic, Meta, Google, and OpenAI ship new model variants and access programs.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic introduced Claude Fable 5.2 and Claude Mythos 5.2, with early benchmarks now circulating.",
+              "The variants add to a rapid model release cycle alongside Meta Ember and Google's new TPUs."
+            ],
+            "original": [
+              "The post announces two new Claude model variants, Claude Fable 5.2 and Claude Mythos 5.2."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic hat die Modellvarianten Claude Fable 5.2 und Claude Mythos 5.2 vorgestellt; erste Benchmarks kursieren.",
+              "Die Veröffentlichungen ergänzen einen schnellen Release-Zyklus mit Meta Ember und neuen Google-TPUs."
+            ],
+            "original": [
+              "Übersetzt: Der Beitrag kündigt zwei neue Claude-Modellvarianten an: Claude Fable 5.2 und Claude Mythos 5.2."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/chatgpt-plus-for-veterans",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "OpenAI announced ChatGPT Plus access for U.S. veterans and servicemembers.",
+              "The program targets military personnel with access to the paid ChatGPT tier."
+            ],
+            "original": [
+              "ChatGPT Plus for veterans and servicemembers"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI kündigt ChatGPT-Plus-Zugang für US-Veteranen und Soldat:innen an.",
+              "Das Programm richtet sich an Militärangehörige und bietet Zugang zur kostenpflichtigen ChatGPT-Stufe."
+            ],
+            "original": [
+              "Titel übersetzt: ChatGPT Plus für Veteranen und Militärangehörige"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agent Coordination / Agentenkoordination",
+      "desc": "Cisco outlines how enterprise agents can align and work together.",
+      "cards": [
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/agents-that-think-together-cisco-s-vijoy-pandey-on-semantic-alignment-scope-accord-concord/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Cisco's Vijoy Pandey describes a framework for multi-agent systems that think together.",
+              "The approach combines semantic alignment, scope, accord, and concord for agent coordination."
+            ],
+            "original": [
+              "Agents That Think Together: Cisco's Vijoy Pandey on Semantic Alignment, Scope, Accord & Concord"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ciscos Vijoy Pandey beschreibt ein Framework für Multi-Agenten-Systeme, die gemeinsam denken.",
+              "Der Ansatz kombiniert semantische Ausrichtung, Scope, Accord und Concord für die Agentenkoordination."
+            ],
+            "original": [
+              "Titel übersetzt: Agenten, die gemeinsam denken: Ciscos Vijoy Pandey über semantische Ausrichtung, Scope, Accord & Concord"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261111135900-b1f649",
+    "generatedAt": "2026-11-11T14:01:24.496Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 143545,
+    "tokensIn": 1361,
+    "tokensOut": 12022,
+    "estCostUsd": 0.003557,
+    "candidatesIn": 26,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 144342,
+      "preparedChars": 3895,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
+      "https://www.youtube.com/watch?v=27H7XzGx8F8",
+      "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/",
+      "https://the-decoder.com/us-data-brokers-are-selling-half-a-billion-dollars-in-rl-training-environments-to-chinese-ai-labs/",
+      "https://openai.com/index/chatgpt-plus-for-veterans",
+      "https://www.cognitiverevolution.ai/agents-that-think-together-cisco-s-vijoy-pandey-on-semantic-alignment-scope-accord-concord/"
+    ]
+  }
+}
