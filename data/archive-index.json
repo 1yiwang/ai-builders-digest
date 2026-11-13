@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-11T14:01:24.614Z",
-  "count": 66,
+  "generatedAt": "2026-11-13T14:27:21.415Z",
+  "count": 67,
   "issues": [
+    {
+      "date": "2026-11-13",
+      "title": "Huang-Rücktritt und Gemini-Denkstufen",
+      "desc": "Nach 33 Jahren verlässt Jensen Huang NVIDIA, während Google mit Gemini 4 Hydrogen günstigere Denkmodelle startet und OpenAI Fragen zur Transparenz von Frontier-Modellen aufwirft.",
+      "href": "./issues/ai-builders-digest-2026-11-13.html",
+      "issue": "Nr. 67"
+    },
     {
       "date": "2026-11-11",
       "title": "Mercor: 20-Milliarden-Dollar-Bewertung",
