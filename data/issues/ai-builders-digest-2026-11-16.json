@@ -1,0 +1,271 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-16",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI und die Media Division von LVMH melden eine strategische Partnerschaft, während Freshworks-Gründer 53 Millionen Dollar für KI-CRM erhalten. Anthropic präsentiert Claude Fable 5.2 und rückt das Vergessen im Agentengedächtnis in den Fokus. Gleichzeitig belegen Qwen-4-Daten sinkende API-Preise. Die Branche verbindet Produktausbau mit hartem Kostendruck."
+  },
+  "archive": {
+    "title": "Vergessen als Feature und fallende Tokenpreise",
+    "desc": "Anthropics neue Modelle treffen auf sinkende API-Preise und KI-native Produktoffensiven."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-16.",
+  "sections": [
+    {
+      "title": "Model Pricing & Evaluation / Modellpreise & Evaluation",
+      "desc": "Sinking API prices and fresh benchmark results show competitive pressure on model economics.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "API pricing fell from $10/$50 to $8/$40 per 1M input/output tokens, according to @arena.",
+              "Stealthmodels published StealthMark results for Qwen 4 Max Preview, including a head-to-head against Qwen 3.8 Max."
+            ],
+            "original": [
+              "Pricing: API pricing fell from $10/$50 to $8/$40 per 1M input/output tokens ( @arena ).",
+              "Stealthmodels published StealthMark results for Qwen 4 Max Preview, with a launch tracker at stealthmodels.com/qwen-4"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "API-Preise fielen laut @arena von 10/50 auf 8/40 Dollar pro 1M Input-/Output-Tokens.",
+              "Stealthmodels veröffentlichte StealthMark-Ergebnisse für die Qwen 4 Max Preview, inklusive Vergleich mit Qwen 3.8 Max."
+            ],
+            "original": [
+              "API-Preise fielen von 10/50 auf 8/40 Dollar pro 1M Input-/Output-Tokens ( @arena ).",
+              "Stealthmodels veröffentlichte StealthMark-Ergebnisse für die Qwen 4 Max Preview, mit Launch-Tracker unter stealthmodels.com/qwen-4"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Anthropic: Memory & Creative Models / Anthropic: Gedächtnis & Kreativmodelle",
+      "desc": "Two Anthropic stories share a focus on how models handle memory and creative output.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them, according to The Decoder.",
+              "The model's framing signals a departure from standard text-to-image generation techniques."
+            ],
+            "original": [
+              "Anthropic's Claude Fable 5.2 doesn't generate images, it paints them"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic hat Claude Fable 5.2 veröffentlicht; laut The Decoder erzeugt das Modell Bilder nicht, sondern malt sie.",
+              "Die Formulierung deutet auf eine Abkehr von klassischen Text-zu-Bild-Verfahren hin."
+            ],
+            "original": [
+              "Anthropics Claude Fable 5.2 erzeugt keine Bilder, es malt sie"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic argues agent memory should optimize knowing what to forget, not how much context to store.",
+              "The insight reframes long-term agent memory as a filtering problem rather than a capacity problem."
+            ],
+            "original": [
+              "Anthropic says the key to agent memory is knowing what to forget, not how much to store"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropic zufolge sollten Agenten-Gedächtnisse optimieren, was sie vergessen, statt wie viel Kontext sie speichern.",
+              "Das verschiebt das Langzeitgedächtnis von Agenten von einem Speicher- zu einem Filterproblem."
+            ],
+            "original": [
+              "Anthropic sagt, der Schlüssel zum Agentengedächtnis ist zu wissen, was man vergisst, nicht wie viel man speichert."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "AI-Native Product Expansion / KI-native Produkterweiterung",
+      "desc": "From CRM to travel to luxury media, AI is being embedded directly into product workflows.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Freshworks alums raised $53 million to build an AI-native CRM competing with Salesforce and HubSpot.",
+              "The startup targets incumbent CRM workflows with an AI-first architecture, per TechCrunch."
+            ],
+            "original": [
+              "Freshworks alums raise $53M to take on Salesforce, HubSpot with AI-native CRM"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Freshworks-Gründer haben 53 Millionen Dollar für ein KI-natives CRM eingesammelt, das Salesforce und HubSpot angreift.",
+              "Laut TechCrunch zielt das Start-up auf klassische CRM-Workflows mit KI-zentrierter Architektur."
+            ],
+            "original": [
+              "Freshworks-Alumni sammeln 53 Mio. Dollar ein, um mit KI-nativem CRM gegen Salesforce und HubSpot anzutreten."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Google Maps can now build trip itineraries with real-time details about each stop.",
+              "The feature moves Google Maps from navigation into AI-generated trip planning."
+            ],
+            "original": [
+              "Google Maps can now build trip itineraries with real-time details about each stop"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Google Maps kann jetzt Reiserouten mit Echtzeitdetails zu jedem Stopp erstellen.",
+              "Damit erweitert Google Maps die Navigation um KI-generierte Reiseplanung."
+            ],
+            "original": [
+              "Google Maps kann jetzt Reiserouten mit Echtzeitdetails zu jedem Stopp erstellen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/lvmh-media-division-partnership",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "LVMH's Media Division announced a strategic partnership with OpenAI.",
+              "The deal is another sign of luxury media groups integrating OpenAI models into their operations."
+            ],
+            "original": [
+              "LVMH's Media Division announces strategic partnership with OpenAI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Die Media Division von LVMH hat eine strategische Partnerschaft mit OpenAI angekündigt.",
+              "Luxusmedien integrieren damit zunehmend OpenAI-Modelle in ihre Abläufe."
+            ],
+            "original": [
+              "Die Media Division von LVMH kündigt strategische Partnerschaft mit OpenAI an."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Developer Tools: Datasette Releases / Entwickler-Tools: Datasette-Releases",
+      "desc": "Simon Willison keeps shipping Datasette alpha releases and mapping plugins.",
+      "cards": [
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Nov/15/datasette/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Simon Willison shipped datasette 1.0a43, the latest alpha of his SQLite publishing tool.",
+              "The release continues Datasette's incremental path toward a 1.0 version."
+            ],
+            "original": [
+              "datasette 1.0a43"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison hat Datasette 1.0a43 veröffentlicht, das neueste Alpha seines SQLite-Publishing-Tools.",
+              "Der Release treibt Datasette weiter in Richtung Version 1.0."
+            ],
+            "original": [
+              "datasette 1.0a43"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Simon Willison released datasette-maplibre 0.1a0, a plugin adding map rendering to Datasette.",
+              "The early alpha shows Datasette's mapping capabilities developing through plugins."
+            ],
+            "original": [
+              "datasette-maplibre 0.1a0"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison hat datasette-maplibre 0.1a0 veröffentlicht, ein Plugin für Kartenrendering in Datasette.",
+              "Die frühe Alpha zeigt, wie Datasette Mapping-Funktionen über Plugins ausbaut."
+            ],
+            "original": [
+              "datasette-maplibre 0.1a0"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261116153127-18c0e0",
+    "generatedAt": "2026-11-16T15:34:09.628Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 162291,
+    "tokensIn": 1354,
+    "tokensOut": 14994,
+    "estCostUsd": 0.004388,
+    "candidatesIn": 20,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 89457,
+      "preparedChars": 3886,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
+      "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+      "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/",
+      "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+      "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/",
+      "https://openai.com/index/lvmh-media-division-partnership",
+      "https://simonwillison.net/2026/Nov/15/datasette/",
+      "https://simonwillison.net/2026/Nov/15/datasette-maplibre/"
+    ]
+  }
+}
