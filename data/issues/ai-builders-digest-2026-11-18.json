@@ -1,0 +1,232 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-18",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "OpenAI hat gestern GPT-6.2 Astra und Sol veröffentlicht, und erste Benchmarks zeigen Astra weit vorn. Die unabhängige Analyse von Latent Space meldet 67,2 Prozent bei Mercors OpenWorldEngineer und deutliche Kostensenkungen. Parallel meldet Perplexity eine Milliarden-Dollar-Run-Rate, während Together AI seine Kernel-Strategie radikal vereinfacht. Gemeinsam zeigen diese Meldungen: Infrastruktur und Modelle skalieren schneller, als viele Teams umbauen können."
+  },
+  "archive": {
+    "title": "GPT-6.2 dominiert Modelle, Perplexity knackt Milliarde",
+    "desc": "Neue Modelle und Benchmarks treffen auf wachsende Geschäftszahlen und vereinfachte Coding-Agenten-Infrastruktur."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-18.",
+  "sections": [
+    {
+      "title": "GPT-6.2 Launch: Astra & Sol Benchmarks / GPT-6.2-Start: Astra- und Sol-Benchmarks",
+      "desc": "OpenAI's new models and independent benchmark evaluations on coding and reasoning tasks.",
+      "cards": [
+        {
+          "authorKey": "blog:OpenAI",
+          "sourceName": "OpenAI",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "OpenAI launched GPT-6.2 Astra and Sol, two new frontier models aimed at different cost and performance needs.",
+              "Astra targets high benchmarks and agentic coding; Sol is positioned as a cheaper workhorse for high-volume tasks."
+            ],
+            "original": [
+              "Introducing GPT-6.2 Astra and Sol"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "OpenAI hat GPT-6.2 Astra und Sol veröffentlicht, zwei neue Frontier-Modelle für unterschiedliche Kosten- und Leistungsanforderungen.",
+              "Astra zielt auf Top-Benchmarks und agentisches Coding; Sol ist als günstigeres Arbeitstier positioniert."
+            ],
+            "original": [
+              "Einführung von GPT-6.2 Astra und Sol"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Mercor's OpenWorldEngineer puts GPT-6.2 Astra at 67.2%, versus 54.6% for Fable 5.2 and 44.2% for GPT-6 Astra.",
+              "Microsoft's multi-model harness scored 71.2% on Terminal-Bench 4.1 at 88% lower cost than Claude Fable 5.2.",
+              "A small adapter trained inside pi lifted Qwen3.8-27B from 15 to 32 solves on the 51 hardest SWE-bench Pro tasks."
+            ],
+            "original": [
+              "Mercor’s OpenWorldEngineer puts Astra at 67.2%, Fable 5.2 at 54.6%, and GPT-6 Astra at 44.2%.",
+              "Microsoft reports 71.2% on Terminal-Bench 4.1 with its multi-model harness, at 88% lower cost than Claude Fable 5.2 in that comparison."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Mercors OpenWorldEngineer bewertet GPT-6.2 Astra mit 67,2 %, gegenüber 54,6 % für Fable 5.2 und 44,2 % für GPT-6 Astra.",
+              "Microsofts Multi-Modell-Harness erreichte 71,2 % im Terminal-Bench 4.1 bei 88 % niedrigeren Kosten als Claude Fable 5.2.",
+              "Ein kleiner Adapter auf Qwen3.8-27B steigerte die gelösten Aufgaben bei den 51 schwersten SWE-bench-Pro-Aufgaben von 15 auf 32."
+            ],
+            "original": [
+              "Mercors OpenWorldEngineer setzt Astra auf 67,2 %, Fable 5.2 auf 54,6 % und GPT-6 Astra auf 44,2 %.",
+              "Microsoft meldet 71,2 % im Terminal-Bench 4.1 mit seinem Multi-Modell-Harness, bei 88 % niedrigeren Kosten als Claude Fable 5.2."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Revenue & Data-Layer Funding / Umsatz- und Datenschicht-Finanzierung",
+      "desc": "Business milestones and venture bets on data infrastructure for AI agents and robots.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Perplexity reached a $1B revenue run rate in 2026, up 4x year-over-year."
+            ],
+            "original": [
+              "Perplexity hits a $1B revenue run rate, up 4x in 2026"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Perplexity hat 2026 eine Umsatz-Run-Rate von 1 Milliarde Dollar erreicht – 4x mehr als im Vorjahr."
+            ],
+            "original": [
+              "Perplexity erreicht 2026 eine Umsatz-Run-Rate von 1 Milliarde Dollar, 4x mehr als im Vorjahr."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Accel-backed Humyn Labs raised $47M to supply training data to U.S. robotics companies."
+            ],
+            "original": [
+              "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Indiens Humyn Labs hat 47 Millionen Dollar eingesammelt, um US-Robotikfirmen Trainingsdaten zu liefern."
+            ],
+            "original": [
+              "Indiens Humyn Labs sammelt 47 Millionen Dollar ein, um US-Robotikfirmen die Daten zu liefern, die sie brauchen."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Felicis led a $7.5M round into Unsiloed AI, which makes enterprise documents usable by AI agents."
+            ],
+            "original": [
+              "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Felicis führt eine 7,5-Millionen-Dollar-Runde in Unsiloed AI an, das Unternehmensdokumente für KI-Agenten nutzbar macht."
+            ],
+            "original": [
+              "Felicis führt 7,5-Millionen-Dollar-Wette auf Unsiloed AI an, um Unternehmensdokumente für KI-Agenten nutzbar zu machen."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Coding Agent Infrastructure: Compilers & Sandboxes / Coding-Agenten-Infrastruktur: Compiler & Sandboxes",
+      "desc": "How inference and execution infrastructure is changing for autonomous coding agents.",
+      "cards": [
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/road-to-together-compiler",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI deleted its hand-built megakernels from last year, replacing them with Together Compiler."
+            ],
+            "original": [
+              "Last year we built megakernels. This year we deleted them: The road to Together Compiler"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI hat die handgebauten Megakernel des Vorjahres gelöscht und durch Together Compiler ersetzt."
+            ],
+            "original": [
+              "Letztes Jahr bauten wir Megakernel. Dieses Jahr haben wir sie gelöscht: Der Weg zum Together Compiler."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Simon Willison",
+          "sourceName": "Simon Willison",
+          "sourceUrl": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Simon Willison examines external sandboxes for coding agents, arguing for isolated execution environments as agent use grows."
+            ],
+            "original": [
+              "External sandboxes for coding agents"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Simon Willison untersucht externe Sandboxes für Coding-Agenten und plädiert für isolierte Ausführungsumgebungen."
+            ],
+            "original": [
+              "Externe Sandboxes für Coding-Agenten"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261118152938-1e47ac",
+    "generatedAt": "2026-11-18T15:32:05.593Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 147003,
+    "tokensIn": 1419,
+    "tokensOut": 12478,
+    "estCostUsd": 0.003693,
+    "candidatesIn": 27,
+    "shortlistSize": 12,
+    "cardsPublished": 7,
+    "truncation": {
+      "rawChars": 92455,
+      "preparedChars": 3966,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+      "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/",
+      "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+      "https://www.together.ai/blog/road-to-together-compiler",
+      "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+    ]
+  }
+}

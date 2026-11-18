@@ -1,35 +1,17 @@
 {
-  "generatedAt": "2026-11-16T15:31:14.851Z",
+  "generatedAt": "2026-11-18T15:29:28.433Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Machine Learning Street Talk",
-      "title": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2",
-      "guid": "gid://art19-episode-locator/V0/IhWE8SwOoGmXOBSFX8EfgkSsaEfD0Ixr5ihDlLgqIf8",
-      "publishedAt": "2026-11-15T17:00:00.000Z",
-      "description": "• Get the top 80+ AI Models for $8.99 at AI Box: https://aibox.ai • How I Grow and Scale My Business with AI: https://www.skool.com/aihustle • Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter In this episode, we explore the recent release of Claude Fable 5.2 and the anticipated benefits of its 30% speed increase and 20% price cut. Additionally, we discuss the implications of these updates for users' workflows and how they fit into the evolving landscape of AI technologies. Chapters 00:00 Welcome and Announcements 02:00 Overview of Claude Fable 5.2 05:00 Impact on Workflows 08:00 Market Comparison and Mythos 5.2 See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
-    },
-    {
-      "source": "podcast",
-      "name": "The Cognitive Revolution",
-      "title": "AI, the Modern Enigma: Nathan's Keynote at IT Revolution's Enterprise AI Summit at Bletchley Park",
-      "guid": "293c5f3e-e001-11f1-bbeb-b31138aa58ea",
-      "url": "https://www.cognitiverevolution.ai/ai-the-modern-enigma-nathan-s-keynote-at-it-revolution-s-enterprise-ai-summit-at-bletchley-park/",
-      "publishedAt": "2026-11-14T09:05:22.000Z",
-      "description": "In his keynote at IT Revolution's Enterprise AI Summit at Bletchley Park, Nathan balances his optimism for life-saving AI with an urgent warning about frontier models seeking power and drifting beyond human comprehension. Analyzing incidents like the OpenAI–Hugging Face breakout, alignment faking, and GPT-6 Astra's compressed dialects, he illustrates how advanced agents are already learning to cheat evaluations and coordinate autonomously. Nathan warns that society is nearing the end of a brief sweet spot before catastrophically dangerous AI emerges and proximal levers of control are lost. To navigate this transition, he urges organizations to implement strict supervision and panic buttons while calling for a pause on frontier-scale training. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/ai-the-modern-enigma-nathan-s-keynote-at-it-revolution-s-enterprise-ai-summit-at-bletchley-park/ Sponsors: Claude: Claude is the AI collaborator built for problem solvers, extending your thinking across coding, modeling, and strategic workflows. Get started and discover Claude Pro at https://claude.ai/tcr OutSystems: OutSystems is the leading agentic systems platform, helping enterprises build, modernize, and operate mission-critical applications at the speed of AI. Learn more and start owning your agentic future at https://outsystems.com/tcr Tasklet: Tasklet empowers your business with AI agents that connect to your tools and automate recurring workflows with no code required. Visit https://tasklet.ai and use code cog rev for $50 in free credits Deepgram: Deepgram understands words and context across STT, TTS, and voice agents to deliver better conversations at production scale. Learn more at https://deepgram.com/contextiseverything CHAPTERS: (00:00) About the Episode (01:58) Introducing Nathan Labenz (03:36) The frontier wartime mindset (05:33) Diagnosing Earnie with AI (07:20) AI, the modern enigma (Part 1) (13:20) Sponsors: Claude | OutSystems (16:30) AI, the modern enigma (Part 2) (Part 1) (30:47) Sponsors: Tasklet | Deepgram (32:57) AI, the modern enigma (Part 2) (Part 2) (39:37) Conference closing remarks (40:12) Episode Outro (42:48) Outro PRODUCED BY: https://aipodcast.ing SOCIAL LINKS: Website: https://www.cognitiverevolution.ai Twitter (Podcast): https://x.com/cogrev_podcast Twitter (Nathan): https://x.com/labenz LinkedIn: https://linkedin.com/in/nathanlabenz/ Youtube: https://youtube.com/@CognitiveRevolutionPodcast Apple: https://podcasts.apple.com/de/podcast/the-cognitive-revolution-ai-builders-researchers-and/id1669813431 Spotify: https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk"
-    },
-    {
-      "source": "podcast",
-      "name": "Practical AI",
-      "title": "Implementing Federated Learning to enhance Agentic AI",
-      "guid": "831710d1-ed18-46f7-b479-539ba9a751d3",
-      "url": "https://share.transistor.fm/s/58a69653",
-      "publishedAt": "2026-11-13T17:59:46.000Z",
-      "description": "How can AI models learn from private data without compromising privacy? Chris is joined by Lorenzo Sani, Research Scientist at Flower Labs and PhD researcher at Cambridge, to explore federated learning and privacy-preserving AI. They discuss how collaborative learning can expand access to private data for LLM training, how model trajectories can help improve agentic AI systems, and the benefits of open-weight models. The conversation also explores real-world applications of locally hosted AI agents, from healthcare and robotics to everyday automation (for a Halloween party). Featuring: Lorenzo Sani – LinkedIn Chris Benson – Website , LinkedIn , Bluesky , GitHub , X Links: Endeavor model page Introducing Endeavor 1.1 Sponsors: Hostinger : Create your website today. Go to hostinger.com/practical and use practical for 10 percent off now. Perplexity AI : \" Start your free trial of Perplexity Computer today at pplx.ai/practical and experience the next phase of AI. Resources and Events: Register for upcoming webinars here ! Prior Webinars from our partner Prediction Guard Midwest AI Summit 2026 Chris’s new book The Art of Swarming will be published soon, written to be the seminal foundational book for the fledgling swarming industry, defining the principles and architecture that enable autonomous agentic UxS swarms with emergent distributed embodied intelligence. You can find out more at his website : https://chrisbenson.com ]]>"
+      "title": "AI Website Side Hustles",
+      "guid": "gid://art19-episode-locator/V0/rqYOFahapXKcNub6UJ9QxejWWH8T4egdY_iAqgKp0eQ",
+      "publishedAt": "2026-11-17T17:00:00.000Z",
+      "description": "Show Links • Get the top 80+ AI Models for $8.99 at AI Box: https://aibox.ai • How I Grow and Scale My Business with AI: https://www.skool.com/aihustle • Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter In this episode, we examine a viral side hustle involving cold calling businesses with poor websites and offering AI-assisted website creation. While there may be potential for profit, the challenges of cold calling and the oversimplification of the process are thoroughly discussed, leading to suggestions for more sustainable business strategies. Chapters 00:00 Introduction to Viral Hustles 02:01 Challenges of Cold Calling 03:59 Sustainability of the Strategy 06:02 Alternatives to One-Time Sales See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
     }
   ],
   "stats": {
-    "podcastEpisodes": 3
+    "podcastEpisodes": 1
   }
 }

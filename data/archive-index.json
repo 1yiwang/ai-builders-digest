@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-16T15:34:09.759Z",
-  "count": 68,
+  "generatedAt": "2026-11-18T15:32:05.734Z",
+  "count": 69,
   "issues": [
+    {
+      "date": "2026-11-18",
+      "title": "GPT-6.2 dominiert Modelle, Perplexity knackt Milliarde",
+      "desc": "Neue Modelle und Benchmarks treffen auf wachsende Geschäftszahlen und vereinfachte Coding-Agenten-Infrastruktur.",
+      "href": "./issues/ai-builders-digest-2026-11-18.html",
+      "issue": "Nr. 69"
+    },
     {
       "date": "2026-11-16",
       "title": "Vergessen als Feature und fallende Tokenpreise",
