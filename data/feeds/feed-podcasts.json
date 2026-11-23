@@ -1,17 +1,26 @@
 {
-  "generatedAt": "2026-11-18T15:29:28.433Z",
+  "generatedAt": "2026-11-23T17:53:57.883Z",
   "lookbackHours": 72,
   "podcasts": [
     {
       "source": "podcast",
       "name": "Machine Learning Street Talk",
-      "title": "AI Website Side Hustles",
-      "guid": "gid://art19-episode-locator/V0/rqYOFahapXKcNub6UJ9QxejWWH8T4egdY_iAqgKp0eQ",
-      "publishedAt": "2026-11-17T17:00:00.000Z",
-      "description": "Show Links • Get the top 80+ AI Models for $8.99 at AI Box: https://aibox.ai • How I Grow and Scale My Business with AI: https://www.skool.com/aihustle • Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter In this episode, we examine a viral side hustle involving cold calling businesses with poor websites and offering AI-assisted website creation. While there may be potential for profit, the challenges of cold calling and the oversimplification of the process are thoroughly discussed, leading to suggestions for more sustainable business strategies. Chapters 00:00 Introduction to Viral Hustles 02:01 Challenges of Cold Calling 03:59 Sustainability of the Strategy 06:02 Alternatives to One-Time Sales See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+      "title": "Unlocking AI for Video Editing Success",
+      "guid": "gid://art19-episode-locator/V0/ZEIX8Y2cjomS-W36RwV-mDVqwSnDs_RIIE-IMTtihyc",
+      "publishedAt": "2026-11-22T17:00:00.000Z",
+      "description": "Show Links Get the top 80+ AI Models for $8.99 at AI Box: ⁠⁠https://aibox.ai How I Grow and Scale My Business with AI: https://www.skool.com/aihustle Get the AI Chat Daily Newsletter: https://www.aichatdaily.com/newsletter In this episode, we explore the transformative power of AI in video editing, highlighting both short-form and long-form content creation. Discover how tools like Claude can enhance your editing process, improve engagement, and potentially boost your video performance on platforms like YouTube. Chapters 00:00 Introduction to AI Video Editing 02:01 Using Claude for Edits 05:01 Performance of AI-Edited Videos 09:29 The Future of AI in Content Creation See Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.]]>"
+    },
+    {
+      "source": "podcast",
+      "name": "The Cognitive Revolution",
+      "title": "Spend the Lead on Safety: Biden AI Advisors Ben Buchanan &amp; Tantum Collins on the Fate of the World",
+      "guid": "e71d7d82-e57c-11f1-9d5f-b78cef15135a",
+      "url": "https://www.cognitiverevolution.ai/spend-the-lead-on-safety-biden-ai-advisors-ben-buchanan-tantum-collins-on-the-fate-of-the-world/",
+      "publishedAt": "2026-11-21T08:00:45.000Z",
+      "description": "Former Biden administration AI advisors Ben Buchanan and Tantum Collins join Nathan to discuss their book, The Bitter Struggle, and their experience shaping U.S. policy on compute supply chains and export controls. Drawing on their backgrounds in government and DeepMind, they unpack the geopolitical strategy of building an allied compute lead over China in order to spend that advantage on safety. The conversation probes the clash between frontier lab idealism and national security, bilateral talks over AI risks in nuclear command, and persistent technical hurdles like reward hacking. For full show notes, links, and references, read the episode page:https://www.cognitiverevolution.ai/spend-the-lead-on-safety-biden-ai-advisors-ben-buchanan-tantum-collins-on-the-fate-of-the-world/ Sponsors: Claude: Claude is the AI collaborator built for problem solvers, extending your thinking across coding, modeling, and strategic workflows. Get started and discover Claude Pro at https://claude.ai/tcr OutSystems: OutSystems is the leading agentic systems platform, empowering enterprises to build, coordinate, and govern AI agents and mission-critical applications securely. Learn more and start building your agentic future at https://outsystems.com/tcr Tasklet: Tasklet empowers your business with AI agents that connect to your tools and automate recurring workflows with no code required. Visit https://tasklet.ai and use code cog rev for $50 in free credits Granola: Granola is an AI-powered notepad that captures your meetings and turns them into clean, searchable notes with clear decisions and action items. Try it completely free on your next call at https://granola.ai/tcr CHAPTERS: (00:00) About the Episode (05:04) Conviction in scaling laws (11:22) Inevitability versus human choice (Part 1) (15:30) Sponsors: Claude | OutSystems (18:07) Inevitability versus human choice (Part 2) (19:50) Private labs and ideology (26:22) Spending the lead wisely (Part 1) (30:52) Sponsors: Tasklet | Granola (33:25) Spending the lead wisely (Part 2) (41:52) US and China diplomacy (54:05) Pacing frontier AI development (01:09:03) Regulating the frontier labs (01:18:39) Data centers and energy (01:24:19) Resisting the bitter temptation (01:32:50) Managing catastrophic emergency scenarios (01:38:45) Policy lightning round (01:44:16) Episode Outro (01:47:42) Outro PRODUCED BY: https://aipodcast.ing"
     }
   ],
   "stats": {
-    "podcastEpisodes": 1
+    "podcastEpisodes": 2
   }
 }

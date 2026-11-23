@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-18T15:32:05.734Z",
-  "count": 69,
+  "generatedAt": "2026-11-23T17:55:46.646Z",
+  "count": 70,
   "issues": [
+    {
+      "date": "2026-11-23",
+      "title": "Amazons Milliarden-Wette, neue Modelle und 10x-Prognose",
+      "desc": "Der Tag zeigt einen KI-Wettbewerb, der Hardware-Deals, neue Modellarchitekturen und Sicherheitsfragen gleichzeitig beschleunigt.",
+      "href": "./issues/ai-builders-digest-2026-11-23.html",
+      "issue": "Nr. 70"
+    },
     {
       "date": "2026-11-18",
       "title": "GPT-6.2 dominiert Modelle, Perplexity knackt Milliarde",

@@ -1,0 +1,263 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-23",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Amazon kauft Decarts KI-Optimierungstechnologie für 7,5 Milliarden Dollar, um Trainium-Chips zu verkaufen. Z.ai und Together AI lancieren derweil neue große Modelle. Paul Christiano warnt, der KI-Fortschritt könnte plötzlich zehnmal schneller werden. Diese Gleichzeitigkeit deutet auf einen neuen Wettbewerb, in dem Hardware, Modelle und Sicherheit untrennbar zusammengehören."
+  },
+  "archive": {
+    "title": "Amazons Milliarden-Wette, neue Modelle und 10x-Prognose",
+    "desc": "Der Tag zeigt einen KI-Wettbewerb, der Hardware-Deals, neue Modellarchitekturen und Sicherheitsfragen gleichzeitig beschleunigt."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-23.",
+  "sections": [
+    {
+      "title": "Frontier Models & Compute / Neue Flaggschiff-Modelle und Amazons Milliarden-Wette",
+      "desc": "Drei Meldungen verbinden neue Modellarchitekturen mit der Hardware- und Optimierungsschicht, die sie antreibt.",
+      "cards": [
+        {
+          "authorKey": "blog:TechCrunch AI",
+          "sourceName": "TechCrunch AI",
+          "sourceUrl": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Amazon is acquiring Decart's AI optimization technology for $7.5 billion.",
+              "The deal positions Amazon to sell Trainium chips by pairing them with Decart's optimization software."
+            ],
+            "original": [
+              "Paraphrase: Amazon is acquiring Decart's AI optimization technology for $7.5 billion as it prepares to sell Trainium chips."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Amazon übernimmt Decarts KI-Optimierungstechnologie für 7,5 Milliarden Dollar.",
+              "Der Deal soll den Verkauf von Trainium-Chips mit Decarts Optimierungssoftware bündeln."
+            ],
+            "original": [
+              "Paraphrase: Amazon übernimmt Decarts KI-Optimierungstechnologie für 7,5 Milliarden Dollar und bereitet den Verkauf von Trainium-Chips vor."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Z.ai unveiled a 750B-parameter flagship model that adopts loop transformer architecture.",
+              "The release follows OpenAI's move into loop transformers, marking a competitive shift in model design."
+            ],
+            "original": [
+              "Paraphrase: Z.ai follows OpenAI into loop transformer territory with its new 750B flagship model."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Z.ai hat ein Flaggschiff-Modell mit 750 Milliarden Parametern und Loop-Transformer-Architektur vorgestellt.",
+              "Der Launch folgt OpenAIs Vorstoß in Loop-Transformer und markiert einen Wettbewerb um neue Modellarchitekturen."
+            ],
+            "original": [
+              "Paraphrase: Z.ai folgt OpenAI mit seinem neuen 750-Milliarden-Flaggschiff-Modell in das Loop-Transformer-Territorium."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/qwen4-max",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI now serves Qwen4 Max, Alibaba's latest flagship model, via its inference API.",
+              "Qwen4 Max joins Together's catalog, giving developers access to the new model without self-hosting."
+            ],
+            "original": [
+              "Paraphrase: Qwen4 Max is now live on Together AI."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI bietet jetzt Qwen4 Max, Alibabas neuestes Flaggschiff-Modell, über seine Inferenz-API an.",
+              "Qwen4 Max ergänzt den Together-Katalog und gibt Entwicklern Zugang ohne eigenes Hosting."
+            ],
+            "original": [
+              "Paraphrase: Qwen4 Max ist jetzt auf Together AI verfügbar."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Safety & Speed / Sicherheit und Geschwindigkeit: Wer kontrolliert den Fortschritt?",
+      "desc": "Zwei Gespräche kreisen um die Frage, ob KI-Fortschritt beherrschbar bleibt, wenn er plötzlich sehr viel schneller wird.",
+      "cards": [
+        {
+          "authorKey": "youtube:@DwarkeshPatel",
+          "sourceName": "Dwarkesh Patel",
+          "sourceUrl": "https://www.youtube.com/watch?v=vwWsfobw0Ts",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Dwarkesh Patel interviews Paul Christiano on why AI progress could suddenly go 10x faster.",
+              "Christiano argues the field may be underestimating a sudden jump in capability growth."
+            ],
+            "original": [
+              "Paraphrase: Why AI progress could suddenly go 10x faster – Paul Christiano."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Dwarkesh Patel spricht mit Paul Christiano darüber, warum KI-Fortschritt plötzlich zehnmal schneller werden könnte.",
+              "Christiano argumentiert, dass ein diskontinuierlicher Fähigkeitssprung statt stetiger Zuwächse möglich ist."
+            ],
+            "original": [
+              "Paraphrase: Warum KI-Fortschritt plötzlich zehnmal schneller werden könnte – Paul Christiano."
+            ]
+          }
+        },
+        {
+          "authorKey": "podcast:The Cognitive Revolution",
+          "sourceName": "The Cognitive Revolution",
+          "sourceUrl": "https://www.cognitiverevolution.ai/spend-the-lead-on-safety-biden-ai-advisors-ben-buchanan-tantum-collins-on-the-fate-of-the-world/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Ben Buchanan and Tantum Collins, former Biden AI advisors, discuss how the US should spend its lead on safety rather than racing ahead.",
+              "They cover US-China diplomacy, frontier lab regulation, and managing catastrophic emergency scenarios."
+            ],
+            "original": [
+              "Paraphrase: Spend the lead on safety: Biden AI advisors Ben Buchanan & Tantum Collins on the fate of the world."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Ben Buchanan und Tantum Collins, frühere KI-Berater Bidens, diskutieren, wie die USA ihren Vorsprung für Sicherheit statt für Tempo nutzen sollten.",
+              "Themen sind US-China-Diplomatie, Regulierung der Frontier-Labs und Katastrophenszenarien."
+            ],
+            "original": [
+              "Paraphrase: Den Vorsprung für Sicherheit ausgeben: Bidens KI-Berater Ben Buchanan & Tantum Collins über das Schicksal der Welt."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Applied AI / Angewandte KI: Gesundheitswesen, Robotik und Physik",
+      "desc": "Drei Projekte zeigen, wie KI in sehr unterschiedlichen realen Domänen von der Patientenaufnahme bis zur Astrophysik eingesetzt wird.",
+      "cards": [
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=IEJM55NIY0Y",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator features Tennr, an AI startup that gets patients seen by automating intake and scheduling.",
+              "Tennr is positioned as AI that handles healthcare back-office work, reducing wait times."
+            ],
+            "original": [
+              "Paraphrase: Tennr is AI that gets patients seen."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator stellt Tennr vor, ein KI-Startup, das Patientenaufnahme und Terminplanung automatisiert, damit Patienten schneller behandelt werden.",
+              "Tennr positioniert sich als KI für administrative Prozesse im Gesundheitswesen und verkürzt Wartezeiten."
+            ],
+            "original": [
+              "Paraphrase: Tennr ist KI, die Patienten schneller behandelt werden lässt."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/allenai/robotrack",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Hugging Face publishes RoboTrack, a point tracking method for real-world robotic manipulation.",
+              "The method from Allen AI improves how robots track points in dynamic environments."
+            ],
+            "original": [
+              "Paraphrase: RoboTrack: Point tracking for real-world robotic manipulation."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Hugging Face veröffentlicht RoboTrack, ein Point-Tracking-Verfahren für reale Roboter-Manipulation.",
+              "Die Allen-AI-Methode verbessert, wie Roboter Punkte in dynamischen Umgebungen verfolgen."
+            ],
+            "original": [
+              "Paraphrase: RoboTrack: Punktverfolgung für reale Roboter-Manipulation."
+            ]
+          }
+        },
+        {
+          "authorKey": "youtube:@TwoMinutePapers",
+          "sourceName": "Two Minute Papers",
+          "sourceUrl": "https://www.youtube.com/watch?v=1jPdehG3Hms",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Two Minute Papers covers a study where Claude AI helped solve the secret of black holes.",
+              "The video highlights how AI is being used in astrophysics research."
+            ],
+            "original": [
+              "Paraphrase: Claude AI solved the secret of black holes."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Two Minute Papers berichtet über eine Studie, in der Claude AI half, ein Schwarzes-Loch-Rätsel zu lösen.",
+              "Das Video zeigt, wie KI in der Astrophysik-Forschung eingesetzt wird."
+            ],
+            "original": [
+              "Paraphrase: Claude AI hat das Geheimnis Schwarzer Löcher gelöst."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261123175421-3158b5",
+    "generatedAt": "2026-11-23T17:55:46.494Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 85214,
+    "tokensIn": 1422,
+    "tokensOut": 10540,
+    "estCostUsd": 0.00315,
+    "candidatesIn": 21,
+    "shortlistSize": 12,
+    "cardsPublished": 8,
+    "truncation": {
+      "rawChars": 24728,
+      "preparedChars": 4077,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
+      "https://www.together.ai/blog/qwen4-max",
+      "https://www.youtube.com/watch?v=vwWsfobw0Ts",
+      "https://www.cognitiverevolution.ai/spend-the-lead-on-safety-biden-ai-advisors-ben-buchanan-tantum-collins-on-the-fate-of-the-world/",
+      "https://www.youtube.com/watch?v=IEJM55NIY0Y",
+      "https://huggingface.co/blog/allenai/robotrack",
+      "https://www.youtube.com/watch?v=1jPdehG3Hms"
+    ]
+  }
+}
