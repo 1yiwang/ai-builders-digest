@@ -1,54 +1,63 @@
 {
-  "generatedAt": "2026-11-23T17:54:15.596Z",
+  "generatedAt": "2026-11-25T17:03:05.992Z",
   "lookbackHours": 72,
   "videos": [
     {
       "source": "youtube",
       "name": "Y Combinator",
       "handle": "@ycombinator",
-      "title": "Tennr is AI that Gets Patients Seen",
-      "url": "https://www.youtube.com/watch?v=IEJM55NIY0Y",
-      "publishedAt": "2026-11-23T15:30:16.000Z",
-      "description": "Tennr (YC W23) is building an AI-powered platform that gathers medical records and coordinates referrals to get patients to treatment faster, with fewer insurance denials. The company processed more than 10 million patients in the last year and now has a network of 430,000 referring providers.\n\nIn this episode of Founder Firesides, founder and CEO Trey Holterman talks with YC’s Gustaf Alströmer about nearly giving up after 16 ideas, stepping away from coding to listen to customers, and walking away from three-quarters of the business to focus on referrals. He also covers reliable healthcare AI and selling to providers—from understanding incentives to earning trust and getting software live.\n\nhttps://www.tennr.com\n\nChapters:\n00:00 — Inside Healthcare’s Referral Black Hole\n04:11 — Finding the Problem in Primary Care\n07:21 — How Tennr Gets Patients to Care\n10:51 — Two Years in the Startup Wilderness\n14:05 — 16 Ideas and One Last Shot at YC\n17:52 — Why the CEO Stopped Coding\n20:53 — Moving to New York and Finding Traction\n24:04 — Walking Away From 75% of the Business\n27:59 — Earning Trust With Customers and Investors\n31:52 — Why Good Software Struggles in Healthcare\n35:15 — Network Effects and the EMR Problem\n38:49 — Why Better Models Aren’t Enough for Healthcare\n42:58 — Learning Enterprise Sales From Scratch\n45:58 — Finding the Buyer and Building a Champion\n48:59 — Pricing and Getting Customers Live\n\nApply to Y Combinator: https://www.ycombinator.com/apply\nWork at a startup: https://www.ycombinator.com/jobs"
+      "title": "How Asteroid Books 50 Demos a Month With Claude Code on a Mac Mini",
+      "url": "https://www.youtube.com/watch?v=w-6C-Hilg4g",
+      "publishedAt": "2026-11-24T22:21:28.000Z",
+      "description": "Asteroid's six-person team had zero go-to-market experience, so they reverse-engineered it from first principles. Their CTO walks through the $200/month system that books 50-60 demos a month autonomously and took them to seven figures of revenue.\n\n00:00 - Reverse-engineering GTM with no GTM experience\n01:01 - The principles: pluggable, Claude Code as backend, markdown ICP cards\n03:19 - What they built: webhooks, cron jobs, tools, and a write store\n06:20 - Open sourcing the repo"
+    },
+    {
+      "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "We Built a Company Agent and Tried To Replace Ourselves",
+      "url": "https://www.youtube.com/watch?v=fMeQ5ip1uCc",
+      "publishedAt": "2026-11-24T22:21:25.000Z",
+      "description": "Prized gives AI agents their own computers. Co-founder Hudson explains Hux, their 24/7 company agent that shipped a feature now driving 5% of signups, drafted 300 posts this month, and burned $17,000 in Opus credits in a week.\n\n00:00 - Why build a company agent\n01:36 - Giving it as much context as you have\n03:19 - The approval loop, and teaching it your decisions\n04:14 - Capping PRs so it stops just writing code\n05:03 - Copying Anthropic's &quot;superfans&quot; for log monitoring"
+    },
+    {
+      "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "How CrustData Gave Their 42nd Employee the Same Context as the Founders",
+      "url": "https://www.youtube.com/watch?v=NnlIpY5j7Ig",
+      "publishedAt": "2026-11-24T22:21:20.000Z",
+      "description": "CrustData built an internal harness called Yardmaster that sits at the core of hiring, sales, contract redlining, and P0 alerts. It took one contract from 193 redlines to zero in four rounds, and generated $674,000 in pipeline from dormant accounts in a month.\n\nChapters:\n00:00 - What Yardmaster is, and the three things that make it work\n02:05 - Hiring: transferring one person's strategy to the whole team\n03:06 - Sales: ramping a new AE in a week instead of a month\n04:05 - Contracts: 193 changes down to zero\n05:03 - Before and after"
+    },
+    {
+      "source": "youtube",
+      "name": "Y Combinator",
+      "handle": "@ycombinator",
+      "title": "The On-Call Agent We Trust With Production",
+      "url": "https://www.youtube.com/watch?v=jOrEJqLXG4I",
+      "publishedAt": "2026-11-24T22:21:16.000Z",
+      "description": "SigNoz ingests petabytes a month across a complex pipeline, and alerts used to take hours to root-cause. Co-founder and CEO Pranay shows the on-call agent that now resolves them in 90 seconds and has saved the team over 570 hours.\n\nChapters:\n00:00 - Why on-call is hard at this scale\n01:04 - An eight-hour incident, before and after\n03:03 - How it works: classify, runbooks, gather, respond\n04:52 - Lessons: move logic out of code, and monitor your agent like production"
     },
     {
       "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
-      "title": "Claude AI Solved The Secret Of Black Holes",
-      "url": "https://www.youtube.com/watch?v=1jPdehG3Hms",
-      "publishedAt": "2026-11-23T07:37:52.000Z",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/claude-black-hole-physics\nhttps://hexagonmath.org/2611.00175v1\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+      "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
+      "url": "https://www.youtube.com/watch?v=hwWlEuI359w",
+      "publishedAt": "2026-11-25T09:54:23.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://nasqret.github.io/riemann-rev/guide/proof-guide.pdf\nhttps://alpo.ge/remark.pdf\n\nCompression and building in public:\nhttps://x.com/altryne/status/2124585496013926707\nhttps://x.com/slimer48484/status/2124414071349104804\nhttps://riemann.verifytask.cn/\nhttps://pequalnp.com/\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
     },
     {
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
-      "title": "Why AI Progress Could Suddenly Go 10x Faster – Paul Christiano",
-      "url": "https://www.youtube.com/watch?v=vwWsfobw0Ts",
-      "publishedAt": "2026-11-23T15:30:23.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Why Shutting Down Data Centers Won’t Stop a Rogue AI – Paul Christiano",
-      "url": "https://www.youtube.com/watch?v=ena7Ck8pnms",
-      "publishedAt": "2026-11-22T15:30:09.000Z",
-      "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
-    },
-    {
-      "source": "youtube",
-      "name": "Dwarkesh Patel",
-      "handle": "@DwarkeshPatel",
-      "title": "Should AI Labs Pause Now or Later? – Paul Christiano",
-      "url": "https://www.youtube.com/watch?v=n-USKiMGQmM",
-      "publishedAt": "2026-11-21T16:30:34.000Z",
+      "title": "Why Superintelligence Will Learn Any Job in Days – Paul Christiano",
+      "url": "https://www.youtube.com/watch?v=yoSvuJKmKsI",
+      "publishedAt": "2026-11-24T21:30:35.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
     }
   ],
   "stats": {
-    "youtubeVideos": 5
+    "youtubeVideos": 6
   }
 }

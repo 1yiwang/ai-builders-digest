@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-23T17:55:46.646Z",
-  "count": 70,
+  "generatedAt": "2026-11-25T17:06:09.131Z",
+  "count": 71,
   "issues": [
+    {
+      "date": "2026-11-25",
+      "title": "Neon, Loop-Layer, halbierte GPU-Preise",
+      "desc": "Der Tag verbindet Modell-Effizienz, günstigere Rechenleistung und neue Agenten-Workflows.",
+      "href": "./issues/ai-builders-digest-2026-11-25.html",
+      "issue": "Nr. 71"
+    },
     {
       "date": "2026-11-23",
       "title": "Amazons Milliarden-Wette, neue Modelle und 10x-Prognose",

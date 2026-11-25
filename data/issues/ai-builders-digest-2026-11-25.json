@@ -1,0 +1,215 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-25",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Google DeepMind meldet sich mit Gemini 4 Neon zurück; Sundar Pichai berichtet von einem API-Nutzungsrekord am ersten Tag. Zwei Effizienzgeschichten zeigen, dass Architektur und Preispolitik schneller wirken als reine Skalierung: SenseNova-Loop-9B schlägt größere Modelle, Together AI bietet Compute zum halben Preis. Y Combinator zeigt, wie Asteroid Books 50 Demos pro Monat mit Claude Code auf einem Mac Mini erstellt. Noam Brown fragt währenddessen, warum Spieltheorie nicht zu allgemeiner Intelligenz führte."
+  },
+  "archive": {
+    "title": "Neon, Loop-Layer, halbierte GPU-Preise",
+    "desc": "Der Tag verbindet Modell-Effizienz, günstigere Rechenleistung und neue Agenten-Workflows."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-25.",
+  "sections": [
+    {
+      "title": "Frontier Models & Compute Economics: Neon, Loop Layers, Half-Price GPUs",
+      "desc": "New model launches and compute pricing show efficiency becoming a frontier-lab battleground.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Gemini 4 Neon marks Google DeepMind's full return as a frontier lab, with a Day-1 API usage record from Sundar Pichai.",
+              "SenseNova-Loop-9B runs its middle 24 of 32 layers twice and beats Qwen3.8-27B on GAIA (69.90 vs 66.99).",
+              "GPT-6 Cyber validated 948 Linux kernel bugs; the same recap mentions GPT-6 wet-lab-validated protein design."
+            ],
+            "original": [
+              "The model runs its middle 24 of 32 layers twice and beats Qwen3.8-27B on GAIA (69.90 vs 66.99).",
+              "Sundar: Neon Day-1 API usage record"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Gemini 4 Neon markiert die volle Rückkehr von Google DeepMind als Frontier Lab; Sundar Pichai meldet einen API-Nutzungsrekord am ersten Tag.",
+              "SenseNova-Loop-9B führt die mittleren 24 von 32 Schichten doppelt aus und schlägt Qwen3.8-27B bei GAIA (69,90 vs. 66,99).",
+              "GPT-6 Cyber validierte 948 Linux-Kernel-Bugs; die Zusammenfassung erwähnt auch nasslaborvalidiertes Proteindesign mit GPT-6."
+            ],
+            "original": [
+              "Das Modell führt die mittleren 24 von 32 Schichten zweimal aus und schlägt Qwen3.8-27B bei GAIA (69,90 vs. 66,99).",
+              "Sundar: Neon-Tag-1-API-Nutzungsrekord"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Together AI",
+          "sourceName": "Together AI",
+          "sourceUrl": "https://www.together.ai/blog/introducing-preemptible-compute-the-same-compute-half-the-price",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Together AI launched preemptible compute: the same compute at half the price.",
+              "The lower-cost tier is aimed at teams that can tolerate interruptible GPU jobs."
+            ],
+            "original": [
+              "Paraphrase: Together AI's announcement says preemptible compute provides the same compute at half the price."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Together AI startet vorkaufsfähige Compute-Kapazität: gleiche Rechenleistung zum halben Preis.",
+              "Die günstigere Stufe richtet sich an Teams, die unterbrechbare GPU-Jobs verkraften."
+            ],
+            "original": [
+              "Paraphrase: Die Ankündigung von Together AI beschreibt preemptible Compute als gleiche Rechenleistung zum halben Preis."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agents at Work: Demo Pipelines, Shopping Agents, Adoption Friction",
+      "desc": "Three stories show where AI agents are clearing or hitting real-world blockers.",
+      "cards": [
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=w-6C-Hilg4g",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "Y Combinator features Asteroid Books, which books 50 demos a month with Claude Code on a Mac Mini.",
+              "The setup shows agentic coding can drive a demo pipeline on low-cost local hardware."
+            ],
+            "original": [
+              "Paraphrase: Y Combinator's video shows Asteroid Books using Claude Code on a Mac Mini to produce 50 demos per month."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator zeigt Asteroid Books: 50 Demos pro Monat mit Claude Code auf einem Mac Mini.",
+              "Das Setup zeigt, dass agentisches Coding eine Demo-Pipeline auf günstiger lokaler Hardware betreiben kann."
+            ],
+            "original": [
+              "Paraphrase: Das Video von Y Combinator zeigt, wie Asteroid Books mit Claude Code auf einem Mac Mini 50 Demos pro Monat erstellt."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Amazon and Meta are in talks to end the block on Meta's AI shopping agent Muse in Amazon's online store.",
+              "A deal would reopen a major e-commerce surface for Meta's agentic shopping push."
+            ],
+            "original": [
+              "Paraphrase: The Decoder reports Amazon and Meta are in talks to unblock Meta's AI shopping agent Muse in Amazon's store."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Amazon und Meta verhandeln, die Sperre für Metas KI-Shopping-Agenten Muse in Amazons Online-Shop aufzuheben.",
+              "Ein Deal würde Meta eine wichtige E-Commerce-Fläche für agentisches Shopping öffnen."
+            ],
+            "original": [
+              "Paraphrase: The Decoder berichtet, dass Amazon und Meta über ein Ende der Sperre für Metas KI-Shopping-Agenten Muse in Amazons Store verhandeln."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Anthropic's workplace adoption study finds the hardest part isn't learning the tools.",
+              "The result points to organizational and workflow barriers rather than AI literacy gaps."
+            ],
+            "original": [
+              "Paraphrase: The Decoder reports an Anthropic study showing the hardest part of adopting AI at work has little to do with learning the tools."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Anthropics Studie zur KI-Einführung am Arbeitsplatz zeigt: Das Schwerste ist nicht das Erlernen der Tools.",
+              "Das Ergebnis deutet auf organisatorische und Workflow-Hürden statt mangelnder KI-Kompetenz hin."
+            ],
+            "original": [
+              "Paraphrase: The Decoder berichtet über eine Anthropic-Studie, wonach die größte Hürde bei der KI-Einführung wenig mit dem Tool-Lernen zu tun hat."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Frontier Reasoning Limits: Why Game Theory Didn't Generalize",
+      "desc": "Noam Brown's live conversation questions whether game-theoretic wins translate to general intelligence.",
+      "cards": [
+        {
+          "authorKey": "podcast:Training Data",
+          "sourceName": "Training Data",
+          "sourceUrl": "https://www.youtube.com/watch?v=tRaFbDFBl_A",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Noam Brown (OpenAI) explains why game theory didn't lead to general intelligence in a live Training Data episode at No Limit Finals."
+            ],
+            "original": [
+              "Paraphrase: Noam Brown argues that superhuman game performance did not directly produce general intelligence."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Noam Brown (OpenAI) erklärt, warum Spieltheorie nicht zu allgemeiner Intelligenz geführt hat – live bei den No Limit Finals."
+            ],
+            "original": [
+              "Paraphrase: Noam Brown argumentiert, dass übermenschliche Spielleistung nicht direkt zu allgemeiner Intelligenz führte."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261125170313-3c33cc",
+    "generatedAt": "2026-11-25T17:06:09.004Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 175314,
+    "tokensIn": 1391,
+    "tokensOut": 15533,
+    "estCostUsd": 0.004544,
+    "candidatesIn": 29,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 213728,
+      "preparedChars": 4017,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+      "https://www.together.ai/blog/introducing-preemptible-compute-the-same-compute-half-the-price",
+      "https://www.youtube.com/watch?v=w-6C-Hilg4g",
+      "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+      "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+      "https://www.youtube.com/watch?v=tRaFbDFBl_A"
+    ]
+  }
+}
