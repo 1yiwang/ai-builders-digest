@@ -1,0 +1,215 @@
+{
+  "title": "AI Builders Digest",
+  "subtitle": "Bilingual edition / Zweisprachige Ausgabe",
+  "publishDate": "2026-11-27",
+  "editionName": "DE+EN Ausgabe",
+  "intro": {
+    "kicker": "Einleitung / Editor's Note",
+    "text": "Mit PrismML und GPT-6.2 Astra erreichen Modelle nahezu FP16-Agentenleistung; die Messlatte für Tool-Calling steigt. NVIDIA ergänzt das Bild mit offenen Daten für Nemotron 3.5 Parse. Diese Infrastruktur trifft auf Teams wie SigNoz, die On-Call-Agenten bereits in Produktion einsetzen. Deshalb stellt The Decoder die Frage, ob GTA 6s gestaffelter Release mit Coding Agents überlebt."
+  },
+  "archive": {
+    "title": "PrismMLs Agenten-Release und die GTA-6-Frage",
+    "desc": "Neue Modelle zeigen agentische Stärke, während Teams Agenten in Produktion nehmen und Spielefirmen ihre Release-Modelle hinterfragen."
+  },
+  "viewLabels": {
+    "rewrite": "Kurz",
+    "original": "Original"
+  },
+  "footerNote": "Source: AI Builders Digest. Generated on 2026-11-27.",
+  "sections": [
+    {
+      "title": "Model & Inference Releases / Modell- und Inferenz-Neuerscheinungen",
+      "desc": "New model and inference updates target agentic workloads, faster serving, and open fine-tuning.",
+      "cards": [
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/",
+          "priority": 1,
+          "en": {
+            "rewrite": [
+              "PrismML's release hits near-FP16 tool-calling: 77.2 vs 77.7 average across τ²/τ³-Bench, BFCL v3/v4, AppWorld.",
+              "GPT-6.2 Astra leads at 71.0, ahead of Fable 5.2 (57.5) and GPT-6.2 Sol (53.7); targets agentic workloads with 262K context."
+            ],
+            "original": [
+              "GPT-6.2 Astra leads at 71.0, ahead of Fable 5.2 (57.5) and GPT-6.2 Sol (53.7).",
+              "The release targets agentic workloads: PrismML reports near-FP16 tool-calling performance (77.2 vs 77.7 average across τ²/τ³-Bench, BFCL v3/v4, AppWorld), ~90% FP16 agentic-coding performance, 262K context."
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "PrismMLs Release erreicht nahezu FP16-Tool-Calling: 77,2 vs. 77,7 im Schnitt über τ²/τ³-Bench, BFCL v3/v4, AppWorld.",
+              "GPT-6.2 Astra führt mit 71,0, vor Fable 5.2 (57,5) und GPT-6.2 Sol (53,7); zielt auf agentische Workloads mit 262K Kontext."
+            ],
+            "original": [
+              "GPT-6.2 Astra führt mit 71,0, vor Fable 5.2 (57,5) und GPT-6.2 Sol (53,7).",
+              "Der Release zielt auf agentische Workloads: PrismML meldet nahezu FP16-Tool-Calling-Leistung (77,2 vs. 77,7 im Durchschnitt über τ²/τ³-Bench, BFCL v3/v4, AppWorld), etwa 90 % FP16-Agentic-Coding-Leistung, 262K Kontext."
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:TLDR AI",
+          "sourceName": "TLDR AI",
+          "sourceUrl": "https://tldr.tech/ai/2026-11-26",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "TLDR AI reports Opus 5.6 testing, OpenAI private inference, and speculation that Jev is probably Qwen.",
+              "Coverage spans new model testing and private inference deployment signals."
+            ],
+            "original": [
+              "Opus 5.6 testing 🤖, OpenAI private Inference 🔒, Jev is probably Qwen 📝"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "TLDR AI berichtet über Opus-5.6-Tests, private Inference von OpenAI und die Spekulation, dass Jev wahrscheinlich Qwen ist.",
+              "Die tägliche Übersicht nennt neue Modelltests und Signale für private Inference-Deployments."
+            ],
+            "original": [
+              "Opus 5.6 Testing 🤖, OpenAI private Inference 🔒, Jev is probably Qwen 📝"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Hugging Face",
+          "sourceName": "Hugging Face",
+          "sourceUrl": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "NVIDIA's Nemotron 3.5 Parse blog covers open data, fine-tuning, and faster inference.",
+              "The Hugging Face post signals open-data availability and practical guidance for building on Nemotron 3.5 Parse."
+            ],
+            "original": [
+              "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "NVIDIAs Nemotron 3.5 Parse Blog behandelt offene Daten, Fine-Tuning und schnellere Inferenz.",
+              "Der Hugging-Face-Post signalisiert offene Datenverfügbarkeit und praktische Anleitung für Nemotron 3.5 Parse."
+            ],
+            "original": [
+              "Building on Nemotron 3.5 Parse: Offene Daten, Fine-Tuning und schnellere Inferenz"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agents in Production / Agenten in Produktion",
+      "desc": "Teams describe shipping agents into real production and go-to-market workflows.",
+      "cards": [
+        {
+          "authorKey": "youtube:@ycombinator",
+          "sourceName": "Y Combinator",
+          "sourceUrl": "https://www.youtube.com/watch?v=jOrEJqLXG4I",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "Y Combinator interviews SigNoz about the on-call agent they trust in production.",
+              "The video covers the team's production on-call agent, based on SigNoz's operational experience."
+            ],
+            "original": [
+              "The On-Call Agent We Trust With Production"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Y Combinator interviewt SigNoz über den On-Call-Agenten, dem sie in Produktion vertrauen.",
+              "Das Video zeigt den produktiven On-Call-Agenten basierend auf SigNoz' Betriebserfahrung."
+            ],
+            "original": [
+              "Der On-Call-Agent, dem wir in Produktion vertrauen"
+            ]
+          }
+        },
+        {
+          "authorKey": "blog:Latent Space",
+          "sourceName": "Latent Space",
+          "sourceUrl": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+          "priority": 3,
+          "en": {
+            "rewrite": [
+              "Clay's Head of AI Jeff Barg explains how Clay builds GTM agents.",
+              "The post covers Clay's approach to go-to-market agent development and architecture."
+            ],
+            "original": [
+              "How Clay Builds GTM Agents — Jeff Barg, Head of AI"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "Clays Head of AI Jeff Barg erklärt, wie Clay GTM-Agenten baut.",
+              "Der Beitrag behandelt Clays Ansatz für Go-to-Market-Agenten und deren Architektur."
+            ],
+            "original": [
+              "How Clay Builds GTM Agents — Jeff Barg, Head of AI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Coding Agents & Industry Disruption / Coding Agents & Branchenumbruch",
+      "desc": "The Decoder examines whether AI coding agents could disrupt Rockstar's GTA 6 release strategy.",
+      "cards": [
+        {
+          "authorKey": "blog:The Decoder",
+          "sourceName": "The Decoder",
+          "sourceUrl": "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/",
+          "priority": 2,
+          "en": {
+            "rewrite": [
+              "The Decoder asks whether GTA 6's staggered release model can survive coding agents.",
+              "Rockstar faces pressure from AI coding agents that could compress game development timelines."
+            ],
+            "original": [
+              "Rockstar's AI dilemma: Can GTA 6's staggered release model survive coding agents?"
+            ]
+          },
+          "de": {
+            "rewrite": [
+              "The Decoder fragt, ob GTA 6s gestaffeltes Veröffentlichungsmodell Coding Agents überleben kann.",
+              "Rockstar gerät unter Druck durch KI-Coding-Agents, die die Spielentwicklungszeiten verkürzen könnten."
+            ],
+            "original": [
+              "Rockstars KI-Dilemma: Kann GTA 6s gestaffeltes Release-Modell Coding Agents überleben?"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "runId": "issue-20261127163003-6ab787",
+    "generatedAt": "2026-11-27T16:32:45.598Z",
+    "provider": "anthropic",
+    "model": "deepseek-v4-pro",
+    "promptSha256": "17f3e628a943cbd50e4b3a6aaddbee803651415d116e2261985ce3749597debc",
+    "prepareVersion": "6fb3a1f2e307",
+    "fallbackUsed": false,
+    "repairAttempts": 0,
+    "latencyMs": 161987,
+    "tokensIn": 1379,
+    "tokensOut": 14761,
+    "estCostUsd": 0.004326,
+    "candidatesIn": 33,
+    "shortlistSize": 12,
+    "cardsPublished": 6,
+    "truncation": {
+      "rawChars": 297800,
+      "preparedChars": 3814,
+      "budgetTokens": 12000
+    },
+    "sourceUrls": [
+      "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/",
+      "https://tldr.tech/ai/2026-11-26",
+      "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "https://www.youtube.com/watch?v=jOrEJqLXG4I",
+      "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+      "https://the-decoder.com/rockstars-ai-dilemma-can-gta-6s-staggered-release-model-survive-coding-agents/"
+    ]
+  }
+}

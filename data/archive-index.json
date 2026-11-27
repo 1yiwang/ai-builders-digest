@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-25T17:06:09.131Z",
-  "count": 71,
+  "generatedAt": "2026-11-27T16:32:45.728Z",
+  "count": 72,
   "issues": [
+    {
+      "date": "2026-11-27",
+      "title": "PrismMLs Agenten-Release und die GTA-6-Frage",
+      "desc": "Neue Modelle zeigen agentische Stärke, während Teams Agenten in Produktion nehmen und Spielefirmen ihre Release-Modelle hinterfragen.",
+      "href": "./issues/ai-builders-digest-2026-11-27.html",
+      "issue": "Nr. 72"
+    },
     {
       "date": "2026-11-25",
       "title": "Neon, Loop-Layer, halbierte GPU-Preise",

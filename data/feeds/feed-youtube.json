@@ -1,16 +1,7 @@
 {
-  "generatedAt": "2026-11-25T17:03:05.992Z",
+  "generatedAt": "2026-11-27T16:29:56.273Z",
   "lookbackHours": 72,
   "videos": [
-    {
-      "source": "youtube",
-      "name": "Y Combinator",
-      "handle": "@ycombinator",
-      "title": "How Asteroid Books 50 Demos a Month With Claude Code on a Mac Mini",
-      "url": "https://www.youtube.com/watch?v=w-6C-Hilg4g",
-      "publishedAt": "2026-11-24T22:21:28.000Z",
-      "description": "Asteroid's six-person team had zero go-to-market experience, so they reverse-engineered it from first principles. Their CTO walks through the $200/month system that books 50-60 demos a month autonomously and took them to seven figures of revenue.\n\n00:00 - Reverse-engineering GTM with no GTM experience\n01:01 - The principles: pluggable, Claude Code as backend, markdown ICP cards\n03:19 - What they built: webhooks, cron jobs, tools, and a write store\n06:20 - Open sourcing the repo"
-    },
     {
       "source": "youtube",
       "name": "Y Combinator",
@@ -42,6 +33,15 @@
       "source": "youtube",
       "name": "Two Minute Papers",
       "handle": "@TwoMinutePapers",
+      "title": "DeepMind’s New AI Just Changed The AI Race",
+      "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc",
+      "publishedAt": "2026-11-27T08:42:30.000Z",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The security report is available here:\nhttps://storage.googleapis.com/deepmind-media/gemini/gemini_4_neon_safety_report.pdf\n\nSources:\n- https://x.com/PromptLLM/status/2124894800654504419\n- https://x.com/thebuggeddev/status/2123170821250400282\n- https://x.com/ai_for_success/status/2123467103110078747\n- https://x.com/thtbee_/status/2123843882937155607\n- https://x.com/crtvTeknologist/status/2123175626039304496\n- https://x.com/ryu15/status/2123597998097899653\n- https://x.com/abhinavflac/status/2123212198663323848\n- https://x.com/IamEmily2050/status/2123344885298389047\n- https://x.com/noclipepe/status/2123352634677481662\n- https://x.com/aiiii498/status/2123324330172129294\n- https://x.com/kimmonismus/status/2123168299890704735\n- https://x.com/kimmonismus/status/2123168339900203199\n- https://x.com/kimmonismus/status/2123168366949245260\n- https://x.com/kimmonismus/status/2123168409450090814\n- https://x.com/kimmonismus/status/2123168435039613096\n- https://x.com/kimmonismus/status/2123168463518826561\n- https://x.com/kimmonismus/status/2123168497060733300\n- https://x.com/kimmonismus/status/2123168533303763074\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric Tyson, Juan Benet, Lukas Biewald, Michael Tedder, Owen Skarpness, Ryan Stankye, Shawn Becker, Steef, Taras Bobrovytsky, Tazaur Sagenclaw, Tybie Fitzhugh, Ueli Gallizzi"
+    },
+    {
+      "source": "youtube",
+      "name": "Two Minute Papers",
+      "handle": "@TwoMinutePapers",
       "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
       "url": "https://www.youtube.com/watch?v=hwWlEuI359w",
       "publishedAt": "2026-11-25T09:54:23.000Z",
@@ -51,13 +51,49 @@
       "source": "youtube",
       "name": "Dwarkesh Patel",
       "handle": "@DwarkeshPatel",
+      "title": "We Just Saw a Decade of Math Progress in One Month – Paul Christiano",
+      "url": "https://www.youtube.com/watch?v=eirWZPxpUIs",
+      "publishedAt": "2026-11-26T18:06:16.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
+      "title": "What's the Actual Plan to Control Superintelligence? – Paul Christiano",
+      "url": "https://www.youtube.com/watch?v=gSTyxlbpNtQ",
+      "publishedAt": "2026-11-25T19:15:00.000Z",
+      "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Dwarkesh Patel",
+      "handle": "@DwarkeshPatel",
       "title": "Why Superintelligence Will Learn Any Job in Days – Paul Christiano",
       "url": "https://www.youtube.com/watch?v=yoSvuJKmKsI",
       "publishedAt": "2026-11-24T21:30:35.000Z",
       "description": "Full episode: https://www.youtube.com/watch?v=SyHM5hNPAEo\nMe on twitter: https://x.com/dwarkesh_sp"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
+      "url": "https://www.youtube.com/watch?v=qjPcaZf_plo",
+      "publishedAt": "2026-11-26T19:48:59.000Z",
+      "description": "Almost half the agent work on Clay now happens in tools like Claude Code, not their own agent.\n\nSwyx and I sat down with Jeff Barg (Head of AI at Clay) to talk about what that means for a SaaS company. Clay went from agents filling out spreadsheet cells to a coding agent that builds entire GTM workflows, which raises the question: if customers are happy driving Clay from Claude Code, why build your own agent at all? His answer is that they want to meet their customers where they are.\n\nA few things surprised us during this conversation. Clay's lead-qualification evals have been saturated for about a year, so frontier models now only matter higher up the stack. Jeff ran the math on scoring all 40M companies in their dataset for customer fit, and it comes out to about $1,500 total. They don’t want their own agent to be markedly better than Clay + Claude Code, and usage is already close to 50/50 between Clay's agent and outside harnesses. And OpenAI pulled their ChatGPT Apps launch two days out, after they put 25% of the engineering team on it for a month, then changed their minds a few days later.\n\nWe also got into when post-training actually makes sense (Jeff's bar: $10-100M in inference spend), why Clay's agent infra is hand-rolled on BullMQ, and why agents still can't debug their own traces.\n\nClay: https://www.clay.com\n\nFollow us on X (formerly Twitter): www.x.com/realbasilchatha , www.x.com/swyx , www.x.com/latentspacepod\n\nSponsorship and business inquiries: business@latent.space\n\nTimestamps\n0:00 Intro\n0:55 Meet Jeff Barg, Head of AI at Clay\n3:27 What a GTM engineer actually is\n8:21 Selling Avenue to Clay at 5 people\n16:10 An AI-forward company with zero people on AI\n18:45 Claygents vs. Sculptor\n24:49 Why Clay rebuilt its agent around a coding agent\n27:48 When post-training and open-weight models pay off\n30:35 Qualifying every company in the world for $1,500\n32:40 Where you still need frontier intelligence\n34:16 Why users hate the model selector\n37:09 How Clay evals its agent\n42:15 No Temporal, no LangGraph: Clay's hand-rolled stack\n45:44 What broke when agents scaled\n48:26 Why Clay's agent shouldn't beat Clay + Claude Code\n54:26 OpenAI cancelled Clay's launch two days out\n1:00:11 Workflows: from user backlash to agent-built\n1:09:59 Why agents still can't debug their own traces"
+    },
+    {
+      "source": "youtube",
+      "name": "Latent Space",
+      "handle": "@LatentSpacePod",
+      "title": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+      "url": "https://www.youtube.com/watch?v=Qe9d9dWyED0",
+      "publishedAt": "2026-11-25T22:11:27.000Z",
+      "description": "At AI Engineer CODE, Thariq Shihipar revisits what he got wrong about coding agents, then asks what AI makes possible when people stay in the creative loop. He shows how the /human folder lets him tune a rock attack in his fighting game and explains why he stopped using the custom Mac Dock he built. We also get into decision models and who chooses which experiments get the compute.\n\nRecorded at AI Engineer CODE. Thariq announced that he had joined OpenAI after the interview.\n\nSponsored by Jira by Atlassian. Learn more at https://jira.dev.\n\nChapters\n00:00 Cold open\n00:23 Intro and Thariq’s move to OpenAI\n03:03 Sponsor — Jira by Atlassian\n03:22 Where agents surprised Thariq\n06:47 The /human folder\n09:07 Software as craft\n11:11 Game balance\n15:07 Ambition\n19:06 Decision models\n26:34 The land/water test\n30:25 Personal software\n37:46 Adoption\n42:24 Autoresearch\n48:29 Work people can see\n\nAI Engineer CODE keynote and live demo: https://youtu.be/xRJMiaUoD_8\nThariq’s Dock demo: https://x.com/trq212/status/2115135857669881939\nThe Dock follow-up: https://x.com/trq212/status/2123106368492298653\nThariq’s announcement: https://x.com/trq212/status/2125675533761671405\nAndrew Ambrosino’s welcome: https://x.com/ajambrosino/status/2125675673876615511\nEarlier Claude Code episode: https://latent.space/p/thariq/\nLatent Space: https://latent.space"
     }
   ],
   "stats": {
-    "youtubeVideos": 6
+    "youtubeVideos": 10
   }
 }
